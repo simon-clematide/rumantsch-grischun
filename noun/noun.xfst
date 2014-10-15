@@ -1,0 +1,149 @@
+# -*- coding: utf-8 -*-
+################################################################################
+# University of Zurich - Institute of Computational Linguistics
+# Morphology anlysis for Romansh: Nouns
+# Authors: Martina Bachmann, Melanie Widmer
+# Modifications: Reto Baumgartner
+# Date: June 2013
+################################################################################
+
+################################################################################
+# Alphabet and tools
+################################################################################
+define Vowel [a|e|i|o|u|à|è|é|ì|ò|ù|y];
+define Nonliquid [b|c|d|f|g|h|j|k|m|n|p|q|s|t|v|w|x|z];
+define Consonant [Nonliquid|r|l];
+define Letter [Vowel|Consonant];
+
+## Cleanup
+define Clean [\[Letter|"-"] -> 0];
+
+################################################################################
+# Irregular Nouns
+################################################################################
+## noun-irr contains irregular noun forms
+read lexc < noun/noun-irr.lexc
+define NounIrr;
+
+################################################################################
+# Loading regular nouns and adding PoS-tag
+################################################################################
+define FemNouns @txt"wordlists/noun-fem.txt";
+define FemStems [FemNouns "+Noun":0];
+define MascNouns @txt"wordlists/noun-masc.txt";
+define MascStems [MascNouns "+Noun":0];
+define PartNouns @txt"wordlists/noun-part.txt";
+define PartStems [PartNouns "+Noun":0];
+
+################################################################################
+# Loading singular-only or plural-only words and adding all tags as these
+# words are invariable.
+################################################################################
+define MascPlNouns @txt"wordlists/noun-masc-plur.txt";
+define MascPlStems [MascPlNouns "+Noun":0 "+Masc":0 "+Pl":0];
+define FemPlNouns @txt"wordlists/noun-fem-plur.txt";
+define FemPlStems [FemPlNouns "+Noun":0 "+Fem":0 "+Pl":0];
+define FemSgNouns @txt"wordlists/noun-fem-sing.txt";
+define FemSgStems [FemSgNouns "+Noun":0 "+Fem":0 "+Sg":0];
+define MascSgNouns @txt"wordlists/noun-masc-sing.txt";
+define MascSgStems [MascSgNouns "+Noun":0 "+Masc":0 "+Sg":0];
+# all collected
+define Invariable [MascSgStems|MascPlStems|FemSgStems|FemPlStems];
+
+
+################################################################################
+# Adding Gender tag to the regular nouns
+################################################################################
+## gender tag
+define RegGender [FemStems "+Fem":0 | [MascStems|PartStems] "+Masc":0];
+
+################################################################################
+# Forming the plural of the regular nouns
+################################################################################
+## regular number is formed; "*" is later used to prevent adding a further 's'
+## after an existing 's' or 'ss'
+define NumberTag ["+Sg":0|"+Pl":{"*"s}];
+define RegGenderNumber [RegGender NumberTag];
+
+## this rule applies to nouns which end in -s in the singular: it prevents double s
+define sRule [{s"*"s} -> s];
+
+## irregular number is formed
+define eRule [{è"*"} -> {el} ];
+define aRule [{à"*"} -> {ad} ];
+define iRule [{ì"*"} -> {id} ];
+
+################################################################################
+# Dealing with compounds (also regular nouns)
+################################################################################
+### --- Compounds --- ###
+## composita with hyphen 
+define hyphRule1 [[..] -> s || _ "-" Letter+ [{"*"s}|{els}|{ads}|{ids}]];
+
+## pluralising is undone in the second element of the compounds
+define hyphRule2 [{"*"s} -> 0 || $["-"] _ ];
+
+## pluralising is undone if the second element of the compounds is a noun that 
+## has irregular number
+define hyphRule3 [{els} -> è || $["-"] _ .#. ];
+define hyphRule4 [{ads} -> à || $["-"] _ .#.];
+define hyphRule5 [{ids} -> ì || $["-"] _ .#. ];
+define hyphRules [hyphRule1 .o. hyphRule2 .o. hyphRule3 .o. hyphRule4 .o. hyphRule5];
+
+################################################################################
+# Final form of the regular nouns
+################################################################################
+## Composition of the rules for all other nouns
+define RegularNouns [[RegGenderNumber .o. sRule .o. eRule .o. aRule .o. iRule
+	.o. hyphRules] .o. Clean];
+
+################################################################################
+# Combining the implemented nouns
+################################################################################
+## Priority Union for the irregular noun forms and adding the invariable nouns
+define Nouns [Invariable |[NounIrr .P. RegularNouns]];
+
+################################################################################
+# Proper nouns and abbreviations for nouns
+################################################################################
+define AbbreviationsRaw @txt"wordlists/noun-abbr.txt";
+define Abbreviations [AbbreviationsRaw "+Noun":0 "+Abbr":0];
+
+define ProperRaw @txt"wordlists/noun-proper.txt";
+define Proper [ProperRaw "+Prop":0];
+
+################################################################################
+# Guessing Noun Forms for Hypothetical Nouns
+# Only Regular nouns, composita and nouns in -è (-à, -ì are modellised as 
+# participles. 
+################################################################################
+define GuessingFem [
+	Letter* Vowel+ Letter* "+Noun":0 "+Fem":0 ["+Sg":0|"+Pl":s]];
+
+define GuessingMasc [
+	Letter* Vowel+ Letter* "+Noun":0 "+Masc":0 ["+Sg":0|"+Pl":s]];
+
+define GuessingMascEls [
+	Letter* Vowel+ Letter* {è}:0 "+Noun":0 "+Masc":0 [ "+Sg":è |"+Pl":{els} ]];
+
+define GuessingCompPart2 ["-" Letter* Vowel+ Letter*];
+define GuessingComposita [
+	Letter* Vowel+ Letter* [
+	[           GuessingCompPart2 "+Noun":0 "+Fem":0  "+Sg":0 ]|
+	[ 0:{s}     GuessingCompPart2 "+Noun":0 "+Fem":0  "+Pl":0 ]|
+	[           GuessingCompPart2 "+Noun":0 "+Masc":0 "+Sg":0 ]|
+	[ 0:{s}     GuessingCompPart2 "+Noun":0 "+Masc":0 "+Pl":0 ]|
+	[ {è}       GuessingCompPart2 "+Noun":0 "+Masc":0 "+Sg":0 ]|
+	[ {è}:{els} GuessingCompPart2 "+Noun":0 "+Masc":0 "+Pl":0 ]]];
+
+define GuessingNoun [GuessingFem|GuessingMasc|GuessingMascEls|GuessingComposita];
+
+################################################################################
+# Saving the networks for further processing
+################################################################################
+read regex [Nouns|Abbreviations|Proper] ;
+save stack fstbinaries/Noun.fst
+clear stack
+
+read regex GuessingNoun ;
+save stack fstbinaries/NounGuessing.fst

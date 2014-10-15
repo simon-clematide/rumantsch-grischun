@@ -1,0 +1,252 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Pronouns
+! Author: Reto Baumgartner
+! Date: June 2013
+
+! These pronouns can be found in Caduff&Caprez 161, 
+! Personal pronouns: 163, 165, 166, 169, 172
+! Reflexive pronouns: 179, 180
+! Possessive pronouns: 184, 185, 187
+! Demonstrative pronouns: 189 - 195
+! Interrogative pronouns: 199 - 206, 
+! Indefinite pronouns: 207
+
+Multichar_Symbols +Pron +Pers +Refl +Poss +Dem +Interrog +Indef 
+^DB +Noun
++Nom +AccDat +Acc 
++Masc +Fem +MF 
++1P +2P +3P +Sg +Pl 
++Apo +Ton +Aton 
+@U.FLEX.MSg@ @U.FLEX.FSg@ @U.FLEX.MPl@ @U.FLEX.FPl@
+
+LEXICON Root
+PERSONAL ;
+REFLEXIVE ;
+POSSESSIVE ;
+DEMONSTRATIVE ;
+INTERROGATIVE ;
+INDEFINITE ;
+
+LEXICON PERSONAL
+! jau
+jau+Pron+Pers+Nom+1P+MF+Sg:jau	#;
+jau+Pron+Pers+Acc+Ton+1P+MF+Sg:mai	#;
+jau+Pron+Pers+AccDat+Aton+1P+MF+Sg:ma	#;
+jau+Pron+Pers+AccDat+Aton+1P+MF+Sg+Apo:m'	#;
+! ti
+ti+Pron+Pers+Nom+2P+MF+Sg:ti	#;
+ti+Pron+Pers+Acc+Ton+2P+MF+Sg:tai	#;
+ti+Pron+Pers+AccDat+Aton+2P+MF+Sg:ta	#;
+ti+Pron+Pers+AccDat+Aton+2P+MF+Sg+Apo:t'	#;
+! el
+el+Pron+Pers+Nom+3P+Masc+Sg:el	#;
+el+Pron+Pers+Acc+Ton+3P+Masc+Sg:el	#;
+el+Pron+Pers+AccDat+Aton+3P+Masc+Sg:al	#;
+! ella
+ella+Pron+Pers+Nom+3P+Fem+Sg:ella	#;
+ella+Pron+Pers+Acc+Ton+3P+Fem+Sg:ella	#;
+ella+Pron+Pers+AccDat+Aton+3P+Fem+Sg:la	#;
+ella+Pron+Pers+AccDat+Aton+3P+Fem+Sg+Apo:l'	#;
+! i
+i+Pron+Pers+Nom+3P+MF+Sg:i	#;
+i+Pron+Pers+Nom+3P+MF+Sg+Apo:igl	#;
+! nus
+nus+Pron+Pers+Nom+1P+MF+Pl:nus	#;
+nus+Pron+Pers+Acc+Ton+1P+MF+Pl:nus	#;
+nus+Pron+Pers+AccDat+Aton+1P+MF+Pl:ans	#;
+! vus
+vus+Pron+Pers+Nom+2P+MF+Pl:vus	#;
+vus+Pron+Pers+Acc+Ton+2P+MF+Pl:vus	#;
+vus+Pron+Pers+AccDat+Aton+2P+MF+Pl:as	#;
+! Vus (courtesy)
+Vus+Pron+Pers+Nom+2P+MF+Pl:Vus	#;
+Vus+Pron+Pers+Acc+Ton+2P+MF+Pl:Vus	#;
+Vus+Pron+Pers+AccDat+Aton+2P+MF+Pl:As	#;
+! els
+els+Pron+Pers+Nom+3P+Masc+Pl:els	#;
+els+Pron+Pers+Acc+Ton+3P+Masc+Pl:els	#;
+els+Pron+Pers+AccDat+Aton+3P+Masc+Pl:als	#;
+! ellas
+ellas+Pron+Pers+Nom+3P+Fem+Pl:ellas	#;
+ellas+Pron+Pers+Acc+Ton+3P+Fem+Pl:ellas	#;
+ellas+Pron+Pers+AccDat+Aton+3P+Fem+Pl:las	#;
+! i
+i+Pron+Pers+Nom+3P+MF+Pl:i	#;
+
+
+
+LEXICON REFLEXIVE
+! jau
+sai+Pron+Refl+Acc+Ton+1P+MF+Sg:mai	#;
+sai+Pron+Refl+AccDat+Aton+1P+MF+Sg:ma	#;
+sai+Pron+Refl+AccDat+Aton+1P+MF+Sg+Apo:m'	#;
+! ti
+sai+Pron+Refl+Acc+Ton+2P+MF+Sg:tai	#;
+sai+Pron+Refl+AccDat+Aton+2P+MF+Sg:ta	#;
+sai+Pron+Refl+AccDat+Aton+2P+MF+Sg+Apo:t'	#;
+! el, ella
+sai+Pron+Refl+Acc+Ton+3P+MF+Sg:sai	#;
+sai+Pron+Refl+AccDat+Aton+3P+MF+Sg:sa	#;
+sai+Pron+Refl+AccDat+Aton+3P+MF+Sg+Apo:s'	#;
+! nus
+sai+Pron+Refl+Acc+Ton+1P+MF+Pl:nus	#;
+sai+Pron+Refl+AccDat+Aton+1P+MF+Pl:ans	#;
+! vus
+sai+Pron+Refl+Acc+Ton+2P+MF+Pl:vus	#;
+sai+Pron+Refl+AccDat+Aton+2P+MF+Pl:as	#;
+! Vus
+sai+Pron+Refl+Acc+Ton+2P+MF+Pl:Vus	#;
+sai+Pron+Refl+AccDat+Aton+2P+MF+Pl:As	#;
+! els, ellas
+sai+Pron+Refl+Acc+Ton+3P+MF+Pl:sai	#;
+sai+Pron+Refl+AccDat+Aton+3P+MF+Pl:sa	#;
+sai+Pron+Refl+AccDat+Aton+3P+MF+Pl+Apo:s'	#;
+! jau
+sasez+Pron+Refl+Acc+1P+Masc+Sg:mamez	#;
+sasez+Pron+Refl+Acc+1P+Fem+Sg:mamezza	#;
+! ti
+sasez+Pron+Refl+Acc+2P+Masc+Sg:tatez	#;
+sasez+Pron+Refl+Acc+2P+Fem+Sg:tatezza	#;
+! el, ella
+sasez+Pron+Refl+Acc+3P+Masc+Sg:sasez	#;
+sasez+Pron+Refl+Acc+3P+Fem+Sg:sasezza	#;
+! els, ellas
+sasez+Pron+Refl+Acc+3P+Masc+Pl:sasezs	#;
+sasez+Pron+Refl+Acc+3P+Fem+Pl:sasezzas	#;
+
+
+
+LEXICON POSSESSIVE
+! jau
+mes+Pron+Poss+Masc+Sg:mes	#;
+mes+Pron+Poss^DB+Noun+Masc+Sg:mieu	#;
+mes+Pron+Poss:mes@U.FLEX.MPl@	PossEnd;
+mes+Pron+Poss:mia@U.FLEX.FSg@	PossEnd;
+mes+Pron+Poss:mias@U.FLEX.FPl@	PossEnd;
+! ti
+tes+Pron+Poss+Masc+Sg:tes	#;
+tes+Pron+Poss^DB+Noun+Masc+Sg:tieu	#;
+tes+Pron+Poss:tes@U.FLEX.MPl@	PossEnd;
+tes+Pron+Poss:tia@U.FLEX.FSg@	PossEnd;
+tes+Pron+Poss:tias@U.FLEX.FPl@	PossEnd;
+! el, ella
+ses+Pron+Poss+Masc+Sg:ses	#;
+ses+Pron+Poss^DB+Noun+Masc+Sg:sieu	#;
+ses+Pron+Poss:ses@U.FLEX.MPl@	PossEnd;
+ses+Pron+Poss:sia@U.FLEX.FSg@	PossEnd;
+ses+Pron+Poss:sias@U.FLEX.FPl@	PossEnd;
+! nus
+noss+Pron+Poss:noss@U.FLEX.MSg@	PossEnd;
+noss+Pron+Poss:noss@U.FLEX.MPl@	PossEnd;
+noss+Pron+Poss:nossa@U.FLEX.FSg@	PossEnd;
+noss+Pron+Poss:nossas@U.FLEX.FPl@	PossEnd;
+! vus
+voss+Pron+Poss:voss@U.FLEX.MSg@	PossEnd;
+voss+Pron+Poss:voss@U.FLEX.MPl@	PossEnd;
+voss+Pron+Poss:vossa@U.FLEX.FSg@	PossEnd;
+voss+Pron+Poss:vossas@U.FLEX.FPl@	PossEnd;
+! Vus
+Voss+Pron+Poss:Voss@U.FLEX.MSg@	PossEnd;
+Voss+Pron+Poss:Voss@U.FLEX.MPl@	PossEnd;
+Voss+Pron+Poss:Vossa@U.FLEX.FSg@	PossEnd;
+Voss+Pron+Poss:Vossas@U.FLEX.FPl@	PossEnd;
+! els, ellas
+lur+Pron+Poss:lur	PossEnd;
+
+
+
+LEXICON DEMONSTRATIVE
+gliez+Pron+Dem:gliez	#;
+quai+Pron+Dem:quai	#;
+quest+Pron+Dem:quest	REGULAR;
+tal+Pron+Dem:tal	REGULAR;
+tschai+Pron+Dem:tschai	#;
+!!
+! lez
+lez+Pron+Dem+Masc+Sg:lez	#;
+lez+Pron+Dem+Masc+Pl:lezs	#;
+lez+Pron+Dem+Fem+Sg:lezza	#;
+lez+Pron+Dem+Fem+Pl:lezzas	#;
+! quel
+quel+Pron+Dem+Masc+Sg:quel	#;
+quel+Pron+Dem+Masc+Pl:quels	#;
+quel+Pron+Dem+Fem+Sg:quella	#;
+quel+Pron+Dem+Fem+Pl:quellas	#;
+! sez
+sez+Pron+Dem+Masc+Sg:sez	#;
+sez+Pron+Dem+Masc+Pl:sezs	#;
+sez+Pron+Dem+Fem+Sg:sezza	#;
+sez+Pron+Dem+Fem+Pl:sezzas	#;
+! tschel
+tschel+Pron+Dem+Masc+Sg:tschel	#;
+tschel+Pron+Dem+Masc+Pl:tschels	#;
+tschel+Pron+Dem+Fem+Sg:tschella	#;
+tschel+Pron+Dem+Fem+Pl:tschellas	#;
+
+
+
+LEXICON INTERROGATIVE
+qual+Pron+Interrog:qual	REGULAR;
+quant+Pron+Interrog:quant	REGULAR;
+tge+Pron+Interrog:tge	#;
+tgenin+Pron+Interrog:tgenin	REGULAR;
+tgi+Pron+Interrog:tgi	#;
+
+
+
+LEXICON INDEFINITE
+finadin+Pron+Indef:finadin	REGULARSINGULAR;
+i+Pron+Indef:i	#;
+in+Pron+Indef:in	REGULARSINGULAR;
+inqual+Pron+Indef:inqual	REGULAR;
+ins+Pron+Indef:ins	#;
+insaqual+Pron+Indef:insaqual	REGULAR;
+insaquants+Pron+Indef:insaquant	REGULARPLURAL;
+insatge+Pron+Indef:insatge	#;
+insatgi+Pron+Indef:insatgi	#;
+intgins+Pron+Indef:intgin	REGULARPLURAL;
+mintga+Pron+Indef:mintga	#;
+mintga+Pron+Indef+Apo:mintg'	#;
+mintgin+Pron+Indef:mintgin	REGULARSINGULAR;
+nagin+Pron+Indef:nagin	REGULAR;
+plirs+Pron+Indef:plir	REGULARPLURAL;
+scadin+Pron+Indef:scadin	REGULARSINGULAR;
+tant+Pron+Indef:tant	REGULAR;
+tschert+Pron+Indef:tschert	REGULAR;
+tschertin+Pron+Indef:tschertin	REGULARPLURAL;
+varsaquants+Pron+Indef:varsaquant	REGULARPLURAL;
+!!
+! tut
+tut+Pron+Indef+Masc+Sg:tut	#;
+tut+Pron+Indef+Masc+Pl:tuts	#;
+tut+Pron+Indef+Fem+Sg:tutta	#;
+tut+Pron+Indef+Fem+Pl:tuttas	#;
+
+
+
+!! Endings:
+LEXICON REGULAR
++Masc+Sg:0	#;
++Masc+Pl:s	#;
++Fem+Sg:a	#;
++Fem+Pl:as	#;
+
+LEXICON REGULARSINGULAR
++Masc+Sg:0	#;
++Fem+Sg:a	#;
+
+LEXICON REGULARPLURAL
++Masc+Pl:s	#;
++Fem+Pl:as	#;
+
+! Endings for Possessive Pronouns
+LEXICON PossEnd
++Masc+Sg:@U.FLEX.MSg@	#;
+^DB+Noun+Masc+Sg:@U.FLEX.MSg@	#;
++Fem+Sg:@U.FLEX.FSg@	#;
+^DB+Noun+Fem+Sg:@U.FLEX.FSg@	#;
++Masc+Pl:@U.FLEX.MPl@	#;
+^DB+Noun+Masc+Pl:@U.FLEX.MPl@	#;
++Fem+Pl:@U.FLEX.FPl@	#;
+^DB+Noun+Fem+Pl:@U.FLEX.FPl@	#;

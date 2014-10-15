@@ -1,0 +1,78 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Letters and initials
+! Author: Reto Baumgartner
+! Date: June 2013
+
+
+Multichar_Symbols +Let +Initial
+
+LEXICON Root
+a	Lower;	A	Upper;
+b	Lower;	B	Upper;
+c	Lower;	C	Upper;
+d	Lower;	D	Upper;
+e	Lower;	E	Upper;
+f	Lower;	F	Upper;
+g	Lower;	G	Upper;
+h	Lower;	H	Upper;
+i	Lower;	I	Upper;
+j	Lower;	J	Upper;
+k	Lower;	K	Upper;
+l	Lower;	L	Upper;
+m	Lower;	M	Upper;
+n	Lower;	N	Upper;
+o	Lower;	O	Upper;
+p	Lower;	P	Upper;
+q	Lower;	Q	Upper;
+r	Lower;	R	Upper;
+s	Lower;	S	Upper;
+t	Lower;	T	Upper;
+u	Lower;	U	Upper;
+v	Lower;	V	Upper;
+w	Lower;	W	Upper;
+x	Lower;	X	Upper;
+y	Lower;	Y	Upper;
+z	Lower;	Z	Upper;
+ß	Lower;
+à	Lower;	À	Upper;
+á	Lower;	Á	Upper;
+â	Lower;	Â	Upper;
+ã	Lower;	Ã	Upper;
+ä	Lower;	Ä	Upper;
+å	Lower;	Å	Upper;
+æ	Lower;	Æ	Upper;
+ç	Lower;	Ç	Upper;
+è	Lower;	È	Upper;
+é	Lower;	É	Upper;
+ê	Lower;	Ê	Upper;
+ë	Lower;	Ë	Upper;
+ì	Lower;	Ì	Upper;
+í	Lower;	Í	Upper;
+î	Lower;	Î	Upper;
+ï	Lower;	Ï	Upper;
+ð	Lower;	Ð	Upper;
+ñ	Lower;	Ñ	Upper;
+ò	Lower;	Ò	Upper;
+ó	Lower;	Ó	Upper;
+ô	Lower;	Ô	Upper;
+õ	Lower;	Õ	Upper;
+ö	Lower;	Ö	Upper;
+ø	Lower;	Ø	Upper;
+ù	Lower;	Ù	Upper;
+ú	Lower;	Ú	Upper;
+û	Lower;	Û	Upper;
+ü	Lower;	Ü	Upper;
+ý	Lower;	Ý	Upper;
+þ	Lower;	Þ	Upper;
+ÿ	Lower;	Ÿ	Upper;
+š	Lower;	Š	Upper;
+ž	Lower;	Ž	Upper;
+œ	Lower;	Œ	Upper;
+
+LEXICON Lower
++Let:0	#;
+
+LEXICON Upper
++Let:0	#;
++Initial:.	#;

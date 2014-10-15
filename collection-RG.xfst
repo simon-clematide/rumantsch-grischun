@@ -1,0 +1,107 @@
+# -*- coding: utf-8 -*-
+################################################################################
+# University of Zurich - Institute of Computational Linguistics
+# Morphology anlysis for Romansh: Saving all relevant Networks
+# Author: Reto Baumgartner
+# Date: June 2013
+################################################################################
+
+################################################################################
+# Defining Prefixes and Suffixes
+################################################################################
+define CapitalizationPrefix "*":0 ;
+define CapitalizationSuffix 0 ;
+
+define GuessingPrefix 0 ;
+define GuessingSuffix "+UNKNOWN":0 ;
+
+################################################################################
+# Loading Networks
+################################################################################
+# load and define the networks for the different parts of speech
+
+load stack fstbinaries/Verb.fst
+define Verb ;
+load stack fstbinaries/VerbGuessing.fst
+define VerbGuessing ;
+
+load stack fstbinaries/Noun.fst
+define Noun ;
+load stack fstbinaries/NounGuessing.fst
+define NounGuessing ;
+
+load stack fstbinaries/Adjective.fst
+define Adjective ;
+load stack fstbinaries/AdjectiveGuessing.fst
+define AdjectiveGuessing ;
+
+load stack fstbinaries/Numeral.fst
+define Numeral ;
+
+load stack fstbinaries/Number.fst
+define Number ;
+
+load stack fstbinaries/Adverb.fst
+define Adverb ;
+
+read lexc particles/conj.lexc
+define Conjunction ;
+
+read lexc particles/prep.lexc
+define Preposition ;
+
+read lexc particles/interj.lexc
+define Interjection ;
+
+read lexc particles/interpunct.lexc
+define Interpunctation ;
+
+read lexc particles/letter.lexc
+define Letter ;
+
+read lexc art-pron/art.lexc
+define Article ;
+
+read lexc art-pron/pron.lexc
+define Pronoun ;
+
+# Orthographig rules:
+load stack fstbinaries/Capitalization.fst
+define Capitalization ;
+
+load stack fstbinaries/OrthoRule.fst
+define OrthoRule ;
+
+################################################################################
+# Grischun
+################################################################################
+define GrischunWords [
+	Verb|
+	Noun|
+	Adjective|
+	Numeral|
+	Adverb|
+	Conjunction|
+	Preposition|
+	Interjection|
+	Article|
+	Pronoun];
+define GrischunLowerCase [GrischunWords .o. OrthoRule];
+define GrischunUpperCase [["*" GrischunLowerCase] .o. Capitalization];
+define Grischun [GrischunLowerCase|GrischunUpperCase|Number|Interpunctation|Letter];
+
+read regex Grischun ;
+save stack Grischun.fst
+clear stack
+
+################################################################################
+# GrischunGuessing
+################################################################################
+define GrischunGuessingWords [VerbGuessing|NounGuessing|AdjectiveGuessing];
+define GrischunGuessingLowerCase [GrischunGuessingWords .o. OrthoRule];
+define GrischunGuessingUpperCase [["*" GrischunGuessingLowerCase] .o. Capitalization];
+define GrischunGuessingMarked [GuessingPrefix [GrischunGuessingLowerCase|GrischunUpperCase] GuessingSuffix];
+define GrischunGuessing [Grischun .p. GrischunGuessingMarked];
+
+read regex GrischunGuessing;
+save stack GrischunGuessing.fst

@@ -1,0 +1,35 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Articles
+! Author: Reto Baumgartner
+! Date: June 2013
+
+! The article is explained in Caduff&Caprez in articles 152, 153, 154
+
+Multichar_Symbols +Art +Def +Indef +Masc +Fem +Sg +Pl ^= +Prep +Apo
+
+LEXICON Root
+DEFINITE ;
+INDEFINITE ;
+DEFINITEWITHPREP ;
+
+LEXICON DEFINITE
+il+Art+Def+Masc+Sg:il	#;
+il+Art+Def+Masc+Sg+Apo:l'	#;
+il+Art+Def+Masc+Pl:ils	#;
+
+il+Art+Def+Fem+Sg:la	#;
+il+Art+Def+Fem+Sg+Apo:l'	#;
+il+Art+Def+Fem+Pl:las	#;
+
+LEXICON INDEFINITE
+in+Art+Indef+Masc+Sg:in	#;
+in+Art+Indef+Fem+Sg:ina	#;
+in+Art+Indef+Fem+Sg+Apo:in'	#;
+
+LEXICON DEFINITEWITHPREP
+a+Prep^=+Art+Def+Masc+Sg:al	#;
+a+Prep^=+Art+Def+Masc+Pl:als	#;
+
+da+Prep^=+Art+Def+Masc+Sg:dal	#;
+da+Prep^=+Art+Def+Masc+Pl:dals	#;

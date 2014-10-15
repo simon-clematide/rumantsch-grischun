@@ -1,0 +1,85 @@
+# -*- coding: utf-8 -*-
+################################################################################
+# University of Zurich - Institute of Computational Linguistics
+# Morphology anlysis for Romansh: Orthographic Rules and Capitalization
+# Author: Reto Baumgartner
+# Date: June 2013
+################################################################################
+
+################################################################################
+# Alphabets
+################################################################################
+
+define BackVowel [a|o|u|à|á|â|ã|å|ò|ó|ô|õ|ù|ú|û];
+define FrontVowel [e|i|y|ä|æ|è|é|ê|ë|ì|í|î|ï|ö|ø|ü|ý|ÿ|œ];
+define Consonant [b|c|d|e|f|g|h|i|j|k|l|m|n|p|q|r|s|t|v|w|x|z|ç|ð|ñ|þ|š|ž];
+define Letter [BackVowel|FrontVowel|Consonant];
+define Char [Letter|{'}|{-}|{.}|{ß}|{’}|{´}|{`}];
+
+################################################################################
+# To write a hard 'g' or 'c' sound the letter h is set before e end i:
+################################################################################
+
+define HardCG1 [ "@H" -> 0 || {tg} _ ];
+define HardCG2 [ c c "@H" -> c h || _ FrontVowel ];
+define HardCG3 [ "@H" -> h || [c|g] _ FrontVowel ];
+define HardCG4 [ "@H" -> 0 ];
+define HardCG [HardCG1 .o. HardCG2 .o. HardCG3 .o. HardCG4];
+
+define SoftCG1 [ "@I" -> 0 || {tg} _ ];
+define SoftCG2 [ "@I" -> i || [c|g] _ BackVowel ];
+define SoftCG3 [ "@I" -> i || {gl} _ [BackVowel|e|y|ä|æ|è|é|ê|ë|ö|ø|ü|ý|ÿ|œ]];
+define SoftCG4 [ "@I" -> 0 ];
+define SoftCG [SoftCG1 .o. SoftCG2 .o. SoftCG3 .o. SoftCG4];
+
+define VelarPalatalRule [HardCG .o. SoftCG];
+
+################################################################################
+# Apostrophe
+################################################################################
+
+# The apostrophe is not always encoded the same way. The tool will recognize
+# several ways.
+define Apostrophe ["'" (->) "’" , "'" (->) "´" , "'" (->) "`"];
+
+################################################################################
+# Capitalization
+################################################################################
+
+# The rules for the capitalization restrict the vocabulary.
+# Thus it must be united with the non-capitalized forms. 
+# As other combinations may mostly appear in names and brands, it is enough.
+
+define UpperCase ["*" a -> A , "*" b -> B , "*" c -> C ,
+                  "*" d -> D , "*" e -> E , "*" f -> F,
+                  "*" g -> G , "*" h -> H , "*" i -> I ,
+                  "*" j -> J , "*" k -> K , "*" l -> L ,
+                  "*" m -> M , "*" n -> N , "*" o -> O ,
+                  "*" p -> P , "*" q -> Q , "*" r -> R ,
+                  "*" s -> S , "*" t -> T , "*" u -> U ,
+                  "*" v -> V , "*" w -> W , "*" x -> X ,
+                  "*" y -> Y , "*" z -> Z ,
+                  "*" à -> À , "*" á -> Á , "*" â -> Â ,
+                  "*" ã -> Ã , "*" ä -> Ä , "*" å -> Å ,
+                  "*" æ -> Æ , "*" ç -> Ç , "*" è -> È ,
+                  "*" é -> É , "*" ê -> Ê , "*" ë -> Ë ,
+                  "*" ì -> Ì , "*" í -> Í , "*" î -> Î ,
+                  "*" ï -> Ï , "*" ð -> Ð , "*" ñ -> Ñ ,
+                  "*" ò -> Ò , "*" ó -> Ó , "*" ô -> Ô ,
+                  "*" õ -> Õ , "*" ö -> Ö , "*" ø -> Ø ,
+                  "*" ù -> Ù , "*" ú -> Ú , "*" û -> Û ,
+                  "*" ü -> Ü , "*" ý -> Ý , "*" þ -> Þ ,
+                  "*" ÿ -> Ÿ , "*" š -> Š , "*" ž -> Ž ,
+                  "*" œ -> Œ ];
+
+################################################################################
+# Saving Networks
+################################################################################
+
+read regex UpperCase;
+save stack fstbinaries/Capitalization.fst
+clear stack
+
+read regex Apostrophe .o. VelarPalatalRule;
+save stack fstbinaries/OrthoRule.fst
+clear stack

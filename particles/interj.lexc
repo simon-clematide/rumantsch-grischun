@@ -1,0 +1,39 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Interjections
+! Author: Reto Baumgartner
+! Date: June 2013
+
+
+Multichar_Symbols +Interj
+
+LEXICON Root
+allo	INTERJ;
+au		INTERJ;
+bah		INTERJ;
+brr		INTERJ;
+chau	INTERJ;
+cucu	INTERJ;
+davent	INTERJ;
+ebain	INTERJ;
+enturn	INTERJ;
+halt	INTERJ;
+he		INTERJ;
+hm		INTERJ;
+hopla	INTERJ;
+juhui	INTERJ;
+merda	INTERJ;
+miau	INTERJ;
+muh		INTERJ;
+oh		INTERJ;
+oha		INTERJ;
+peng	INTERJ;
+pst		INTERJ;
+pumf	INTERJ;
+pumfata	INTERJ;
+si		INTERJ;
+uschia	INTERJ;
+vinavant	INTERJ;
+
+LEXICON INTERJ
++Interj:0	#;

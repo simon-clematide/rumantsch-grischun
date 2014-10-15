@@ -1,0 +1,28 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Irregular noun forms
+! Authors: Martina Bachmann, Melanie Widmer
+! Modifications: Reto Baumgartner
+! Date: June 2013
+
+Multichar_Symbols +Noun +Fem +Masc +Sg +Pl
+
+LEXICON Root
+ Substantive;
+
+LEXICON Substantive
+matta+Noun+Fem+Sg:matta #;
+matta+Noun+Fem+Pl:mattas #;
+matta+Noun+Fem+Pl:mattauns #;
+dunna+Noun+Fem+Sg:dunna #;
+dunna+Noun+Fem+Pl:dunnas #;
+dunna+Noun+Fem+Pl:dunnauns #;
+um+Noun+Masc+Sg:um #;
+um+Noun+Masc+Pl:umens #;
+savur+Noun+Fem+Sg:savur #;
+savur+Noun+Fem+Pl:savurs #;
+savur+Noun+Fem+Pl:savuors #;
+pare+Noun+Fem+Sg:pare #;
+pare+Noun+Fem+Pl:pareis #;
+cavriel+Noun+Masc+Sg:cavriel #;
+cavriel+Noun+Masc+Pl:cavreuls #;

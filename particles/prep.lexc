@@ -1,0 +1,57 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Prepositions
+! Author: Reto Baumgartner
+! Date: June 2013
+
+
+Multichar_Symbols +Prep +Apo
+
+LEXICON Root
+a		PREP;
+a:ad	VOCPREP;
+aifer	PREP;
+areguard	PREP;
+avant	PREP;
+concernent	PREP;
+cun		PREP;
+da		PREP;
+da:dad	VOCPREP;
+da:d'	VOCPREP;
+dadi	PREP;
+dador	PREP;
+danor	PREP;
+dapi	PREP;
+dasper	PREP;
+davart	PREP;
+davent	PREP;
+durant	PREP;
+en		PREP;
+enfin	PREP;
+enten	PREP;
+enturn	PREP;
+fin		PREP;
+malgrà	PREP;
+or		PREP;
+ora		PREP;
+ord		PREP;
+oravant	PREP;
+ordaifer	PREP;
+per		PREP;
+senza	PREP;
+si		PREP;
+sin		PREP;
+sper	PREP;
+suenter	PREP;
+sut		PREP;
+tenor	PREP;
+tranter	PREP;
+tras	PREP;
+vers	PREP;
+
+!! Morphology endings:
+LEXICON PREP
++Prep:0	#;
+
+LEXICON VOCPREP
++Prep+Apo:0	#;

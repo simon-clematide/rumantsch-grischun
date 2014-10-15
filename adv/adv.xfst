@@ -1,0 +1,223 @@
+# -*- coding: utf-8 -*-
+################################################################################
+# University of Zurich - Institute of Computational Linguistics
+# Morphology anlysis for Romansh: Adverbs
+# Author: Rolf Badat
+# Modifications: Reto Baumgartner
+# Date: June 2013
+################################################################################
+
+
+################################################################################
+#                                                                              #
+# 1. Bildung der Adverbien aus Adjektiven:                                     #
+#    Hier werden die Adjektive mit Partizipendungen nicht berücksichtigt, da   #
+#    diese nicht als Adverbien auftreten können.                               #
+#                                                                              #
+################################################################################
+
+
+
+# 1.0 Einige Vorbereitungen
+################################################################################
+
+# Alphabet
+define AdvVokal [a|e|i|o|u|y|à|è|ì|ò|ù|é|ó];
+define AdvKonsonant  [b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|z];
+define Letter [AdvVokal|AdvKonsonant];
+
+define AdjAdvLabels [ ["+Adj" [0|"+Sup"] "^DB" "+Adv"] ] ;
+
+define AdjAdvLabelDeleter [ ["+Adj"|"+Adv"|"+Comp"|"+Sup"|"^DB"] -> 0 ] ;
+
+
+
+# 1.1 Bildung der Adverbien aus regelmässigen Adjektiven
+################################################################################
+
+# Adjektive ohne Verdopplung des Endkonsonanten
+read text wordlists/adj-reg.txt
+define NonDoublingStems ;
+
+# Adjektive mit Verdopplung des Endkonsonanten
+read text wordlists/adj-doubling.txt
+define DoublingStems ;
+
+# 1.1.1 Bei akzentuiertem Vokal vor einem Konsonanten am Ende der männlichen
+# Form kommt es dabei zu einer Verdoppelung dieses Konsonanten für die weibliche
+# Form, und deshalb wiederum für das Adverb.
+
+define Doubling [
+	b -> {bb} || _ .#. ,, 
+	c -> {cc} || _ .#. ,, 
+	d -> {dd} || _ .#. ,,
+	f -> {ff} || _ .#. ,,
+	g -> {gg} || _ .#. ,,
+	l -> {ll} || _ .#. ,,
+	m -> {mm} || _ .#. ,,
+	n -> {nn} || _ .#. ,,
+	p -> {pp} || _ .#. ,,
+	r -> {rr} || _ .#. ,,
+	t -> {tt} || _ .#. ,,
+	z -> {zz} || _ .#.];
+
+# 1.1.2 Regelmässige Adverbien werden gebildet, indem der Suffix -main an die 
+#       weibliche Form des Adjektivs angehängt wird. Endet das Adjektiv auf 
+#       betontes -al, -ar oder -il und ist mehrsilbig fällt das 'a' vor -main
+#       aus.
+#       Die intensivierende Endung -ischem kann auch Adverbien auszeichnen.
+
+define R1 [[. .] -> "@A" {main}   || _ "+Adj" [$["+Adv"] - $["+Sup"]]];
+define R2 ["@A" -> 0 || AdvVokal AdvKonsonant Letter* [{al}|{ar}|{il}] _ ];
+define R3 ["@A" -> a ];
+define R4 [[. .] -> "@H" {ischem} || _ "+Adj" [$["+Sup"]]];
+define RegRules [R1 .o. R2 .o. R3 .o. R4];
+
+
+# 1.1.3 Definition
+
+# Anhängung der entsprechenden Tags
+define DoublingLex [[DoublingStems .o. Doubling] AdjAdvLabels];
+define NonDoublingLex [NonDoublingStems AdjAdvLabels];
+
+# Alle regelmässigen Adjektive mit Tags
+define RegLex [NonDoublingLex|DoublingLex];
+
+define AdvReg [RegLex .o. RegRules .o. AdjAdvLabelDeleter];
+
+
+# 1.2 Bildung der Adverbien aus Adjektiven mit flüchtigem Vokal
+################################################################################
+
+# Erstellen der Wortliste
+read text wordlists/adj-e.txt
+define FleStems ;
+
+# 1.2.1 Wenn die männliche Form mit -en, -el oder -er endet, verliert die 
+#       weiblichen Form das "e" dieser Endung (VowelDrop2). Zuvor werden 
+#       ortographische Besonderheiten für die Adjektive allegher, mellen, 
+#       viscal, stanchel, svizzer behandelt (VowelDrop1).
+
+define VowelDrop1 [
+	{bbe}  -> b  || _ [l|n|r] .#. ,,
+	{cche} -> c  || _ [l|n|r] .#. ,,
+	{che}  -> c  || \[s] _ [l|n|r] .#. ,,
+	{sca}  -> {sc} || _ [l|n|r] .#. ,,
+	{sche} -> {sch} || _ [l|n|r] .#. ,,
+	{dde}  -> d  || _ [l|n|r] .#. ,,
+	{ffe}  -> f  || _ [l|n|r] .#. ,,
+	{gghe} -> g  || _ [l|n|r] .#. ,,
+	{ghe}  -> g  || _ [l|n|r] .#. ,,
+	{glie} -> {gl} || _ [n|r]   .#. ,,
+	{lle}  -> l  || _ [n|r]   .#. ,,
+	{mme}  -> m  || _ [l|n|r] .#. ,,
+	{nne}  -> n  || _ [l|r]   .#. ,,
+	{nne}  -> n  || _ [l|r]   .#. ,,
+	{ppe}  -> p  || _ [l|n|r] .#. ,,
+	{rre}  -> r  || _ [l|n]   .#. ,,
+	{tte}  -> t  || _ [l|n|r] .#. ,,
+	{zze}  -> z  || _ [l|n|r] .#. ];
+
+define VowelDrop2 [ e -> 0 || AdvKonsonant _ [l|n|r] .#. ];
+
+# Collected
+define VowelDrop [VowelDrop1 .o. VowelDrop2];
+
+# 1.2.2 Bildung des Stammes für die Adverbform und Anhängung der entsprechenden
+# Tags
+define FleLex [[FleStems .o. VowelDrop] AdjAdvLabels];
+
+# 1.2.3 Definition (Anhänung der Endungen)
+define AdvE [FleLex .o. RegRules .o. AdjAdvLabelDeleter];
+
+
+# 1.3 Bildung der Adverbien aus Adjektiven mit Parizipendung
+################################################################################
+
+# Erstellen der Wortliste
+read text wordlists/adj-part.txt
+define PartStems ;
+
+# 1.3.1 Ersetzen der Endung -à/-ì um danach regelmässig weiterzufahren
+define PartEnd [[{à} -> {ad}] .o. [{ì} -> {id}]];
+
+# 1.3.2 Bildung des Stammes für die Adverbform und Anhängung der entsprechenden
+# Tags
+define PartLex [[PartStems .o. PartEnd] AdjAdvLabels];
+
+# 1.3.3 Definition (Anhänung der Endungen)
+define AdvPart [PartLex .o. RegRules .o. AdjAdvLabelDeleter];
+
+
+# 1.4 Bildung der Adverbien aus unveränderlichen Adjektiven
+################################################################################
+
+
+# 1.4.1 Aus den Regeln in Caduff/Caprez (2006) wird nicht ganz klar, ob diese
+#       Adjektive bei der Bildung des Adverbs das Suffix -main erhalten. Da
+#       es sich ausschliesslich um Farben handelt, wurde auf eine Derivation
+#       zu Adverbien verzichtet. Kommen passende Formen auf, kann man hier 
+#       deren Behandlung ergänzen.
+ 
+
+# 1.5 Bildung der Adverbien aus Adjektiven mit unregelmässiger Komp.-/Sup.-
+#     Bildung:
+#     'bain', 'mal', 'nausch', 'bler', 'pauc'
+#     Diese Adverbien werden folgend als Unregelmässige Adverbien aus lexc
+#     integriert.
+# 1.6 Bildung der Adverbien aus unregelmässigen Adjektiven:
+#     'agen', 'mez', 'lartg'
+#     Diese unregelmässigen Adverbien werden aus lexc importiert
+################################################################################
+
+read lexc < adv/adv-irr.lexc
+define AdvIrr ;
+
+
+# 1.7 Bildung der Adverbien aus Adjektiven, bei denen die männliche Form auch
+#     ein Adverb sein kann:
+################################################################################
+
+read text < wordlists/adv-adj.txt
+define AdvAdjMascStems ;
+
+define AdvAdjMascLex [ AdvAdjMascStems AdjAdvLabels ] ;
+
+
+# 1.7.1 Definition
+
+define AdvAdjMasc [ AdvAdjMascLex .o. AdjAdvLabelDeleter ] ;
+
+
+################################################################################
+#                                                                              #
+# 2. Kurzadverbien:                                                            #
+#    Hier wird ein Automat programmiert, der verschiedene Kurzadverbien gemäss #
+#    den Regeln 272, 278, 280-284 und 288-290 von Caduff/Caprez (2006)         #
+#    verarbeitet. Hier wird nur das Label "+Adv" verwendet, da diese Wörter    #
+#    weder von Adjektiven abgeleitet, noch einen Komparativ oder einen         #
+#    Superlativ haben.                                                         #
+#                                                                              #
+################################################################################
+
+
+# 2. Einlesen der Kurzadverbien über Liste und den Tag anhängen
+################################################################################
+
+
+read text < wordlists/adv-short.txt
+define AdvShortStems ;
+
+define AdvShort [ AdvShortStems "+Adv":0 ] ;
+
+
+################################################################################
+#                                                                              #
+# 3.  Alle Teiltransduktoren im Transduktor "Adverbs" vereinen                 #
+#                                                                              #
+################################################################################
+
+define Adverb [ AdvShort | AdvAdjMasc | [ AdvIrr .P. [ AdvReg | AdvE | AdvPart] ] ];
+
+read regex Adverb ;
+save stack fstbinaries/Adverb.fst

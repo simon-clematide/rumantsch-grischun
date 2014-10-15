@@ -1,0 +1,286 @@
+# -*- coding: utf-8 -*-
+################################################################################
+# University of Zurich - Institute of Computational Linguistics
+# Morphology anlysis for Romansh: Adjective
+# Author: Daniel Hegglin
+# Modifications: Reto Baumgartner
+# Date: June 2013
+################################################################################
+
+################################################################################
+# Grundsätzliche Definitionen & Tools
+################################################################################
+
+# Flexionsparadigma
+define Label           [ "+Adj" ];
+define Intensification [ 0 | "+Sup" ];
+define Genus           [ "+Fem" | "+Masc" ];
+define Numerus         [ "+Sg" | "+Pl" ];
+
+# Alphabet
+define Vowel [a|e|i|o|u];
+define Consonant  [b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|z];
+define Letter [Vowel|Consonant];
+
+# Cleanup
+define Cleanup ["+Adj" -> 0 , "+Sup" -> 0 ,
+	"+Fem" -> 0 , "+Masc" -> 0 ,
+	"+Sg" -> 0 , "+Pl" -> 0 ];
+
+################################################################################
+# Regelmässige Adjektive
+################################################################################
+#
+# Caduff/Caprez (2006): 3.3.3.213, 3.3.3.214, 3.3.3.215
+# 
+# Regelmässige Adjektive werden folgendermassen gebildet:
+# Es wurde in der Datei adj-reg.txt die männliche Form der Adjektive im singular
+# hinterlegt. Masc. Plural wird mit dem Anfügen eines -s an Masc./Sing. 
+# gebildet. Fem./Sing. wird durch Anfügen eines -a an Masc./Sing. erstellt. 
+# Fem./Pl. wird durch Anfügen eines -as an Masc./Sing. realisiert.
+#
+# Es sollte kein Doppel-s am Ende des Wortes angefügt werden. Die definierte
+# Regel Base verhindert dies und wird für verschiedene Adjektiv-Gruppen 
+# verwendet. Bei der Bildung der weiblichen Form können Verdoppelungen erfolgen.
+# Dies geschieht, wenn akzentuierten Vokale gefolgt von einem Konsonanten 
+# auftreten. Da das lexikal abhängig ist, stehen diese Verben in einer eigenen Liste.
+#
+################################################################################
+
+# Adjektive ohne Verdopplung des Endkonsonanten
+read text wordlists/adj-reg.txt
+define NonDoublingStems ;
+define NonDoublingLex [NonDoublingStems Label Intensification Genus Numerus];
+
+# Adjektive mit Verdopplung des Endkonsonanten
+read text wordlists/adj-doubling.txt
+define DoublingStems ;
+
+# Verdopplung des Endkonsonanten
+define Doubling [
+	b -> {bb} || _ .#. ,, 
+	c -> {cc} || _ .#. ,, 
+	d -> {dd} || _ .#. ,,
+	f -> {ff} || _ .#. ,,
+	g -> {gg} || _ .#. ,,
+	l -> {ll} || _ .#. ,,
+	m -> {mm} || _ .#. ,,
+	n -> {nn} || _ .#. ,,
+	p -> {pp} || _ .#. ,,
+	r -> {rr} || _ .#. ,,
+	t -> {tt} || _ .#. ,,
+	z -> {zz} || _ .#.];
+
+define DoubStems [DoublingStems .o. Doubling];
+
+#  Anhängung der entsprechenden Tags
+define DoublingMasc [DoublingStems Label "+Masc" Numerus];
+define DoublingFem  [DoubStems Label "+Fem" Numerus];
+define DoublingSup  [DoubStems Label "+Sup" Genus Numerus];
+
+define DoublingLex [DoublingMasc|DoublingFem|DoublingSup];
+
+
+# Alle regelmässigen Adjektive mit Tags
+define RegLex [NonDoublingLex|DoublingLex];
+
+# Erstellungsregeln
+define R1 [[. .] -> {s}                  || \[s] _ "+Adj" [$["+Masc" "+Pl"] - $["+Sup"]]];
+define R2 [[. .] -> {a}            || _ "+Adj" [$["+Fem" "+Sg"] - $["+Sup"]]];
+define R3 [[. .] -> {as}           || _ "+Adj" [$["+Fem" "+Pl"] - $["+Sup"]]];
+define R4 [[. .] -> "@H" {ischem}  || _ "+Adj" [$["+Sup" "+Masc" "+Sg"]]];
+define R5 [[. .] -> "@H" {ischems} || _ "+Adj" [$["+Sup" "+Masc" "+Pl"]]];
+define R6 [[. .] -> "@H" {ischma}  || _ "+Adj" [$["+Sup" "+Fem" "+Sg"]]];
+define R7 [[. .] -> "@H" {ischmas} || _ "+Adj" [$["+Sup" "+Fem" "+Pl"]]];
+define RegRules [R1 .o. R2 .o. R3 .o. R4 .o. R5 .o. R6 .o. R7];
+
+
+# Endgültige Definition
+define Regular [RegLex .o. RegRules .o. Cleanup];
+
+################################################################################
+# Bildung bei flüchtigem e und weitere orthographische Besonderheiten
+################################################################################
+#
+# Caduff/Caprez (2006): 3.3.3.215, 3.3.3.236
+#
+# Adjektive die auf "er", "el" oder "en" enden weisen meistens ein sogenanntes
+# flüchtiges e auf. Bei der Bildung der weiblichen Form kommt es hierbei zu 
+# von der regelmässigen Bildung abweichenden Flektierungen. "el" wird zu "la", "er" wird zu "ra"
+# "en" wird zu "na". Die Bildung des Plurals erfolgt wie bei der regelmässigen Form durch das
+# Hinzufügen eines -s am Ende der Singular-Form. Diese Worte wurden in der Datei adj-e.txt hinterlegt.
+#
+# Eine besondere Behandlung erfolgt für Worte die auf -scal enden. Diese Endung wird zu -scla in der weiblichen Form.
+# Beispiel: viscal (masc./sing.) -> viscla (masc./sing.). Auch diese Wörter wurden in der zugehörigen Datei eingefügt. 
+#
+# Weitere spezielle Bildungsregeln die zu beachten sind, sind die Löschung von h und i die vor einer Endung mit
+# "el","er" oder "en" stehen wenn die weibliche Form gebildet wird. Ein "sch" darf aber nicht entfernt werden. 
+# Konsonanten die doppelt vorkommen vor den besagten Endungen in der männlichen Einzahl werden zu einem Buchstaben reduziert.
+#
+################################################################################
+
+# Erstellen der Wortliste
+read text wordlists/adj-e.txt
+define FleStems ;
+
+# Special Cases
+define VowelDrop1 [
+	{bbe}  -> b  || _ [l|n|r] .#. ,,
+	{cche} -> c  || _ [l|n|r] .#. ,,
+	{che}  -> c  || \[s] _ [l|n|r] .#. ,,
+	{sca}  -> {sc} || _ [l|n|r] .#. ,,
+	{sche} -> {sch} || _ [l|n|r] .#. ,,
+	{dde}  -> d  || _ [l|n|r] .#. ,,
+	{ffe}  -> f  || _ [l|n|r] .#. ,,
+	{gghe} -> g  || _ [l|n|r] .#. ,,
+	{ghe}  -> g  || _ [l|n|r] .#. ,,
+	{glie} -> {gl} || _ [n|r]   .#. ,,
+	{lle}  -> l  || _ [n|r]   .#. ,,
+	{mme}  -> m  || _ [l|n|r] .#. ,,
+	{nne}  -> n  || _ [l|r]   .#. ,,
+	{nne}  -> n  || _ [l|r]   .#. ,,
+	{ppe}  -> p  || _ [l|n|r] .#. ,,
+	{rre}  -> r  || _ [l|n]   .#. ,,
+	{tte}  -> t  || _ [l|n|r] .#. ,,
+	{zze}  -> z  || _ [l|n|r] .#. ];
+# Other Cases
+define VowelDrop2 [ e -> 0 || Consonant _ [l|n|r] .#. ];
+# Collected
+define VowelDrop [VowelDrop1 .o. VowelDrop2];
+
+define ShortStems [FleStems .o. VowelDrop];
+
+#  Anhängung der entsprechenden Tags
+define FleMasc [FleStems Label "+Masc" Numerus];
+define FleFem  [ShortStems Label "+Fem" Numerus];
+define FleSup  [ShortStems Label "+Sup" Genus Numerus];
+
+define FleLex [FleMasc|FleFem|FleSup];
+
+# Endgültige Definition
+define Fleeing [FleLex .o. RegRules .o. Cleanup];
+
+################################################################################
+# Adjektive mit Partizip-Endung
+################################################################################
+# Caduff/Caprez (2006): 3.3.3.218
+#
+# Adjektive die aus Verben abgeleitet werden, weisen eine sogenannte Partizip-Endung auf. Diese sind in der Datei adj-part.txt
+# gesammelt worden. Die regelmässigen Formen dieser Adjektiv-Kategorie haben ein -ì oder ein -à am Ende des Wortes.
+# Bei der Bildung des Masc./Pl. wird daraus ein -ads. Bei der Bildung des Fem./Sing. wird daraus ein -ada.
+# Bei der Bildung des Fem./Pl. wird daraus ein -adas. Die unregelmässigen Adjektive mit Partizip-Endung werden gemäss
+# der regelmässigen Bildungsregeln erstellt.
+#
+################################################################################
+
+# Erstellen der Wortliste mit den entsprechenden Tags
+read text wordlists/adj-part.txt
+define ParStems ;
+define ParLex [ParStems Label Intensification Genus Numerus];
+
+# Rules to create the different forms
+define P1 [à -> {ads} || _ "+Adj" [$["+Masc" "+Pl"] - $["+Sup"]]];
+define P2 [à -> {ada} || _ "+Adj" [$["+Fem" "+Sg"] - $["+Sup"]]];
+define P3 [à -> {adas}|| _ "+Adj" [$["+Fem" "+Pl"] - $["+Sup"]]];
+define P4 [ì -> {ids} || _ "+Adj" [$["+Masc" "+Pl"] - $["+Sup"]]];
+define P5 [ì -> {ida} || _ "+Adj" [$["+Fem" "+Sg"] - $["+Sup"]]];
+define P6 [ì -> {idas}|| _ "+Adj" [$["+Fem" "+Pl"] - $["+Sup"]]];
+define P7 [à -> {adischem}  || _ "+Adj" [$["+Sup" "+Masc" "+Sg"]]];
+define P8 [à -> {adischems} || _ "+Adj" [$["+Sup" "+Masc" "+Pl"]]];
+define P9 [à -> {adischma}  || _ "+Adj" [$["+Sup" "+Fem" "+Sg"]]];
+define PA [à -> {adischmas} || _ "+Adj" [$["+Sup" "+Fem" "+Pl"]]];
+define PB [ì -> {idischem}  || _ "+Adj" [$["+Sup" "+Masc" "+Sg"]]];
+define PC [ì -> {idischems} || _ "+Adj" [$["+Sup" "+Masc" "+Pl"]]];
+define PD [ì -> {idischma}  || _ "+Adj" [$["+Sup" "+Fem" "+Sg"]]];
+define PE [ì -> {idischmas} || _ "+Adj" [$["+Sup" "+Fem" "+Pl"]]];
+
+define ParRules [P1 .o. P2 .o. P3 .o. P4 .o. P5 .o. P6 .o. P7 .o. P8 .o. P9 .o.
+	PA .o. PB .o. PC .o. PD .o. PE];
+
+# Endgültige Definition
+define Partizip [ParLex .o. ParRules .o. Cleanup];
+
+################################################################################
+# Unveränderliche Adjektive
+################################################################################
+#
+# Caduff/Caprez (2006): 3.3.3.217
+#
+# Es gibt auch Adjektive die nicht flektiert werden. Diese wurden in
+# der Datei adj-inv.txt hinterlegt. Die Masc./Sing.-Form aus der txt-Datei 
+# ist sogleich auch die Masc./Pl. und die feminine Form im singular und plural.
+#
+################################################################################
+
+# Erstellen der Wortliste mit den entsprechenden Tags
+
+read text < wordlists/adj-inv.txt
+define InvStems;
+define Invariable [InvStems Label Genus Numerus] .o. Cleanup ;
+
+################################################################################
+# Integration möglicher Formen, die wegen der Endungen Adjektive sein könnten.
+# Formen auf -à und -ì sind hier ausgeschlossen, als mögliche Partizipen.
+################################################################################
+
+# Adjektive ohne Verdopplung des Endkonsonanten
+define GuessingNonDoubling [[Letter* Vowel Letter*] Label Intensification Genus Numerus];
+
+
+# Adjektive mit Verdopplung des Endkonsonanten
+# Erstellen der Wortliste
+define GuessingDoublingStems [Letter+ Vowel [b|c|d|f|g|l|m|n|p|r|t|z]];
+define GuessingDoubStems [DoublingStems .o. Doubling];
+
+#  Anhängung der entsprechenden Tags
+define GuessingDoublingMasc [GuessingDoublingStems Label "+Masc" Numerus];
+define GuessingDoublingFem  [GuessingDoubStems Label "+Fem" Numerus];
+define GuessingDoublingSup  [GuessingDoubStems Label "+Sup" Genus Numerus];
+define GuessingDoubling [GuessingDoublingMasc|GuessingDoublingFem|GuessingDoublingSup];
+
+
+# Adjektive mit Vokalausfall
+# Erstellen der Wortliste
+define GuessingFleStems [Letter* [Letter* Vowel [Consonant+ [{el}|{er}|{en}]]|{scal}]];
+define GuessingShortStems [FleStems .o. VowelDrop];
+
+#  Anhängung der entsprechenden Tags
+define GuessingFleMasc [GuessingFleStems Label "+Masc" Numerus];
+define GuessingFleFem  [GuessingShortStems Label "+Fem" Numerus];
+define GuessingFleSup  [GuessingShortStems Label "+Sup" Genus Numerus];
+define GuessingFle [GuessingFleMasc|GuessingFleFem|GuessingFleSup];
+
+
+# Endgültige Definition
+define AdjectiveGuessing [[GuessingNonDoubling|GuessingDoubling|GuessingFle] .o. RegRules .o. Cleanup];
+
+################################################################################
+# Aufbau des net aus den verschiedenen Stacks
+################################################################################
+#
+# Die verschiedenen Kategorien werden schlussendlich zusammengeführt. Die
+# Lexc Dateien werden zunächst über read lexc eingelesen und anschliessen
+# über define zu einer Variable und vom Stack entfernt. Dann wird das endgültige
+# Netzwerk erstellt. 
+#
+################################################################################
+
+# Lese irreguläre Adjektive (Caduff/Caprez (2006): 3.3.3.215)
+read lexc < adj/adj-irr.lexc
+define Irregular;
+
+# Lese irreguläre Steigerungsformen (Caduff/Caprez (2006): 3.3.3.235)
+read lexc < adj/adj-comp-irr.lexc
+define IrregularSup;
+
+# Kombiniere die verschiedenen Kategorien
+clear stack
+define Adjective [Regular | Fleeing | Partizip | Invariable |
+	Irregular | IrregularSup];
+
+read regex Adjective ;
+save stack fstbinaries/Adjective.fst
+clear stack
+
+read regex AdjectiveGuessing ;
+save stack fstbinaries/AdjectiveGuessing.fst

@@ -1,0 +1,437 @@
+# -*- coding: utf-8 -*-
+################################################################################
+# University of Zurich - Institute of Computational Linguistics
+# Morphology anlysis for Romansh: Numerals (words), Numbers (with digits)
+# Author: Rolf Badat
+# Modifications: Reto Baumgartner
+# Date: June 2013
+################################################################################
+
+################################################################################
+#                                                                              #
+# 1. Zahlwörter:                                                               #
+#    Hier werden in den ersten zwei Schritten die Transduktoren für Zahl-      #
+#    wörter der Kardinal- und Ordinalzahlen  programmiert. Sie werden mit      #
+#    "+Num+Card" oder "+Num+Ord" gelabelt. In einem dritten Schritt wird noch  #
+#    ein Transduktor für Multiplikativ-Zahlen erstellt. Im Gegensatz zu den    #
+#    Ordinal- und Kardinalzahlen werden die Multiplikativ-Zahlen nicht als     #
+#    Zahlenwörter sondern als Adjektive mit "+Adj+Masc"/"+Adj+Fem" gelabelt.   #
+#                                                                              #
+################################################################################
+
+
+# 1.O Tools
+################################################################################
+
+# 1.0.1 e/ed zwischen Hundertern und Zahlen bis 40
+define NumRule1a [ "^=" -> 0    \\ {tschient} _ [{quar}|{tschunc}|{sess}|{sett}|{otg}|{nov}] {anta} ];
+define NumRule1b [ "^=" -> 0    \\ {tschient} _ {milli} ];
+define NumRule1c [ "^=" -> {ed} \\ {tschient} _ [{in}|{otg}] ];
+define NumRule1d [ "^=" -> {e}  || {tschient} _ ];
+define NumRule1 [ NumRule1a .o. NumRule1b .o. NumRule1c .o. NumRule1d ];
+
+# 1.0.2 ant/anta vor Vokal
+define NumRule2a [ a "^=" -> 0  \\ [{trent}|{ant}] _ [{in}|{otg}] ];
+define NumRule2b [ "^=" -> 0    || [{trent}|{ant}] _ ];
+define NumRule2 [ NumRule2a .o. NumRule2b ];
+
+# 1.0.3 ventg/ventga vor Konsonant
+define NumRule3a [ "^=" -> 0    \\ {ventg} _ [{in}|{otg}] ];
+define NumRule3b [ "^=" -> 0    \\ {ventg} _ {milli} ];
+define NumRule3c [ "^=" -> a    || {ventg} _ ];
+define NumRule3 [ NumRule3a .o. NumRule3b .o. NumRule3c ];
+
+# 1.0.4 e/ed zwischen Tausendern und kleinern Zahlen
+define NumRule4a [ "^=" -> {ed} \\ {milli} _ [{in}|{otg}] ];
+define NumRule4b [ "^=" -> {e}  || {milli} _ ];
+define NumRule4 [ NumRule4a .o. NumRule4b ];
+
+# 1.0.5 Suffigierung Ordinalzahlendung
+define NumRule5a [ ["+Num" "+Ord"] -> {v}   || {a} _ ];
+define NumRule5b [ ["+Num" "+Ord"] -> {tav} || {set} _ ];
+define NumRule5c [ ["+Num" "+Ord"] -> {av} ];
+define NumRule5 [ NumRule5a .o. NumRule5b .o. NumRule5c ];
+
+# 1.0.6 Suffigierung Multiplikativs-Zahlenendung
+define NumRule6a [ ["+Num" "+Adj"] -> {dub} ];
+define NumRule6 [ NumRule6a ];
+
+# 1.0.7 Sammlung
+define NumRule [ NumRule1 .o. NumRule2 .o. NumRule3 .o. NumRule4 .o. NumRule5 .o. NumRule6 ];
+
+# 1.0.8 Cleanup
+define Cleanup [
+	["^=" -> 0 ] .o. 
+	["+Num" -> 0 ] .o. 
+	["+Card" -> 0 ] .o. 
+	["+Masc" -> 0 ] .o. 
+	["+Fem" -> 0 ] .o. 
+	["+MF" -> 0 ] .o. 
+	["+Ord" -> 0 ]];
+
+# 1.1 Kardinalzahlen 0 - 999999
+################################################################################
+
+# 1.1.1 Hunderter
+define Tschient [
+	{tschient} |
+	{duatschient} |
+	{traitschient} | {traitschient}:{traiatschient} |
+	{quattertschient} |
+	{tschintgtschient} |
+	{sistschient} |
+	{setschient} |
+	{otgtschient} |
+	{novtschient} ];
+
+# 1.1.2 Zehner ab 20
+define Ventg [
+	{ventg} |
+	{trenta} |
+	{quaranta} |
+	{tschuncanta} |
+	{sessanta} |
+	{settanta} |
+	{otganta} |
+	{novanta} ];
+
+# 1.1.3 Zehn bis 19
+define Indesch [
+	{diesch}|
+	[{diesch} "^=" {in}]:{indesch} |
+	[{diesch} "^=" {dus}]:{dudesch} |
+	[{diesch} "^=" {trais}]:{tredesch} |
+	[{diesch} "^=" {quatter}]:{quattordesch} |
+	[{diesch} "^=" {tschintg}]:{quindesch} |
+	[{diesch} "^=" {sis}]:{sedesch} |
+	[{diesch} "^=" {set}]:{deschset} |
+	[{diesch} "^=" {otg}]:{deschdotg} |
+	[{diesch} "^=" {nov}]:{deschnov} ];
+
+# 1.1.4 Einer vor Tausender
+define In2 [
+	{in} |
+	{dua} |
+	{traia}|{traia}:{trai} |
+	{quatter} |
+	{tschintg} |
+	{sis} |
+	{set} |
+	{otg} |
+	{nov} ];
+
+# 1.1.5 Einer am Wortende
+define In1 [
+	{in}         "+Num" "+Card" "+Masc"|
+	{in}:{ina}   "+Num" "+Card" "+Fem" |
+	{dus}        "+Num" "+Card" "+Masc"|
+	{dus}:{duas} "+Num" "+Card" "+Fem" |
+	{dua}:{dua}  "+Num" "+Card" "+MF"  |
+	{trais}      "+Num" "+Card" "+MF"  |
+	{traia}      "+Num" "+Card" "+MF"  |
+	{trai}       "+Num" "+Card" "+MF"  |
+	{quatter}    "+Num" "+Card" "+MF"  |
+	{tschintg}   "+Num" "+Card" "+MF"  |
+	{sis}        "+Num" "+Card" "+MF"  |
+	{set}        "+Num" "+Card" "+MF"  |
+	{otg}        "+Num" "+Card" "+MF"  |
+	{nov}        "+Num" "+Card" "+MF"  ];
+
+# 1.1.6 Tags für mehrfache von 10
+define NumCardTag ["+Num" "+Card" "+MF"];
+
+# 1.1.7 Tausenderzahlen
+define Milli [
+	[(Tschient "^=") (Ventg "^=") (In2 "^=") {milli}]|
+	[(Tschient "^=")  Indesch          "^="  {milli}]];
+
+# 1.1.8 Kardinalzahlen von 1 - 999999 - noch rein konkatenativ
+define NumCardRaw [
+	[(Milli "^=") (Tschient "^=") (Ventg "^=") In1 ]|
+	[(Milli "^=") (Tschient "^=")  Indesch         NumCardTag ]|
+	[(Milli "^=") (Tschient "^=")  Ventg           NumCardTag ]|
+	[(Milli "^=")  Tschient                        NumCardTag ]|
+	[ Milli                                        NumCardTag ]];
+
+
+# 1.1.9 Definition der Kardinalzahlen
+define NumCard [ NumCardRaw .o. NumRule .o. Cleanup ];
+
+
+# 1.2 Ordinalzahlen 1. - 999999.
+################################################################################
+
+# 1.2.1 Einer für am Wortende
+define InOrd [{in}|{dus}|{trais}|{quatter}|{tschintg}|{sis}|{set}|{otg}|{nov}];
+
+# 1.2.2 Wortartentags
+define NumOrdTag ["+Num" "+Ord"];
+
+# 1.2.3 Ordinalzahlen von 1 - 999999 - noch rein konkatenativ
+define NumOrdRaw [
+	[(Milli "^=") (Tschient "^=") (Ventg "^=") InOrd NumOrdTag]|
+	[(Milli "^=") (Tschient "^=")  Indesch           NumOrdTag ]|
+	[(Milli "^=") (Tschient "^=")  Ventg             NumOrdTag ]|
+	[(Milli "^=")  Tschient                          NumOrdTag ]|
+	[ Milli                                          NumOrdTag ]];
+
+# 1.2.4 Endungen für avel(s)/avla(s)
+define NumOrdEnd [[ "+Masc":{el} | "+Fem":{la} ] [ "+Sg":0 | "+Pl":s ]];
+
+# 1.2.5 Ausnahmen: emprim, segund, terz, quart
+define NumOrdExceptions [[
+	[[{in}      "+Num" "+Ord"]:{emprim}]|
+	[[{dus}     "+Num" "+Ord"]:{segund}]|
+	[[{trais}   "+Num" "+Ord"]:{terz}]|
+	[[{quatter} "+Num" "+Ord"]:{quart}]]
+	[[[ "+Masc":0 | "+Fem":a ] [ "+Sg":0 | "+Pl":s ]]|
+	[ "+Fem":{'} "+Sg":0 ]]];
+
+# 1.2.6 Definition der Ordinalzahlen
+define NumOrd [NumOrdExceptions .P. [[ NumOrdRaw .o. NumRule .o. Cleanup ] NumOrdEnd ]];
+
+
+# 1.3 Multiplikativ-Zahlen (1 - 999999):
+#     Anders als die Kardinal- und Ordinalzahlen wird bei allen Multiplikativ-
+#     Zahlen zwischen männlich und weiblich unterschieden. Deshalb werden sie
+#     wie Adjektive mit "+Adj+Masc"/"+Adj+Fem" gelabelt.
+################################################################################
+
+# 1.3.1 Einer für am Wortende
+define InMulti [{in}|{dus}|{trai}|{quatter}|{tschintg}|{sis}|{set}|{otg}|{nov}];
+
+# 1.3.2 Wortartentags
+define NumMultiTag ["+Num" "+Adj"];
+
+# 1.3.3 Multiplikativ-Zahlen von 1 - 999999 - noch rein konkatenativ
+define NumMultiRaw [
+	[(Milli "^=") (Tschient "^=") (Ventg "^=") InMulti {dub} NumMultiTag]|
+	[(Milli "^=") (Tschient "^=")  Indesch             {dub} NumMultiTag ]|
+	[(Milli "^=") (Tschient "^=")  Ventg               {dub} NumMultiTag ]|
+	[(Milli "^=")  Tschient                            {dub} NumMultiTag ]|
+	[ Milli                                            {dub} NumMultiTag ]];
+
+# 1.3.4 Endungen für dubel(s)/dubla(s)
+define NumMultiEnd [[ "+Masc":{el} | "+Fem":{la} ] [ "+Sg":0 | "+Pl":s ]];
+
+# 1.3.5 Ausnahmen: simpel, dubel, tripel, quadrupel
+define NumMultiExceptions12 [[
+	[[{in}      "+Num" "+Adj"]:{simp}]|
+	[[{dus}     "+Num" "+Adj"]:{dub}]]
+	[ NumMultiEnd ]];
+define NumMultiExceptions34 [[
+	[[{trais}   "+Num" "+Adj"]:{trip}]|
+	[[{quatter} "+Num" "+Adj"]:{qadrup}]|
+	[[{quintup} "+Num" "+Adj"]:{tschintg}]|
+	[[{sextup} "+Num" "+Adj"]:{sis}]|
+	[[{septup} "+Num" "+Adj"]:{set}]|
+	[[{octup} "+Num" "+Adj"]:{otg}]|
+	[[{nonup} "+Num" "+Adj"]:{nov}]|
+	[[{dieschup} "+Num" "+Adj"]:{diesch}]|
+	[[{ventgup} "+Num" "+Adj"]:{ventg}]|
+	[[{tschientup} "+Num" "+Adj"]:{tschient}]]
+	[ NumMultiEnd ]];
+
+# 1.3.6 Definition der Multiplikativ-Zahlen
+define NumMulti [
+	NumMultiExceptions12 .P. 
+	[NumMultiExceptions34 |
+	[[ NumMultiRaw .o. NumRule .o. Cleanup ] NumMultiEnd ]]];
+
+################################################################################
+#                                                                              #
+# 2. Zahlen bestehend aus Ziffern:                                             #
+#    In den ersten zwei Schritten werden Transduktoren für Kardinal- und       #
+#    Ordinalzahlen erstellt. Sie erhalten die Labels "+Dig+Card"  respektive   #
+#    "+Dig+Ord". In den weiteren Schritten werden Transduktoren für Prozent-   #
+#    und Gradzahlen entwickelt. Sie werden mit "+Dig+Percent" respektive       #
+#    "+Dig+Degree" gelabelt.                                                   #
+#                                                                              #
+################################################################################
+
+# 2.1 Kardinalzahlen
+################################################################################
+
+# 2.1.1 Ziffern definieren
+define ZiffernMitNull [ "0"|1|2|3|4|5|6|7|8|9 ] ;
+define ZiffernOhneNull [ 1|2|3|4|5|6|7|8|9 ] ;
+
+# 2.1.2 Kardinalzahl definieren
+define DigCardOT [ "0" |
+	[ ZiffernOhneNull ZiffernMitNull* ]|
+	[ ZiffernOhneNull ZiffernMitNull^{0,2} [ 0:{'} ZiffernMitNull^3 ]+ ]];
+
+# 2.1.3 Tags hinzufügen und für Unterseite wieder löschen 
+define DigCard [ DigCardOT "+Dig":0 "+Card":0 ] ;
+
+
+# 2.2 Ordinalzahlen
+################################################################################
+
+# 2.2.1 Tags für Punktschreibweise
+define DigOrdEndDot ["+Dig":0 "+Ord":0];
+
+# 2.2.2 Anfügen eines Punktes und der Tags
+define MitPunktOrd [ DigCardOT 0:"." DigOrdEndDot] ;
+
+# 2.2.3 Endungen für die Endungenschreibweise
+define DigOrdEndAvel [
+	[["+Dig" "+Ord" "+Masc" "+Sg"]:{avel}]|
+	[["+Dig" "+Ord" "+Masc" "+Pl"]:{avels}]|
+	[["+Dig" "+Ord" "+Fem"  "+Sg"]:{avla}]|
+	[["+Dig" "+Ord" "+Fem"  "+Pl"]:{avlas}]];
+
+# 2.2.4 Möglichkeit,ab "5." den Punkt mit den Endungen -avel/-avla zu tauschen
+define MitEndungOrd [ [ 5|6|7|8|9|[ZiffernOhneNull ZiffernMitNull+] ] DigOrdEndAvel ] ;
+
+# 2.2.5 Definition Ordinalzahlen aus Ziffern
+define DigOrd [MitPunktOrd | MitEndungOrd];
+
+
+# 2.3 Prozentzahlen und Dezimalzahlen
+################################################################################
+
+# 2.3.1 Kommazahl und Prozentzahl definieren
+define Kommazahl [ DigCardOT ["."|","] ZiffernMitNull+ ] ;
+define DigPercentOT [ [Kommazahl | DigCardOT] "%" ] ;
+
+# 2.3.2 Tags hinzufügen
+define DigPercent [ DigPercentOT "+Dig":0 "+Percent":0 ] ;
+
+define DigDecimal [ Kommazahl "+Dig":0 "+Dec":0 ];
+
+
+# 2.4 Gradzahlen (bestehend aus Grad, Minuten und Sekunden)
+################################################################################
+
+# 2.4.1 Zehnerbereich für Minuten und Sekunden definieren
+define MinSekZehner [ "0"|1|2|3|4|5 ] ;
+
+# 2.4.2 Verschiedene Darstellungen definieren
+define EinMassGradzahl [ DigCardOT ["°"|"′"|"″"] ] ;
+
+define ZweiMassGradzahlGanz [ [DigCardOT "°"]
+			      [ [MinSekZehner ZiffernMitNull] | ZiffernMitNull ]
+			      ["′"|"″"] ] ;
+
+define ZweiMassGradzahlKomma [ [ DigCardOT "°" 
+			         [ [MinSekZehner ZiffernMitNull ["."|","]
+			            ZiffernMitNull+ ["′"|["″"]]] |
+			            [ZiffernMitNull ["."|","] ZiffernMitNull+
+			            ["′"|"″"]]
+			         ]
+			       ]
+			       |
+			       [ DigCardOT "'"
+			         [ [MinSekZehner ZiffernMitNull ["."|","]
+			            ZiffernMitNull+ "″"] |
+			            [ZiffernMitNull ["."|","] ZiffernMitNull+ "″"]
+			         ]
+			       ]
+			     ] ;
+
+define DreiMassGradzahlGanz [ DigCardOT "°" [[MinSekZehner ZiffernMitNull] |
+			      ZiffernMitNull] "′" [[MinSekZehner ZiffernMitNull] |
+			      ZiffernMitNull] "″"
+			    ] ;
+
+define DreiMassGradzahlKomma [ DigCardOT "°" [[MinSekZehner ZiffernMitNull] |
+			       ZiffernMitNull] "′" [[MinSekZehner ZiffernMitNull] |
+			       ZiffernMitNull] ["."|","] ZiffernMitNull+ "″"
+			     ] ;
+
+# 2.4.3 Alle möglichen Gradzahlen
+define DigDegreeOT [ EinMassGradzahl | ZweiMassGradzahlGanz | ZweiMassGradzahlKomma |
+		   DreiMassGradzahlGanz | DreiMassGradzahlKomma ] ;
+
+# 2.4.4 Tag hinzufügen
+define DigDegree [ DigDegreeOT "+Dig":0 "+Degree":0 ] ;
+
+################################################################################
+#                                                                              #
+# 3. Römische Zahlen:                                                          #
+#    Hier werden Transduktoren für Römische Kardinal- und Ordinalzahlen        #
+#    entwicklet. Sie werden mit "+Rom+Card" respektive "+Rom+Ord" gelabelt.    #
+#                                                                              #
+################################################################################
+# 3.1 Römische Kardinalzahlen von 1 bis 3999
+################################################################################
+
+# 3.1.1 Einer definieren
+define EinerRomLower [ {i}|{ii}|{iii}|{iv}|{v}|{vi}|{vii}|{viii}|{ix} ] ;
+define EinerRomUpper [ {I}|{II}|{III}|{IV}|{V}|{VI}|{VII}|{VIII}|{IX} ] ;
+
+# 3.1.2 Zehner definieren
+define ZehnerRomLower [ {x}|{xx}|{xxx}|{xl}|{l}|{lx}|{lxx}|{lxxx}|{xc} ] ;
+define ZehnerRomUpper [ {X}|{XX}|{XXX}|{XL}|{L}|{LX}|{LXX}|{LXXX}|{XC} ] ;
+
+# 3.1.3 Hunderter definieren
+define HunderterRomLower [ {c}|{cc}|{ccc}|{cd}|{d}|{dc}|{dcc}|{dccc}|{cm} ] ;
+define HunderterRomUpper [ {C}|{CC}|{CCC}|{CD}|{D}|{DC}|{DCC}|{DCCC}|{CM} ] ;
+
+# 3.1.4 Tausender definieren (bis 3000)
+define TausenderRomLower [ {m}|{mm}|{mmm} ] ;
+define TausenderRomUpper [ {M}|{MM}|{MMM} ] ;
+
+# 3.1.5 Zahlen von 1 bis 99 bilden
+define EinsBis99RomLower [ EinerRomLower | ZehnerRomLower | [ZehnerRomLower EinerRomLower] ] ;
+define EinsBis99RomUpper [ EinerRomUpper | ZehnerRomUpper | [ZehnerRomUpper EinerRomUpper] ] ;
+
+# 3.1.6 Zahlen von 1 bis 999 bilden
+define EinsBis999RomLower [ EinsBis99RomLower | HunderterRomLower |
+			    [HunderterRomLower EinsBis99RomLower] ] ;
+define EinsBis999RomUpper [ EinsBis99RomUpper | HunderterRomUpper |
+			    [HunderterRomUpper EinsBis99RomUpper] ] ;
+
+# 3.1.7 Zahlen von 1 bis 3999 bilden
+define RomCardLower [ EinsBis999RomLower | TausenderRomLower |
+		      [TausenderRomLower EinsBis999RomLower] ] ;
+define RomCardUpper [ EinsBis999RomUpper | TausenderRomUpper |
+		      [TausenderRomUpper EinsBis999RomUpper] ] ;
+
+# 3.1.8 Alle möglichen röm. Kardinalzahlen
+define RomCardOT [ RomCardLower | RomCardUpper ] ;
+
+# 3.1.9 Tags hinzufügen
+define RomCard [ RomCardOT "+Rom":0 "+Card":0 ];
+
+
+# 3.2 Römische Zahlen als Ordinalzahlen:
+#     Hier wird auf der Oberseite eine Römische Kardinalzahl und die Tags
+#     "+Rom+Ord" ausgegeben. Auf der Unterseite erscheint dann die entsprechende
+#     Römische Ordinalzahl.
+################################################################################
+
+# 3.2.1 Mit Punkt
+define RomOrdDot [ RomCardOT 0:"." "+Rom":0 "+Ord":0 ] ;
+
+# 3.2.2 Mit -avel/avla
+define RomOrdEndAvel [
+	[["+Rom" "+Ord" "+Masc" "+Sg"]:{avel}]|
+	[["+Rom" "+Ord" "+Masc" "+Pl"]:{avels}]|
+	[["+Rom" "+Ord" "+Fem"  "+Sg"]:{avla}]|
+	[["+Rom" "+Ord" "+Fem"  "+Pl"]:{avlas}]];
+
+define RomOrdAvel [ RomCardOT RomOrdEndAvel ] ;
+
+# 3.2.3 Definition
+define RomOrd [ RomOrdDot | RomOrdAvel ] ;
+
+################################################################################
+#                                                                              #
+# 4. Zahl wörter und Zahlzeichen je zusammennehmen und je einen                #
+# Transduktor bilden                                                           #
+#                                                                              #
+################################################################################
+
+define Numeral [ NumCard | NumOrd | NumMulti ] ;
+
+define Number [ DigCard | DigOrd | DigPercent | DigDegree | DigDecimal |
+	RomCard | RomOrd ];
+
+read regex Numeral ;
+save stack fstbinaries/Numeral.fst
+clear stack
+
+read regex Number ;
+save stack fstbinaries/Number.fst

@@ -1,0 +1,258 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Verbs with Vowel Change
+! Author: Reto Baumgartner
+! Date: June 2013
+
+Multichar_Symbols +Verb +PresInd +ImpInd +Cond +Conj +Impv +Inf +Gerund +PastPart +1P +2P +3P +Sg +Pl
++Pron +Pers +Masc +Fem +MF +Nom ^| +Apo *IGL *LA *INS *EL
+
+! The forms are divided into 3 stems:
+! 1. Infinitive (Verbs in -er also show vowel change in infinitive)
+! 2. Present with vowel change, conjunctive, imperative
+! 3. Present without vowel change, imperfect, conditional, imperative, gerund
+! These verbs are listed in Caduff&Caprez in article 127
+
+LEXICON Root
+!----- Verbs in -ar: -----
+acclamar:acclam		Stem13Ar;	acclamar:acclom		Stem2;
+chamar:cham			Stem13Ar;	chamar:chaum		Stem2;
+clamar:clam			Stem13Ar;	clamar:clom			Stem2;
+crudar:crud			Stem13Ar;	crudar:crod 		Stem2;
+cumandar:cumand		Stem13Ar;	cumandar:cumond		Stem2;
+dumagnar:dumagn		Stem13Ar;	dumagnar:dumogn		Stem2;
+dumandar:dumand		Stem13Ar;	dumandar:dumond		Stem2;
+dustar:dust			Stem13Ar;	dustar:dost			Stem2;
+duvrar:duvr			Stem13Ar;	duvrar:dovr			Stem2;
+empruvar:empruv		Stem13Ar;	empruvar:emprov		Stem2;
+empurtar:empurt 	Stem13Ar;	empurtar:emport		Stem2;
+empustar:empust		Stem13Ar;	empustar:empost		Stem2;
+engular:engul		Stem13Ar;	engular:engol		Stem2;
+exclamar:exclam		Stem13Ar;	exclamar:exclom		Stem2;
+fanar:fan			Stem13Ar;	fanar:fain			Stem2;
+franar:fran			Stem13Ar;	franar:frain		Stem2;
+furar:fur			Stem13Ar;	furar:for			Stem2;
+gudagnar:gudagn		Stem13Ar;	gudagnar:gudogn		Stem2;
+luar:lu				Stem13Ar;	luar:lieu			Stem2;
+ludar:lud			Stem13Ar;	ludar:laud			Stem2;
+manar:man			Stem13Ar;	manar:main			Stem2;
+mular:mul			Stem13Ar;	mular:mol			Stem2;
+nudar:nud			Stem13Ar;	nudar:nod			Stem2;
+ordinar:ordin		Stem13Ar;	ordinar:ordain		Stem2;
+palesar:pales		Stem13Ar;	palesar:palais		Stem2;
+pasar:pas			Stem13Ar;	pasar:pais			Stem2;
+perfurar:perfur		Stem13Ar;	perfurar:perfor		Stem2;
+pruvar:pruv			Stem13Ar;	pruvar:prov			Stem2;
+purtar:purt			Stem13Ar;	purtar:port 		Stem2;
+pusar:pus			Stem13Ar;	pusar:pos			Stem2;
+pussar:puss			Stem13Ar;	pussar:pauss		Stem2;
+reclamar:reclam		Stem13Ar;	reclamar:reclom		Stem2;
+recumandar:recumand	Stem13Ar;	recumandar:recumond	Stem2;
+remanar:reman		Stem13Ar;	remanar:remain		Stem2;
+renudar:renud		Stem13Ar;	renudar:renod		Stem2;
+repussar:repuss		Stem13Ar;	repussar:repauss	Stem2;
+ruassar:ruass		Stem13Ar;	ruassar:ruauss		Stem2;
+sbuvar:sbuv			Stem13Ar;	sbuvar:sbov			Stem2;
+schluppar:schlupp	Stem13Ar;	schluppar:schlopp	Stem2;
+scrudar:scrud		Stem13Ar;	scrudar:scrod		Stem2;
+scumandar:scumand	Stem13Ar;	scumandar:scumond	Stem2;
+sdermanar:sderman	Stem13Ar;	sdermanar:sdermain	Stem2;
+sgiamiar:sgiami		Stem13Ar;	sgiamiar:sgiomi		Stem2;
+sgramar:sgram		Stem13Ar;	sgramar:sgrom		Stem2;
+sgular:sgul			Stem13Ar;	sgular:sgol			Stem2;
+smanar:sman			Stem13Ar;	smanar:smain		Stem2;
+smular:smul			Stem13Ar;	smular:smol			Stem2;
+spular:spul			Stem13Ar;	spular:spol			Stem2;
+spustar:spust		Stem13Ar;	spustar:spost		Stem2;
+stgamiar:stgami		Stem13Ar;	stgamiar:stgomi		Stem2;
+stuppar:stupp		Stem13Ar;	stuppar:staup		Stem2;
+stuschar:stusch		Stem13Ar;	stuschar:stausch	Stem2;
+suandar:suand		Stem13Ar;	suandar:suond		Stem2;
+surdumandar:surdumand	Stem13Ar;	surdumandar:surdumond	Stem2;
+surduvrar:surduvr	Stem13Ar;	surduvrar:surdovr	Stem2;
+surmanar:surman		Stem13Ar;	surmanar:surmain	Stem2;
+tadlar:tadl			Stem13Ar;	tadlar:taidl		Stem2;
+telecumandar:telecumand	Stem13Ar;	telecumandar:telecumond	Stem2;
+tschanar:tschan		Stem13Ar;	tschanar:tschain	Stem2;
+tschufragnar:tschufragn	Stem13Ar;	tschufragnar:tschufrogn	Stem2;
+uvar:uv				Stem13Ar;	uvar:ov				Stem2;
+!----- Verbs in -ir: -----
+durmir:durm			Stem13Ir;	durmir:dorm			Stem2;
+emplenir:emplen		Stem13Ir;	emplenir:emplain	Stem2;
+murir:mur			Stem13Ir;	murir:mor			Stem2;
+surudir:surud		Stem13Ir;	surudir:suraud		Stem2;
+udir:ud				Stem13Ir;	udir:aud			Stem2;
+!----- Verbs in -er: -----
+baiver:bav			Stem3Er;	baiver:baiv			Stem12Er;
+clauder:clud		Stem3Er;	clauder:claud		Stem12Er;
+ensolver:ensulv		Stem3Er;	ensolver:ensolv		Stem12Er;
+entaisser:entess	Stem3Er;	entaisser:entaiss	Stem12Er;
+entschaiver:entschav	Stem3Er;	entschaiver:entschaiv	Stem12Er;
+moler:mul			Stem3Er;	moler:mol			Stem12Er;
+morder:murd 		Stem3Er;	morder:mord			Stem12Er;
+mover:muv			Stem3Er;	mover:mov			Stem12Er;
+naiver:nav			Stem3Er;	naiver:naiv			Stem12Er;
+percorscher:percursch	Stem3Er;	percorscher:percorsch	Stem12Er;
+pertschaiver:pertschav	Stem3Er;	pertschaiver:pertschaiv	Stem12Er;
+plover:pluv			Stem3Er;	plover:plov			Stem12Er;
+porscher:pursch		Stem3Er;	porscher:porsch		Stem12Er;
+retschaiver:retschav	Stem3Er;	retschaiver:retschaiv	Stem12Er;
+revolver:revulv		Stem3Er;	revolver:revolv		Stem12Er;
+sclauder:sclud		Stem3Er;	sclauder:sclaud		Stem12Er;
+smover:smuv			Stem3Er;	smover:smov			Stem12Er;
+sponder:spund		Stem3Er;	sponder:spond		Stem12Er;
+storscher:stursch	Stem3Er;	storscher:storsch	Stem12Er;
+surbaiver:surbav	Stem3Er;	surbaiver:surbaiv	Stem12Er;
+surporscher:surpursch	Stem3Er;	surporscher:surporsch	Stem12Er;
+svolver:svulv		Stem3Er;	svolver:svolv		Stem12Er;
+taisser:tess		Stem3Er;	taisser:taiss		Stem12Er;
+torrer:turr			Stem3Er;	torrer:torr			Stem12Er;
+volver:vulv			Stem3Er;	volver:volv			Stem12Er;
+!----- Verbs in -air: -----
+dulair:dul			Stem13Air;	dulair:dol			Stem2;
+giudar:giud			Stem13Air;	giudar:giaud		Stem2;
+rumagnair:rumagn	Stem13Air;	rumagnair:rumogn	Stem2;
+surgiudar:surgiud	Stem13Air;	surgiudar:surgiaud	Stem2;
+!----- Irregular forms of these verbs: -----
+!	Irregular;
+
+
+! Verb Class Division:
+!=====================
+! Verbs in -ar:
+LEXICON Stem13Ar
++Verb+Inf:ar			# ;
++Verb+Gerund:ond		# ;
+0:a						IndCondEnd;
+0:a						IndPlEnd;
+						PastPartA;
+
+! Verbs in -ir:
+LEXICON Stem13Ir
++Verb+Inf:ir			# ;
++Verb+Gerund:ind		# ;
+0:i						IndCondEnd;
+						IndPlEnd;
+						PastPartI;
+
+! Verbs in -air
+LEXICON Stem13Air
++Verb+Inf:air			# ;
++Verb+Gerund:end		# ;
+0:e						IndCondEnd;
+0:a						IndPlEnd;
+						PastPartI;
+
+! Verbs in -er
+LEXICON Stem12Er
++Verb+Inf:er			# ;
+						Stem2;
+LEXICON Stem3Er
++Verb+Gerund:end		# ;
+0:e						IndCondEnd;
+0:a						IndPlEnd;
+						PastPartI;
+
+! Endings for all Verbs (unstressed ending)
+LEXICON Stem2
+IndSgEnd;
+ConjEnd;
+
+! Endings for the Verbs (stressed ending)
+LEXICON IndCondEnd
+ImpEnd;
+CondEnd;
+
+
+! Endings:
+!=========
+! Present Indicative and Imperative (unstressed ending)
+LEXICON IndSgEnd
++Verb+PresInd+1P+Sg:*EL	# ;
++Verb+PresInd+2P+Sg:as	# ;
++Verb+PresInd+3P+Sg:a	# ;
++Verb+PresInd+3P+Pl:an	# ;
+! Suffigated Forms:
++Verb+PresInd+1P+Sg^|+Pron+Pers+Nom+1P+MF+Sg:*ELa	# ;
++Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+3P+Masc+Sg:a'l	# ;
++Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+3P+Fem+Sg:*LA'la	# ;
++Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+3P+MF+Sg:*IGLi	# ;
++Verb+PresInd+3P+Pl^|+Pron+Pers+Nom+3P+MF+Pl:ani	# ;
++Verb+PresInd+3P+Sg+Apo:a*INS	#;
+! Imperative
++Verb+Impv+2P+Sg:a		# ;
+
+
+
+! Present Indicative and Imperative (stressed ending)
+LEXICON IndPlEnd
++Verb+PresInd+1P+Pl:in	# ;
++Verb+PresInd+1P+Pl^|+Pron+Pers+Nom+1P+MF+Pl:insa	# ;
++Verb+PresInd+2P+Pl:is	# ;
+! Imperative:
++Verb+Impv+2P+Pl:i		# ;
+
+
+! Imperfect Indicative:
+LEXICON ImpEnd
++Verb+ImpInd+1P+Sg:va	# ;
++Verb+ImpInd+2P+Sg:vas	# ;
++Verb+ImpInd+3P+Sg:va	# ;
++Verb+ImpInd+1P+Pl:van	# ;
++Verb+ImpInd+2P+Pl:vas	# ;
++Verb+ImpInd+3P+Pl:van	# ;
+!! Suffigated Forms:
++Verb+ImpInd+3P+Sg+Apo:v'	# ;
++Verb+ImpInd+3P+Sg^|+Pron+Pers+Nom+3P+Masc+Sg:va'l	# ;
++Verb+ImpInd+3P+Sg^|+Pron+Pers+Nom+3P+Fem+Sg:v'la	# ;
++Verb+ImpInd+3P+Sg^|+Pron+Pers+Nom+3P+MF+Sg:vi		# ;
++Verb+ImpInd+1P+Pl^|+Pron+Pers+Nom+1P+MF+Pl:vansa	# ;
++Verb+ImpInd+3P+Pl^|+Pron+Pers+Nom+3P+MF+Pl:vani	# ;
+
+
+! Conjunctive
+LEXICON ConjEnd
++Verb+Conj+1P+Sg:ia		# ;
++Verb+Conj+2P+Sg:ias	# ;
++Verb+Conj+3P+Sg:ia		# ;
++Verb+Conj+1P+Pl:ian	# ;
++Verb+Conj+2P+Pl:ias	# ;
++Verb+Conj+3P+Pl:ian	# ;
+!! Suffigated Forms:
++Verb+Conj+3P+Sg+Apo:ian	# ;
++Verb+Conj+1P+Pl^|+Pron+Pers+Nom+1P+MF+Pl:iansa	#;
++Verb+Conj+3P+Pl^|+Pron+Pers+Nom+3P+MF+Pl:iani	#;
+
+
+! Conditional:
+LEXICON CondEnd
++Verb+Cond+1P+Sg:ss		# ;
++Verb+Cond+2P+Sg:ssas	# ;
++Verb+Cond+3P+Sg:ss		# ;
++Verb+Cond+1P+Pl:ssan	# ;
++Verb+Cond+2P+Pl:ssas	# ;
++Verb+Cond+3P+Pl:ssan	# ;
+!! Suffigated Foms:
++Verb+Cond+1P+Sg^|+Pron+Pers+Nom+1P+MF+Sg:ssa	#;
++Verb+Cond+3P+Sg^|+Pron+Pers+Nom+3P+MF+Sg:ssi	#;
++Verb+Cond+1P+Pl^|+Pron+Pers+Nom+1P+MF+Pl:ssansa	#;
++Verb+Cond+3P+Pl^|+Pron+Pers+Nom+3P+MF+Pl:ssani	#;
+
+! Past Participle -ar-Verbs
+LEXICON PastPartA
++Verb+PastPart+Masc+Sg:à #;
++Verb+PastPart+Fem+Sg:ada #;
++Verb+PastPart+Masc+Pl:ads #;
++Verb+PastPart+Fem+Pl:adas #;
+
+! Past Participle -air, -er, -ir-Verbs
+LEXICON PastPartI
++Verb+PastPart+Masc+Sg:ì #;
++Verb+PastPart+Fem+Sg:ida #;
++Verb+PastPart+Masc+Pl:ids #;
++Verb+PastPart+Fem+Pl:idas #;
+
+
+! Some irregular or double forms:
+!================================
+!LEXICON Irregular

@@ -1,0 +1,54 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Conjunctions and Subjunctions
+! Author: Reto Baumgartner
+! Date: June 2013
+
+Multichar_Symbols +Conj +Subj +Apo
+
+LEXICON Root
+CON;
+SUB;
+
+LEXICON CON
+che		CONEND;
+che:ch'	VOCCONEND;
+e		CONEND;
+e:ed	VOCCONEND;
+dentant	CONEND;
+ma		CONEND;
+mabain	CONEND;
+ni		CONEND;
+percunter	CONEND;
+perquai	CONEND;
+però	CONEND;
+sco		CONEND;
+u		CONEND;
+ubain	CONEND;
+%&		CONEND;
+
+!! Combinations are not part of the morphology:
+! tant...sco, u...ni, u...u, ni...ni etc.
+
+LEXICON SUB
+che		SUBEND;
+che:ch'	VOCSUBEND;
+sche	SUBEND;
+sche:sch'	VOCSUBEND;
+schebain	SUBEND;
+
+!! Combinations are not part of the morphology:
+! nua che, cur che, perquai che, etc.
+
+!! Endings with the tags
+LEXICON CONEND
++Conj:0	#;
+
+LEXICON VOCCONEND
++Conj+Apo:0	#;
+
+LEXICON SUBEND
++Subj:0	#;
+
+LEXICON VOCSUBEND
++Subj+Apo:0	#;

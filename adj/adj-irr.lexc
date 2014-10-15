@@ -1,0 +1,58 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Irregular adjectives
+! Author: Daniel Hegglin
+! Modifications: Reto Baumgartner
+! Date: June 2013
+
+Multichar_Symbols +Adj +Masc +Fem +Sg +Pl +Sup +Comp +Apo
+
+Lexicon Root
+! agen/atgna
+		agen:agen					MASC_SINGULAR;
+		agen:agens					MASC_PLURAL;
+		agen:atgna					FEM_SINGULAR;
+		agen:atgnas					FEM_PLURAL;
+		agen:atgn					SUPERLATIVE;
+! mez/mesa
+		mez:mez						MASC_SINGULAR;
+		mez:mezs					MASC_PLURAL;
+		mez:mesa					FEM_SINGULAR;
+		mez:mesas					FEM_PLURAL;
+		mez:mes						SUPERLATIVE;
+! lartg/largia
+		lartg:lartg					MASC_SINGULAR;
+		lartg:lartgs				MASC_PLURAL;
+		lartg:largia				FEM_SINGULAR;
+		lartg:largias				FEM_PLURAL;
+		lartg:larg					SUPERLATIVE;
+! apostrophated feminie forms
+		bun:bun'					FEM_SG_APOSTROPHATED;
+		mal:mal'					FEM_SG_APOSTROPHATED;
+		bel:bell'					FEM_SG_APOSTROPHATED;
+		trid:trid'					FEM_SG_APOSTROPHATED;
+		nausch:nausch'				FEM_SG_APOSTROPHATED;
+		mez:mes'					FEM_SG_APOSTROPHATED;
+		agen:atgn'					FEM_SG_APOSTROPHATED;
+		aut:aut'					FEM_SG_APOSTROPHATED;
+		
+Lexicon MASC_SINGULAR
+		+Adj+Masc+Sg:0				#;
+		
+Lexicon FEM_SINGULAR	
+		+Adj+Fem+Sg:0				#;
+		
+Lexicon MASC_PLURAL
+		+Adj+Masc+Pl:0				#;
+
+Lexicon FEM_PLURAL
+		+Adj+Fem+Pl:0				#;
+
+Lexicon SUPERLATIVE
+		+Adj+Sup+Masc+Sg:ischem		#;
+		+Adj+Sup+Masc+Pl:ischems	#;
+		+Adj+Sup+Fem+Sg:ischma		#;
+		+Adj+Sup+Fem+Pl:ischmas		#;
+
+Lexicon FEM_SG_APOSTROPHATED
+		+Adj+Fem+Sg+Apo:0				#;

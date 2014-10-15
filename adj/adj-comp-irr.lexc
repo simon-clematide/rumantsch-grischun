@@ -1,0 +1,23 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Irregular adjective comparatives
+! Author: Daniel Hegglin
+! Modifications: Reto Baumgartner
+! Date: June 2013
+
+Multichar_Symbols +Adj +Masc +Fem +Sg +Pl +Comp
+
+LEXICON Root
+		bun+Adj+Comp+Masc:meglier	NUMERUS;
+		bun+Adj+Comp+Fem:meglr		NUMERUS;
+		mal:pir						LABELS;
+		nausch+Adj+Comp+Masc:mender		NUMERUS;
+		nausch+Adj+Comp+Fem:menda		NUMERUS;
+
+LEXICON LABELS
+		+Adj+Comp+Masc:0			NUMERUS;
+		+Adj+Comp+Fem:a				NUMERUS;
+
+LEXICON NUMERUS
+		+Sg:0						#;
+		+Pl:s						#;

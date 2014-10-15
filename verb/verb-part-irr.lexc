@@ -1,0 +1,259 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Irregular participles
+! Author: Susanna Tron
+! Modifications: Reto Baumgartner
+! Date: June 2013
+
+! The endings are divided into five groups:
+! 1. like regular verbs in -ar: -à, -ada, -ads, -adas
+! 2. like regular verbs in -air, -er or -ir: -ì, -ida, -ids, -idas
+! 3. with a separate participle stem: -0, -a, -s, -as
+! 4. like 3. but with no further s in masculine plural: -0, -a, -0, -as
+! Duplicate. like 3. but with consonant doubling in the feminine forms: -0, -@a, -s, -@as
+
+! Some verbs like "far","trair", "vesair", "metter", "cuvrir" and "dir" can be 
+! combined with prefixes (e.g. "cuntrafar", "dismetter", "circumscriver", etc.) 
+! are implemented separately. So there is some overgeneration.
+
+! Regular forms that exist next to irregular ones have to be listed too
+! as they otherwise would be overwritten.
+!------------------------------------------------------------------------------!
+
+Multichar_Symbols +Verb +PastPart +Masc +Fem +Sg +Pl
+
+! Lexicon Root
+LEXICON Root
+  PastPartIrregStems;
+  Prefixes;
+
+! Prefixes which can be combined with the verbs of 'PrefixedPastPart'
+LEXICON Prefixes
+ad		PrefixedPastPart;
+at		PrefixedPastPart;
+circum	PrefixedPastPart;
+com		PrefixedPastPart;
+cumpro	PrefixedPastPart;
+cun		PrefixedPastPart;
+cuntra	PrefixedPastPart;
+de		PrefixedPastPart;
+des		PrefixedPastPart;
+dis		PrefixedPastPart;
+e		PrefixedPastPart;
+emper	PrefixedPastPart;
+ex		PrefixedPastPart;
+in		PrefixedPastPart;
+inter	PrefixedPastPart;
+o		PrefixedPastPart;
+per		PrefixedPastPart;
+pre		PrefixedPastPart;
+pro		PrefixedPastPart;
+re		PrefixedPastPart;
+read	PrefixedPastPart;
+rein	PrefixedPastPart;
+s		PrefixedPastPart;
+satis	PrefixedPastPart;
+scu		PrefixedPastPart;
+sur		PrefixedPastPart;
+sutta	PrefixedPastPart;
+tra		PrefixedPastPart;
+trans	PrefixedPastPart;
+
+! Verbs that can be prefigated with the prefixes of 'Prefixes'
+LEXICON PrefixedPastPart
+cuvrir:cuvert	End3;
+cuvrir:cuvr		End2;
+dir:ditg		End3;
+far:fatg		End3;
+metter:mess		End4;
+scriver:scrit	EndDuplicate;
+trair:tratg		End3;
+vesair:vis		End4;
+vesair:ves		End2;
+
+! Other past participle stems
+LEXICON PastPartIrregStems 
+agiuntar:agiunt		End3;
+arder:ars			End4;
+avair:g				End2;
+avrir:avert			End3;
+clauder:claus		End4;
+cleger:cletg		End3;
+cleger:cleg			End2;
+coier:cotg			End3;
+corrumper:corrut	EndDuplicate;
+crair:cret			EndDuplicate;
+crair:cart			End2;
+cuar:cu				End1;
+cumplanscher:cumplant	End3;
+cumplanscher:cumplansch	End2;
+cumponer:cumpost	End3;
+cumponer:cumpon		End2;
+cumprender:cumprais	End4;
+cumprender:cumprend	End2;
+cundecider:cundecis	End4;
+cundecider:cundecid	End2;
+cuvrir:cuvert		End3;
+cuvrir:cuvr			End2;
+dar:d				End1;
+dastgar:dastg		End3;
+decider:decis		End4;
+decider:decid		End2;
+decumponer:decumpost	End3;
+decumponer:decumpon	End2;
+decumprender:decumprais	End4;
+decumprender:decumprend	End2;
+defender:defais		End4;
+defender:defend		End2;
+dir:ditg			End3;
+distinguer:distinct	End3;
+distinguer:distingu	End2;
+duair:du			End2;
+emprender:emprais	End4;
+emprender:emprend	End2;
+encleger:encletg	End3;
+entschaiver:entschet	EndDuplicate;
+entschaiver:entschav	End2;
+esser:st			End1;
+evader:evas			End4;
+exaurir:exaust		End3;
+exaurir:exaur		End2;
+excluder:exclus		End4;
+exponer:expost		End3;
+exponer:expon		End2;
+exprimer:express	End4;
+exprimer:exprim		End2;
+extender:extais		End4;
+extender:extend		End2;
+extinguer:extinct	End3;
+extinguer:extingu	End2;
+far:fatg			End3;
+fender:fess			End4;
+fender:fend			End2;
+fugir:fug			End2;
+includer:inclus		End4;
+includer:includ		End2;
+interprender:interprais	End4;
+interprender:interprend	End2;
+interrumper:interrut	EndDuplicate;
+invader:invas		End4;
+ir:0				End2;
+irrumper:irrut		EndDuplicate;
+malencleger:malencletg	End3;
+malencleger:malencleg	End2;
+metter:mess			End4;
+moler:mieut			End3;
+morder:mors			End4;
+mulscher:mulsch		End3;
+murir:mort			End3;
+nascher:nat			End3;
+nascher:nasch		End2;
+nuar:nu				End1;
+offender:offais		End4;
+offender:offend		End2;
+offrir:offert		End3;
+offrir:offr			End2;
+opponer:oppost		End3;
+opponer:oppon		End2;
+perder:pers			End4;
+perder:perd			End2;
+persvader:persvas	End4;
+persvader:persvad	End2;
+planscher:plant		End3;
+planscher:plansch	End2;
+prencleger:perencletg	End3;
+pretender:pretais	End4;
+pretender:pretend	End2;
+prevair:preves		End2;
+prevair:previs		End4;
+prevegnir:prevegn	End2;
+proponer:propost	End3;
+proponer:propon		End2;
+prorumper:prorut	EndDuplicate;
+pudair:pud			End2;
+racoglier:racolt	End3;
+retschaiver:retschet	EndDuplicate;
+retschaiver:retschav	End2;
+revair:revis		End4;
+revair:reves		End2;
+revolver:revieut	End3;
+rir:ris				End4;
+ruier:ruis			End4;
+rumper:rut			EndDuplicate;
+savair:sav			End2;
+sclauder:sclaus		End4;
+scriver:scrit		EndDuplicate;
+scuder:scuss		End4;
+scuder:scud			End2;
+sfender:sfess		End4;
+sfender:sfend		End2;
+smerscher:smers		End4;
+snuar:snu			End1;
+sperder:spers		End4;
+sperder:sperd		End2;
+sponder:spons		End4;
+sponder:spund		End2;
+stizzar:stiz		EndDuplicate;
+stizzar:stizz		End1;
+storscher:stort		End3;
+storscher:stursch	End2;
+stuair:stu			End2;
+succeder:success	End4;
+succeder:succed		End2;
+suffrir:suffert		End3;
+suffrir:suffr		End2;
+surencleger:surencletg	End3;
+surencleger:surencleg	End2;
+surprender:surprais	End4;
+surprender:surprend	End2;
+surrir:surris		End4;
+suspender:suspais	End4;
+suspender:suspend	End2;
+suttaponer:suttapost	End3;
+suttastar:suttast	End1;
+svolver:svieut		End3;
+svolver:svulv		End2;
+taisser:tess		End2;
+terrenisar:terren	End1;
+torrer:tost			End3;
+trair:tratg			End3;
+tutgar:tutg			End3;
+tutgar:tutg			End1;
+unscher:unsch		End3;
+unscher:unsch		End2;
+vegnir:vegn			End2;
+vesair:vis			End4;
+vesiar:ves			End2;
+volver:vieut		End3;
+volver:vulv			End2;
+vulair:vul			End2;
+
+LEXICON End1  ! -à, -ada, -ads, -adas
++Verb+PastPart+Masc+Sg:à #;
++Verb+PastPart+Fem+Sg:ada #;
++Verb+PastPart+Masc+Pl:ads #;
++Verb+PastPart+Fem+Pl:adas #;
+
+LEXICON End2      ! -ì, -ida, -ids, -idas
++Verb+PastPart+Masc+Sg:ì #;
++Verb+PastPart+Fem+Sg:ida #;
++Verb+PastPart+Masc+Pl:ids #;
++Verb+PastPart+Fem+Pl:idas #;
+
+LEXICON End3	! 0, -a, -s, -as
++Verb+PastPart+Masc+Sg:0 #;
++Verb+PastPart+Fem+Sg:a #;
++Verb+PastPart+Masc+Pl:s #;
++Verb+PastPart+Fem+Pl:as #;
+
+LEXICON End4   ! 0, -a, 0, -as
++Verb+PastPart+Masc+Sg:0 #;
++Verb+PastPart+Fem+Sg:a #;
++Verb+PastPart+Masc+Pl:0 #;
++Verb+PastPart+Fem+Pl:as #;
+
+LEXICON EndDuplicate ! 0, -@a, -s, -@as  ("@" ensures consonant doubling).
++Verb+PastPart+Masc+Sg:0 #;
++Verb+PastPart+Fem+Sg:@a #; 
++Verb+PastPart+Masc+Pl:s #;
++Verb+PastPart+Fem+Pl:@as #;

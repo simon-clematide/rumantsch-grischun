@@ -1,0 +1,42 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Irregular adverbs
+! Author: Reto Baumgartner
+! Date: June 2013
+
+Multichar_Symbols +Adj +Adv +Sup +Comp ^DB
+
+LEXICON Root
+POSITIVE ;
+COMPARATIVE ;
+SUPERLATIVE ;
+
+LEXICON POSITIVE
+agen:atgnamain	PosEnd ;
+bun:bain		PosEnd ;
+bun:bunamain	PosEnd ;
+lartg:largiamain	PosEnd ;
+mez:mesamain	PosEnd ;
+
+LEXICON COMPARATIVE
+bler:dapli		CompEnd ;
+bun:meglier		CompEnd ;
+mal:pir			CompEnd ;
+nausch:mender	CompEnd ;
+pauc:main		CompEnd ;
+pauc:damain		CompEnd ;
+
+LEXICON SUPERLATIVE
+agen:atgnischem	SupEnd ;
+bun:bunischem	SupEnd ;
+lartg:largischem	SupEnd ;
+mez:mesischem	SupEnd ;
+
+LEXICON PosEnd
++Adj^DB+Adv:0 # ;
+
+LEXICON CompEnd
++Adj+Comp^DB+Adv:0 # ;
+
+LEXICON SupEnd
++Adj+Sup^DB+Adv:0 # ;

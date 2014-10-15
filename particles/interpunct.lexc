@@ -1,0 +1,58 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Interpunctation
+! Author: Reto Baumgartner
+! Date: June 2013
+
+
+Multichar_Symbols +Punc +End +Mid +Beg +PUNCT
+
+LEXICON Root
+%.	PUNCEND;
+%,	PUNCEND;
+%;	PUNCEND;
+%:	PUNCEND;
+%?	PUNCEND;
+%!	PUNCEND;
+%-	PUNC;
+%–	PUNC;
+%/	PUNCMID;
+%(	PUNCBEG;
+%)	PUNCEND;
+%[	PUNCBEG;
+%]	PUNCEND;
+%{	PUNCBEG;
+%}	PUNCEND;
+%•	PUNC;
+%*	PUNCMID;
+%~	PUNCT;
+%_	PUNCT;
+%«	PUNCBEG;
+%»	PUNCEND;
+%‹	PUNCBEG;
+%›	PUNCEND;
+%„	PUNCBEG;
+%“	PUNCEND;
+%“	PUNCBEG;
+%”	PUNCEND;
+%‚	PUNCBEG;
+%‘	PUNCEND;
+%‘	PUNCBEG;
+%’	PUNCEND;
+%%	PUNCT;
+%"	PUNC;
+
+LEXICON PUNCT
++PUNCT:0	#;
+
+LEXICON PUNC
++Punc:0	#;
+
+LEXICON PUNCBEG
++Punc+Beg:0	#;
+
+LEXICON PUNCMID
++Punc+Mid:0	#;
+
+LEXICON PUNCEND
++Punc+End:0	#;

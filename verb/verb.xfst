@@ -1,0 +1,348 @@
+# -*- coding: utf-8 -*-
+################################################################################
+# University of Zurich - Institute of Computational Linguistics
+# Morphology anlysis for Romansh: Verbs
+# Authors: Reto Baumgartner, Susanna Tron
+# Date: June 2013
+################################################################################
+
+################################################################################
+# Alphabet
+################################################################################
+define Vowel [a|e|i|o|u|à|è|é|ì|ò|ù];
+define Nonliquid [b|c|d|f|g|h|j|k|m|n|p|q|s|t|v|w|x|z];
+define Consonant [Nonliquid|r|l];
+define Letter [Vowel|Consonant];
+
+################################################################################
+#                                                                              #
+# Irregular and vowel-alternating verbs                                        #
+#                                                                              #
+# These verbs can be found in Caduff&Caprez article 127 (alternating verbs) or #
+# 128 (irregular verbs)                                                        #
+################################################################################
+#------------------------------------------------------------------------------#
+# Loading irregular and alternating verbs
+#------------------------------------------------------------------------------#
+# Irregular verb forms
+read lexc < verb/verb-irr.lexc
+define IrregularVerbRaw ;
+
+# Forms of vowel-alternating verbs
+read lexc < verb/verb-vchg.lexc
+define ChangingVerbRaw ;
+
+#------------------------------------------------------------------------------#
+# Loading irregular past participle forms
+#------------------------------------------------------------------------------#
+# Irregular past participle forms
+read lexc < verb/verb-part-irr.lexc
+define PastPartIrregRaw;
+
+################################################################################
+#                                                                              #
+# Regular verbs                                                                #
+#                                                                              #
+# These endings correspond to article 104 in Caduff&Caprez                     #
+# The endings with -esch can be found in article 106 in Caduff&Caprez          #
+# Verbs like 'currer' are explained in Caduff&Caprez article 108.              #
+# Verbs like 'apparair' and 'absolver' are here seen as regular.               #
+################################################################################
+#------------------------------------------------------------------------------#
+# Loading regular endings
+#------------------------------------------------------------------------------#
+# Endings for verbs like: gidar - jau gid
+read lexc < verb/verb-ar-end.lexc
+define VerbArEnd ;
+# Endings for verbs like: gratular - jau gratulesch
+read lexc < verb/verb-ar-esch-end.lexc
+define VerbArEschEnd ;
+
+# Endings for verbs like: temair - jau tem; vender - jau vend
+read lexc < verb/verb-er-end.lexc
+define VerbErEnd ;
+# Endings for verbs like: absolver - jau absolvesch; apparair - jau apparesch
+read lexc < verb/verb-er-esch-end.lexc
+define VerbErEschEnd ;
+
+# Endings for verbs like: partir - jau part; currer - jau cur (nus currin)
+read lexc < verb/verb-ir-end.lexc
+define VerbIrEnd ;
+# Endings for verbs like: finir - jau finesch
+read lexc < verb/verb-ir-esch-end.lexc
+define VerbIrEschEnd ;
+
+#------------------------------------------------------------------------------#
+# Loading regular lemmata
+#------------------------------------------------------------------------------#
+# Verbs like: temair - jau tem
+read text < wordlists/verb-air.txt
+define VerbAirInf ;
+# Verbs like: apparair - jau apparesch
+read text < wordlists/verb-air-esch.txt
+define VerbAirEschInf ;
+
+# Verbs like: gidar - jau gid
+read text < wordlists/verb-ar.txt
+define VerbArInf ;
+# Verbs like: gratular - jau gratulesch
+read text < wordlists/verb-ar-esch.txt
+define VerbArEschInf ;
+
+# Verbs like: vender - jau vend (nus vendain)
+read text < wordlists/verb-er.txt
+define VerbErInf ;
+# Verbs like: currer - jau cur (but: nus currin)
+read text < wordlists/verb-er2.txt
+define VerbEr2Inf ;
+# Verbs like: absolver - jau absolvesch
+read text < wordlists/verb-er-esch.txt
+define VerbErEschInf ;
+
+# Verbs like: partir - jau part
+read text < wordlists/verb-ir.txt
+define VerbIrInf ;
+# Verbs like: finir - jau finesch
+read text < wordlists/verb-ir-esch.txt
+define VerbIrEschInf ;
+
+#------------------------------------------------------------------------------#
+# Regular Verb Processing
+#------------------------------------------------------------------------------#
+# Deleting the infinitive ending to get the stems
+define VerbAirStem [VerbAirInf
+	.o. [{air} -> "@H" || _ .#.]];
+define VerbArStem  [VerbArInf
+	.o. [{iar} -> "@I" || [{gl}|{g}] _ .#.]
+	.o. [{ar}  -> "@H" || _ .#.]];
+define VerbErStem  [VerbErInf
+	.o. [{ier} -> "@I" || {gl} _ .#.]
+	.o. [{er}  -> "@I" || _ .#.]]; 
+define VerbEr2Stem [VerbEr2Inf
+	.o. [{ier} -> "@I" || {gl} _ .#.]
+	.o. [{er}  -> "@I" || _ .#.]];
+define VerbIrStem  [VerbIrInf
+	.o. [{ir}  -> "@I" || _ .#.]];
+define VerbAirEschStem [VerbAirEschInf
+	.o. [{air} -> "@H" || _ .#.]];
+define VerbArEschStem  [VerbArEschInf
+	.o. [{iar} -> "@I" || [{gl}|{g}] _ .#.]
+	.o. [{ar}  -> "@H" || _ .#.]];
+define VerbErEschStem  [VerbErEschInf
+	.o. [{ier} -> "@I" || {gl} _ .#.]
+	.o. [{er}  -> "@I" || _ .#.]];
+define VerbIrEschStem  [VerbIrEschInf
+	.o. [{ir}  -> "@I" || _ .#.]];
+
+# Adding the conjugation endings to the stems
+define VerbAir [VerbAirStem VerbErEnd];
+define VerbAr  [VerbArStem  VerbArEnd];
+define VerbEr  [VerbErStem  VerbErEnd];
+define VerbIr  [VerbIrStem  VerbIrEnd];
+define VerbEr2 [VerbEr2Stem VerbIrEnd];
+define VerbAirEsch [VerbAirEschStem VerbErEschEnd];
+define VerbArEsch  [VerbArEschStem  VerbArEschEnd];
+define VerbErEsch  [VerbErEschStem  VerbErEschEnd];
+define VerbIrEsch  [VerbIrEschStem  VerbIrEschEnd];
+
+# Defining the infinitve of the verbs
+define Infinitive [
+	[ VerbAirInf|
+	VerbArInf|
+	VerbErInf|
+	VerbIrInf|
+	VerbEr2Inf|
+	VerbAirEschInf|
+	VerbArEschInf|
+	VerbErEschInf|
+	VerbIrEschInf]
+	["+Verb"]:0 ["+Inf"]:0 ];
+
+# Collection of all regular verbs for further processing
+define RegularVerbRaw [
+	Infinitive|
+	VerbAir|
+	VerbAr|
+	VerbEr|
+	VerbIr|
+	VerbEr2|
+	VerbAirEsch|
+	VerbArEsch|
+	VerbErEsch|
+	VerbIrEsch];
+
+################################################################################
+#                                                                              #
+# Guessing Verb Forms for Hypothetical Infinitives                             #
+#                                                                              #
+# This module modulates verbs to be able to analyse forms unknown to the       #
+# system. Only the regular Forms from Caduff&Caprez articles 104 and 106 are   #
+# included. The verbs like 'gratular - jau gratulesch' are restricted by their #
+# endings.                                                                     #
+################################################################################
+# Verbs like: temair - jau tem
+define VerbGuessAirInf    [ Letter* Vowel+ Consonant+ Vowel* {air} ];
+# Verbs like: gidar - jau gid
+define VerbGuessArInf     [ Letter* Vowel+ Consonant+ Vowel* {ar} ];
+# Verbs like: vender - jau vend
+define VerbGuessErInf     [ Letter* Vowel+ Consonant+ Vowel* {er} ];
+# Verbs like: partir - jau part
+define VerbGuessIrInf     [ Letter* Vowel+ Consonant+ Vowel* {ir} ];
+# Verbs like: gratular - jau gratulesch
+define VerbGuessArEschInf [ Letter* Vowel+ Consonant+ {ular}|{inar}|{isar}|{uar}|{iunar}|{iar} ];
+# Verbs like: finir - jau finesch
+define VerbGuessIrEschInf [ Letter* Vowel+ Consonant+ Vowel* {ir} ];
+
+# Deleting the infinitive ending to get the stems
+define VerbGuessAirStem [VerbGuessAirInf
+	.o. [{air} -> "@H" || _ .#.]];
+define VerbGuessArStem  [VerbGuessArInf
+	.o. [{iar} -> "@I" || [{gl}|{g}] _ .#.]
+	.o. [{ar}  -> "@H" || _ .#.]];
+define VerbGuessErStem  [VerbGuessErInf
+	.o. [{ier} -> "@I" || {gl} _ .#.]
+	.o. [{er}  -> "@I" || _ .#.]];
+define VerbGuessIrStem  [VerbGuessIrInf
+	.o. [{ir}  -> "@I" || _ .#.]];
+define VerbGuessArEschStem  [VerbGuessArEschInf
+	.o. [{iar} -> "@I" || [{gl}|{g}] _ .#.]
+	.o. [{ar}  -> "@H" || _ .#.]];
+define VerbGuessIrEschStem  [VerbGuessIrEschInf
+	.o. [{ir}  -> "@I" || _ .#.]];
+
+# Adding the conjugation endings to the stems
+define VerbGuessAir [VerbGuessAirStem VerbErEnd];
+define VerbGuessAr  [VerbGuessArStem  VerbArEnd];
+define VerbGuessEr  [VerbGuessErStem  VerbErEnd];
+define VerbGuessIr  [VerbGuessIrStem  VerbIrEnd];
+define VerbGuessArEsch  [VerbGuessArEschStem VerbArEschEnd];
+define VerbGuessIrEsch  [VerbGuessIrEschStem VerbIrEschEnd];
+
+# Defining the infinitve of the hypothetic verbs
+define InfinitiveGuess [
+	[VerbGuessAirInf|
+	VerbGuessArInf|
+	VerbGuessErInf|
+	VerbGuessIrInf|
+	VerbGuessArEschInf|
+	VerbGuessIrEschInf]
+	["+Verb"]:0 ["+Inf"]:0 ];
+
+# Collection of hypothetic verb forms for further processing
+define VerbGuessRaw [
+	InfinitiveGuess|
+	VerbGuessAir|
+	VerbGuessAr|
+	VerbGuessEr|
+	VerbGuessIr|
+	VerbGuessArEsch|
+	VerbGuessIrEsch];
+
+################################################################################
+#                                                                              #
+# Writing Rules                                                                #
+#                                                                              #
+# 'Delete' deletes the precedent letter.                                       #
+# 'NonDouble' prevents double vowels in endings                                #
+# 'LastConsonant' prevents double consonant except 'ss' at the word end.       #
+# 'hh', 'jj', 'kk', 'qq', 'vv', 'ww', 'xx' are uncommon and therefore not      #
+# dealt with                                                                   #
+# DuplicateTZ ensures consonant doubling in feminine past participle forms.    #
+################################################################################
+define Delete [[Vowel|Consonant] "*DEL" -> 0] .o. ["*DEL" -> 0];
+define NonDouble [i "*DOUB" i -> i] .o. ["*DOUB" -> 0];
+define LastConsonant [{bb} -> b \/ _ .#. ,,
+                      {cc} -> c \/ _ .#. ,,
+                      {cc} "@H" -> c \/ _ .#. ,,
+                      {dd} -> d \/ _ .#. ,,
+                      {ff} -> f \/ _ .#. ,,
+                      {gg} -> g \/ _ .#. ,,
+                      {gg} "@H" -> g \/ _ .#. ,,
+                      {ll} -> l \/ _ .#. ,,
+                      {mm} -> m \/ _ .#. ,,
+                      {nn} -> n \/ _ .#. ,,
+                      {pp} -> p \/ _ .#. ,,
+                      {rr} -> r \/ _ .#. ,,
+                      {tt} -> t \/ _ .#. ,,
+                      {zz} -> z \/ _ .#.];
+
+# Ensure vowel doubling in feminine forms
+define DuplicateT [ {t@} -> {tt} || _ [a|{as}]];
+define DuplicateZ [ {z@} -> {zz} || _ [a|{as}]];
+define DuplicateTZ [DuplicateT .o. DuplicateZ];
+
+################################################################################
+#                                                                              #
+# Suffixes and Endings                                                         #
+#                                                                              #
+# The suffigated pronouns can be found in Caduff&Caprez article 167;           #
+# 210, 211 (ins); 212  (i/igl). The rules down here cover the cases when the   #
+# verb ending is affected by the pronouns.                                     # 
+# The ending -el can be found in Caduff&Caprez article 107                     #
+# The conjunctive ending is explained in Caduff&Caprez article 110             #
+################################################################################
+# Suffigated pronoun "la"
+define SuffLa1 ["*LA" -> 0 \/ .#. Consonant* Vowel+ _];
+define SuffLa2 [{a} "*LA" -> 0];
+define SuffLa3 ["*LA" -> 0];
+define SuffLa [SuffLa1 .o. SuffLa2 .o. SuffLa3];
+
+# Suffigated pronoun "i/igl"
+define SuffIgl1 ["*IGL" i -> 0 \/ i .#. _];
+define SuffIgl2 ["*IGL" -> 0 \/ .#. Consonant* Vowel+ _];
+define SuffIgl3 [{a} "*IGL" -> 0];
+define SuffIgl4 ["*IGL" -> 0];
+define SuffIgl [SuffIgl1 .o. SuffIgl2 .o. SuffIgl3 .o. SuffIgl4];
+
+# Endings before pronoun "ins"
+define SuffIns1 ["*INS" -> {n} \/ {distingua}|{mia}|{gia}|{zia}|{paja} _];
+define SuffIns2 ["*INS" -> {n} \/ .#. Consonant* Vowel+ _];
+define SuffIns3 [{a} "*INS" -> {'}];
+define SuffIns4 ["*INS" -> 0];
+define SuffIns [SuffIns1 .o. SuffIns2 .o. SuffIns3 .o. SuffIns4];
+
+# 1P. Sg. Ending -el
+define EndEl1 ["*EL" -> 0 \/ Vowel {gl} _];
+define EndEl2 ["*EL" -> {el} \/ {g} "@I" _];
+define EndEl3 ["*EL" -> {el} \/ .#. Consonant* Vowel+ _];
+define EndEl4 ["*EL" -> {el} \/ {mi}|{zi} _];
+define EndEl5 ["*EL" -> {el} \/ {li}|{giasch}|{plasch}|{tasch}|{distingu} _];
+define EndEl6 ["*EL" (->) {el} \/ [Nonliquid {r}|{l}|{mn}|{vd}] _];
+define EndEl7 ["*EL" -> 0];
+define EndEl [EndEl1 .o. EndEl2 .o. EndEl3 .o. EndEl4 .o. EndEl5 .o. EndEl6 .o.
+EndEl7];
+
+# i/j in Conjunctive
+define EndIj1 ["*IJ" -> 0 \/ [i|j] _];
+define EndIj2 ["*IJ" -> {j} \/ Vowel _];
+define EndIj3 ["*IJ" -> {i} ];
+define EndIj [EndIj1 .o. EndIj2 .o. EndIj3];
+
+# Collection
+define PronounSuffigation [SuffLa .o. SuffIgl .o. SuffIns .o. EndEl .o. EndIj];
+
+################################################################################
+#                                                                              #
+# Combination to Verb Forms                                                    #
+#                                                                              #
+################################################################################
+define IrregularVerb [IrregularVerbRaw .o. Delete .o. NonDouble .o. LastConsonant];
+define ChangingVerb [ChangingVerbRaw .o. Delete .o. NonDouble .o. LastConsonant
+	.o. PronounSuffigation];
+define PastPartIrregularV [ PastPartIrregRaw .o. DuplicateTZ ];
+define RegularVerb [RegularVerbRaw .o. Delete .o. NonDouble .o. LastConsonant
+	.o. PronounSuffigation];
+
+define Verb [PastPartIrregularV .P. [IrregularVerb|ChangingVerb|RegularVerb]];
+
+define VerbGuessing [VerbGuessRaw .o. Delete .o. NonDouble .o. LastConsonant
+	.o. PronounSuffigation];
+
+# Network for all implemented verbs
+read regex Verb;
+save stack fstbinaries/Verb.fst
+clear stack
+
+# Infinite network for the hypothetic verbs
+read regex VerbGuessing ;
+save stack fstbinaries/VerbGuessing.fst
