@@ -10,6 +10,7 @@
 # Alphabet
 ################################################################################
 define Vowel [a|e|i|o|u|à|è|é|ì|ò|ù];
+define PlainVowel [a|e|i|o|u];
 define Nonliquid [b|c|d|f|g|h|j|k|m|n|p|q|s|t|v|w|x|z];
 define Consonant [Nonliquid|r|l];
 define Letter [Vowel|Consonant];
@@ -181,17 +182,17 @@ define RegularVerbRaw [
 # endings.                                                                     #
 ################################################################################
 # Verbs like: temair - jau tem
-define VerbGuessAirInf    [ Letter* Vowel+ Consonant+ Vowel* {air} ];
+define VerbGuessAirInf    [ Letter* PlainVowel+ Consonant+ PlainVowel* {air} ];
 # Verbs like: gidar - jau gid
-define VerbGuessArInf     [ Letter* Vowel+ Consonant+ Vowel* {ar} ];
+define VerbGuessArInf     [ Letter* PlainVowel+ Consonant+ PlainVowel* {ar} ];
 # Verbs like: vender - jau vend
-define VerbGuessErInf     [ Letter* Vowel+ Consonant+ Vowel* {er} ];
+define VerbGuessErInf     [ Letter* PlainVowel+ Consonant+ PlainVowel* {er} ];
 # Verbs like: partir - jau part
-define VerbGuessIrInf     [ Letter* Vowel+ Consonant+ Vowel* {ir} ];
+define VerbGuessIrInf     [ Letter* PlainVowel+ Consonant+ PlainVowel* {ir} ];
 # Verbs like: gratular - jau gratulesch
-define VerbGuessArEschInf [ Letter* Vowel+ Consonant+ {ular}|{inar}|{isar}|{uar}|{iunar}|{iar} ];
+define VerbGuessArEschInf [ Letter* PlainVowel+ Consonant+ {ular}|{inar}|{isar}|{uar}|{iunar}|{iar} ];
 # Verbs like: finir - jau finesch
-define VerbGuessIrEschInf [ Letter* Vowel+ Consonant+ Vowel* {ir} ];
+define VerbGuessIrEschInf [ Letter* PlainVowel+ Consonant+ PlainVowel* {ir} ];
 
 # Deleting the infinitive ending to get the stems
 define VerbGuessAirStem [VerbGuessAirInf
