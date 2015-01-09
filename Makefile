@@ -6,7 +6,7 @@ ifndef XFST
 XFST:=xfst
 endif
 
-build: Grischun.fst GrischunGuessing.fst
+build: Grischun.fst GrischunGuessing.fst cgi-bin/data/GrischunGuessing.fst
 
 clean:
 	rm -f fstbinaries/*.fst Grischun.fst GrischunGuessing.fst
@@ -84,3 +84,7 @@ fstbinaries/Verb.fst fstbinaries/VerbGuessing.fst : verb/verb.xfst \
 # Orthography
 fstbinaries/Capitalization.fst fstbinaries/OrthoRule.fst : spelling/ortho-rule.xfst
 	$(XFST) -f spelling/ortho-rule.xfst
+
+# cgi-bin
+cgi-bin/data/GrischunGuessing.fst: GrischunGuessing.fst
+	ln -f $< $@
