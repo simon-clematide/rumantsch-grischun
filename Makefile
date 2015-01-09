@@ -1,74 +1,86 @@
 # Final usable networks
 
+# XFST=foma make build # create version with foma
+# Default xfst
+ifndef XFST
+XFST:=xfst
+endif
+
+build: Grischun.fst GrischunGuessing.fst
+
+clean:
+	rm -f fstbinaries/*.fst Grischun.fst GrischunGuessing.fst
+
+
 Grischun.fst GrischunGuessing.fst : collection-RG.xfst \
-fstbinaries/Adverb.fst \
-fstbinaries/Adjective.fst fstbinaries/AdjectiveGuessing.fst \
-fstbinaries/Noun.fst fstbinaries/NounGuessing.fst \
-fstbinaries/Verb.fst fstbinaries/VerbGuessing.fst \
-fstbinaries/Numeral.fst fstbinaries/Number.fst \
-fstbinaries/OrthoRule.fst \
-fstbinaries/Capitalization.fst \
-particles/conj.lexc \
-particles/interj.lexc \
-particles/interpunct.lexc \
-particles/letter.lexc \
-particles/prep.lexc \
-art-pron/art.lexc \
-art-pron/pron.lexc
-	xfst -f collection-RG.xfst
+ fstbinaries/Adverb.fst \
+ fstbinaries/Adjective.fst fstbinaries/AdjectiveGuessing.fst \
+ fstbinaries/Noun.fst fstbinaries/NounGuessing.fst \
+ fstbinaries/Verb.fst fstbinaries/VerbGuessing.fst \
+ fstbinaries/Numeral.fst fstbinaries/Number.fst \
+ fstbinaries/OrthoRule.fst \
+ fstbinaries/Capitalization.fst \
+ particles/conj.lexc \
+ particles/interj.lexc \
+ particles/interpunct.lexc \
+ particles/letter.lexc \
+ particles/prep.lexc \
+ art-pron/art.lexc \
+ art-pron/pron.lexc
+	$(XFST) -f collection-RG.xfst
 
 # Networks for the major parts of speech
 fstbinaries/Adjective.fst fstbinaries/AdjectiveGuessing.fst : adj/adj.xfst \
-adj/adj-irr.lexc \
-adj/adj-comp-irr.lexc \
-wordlists/adj-reg.txt \
-wordlists/adj-e.txt \
-wordlists/adj-part.txt \
-wordlists/adj-inv.txt
-	xfst -f adj/adj.xfst
+ adj/adj-irr.lexc \
+ adj/adj-comp-irr.lexc \
+ wordlists/adj-reg.txt \
+ wordlists/adj-e.txt \
+ wordlists/adj-part.txt \
+ wordlists/adj-inv.txt
+	$(XFST) -f adj/adj.xfst
 
 fstbinaries/Adverb.fst : adv/adv.xfst \
-wordlists/adj-reg.txt \
-wordlists/adj-e.txt \
-wordlists/adj-inv.txt \
-wordlists/adv-short.txt
-	xfst -f adv/adv.xfst
+ wordlists/adj-reg.txt \
+ wordlists/adj-e.txt \
+ wordlists/adj-inv.txt \
+ wordlists/adv-short.txt
+	$(XFST) -f adv/adv.xfst
 
 fstbinaries/Noun.fst fstbinaries/NounGuessing.fst : noun/noun.xfst \
-noun/noun-irr.lexc \
-wordlists/noun-fem.txt \
-wordlists/noun-fem-plur.txt \
-wordlists/noun-fem-sing.txt \
-wordlists/noun-masc.txt \
-wordlists/noun-masc-plur.txt \
-wordlists/noun-masc-sing.txt \
-wordlists/noun-part.txt
-	xfst -f noun/noun.xfst
+ noun/noun-irr.lexc \
+ wordlists/noun-fem.txt \
+ wordlists/noun-fem-plur.txt \
+ wordlists/noun-fem-sing.txt \
+ wordlists/noun-masc.txt \
+ wordlists/noun-masc-plur.txt \
+ wordlists/noun-masc-sing.txt \
+ wordlists/noun-part.txt
+	$(XFST) -f noun/noun.xfst
 
 fstbinaries/Numeral.fst fstbinaries/Number.fst : num/num.xfst
-	xfst -f num/num.xfst
+	$(XFST) -f num/num.xfst
 
 fstbinaries/Verb.fst fstbinaries/VerbGuessing.fst : verb/verb.xfst \
-verb/verb-irr.lexc \
-verb/verb-vchg.lexc \
-verb/verb-ar-esch-end.lexc \
-verb/verb-ar-end.lexc \
-verb/verb-er-esch-end.lexc \
-verb/verb-er-end.lexc \
-verb/verb-ir-esch-end.lexc \
-verb/verb-ir-end.lexc \
-verb/verb-part-irr.lexc \
-wordlists/verb-air-esch.txt \
-wordlists/verb-air.txt \
-wordlists/verb-ar-esch.txt \
-wordlists/verb-ar.txt \
-wordlists/verb-er-esch.txt \
-wordlists/verb-er.txt \
-wordlists/verb-er2.txt \
-wordlists/verb-ir-esch.txt \
-wordlists/verb-ir.txt
-	xfst -f verb/verb.xfst
+ verb/verb-irr.lexc \
+ verb/verb-vchg.lexc \
+ verb/verb-ar-esch-end.lexc \
+ verb/verb-ar-end.lexc \
+ verb/verb-er-esch-end.lexc \
+ verb/verb-er-end.lexc \
+ verb/verb-ir-esch-end.lexc \
+ verb/verb-ir-end.lexc \
+ verb/verb-part-irr.lexc \
+ wordlists/verb-air-esch.txt \
+ wordlists/verb-air.txt \
+ wordlists/verb-ar-esch.txt \
+ wordlists/verb-ar.txt \
+ wordlists/verb-er-esch.txt \
+ wordlists/verb-er.txt \
+ wordlists/verb-er2.txt \
+ wordlists/verb-ir-esch.txt \
+ wordlists/verb-ir.txt
+	$(XFST) -f verb/verb.xfst
 
 # Orthography
 fstbinaries/Capitalization.fst fstbinaries/OrthoRule.fst : spelling/ortho-rule.xfst
-	xfst -f spelling/ortho-rule.xfst
+	$(XFST) -f spelling/ortho-rule.xfst
