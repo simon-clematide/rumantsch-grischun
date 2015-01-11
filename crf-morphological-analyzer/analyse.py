@@ -5,6 +5,13 @@ from __future__ import division
 import sys
 import subprocess
 import re
+import codecs
+from optparse import OptionParser
+
+sys.stdout = codecs.getwriter('utf-8')(sys.__stdout__)
+sys.stderr = codecs.getwriter('utf-8')(sys.__stderr__)
+sys.stdin = codecs.getreader('utf-8')(sys.__stdin__)
+
 
 # use: python analyse.py < infile [> outfile]
 # or: python analyse.py infile [> outfile]
@@ -14,8 +21,8 @@ import re
 flookup = "flookup"
 analyseautomat = "GrischunGuessing.fst"
 # wapiti and model:
-wapiti = "../wapiti/wapiti"
-taggingmodel = "modell7"
+wapiti = "wapiti"
+taggingmodel = "modell9"
 # True = output will remain sentence split (no impact on non-split input):
 sentenesSplit = True
 # True = lemma and analysis will be separated (xfst style):
@@ -28,12 +35,14 @@ blankLine = True
 def betterPrint(token, analysis):
     if lemmaSplit:
         analysisPlus = re.sub(r'^([^^]+)\+(Adj|Adv|Art|Conj|Dig|Initial|Interj|Let|Noun|Num|Prep|Pron|Prop|Punc|PUNCT|Rom|Subj|Verb)', r'\1\t+\2', analysis, 1)
-        print(token + "\t" + analysisPlus) 
+        print(token + "\t" + analysisPlus)
     else:
         print(token + "\t" + analysis)
 
 def processSentence(sentence, lastsentence):
     # Collect output from morphology analysis:
+    print >> sys.stderr, '#MORPHO-CALL', [flookup, analyseautomat]
+
     morpho = subprocess.Popen(
         [flookup, analyseautomat],
         stdin = subprocess.PIPE, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
@@ -44,6 +53,7 @@ def processSentence(sentence, lastsentence):
     #input_file.seek(0)
 
     # Collect output from PoS-tagging
+    print >> sys.stderr, '#CRF-CALL', [wapiti, "label", "-m", taggingmodel, "-n", "3", "-p", "-s"]
     pos = subprocess.Popen(
         [wapiti, "label", "-m", taggingmodel, "-n", "3", "-p", "-s"],
         stdin = subprocess.PIPE, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
@@ -73,6 +83,7 @@ def processSentence(sentence, lastsentence):
             posscore = eval(p[i].split("\t")[2].split("/")[1])
 
             for m in morphocandidates:
+                if m == '': continue
                 morphotoken, morphoanalysis = m.split("\t", 1)
                 morpholemma, morphotagging = morphoanalysis.split("+", 1)
                 morphotags = morphotagging.split("+")
@@ -112,20 +123,52 @@ def processSentence(sentence, lastsentence):
         elif blankLine:
             print("")
 
-# Input as argument or piped
-if len(sys.argv) > 1:
-    input_file = open(sys.argv[1], "r")
-else:
-    input_file = sys.stdin
+def main():
+    """
+    Invoke this module as a script
+    """
+    parser = OptionParser(version='%prog 0.99')
+    parser.add_option('-l', '--logfile', dest='logfilename',
+                      help='write log to FILE', metavar='FILE')
+    parser.add_option('-q', '--quiet',
+                      action='store_true', dest='quiet', default=False,
+                      help='do not print status messages to stderr')
+    parser.add_option('-d', '--debug',
+                      action='store_true', dest='debug', default=False,
+                      help='print debug information')
+    parser.add_option('-m', '--model',
+                      action='store', dest='model', default=taggingmodel,
+                      help='choose trained crf model for morphological tagging (%default)')
+    parser.add_option('-a', '--analyzer',
+                      action='store', dest='analyzer', default=analyseautomat,
+                      help='choose binary finite state analyzer transducer (%default)')
 
-# Process sentences in input
-sentences = input_file.read().split("\n\n")
-sentencecounter = 0
-for s in sentences:
-    sentencecounter += 1
-    lastsentence = False
-    if sentencecounter == len(sentences):
-        lastsentence = True
-    processSentence(s, lastsentence)
-    if sentenesSplit and not lastsentence:
-        print("")
+    (options, args) = parser.parse_args()
+    if options.debug: print >> sys.stderr, "options=",options
+
+    if options.model != taggingmodel:
+        taggingmodel = options.model
+    if options.analyzer != analyseautomat:
+        analyseautomat = options.analyzer
+
+    # Input as argument or piped
+    if len(args) > 0:
+        input_file = codecs.open(args[0],'r','utf-8')
+    else:
+        input_file = sys.stdin
+
+    # Process sentences in input
+    sentences = input_file.read().split("\n\n")
+    sentencecounter = 0
+    for s in sentences:
+        sentencecounter += 1
+        lastsentence = False
+        if sentencecounter == len(sentences):
+            lastsentence = True
+        processSentence(s, lastsentence)
+        if sentenesSplit and not lastsentence:
+            print("")
+
+
+if __name__ == '__main__':
+    main()
