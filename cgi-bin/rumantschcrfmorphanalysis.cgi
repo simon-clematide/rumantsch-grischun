@@ -14,6 +14,11 @@ $tmpdatei = "/tmp/$file.$$";
 $Rohtext = param('rohtext');
 
 $Rohtext = decode("utf-8", $Rohtext);
+# simple tokenizer
+if ($Rohtext =~ /\b \b/) {
+	$Rohtext =~ s/ /\n/g;
+	$Rohtext =~ s/\./\n./g;
+};
 die "Could not create file\n" unless open(TMPFILE,"> $tmpdatei");
 $Rohtext =~ tr/\r/\n/s;
 die "Sorry, aber der Input war zu lang!\n" if (length($Rohtext)>25000);
