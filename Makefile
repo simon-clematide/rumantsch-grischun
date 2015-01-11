@@ -6,7 +6,7 @@ ifndef XFST
 XFST:=xfst
 endif
 
-build: Grischun.fst GrischunGuessing.fst cgi-bin/data/GrischunGuessing.fst cgi-bin/data/crf-morphpos-model
+build: Grischun.fst GrischunGuessing.fst cgi-bin/data/GrischunGuessing.fst cgi-bin/data/crf-morphpos-model cgi-bin/tools/analyse.py
 
 clean:
 	rm -f fstbinaries/*.fst Grischun.fst GrischunGuessing.fst
@@ -90,3 +90,5 @@ cgi-bin/data/GrischunGuessing.fst: GrischunGuessing.fst
 	ln -f $< $@
 cgi-bin/data/crf-morphpos-model:crf-morphological-analyzer/modell9
 	ln -f $< $@
+cgi-bin/tools/analyse.py:crf-morphological-analyzer/analyse.py
+	mkdir -p $(@D) && ln -f $< $@
