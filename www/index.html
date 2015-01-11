@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<title>Morphological Tools for Rumansh</title>
+		<style type="text/css">
+		* {font-family: Verdana, Arial, Helvetica, sans-serif;}
+		pre{font-family:monospaced,Courier}
+body {margin: 1em}
+p {font-size: 10px;font-family: Verdana, Arial, Helvetica, sans-serif;}
+/*h1 {font-size: 10px;font-family: Verdana, Arial, Helvetica, sans-serif;}*/
+td   { font-size: 10px;font-family: Verdana, Arial, Helvetica, sans-serif; padding: 1px; border: solid 0px #acacac }
+select,textarea {font-size: 10px;font-family: Verdana, Arial, Helvetica, sans-serif;width:100%}
+input {font-size: 10px;font-family: Verdana, Arial, Helvetica, sans-serif;}
+table { border-collapse: collapse; /*vertical-align: top*/ }
+
+	</style>
+			</head>
+
+		<body >
+		<p><a href="http://www.uzh.ch" >University of Zurich</a> | <a href="http://www.cl.uzh.ch" >Institute of Computational Linguistics</a> | Contact for questions and resources: <a href="http://www.cl.uzh.ch/siclemat" >Simon Clematide</a>
+<form action="http://kitt.cl.uzh.ch/kitt/cgi-bin/rumansh/dev/rumantschlexicalanalysis.cgi" method="POST" name="FormName" target="resultat">
+<h2>Morphological Analysis of words</h2>
+<input type="submit" name="submitButtonName">
+<table><tr><td width="25%">
+<fieldset><legend>Input (one word per line)</legend>
+<textarea name="rohtext" style="width:100%; height:20ex" rows="6" cols="120"></textarea>
+</fieldset>
+<td>
+<fieldset><legend>Output</legend>
+		<iframe style="width:100% ;height:20ex " name="resultat" src="denada.html" marginwidth="0" marginheight="0" align="left" scrolling="yes" >
+				<p>Ihr Browser kann leider keine eingebetteten Frames anzeigen</p>
+			</iframe></fieldset>
+</table></form>
+<form action="http://kitt.cl.uzh.ch/kitt/cgi-bin/rumansh/dev/rumantschcrfmorphanalysis.cgi" method="POST" name="FormName" target="resultat">
+<h2>Morphological Analysis of Sentences</h2>
+<input type="submit" name="submitButtonName">
+<table><tr><td width="25%">
+<fieldset><legend>Input (one word per line, sentences separated by empty line)</legend>
+<textarea name="rohtext" style="width:100%; height:20ex" rows="6" cols="120"></textarea>
+</fieldset>
+<td>
+<fieldset><legend>Output</legend>
+		<iframe style="width:100% ;height:20ex " name="resultat" src="denada.html" marginwidth="0" marginheight="0" align="left" scrolling="yes" >
+				<p>Ihr Browser kann leider keine eingebetteten Frames anzeigen</p>
+			</iframe></fieldset>
+</table></form>
+			<h2>References</h2>
+			A detailed description of the implementation of
+				</body>
+
+</html>
