@@ -34,31 +34,31 @@ blankLine = False
 
 def betterPrint(token, analysis):
     if lemmaSplit:
-        analysisPlus = re.sub(r'^([^^]+)\+(Adj|Adv|Art|Conj|Dig|Initial|Interj|Let|Noun|Num|Prep|Pron|Prop|Punc|PUNCT|Rom|Subj|Verb)', r'\1\t+\2', analysis, 1)
+        analysisPlus = re.sub(r'^([^^]+)\+(Abbr|Adj|Adv|Art|Conj|Dig|Initial|Interj|Let|Noun|Num|Prep|Pron|Prop|Punc|PUNCT|Rom|Subj|Verb)', r'\1\t+\2', analysis, 1)
         print(token + "\t" + analysisPlus)
     else:
         print(token + "\t" + analysis)
 
-def processSentence(sentence, lastsentence):
+def processSentence(sentence, lastsentence,options=None):
     # Collect output from morphology analysis:
-    print >> sys.stderr, '#MORPHO-CALL', " ".join([flookup, analyseautomat])
-
+    if options.debug: print >> sys.stderr, '#MORPHO-CALL', " ".join([flookup, analyseautomat])
+    sentence_utf8 = sentence.encode('utf-8')
     morpho = subprocess.Popen(
         [flookup, analyseautomat],
         stdin = subprocess.PIPE, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
-    morphoout, stderr = morpho.communicate(sentence)
-    morphowords = morphoout.rstrip().split("\n\n")
-
+    morphoout, stderr = morpho.communicate(sentence_utf8)
+    morphowords = morphoout.decode('utf-8').rstrip().split("\n\n")
+    if options.debug: print >> sys.stderr,morphowords
     # Rewind input
     #input_file.seek(0)
 
     # Collect output from PoS-tagging
-    print >> sys.stderr, '#CRF-CALL', " ".join([wapiti, "label", "-m", taggingmodel, "-n", "3", "-p", "-s"])
+    if options.debug: print >> sys.stderr, '#CRF-CALL', " ".join([wapiti, "label", "-m", taggingmodel, "-n", "3", "-p", "-s"])
     pos = subprocess.Popen(
         [wapiti, "label", "-m", taggingmodel, "-n", "3", "-p", "-s"],
         stdin = subprocess.PIPE, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
-    posout, stderr = pos.communicate(sentence)
-    poswordsmulti = posout.rstrip().split("\n\n")
+    posout, stderr = pos.communicate(sentence_utf8)
+    poswordsmulti = posout.decode('utf-8').rstrip().split("\n\n")
     poswords = []
     poswords.append(poswordsmulti[0].split("\n")[1:])
     poswords.append(poswordsmulti[1].split("\n")[1:])
@@ -66,7 +66,7 @@ def processSentence(sentence, lastsentence):
 
     wordcounter = 0
     # Compare results
-    for i in range(len(morphowords)):
+    for i,mw in enumerate(morphowords):
         wordcounter += 1
 
         matching = []
@@ -74,7 +74,7 @@ def processSentence(sentence, lastsentence):
         matchingminus2 = []
         notmatching = []
 
-        morphocandidates = morphowords[i].split("\n")
+        morphocandidates = mw.split("\n")
 
         for p in poswords:
             postoken = p[i].split("\t")[0]
@@ -164,11 +164,13 @@ def main():
     if options.debug: print >>sys.stderr, sentences
     sentencecounter = 0
     for s in sentences:
+        s = s.strip()
+        if s == '': continue
         sentencecounter += 1
         lastsentence = False
         if sentencecounter == len(sentences):
             lastsentence = True
-        processSentence(s, lastsentence)
+        processSentence(s, lastsentence,options=options)
         if sentenesSplit and not lastsentence:
             print("")
 
