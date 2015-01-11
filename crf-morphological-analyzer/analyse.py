@@ -127,6 +127,8 @@ def main():
     """
     Invoke this module as a script
     """
+    global taggingmodel
+    global analyseautomat
     parser = OptionParser(version='%prog 0.99')
     parser.add_option('-l', '--logfile', dest='logfilename',
                       help='write log to FILE', metavar='FILE')
