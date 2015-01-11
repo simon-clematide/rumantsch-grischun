@@ -28,7 +28,7 @@ sentenesSplit = True
 # True = lemma and analysis will be separated (xfst style):
 lemmaSplit = True
 # True = blank line between every word (xfst and foma style):
-blankLine = True
+blankLine = False
 
 ################################################################################
 
@@ -41,7 +41,7 @@ def betterPrint(token, analysis):
 
 def processSentence(sentence, lastsentence):
     # Collect output from morphology analysis:
-    print >> sys.stderr, '#MORPHO-CALL', [flookup, analyseautomat]
+    print >> sys.stderr, '#MORPHO-CALL', " ".join([flookup, analyseautomat])
 
     morpho = subprocess.Popen(
         [flookup, analyseautomat],
@@ -53,7 +53,7 @@ def processSentence(sentence, lastsentence):
     #input_file.seek(0)
 
     # Collect output from PoS-tagging
-    print >> sys.stderr, '#CRF-CALL', [wapiti, "label", "-m", taggingmodel, "-n", "3", "-p", "-s"]
+    print >> sys.stderr, '#CRF-CALL', " ".join([wapiti, "label", "-m", taggingmodel, "-n", "3", "-p", "-s"])
     pos = subprocess.Popen(
         [wapiti, "label", "-m", taggingmodel, "-n", "3", "-p", "-s"],
         stdin = subprocess.PIPE, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
