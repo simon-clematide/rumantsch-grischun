@@ -14,6 +14,7 @@ $tmpdatei = "/tmp/$file.$$";
 $Rohtext = param('rohtext');
 
 $Rohtext = decode("utf-8", $Rohtext);
+$Rohtext =~ s/\r//g;
 # simple tokenizer
 if ($Rohtext =~ /\b \b/) {
 	$Rohtext =~ s/ /\n/g;
