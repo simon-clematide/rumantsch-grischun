@@ -161,6 +161,7 @@ def main():
 
     # Process sentences in input
     sentences = input_file.read().split("\n\n")
+    if options.debug: print >>sys.stderr, sentences
     sentencecounter = 0
     for s in sentences:
         sentencecounter += 1
