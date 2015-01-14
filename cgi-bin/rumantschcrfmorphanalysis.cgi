@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-binmode STDOUT, ":utf8";
+#binmode STDOUT, ":utf8";
 binmode STDIN, ":utf8";
 use File::Spec;
 my ($volume, $CGIDIR, $file) = File::Spec->splitpath(__FILE__);
@@ -13,7 +13,7 @@ $tmpdatei = "/tmp/$file.$$";
 
 $Rohtext = param('rohtext');
 
-$Rohtext = decode("utf-8", $Rohtext);
+#$Rohtext = decode("utf-8", $Rohtext);
 $Rohtext =~ s/\r//g;
 # simple tokenizer
 if ($Rohtext =~ /\b \b/) {
@@ -30,16 +30,16 @@ undef $/ ;
 die "Keine Datei $CGIDIR/ vorhanden\n" unless -x "$CGIDIR/$file";
 die "cannot fork: $!" unless defined($pid = open(SICHERES_KIND, "-|"));
 if ($pid == 0) {
-  exec("python $CGIDIR/tools/analyse.py -a data/GrischunGuessing.fst -m data/crf-morphpos-model $tmpdatei ")
+  exec("python $CGIDIR/tools/analyse.py -a data/GrischunGuessing.fst -m data/crf-morphpos-model -d $tmpdatei ")
 	or die "Kann $! $?  nicht ausfuehren: $!";
 } else {
   undef $/ ;
 #die "Verarbeitet\n";
-  print "Content-Type: text/plain
+  print "Content-Type: text/plain; charset=utf-8
 
 ";
   while (<SICHERES_KIND>) { print };
 
   close(SICHERES_KIND);
 }
-unlink $tmpdatei;
+#unlink $tmpdatei;
