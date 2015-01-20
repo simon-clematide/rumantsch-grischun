@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-binmode STDOUT, ":utf8";
+#binmode STDOUT, ":utf8";
 binmode STDIN, ":utf8";
 use File::Spec;
 my ($volume, $CGIDIR, $file) = File::Spec->splitpath(__FILE__);
