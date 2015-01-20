@@ -12,8 +12,8 @@ use Encode qw(decode encode);
 $tmpdatei = "/tmp/$file.$$";
 
 $Rohtext = param('rohtext');
-
-$Rohtext = decode("utf-8", $Rohtext);
+$Rohtext =~ s/\r//g;
+#$Rohtext = decode("utf-8", $Rohtext);
 die "Could not create file\n" unless open(TMPFILE,"> $tmpdatei");
 $Rohtext =~ tr/\r/\n/s;
 die "Sorry, aber der Input war zu lang!\n" if (length($Rohtext)>25000);
