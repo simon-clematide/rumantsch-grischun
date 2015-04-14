@@ -3,4 +3,4 @@ INPUT:=train4000.txt
 TPL:=rumantsch-template.txt
 MODEL:=$(INPUT).mod
 cycle:
-	wapiti train -p $(TPL) $(INPUT) > $(MODEL)
+	nice wapiti train -p $(TPL) -t 12 $(INPUT) > $(MODEL)
