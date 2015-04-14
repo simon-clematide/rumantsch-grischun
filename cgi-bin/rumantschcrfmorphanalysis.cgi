@@ -17,8 +17,10 @@ $Rohtext = param('rohtext');
 $Rohtext =~ s/\r//g;
 # simple tokenizer
 if ($Rohtext =~ /\b \b/) {
-	$Rohtext =~ s/ /\n/g;
-	$Rohtext =~ s/\./\n./g;
+	$Rohtext =~ s/\./ ./g;
+	$Rohtext =~ s/'/' /g;
+	$Rohtext =~ s/ +/\n/g;
+
 };
 die "Could not create file\n" unless open(TMPFILE,"> $tmpdatei");
 $Rohtext =~ tr/\r/\n/s;

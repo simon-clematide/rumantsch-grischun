@@ -13,6 +13,12 @@ $tmpdatei = "/tmp/$file.$$";
 
 $Rohtext = param('rohtext');
 $Rohtext =~ s/\r//g;
+if ($Rohtext =~ /\b \b/) {
+	$Rohtext =~ s/\./ ./g;
+	$Rohtext =~ s/'/' /g;
+	$Rohtext =~ s/\s+/\n/g;
+
+};
 #$Rohtext = decode("utf-8", $Rohtext);
 die "Could not create file\n" unless open(TMPFILE,"> $tmpdatei");
 $Rohtext =~ tr/\r/\n/s;
