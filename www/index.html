@@ -44,11 +44,15 @@ function autoResize(id){
 
 <table><tr><td width="20%">
 <fieldset><input type="submit" value="Analyze" name="submitButtonName"><legend>Input </legend>
-<textarea name="rohtext" style="width:100%" rows="12" cols="120">ses
-chattais
-donaziuns
-tschentaments
-cumpona
+<textarea name="rohtext" style="width:100%" rows="12" cols="120">La
+vulp
+era
+ina
+giada
+ha
+vis
+ses
+pichel
 ANUNKNOWNWORD
 </textarea>
 Format: one word per line
@@ -60,14 +64,19 @@ Format: one word per line
 			</iframe></fieldset>
 </table></form>
 <form action="/kitt/cgi-bin/rumansh/dev/rumantschcrfmorphanalysis.cgi"  accept-charset="UTF-8" method="POST" name="FormName" target="resultat2">
+<hr>
 <h2>Morphological Analysis of Sentences</h2>
 
 <table><tr><td width="20%">
 <fieldset><legend>Input</legend>
 <input type="submit" value="Analyze" name="submitButtonName">
-<textarea name="rohtext"  rows="12" cols="120">La vulp era puspè ina giada fomentada .
+<textarea name="rohtext"  rows="12" cols="120">La vulp era puspè ina giada fomentada.
 
-Qua ha ella vis sin in pign in corv che tegneva in toc chaschiel en ses pichel .
+Qua ha ella vis sin in pign in corv che tegneva in toc chaschiel en ses pichel.
+
+Quai ma gustass, ha ella pensà, ed ha clamà al corv:
+
+„ Tge bel che ti es!
 </textarea>
 </fieldset>
 <td>
@@ -77,7 +86,7 @@ Qua ha ella vis sin in pign in corv che tegneva in toc chaschiel en ses pichel .
 			</iframe></fieldset>
 </table></form>
 			<h2>References</h2>
-			<p>Note: We use a conditional random field sequence classifier for selecting the most probable analysis of a word in the context of the sentence. Unknown words get the analysis which seems most probable to the context.<p>
+			<p>Note: We use a conditional random field sequence classifier (<a target="_blank" href="http://wapiti.limsi.fr">wapiti</a>) for selecting the most probable analysis of a word in the context of the sentence. Unknown words get the analysis which seems most probable to the context. Unfortunately, the most probable tag according to our model can easily be the wrong tag in reality.<p>
 
 			<p>A detailed description of the morphological tags and the implementation of the morphological analysis can be found in the <a href="http://kitt.cl.uzh.ch/kitt/rumansh/documentation.pdf" >documentation</a>.</p>
 				</body>

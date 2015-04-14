@@ -17,7 +17,7 @@ $Rohtext = param('rohtext');
 $Rohtext =~ s/\r//g;
 # simple tokenizer
 if ($Rohtext =~ /\b \b/) {
-	$Rohtext =~ s/\./ ./g;
+	$Rohtext =~ s/([.,:!?])/ \1/g;
 	$Rohtext =~ s/'/' /g;
 	$Rohtext =~ s/ +/\n/g;
 
