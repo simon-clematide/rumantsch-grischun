@@ -1,8 +1,9 @@
 ! -*- coding: utf-8 -*-
 ! University of Zurich - Institute of Computational Linguistics
-! Morphology anlysis for Romansh: Articles
+! Morphology analysis for Romansh: Articles
 ! Author: Reto Baumgartner
 ! Date: June 2013
+! Last Change: July 2015
 
 ! The article is explained in Caduff&Caprez in articles 152, 153, 154
 
@@ -27,9 +28,17 @@ in+Art+Indef+Masc+Sg:in	#;
 in+Art+Indef+Fem+Sg:ina	#;
 in+Art+Indef+Fem+Sg+Apo:in'	#;
 
+! The combination of prepositions with feminine articles is not encouraged
+! according to Caduff&Caprez, but included for better coverage.
 LEXICON DEFINITEWITHPREP
 a+Prep^=+Art+Def+Masc+Sg:al	#;
 a+Prep^=+Art+Def+Masc+Pl:als	#;
+a+Prep^=+Art+Def+Fem+Sg:alla	#;
+a+Prep^=+Art+Def+Fem+Sg+Apo:all'	#;
+a+Prep^=+Art+Def+Fem+Pl:allas	#;
 
 da+Prep^=+Art+Def+Masc+Sg:dal	#;
 da+Prep^=+Art+Def+Masc+Pl:dals	#;
+da+Prep^=+Art+Def+Fem+Sg:dalla	#;
+da+Prep^=+Art+Def+Fem+Sg+Apo:dall' #;
+da+Prep^=+Art+Def+Fem+Pl:dallas	#;
