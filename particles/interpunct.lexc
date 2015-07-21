@@ -1,58 +1,58 @@
 ! -*- coding: utf-8 -*-
 ! University of Zurich - Institute of Computational Linguistics
-! Morphology anlysis for Romansh: Interpunctation
+! Morphology analysis for Romansh: Interpunctation
 ! Author: Reto Baumgartner
 ! Date: June 2013
+! Last change: July 2015
 
 
-Multichar_Symbols +Punc +End +Mid +Beg +PUNCT
+Multichar_Symbols +Sent +CM +Punct +End +Beg
 
 LEXICON Root
-%.	PUNCEND;
-%,	PUNCEND;
-%;	PUNCEND;
-%:	PUNCEND;
-%?	PUNCEND;
-%!	PUNCEND;
-%-	PUNC;
-%–	PUNC;
-%/	PUNCMID;
-%(	PUNCBEG;
-%)	PUNCEND;
-%[	PUNCBEG;
-%]	PUNCEND;
-%{	PUNCBEG;
-%}	PUNCEND;
-%•	PUNC;
-%*	PUNCMID;
+%.	SENT;
+%,	COMMA;
+%;	SENT;
+%:	SENT;
+%?	SENT;
+%!	SENT;
+%-	PUNCT;
+%–	PUNCT;
+%/	PUNCT;
+%(	PUNCTBEG;
+%)	PUNCTEND;
+%[	PUNCTBEG;
+%]	PUNCTEND;
+%{	PUNCTBEG;
+%}	PUNCTEND;
+%*	PUNCT;
 %~	PUNCT;
 %_	PUNCT;
-%«	PUNCBEG;
-%»	PUNCEND;
-%‹	PUNCBEG;
-%›	PUNCEND;
-%„	PUNCBEG;
-%“	PUNCEND;
-%“	PUNCBEG;
-%”	PUNCEND;
-%‚	PUNCBEG;
-%‘	PUNCEND;
-%‘	PUNCBEG;
-%’	PUNCEND;
+%«	PUNCTBEG;
+%»	PUNCTEND;
+%‹	PUNCTBEG;
+%›	PUNCTEND;
+%„	PUNCTBEG;
+%“	PUNCTEND;
+%“	PUNCTBEG;
+%”	PUNCTEND;
+%‚	PUNCTBEG;
+%‘	PUNCTEND;
+%‘	PUNCTBEG;
+%’	PUNCTEND;
 %%	PUNCT;
-%"	PUNC;
+%"	PUNCT;
+
+LEXICON SENT
++Sent:0	#;
+
+LEXICON COMMA
++CM:0	#;
 
 LEXICON PUNCT
-+PUNCT:0	#;
++Punct:0	#;
 
-LEXICON PUNC
-+Punc:0	#;
+LEXICON PUNCTBEG
++Punct+Beg:0	#;
 
-LEXICON PUNCBEG
-+Punc+Beg:0	#;
-
-LEXICON PUNCMID
-+Punc+Mid:0	#;
-
-LEXICON PUNCEND
-+Punc+End:0	#;
+LEXICON PUNCTEND
++Punct+End:0	#;
