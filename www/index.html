@@ -70,11 +70,11 @@ Format: one word per line
 <table><tr><td width="20%">
 <fieldset><legend>Input</legend>
 <input type="submit" value="Analyze" name="submitButtonName">
-<textarea name="rohtext"  rows="12" cols="120">La vulp era puspè ina giada fomentada.
+<textarea name="rohtext"  rows="12" cols="120">La vulp era puspè ina giada fomentada.
 
 Qua ha ella vis sin in pign in corv che tegneva in toc chaschiel en ses pichel.
 
-Quai ma gustass, ha ella pensà, ed ha clamà al corv:
+Quai ma gustass, ha ella pensà, ed ha clamà al corv:
 
 „ Tge bel che ti es!
 </textarea>
@@ -86,7 +86,7 @@ Quai ma gustass, ha ella pensà, ed ha clamà al corv:
 			</iframe></fieldset>
 </table></form>
 			<h2>References</h2>
-			<p>Note: We use a conditional random field sequence classifier (<a target="_blank" href="http://wapiti.limsi.fr">wapiti</a>) for selecting the most probable analysis of a word in the context of the sentence. Unknown words get the analysis which seems most probable to the context. Unfortunately, the most probable tag according to our model can easily be the wrong tag in reality.<p>
+			<p>Note: We use a conditional random field sequence classifier (<a target="_blank" href="http://wapiti.limsi.fr">wapiti</a>) for selecting the most probable analysis of a word in the context of the sentence. Unknown words get the analysis which seems most probable in the context. Unfortunately, the most probable tag according to our model (derived from only 4'500 words) can  be the wrong tag in reality.<p>
 
 			<p>A detailed description of the morphological tags and the implementation of the morphological analysis can be found in the <a href="http://kitt.cl.uzh.ch/kitt/rumansh/documentation.pdf" >documentation</a>.</p>
 				</body>
