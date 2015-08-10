@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-
+use utf8;
 #binmode STDOUT, ":utf8";
 binmode STDIN, ":utf8";
 use File::Spec;
@@ -13,12 +13,12 @@ $tmpdatei = "/tmp/$file.$$";
 
 $Rohtext = param('rohtext');
 
-#$Rohtext = decode("utf-8", $Rohtext);
+$Rohtext = decode("utf-8", $Rohtext);
 $Rohtext =~ s/\r//g;
 # simple tokenizer
 if ($Rohtext =~ /\b \b/) {
-	$Rohtext =~ s/([.,:!?])/ \1/g;
-	$Rohtext =~ s/'/' /g;
+	$Rohtext =~ s/([.,:;!?])/ \1/g;
+	$Rohtext =~ s/([’'])/\1 /g;
 	$Rohtext =~ s/ +/\n/g;
 
 };
@@ -44,4 +44,4 @@ if ($pid == 0) {
 
   close(SICHERES_KIND);
 }
-#unlink $tmpdatei;
+unlink $tmpdatei;
