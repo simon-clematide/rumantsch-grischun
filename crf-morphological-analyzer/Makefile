@@ -1,5 +1,5 @@
 
-INPUT:=train4000.txt
+INPUT:=train4500.txt
 TPL:=rumantsch-template.txt
 MODEL:=$(INPUT).mod
 cycle:
