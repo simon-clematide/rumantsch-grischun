@@ -52,11 +52,11 @@ latiers
 lien
 londervi
 lura
-là
+lÃ 
 magari
 mai
 main
-malgrà
+malgrÃ 
 mintgamai
 mintgatant
 mo
@@ -83,7 +83,7 @@ persuenter
 pertge
 pervi
 pervia
-però
+perÃ²
 pia
 pli
 plinavant
@@ -91,7 +91,7 @@ prima
 primo
 probabel
 puschmaun
-puspè
+puspÃ¨
 qua
 savens
 secundo
@@ -122,7 +122,7 @@ ultra
 uschenavant
 uschia
 uschiglio
-uschè
+uschÃ¨
 uss
 ussa
 vaira
