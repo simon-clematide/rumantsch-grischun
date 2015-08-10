@@ -78,9 +78,9 @@ fossils	+Noun+Masc+Pl
 da	+Prep
 passidas	+Noun+Fem+Pl
 ,	+Punc+End
-ovs	+Noun+Masc+Sg
+ovs	+Noun+Masc+Pl
 e	+Conj
-gnieus	+Noun+Masc+Sg
+gnieus	+Noun+Masc+Pl
 ,	+Punc+End
 gastrolits	+Noun+Masc+Pl
 ed	+Conj
@@ -178,7 +178,7 @@ animals	+Noun+Masc+Pl
 terresters	+Noun+Masc+Pl
 da	+Prep
 tuts	+Pron+Indef+Masc+Pl
-temps	+Noun+Masc+Sg
+temps	+Noun+Masc+Pl
 ,	+Punc+End
 era	+Verb+3P+Sg
 la	+Art+Fem+Sg
