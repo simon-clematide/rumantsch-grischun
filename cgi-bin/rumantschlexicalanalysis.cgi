@@ -22,7 +22,7 @@ if ($Rohtext =~ /\b \b/) {
 #$Rohtext = decode("utf-8", $Rohtext);
 die "Could not create file\n" unless open(TMPFILE,"> $tmpdatei");
 $Rohtext =~ tr/\r/\n/s;
-die "Sorry, aber der Input war zu lang!\n" if (length($Rohtext)>25000);
+die "Sorry, aber der Input war zu lang!\n" if (length($Rohtext)>10000000);
 print TMPFILE $Rohtext;
 close(TMPFILE);
 $ENV{'PATH'} = "$CGIDIR:$CGIDIR/ppdiag/backend:/opt/bin:$ENV{PATH}";

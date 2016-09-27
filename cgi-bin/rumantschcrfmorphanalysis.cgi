@@ -24,10 +24,10 @@ if ($Rohtext =~ /\b \b/) {
 };
 die "Could not create file\n" unless open(TMPFILE,"> $tmpdatei");
 $Rohtext =~ tr/\r/\n/s;
-die "Sorry, aber der Input war zu lang!\n" if (length($Rohtext)>25000);
+die "Sorry, aber der Input war zu lang!\n" if (length($Rohtext)>10000000);
 print TMPFILE $Rohtext;
 close(TMPFILE);
-$ENV{'PATH'} = "$CGIDIR:$CGIDIR/ppdiag/backend:/opt/bin:$ENV{PATH}";
+$ENV{'PATH'} = "$CGDIR:/mnt/storage/clfiles/resources/bin:/opt/bin:$ENV{PATH}";
 undef $/ ;
 die "Keine Datei $CGIDIR/ vorhanden\n" unless -x "$CGIDIR/$file";
 die "cannot fork: $!" unless defined($pid = open(SICHERES_KIND, "-|"));
