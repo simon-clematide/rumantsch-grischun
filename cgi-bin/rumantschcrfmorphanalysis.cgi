@@ -1,7 +1,4 @@
-#!/usr/bin/perl
-use utf8;
-#binmode STDOUT, ":utf8";
-binmode STDIN, ":utf8";
+#!/usr/bin/perl -CSD
 use File::Spec;
 my ($volume, $CGIDIR, $file) = File::Spec->splitpath(__FILE__);
 print STDERR "$volume $CGIDIR $file\n";
@@ -9,25 +6,48 @@ use CGI qw(:standard);
 use CGI::Carp qw(fatalsToBrowser);
 use Encode qw(decode encode);
 
+# Some Variables
+$contenttype = "Content-Type: text/plain; charset=utf-8\n\n";
+$characterlimit = 1000000;
+$Rawtext = param('rohtext');
+
 $tmpdatei = "/tmp/$file.$$";
+$Program = $CGIDIR . 'tools/parse.sh';
 
-$Rohtext = param('rohtext');
+@Arguments =  ( $tmpdatei,  $Mode) ;
+$ENV{'PATH'} = "$CGIDIR:$CGIDIR/tools:/mnt/storage/clfiles/resources/bin/:$ENV{PATH}";
 
-$Rohtext = decode("utf-8", $Rohtext);
-$Rohtext =~ s/\r//g;
+$Rawtext = decode("utf-8", $Rawtext);
+$Rawtext =~ tr/\r/\n/s;
+
+$rawtextlength = length($Rawtext);
+if ($rawtextlength>$characterlimit) {
+print $contenttype;
+print "Sorry, input is limited to $characterlimit characters!\n";
+exit(0);
+};
+
+if ($rawtextlength < 1) {
+	print $contenttype;
+	print  "ERROR: Sorry, not enough input!\n" ;
+	exit;
+}
+;
+
+$Rawtext =~ s/\r//g;
 # simple tokenizer
-if ($Rohtext =~ /\b \b/) {
-	$Rohtext =~ s/([.,:;!?])/ \1/g;
-	$Rohtext =~ s/([’'])/\1 /g;
-	$Rohtext =~ s/ +/\n/g;
+if ($Rawtext =~ /\b \b/) {
+	$Rawtext =~ s/([.,:;!?])/ \1/g;
+	$Rawtext =~ s/([’'])/\1 /g;
+	$Rawtext =~ s/ +/\n/g;
 
 };
+
 die "Could not create file\n" unless open(TMPFILE,"> $tmpdatei");
-$Rohtext =~ tr/\r/\n/s;
-die "Sorry, aber der Input war zu lang!\n" if (length($Rohtext)>10000000);
-print TMPFILE $Rohtext;
+print TMPFILE $Rawtext;
 close(TMPFILE);
-$ENV{'PATH'} = "$CGDIR:/mnt/storage/clfiles/resources/bin:/opt/bin:$ENV{PATH}";
+
+
 undef $/ ;
 die "Keine Datei $CGIDIR/ vorhanden\n" unless -x "$CGIDIR/$file";
 die "cannot fork: $!" unless defined($pid = open(SICHERES_KIND, "-|"));
