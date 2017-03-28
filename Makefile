@@ -88,7 +88,10 @@ fstbinaries/Capitalization.fst fstbinaries/OrthoRule.fst : spelling/ortho-rule.x
 # cgi-bin
 cgi-bin/data/GrischunGuessing.fst: GrischunGuessing.fst
 	ln -f $< $@
-cgi-bin/data/crf-morphpos-model:crf-morphological-analyzer/modell9
+cgi-bin/data/crf-morphpos-model:crf-morphological-analyzer/train/trainall.txt.mod
 	ln -f $< $@
 cgi-bin/tools/analyse.py:crf-morphological-analyzer/analyse.py
 	mkdir -p $(@D) && ln -f $< $@
+	
+crf-morphological-analyzer/train/trainall.txt.mod:
+	cd crf-morphological-analyzer && make final
