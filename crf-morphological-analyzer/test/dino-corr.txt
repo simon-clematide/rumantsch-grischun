@@ -7,7 +7,7 @@ deinos	+Adj+Masc+Sg
 –	+Punc+Mid
 ‹	+Punc+Beg
 terribel	+Adj+Masc+Sg
-,	+Punc+End
+,	+CM
 immens	+Adj+Masc+Sg
 ›	+Punc+End
 ;	+Punc+End
@@ -42,7 +42,7 @@ ecologics	+Adj+Masc+Pl
 sin	+Prep
 terra	+Noun+Fem+Sg
 ferma	+Adj+Fem+Sg
-.	+Punc+End
+.	+Sent
 
 Las	+Art+Fem+Pl
 enconuschientschas	+Noun+Fem+Pl
@@ -61,7 +61,7 @@ furma	+Noun+Fem+Sg
 d’	+Prep
 ossa	+Noun+Fem+Sg
 petrifitgada	+Adj+Fem+Sg
-.	+Punc+End
+.	+Sent
 
 Ulteriuras	+Adj+Fem+Pl
 infurmaziuns	+Noun+Fem+Pl
@@ -73,15 +73,15 @@ pel	+Noun+Fem+Sg
 e	+Conj
 da	+Prep
 tessids	+Noun+Masc+Sg
-,	+Punc+End
+,	+CM
 fossils	+Noun+Masc+Pl
 da	+Prep
 passidas	+Noun+Fem+Pl
-,	+Punc+End
+,	+CM
 ovs	+Noun+Masc+Pl
 e	+Conj
 gnieus	+Noun+Masc+Pl
-,	+Punc+End
+,	+CM
 gastrolits	+Noun+Masc+Pl
 ed	+Conj
 excrements	+Noun+Masc+Pl
@@ -96,7 +96,7 @@ il	+Art+Masc+Sg
 temp	+Noun+Masc+Sg
 dad	+Prep
 oz	+Adv
-.	+Punc+End
+.	+Sent
 
 Restanzas	+Noun+Fem+Sg
 da	+Prep
@@ -111,7 +111,7 @@ continents	+Noun+Masc+Pl
 inclus	+Adj+Masc+Sg
 l’	+Art+Fem+Sg
 Antarctica	+Prop
-,	+Punc+End
+,	+CM
 damai	+Adv
 ch’	+Subj
 ils	+Art+Masc+Pl
@@ -141,7 +141,7 @@ en	+Prep
 il	+Art+Masc+Sg
 supercontinent	+Noun+Masc+Sg
 Pangaea	+Prop
-.	+Punc+End
+.	+Sent
 
 Fin	+Prep
 ussa	+Adv
@@ -161,7 +161,7 @@ suondan	+Verb+3P+Pl
 mintg’	+Pron+Indef+Masc+Sg
 onn	+Noun+Masc+Sg
 novas	+Adj+Fem+Pl
-.	+Punc+End
+.	+Sent
 
 Cumbain	+Subj
 che	+Subj
@@ -179,7 +179,7 @@ terresters	+Noun+Masc+Pl
 da	+Prep
 tuts	+Pron+Indef+Masc+Pl
 temps	+Noun+Masc+Pl
-,	+Punc+End
+,	+CM
 era	+Verb+3P+Sg
 la	+Art+Fem+Sg
 pluralitad	+Noun+Fem+Sg
@@ -188,7 +188,7 @@ dinosaurs	+Noun+Masc+Pl
 pitschna	+Adj+Fem+Sg
 ed	+Conj
 agila	+Adj+Fem+Sg
-.	+Punc+End
+.	+Sent
 
 Ins	+Pron+Indef
 sa	+Verb+3P+Sg
@@ -207,7 +207,7 @@ da	+Prep
 sang	+Noun+Masc+Sg
 chaud	+Adj+Masc+Sg
 )	+Punc+End
-.	+Punc+End
+.	+Sent
 
 Sistematica	+Noun+Fem+Sg
 dals	+Prep^=+Art+Masc+Pl
@@ -224,7 +224,7 @@ dinosaurs	+Noun+Masc+Pl
 attribuids	+Verb+PastPart+Masc+Pl
 als	+Adj+Masc+Pl
 diapsids	+Noun+Masc+Pl
-.	+Punc+End
+.	+Sent
 
 Quels	+Pron+Dem+Masc+Pl
 sa	+Pron+Refl+AccDat+Aton+3P+MF+Pl
@@ -262,7 +262,7 @@ parallel	+Adj+Masc+Sg
 davos	+Prep
 ils	+Art+Masc+Pl
 egls	+Noun+Masc+Pl
-.	+Punc+End
+.	+Sent
 
 Entaifer	+Prep
 ils	+Art+Masc+Pl
@@ -286,7 +286,7 @@ fanestras	+Noun+Fem+Pl
 da	+Prep
 la	+Art+Fem+Sg
 chavazza	+Noun+Fem+Sg
-.	+Punc+End
+.	+Sent
 
 Descendents	+Noun+Masc+Pl
 d’	+Prep
@@ -303,7 +303,7 @@ crocodils	+Noun+Masc+Pl
 er	+Adv
 ils	+Art+Masc+Pl
 utschels	+Noun+Masc+Pl
-.	+Punc+End
+.	+Sent
 
 Ils	+Art+Masc+Pl
 dinosaurs	+Noun+Masc+Pl
@@ -330,7 +330,7 @@ batschida	+Noun+Fem+Sg
 per	+Prep
 sgular	+Verb+Inf
 )	+Punc+End
-.	+Punc+End
+.	+Sent
 
 Questas	+Pron+Dem+Fem+Pl
 duas	+Num+Card+Fem
@@ -345,11 +345,11 @@ structura	+Noun+Fem+Sg
 da	+Prep
 la	+Art+Fem+Sg
 batschida	+Noun+Fem+Sg
-.	+Punc+End
+.	+Sent
 
 Ils	+Art+Masc+Pl
 saurischia	+Noun+Masc+Pl
-,	+Punc+End
+,	+CM
 als	+Prep^=+Art+Masc+Pl
 quals	+Pron+Indef+Masc+Pl
 tant	+Pron+Indef+Masc+Sg
@@ -362,7 +362,7 @@ ils	+Art+Masc+Pl
 teropods	+Noun+Masc+Pl
 erbivors	+Adj+Masc+Pl
 appartegnan	+Verb+3P+Pl
-,	+Punc+End
+,	+CM
 han	+Verb+3P+Pl
 mantegnì	+Verb+PastPart+Masc+Sg
 lur	+Pron+Poss+Fem+Sg
@@ -391,7 +391,7 @@ ischium	+Noun+Masc+Sg
 mira	+Verb+Impv+Sg
 illustraziuns	+Noun+Fem+Pl
 )	+Punc+End
-.	+Punc+End
+.	+Sent
 
 L’	+Art+Masc+Sg
 ossa	+Noun+Masc+Sg
@@ -407,11 +407,11 @@ erbivors	+Adj+Masc+Pl
 va	+Verb+3P+Sg
 dentant	+Adv
 parallel	+Adj+Masc+Sg
-,	+Punc+End
+,	+CM
 inclinà	+Verb+PastPart+Masc+Sg
 vers	+Adj+Masc+Pl
 enavos	+Adv
-.	+Punc+End
+.	+Sent
 
 La	+Art+Fem+Sg
 classificaziun	+Noun+Fem+Sg
@@ -426,7 +426,7 @@ terminada	+Verb+PastPart+Fem+Sg
 ni	+Adv
 regulada	+Verb+PastPart+Fem+Sg
 cleramain	+Adj^DB+Adv
-.	+Punc+End
+.	+Sent
 
 D’	+Prep
 ina	+Art+Fem+Sg
@@ -435,7 +435,7 @@ existan	+Verb+3P+Pl
 anc	+Adv
 bleras	+Adj+Fem+Pl
 largias	+Noun+Fem+Pl
-,	+Punc+End
+,	+CM
 da	+Prep
 l’	+Art+Fem+Sg
 autra	+Adj+Fem+Sg
@@ -453,7 +453,7 @@ restructurar	+Verb+Inf
 l’	+Art+Fem+Sg
 ordinaziun	+Noun+Fem+Sg
 vertenta	+Adj+Fem+Sg
-.	+Punc+End
+.	+Sent
 
 Il	+Art+Masc+Sg
 taxon	+Noun+Masc+Sg
@@ -471,7 +471,7 @@ englais	+Adj+Masc+Pl
 Sir	+Prop
 Richard	+Prop
 Owen	+Prop
-.	+Punc+End
+.	+Sent
 
 Ils	+Art+Masc+Pl
 dinosaurs	+Noun+Masc+Pl
@@ -484,7 +484,7 @@ varietad	+Noun+Fem+Sg
 da	+Prep
 las	+Art+Fem+Pl
 spezias	+Noun+Fem+Pl
-.	+Punc+End
+.	+Sent
 
 Auters	+Adj+Masc+Pl
 archosaurs	+Noun+Masc+Pl
@@ -504,7 +504,7 @@ betg	+Adv
 tar	+Prep
 ils	+Art+Masc+Pl
 dinosaurs	+Noun+Masc+Pl
-,	+Punc+End
+,	+CM
 gist	+Adv
 uschè	+Verb+3P+Sg
 pauc	+Adv
@@ -513,13 +513,13 @@ ils	+Art+Masc+Pl
 abitants	+Noun+Masc+Pl
 dal	+Prep^=+Art+Masc+Sg
 mesozoicum	+Noun+Masc+Sg
-,	+Punc+End
+,	+CM
 ils	+Art+Masc+Pl
 gronds	+Adj+Masc+Pl
 reptils	+Noun+Masc+Pl
 da	+Prep
 la	+Art+Fem+Sg
 mar	+Noun+Fem+Sg
-.	+Punc+End
+.	+Sent
 
 
