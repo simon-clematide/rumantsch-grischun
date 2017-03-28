@@ -13,21 +13,12 @@ GrischunGuessing.fst
 modell9
     letztes Modell mit Wapiti
 
-train4000.txt
+train/train4500.txt
     Trainingsdaten für modell9
 
-dino-tok.txt
-    Evaluationskorpus für modell9
-
-dino-corr.txt
+test/dino-corr.txt
     Goldstandard für die Evaluation von modell9
 
 rumantsch-template.txt
     Trainingstemplate für modell9
 
-dardin-tok500-satz.txt
-    Tokenisierter Text mit Satzgrenzenerkennung für die Evaluation (fürs Training weiterverwendet)
-
-dardin-vollanalyse-corr.txt
-    Manuell korrigierte Analyse für die Evaluation (fürs Training weiterverwendet)
-    Eventuell müssen analyse.py die Argument-Variablen angepasst werden.
