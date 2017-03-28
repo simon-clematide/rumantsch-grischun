@@ -90,7 +90,7 @@ cgi-bin/data/GrischunGuessing.fst: GrischunGuessing.fst
 	ln -f $< $@
 cgi-bin/data/crf-morphpos-model:crf-morphological-analyzer/train/trainall.txt.mod
 	ln -f $< $@
-cgi-bin/tools/analyse.py:crf-morphological-analyzer/analyse.py
+cgi-bin/tools/analyse.py:crf-morphological-analyzer/lib/analyse.py
 	mkdir -p $(@D) && ln -f $< $@
 	
 crf-morphological-analyzer/train/trainall.txt.mod:
