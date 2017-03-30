@@ -1,0 +1,17 @@
+# Some ideas
+
+- generator for paradigms; would make comparison with http://www.pledarigrond.ch/rumantschgrischun/?locale=rm
+
+- thourough coverage analysis with additional corpora
+
+- include the already created word lists
+
+- create fsm-based tokenizer
+
+- produce variants for other Rumansh variants
+
+- produce spell checker user foma med
+
+- add cgflookup-based desambiguator (alternative to wapiti desambiguator)
+
+
