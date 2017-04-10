@@ -1,6 +1,6 @@
 # Some ideas
 
-- generator for paradigms; would make comparison with http://www.pledarigrond.ch/rumantschgrischun/?locale=rm
+- generator for full paradigms and (under-)specified morpholgical descriptions; would make comparison with http://www.pledarigrond.ch/rumantschgrischun/?locale=rm
 
 - thourough coverage analysis with additional corpora
 
