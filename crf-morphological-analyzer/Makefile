@@ -17,7 +17,7 @@ cvdata-out-files:=$(foreach f, $(FOLDS), $(CVDATA_OUT)/test_$f.tsv)
 cvdata-out-files+=$(foreach f, $(FOLDS), $(CVDATA_OUT)/train_$f.mod)
 #cvdata-out-files+=$(foreach f, $(FOLDS), $(CVDATA_OUT)/test_$f.eval.tsv)
 
-cvdata-out-target: $(cvdata-out-files) $(CVDATA_OUT).eval.tsv
+eval-target: $(cvdata-out-files) $(CVDATA_OUT).eval.tsv
 
 
 $(CVDATA_OUT)/train_%.tsv $(CVDATA_OUT)/test_%.tsv $(CVDATA_OUT)/dev_%.tsv $(CVDATA_OUT)/train_%.mod: $(TRAIN)
