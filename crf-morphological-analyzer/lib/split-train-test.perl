@@ -3,6 +3,7 @@
 # Simon Clematide
 my $TR='train-data';
 my $TE='test-data';
+my $DV='dev-data';
 my $RAND;
 my $CONT;
 my $NTH;
@@ -17,9 +18,11 @@ options are:
 -te file  # Specify output file for test data ($TE)
 Splitting options:
 -cont n/m # Split the datafile in continuous chunks taking the mth part as
-          # testfile
+          # testfile; if -nthd is active, use the m+1 split as dev (or 0 if m=n)
 -rand n   # Take randomly 1/nth of each n+1 lines as testdata
+-seed n   # Use n as a seed for random generator
 -nth spec # Take the nth line as testdata
+-nthd     # Randomly take the same amount as test data line as dev data from train (only in combination with -nth or -cont)
 -delim s] # Lines befor the line consisting string s are training data
           # Lines after are test data.
 EOFUSAGE
@@ -31,10 +34,13 @@ use Getopt::Long; # Standardbibliothek fuer Optionenverarbeitung laden
 	 "rand=i" => \$RAND,
 	 "tr=s" => \$TR,
 	 "te=s" => \$TE,
+	 "dv=s" => \$DV,
 	 "cont=s" => \$CONT,
 	 "delim=s" => \$DELIM,
 	 "nth=i" => \$NTH,
-	 "h|help" => \$HELP
+	 "nthd" => \$NTHD,
+	 "h|help" => \$HELP,
+	  "seed=i" => \$SEED
 	 );
 
 
@@ -57,9 +63,12 @@ my $DFL = int(`wc -l <$DATAFILE`) unless (defined $DELIM);
 
 open(TRAINF,">$TR") or die "$0 error: $@";
 open(TESTF,">$TE") or die "$0 error: $@";
-
+if ($DV) {
+open(DVF,">$DV") or die "$0 error: $@";
+}
 my $trlen=0;
 my $telen=0;
+my $dvlen=0;
 if ($RAND) {
   my $RandParts = $RAND + 1;
   for (my $i = 0; $i < int($DFL / $RandParts);$i++) {
@@ -96,7 +105,7 @@ if (defined $DELIM) {
 	}
   }
 }
-if ($NTH) {
+if ($NTH && ! $NTHD) {
   my $NthParts = $NTH + 1;
   for (my $i = 0; $i < int($DFL / $NthParts);$i++) {
 	for (my $j = 0; $j < $NthParts; $j++) {
@@ -109,7 +118,33 @@ if ($NTH) {
 	}
   }
 }
-if($CONT) {
+if ($NTH && $NTHD) {
+  my $NthParts = $NTH + 1;
+  for (my $i = 0; $i < int($DFL / $NthParts);$i++) {
+	for (my $j = 0; $j < $NthParts; $j++) {
+	  my $l = <DF>;
+	  if($NTH == $j ) {
+		print TESTF $l;	$telen++; }
+	  else {
+		if ($NTH == (($j+1) % $NthParts)) {
+		  print DVF $l;	$dvlen++;
+		  
+	  	} else {
+		  print TRAINF $l;	$trlen++;
+		}
+	  }
+	}
+  }
+  while (<DF>) {
+	print TRAINF $_ ;
+	$residuals++;
+  }
+  print STDERR "# Residual lines added to training data: $residuals\n";
+  
+}
+
+
+if($CONT && ! $NTHD) {
   if ( my($Parts,$ThePart) = ( $CONT =~ m|(\d+)/(\d+)|)) {
 	die $USAGE if ($Parts > $DFL or $ThePart > $Parts);
 	my $PartSize = int($DFL / $Parts);
@@ -148,12 +183,56 @@ if($CONT) {
   } else {
 	die $USAGE;
 }
-
+}
+if($CONT &&  $NTHD) {
+  if ( my($Parts,$ThePart) = ( $CONT =~ m|(\d+)/(\d+)|)) {
+	die $USAGE if ($Parts > $DFL or $ThePart > $Parts);
+	my $PartSize = int($DFL / $Parts);
+	my $TheDevPart = $ThePart+1;
+	$TheDevPart = 0 if ($ThePart + 1) > $Parts;
+	my $DevPartStart = ($PartSize * $TheDevPart)-$PartSize;
+	$DevPartStart = 0 if $DevPartStart < 0;
+	my $DevPartEnd = $DevPartStart + $PartSize;
+	my $PartStart = ($PartSize * $ThePart)-$PartSize;
+	my $PartEnd = $PartStart + $PartSize;
+	my $line = 0;
+	my $lastline = $PartSize * $Parts;
+	while ($line < $lastline) {
+	  $_ = <DF>;
+	  if (($line >= $PartStart) and ($line < $PartEnd)) {
+		print TESTF $_; 	$telen++;
+		}
+		elsif (($line >= $DevPartStart) and ($line < $DevPartEnd)) {
+			 print DVF $_;	$dvlen++;
+		}
+	  else {
+	      print TRAINF $_;	$trlen++;
+	  }
+	  $line++;
+	}
+	{
+	    while (<DF>) {
+		print TRAINF $_ ;
+		$residuals++;
+	    }
+	    print STDERR "# Residual lines added to training data: $residuals\n";
+	}
+  } else {
+	die $USAGE;
+}
 }
 
 close(TESTF);
 close(TRAINF);
+if ($DV) {
+close(DVF);
+print STDERR "# training set size: $trlen\n# test set size: $telen\n# dev set size: $dvlen;\n";
 
+}
+else{
 print STDERR "# Training size: $trlen\n# Test size: $telen\n";
+
+}
+
 
 
