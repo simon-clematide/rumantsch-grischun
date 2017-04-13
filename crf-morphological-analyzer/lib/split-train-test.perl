@@ -9,6 +9,7 @@ my $CONT;
 my $NTH;
 my $DELIM;
 my $HELP;
+my $SEED;
 my $USAGE =<<EOFUSAGE;
 usage: $0 <options> <datafile>
 # split lines of datafile into a training and a test part
@@ -17,7 +18,7 @@ options are:
 -tr file  # Specify output file for training data ($TR)
 -te file  # Specify output file for test data ($TE)
 Splitting options:
--cont n/m # Split the datafile in continuous chunks taking the mth part as
+-cont n/m # Split the datafile in continuous chunks taking the mth (>0!) part as
           # testfile; if -nthd is active, use the m+1 split as dev (or 0 if m=n)
 -rand n   # Take randomly 1/nth of each n+1 lines as testdata
 -seed n   # Use n as a seed for random generator
