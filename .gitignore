@@ -2,3 +2,4 @@
 *.DS_Store
 crf-morphological-analyzer/*.mod
 crf-morphological-analyzer/train/trainall.txt
+crf-morphological-analyzer/train/*random*
