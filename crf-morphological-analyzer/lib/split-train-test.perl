@@ -178,6 +178,7 @@ if($CONT && ! $NTHD) {
 	    while (<DF>) {
 		print TRAINF $_ ;
 		$residuals++;
+		$trlen++;
 	    }
 	    print STDERR "# Residual lines added to training data: $residuals\n";
 	}
@@ -214,6 +215,7 @@ if($CONT &&  $NTHD) {
 	{
 	    while (<DF>) {
 		print TRAINF $_ ;
+		$trlen++;
 		$residuals++;
 	    }
 	    print STDERR "# Residual lines added to training data: $residuals\n";
