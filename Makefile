@@ -6,7 +6,7 @@
 XFST?=foma
 
 ifeq ($(XFST),hfst-xfst)
-XFSTCMD:=hfst-xfst -F
+XFSTCMD:=hfst-xfst -f foma -F
 endif
 
 ifeq ($(XFST),foma)
