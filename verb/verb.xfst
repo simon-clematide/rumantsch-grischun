@@ -22,9 +22,9 @@ define Letter [Vowel|Consonant];
 # These verbs can be found in Caduff&Caprez article 127 (alternating verbs) or #
 # 128 (irregular verbs)                                                        #
 ################################################################################
-#------------------------------------------------------------------------------#
+################################################################################
 # Loading irregular and alternating verbs
-#------------------------------------------------------------------------------#
+################################################################################
 # Irregular verb forms
 read lexc  verb/verb-irr.lexc
 define IrregularVerbRaw ;
@@ -33,9 +33,9 @@ define IrregularVerbRaw ;
 read lexc  verb/verb-vchg.lexc
 define ChangingVerbRaw ;
 
-#------------------------------------------------------------------------------#
+################################################################################
 # Loading irregular past participle forms
-#------------------------------------------------------------------------------#
+################################################################################
 # Irregular past participle forms
 read lexc  verb/verb-part-irr.lexc
 define PastPartIrregRaw;
@@ -49,9 +49,9 @@ define PastPartIrregRaw;
 # Verbs like 'currer' are explained in Caduff&Caprez article 108.              #
 # Verbs like 'apparair' and 'absolver' are here seen as regular.               #
 ################################################################################
-#------------------------------------------------------------------------------#
+################################################################################
 # Loading regular endings
-#------------------------------------------------------------------------------#
+################################################################################
 # Endings for verbs like: gidar - jau gid
 read lexc  verb/verb-ar-end.lexc
 define VerbArEnd ;
@@ -73,9 +73,9 @@ define VerbIrEnd ;
 read lexc  verb/verb-ir-esch-end.lexc
 define VerbIrEschEnd ;
 
-#------------------------------------------------------------------------------#
+################################################################################
 # Loading regular lemmata
-#------------------------------------------------------------------------------#
+################################################################################
 # Verbs like: temair - jau tem
 read text < wordlists/verb-air.txt
 define VerbAirInf ;
@@ -107,9 +107,9 @@ define VerbIrInf ;
 read text < wordlists/verb-ir-esch.txt
 define VerbIrEschInf ;
 
-#------------------------------------------------------------------------------#
+################################################################################
 # Regular Verb Processing
-#------------------------------------------------------------------------------#
+################################################################################
 # Deleting the infinitive ending to get the stems
 define VerbAirStem [VerbAirInf
 	.o. [{air} -> "@H" || _ .#.]];
