@@ -7,7 +7,7 @@
 
 Multichar_Symbols +Adj +Masc +Fem +Sg +Pl +Sup +Comp +Apo
 
-Lexicon Root
+LEXICON Root
 ! agen/atgna
 		agen:agen					MASC_SINGULAR;
 		agen:agens					MASC_PLURAL;
@@ -36,23 +36,23 @@ Lexicon Root
 		agen:atgn'					FEM_SG_APOSTROPHATED;
 		aut:aut'					FEM_SG_APOSTROPHATED;
 		
-Lexicon MASC_SINGULAR
+LEXICON MASC_SINGULAR
 		+Adj+Masc+Sg:0				#;
 		
-Lexicon FEM_SINGULAR	
+LEXICON FEM_SINGULAR	
 		+Adj+Fem+Sg:0				#;
 		
-Lexicon MASC_PLURAL
+LEXICON MASC_PLURAL
 		+Adj+Masc+Pl:0				#;
 
-Lexicon FEM_PLURAL
+LEXICON FEM_PLURAL
 		+Adj+Fem+Pl:0				#;
 
-Lexicon SUPERLATIVE
+LEXICON SUPERLATIVE
 		+Adj+Sup+Masc+Sg:ischem		#;
 		+Adj+Sup+Masc+Pl:ischems	#;
 		+Adj+Sup+Fem+Sg:ischma		#;
 		+Adj+Sup+Fem+Pl:ischmas		#;
 
-Lexicon FEM_SG_APOSTROPHATED
+LEXICON FEM_SG_APOSTROPHATED
 		+Adj+Fem+Sg+Apo:0				#;
