@@ -22,7 +22,7 @@ define Clean [\[Letter|"-"] -> 0];
 # Irregular Nouns
 ################################################################################
 ## noun-irr contains irregular noun forms
-read lexc < noun/noun-irr.lexc
+read lexc  noun/noun-irr.lexc
 define NounIrr;
 
 ################################################################################

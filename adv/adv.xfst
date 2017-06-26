@@ -170,7 +170,7 @@ define AdvPart [PartLex .o. RegRules .o. AdjAdvLabelDeleter];
 #     Diese unregelmässigen Adverbien werden aus lexc importiert
 ################################################################################
 
-read lexc < adv/adv-irr.lexc
+read lexc  adv/adv-irr.lexc
 define AdvIrr ;
 
 

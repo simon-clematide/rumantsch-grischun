@@ -266,11 +266,11 @@ define AdjectiveGuessing [[GuessingNonDoubling|GuessingDoubling|GuessingFle] .o.
 ################################################################################
 
 # Lese irreguläre Adjektive (Caduff/Caprez (2006): 3.3.3.215)
-read lexc < adj/adj-irr.lexc
+read lexc  adj/adj-irr.lexc
 define Irregular;
 
 # Lese irreguläre Steigerungsformen (Caduff/Caprez (2006): 3.3.3.235)
-read lexc < adj/adj-comp-irr.lexc
+read lexc  adj/adj-comp-irr.lexc
 define IrregularSup;
 
 # Kombiniere die verschiedenen Kategorien

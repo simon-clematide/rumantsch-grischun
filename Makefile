@@ -2,8 +2,19 @@
 
 # XFST=foma make build # create version with foma
 # Default xfst
+
+XFST?=foma
+
+ifeq ($(XFST),hfst-xfst)
+XFSTCMD:=hfst-xfst -F
+endif
+
+ifeq ($(XFST),foma)
+XFSTCMD:=foma -f
+endif
+
 ifndef XFST
-XFST:=xfst
+XFSTCMD:=xfst -f
 endif
 
 build: Grischun.fst GrischunGuessing.fst cgi-bin/data/GrischunGuessing.fst cgi-bin/data/crf-morphpos-model cgi-bin/tools/analyse.py
@@ -27,7 +38,7 @@ Grischun.fst GrischunGuessing.fst : collection-RG.xfst \
  particles/prep.lexc \
  art-pron/art.lexc \
  art-pron/pron.lexc
-	$(XFST) -f collection-RG.xfst
+	$(XFSTCMD) collection-RG.xfst
 
 # Networks for the major parts of speech
 fstbinaries/Adjective.fst fstbinaries/AdjectiveGuessing.fst : adj/adj.xfst \
@@ -37,14 +48,14 @@ fstbinaries/Adjective.fst fstbinaries/AdjectiveGuessing.fst : adj/adj.xfst \
  wordlists/adj-e.txt \
  wordlists/adj-part.txt \
  wordlists/adj-inv.txt
-	$(XFST) -f adj/adj.xfst
+	$(XFSTCMD) adj/adj.xfst
 
 fstbinaries/Adverb.fst : adv/adv.xfst \
  wordlists/adj-reg.txt \
  wordlists/adj-e.txt \
  wordlists/adj-inv.txt \
  wordlists/adv-short.txt
-	$(XFST) -f adv/adv.xfst
+	$(XFSTCMD) adv/adv.xfst
 
 fstbinaries/Noun.fst fstbinaries/NounGuessing.fst : noun/noun.xfst \
  noun/noun-irr.lexc \
@@ -55,10 +66,10 @@ fstbinaries/Noun.fst fstbinaries/NounGuessing.fst : noun/noun.xfst \
  wordlists/noun-masc-plur.txt \
  wordlists/noun-masc-sing.txt \
  wordlists/noun-part.txt
-	$(XFST) -f noun/noun.xfst
+	$(XFSTCMD) noun/noun.xfst
 
 fstbinaries/Numeral.fst fstbinaries/Number.fst : num/num.xfst
-	$(XFST) -f num/num.xfst
+	$(XFSTCMD) num/num.xfst
 
 fstbinaries/Verb.fst fstbinaries/VerbGuessing.fst : verb/verb.xfst \
  verb/verb-irr.lexc \
@@ -79,11 +90,11 @@ fstbinaries/Verb.fst fstbinaries/VerbGuessing.fst : verb/verb.xfst \
  wordlists/verb-er2.txt \
  wordlists/verb-ir-esch.txt \
  wordlists/verb-ir.txt
-	$(XFST) -f verb/verb.xfst
+	$(XFSTCMD) verb/verb.xfst
 
 # Orthography
 fstbinaries/Capitalization.fst fstbinaries/OrthoRule.fst : spelling/ortho-rule.xfst
-	$(XFST) -f spelling/ortho-rule.xfst
+	$(XFSTCMD) spelling/ortho-rule.xfst
 
 # cgi-bin
 cgi-bin/data/GrischunGuessing.fst: GrischunGuessing.fst

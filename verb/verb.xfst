@@ -26,18 +26,18 @@ define Letter [Vowel|Consonant];
 # Loading irregular and alternating verbs
 #------------------------------------------------------------------------------#
 # Irregular verb forms
-read lexc < verb/verb-irr.lexc
+read lexc  verb/verb-irr.lexc
 define IrregularVerbRaw ;
 
 # Forms of vowel-alternating verbs
-read lexc < verb/verb-vchg.lexc
+read lexc  verb/verb-vchg.lexc
 define ChangingVerbRaw ;
 
 #------------------------------------------------------------------------------#
 # Loading irregular past participle forms
 #------------------------------------------------------------------------------#
 # Irregular past participle forms
-read lexc < verb/verb-part-irr.lexc
+read lexc  verb/verb-part-irr.lexc
 define PastPartIrregRaw;
 
 ################################################################################
@@ -53,24 +53,24 @@ define PastPartIrregRaw;
 # Loading regular endings
 #------------------------------------------------------------------------------#
 # Endings for verbs like: gidar - jau gid
-read lexc < verb/verb-ar-end.lexc
+read lexc  verb/verb-ar-end.lexc
 define VerbArEnd ;
 # Endings for verbs like: gratular - jau gratulesch
-read lexc < verb/verb-ar-esch-end.lexc
+read lexc  verb/verb-ar-esch-end.lexc
 define VerbArEschEnd ;
 
 # Endings for verbs like: temair - jau tem; vender - jau vend
-read lexc < verb/verb-er-end.lexc
+read lexc  verb/verb-er-end.lexc
 define VerbErEnd ;
 # Endings for verbs like: absolver - jau absolvesch; apparair - jau apparesch
-read lexc < verb/verb-er-esch-end.lexc
+read lexc  verb/verb-er-esch-end.lexc
 define VerbErEschEnd ;
 
 # Endings for verbs like: partir - jau part; currer - jau cur (nus currin)
-read lexc < verb/verb-ir-end.lexc
+read lexc  verb/verb-ir-end.lexc
 define VerbIrEnd ;
 # Endings for verbs like: finir - jau finesch
-read lexc < verb/verb-ir-esch-end.lexc
+read lexc  verb/verb-ir-esch-end.lexc
 define VerbIrEschEnd ;
 
 #------------------------------------------------------------------------------#
