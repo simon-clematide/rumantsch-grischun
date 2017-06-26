@@ -252,19 +252,17 @@ define VerbGuessRaw [
 ################################################################################
 define Delete [[Vowel|Consonant] "*DEL" -> 0] .o. ["*DEL" -> 0];
 define NonDouble [i "*DOUB" i -> i] .o. ["*DOUB" -> 0];
-define LastConsonant [{bb} -> b \/ _ .#. ,,
-                      {cc} -> c \/ _ .#. ,,
-                      {cc} "@H" -> c \/ _ .#. ,,
-                      {dd} -> d \/ _ .#. ,,
-                      {ff} -> f \/ _ .#. ,,
-                      {gg} -> g \/ _ .#. ,,
-                      {gg} "@H" -> g \/ _ .#. ,,
-                      {ll} -> l \/ _ .#. ,,
-                      {mm} -> m \/ _ .#. ,,
-                      {nn} -> n \/ _ .#. ,,
-                      {pp} -> p \/ _ .#. ,,
-                      {rr} -> r \/ _ .#. ,,
-                      {tt} -> t \/ _ .#. ,,
+define LastConsonant [{bb} -> b, 
+					  {cc} ("@H") -> c, 
+                      {dd} -> d, 
+                      {ff} -> f,
+                      {gg} ("@H") -> g,
+                      {ll} -> l,
+                      {mm} -> m,
+                      {nn} -> n,
+                      {pp} -> p,
+                      {rr} -> r,
+                      {tt} -> t,
                       {zz} -> z \/ _ .#.];
 
 # Ensure vowel doubling in feminine forms
