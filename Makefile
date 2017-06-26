@@ -17,7 +17,11 @@ ifndef XFST
 XFSTCMD:=xfst -f
 endif
 
-build: Grischun.fst GrischunGuessing.fst cgi-bin/data/GrischunGuessing.fst cgi-bin/data/crf-morphpos-model cgi-bin/tools/analyse.py
+build: Grischun.fst GrischunGuessing.fst cgi-bin/data/GrischunGuessing.fst 
+
+cgi: cgi-bin/data/crf-morphpos-model cgi-bin/tools/analyse.py
+
+world: build cgi
 
 clean:
 	rm -f fstbinaries/*.fst Grischun.fst GrischunGuessing.fst
