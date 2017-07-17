@@ -1,0 +1,46 @@
+# -*- coding: utf-8 -*-
+# Authors: Nora Lötscher & Noëmi Aepli
+
+################################################################################
+#                                                                              #
+# Generation of Noun Forms (with flaws)                                        #
+#                                                                              #
+################################################################################
+
+source noun/noun.xfst
+
+set show-flags ON
+set obey-flags ON
+
+define diacritize [ "+Noun" -> "@U.POS.+Noun@", "+Masc" -> "@U.GEN.+Masc@", "+Fem" -> "@U.GEN.+Fem@", "+Pl" -> "@U.NUM.+Pl@", "+Sg" -> "@U.NUM.+Sg@" ] ;
+
+define deleteFlagsLower [ "@U.POS.+Noun@" -> 0, "@U.GEN.+Masc@" -> 0, "@U.GEN.+Fem@" -> 0, "@U.NUM.+Pl@" -> 0, "@U.NUM.+Sg@" -> 0 ] ;
+
+define materializeUpper [ "@U.POS.+Noun@" -> "+Noun", "@U.GEN.+Masc@" -> "+Masc", "@U.GEN.+Fem@" -> "+Fem", "@U.NUM.+Pl@" -> "+Pl", "@U.NUM.+Sg@" -> "+Sg" ] ; 
+
+read regex [ Nouns.i .o. diacritize ] ;
+
+twosided flag-diacritics
+
+define DIACRITIZED ;
+
+read regex [ DIACRITIZED .o. deleteFlagsLower ] ;
+
+define diacritizedUpper ;
+
+read regex [ diacritizedUpper.i .o. materializeUpper ] ;
+
+define finalUpsideDown ;
+
+define final [ finalUpsideDown.i ] ;
+
+read regex final ;
+
+echo *** Beispiele für upper side ***
+print random-upper
+
+echo *** Beispiele für lower side ***
+print random-lower
+
+echo *** Beispiel anhand des Nomens 'biopsia' (mit "apply up") ***
+apply up biopsia

@@ -1,0 +1,46 @@
+# -*- coding: utf-8 -*-
+# Authors: Nora Lötscher & Noëmi Aepli
+
+################################################################################
+#                                                                              #
+# Generation of Verb Forms (with flaws)                                        #
+#                                                                              #
+################################################################################
+
+source verb/verb.xfst
+
+set show-flags ON
+set obey-flags ON
+
+define diacritize [ "+Verb" -> "@U.POS.+Verb@", "+Pron" -> "@U.POS.+Pron@", "+Pers" -> "@U.PRON.+Pers@", "+Nom" -> "@U.KAS.+Nom@", "+Masc" -> "@U.GEN.+Masc@", "+Fem" -> "@U.GEN.+Fem@", "+MF" -> "@U.GEN.+MF@", "+Pl" -> "@U.NUM.+Pl@", "+Sg" -> "@U.NUM.+Sg@", "+1P" -> "@U.PERS.+1P@", "+2P" -> "@U.PERS.+2P@", "+3P" -> "@U.PERS.+3P@", "+PresInd" -> "@U.TENSEASP.+PresInd@", "+PastPart" -> "@U.TENSEASP.+PastPart@", "+Gerund" -> "@U.TENSEASP.+Gerund@", "+Inf" -> "@U.TENSEASP.+Inf@", "+Cond" -> "@U.TENSEASP.+Cond@", "+Apo" -> "@U.TENSEASP.+Apo@",	"+Conj" -> "@U.TENSEASP.+Conj@", "+ImpInd" -> "@U.TENSEASP.+ImpInd@", "+Impv" -> "@U.TENSEASP.+Impv@" ] ;
+
+define deleteFlagsLower [ "@U.POS.+Verb@" -> 0, "@U.POS.+Pron@" -> 0, "@U.PRON.+Pers@" -> 0, "@U.KAS.+Nom@" -> 0, "@U.GEN.+Masc@" -> 0, "@U.GEN.+Fem@" -> 0, "@U.GEN.+MF@" -> 0, "@U.NUM.+Pl@" -> 0, "@U.NUM.+Sg@" -> 0, "@U.PERS.+1P@" -> 0, "@U.PERS.+2P@" -> 0, "@U.PERS.+3P@" -> 0, "@U.TENSEASP.+PresInd@" -> 0, "@U.TENSEASP.+PastPart@" -> 0, "@U.TENSEASP.+Gerund@" -> 0, "@U.TENSEASP.+Inf@" -> 0, "@U.TENSEASP.+Cond@" -> 0, "@U.TENSEASP.+Apo@" -> 0, "@U.TENSEASP.+Conj@" -> 0, "@U.TENSEASP.+ImpInd@" -> 0, "@U.TENSEASP.+Impv@" -> 0 ] ;
+
+define materializeUpper [ "@U.POS.+Verb@" -> "+Verb", "@U.POS.+Pron@" -> "+Pron", "@U.PRON.+Pers@" -> "+Pers", "@U.KAS.+Nom@" -> "+Nom", "@U.GEN.+Masc@" -> "+Masc", "@U.GEN.+Fem@" -> "+Fem", "@U.GEN.+MF@" -> "+MF", "@U.NUM.+Pl@" -> "+Pl", "@U.NUM.+Sg@" -> "+Sg", "@U.PERS.+1P@" -> "+1P", "@U.PERS.+2P@" -> "+2P", "@U.PERS.+3P@" -> "+3P", "@U.TENSEASP.+PresInd@" -> "+PresInd", "@U.TENSEASP.+PastPart@" -> "+PastPart", "@U.TENSEASP.+Gerund@" -> "+Gerund", "@U.TENSEASP.+Inf@" -> "+Inf", "@U.TENSEASP.+Cond@" -> "+Cond", "@U.TENSEASP.+Apo@" -> "+Apo", "@U.TENSEASP.+Conj@" -> "+Conj", "@U.TENSEASP.+ImpInd@" -> "+ImpInd", "@U.TENSEASP.+Impv@" -> "+Impv" ] ;
+
+read regex [ Verb.i .o. diacritize ] ;
+
+twosided flag-diacritics
+
+define DIACRITIZED ;
+
+read regex [ DIACRITIZED .o. deleteFlagsLower ] ;
+
+define diacritizedUpper ;
+
+read regex [ diacritizedUpper.i .o. materializeUpper ] ;
+
+define finalUpsideDown ;
+
+define final [ finalUpsideDown.i ] ;
+
+read regex final ;
+
+echo *** Beispiele für upper side ***
+print random-upper
+
+echo *** Beispiele für lower side ***
+print random-lower
+
+echo *** Beispiel anhand des Verbs 'avair' (mit "apply up") ***
+apply up avair
