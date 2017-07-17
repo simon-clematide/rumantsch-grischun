@@ -5,15 +5,12 @@
 
 XFST?=foma
 
+
 ifeq ($(XFST),hfst-xfst)
 XFSTCMD:=hfst-xfst -f foma -F
-endif
-
-ifeq ($(XFST),foma)
+else ifeq ($(XFST),foma)
 XFSTCMD:=foma -f
-endif
-
-ifndef XFST
+else ifeq ($(XFST),xfst)
 XFSTCMD:=xfst -f
 endif
 
