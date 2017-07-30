@@ -6,6 +6,8 @@
 
 - include the already created word lists
 
+- add more regular adjectives 
+
 - create fsm-based tokenizer
 
 - produce variants for other Rumansh variants
