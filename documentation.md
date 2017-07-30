@@ -387,12 +387,12 @@ Die regelmässigen Verben wurden in folgende Listen aufgeteilt:
 Nicht als Unregelmässigkeiten zählen die Endung -el in der 1. Person Präsens Singular, die Vermeidung von Konsonantenverdoppelungen am Wortende, durch die Schreibweise bedingte Besonderheiten mit ‹c›, ‹g› und ‹gl›, sowie unregelmässige Partizipformen.
 Die Endungen (inkl. suffigierte Personalpronomina) für diese Verben sind in lexc geschrieben und liegen in folgenden Dateien vor:
 
-  * verb/verb-ar-end.lexc für gidar – jau gid.
-  * verb/verb-ar-esch-end.lexc für gradular – jau gratulesch.
-  * verb/verb-er-end.lexc für temair – jau tem, vender – jau vend.
-  * verb/verb-er-esch-end.lexc für apparair – jau apparesch, absolver – jau absolvesch.
-  * verb/verb-ir-end.lexc für partir – jau part, currer – jau cur.
-  * verb/verb-ir-esch-end.lexc für finir – jau finesch.
+  * `verb/verb-ar-end.lexc` für *gidar – jau gid*.
+  * `verb/verb-ar-esch-end.lexc` für *gradular – jau gratulesch*.
+  * `verb/verb-er-end.lexc` für *temair – jau tem, vender – jau vend*.
+  * `verb/verb-er-esch-end.lexc` für *apparair – jau apparesch, absolver – jau absolvesch*.
+  * `verb/verb-ir-end.lexc` für *partir – jau part, currer – jau cur*.
+  * `verb/verb-ir-esch-end.lexc` für *finir – jau finesch*.
 
 Da der Infinitiv separat implementiert ist, können für verschiedene Verbgruppen die gleichen Endungen verwendet werden. Der richtige Anschluss der Pronomina und die Entscheidung über die Endung -el werden durch Ersetzungsregeln in `verb/verb.xfst` sichergestellt.
 
@@ -406,30 +406,30 @@ Verben, die nicht in die vorherigen Kategorien passen, gehören zu den unregelm
 Die Partizipformen, die vom allgemeinen Schema abweichen wurden unabhängig von der Konjugationsklasse der Verben in verb/verb-part-irr.lexc implementiert. Es muss dabei darauf geachtet werden, nach welchem System (-à, -ì oder konsonantisch) die Partizipien dekliniert werden und ob eine Konsonantenverdoppelung geschieht oder der Stamm auf ‹s› endet und kein ‹s› mehr folgen kann.
 Da die unregelmässigen Partizipien die regelmässigen überschreiben, müssen parallele Formen hier integriert werden, auch wenn sie regelmässig gebildet würden.
 
-#### <a name="sec6.12.5"></a> 6.12.5 Hypothetische Formen
+#### <a name="sec6.12.5"></a> 6.12.5 Guesser für Verben
 
-Anhand der Endungen können auch dem System unbekannte Verbformen verarbeitet werden. Dabei werden können sie folgenden Konjugationgruppen angehören:
+Anhand der Endungen können auch dem System unbekannte Verbformen verarbeitet werden. Dabei können sie folgenden Konjugationgruppen angehören:
 
-  * Verben wie gidar – jau gid.
-  * Verben wie temair – jau tem.
-  * Verben wie vender – jau vend.
-  * Verben wie partir – jau part.
-  * Verben wie gratular – jau gratulesch, allerdings auf gewisse Stammendungen eingeschränkt.
-  * Verben wie finir – jau finesch.
+  * Verben wie *gidar – jau gid*.
+  * Verben wie *temair – jau tem*.
+  * Verben wie *vender – jau vend*.
+  * Verben wie *partir – jau part*.
+  * Verben wie *gratular – jau gratulesch* (auf gewisse Stammendungen eingeschränkt).
+  * Verben wie *finir – jau finesch*.
 
 ## <a name="sec7"></a> 7 Schreibregeln
-In spelling/ortho-rule.xfst sind die Regeln zur Grossschreibung (Erstellung von fstbinaries/Capitalization.fst) und die Regeln für die verschiedenen Erscheinungen des Apostrophs und der finalen Verarbeitung der harten und weichen Konsonanten (‹c›, ‹g›, ‹l›; schliesslich in fstbinaries/OrthoRule.fst) implementiert.
+In `spelling/ortho-rule.xfst` sind die Regeln zur Grossschreibung (Erstellung von fstbinaries/Capitalization.fst) und die Regeln für die verschiedenen Erscheinungen des Apostrophs und der finalen Verarbeitung der harten und weichen Konsonanten (‹c›, ‹g›, ‹l›; schliesslich in `fstbinaries/OrthoRule.fst`) implementiert.
 
 ## <a name="sec8"></a> 8 Traditionelle Schriftidiome
-Für kurze Wörter wie Pronomina, Artikel und einige Präpositionen gibt es pro Idiom in idioms/ eine lexc-Liste, die diese Wörter enthält. Damit können diese Formen, die sich manchmal stark vom Rumantsch Grischun unterscheiden, erkannt werden. Für die sonstigen Fälle sind Ersetzungsregeln für Buchstaben und Buchstabengruppen in idioms/varieties.xfst implementiert. Diese können die geläufigsten Lautunterschieden verarbeiten.
+Für kurze Wörter wie Pronomina, Artikel und einige Präpositionen gibt es pro Idiom in `idioms/` eine lexc-Liste, die diese Wörter enthält. Damit können diese Formen, die sich manchmal stark vom Rumantsch Grischun unterscheiden, erkannt werden. Für die sonstigen Fälle sind Ersetzungsregeln für Buchstaben und Buchstabengruppen in `idioms/varieties.xfst` implementiert. Diese können die geläufigsten Lautunterschieden verarbeiten.
 Die Transduktoren für die Analyse der Schriftidiome sind nach deren Namen benannt und können auch kombiniert werden. Automatisch erstellt wird die Kombination aus Rumantsch Grischun und den fünf Schriftidiomen.
 
 
 
 ## <a name="sec9"></a> 9 Tokenisierung
-Das System erwartet Eingabetexte, die grundsätzlich nach Leerstellen tokenisiert wurden. Des weiteren sollten auch Satzzeichen als Tokens stehen, jedoch Zahlen nicht aufgeteilt werden. Mehrworttokens sind nur bei unveränderlichen Wortarten wie Namen erlaubt.
-Die Tokenisierung beim Apostroph sollte nach folgender Regel gehen: Ist der Teil vor dem Apostroph verkürzt und nach dem Apostroph ein Vokal, soll getrennt werden und der Apostroph zu ersten Teil gehören (l’onn → l’ + onn). Ist hingegen der Teil nach dem Apostroph verkürzt und somit ein Konsonant nach dem Apostroph, soll es als ein Token angesehen werden und nicht getrennt werden (gida’l → gida’l). Konsonanten hingegen werden im Rätoromanischen nicht durch Apostroph ersetzt.
-Ein einfacher Tokeniser, der diese Regeln berücksichtigt ist im Paket enthalten und kann mit perl benützt werden:
+Das System erwartet Eingabetexte, die nach Leerstellen tokenisiert wurden. Des weiteren sollten auch Satzzeichen als Tokens stehen, jedoch Zahlen nicht aufgeteilt werden. Mehrworttokens sind nur bei unveränderlichen Wortarten wie Namen erlaubt.
+Die Tokenisierung beim Apostroph sollte nach folgender Regel gehen: Ist der Teil vor dem Apostroph verkürzt und nach dem Apostroph ein Vokal, soll getrennt werden und der Apostroph zu ersten Teil gehören (*l’onn* → *l’* + *onn*). Ist hingegen der Teil nach dem Apostroph verkürzt und somit ein Konsonant nach dem Apostroph, soll es als ein Token angesehen werden und nicht getrennt werden (*gida’l* → *gida’l*). Konsonanten hingegen werden im Rätoromanischen nicht durch Apostroph ersetzt.
+Ein einfacher perl-basierter Tokeniser, der diese Regeln umsetzt, :
 
 `$ perl tokenizer.pl Infile Outfile`
 
