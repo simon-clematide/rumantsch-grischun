@@ -1,28 +1,26 @@
 # Morphologieanalyse für Rumantsch Grischun
 
-Universität Zürich, Institut für Computerlinguistik, Stand 26. Juli 2013 
+Institut für Computerlinguistik, Universität Zürich, Lizenz: Creative Commons Attribution-ShareAlike 4.0
 
 Reto Baumgartner, Martina Bachmann, Rolf Badat, Daniel Hegglin, Susanna Tron, Melanie Widmer
 
 ## <a name="sec1"></a> 1 Abstract
-Als Gruppenarbeit wurde an der Universität ein Morphologieanalysesystem für die schweizerische Landessprache Rätoromanisch erstellt. Dafür wurde die Standardvarietät Rumantsch Grischun gewählt und mit Hilfe von Finite-State-Methoden implementiert. Auch die traditionellen Standardvarietäten des Rätoromanischen lassen sich bis zu einem gewissen Grad mit dem gebauten System behandeln. Die linguistischen Teile orientieren sich eng an existierenden Systemen nahe verwandter Sprachen. 
 
-## <a name="sec2"></a> 2 Ausgangslage
-Als Grundlage für die Wortbildung diente die Grammatik von Caduff et al. [2]. 
-Als Basis für die Wortlisten wurde das Pledari grond online der Lia Rumantscha [4] verwendet, wobei die Verben und Substantive systematisch gesammelt werden konnten. 
-Die Wahl der Tags folgte den Empfehlungen von Beesley und Karttunen [1, 
-S. 335–366]. Für Zweifelsfälle wurde auch das Online-Morphologieanalysesystem von Corporation [3] für die italienische Sprache hinzugezogen. 
+Dies ist die konzeptuelle Dokumentation des finite-state-basierten Morphologiesystem für die schweizerische Landessprache Rumantsch Grischun. Teilweise sind auch die traditionellen Standardvarietäten des Rätoromanischen behandelt. Die linguistische Formalisierung orientiert sich an existierenden Systemen für die nah verwandte Sprache Italienisch. 
+
+## <a name="sec2"></a> 2 Linguistische Formalisierung
+
+Die Grammatik von [Caduff et al (2006)](#Caduff-et-al-2006) dient als Grundlage für die Wortbildung. 
+Die Wortlisten stammen grösstenteils aus dem [Pledari grond online](#lia-rumantscha-2013) der Lia Rumantscha. 
+Die Wahl der Tags folgte den Empfehlungen von [Beesley und Karttunen (2003, 335-366)](#beesley-and-karttunen-2003). Bei Zweifelsfällen wurde das Online-Morphologieanalysesystem von [Xerox Corporation (2013)](#xerox-corporation-2013) für Italienisch verwendet. 
 
 ## <a name="sec3"></a> 3 Installation
-Das Morphologieanalysesystem für Rumantsch Grischun lässt sich bequem mit Hilfe vom Makeﬁles installieren. Die Voraussetzung für die Installation sind die Finite-State-Werkzeuge von Xerox (xfst und lexc)[^1] oder die Open-Source-Variante Foma (mit foma und lexc)[^2]
+Das Morphologiesystem lässt sich einfach mit dem Build-Werkzeug `make` kompilieren. Die Voraussetzung für die Installation sind die [Finite-State-Werkzeuge von Xerox](http://www.stanford.edu/~laurik/fsmbook/home.html) (xfst) oder alternativ Mans Huldens [Open-Source-Variante Foma](http://code.google.com/p/foma/) (foma). Im folgenden bezeichnet `xfst/foma` das jeweils verwendete Werkzeug.
 
-[^1]: Erhältlich über <http://www.stanford.edu/laurik/fsmbook/home.hml> (letzter Zugriff: 2013-07-24)
 
-[^2]: Erhältlich über <http://code.google.com/p/foma/> (letzter Zugriff: 2013-07-24) 
+Für die traditionellen Schriftidiome existiert ein Behelf, der mit ein paar wenigen gelisteten Formen und regelmässigen Ersetzungen von Buchstaben oder Buchstabengruppen im Rumantsch Grischun die Formen der traditionellen Schriftidiome bildet. Damit können aber nicht alle Formen erkannt werden, weil sich die Schriftidiome manchmal stark vom Rumantsch Grischun unterscheiden.
 
-Für die traditionellen Schriftidiome existiert ein Behelf, der mit ein paar wenigen gelisteten Formen und regelmässigen Ersetzungen von Buchstaben oder Buchstabengruppen im Rumantsch Grischun die Formen der traditionellen Schriftidiome bildet. So können aber natürlich nicht alle Formen erkannt werden, nur schon dadurch, dass die Schriftidiome sich in der Grammatik manchmal deutlich vom Rumantsch Grischun unterscheiden.
-
-Für die Installation müssen die Dateien des Archivs im gewünschten Ordner entpackt werden und dort können mit folgenden Kommandos die Netzwerke wiederverwendbar gespeichert werden:  
+Für die Installation müssen die Dateien des Archivs im gewünschten Ordner entpackt werden und dort können mit folgenden Kommandos die binären Netzwerke kompiliert und gespeichert werden:  
 
 
 Befehl | Erklärung |
@@ -40,6 +38,7 @@ Die bei der Installation erstellten Dateien mit .fst können in xfst/foma gelad
 `xfst[0]: load stack GrischunGuessing.fst`  
 
 oder sie können auf der Kommandozeile für die Analyse mittels lookup/flookup verwendet werden:
+
 `$ lookup Grischun.fst < tokenis-Infile.txt > Outfile.txt`
 
 ## <a name="sec5"></a> 5 Verwendete Tags
@@ -163,7 +162,7 @@ Die Tags `+UNKNOWN` und `*` können in `collection-RG.xfst` geändert werden. 
 
 ## <a name="sec6"></a> 6  Wortarten
 ### <a name="sec6.1"></a> 6.1  Adjektive
-Adjektive werden wie folgend markiert:
+Adjektive sind folgendermassen markiert:
 
 
 Lemma | Wortart | Steigerungsstufe | Genus | Numerus|
@@ -172,40 +171,40 @@ bun   | +Adj    |                  |+Masc  |+Sg     |
       |         | +Comp            |+Fem   |+Pl     |
       |         | +Sup
 
-Die Markierung für den Komparativ wird nur für die unregelmässige Steigerung verwendet. Gleichzeitig steht er auch, wenn eine entsprechende Adjektivform superlativisch verwendet wird. Die Markierung für den Superlativ steht für Formen mit der Endung `‹-ischem›` die nicht eine Steigerungsform im engen Sinn, sondern eine Intensivierungen des Adjektivs beinhaltet. Für den Positiv steht keine Markierung.
+Die Markierung für den Komparativ wird nur für die unregelmässige Steigerung verwendet. Gleichzeitig steht er auch, wenn eine entsprechende Adjektivform superlativisch verwendet wird. Die Markierung für den Superlativ steht für Formen mit der Endung `‹-ischem›`, die nicht eine Steigerungsform im engen Sinn, sondern eine Intensivierungen ausdrückt. Für den Positiv steht keine Markierung.
 
 Die Integration der Adjektive findet in `adj/adj.xfst` statt. Es wird eine Aufteilung der Adjektive in verschiedene Kategorien verwendet.
 
 #### <a name="sec6.1.1"></a> 6.1.1  Regelmässige Adjektive
-Wie regelmässige Adjektive (wie *calm* – *calma*) werden auch die Adjektive mit Konsonantenverdoppelung vor der femininen Endung (wie *brut* – *brutta*) und Adjektive mit flüchtigem Vokal (wie *liber* – *libra*) behandelt. Durch eine vorausgehende Behandlung können alle schliesslich wie regelmässige Adjektive behandelt werden. Die drei Adjektivuntergruppen sind einzeln in folgenden Dateien gelistet:
+Wie regelmässige Adjektive (wie *calm – calma*) werden auch die Adjektive mit Konsonantenverdoppelung vor der femininen Endung (wie *brut – brutta*) und Adjektive mit flüchtigem Vokal (wie *liber – libra*) behandelt. Durch eine vorausgehende Behandlung können alle schliesslich wie regelmässige Adjektive behandelt werden. Die drei Adjektivuntergruppen sind in folgenden Dateien aufgelistet:
 
-  * `wordlists/adj-reg.txt` für die ganz regelmässigen Adjektive. Diese Liste ist noch weit entfernt von der Vollständigkeit.
-  * `wordlists/asj-doubling.txt` für die Adjektive mit Konsonantenverdopplung. Auch diese Liste sollte noch erweitert werden.
+  * `wordlists/adj-reg.txt` für die ganz regelmässigen Adjektive. Diese Liste sollte erweitert werden.
+  * `wordlists/asj-doubling.txt` für die Adjektive mit Konsonantenverdopplung. Diese Liste sollte erweitert werden.
   * `wordlists/adj-e.txt` für die Adjektive mit flüchtigem Vokal.
 
 
 #### <a name="sec6.1.2"></a> 6.1.2  Adjektive mit Partizipendung
-Diese Adjektive enden in *-à* oder *-ì* (z. B. *affectuà* – *affectuada* oder *partì* – *partida*). Die meisten von ihnen sind auch Partizipien, jedoch solche, die im Pledari Grond als Lemma aufgelistet sind.
+Diese Adjektive enden in *-à* oder *-ì* (*affectuà – affectuada* oder *partì – partida*). Die meisten sind Partizipien, die im [Pledari grond online](#lia-rumantscha-2013) als Lemma aufgelistet sind.
 
 Diese Adjektive sind aufgelistet in:
 
-  * wordlists/adj-part.txt. Die Liste kann als ziemlich vollständig angesehen werden.
+  * wordlists/adj-part.txt. Die Liste sollte weitgehend vollständig sein.
 
 #### <a name="sec6.1.3"></a> 6.1.3  Unveränderliche Adjektive
 
 Für die unveränderlichen Adjektive wurden die gleichen Tags verwendet wie für die regelmässigen Adjektive. Somit ist die Analyse nie eindeutig möglich, aber die Einheitlichkeit ist bewahrt. Auf den Superlativ wurde verzichtet, da nicht klar ist, ob und wie dieser gebildet werden könnte. Die unveränderlichen Adjektive sind aufgelistet in der Datei `wordlists/adj-inv.txt`.
 
 #### <a name="sec6.1.4"></a> 6.1.4  Unregelmässige Adjektive
-Die unregelmässigen Adjektive teilen sich in zwei Gruppen auf, nämlich in diejenigen mit einer unregelmässigen Steigerung und diejenigen mit einer unregelmässigen Formenbildung. Die Formen sind komplett in lexc geschrieben und überschreiben die anderen Formen, wenn sie die gleiche Oberseite aufweisen. Nebeneinanderstehende Formen sollten deshalb alle gelistet werden. Die Implementierung findet in folgenden Dateien statt:
+Die unregelmässigen Adjektive teilen sich in zwei Gruppen auf, nämlich in diejenigen mit einer unregelmässigen Steigerung und diejenigen mit einer unregelmässigen Formenbildung. Die Formen sind komplett in lexc geschrieben und überschreiben die anderen Formen, wenn sie die gleiche Oberseite aufweisen. Nebeneinanderstehende Formen sollten deshalb alle aufgelistet werden. Diese Adjektive sind aufgelistet in:
 
   * adj/adj-irr.lexc für die unregelmässige Formenbildung.
   * adj/adj-comp-irr.lexc für die unregelmässige Steigerung.
 
-#### <a name="sec6.1.5"></a> 6.1.5  Hypothetische Formen
-Die Erratung von unbekannten Adjektivformen ist nur bei den regelmässigen Adjektiven (inkl. Konsonantenverdoppelung und flüchtigen Vokal) gemacht. Die Adjektive mit Partizipendung wurden bewusst weggelassen, da solche Formen in erster Linie eher Verbformen sind und so einerseits schon integriert sind, andererseits auch bereits in den meisten Fällen korrekt analysiert werden können.
+#### <a name="sec6.1.5"></a> 6.1.5  Adjektiv-Guesser
+Der Guesser für unbekannte Adjektivformen ist nur für regelmässigen Adjektiven (inkl. Konsonantenverdoppelung und flüchtigen Vokal) implementiert. Die Adjektive mit Partizipendung wurden bewusst weggelassen, da solche Formen in erster Linie eher Verbformen sind und so einerseits schon integriert sind, andererseits auch bereits in den meisten Fällen korrekt analysiert werden können.
 
 ### <a name="sec6.2"></a> 6.2  Adverbien
-Für die Adverbien dienen folgende Markierungen:
+Adverbien sind folgendermassen markiert:
 
 Lemma | Wortart | Steigerungsstufe | Derivationsgrenze | Wortart|
 ------|---------|------------------|-------------------|--------|
@@ -213,40 +212,40 @@ bun   | +Adj    |                  |^DB                |+Adv    |
       |         | +Sup             |                   |        |
 main  | +Adv    | 
 
-Die oben gelistete Behandlung wie bei bun behandelt Adverbien, die von Adjektiven abgeleitet sind. Die untere Art zeigt, wie Kurzadverbien behandelt werden. Die Adverbformen werden in `adv/adv.xfst` gesammelt. Die Implementierung der Formen geschieht analog zu den regelmässigen Adjektiven (Kapitel 6.1.1) und den Adjektiven mit Partizipendung (Kapitel 6.1.2). Auf die Behandlung der unregelmässigen Formen und der unveränderlichen muss hier aber weiter eingegangen werden.
+Die oben gelistete Behandlung wie bei *bun* behandelt Adverbien, die von Adjektiven abgeleitet sind. Die untere Art zeigt, wie Kurzadverbien behandelt werden. Die Adverbformen werden in `adv/adv.xfst` gesammelt. Die Implementierung der Formen geschieht analog zu den regelmässigen Adjektiven [(Kapitel 6.1.1)](#sec6.1.1) und den Adjektiven mit Partizipendung [(Kapitel 6.1.2)](#sec6.1.2). Auf die Behandlung der unregelmässigen Formen und der unveränderlichen muss hier aber weiter eingegangen werden.
 
 #### <a name="sec6.2.1"></a> 6.2.1  Adverbien aus unveränderlichen Adjektiven
-Diese Lemmata sind in folgender Liste gesammelt:
+Diese Adverbien sind aufgelistet in:
 
   * `wordlists/adv-adj.txt`. Die Liste muss möglicherweise erweitert werden.
 
 #### <a name="sec6.2.2"></a> 6.2.2  Unregelmässige Adverbien
 
-Adjektive, welche die feminine Form unregelmässig bilden, zeigen dieses Verhalten auch bei den Adverbien (z. B. *lartg* – *largia* – *larigamain*). Diese Formen sind komplett in lexc geschrieben und überschreiben regelmässige Formen, die die gleiche Oberseite aufweisen: `adv/adv-irr.lexc`.
+Adjektive, welche die feminine Form unregelmässig bilden, zeigen dieses Verhalten auch bei den Adverbien (z. B. *lartg – largia – larigamain*). Diese Formen sind komplett in lexc geschrieben und überschreiben regelmässige Formen, die die gleiche Oberseite aufweisen: `adv/adv-irr.lexc`.
 
 ### <a name="sec6.3"></a> 6.3  Artikel
-Die Artikel und Präpositionalartikel werden mit folgenden Tags genauer bezeichnet:
+Die Artikel und Präpositionalartikel sind folgendermassen markiert:
 
 Lemma | Wortart | Grenze | Wortart | Bestimmth| Genus | Numerus | Endung |
 ------|---------|--------|---------|----------|-------|---------|--------|
 in    | +Art    |        |         | +Def     | +Masc | +Sg     |        |
       |         |        |         |          | +Fem  | +Pl     | +Apo   |
-
+      |         |        |         |          |       |         |        |
 da    | +Prep   | ^=     | +Art    |          |       |         |        | 
 
-Diese Formen sind komplett in lexc aufgelistet und in der Datei `art-pron/art.lexc` zu finden. Hier ist keine Erweiterung nötig oder vorgesehen.
+Diese Formen sind komplett in lexc aufgelistet und in der Datei `art-pron/art.lexc` zu finden. Hier ist keine Erweiterung nötig.
 
 ### <a name="sec6.4"></a> 6.4  Buchstaben und Initialen
 
-Als Initialen zählt die Kombination aus einem Grossbuchstaben mit einem Punkt. Sie werden mit +Initial gekennzeichnet. Buchstaben sind dagegen Minuskel und Majuskel und sie werden mit +Let gekennzeichnet. Als Kriterium für die Wahl der Buchstaben wurden die Zeichensätze ISO 8859-1 und ISO 8859-15 gewählt und die Buchstaben daraus kombiniert.
-Die Buchstaben und Initialen sind in `particles/letter.lexc` gelistet.
+Als Initialen zählt die Kombination aus einem Grossbuchstaben mit einem Punkt. Sie werden mit `+Initial` gekennzeichnet. Buchstaben sind dagegen Minuskel und Majuskel und sie werden mit `+Let` gekennzeichnet. Als Kriterium für die Wahl der Buchstaben wurden die Zeichensätze ISO 8859-1 und ISO 8859-15 gewählt und die Buchstaben daraus kombiniert.
+Die Buchstaben und Initialen sind in `particles/letter.lexc` aufgelistet.
 
 ### <a name="sec6.5"></a> 6.5  Interjektionen
 
-Die Interjektionen tragen das Tag +Interj und sie sind in particles/interj.lexc gelistet.
+Die Interjektionen tragen das Tag `+Interj` und sie sind in `particles/interj.lexc` aufgelistet.
 
 ### <a name="sec6.6"></a> 6.6 Interpunktion
-Für die Interpunktion dienen folgende Tags:
+Die Interpunktionen sind folgendermassen markiert
 
 Lemma | Wortart | Unterart |
 ------|---------|----------|
@@ -264,7 +263,7 @@ Der Tag +PUNCT steht bei Zeichen, die grundsätzlich nicht für die Strukturie
 Es wird unterschieden zwischen Konjunktionen (+Conj) und Subjunktionen (+Subj). Apostrophierte Formen oder solche mit Hiatustilger tragen zusätzlich das Tag +Apo. Die Konjunktionen und Subjunktionen sind in `particles/conj.lexc` gelistet.
 
 ### <a name="sec6.8"></a> 6.8  Numerale und Zahlen
-Für Zahlen und Zahlwörter stehen folgende Tags:
+Für Zahlen und Zahlwörter sind folgendermassen markiert:
 
 Lemma | Zahlart    | Mass     | Genus          | Numerus |
 ------|------------|----------|----------------|---------|
@@ -287,24 +286,24 @@ Präpositionen werden mit dem Tag +Prep markiert. Bei Apostrophierung oder Hiat
 Zur Kombination aus Artikel und Präposition steht mehr bei 6.3.
 
 ### <a name="sec6.10"></a> 6.10 Pronomina 
-Die morphologischen Angaben zu Pronomina werden durch folgende Tags gegeben:
+Pronomina sind folgendermassen markiert:
 
 Lemma | Wortart | Unterart | Kasus, Ton | Person | Genus | Num. | Endung |
 ------|---------|----------|------------|--------|-------|------|--------|
 jau   | +Pron   | +Pers    | +Nom       | +1P    | +Masc | +Sg  |        |
 sai   |         | +Refl    | +Acc +Ton  | +2P    | +Fem  | +Pl  | +Apo   |
-      |         |       | +AccDat +Aton | +3P    | +MF   |      |        |      
+      |         |          | +AccDat +Aton | +3P | +MF   |      |        |      
 mes   | +Pron   | +Poss    |            |        | +Masc | +Sg  |        |        
       |         | +Poss    |            |        | +Fem  | +pl  |        |        
 lez   | +Pron   | +Dem     |            |        |       |      |        |
 tgi   |         | +Interrog|            |        | +Masc | +Sg  | +Apo   |
 tut   |         | +Indef   |            |        | +Fem  | +Pl  |        |
     
-Bei den Demonstrativ-, Interrogativund Indefinitpronomina stehen Deklinationsendungen nur bei veränderlichen Lemmata. Die Possessivpronomina können zu Substantiven deriviert werden. Dabei steht der Tag ˆDB und die restlichen Tags wie bei den Substantiven.
-Die Pronomina sind in `art-pron/pron.lexc` gelistet.
+Bei den Demonstrativ-, Interrogativ- und Indefinitpronomina stehen Deklinationsendungen nur bei veränderlichen Lemmata. Die Possessivpronomina können zu Substantiven deriviert werden. Dabei steht das Tag `ˆDB` und die restlichen Tags wie bei den Substantiven.
+Die Pronomina sind in `art-pron/pron.lexc` aufgelistet.
 
 ### <a name="sec6.11"></a> 6.11 Substantive
-Die Substantive werden durch folgende Tags bestimmt:
+Die Substantive sind folgendermassen markiert:
 
 Lemma | Wortart | Genus | Numerus |
 ------|---------|-------|---------|
@@ -347,10 +346,10 @@ Die Verarbeitung für unbekannte Formen enthält die regelmässigen Substanti
 
 #### <a name="sec6.11.6"></a> 6.11.6 Abkürzungen und Namen
 In `wordlists/noun-abbr.txt` sind Abkürzungen für Substantive enthalten. Sie tragen die Tags +Noun +Abbr . Ist eine Abkürzungsliste vorhanden, empfiehlt es sich, diesen Teil zu ersetzen.
-In `wordlists/noun-proper.txt` sind Namen gelistet. Für Personennamen liegt es nahe, aus bestehenden System diesen Teil zu übernehmen. Für sprachspezifische Namen werden aber spezifische Listen vonnöten sein.
+In `wordlists/noun-proper.txt` sind Namen aufgelistet. Für Personennamen liegt es nahe, aus bestehenden System diesen Teil zu übernehmen. Für sprachspezifische Namen werden aber spezifische Listen vonnöten sein.
 
 ### <a name="sec6.12"></a> 6.12 Verben
-Die morphologischen Angaben zu den Verben werden mit folgenden Tags dargestellt:
+Die Verben sind folgendermassen markiert:
 
 Lemma | Wortart | Form     | Person | Genus | Numerus |
 ------|---------|----------|--------|-------|---------|
@@ -367,10 +366,10 @@ midar | +Verb   | +PastPart|        | +Masc | +Sg     |
       |         |          |        | +Fem  | +Pl     |
 
 
-Zusätzlich können noch Endungen folgen, wenn das Verb von Pronomina gefolgt ist. Folgt das Pronomen ins wird entweder die Verbendung apostrophiert oder ein ‹n› suffigert, was beides mit +Apo markiert wird.
-Die Personalpronomina werden hingegen direkt an das Verb suffigiert und die Verbindungsgrenze mit ˆ| markiert. Danach folgen die üblichen Angaben der Pronomina:
+Zusätzlich können noch Endungen folgen, wenn das Verb von Pronomina gefolgt ist. Folgt das Pronomen *ins* wird entweder die Verbendung apostrophiert oder ein ‹n› suffigert, was beides mit `+Apo` markiert wird.
+Die Personalpronomina werden hingegen direkt an das Verb suffigiert und die Verbindungsgrenze mit `ˆ|` markiert. Danach folgen die üblichen Angaben der Pronomina:
 gidar+Verb+PresInd+3P+Sgˆ|+Pron+Pers+Nom+3P+Masc+Sg gida’l
-Die Implementierung der Verben erfolgt in verb/verb.xfst und es wird nach drei Verbgruppen unterschieden: Regelmässige Verben, Verben mit Vokalwechsel und unregelmässige Verben. Die Bildung der unregelmässigen Partizipformen erfolgt separat, da diese nicht dem gleichen Aufteilungsschema folgen.
+Die Implementierung der Verben erfolgt in `verb/verb.xfst` und es wird nach drei Verbgruppen unterschieden: Regelmässige Verben, Verben mit Vokalwechsel und unregelmässige Verben. Die Bildung der unregelmässigen Partizipformen erfolgt separat, da diese nicht dem gleichen Aufteilungsschema folgen.
 
 #### <a name="sec6.12.1"></a> 6.12.1 Regelmässige Verben
 Die regelmässigen Verben wurden in folgende Listen aufgeteilt:
@@ -395,17 +394,17 @@ Die Endungen (inkl. suffigierte Personalpronomina) für diese Verben sind in le
   * verb/verb-ir-end.lexc für partir – jau part, currer – jau cur.
   * verb/verb-ir-esch-end.lexc für finir – jau finesch.
 
-Da der Infinitiv separat implementiert ist, können für verschiedene Verbgruppen die gleichen Endungen verwendet werden. Der richtige Anschluss der Pronomina und die Entscheidung über die Endung -el werden durch Ersetzungsregeln in verb/verb.xfst sichergestellt.
+Da der Infinitiv separat implementiert ist, können für verschiedene Verbgruppen die gleichen Endungen verwendet werden. Der richtige Anschluss der Pronomina und die Entscheidung über die Endung -el werden durch Ersetzungsregeln in `verb/verb.xfst` sichergestellt.
 
 #### <a name="sec6.12.2"></a> 6.12.2 Verben mit Vokalwechsel
-Die Verben mit Vokalwechsel weisen in den Formen mit unbetonter Endung einen anderen Stammvokal auf, als in den Formen mit betonter Endung. Auch wenn Regelmässigkeiten existieren, wurde es als einfacher befunden, für jedes Verb beide Stämme zu listen. Diese Verben sind in verb/verb-vchg.lexcimplementiert. Für den Anschluss der Pronomina und die richtige Form der Endungen wird auch hier mit Ersetzungsregeln gearbeitet. Zur Regelmässigkeit (abgesehen vom Vokalwechsel) gelten die gleichen Kriterien wie bei den regelmässigen Verben.
+Die Verben mit Vokalwechsel weisen in den Formen mit unbetonter Endung einen anderen Stammvokal auf, als in den Formen mit betonter Endung. Auch wenn Regelmässigkeiten existieren, wurde es als einfacher befunden, für jedes Verb beide Stämme aufzulisten. Diese Verben sind in `verb/verb-vchg.lexc` implementiert. Für den Anschluss der Pronomina und die richtige Form der Endungen wird auch hier mit Ersetzungsregeln gearbeitet. Zur Regelmässigkeit (abgesehen vom Vokalwechsel) gelten die gleichen Kriterien wie bei den regelmässigen Verben.
 
 #### <a name="sec6.12.3"></a> 6.12.3 Unregelmässige Verben
-Verben, die nicht in die vorherigen Kategorien passen, gehören zu den unregelmässigen Verben. Diese liegen in der Datei verb/verb-irr.lexc in fertiger Form vor. Verben, die sich bloss durch einen Präfix unterscheiden sollten gemeinsam behandelt werden.
+Verben, die nicht in die vorherigen Kategorien passen, gehören zu den unregelmässigen Verben. Diese liegen in der Datei `verb/verb-irr.lexc` vor. Verben, die sich bloss durch einen Präfix unterscheiden sollten gemeinsam behandelt werden.
 
 #### <a name="sec6.12.4"></a> 6.12.4 Unregelmässige Verbpartizipien
 Die Partizipformen, die vom allgemeinen Schema abweichen wurden unabhängig von der Konjugationsklasse der Verben in verb/verb-part-irr.lexc implementiert. Es muss dabei darauf geachtet werden, nach welchem System (-à, -ì oder konsonantisch) die Partizipien dekliniert werden und ob eine Konsonantenverdoppelung geschieht oder der Stamm auf ‹s› endet und kein ‹s› mehr folgen kann.
-Da die unregelmässigen Partizipien die regelmässigen überschreiben müssen parallele Formen hier integriert werden, auch wenn sie regelmässig gebildet würden.
+Da die unregelmässigen Partizipien die regelmässigen überschreiben, müssen parallele Formen hier integriert werden, auch wenn sie regelmässig gebildet würden.
 
 #### <a name="sec6.12.5"></a> 6.12.5 Hypothetische Formen
 
@@ -435,10 +434,15 @@ Ein einfacher Tokeniser, der diese Regeln berücksichtigt ist im Paket enthalte
 `$ perl tokenizer.pl Infile Outfile`
 
 ## Literatur
-[1] Kenneth R. Beesley und Lauri Karttunen. Finite-State Morphology: Xerox Tools and Techniques. The Document Company—Xerox, 2000.
+<a name="beesley-karttunen-2003">[Beesley und Karttunen (2003)]</a> Kenneth R. Beesley und Lauri Karttunen. Finite-State Morphology: Xerox Tools and Techniques. CSLI Publications, 2003.
 
-[2] Renzo Caduff, Uorschla N. Caprez und Georges Darms. Grammatica d’instrucziun dal rumantsch grischun. Dissertation, Seminari da rumantsch da l’Universitad da Friburg, Fribourg, 2006.
+<a name="caduff-et-al-2006">[Caduff et al (2006)]</a>: Renzo Caduff, Uorschla N. Caprez und Georges Darms. Grammatica d’instrucziun dal rumantsch grischun. Seminari da rumantsch da l’Universitad da Friburg, Fribourg, 2006.
 
-[3] Xerox Corporation. Open xerox: Morphological analysis. URL http: //open.xerox.com/Services/fst-nlp-tools/Consume/176 (letzter Zugriff: 2013-07-24). Online-Morphologieanalyse.
+<a name="lia-rumantscha-2013">[Lia Rumantscha (2013)]</a> Lia Rumantscha. Pledari grond online. URL <http://www.pledarigrond.ch> (letzter Zugriff: 2013-07-07). Onlinewörterbuch für Rumantsch Grischun.
 
-[4] Lia Rumantscha. Pledari grond online. URL http://www. pledarigrond.ch (letzter Zugriff: 2013-07-07). Onlinewörterbuch für Rumantsch Grischun.
+<a name="xerox-corporation">[Xerox Corporation 2013]</a> Xerox Corporation. Open xerox: Morphological analysis. URL <http://open.xerox.com/Services/fst-nlp-tools/Consume/176> (letzter Zugriff: 2013-07-24). Online-Morphologieanalyse.
+
+
+
+## Changelog
+  - 2017-07-28: Konvertierung aus originaler PDF-Dokumentation aus 2013 (Simon Clematide)
