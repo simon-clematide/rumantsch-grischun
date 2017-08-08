@@ -16,7 +16,7 @@ tranter	tranter+Prep
 Breil-vitg	Breil-vitg+Prop
 e	e+Conj
 Danis/Tavanasa	Danis/Tavanasa+Prop
-.	.+SENT
+.	.+Sent
 
 Fatgs	*fatg+Noun+Masc+Pl
 or	or+Adv
@@ -35,13 +35,13 @@ furman	furmar+Verb+PresInd+3P+Pl
 las	il+Art+Def+Fem+Pl
 scaluttas	scalutta+Noun+Fem+Pl
 preistoricas	preistorica+Adj+Fem+Pl
-(	(+Punc+Beg
+(	(+Punct+Beg
 probablamain	probabel+Adj^DB+Adv
 dal	da+Prep^=+Art+Def+Masc+Sg
 temp	temp+Noun+Masc+Sg
 da	da+Prep
 bronz	bronz+Noun+Masc+Sg
-)	)+Punc+End
+)	)+Punct+End
 che	che+Subj
 sa	sai+Pron+Refl+AccDat+Aton+3P+MF+Pl
 chattan	chattar+Verb+PresInd+3P+Pl
@@ -52,7 +52,7 @@ Patnasa	Patnasa+Prop
 sut	sut+Prep
 il	il+Art+Def+Masc+Sg
 vitg	vitg+Noun+Masc+Sg
-.	.+SENT
+.	.+Sent
 
 Il	*il+Art+Def+Masc+Sg
 num	num+Noun+Masc+Sg
@@ -78,26 +78,26 @@ s.C.	s.C.+Noun+Abbr
 cun	cun+Prep
 la	il+Art+Def+Fem+Sg
 furma	furma+Noun+Fem+Sg
-‹	‹+Punc+Beg
+‹	‹+Punct+Beg
 Ardunae	Ardunae+Prop
-›	›+Punc+End
-(	(+Punc+Beg
+›	›+Punct+End
+(	(+Punct+Beg
 in	in+Art+Indef+Masc+Sg
 num	num+Noun+Masc+Sg
 da	da+Prep
 derivanza	derivanza+Noun+Fem+Sg
 celtica	celtic+Adj+Fem+Sg
-‹	‹+Punc+Beg
+‹	‹+Punct+Beg
 Are	Are+Prop
 Dunon	Dunon+Prop
-›	›+Punc+End
-=	=+Punc+Mid
+›	›+Punct+End
+=	=+Symbol
 Dardin	Dardin+Prop
 sper	sper+Prep
 la	il+Art+Def+Fem+Sg
 tur	tur+Noun+Fem+Sg
-)	)+Punc+End
-.	.+SENT
+)	)+Punct+End
+.	.+Sent
 
 En	*en+Prep
 ils	il+Art+Def+Masc+Pl
@@ -111,13 +111,13 @@ puspè	puspè+Adv
 en	en+Prep
 la	il+Art+Def+Fem+Sg
 furma	furma+Noun+Fem+Sg
-‹	‹+Punc+Beg
+‹	‹+Punct+Beg
 Arduna	Arduna+Prop
-›	›+Punc+End
+›	›+Punct+End
 ni	ni+Conj
-‹	‹+Punc+Beg
+‹	‹+Punct+Beg
 Ardin	Ardin+Prop
-›	›+Punc+End
+›	›+Punct+End
 e	e+Conj
 quai	quai+Pron+Dem
 fin	fin+Prep
@@ -126,7 +126,7 @@ mesadad	mesadad+Noun+Fem+Sg
 dal	da+Prep^=+Art+Def+Masc+Sg
 19avel	19+Dig+Ord+Masc+Sg
 tschientaner	tschientaner+Noun+Masc+Sg
-.	.+SENT
+.	.+Sent
 
 Da	*da+Prep
 lura	lura+Adv
@@ -134,13 +134,13 @@ davent	davent+Adv
 vegn	vegnir+Verb+PresInd+3P+Sg
 la	il+Art+Def+Fem+Sg
 furma	furma+Noun+Fem+Sg
-‹	‹+Punc+Beg
+‹	‹+Punct+Beg
 Dardin	Dardin+Prop
-›	›+Punc+End
+›	›+Punct+End
 adina	adina+Adv
 pli	pli+Adv
 usuala	usual+Adj+Fem+Sg
-.	.+SENT
+.	.+Sent
 
 La	*il+Art+Def+Fem+Sg
 plaiv	plaiv+Noun+Fem+Sg
@@ -157,7 +157,7 @@ Breil	Breil+Prop
 l’	il+Art+Def+Masc+Sg+Apo
 onn	onn+Noun+Masc+Sg
 1664	1664+Dig+Card
-.	.+SENT
+.	.+Sent
 
 Temp	*temp+Noun+Masc+Sg
 preschent	preschent+Adj+Masc+Sg
@@ -169,7 +169,7 @@ oz	oz+Adv
 radund	radund+Adj+Masc+Sg
 170	170+Dig+Card
 abitants	abitant+Noun+Masc+Pl
-.	.+SENT
+.	.+Sent
 
 La	*il+Art+Def+Fem+Sg
 populaziun	populaziun+Noun+Fem+Sg
@@ -191,7 +191,7 @@ e	e+Conj
 da	da+Prep
 l’	il+Art+Def+Fem+Sg+Apo
 agricultura	agricultura+Noun+Fem+Sg
-.	.+SENT
+.	.+Sent
 
 A	*a+Prep
 Dardin	Dardin+Prop
@@ -199,22 +199,22 @@ existan	exister+Verb+PresInd+3P+Pl
 las	il+Art+Def+Fem+Pl
 suandantas	suandant+Adj+Fem+Pl
 uniuns	uniuns+Noun+Fem+Pl
-:	:+Punc+End
+:	:+Punct+End
 uniun	uniun+Noun+Fem+Sg
 da	da+Prep
 giuventetgna	giuventetgna+Noun+Fem+Sg
-;	;+Punc+End
+;	;+Punct+End
 uniun	uniun+Noun+Fem+Sg
 da	da+Prep
 dunnas	dunna+Noun+Fem+Pl
 e	e+Conj
 mammas	mamma+Noun+Fem+Pl
-;	;+Punc+End
+;	;+Punct+End
 chor	chor+Noun+Masc+Sg
 maschadà	maschadar+Verb+PastPart+Masc+Sg
 e	e+Conj
 chor-baselgia	chor-baselgia+Noun+Masc+Sg
-.	.+SENT
+.	.+Sent
 
 En	*en+Prep
 pli	pli+Adv
@@ -234,7 +234,7 @@ promoziun	promoziun+Noun+Fem+Sg
 linguistica	linguistica+Adj+Fem+Sg
 e	e+Conj
 culturala	cultural+Adj+Fem+Sg
-.	.+SENT
+.	.+Sent
 
 Dapi	*dapi+Prep
 radund	radund+Adj+Masc+Sg
@@ -247,7 +247,7 @@ nagin’	nagin+Pron+Indef+Fem+3P+Sg+Apo
 atgna	agen+Adj+Fem+Sg
 scola	scola+Noun+Fem+Sg
 pli	pli+Adv
-.	.+SENT
+.	.+Sent
 
 Ils	*il+Art+Def+Masc+Pl
 aclauns	aclaun+Noun+Masc+Pl
@@ -275,10 +275,10 @@ il	il+Art+Def+Masc+Sg
 vitg	vitg+Noun+Masc+Sg
 da	da+Prep
 Dardin	Dardin+Prop
-:	:+Punc+End
+:	:+Punct+End
 
 Capeder	Capeder+Prop
-:	:+Punc+End
+:	:+Punct+End
 aclaun	aclaun+Noun+Masc+Sg
 che	che+Subj
 giascha	giaschair+Verb+PresInd+3P+Sg
@@ -291,7 +291,7 @@ via	via+Noun+Fem+Sg
 da	da+Prep
 communicaziun	communicaziun+Noun+Fem+Sg
 Breil-Schlans	Breil-Schlans+Prop
-.	.+SENT
+.	.+Sent
 
 Il	*il+Art+Def+Masc+Sg
 bajetg	bajetg+Noun+Masc+Sg
@@ -306,7 +306,7 @@ Nossadunna	Nossadunna+Prop
 da	da+Prep
 las	il+Art+Def+Fem+Pl
 Dolurs	*dolurs+Noun+Fem+Pl
-.	.+SENT
+.	.+Sent
 
 Ensemen	*ensemen+Adv
 cun	cun+Prep
@@ -319,10 +319,10 @@ la	il+Art+Def+Fem+Sg
 part	part+Noun+Fem+Sg
 Dadens	Dadens+Prop
 Baselgia	Baselgia+Prop
-.	.+SENT
+.	.+Sent
 
 Gliz	Gliz+Prop
-:	:+Punc+End
+:	:+Punct+End
 medemamain	medem+Adj^DB+Adv
 situà	situar+Verb+PastPart+Masc+Sg
 en	en+Prep
@@ -338,17 +338,17 @@ Breil-Schlans	Breil-Schlans+Prop
 gist	gist+Adj+Sup^DB+Adv
 sper	sper+Prep
 Capeder	Capeder+Prop
-.	.+SENT
+.	.+Sent
 
 Patnasa	Patnasa+Prop
-:	:+Punc+End
+:	:+Punct+End
 aclaun	aclaun+Noun+Masc+Sg
 en	en+Prep
 il	il+Art+Def+Masc+Sg
 sid	sid+Noun+Masc+Sg
 dal	da+Prep^=+Art+Def+Masc+Sg
 vitg	vitg+Noun+Masc+Sg
-.	.+SENT
+.	.+Sent
 
 El	*el+Pron+Pers+Nom+3P+Masc+Sg
 sa	sai+Pron+Refl+AccDat+Aton+3P+MF+Sg
@@ -357,7 +357,7 @@ d’	da+Prep+Apo
 ina	in+Art+Indef+Fem+Sg
 suletta	sulet+Adj+Fem+Sg
 chasa	chasa+Noun+Fem+Sg
-.	.+SENT
+.	.+Sent
 
 A	*a+Prep
 Patnasa	Patnasa+Prop
@@ -369,7 +369,7 @@ cun	cun+Prep
 las	il+Art+Def+Fem+Pl
 scaluttas	scalutta+Noun+Fem+Pl
 preistoricas	preistorica+Adj+Fem+Pl
-.	.+SENT
+.	.+Sent
 
 La	*il+Art+Def+Fem+Sg
 chaplutta	chaplutta+Noun+Fem+Sg
@@ -382,7 +382,7 @@ a	a+Prep
 Capeder	Capeder+Prop
 
 Caprè	Caprè+Prop
-:	:+Punc+End
+:	:+Punct+End
 aclaun	aclaun+Noun+Masc+Sg
 situà	situar+Verb+PastPart+Masc+Sg
 en	en+Prep
@@ -394,7 +394,7 @@ via	via+Noun+Fem+Sg
 da	da+Prep
 communicaziun	communicaziun+Noun+Fem+Sg
 Breil-Schlans	Breil-Schlans+Prop
-.	.+SENT
+.	.+Sent
 
 Caprè	Caprè+Adv
 sa	sai+Pron+Refl+AccDat+Aton+3P+MF+Sg
@@ -428,7 +428,7 @@ d’	da+Prep+Apo
 aclauns	aclaun+Noun+Masc+Pl
 da	da+Prep
 Dardin	Dardin+Prop
-.	.+SENT
+.	.+Sent
 
 En	*en+Prep
 il	il+Art+Def+Masc+Sg
@@ -443,10 +443,10 @@ Dadens-	Dadens-+Prop
 e	e+Conj
 Dado	Dado+Prop
 Baselgia	Baselgia+Prop
-.	.+SENT
+.	.+Sent
 
 Capaul	Capaul+Prop
-:	:+Punc+End
+:	:+Punct+End
 aclaun	aclaun+Noun+Masc+Sg
 en	en+Prep
 direcziun	direcziun+Noun+Fem+Sg
@@ -466,10 +466,10 @@ la	il+Art+Def+Fem+Sg
 part	part+Noun+Fem+Sg
 Dado	Dado+Prop
 Baselgia	Baselgia+Prop
-.	.+SENT
+.	.+Sent
 
 Casu	Casu+Prop
-:	:+Punc+End
+:	:+Punct+End
 ulteriur	ulteriur+Adj+Masc+Sg
 aclaun	aclaun+Noun+Masc+Sg
 da	da+Prep
@@ -478,10 +478,10 @@ situà	situar+Verb+PastPart+Masc+Sg
 en	en+Prep
 direcziun	direcziun+Noun+Fem+Sg
 ost	ost+Noun+Masc+Sg
-.	.+SENT
+.	.+Sent
 
 Casut	Casut+Prop
-:	:+Punc+End
+:	:+Punct+End
 terminescha	terminar+Verb+PresInd+3P+Sg
 il	il+Art+Def+Masc+Sg
 conglomerat	conglomerat+Noun+Masc+Sg
@@ -491,7 +491,7 @@ aclauns	aclaun+Noun+Masc+Pl
 en	en+Prep
 direcziun	direcziun+Noun+Fem+Sg
 ost	ost+Noun+Masc+Sg
-.	.+SENT
+.	.+Sent
 
 Ils	*il+Art+Def+Masc+Pl
 anteriurs	anteriur+Adj+Masc+Pl
@@ -518,5 +518,5 @@ ulteriuras	ulteriur+Adj+Fem+Pl
 fracziuns	fracziun+Noun+Fem+Pl
 dal	da+Prep^=+Art+Def+Masc+Sg
 vitg	vitg+Noun+Masc+Sg
-.	.+SENT
+.	.+Sent
 
