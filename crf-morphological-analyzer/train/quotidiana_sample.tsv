@@ -13,7 +13,7 @@ directori	directori	+Noun+Masc+Sg
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 partida	partida	+Noun+Fem+Sg
-cristiandemocratica	cristiandemocratic	+Adj+Fem+Sg+UNKNOWN
+cristiandemocratica	cristiandemocratic	+Adj+Fem+Sg 
 (	(	+Punct+Beg
 pcd	pcd	+Noun+Masc+Sg
 )	)	+Punct+End
@@ -22,7 +22,7 @@ Grischun	Grischun	+Prop
 tratg	trair	+Verb+PastPart+Masc+Sg
 ina	in	+Art+Indef+Fem+Sg
 bilantscha	bilantscha	+Noun+Fem+Sg
-positiva	positivar	+Verb+PresInd+3P+Sg+UNKNOWN
+positiva	positiv +Adj+Fem+Sg
 per	per	+Prep
 2006	2006	+Dig+Card
 .	.	+Sent
@@ -30,7 +30,7 @@ per	per	+Prep
 In	*in	+Art+Indef+Masc+Sg
 fatg	fatg	+Noun+Masc+Sg
 fitg	fitgar	+Verb+PresInd+1P+Sg
-legraivel	legraivel	+Adj+Masc+Sg+UNKNOWN
+legraivel	legraivel	+Adj+Masc+Sg
 è	esser	+Verb+PresInd+3P+Sg
 la	il	+Art+Def+Fem+Sg
 fundaziun	fundaziun	+Noun+Fem+Sg
@@ -51,7 +51,7 @@ da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 Regenza	*regenza	+Noun+Fem+Sg
 sco	sco	+Conj
-cunterproposta	cunterpropostar	+Verb+PresInd+3P+Sg+UNKNOWN
+cunterproposta	cunterproposta	+Noun+Fem+Sg
 vers	vers	+Noun+Masc+Pl
 il	il	+Art+Def+Masc+Sg
 fond	fond	+Noun+Masc+Sg
