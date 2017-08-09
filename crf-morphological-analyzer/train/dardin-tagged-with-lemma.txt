@@ -231,7 +231,7 @@ e	e+Conj
 per	per+Prep
 la	il+Art+Def+Fem+Sg
 promoziun	promoziun+Noun+Fem+Sg
-linguistica	linguistica+Adj+Fem+Sg
+linguistica	linguistic+Adj+Fem+Sg
 e	e+Conj
 culturala	cultural+Adj+Fem+Sg
 .	.+Sent
