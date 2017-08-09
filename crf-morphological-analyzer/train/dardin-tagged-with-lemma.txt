@@ -243,7 +243,7 @@ onns	onn+Noun+Masc+Pl
 n’	n'+Adv
 ha	avair+Verb+PresInd+3P+Sg
 Dardin	Dardin+Prop
-nagin’	nagin+Pron+Indef+Fem+3P+Sg+Apo
+nagin’	nagin+Pron+Indef+Fem+Sg+Apo
 atgna	agen+Adj+Fem+Sg
 scola	scola+Noun+Fem+Sg
 pli	pli+Adv
