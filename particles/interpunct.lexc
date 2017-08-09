@@ -40,6 +40,7 @@ LEXICON Root
 %‘	PUNCTBEG;
 %’	PUNCTEND;
 %%	PUNCT;
+%…  PUNCT;
 %"	PUNCT;
 %=	SYMBOL;
 
