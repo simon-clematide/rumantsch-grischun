@@ -161,6 +161,7 @@ existent
 explicit
 expost
 express
+expressiv
 exquisit
 extais
 exteriur
