@@ -396,7 +396,7 @@ communicaziun	communicaziun+Noun+Fem+Sg
 Breil-Schlans	Breil-Schlans+Prop
 .	.+Sent
 
-Caprè	Caprè+Adv
+Caprè	Caprè+Prop
 sa	sai+Pron+Refl+AccDat+Aton+3P+MF+Sg
 cumpona	cumponer+Verb+PresInd+3P+Sg
 da	da+Prep
