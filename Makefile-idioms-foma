@@ -1,0 +1,84 @@
+# Final usable networks
+
+Grischun.fst GrischunGuessing.fst \
+Puter.fst Surmiran.fst Sursilvan.fst Sutsilvan.fst Vallader.fst \
+AllStandards.fst : collection.xfst \
+fstbinaries/Adverb.fst \
+fstbinaries/Adjective.fst fstbinaries/AdjectiveGuessing.fst \
+fstbinaries/Noun.fst fstbinaries/NounGuessing.fst \
+fstbinaries/Verb.fst fstbinaries/VerbGuessing.fst \
+fstbinaries/Numeral.fst fstbinaries/Number.fst \
+fstbinaries/OrthoRule.fst \
+fstbinaries/Capitalization.fst \
+fstbinaries/PuterChanges.fst \
+fstbinaries/SurmiranChanges.fst \
+fstbinaries/SursilvanChanges.fst \
+fstbinaries/SutsilvanChanges.fst \
+fstbinaries/ValladerChanges.fst \
+particles/*.lexc \
+art-pron/*.lexc \
+idioms/*-override.lexc
+	foma -f collection.xfst
+
+# Networks for the major parts of speech
+fstbinaries/Adjective.fst fstbinaries/AdjectiveGuessing.fst : adj/adj.xfst \
+adj/adj-irr.lexc \
+adj/adj-comp-irr.lexc \
+wordlists/adj-reg.txt \
+wordlists/adj-e.txt \
+wordlists/adj-part.txt \
+wordlists/adj-inv.txt
+	foma -f adj/adj.xfst
+
+fstbinaries/Adverb.fst : adv/adv.xfst \
+wordlists/adj-reg.txt \
+wordlists/adj-e.txt \
+wordlists/adj-inv.txt \
+wordlists/adv-short.txt
+	foma -f adv/adv.xfst
+
+fstbinaries/Noun.fst fstbinaries/NounGuessing.fst : noun/noun.xfst \
+noun/noun-irr.lexc \
+wordlists/noun-fem.txt \
+wordlists/noun-fem-plur.txt \
+wordlists/noun-fem-sing.txt \
+wordlists/noun-masc.txt \
+wordlists/noun-masc-plur.txt \
+wordlists/noun-masc-sing.txt \
+wordlists/noun-part.txt
+	foma -f noun/noun.xfst
+
+fstbinaries/Numeral.fst fstbinaries/Number.fst : num/num.xfst
+	foma -f num/num.xfst
+
+fstbinaries/Verb.fst fstbinaries/VerbGuessing.fst : verb/verb.xfst \
+verb/verb-irr.lexc \
+verb/verb-vchg.lexc \
+verb/verb-ar-esch-end.lexc \
+verb/verb-ar-end.lexc \
+verb/verb-er-esch-end.lexc \
+verb/verb-er-end.lexc \
+verb/verb-ir-esch-end.lexc \
+verb/verb-ir-end.lexc \
+verb/verb-part-irr.lexc \
+wordlists/verb-air-esch.txt \
+wordlists/verb-air.txt \
+wordlists/verb-ar-esch.txt \
+wordlists/verb-ar.txt \
+wordlists/verb-er-esch.txt \
+wordlists/verb-er.txt \
+wordlists/verb-er2.txt \
+wordlists/verb-ir-esch.txt \
+wordlists/verb-ir.txt
+	foma -f verb/verb.xfst
+
+# Orthography and dealing with the different standards
+fstbinaries/PuterChanges.fst \
+fstbinaries/SurmiranChanges.fst \
+fstbinaries/SursilvanChanges.fst \
+fstbinaries/SutsilvanChanges.fst \
+fstbinaries/ValladerChanges.fst : idioms/varieties.xfst
+	foma -f idioms/varieties.xfst
+
+fstbinaries/Capitalization.fst fstbinaries/OrthoRule.fst : spelling/ortho-rule.xfst
+	foma -f spelling/ortho-rule.xfst
