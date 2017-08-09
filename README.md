@@ -11,5 +11,5 @@
   * A shorter introduction: Lia Rumantscha: RUMANTSCH GRISCHUN
 PER RUMANTSCHS <http://pledarigrond.ch/rumantschgrischun/assets/binary/grammatica.pdf>
   * Open Xerox Italian (our system tries to be roughly compatible with the morphological tags): <http://open.xerox.com/Services/fst-nlp-tools/Consume/176>
-
+  * Bilingwis with parallel texts on Swiss Laws [http://kitt.cl.uzh.ch/kitt/bilingwis/](http://kitt.cl.uzh.ch/kitt/bilingwis/?languagepair=derm&lang=de&corpus=slcbilingwis&language=0)
  
