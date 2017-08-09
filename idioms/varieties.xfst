@@ -1,0 +1,236 @@
+# -*- coding: utf-8 -*-
+################################################################################
+# University of Zurich - Institute of Computational Linguistics
+# Morphology anlysis for Romansh: Different Standards and Typos
+# Author: Reto Baumgartner
+# Date: June 2013
+################################################################################
+
+################################################################################
+# Alphabets
+################################################################################
+
+define LowerCon [b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z];
+define LowerVoc [a|e|i|o|u];
+define LowerAcc [á|é|í|ó|ú];
+define LowerUml [ö|ü];
+define UpperCon [B|C|D|F|G|H|J|K|L|M|N|P|Q|R|S|T|V|W|X|Y|Z];
+define UpperVoc [A|E|I|O|U];
+define UpperAcc [Á|É|Í|Ó|Ú];
+define UpperUml [Ö|Ü];
+
+define Lower [LowerCon|LowerVoc|LowerAcc|LowerUml];
+define Upper [UpperCon|UpperVoc|UpperAcc|UpperUml];
+define Char [Lower|Upper];
+
+# Diacritic accents may vary between the standards, so they can be deleted.
+define Deaccentize [à (->) a, è (->) e, ì (->) i, ò (->) o, ù (->) u];
+
+################################################################################
+# Idiom Simulation: Ladin (Puter and Vallader)
+################################################################################
+
+# Ladin Consonant changes:
+define LadC1 [{stg} (->) "<VCHG>" {s-ch} "<VARI>"];
+define LadC2 [{tg}  (->) "<VCHG>" {ch} "<VARI>"];
+define LadC3 [{gn}  (->) "<VCHG>" {n} "<VARI>"];
+define LadC [LadC1 .o. LadC2 .o. LadC3];
+
+# Ladin vowel changes:
+define LadV1 [{a}  (->) "<VCHG>" {o} "<VARI>" ,
+              {au} (->) "<VCHG>" {o} "<VARI>"];
+define LadV2 [{e}  (->) "<VCHG>" {a} "<VARI>" ,
+              {e}  (->) "<VCHG>" {ai} "<VARI>" ,
+              {e}  (->) "<VCHG>" {ei} "<VARI>" ,
+              {e}  (->) "<VCHG>" {i} "<VARI>" ,
+              {e}  (->) "<VCHG>" {ö} "<VARI>"];
+define LadV3 [{i}  (->) "<VCHG>" {ü} "<VARI>" , 
+              {ie} (->) "<VCHG>" {ö} "<VARI>"];
+define LadV4 [{o}  (->) "<VCHG>" {ou} "<VARI>" ,
+              {o}  (->) "<VCHG>" {u} "<VARI>"];
+define LadV5 [{u}  (->) "<VCHG>" {uo} "<VARI>"];
+define LadV [LadV1 .o. LadV2 .o. LadV3 .o. LadV4 .o. LadV5];
+
+# Ladin accent rules:
+define LadAccent [
+	{a} (->) {à} "<ACC>",
+	{e} (->) {è} "<ACC>",
+	{e} (->) {ê} "<ACC>",
+	{i} (->) {ï} "<ACC>",
+	{o} (->) {ò} "<ACC>",
+	{o} (->) {ô} "<ACC>"];
+
+# Ladin grammar rules:
+define LadAdv [{main} (->) {maing} || _ .#.];
+
+# Puter vowel changes:
+define PutrV1 [{a} (->) "<VCHG>" {au} "<VARI>" || _ n];
+define PutrV2 [{a} (->) "<VCHG>" {e} "<VARI>"];
+define PutrV [PutrV1 .o. PutrV2];
+
+# Puter consonant changes:
+define PutrC1 [{c} (->) "<VCHG>" {ch} "<VARI>" || _ .#.];
+define PutrC [PutrC1];
+
+# Vallader consonant changes:
+define VallC1 [{gi} (->) "<VCHG>" {j} "<VARI>" || _ a];
+define VallC [VallC1]; 
+
+# Collection:
+define PutrChanges [LadC .o. LadV .o. PutrC .o. PutrV .o. LadAccent .o. LadAdv];
+define VallChanges [LadC .o. LadV .o. VallC .o. LadAccent .o. LadAdv];
+
+################################################################################
+# Idiom Simulation: Surmiran
+################################################################################
+
+# Surmiran consonant changes:
+define SurmC1 [{ch} (->) "<VCHG>" {tg} "<VARI>"];
+define SurmC2 [{l}  (->) "<VCHG>" {gl} "<VARI>" || _ .#.];
+define SurmC3 [{ch} (->) "<VCHG>" {c} "<VARI>" || _ a];
+define SurmC4 [{v}  (->) "<VCHG>" {g} "<VARI>" || .#. _];
+define SurmC5 [{h}  (->) "<VCHG>" "<VARI>" || .#. _];
+define SurmC [SurmC1 .o. SurmC2 .o. SurmC3 .o. SurmC4 .o. SurmC5];
+
+# Surmiran vowel changes:
+define SurmV1 [{a} (->) "<VCHG>" {o} "<VARI>"];
+define SurmV2 [{e} (->) "<VCHG>" {a} "<VARI>" ,
+               {e} (->) "<VCHG>" {i} "<VARI>" ,
+               {e} (->) "<VCHG>" {i} "<VARI>"];
+define SurmV3 [{i} (->) "<VCHG>" {e} "<VARI>"];
+define SurmV4 [{o} (->) "<VCHG>" {a} "<VARI>"];
+define SurmV5 [{u} (->) "<VCHG>" {o} "<VARI>"];
+define SurmV [SurmV1 .o. SurmV2 .o. SurmV3 .o. SurmV4 .o. SurmV5];
+
+# Surmiran accent rules:
+define SurmAccent [
+	{e} (->) {è} "<ACC>",
+	{i} (->) {î} "<ACC>",
+	{o} (->) {ò} "<ACC>",
+	{o} (->) {ô} "<ACC>"];
+
+# Collection
+define SurmChanges [SurmC.o. SurmV .o. SurmAccent];
+
+################################################################################
+# Idiom Simulation: Sursilvan
+################################################################################
+
+
+# Sursilvan consonant changes:
+define SursC1 [{ch} (->) "<VCHG>" {tg} "<VARI>"];
+define SursC2 [{gn} (->) "<VCHG>" {n} "<VARI>"];
+define SursC3 [{ch} (->) "<VCHG>" {c} "<VARI>" || _ a];
+define SursC4 [{v}  (->) "<VCHG>" "<VARI>" || .#. _ u];
+define SursC [SursC1 .o. SursC2 .o. SursC3 .o. SursC4];
+
+# Sursilvan vowel changes:
+define SursV1 [{a} (->) "<VCHG>" {au} "<VARI>"];
+define SursV2 [{e} (->) "<VCHG>" {ia} "<VARI>" ,
+               {e} (->) "<VCHG>" {i} "<VARI>" ,
+               {e} (->) "<VCHG>" {ei} "<VARI>"];
+define SursV3 [{i} (->) "<VCHG>" {e} "<VARI>"];
+define SursV5 [{u} (->) "<VCHG>" {uo} "<VARI>"];
+define SursV [SursV1 .o. SursV2 .o. SursV3 .o. SursV5];
+
+# Sursilvan accent rules:
+define SursAccent [
+	{a} (->) {à} "<ACC>",
+	{e} (->) {è} "<ACC>",
+	{e} (->) {é} "<ACC>",
+	{i} (->) {î} "<ACC>",
+	{o} (->) {ó} "<ACC>"];
+
+# Collection
+define SursChanges [SursC.o. SursV .o. SursAccent];
+
+################################################################################
+# Idiom Simulation: Sutsilvan
+################################################################################
+
+# Sutsilvan consonant changes:
+define SutsC1 [{ch} (->) "<VCHG>" {tg} "<VARI>"];
+define SutsC2 [{n}  (->) "<VCHG>" {gn} "<VARI>" , 
+               {gn} (->) "<VCHG>" {n} "<VARI>"];
+define SutsC3 [{ch} (->) "<VCHG>" {c} "<VARI>" || _ a];
+define SutsC4 [{v}  (->) "<VCHG>" {g} "<VARI>" || .#. _];
+define SutsC5 [{h}  (->) "<VCHG>" "<VARI>"  || .#. _];
+define SutsC [SutsC1 .o. SutsC2 .o. SutsC3 .o. SutsC4 .o. SutsC5];
+
+# Sutsilvan vowel changes:
+define SutsV1 [{a} (->) "<VCHG>" {o} "<VARI>" ];
+define SutsV2 [{e} (->) "<VCHG>" {a} "<VARI>" , 
+               {e} (->) "<VCHG>" {ea} "<VARI>" ];
+define SutsV3 [{i} (->) "<VCHG>" {e} "<VARI>" ,
+               {i} (->) "<VCHG>" {ei} "<VARI>" ];
+define SutsV4 [{o} (->) "<VCHG>" {u} "<VARI>" ];
+define SutsV5 [{u} (->) "<VCHG>" {ua}"<VARI>" ];
+define SutsV [SutsV1 .o. SutsV2 .o. SutsV3 .o. SutsV4 .o. SutsV5];
+
+# Sutsilvan accent rules:
+define SutsAccent [
+	{a} (->) {â} "<ACC>",
+	{e} (->) {à} "<ACC>",
+	{e} (->) {é} "<ACC>",
+	{e} (->) {è} "<ACC>",
+	{o} (->) {ò} "<ACC>",
+	{u} (->) {ù} "<ACC>"];
+
+# Collection
+define SutsChanges [SutsC.o. SutsV .o. SutsAccent];
+
+################################################################################
+# Restriction Rules
+################################################################################
+# At least one change must have happened:
+define MinOneChange [$["<VARI>"]];
+
+# Only one newly insertec diacritic accent (grave, circumflex, acute) in one
+# word is permitted.
+define MaxOneAccent $?["<ACC>"];
+
+# All restrictions:
+define Restrictions [ MinOneChange .o. MaxOneAccent ];
+
+################################################################################
+# Cleanup
+################################################################################
+
+# Cleanup:
+define Clean1 [ "<VCHG>" -> 0 ];
+define Clean2 [ "<VARI>" -> 0 ];
+define Clean3 [ "<ACC>" -> 0 ];
+define CleanCHG [ Clean1 .o. Clean2 .o. Clean3 ];
+
+################################################################################
+# Collection of all Changes per Variety
+################################################################################
+
+define PuterChanges     [ Deaccentize .o. PutrChanges .o. Restrictions .o. CleanCHG ];
+define SurmiranChanges  [ Deaccentize .o. SurmChanges .o. Restrictions .o. CleanCHG ];
+define SursilvanChanges [ Deaccentize .o. SursChanges .o. Restrictions .o. CleanCHG ];
+define SutsilvanChanges [ Deaccentize .o. SutsChanges .o. Restrictions .o. CleanCHG ];
+define ValladerChanges  [ Deaccentize .o. VallChanges .o. Restrictions .o. CleanCHG ];
+
+################################################################################
+# Loading Networks
+################################################################################
+
+read regex PuterChanges;
+save stack fstbinaries/PuterChanges.fst;
+clear stack
+
+read regex SurmiranChanges;
+save stack fstbinaries/SurmiranChanges.fst;
+clear stack
+
+read regex SursilvanChanges;
+save stack fstbinaries/SursilvanChanges.fst;
+clear stack
+
+read regex SutsilvanChanges;
+save stack fstbinaries/SutsilvanChanges.fst;
+clear stack
+
+read regex ValladerChanges;
+save stack fstbinaries/ValladerChanges.fst;

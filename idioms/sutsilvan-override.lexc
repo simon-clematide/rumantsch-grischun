@@ -1,0 +1,118 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Frequent words with different forms in Sutsilvan
+! Author: Reto Baumgartner
+! Date: June 2013
+
+
+Multichar_Symbols +Art +Def +Indef ^= ^| +Prep
++Pron +Pers +Refl +Poss +Dem +Interrog
+^DB +Noun +Nom +AccDat +Acc
++Masc +Fem +MF +1P +2P +3P +Sg +Pl
++Apo +Ton +Aton +Conj +Subj +Verb +PresInd
+@U.FLEX.MSg@ @U.FLEX.FSg@ @U.FLEX.MPl@ @U.FLEX.FPl@
+
+LEXICON Root
+DEFINITE ;
+INDEFINITEA ;
+DEFINITEWITHPREP ;
+PERSONAL ;
+REFLEXIVE ;
+POSSESSIVE ;
+DEMONSTRATIVE ;
+OTHERFORMS ;
+
+! articles
+LEXICON DEFINITE
+il+Art+Def+Masc+Sg:igl	#;
+il+Art+Def+Masc+Pl:igls	#;
+
+
+LEXICON INDEFINITEA
+in+Art+Indef+Masc+Sg:egn	#;
+in+Art+Indef+Fem+Sg:egna	#;
+in+Art+Indef+Fem+Sg+Apo:egn'	#;
+
+
+LEXICON DEFINITEWITHPREP
+a+Prep^=+Art+Def+Masc+Sg:agli	#;
+! a+Prep^=+Art+Def+Masc+Sg:i'ls	#; ! form?
+
+a+Prep^=+Art+Def+Masc+Sg:digl	#;
+a+Prep^=+Art+Def+Masc+Sg:digls	#;
+
+en+Prep^=+Art+Def+Masc+Sg:agl	#;
+en+Prep^=+Art+Def+Masc+Sg:agls	#;
+
+! pronouns
+LEXICON PERSONAL
+! jau
+jau+Pron+Pers+Nom+1P+MF+Sg:jou	#;
+jau+Pron+Pers+Acc+Ton+1P+MF+Sg:mei	#;
+! ti
+ti+Pron+Pers+Nom+2P+MF+Sg:tei	#;
+ti+Pron+Pers+Acc+Ton+2P+MF+Sg:tei	#;
+
+
+
+LEXICON REFLEXIVE
+! jau
+sai+Pron+Refl+Acc+Ton+1P+MF+Sg:mei	#;
+! ti
+sai+Pron+Refl+Acc+Ton+2P+Sg:tei	#;
+! el, ella
+sai+Pron+Refl+Acc+Ton+3P+Sg:sei	#;
+! els, ellas
+sai+Pron+Refl+Acc+Ton+3P+MF+Pl:sei	#;
+
+
+
+
+LEXICON POSSESSIVE
+! jau
+mes+Pron+Poss+Masc+Sg:mieus	#;
+mes+Pron+Poss+Masc+Pl:mieus	#;
+mes+Pron+Poss^DB+Noun+Masc+Pl:mieus	#;
+! ti
+tes+Pron+Poss+Masc+Sg:tieus	#;
+tes+Pron+Poss+Masc+Pl:tieus	#;
+tes+Pron+Poss^DB+Noun+Masc+Pl:tieus	#;
+! el, ella
+ses+Pron+Poss+Masc+Sg:sieus	#;
+ses+Pron+Poss+Masc+Pl:sieus	#;
+ses+Pron+Poss^DB+Noun+Masc+Pl:sieus	#;
+
+
+
+LEXICON DEMONSTRATIVE
+quai+Pron+Dem:quegl	#;
+
+
+
+!! Endings:
+LEXICON REGULAR
++Masc+Sg:0	#;
++Masc+Pl:s	#;
++Fem+Sg:a	#;
++Fem+Pl:as	#;
+
+LEXICON REGULARSINGULAR
++Masc+Sg:0	#;
++Fem+Sg:a	#;
+
+LEXICON REGULARPLURAL
++Masc+Pl:s	#;
++Fem+Pl:as	#;
+
+LEXICON OTHERFORMS
+! verbs
+esser+Verb+PresInd+3P+Sg:e	#;
+avair+Verb+PresInd+3P+Sg:â	#;
+
+! prepositions
+en+Prep:an	#;
+per+Prep:par	#;
+sin+Prep:sen	#;
+
+! con- and subjunctions
+tge+Subj:ca	#;

@@ -1,0 +1,171 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Frequent words with different forms in Puter
+! Author: Reto Baumgartner
+! Date: June 2013
+
+
+Multichar_Symbols +Art +Def +Indef ^= ^| +Prep
++Pron +Pers +Refl +Poss +Dem +Interrog
+^DB +Noun +Nom +AccDat +Acc
++Masc +Fem +MF +1P +2P +3P +Sg +Pl
++Apo +Ton +Aton +Conj +Subj +Verb +PresInd
+@U.FLEX.MSg@ @U.FLEX.FSg@ @U.FLEX.MPl@ @U.FLEX.FPl@
+
+LEXICON Root
+INDEFINITEA ;
+DEFINITEWITHPREP ;
+PERSONAL ;
+REFLEXIVE ;
+POSSESSIVE ;
+DEMONSTRATIVE ;
+INTERROGATIVE ;
+INDEFINITEP ;
+OTHERFORMS ;
+
+! articles
+LEXICON INDEFINITEA
+in+Art+Indef+Masc+Sg:ün	#;
+in+Art+Indef+Fem+Sg:üna	#;
+in+Art+Indef+Fem+Sg+Apo:ün'	#;
+
+LEXICON DEFINITEWITHPREP
+en+Prep^=+Art+Def+Masc+Sg:i'l	#;
+en+Prep^=+Art+Def+Masc+Sg:i'ls	#;
+en+Prep^=+Art+Def+Fem+Sg:illa	#;
+en+Prep^=+Art+Def+Fem+Sg+Apo:ill'	#;
+en+Prep^=+Art+Def+Fem+Pl:illas	#;
+
+per+Prep^=+Art+Def+Masc+Sg:pel	#;
+per+Prep^=+Art+Def+Masc+Sg:pels	#;
+per+Prep^=+Art+Def+Fem+Sg:pella	#;
+per+Prep^=+Art+Def+Fem+Sg+Apo:pell'	#;
+per+Prep^=+Art+Def+Fem+Pl:pellas	#;
+
+cun+Prep^=+Art+Def+Masc+Sg:cul	#;
+cun+Prep^=+Art+Def+Masc+Sg:culs	#;
+cun+Prep^=+Art+Def+Fem+Sg:culla	#;
+cun+Prep^=+Art+Def+Fem+Sg+Apo:cull'	#;
+cun+Prep^=+Art+Def+Fem+Pl:cullas	#;
+
+! pronouns
+LEXICON PERSONAL
+! jau
+jau+Pron+Pers+Nom+1P+MF+Sg:eau	#;
+jau+Pron+Pers+Acc+Ton+1P+MF+Sg:me	#;
+! ti
+ti+Pron+Pers+Nom+2P+MF+Sg:tü	#;
+ti+Pron+Pers+Acc+Ton+2P+MF+Sg:te	#;
+
+
+
+LEXICON REFLEXIVE
+! jau
+sai+Pron+Refl+Acc+Ton+1P+MF+Sg:me	#;
+! ti
+sai+Pron+Refl+Acc+Ton+2P+MF+Sg:te	#;
+! el, ella
+sai+Pron+Refl+Acc+Ton+3P+MF+Sg:se	#;
+! els, ellas
+sai+Pron+Refl+Acc+Ton+3P+MF+Pl:se	#;
+
+
+
+
+LEXICON POSSESSIVE
+! jau
+mes+Pron+Poss+Masc+Sg:mieu	#;
+mes+Pron+Poss+Masc+Pl:mieus	#;
+mes+Pron+Poss^DB+Noun+Masc+Pl:mieus	#;
+mes+Pron+Poss+Fem+Sg+Apo:mi'	#;
+! ti
+tes+Pron+Poss+Masc+Sg:tieu	#;
+tes+Pron+Poss+Masc+Pl:tieus	#;
+tes+Pron+Poss^DB+Noun+Masc+Pl:tieus	#;
+tes+Pron+Poss+Fem+Sg:ti'	#;
+! el, ella
+ses+Pron+Poss+Masc+Sg:sieu	#;
+ses+Pron+Poss+Masc+Pl:sieus	#;
+ses+Pron+Poss^DB+Noun+Masc+Pl:sieus	#;
+ses+Pron+Poss+Fem+Sg:si'	#;
+
+
+
+LEXICON DEMONSTRATIVE
+quai+Pron+Dem:que		#;
+quest+Pron+Dem:quist	REGULAR;
+tal+Pron+Dem:tel		REGULAR;
+
+
+
+LEXICON INTERROGATIVE
+qual+Pron+Interrog+Masc+Sg:quêl		#;
+qual+Pron+Interrog+Masc+Pl:quêls	#;
+qual+Pron+Interrog+Fem+Sg:quela		#;
+qual+Pron+Interrog+Fem+Pl:quelas	#;
+tge+Pron+Interrog:che				#;
+tgenin+Pron+Interrog:chenün		REGULAR;
+tgi+Pron+Interrog:chi				#;
+
+
+
+LEXICON INDEFINITEP
+in+Pron+Indef:ün					REGULARSINGULAR;
+ins+Pron+Indef:ins					#;
+intgins+Pron+Indef:inchün			REGULARPLURAL;
+mintga+Pron+Indef:mincha			#;
+mintgin+Pron+Indef:minchün			REGULARSINGULAR;
+!!
+! tut
+tut+Pron+Indef+Masc+Sg:tuot	#;
+tut+Pron+Indef+Masc+Pl:tuots	#;
+tut+Pron+Indef+Fem+Sg:tuotta	#;
+tut+Pron+Indef+Fem+Pl:tuottas	#;
+
+
+
+!! Endings:
+LEXICON REGULAR
++Masc+Sg:0	#;
++Masc+Pl:s	#;
++Fem+Sg:a	#;
++Fem+Pl:as	#;
+
+LEXICON REGULARSINGULAR
++Masc+Sg:0	#;
++Fem+Sg:a	#;
+
+LEXICON REGULARPLURAL
++Masc+Pl:s	#;
++Fem+Pl:as	#;
+
+LEXICON OTHERFORMS
+! verbs
+esser+Verb+PresInd+3P+Sg:es	#;
+avair+Verb+PresInd+3P+Sg:ho	#;
+
+! prepositions
+en+Prep:in	#;
+da+Prep^|+Pron+Refl+AccDat+Aton+MF+Sg:da's	#;
+da+Prep^|+Pron+Refl+AccDat+Aton+MF+Pl:da's	#;
+
+! con- and subjunctions
+tge+Subj:chi	#;
+tge+Subj+Apo:chi'd	#;
+tge+Subj:cha	#;
+tge+Subj+Apo:cha'd	#;
+tge+Subj+Apo:ch'	#;
+
+tge+Subj^|+Pron+Refl+AccDat+Aton+MF+Sg:che's	#;
+tge+Subj^|+Pron+Refl+AccDat+Aton+MF+Pl:che's	#;
+tge+Subj^|+Pron+Refl+AccDat+Aton+MF+Sg:cha's	#;
+tge+Subj^|+Pron+Refl+AccDat+Aton+MF+Sg:cha's	#;
+
+tge+Subj^|+Pron+Pers+Nom+3P+Masc+Sg:cha'l	#;
+tge+Subj^|+Pron+Pers+Nom+3P+Masc+Pl:cha'ls	#;
+sco+Conj^|+Pron+Pers+Nom+3P+Masc+Sg:scu'l	#;
+sco+Conj^|+Pron+Pers+Nom+3P+Masc+Pl:scu'ls	#;
+ma+Conj^|+Pron+Pers+Nom+3P+Masc+Sg:ma'l	#;
+ma+Conj^|+Pron+Pers+Nom+3P+Masc+Pl:ma'ls	#;
+e+Conj^|+Pron+Pers+Nom+3P+Masc+Sg:e'l	#;
+e+Conj^|+Pron+Pers+Nom+3P+Masc+Pl:e'ls	#;

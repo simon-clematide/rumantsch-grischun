@@ -1,0 +1,101 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Frequent words with different forms in Sursilvan
+! Author: Reto Baumgartner
+! Date: June 2013
+
+
+Multichar_Symbols +Art +Def +Indef ^= ^| +Prep
++Pron +Pers +Refl +Poss +Dem +Interrog
+^DB +Noun +Nom +AccDat +Acc
++Masc +Fem +MF +1P +2P +3P +Sg +Pl
++Apo +Ton +Aton +Conj +Subj +Verb +PresInd
+@U.FLEX.MSg@ @U.FLEX.FSg@ @U.FLEX.MPl@ @U.FLEX.FPl@
+
+LEXICON Root
+DEFINITE ;
+DEFINITEWITHPREP ;
+PERSONAL ;
+REFLEXIVE ;
+DEMONSTRATIVE ;
+INTERROGATIVE ;
+OTHERFORMS ;
+
+! articles
+LEXICON DEFINITE
+il+Art+Def+Masc+Sg+Apo:igl	#;
+
+
+LEXICON DEFINITEWITHPREP
+da+Prep^=+Art+Def+Masc+Sg:dil	#;
+da+Prep^=+Art+Def+Masc+Sg:dils	#;
+da+Prep^=+Art+Def+Fem+Sg:dalla	#;
+da+Prep^=+Art+Def+Fem+Sg+Apo:dall'	#;
+da+Prep^=+Art+Def+Fem+Pl:dallas	#;
+
+a+Prep^=+Art+Def+Fem+Sg:alla	#;
+a+Prep^=+Art+Def+Fem+Sg+Apo:all'	#;
+a+Prep^=+Art+Def+Fem+Pl:allas	#;
+
+cun+Prep^=+Art+Def+Masc+Sg:cul	#;
+cun+Prep^=+Art+Def+Masc+Sg:culs	#;
+cun+Prep^=+Art+Def+Fem+Sg:culla	#;
+cun+Prep^=+Art+Def+Fem+Sg+Apo:cull'	#;
+cun+Prep^=+Art+Def+Fem+Pl:cullas	#;
+
+sin+Prep^=+Art+Def+Masc+Sg:sil	#;
+sin+Prep^=+Art+Def+Masc+Sg:sils	#;
+sin+Prep^=+Art+Def+Fem+Sg:silla	#;
+sin+Prep^=+Art+Def+Fem+Sg+Apo:sill'	#;
+sin+Prep^=+Art+Def+Fem+Pl:sillas	#;
+
+! pronouns
+LEXICON PERSONAL
+! jau
+jau+Pron+Pers+Nom+1P+MF+Sg:jeu	#;
+jau+Pron+Pers+Acc+Ton+1P+MF+Sg:mi	#;
+! ti
+ti+Pron+Pers+Acc+Ton+2P+MF+Sg:ti	#;
+
+
+
+LEXICON REFLEXIVE
+! jau
+sai+Pron+Refl+Acc+Ton+1P+MF+Sg:mi	#;
+! ti
+sai+Pron+Refl+Acc+Ton+2P+MF+Sg:ti	#;
+! el, ella
+sai+Pron+Refl+Acc+Ton+3P+MF+Sg:si	#;
+! els, ellas
+sai+Pron+Refl+Acc+Ton+3P+MF+Pl:si	#;
+
+
+
+LEXICON DEMONSTRATIVE
+quai+Pron+Dem:quei	#;
+
+
+
+LEXICON INTERROGATIVE
+tge+Pron+Interrog:tgei	#;
+
+
+
+!! Endings:
+LEXICON REGULAR
++Masc+Sg:0	#;
++Masc+Pl:s	#;
++Fem+Sg:a	#;
++Fem+Pl:as	#;
+
+LEXICON REGULARSINGULAR
++Masc+Sg:0	#;
++Fem+Sg:a	#;
+
+LEXICON REGULARPLURAL
++Masc+Pl:s	#;
++Fem+Pl:as	#;
+
+LEXICON OTHERFORMS
+! verbs
+esser+Verb+PresInd+3P+Sg:ei	#;

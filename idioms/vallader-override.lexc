@@ -1,0 +1,191 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Frequent words with different forms in Vallader
+! Author: Reto Baumgartner
+! Date: June 2013
+
+
+Multichar_Symbols +Art +Def +Indef ^= ^| +Prep
++Pron +Pers +Refl +Poss +Dem +Interrog
+^DB +Noun +Nom +AccDat +Acc
++Masc +Fem +MF +1P +2P +3P +Sg +Pl
++Apo +Ton +Aton +Conj +Subj +Verb +PresInd
+@U.FLEX.MSg@ @U.FLEX.FSg@ @U.FLEX.MPl@ @U.FLEX.FPl@
+
+LEXICON Root
+INDEFINITEA ;
+DEFINITEWITHPREP ;
+PERSONAL ;
+REFLEXIVE ;
+POSSESSIVE ;
+DEMONSTRATIVE ;
+INTERROGATIVE ;
+INDEFINITEP ;
+OTHERFORMS ;
+
+! articles
+LEXICON INDEFINITEA
+in+Art+Indef+Masc+Sg:ün	#;
+in+Art+Indef+Fem+Sg:üna	#;
+in+Art+Indef+Fem+Sg+Apo:ün'	#;
+
+LEXICON DEFINITEWITHPREP
+! a, da as in Rumantsch Grischun
+
+pro+Prep^=+Art+Def+Masc+Sg:prol	#;
+pro+Prep^=+Art+Def+Masc+Sg:prols	#;
+
+en+Prep^=+Art+Def+Masc+Sg:i'l	#;
+en+Prep^=+Art+Def+Masc+Sg:i'ls	#;
+en+Prep^=+Art+Def+Fem+Sg:illa	#;
+en+Prep^=+Art+Def+Fem+Pl:illas	#;
+
+per+Prep^=+Art+Def+Masc+Sg:pel	#;
+per+Prep^=+Art+Def+Masc+Sg:pels	#;
+per+Prep^=+Art+Def+Fem+Sg:pella	#;
+per+Prep^=+Art+Def+Fem+Pl:pellas	#;
+
+cun+Prep^=+Art+Def+Masc+Sg:cul	#;
+cun+Prep^=+Art+Def+Masc+Sg:culs	#;
+cun+Prep^=+Art+Def+Fem+Sg:culla	#;
+cun+Prep^=+Art+Def+Fem+Pl:cullas	#;
+
+sin+Prep^=+Art+Def+Masc+Sg:sül	#;
+sin+Prep^=+Art+Def+Masc+Sg:süls	#;
+sin+Prep^=+Art+Def+Fem+Sg:sülla	#;
+sin+Prep^=+Art+Def+Fem+Pl:süllas	#;
+
+
+
+! pronouns
+LEXICON PERSONAL
+! jau
+jau+Pron+Pers+Nom+1P+MF+Sg:eu	#;
+jau+Pron+Pers+AccDat+Aton+1P+MF+Sg:am	#;
+! ti
+ti+Pron+Pers+Nom+2P+MF+Sg:tü	#;
+ti+Pron+Pers+AccDat+Aton+2P+MF+Sg:at	#;
+! el, ella
+el+Pron+Pers+AccDat+Aton+3P+Masc+Sg:til	#;
+ella+Pron+Pers+AccDat+Aton+3P+Fem+Sg:tilla	#;
+ella+Pron+Pers+AccDat+Aton+3P+Fem+Sg+Apo:till'	#;
+! vus
+els+Pron+Pers+AccDat+Aton+2P+MF+Pl:s'	#;
+! els, ellas
+els+Pron+Pers+AccDat+Aton+3P+Masc+Pl:als	#;
+ellas+Pron+Pers+AccDat+Aton+3P+Fem+Pl:las	#;
+
+
+
+LEXICON REFLEXIVE
+! jau
+sai+Pron+Refl+AccDat+Aton+1P+MF+Sg:am	#;
+! ti
+sai+Pron+Refl+AccDat+Aton+2P+MF+Sg:at	#;
+! el, ella
+sai+Pron+Refl+AccDat+Aton+3P+MF+Sg:as	#;
+! vus
+sai+Pron+Refl+AccDat+Aton+2P+MF+Pl:as	#;
+sai+Pron+Refl+AccDat+Aton+2P+MF+Pl+Apo:s'	#;
+! els, ellas
+sai+Pron+Refl+AccDat+Aton+3P+MF+Pl:as	#;
+sai+Pron+Refl+AccDat+Aton+3P+MF+Pl+Apo:s'	#;
+
+
+
+LEXICON POSSESSIVE
+! jau
+mes+Pron+Poss+Masc+Sg:meis	#;
+mes+Pron+Poss^DB+Noun+Masc+Sg:meis	#;
+mes+Pron+Poss+Masc+Pl:meis	#;
+mes+Pron+Poss^DB+Noun+Masc+Pl:meis	#;
+! ti
+tes+Pron+Poss+Masc+Sg:teis	#;
+mes+Pron+Poss^DB+Noun+Masc+Sg:meis	#;
+tes+Pron+Poss+Masc+Pl:teis	#;
+tes+Pron+Poss^DB+Noun+Masc+Pl:teis	#;
+! el, ella
+ses+Pron+Poss+Masc+Sg:seis	#;
+mes+Pron+Poss^DB+Noun+Masc+Sg:meis	#;
+ses+Pron+Poss+Masc+Pl:seis	#;
+ses+Pron+Poss^DB+Noun+Masc+Pl:seis	#;
+! nus
+noss+Pron+Poss+Masc+Sg:nos	#;
+noss+Pron+Poss^DB+Noun+Masc+Sg:nos	#;
+! vus
+voss+Pron+Poss+Masc+Sg:vos	#;
+voss+Pron+Poss^DB+Noun+Masc+Sg:vos	#;
+
+
+
+LEXICON DEMONSTRATIVE
+in+Pron+Dem:ün			REGULARSINGULAR;
+quest+Pron+Dem:quist	REGULAR;
+
+
+
+LEXICON INTERROGATIVE
+tge+Pron+Interrog:che		#;
+tgenin+Pron+Interrog:chenün	REGULAR;
+tgi+Pron+Interrog:chi		#;
+
+
+
+LEXICON INDEFINITEP
+in+Pron+Indef:ün			REGULARSINGULAR;
+ins+Pron+Indef:i's			#;
+intgins+Pron+Indef:inchün	REGULARPLURAL;
+mintgin+Pron+Indef:minchün	REGULARSINGULAR;
+!!
+! tut
+tut+Pron+Indef+Masc+Sg:tuot		#;
+tut+Pron+Indef+Masc+Pl:tuots	#;
+tut+Pron+Indef+Fem+Sg:tuotta	#;
+tut+Pron+Indef+Fem+Pl:tuottas	#;
+
+
+
+!! Endings:
+LEXICON REGULAR
++Masc+Sg:0	#;
++Masc+Pl:s	#;
++Fem+Sg:a	#;
++Fem+Pl:as	#;
+
+LEXICON REGULARSINGULAR
++Masc+Sg:0	#;
++Fem+Sg:a	#;
+
+LEXICON REGULARPLURAL
++Masc+Pl:s	#;
++Fem+Pl:as	#;
+
+LEXICON OTHERFORMS
+! verbs
+esser+Verb+PresInd+3P+Sg:es	#;
+
+! prepositions
+en+Prep:in	#;
+da+Prep^|+Pron+Refl+AccDat+Aton+MF+Sg:da's	#;
+da+Prep^|+Pron+Refl+AccDat+Aton+MF+Pl:da's	#;
+
+! con- and subjunctions
+tge+Subj:chi	#;
+tge+Subj+Apo:chi'd	#;
+tge+Subj:cha	#;
+tge+Subj+Apo:cha'd	#;
+tge+Subj+Apo:ch'	#;
+
+tge+Subj^|+Pron+Refl+AccDat+Aton+MF+Sg:che's	#;
+tge+Subj^|+Pron+Refl+AccDat+Aton+MF+Pl:che's	#;
+tge+Subj^|+Pron+Refl+AccDat+Aton+MF+Sg:cha's	#;
+tge+Subj^|+Pron+Refl+AccDat+Aton+MF+Sg:cha's	#;
+
+tge+Subj^|+Pron+Pers+Nom+3P+Masc+Sg:cha'l	#;
+tge+Subj^|+Pron+Pers+Nom+3P+Masc+Pl:cha'ls	#;
+sco+Conj^|+Pron+Pers+Nom+3P+Masc+Sg:scu'l	#;
+sco+Conj^|+Pron+Pers+Nom+3P+Masc+Pl:scu'ls	#;
+ma+Conj^|+Pron+Pers+Nom+3P+Masc+Sg:ma'l	#;
+ma+Conj^|+Pron+Pers+Nom+3P+Masc+Pl:ma'ls	#;
+e+Conj^|+Pron+Pers+Nom+3P+Masc+Sg:e'l	#;
+e+Conj^|+Pron+Pers+Nom+3P+Masc+Pl:e'ls	#;

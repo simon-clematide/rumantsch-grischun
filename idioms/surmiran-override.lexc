@@ -1,0 +1,134 @@
+! -*- coding: utf-8 -*-
+! University of Zurich - Institute of Computational Linguistics
+! Morphology anlysis for Romansh: Frequent words with different forms in Surmiran
+! Author: Reto Baumgartner
+! Date: June 2013
+
+
+Multichar_Symbols +Art +Def +Indef ^= ^| +Prep
++Pron +Pers +Refl +Poss +Dem +Interrog
+^DB +Noun +Nom +AccDat +Acc
++Masc +Fem +MF +1P +2P +3P +Sg +Pl
++Apo +Ton +Aton +Conj +Subj +Verb +PresInd
+@U.FLEX.MSg@ @U.FLEX.FSg@ @U.FLEX.MPl@ @U.FLEX.FPl@
+
+LEXICON Root
+DEFINITE ;
+INDEFINITEA ;
+DEFINITEWITHPREP ;
+PERSONAL ;
+POSSESSIVE ;
+DEMONSTRATIVE ;
+INTERROGATIVE ;
+INDEFINITE ;
+OTHERFORMS ;
+
+! articles
+LEXICON DEFINITE
+il+Art+Def+Masc+Sg:igl	#;
+il+Art+Def+Masc+Pl:igls	#;
+
+LEXICON INDEFINITEA
+in+Art+Indef+Masc+Sg:en	#;
+in+Art+Indef+Fem+Sg:ena	#;
+in+Art+Indef+Fem+Sg+Apo:en'	#;
+
+LEXICON DEFINITEWITHPREP
+! not contracted: sen + la; per
+da+Prep^=+Art+Def+Masc+Sg:digl	#;
+da+Prep^=+Art+Def+Masc+Sg:digls	#;
+da+Prep^=+Art+Def+Fem+Sg:dalla	#;
+da+Prep^=+Art+Def+Fem+Pl:dallas	#;
+
+! TODO: Forms to check: agl, agls
+! a+Prep^=+Art+Def+Masc+Sg:agl	#;
+! a+Prep^=+Art+Def+Masc+Sg:agls	#;
+a+Prep^=+Art+Def+Fem+Sg:alla	#;
+a+Prep^=+Art+Def+Fem+Pl:allas	#;
+
+cun+Prep^=+Art+Def+Masc+Sg:cugl	#;
+cun+Prep^=+Art+Def+Masc+Sg:cugls	#;
+cun+Prep^=+Art+Def+Fem+Sg:culla	#;
+cun+Prep^=+Art+Def+Fem+Pl:cullas	#;
+
+sin+Prep^=+Art+Def+Masc+Sg:segl	#;
+sin+Prep^=+Art+Def+Masc+Sg:segls	#;
+
+! TODO: Forms to check: agl, agls
+! en+Prep^=+Art+Def+Masc+Sg:agl	#;
+! en+Prep^=+Art+Def+Masc+Sg:agls	#;
+
+
+! pronouns
+LEXICON PERSONAL
+! jau
+jau+Pron+Pers+Nom+1P+MF+Sg:ia	#;
+! ti
+ti+Pron+Pers+Nom+2P+MF+Sg:te	#;
+
+
+
+LEXICON POSSESSIVE
+! jau
+mes+Pron+Poss+Masc+Sg:mies	#;
+mes+Pron+Poss+Masc+Pl:mies	#;
+mes+Pron+Poss^DB+Noun+Masc+Pl:mies	#;
+! ti
+tes+Pron+Poss+Masc+Sg:ties	#;
+tes+Pron+Poss+Masc+Pl:ties	#;
+tes+Pron+Poss^DB+Noun+Masc+Pl:ties	#;
+! el, ella
+ses+Pron+Poss+Masc+Sg:sies	#;
+ses+Pron+Poss+Masc+Pl:sies	#;
+ses+Pron+Poss^DB+Noun+Masc+Pl:sies	#;
+
+
+
+LEXICON DEMONSTRATIVE
+quai+Pron+Dem:chegl	#;
+quest+Pron+Dem:chest	REGULAR;
+
+
+
+LEXICON INTERROGATIVE
+tge+Pron+Interrog:tge	#;
+tgenin+Pron+Interrog:tgenin	REGULAR;
+tgi+Pron+Interrog:tgi	#;
+
+
+
+LEXICON INDEFINITE
+inqual+Pron+Indef:enqual	REGULAR;
+insaqual+Pron+Indef:ensaqual	REGULAR;
+insaquants+Pron+Indef:ensaquant	REGULARPLURAL;
+insatge+Pron+Indef:ensatge	#;
+insatgi+Pron+Indef:ensatgi	#;
+tut+Pron+Indef+Masc+Sg:tot		#;
+tut+Pron+Indef+Masc+Pl:tots	#;
+tut+Pron+Indef+Fem+Sg:totta	#;
+tut+Pron+Indef+Fem+Pl:tottas	#;
+
+
+
+!! Endings:
+LEXICON REGULAR
++Masc+Sg:0	#;
++Masc+Pl:s	#;
++Fem+Sg:a	#;
++Fem+Pl:as	#;
+
+LEXICON REGULARSINGULAR
++Masc+Sg:0	#;
++Fem+Sg:a	#;
+
+LEXICON REGULARPLURAL
++Masc+Pl:s	#;
++Fem+Pl:as	#;
+
+LEXICON OTHERFORMS
+! verbs
+avair+Verb+PresInd+3P+Sg:ò	#;
+esser+Verb+PresInd+2P+Sg:ist	#;
+! preposition
+sin+Prep:sen	#;
+en+Prep:an	#;
