@@ -474,6 +474,7 @@ unic
 unitar
 unsch
 urgent
+usual
 vag
 vargugnus
 vegl
