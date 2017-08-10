@@ -8,6 +8,8 @@ import sys
 import codecs
 from collections import defaultdict
 
+UNKNOWNFREQTHRESHOLD = 1
+
 """
 Module for testing the correctness and completeness of transducers according to test words
 """
@@ -23,20 +25,26 @@ else:
   sys.stdin = codecs.getreader('UTF-8')(sys.stdin.buffer)
 
 
-def read_testdata(testfiles):
+def read_testdata(testfiles, options=None):
     """Return dict of word forms and a set of admissible gold analyses"""
     data = defaultdict(set)
+
     for testfile in testfiles:
-        print('# reading test data from file:', testfile, file=sys.stderr)
+        if not options.quiet:
+            print('# reading test data from file:', testfile, file=sys.stderr)
         with codecs.open(testfile, 'r', encoding="utf-8") as f:
             for l in f:
                 if l.startswith('#'):
                     continue
                 d = l.rstrip().split('\t')
-                if len(d) > 1:
-                    data[d[0]].add(d[1])
-                if len(d) == 1:
-                    data[d[0]] = set()
+                if options.mode == 'unknown':
+                    if int(d[0]) >= UNKNOWNFREQTHRESHOLD:
+                        data[d[1]] = set()
+                else:
+                    if len(d) > 1:
+                        data[d[0]].add(d[1])
+                    if len(d) == 1:
+                        data[d[0]] = set()
     print('# word forms read in :', len(data), file=sys.stderr)
     print('# total number of analyses:', sum(len(data[a]) for a in data), file=sys.stderr)
     return data
@@ -56,6 +64,9 @@ def test_fsm(fsm, data, options=None):
 
         # False negatives
         fn =  data[wf] - word_results
+        if options.mode == 'unknown' and not word_results:
+            print(wf)
+            continue
         if not options.quiet:
             print('# checking wf:', wf, file=sys.stderr)
 
@@ -80,7 +91,7 @@ def process(options=None,args=None):
         import foma
 
 
-        data = read_testdata(args[1:])
+        data = read_testdata(args[1:],options=options)
         fsm = foma.read_binary(args[0])
 
 
@@ -98,7 +109,7 @@ def main():
     """
     Invoke this module as a script
     """
-
+    global UNKNOWNFREQTHRESHOLD
     parser = OptionParser(
         usage = '%prog [OPTIONS] TRANSDUCER TESTFILE ...',
         version='1.00',
@@ -109,7 +120,7 @@ def main():
         ),
         epilog=(
                 'File format of tabulator separated gold files: first column is word form, '
-                'second colum is the word form'
+                'second colum is the analysis'
                 ' if only the first column is given, this means that the wordform should not be recognized.'
 
              )
@@ -127,7 +138,10 @@ def main():
                       help='use tool for testing: foma or xfst (default %default)')
     parser.add_option('-m', '--mode',
                       action='store', dest='mode', default="all",
-                      help='mode of action: coverage, all(default %default)')
+                      help='mode of action: coverage, all, unknown (default %default)')
+    parser.add_option('-T', '--unknown_threshold',
+                      action='store', dest='unknown_threshold', default=1, type=int,
+                      help='minimal number of occurrence for unknown word analysis (default %default)')
     parser.add_option('-i', '--ignore',
                       action='store', dest='ignore', default="",
                       help='comma-separated list of POS tags to ignore')
@@ -142,7 +156,9 @@ def main():
     if len(args) < 2:
         parser.print_usage(file=sys.stderr)
         exit(1)
-
+    if options.mode == 'unknown':
+        UNKNOWNFREQTHRESHOLD = options.unknown_threshold
+        print('# info: threshold for unknowns set to', UNKNOWNFREQTHRESHOLD, file=sys.stderr)
     process(options=options,args=args)
 
 
