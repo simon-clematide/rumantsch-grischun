@@ -18,6 +18,7 @@ amortisar
 analisar
 anatomisar
 anonimisar
+appellar
 applitgar
 appreziar
 arginar
