@@ -19,6 +19,7 @@ absolutadad
 absolutezza
 absoluziun
 absorpziun
+abstenziun
 abstinenza
 abstracziun
 absurditad
@@ -188,6 +189,7 @@ ambrosia
 ambulanza
 ameba
 ameglieraziun
+américaine
 amfora
 amiaivladad
 amiaivlezza
@@ -205,7 +207,6 @@ amputaziun
 amur
 amuraivladad
 amuretta
-américaine
 analfabetisaziun
 analgesia
 analisa
@@ -238,6 +239,7 @@ annuitad
 annullabilitad
 annullaziun
 annunzia
+annunziaziun
 anomalia
 anona
 anonimisaziun
@@ -318,6 +320,7 @@ architectura
 architrav
 archivaziun
 arclina
+arcunaziun
 ardera
 ardur
 arena
@@ -525,9 +528,9 @@ aviaziun
 aviditad
 avischinaziun
 avnaun
+avugà-pravenda
 avugadaziun
 avugadia
-avugà-pravenda
 avustina
 axa
 axonometria
@@ -993,6 +996,7 @@ catastrofa
 catechesa
 catedrala
 categoria
+categorisaziun
 cateta
 catla
 catolisaziun
@@ -1402,6 +1406,7 @@ confessiun
 confidenza
 confidenzialitad
 configuraziun
+confirmaziun
 confisaria
 confiscaziun
 confisiera
@@ -1562,6 +1567,7 @@ crema
 cremaziun
 crenna
 crennadira
+crêpe
 creschientscha
 cresta
 cresta-citrona
@@ -1610,7 +1616,6 @@ crusta
 crusta-chaschiel
 crusta-paun
 crutscha
-crêpe
 cua
 cua-bov
 cua-chaval
@@ -1888,6 +1893,7 @@ decleraziun
 declinaziun
 decodaziun
 decolonisaziun
+deconstrucziun
 decontaminaziun
 decoraziun
 decretaziun
@@ -1970,6 +1976,7 @@ deputaziun
 deragischaziun
 derasaziun
 dereflexiun
+deregulaziun
 derivanza
 derivaziun
 dermaspina
@@ -2060,6 +2067,7 @@ digressiun
 dilataziun
 dilaziun
 diligenza
+dilucidaziun
 dimensiun
 diminuziun
 dimora
@@ -2084,6 +2092,7 @@ diromaziun
 disa
 disamicizia
 discalculia
+dischagregaziun
 dischapprovaziun
 discharmaziun
 discharmonia
@@ -2403,6 +2412,7 @@ equivalent
 equivalenza
 equivocadad
 era
+èra
 eradiaziun
 eraldica
 erboristaria
@@ -2437,6 +2447,7 @@ escorta
 esitaziun
 esoterica
 essenza
+essenzialisaziun
 estetica
 estga
 estradad
@@ -2533,6 +2544,7 @@ explicaziun
 exploraziun
 explosiun
 explotaziun
+exportaziun
 exposiziun
 expressiun
 expressivitad
@@ -2566,6 +2578,7 @@ factibilitad
 factura
 facturaziun
 facultad
+facziun
 fadetgna
 fadia
 fai
@@ -3007,6 +3020,7 @@ gesticulaziun
 gestiun
 ghigna
 ghirlanda
+gìa
 giacca
 giachetta
 giachina
@@ -3104,6 +3118,7 @@ glittera
 globalisaziun
 globalitad
 globulera
+glocalisaziun
 glonda
 gloria
 glorificaziun
@@ -3214,7 +3229,6 @@ gutella
 gutta
 guttella
 guvernanta
-gìa
 halla
 harassa
 harpia
@@ -3556,12 +3570,15 @@ interfatscha
 interfederaziun
 interferenza
 interiurisaziun
+interjecziun
 intermediabladad
 intermediaziun
+internalisaziun
 internaziun
 internaziunalisaziun
 internaziunalitad
 interoperabilitad
+interpellaziun
 interpolaziun
 interprendenza
 interprendidra
@@ -3776,6 +3793,7 @@ lescha
 lesiun
 letalitad
 letargia
+lètg
 letga
 letgera
 letra
@@ -3899,8 +3917,8 @@ luschezza
 lusingia
 lutegiadira
 lutga
+luxaziun
 lysmata
-lètg
 macla
 macroeconomia
 macrofigura
@@ -4453,6 +4471,7 @@ muttadad
 muzla
 muzlina
 naiv
+naìvitad
 najada
 nanosecunda
 nanotecnologia
@@ -4490,7 +4509,6 @@ navitschella
 naziun
 naziunalisaziun
 naziunalitad
-naìvitad
 necessitad
 necrofilia
 necropola
@@ -4514,6 +4532,7 @@ neuralgia
 neurastenia
 neuro-radiologia
 neurochirurgia
+neuroreabilitaziun
 neuroscienza
 neutralisaziun
 neutralitad
@@ -4879,6 +4898,7 @@ paratscha
 paraula
 parcella
 parcellaziun
+paregliaziun
 parentella
 parfumaria
 parisetta
@@ -5651,6 +5671,7 @@ rapacitad
 rapiditad
 rapina
 rapla
+rapportaziun
 rapsodia
 raquintaziun
 rarificaziun
@@ -5799,6 +5820,7 @@ regiuvinaziun
 regla
 reglamentaziun
 reglas
+regradaziun
 regressiun
 regulabilitad
 regularitad
@@ -5819,6 +5841,7 @@ relativitad
 relaziun
 relegaziun
 relevanza
+relevaziun
 reliabilitad
 religiun
 religiusadad
@@ -6213,6 +6236,7 @@ scharpa
 scharscha
 schaschinada
 schaviadad
+schefredacziun
 schelada
 scheladira
 schelatina
@@ -6538,6 +6562,7 @@ sintonisaziun
 sira
 sirena
 sistematica
+sistematisaziun
 sistida
 sitgira
 situaziun
@@ -7006,6 +7031,7 @@ surfatscha
 surfertilisaziun
 surgiudida
 surglatschada
+surimmigraziun
 surindemnisaziun
 surindustrialisaziun
 surinvaliditad
@@ -7853,4 +7879,3 @@ zuppada
 zuppentada
 zutgeriera
 zutgerificaziun
-èra
