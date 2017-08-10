@@ -378,8 +378,10 @@ Die regelmässigen Verben wurden in folgende Listen aufgeteilt:
   * wordlists/verb-air.txt für die Verben wie *temair – jau tem*, auch regelmässigen im engsten Sinn.
   * wordlists/verb-er.txt für die Verben wie *vender – jau vend*, auch regelmässigen im engsten Sinn.
   * wordlists/verb-ir.txt für die Verben wie *partir – jau part*, auch regelmässigen im engsten Sinn.
-  * wordlists/verb-ar-esch.txt für die Verben wie *gratular–jaugratulesch*, also Verben mit der Endung -esch vor den unbetonten Endungen.
+  * wordlists/verb-ar-esch.txt für die Verben wie *gratular – jau gratulesch*, also Verben mit der Endung -esch vor den unbetonten Endungen.
   * wordlists/verb-air-esch.txt für die Verben wie *apparair – jau apparesch*, wobei diese Gruppe sehr klein ist und nicht überall als regelmässig gilt.
+  * wordlists/verb-ar-opt-esch.txt für die Verben wie *abitar -  jau abit/abitesch*, die mit und ohne -esch konjugiert werden können.
+  * wordlists/verb-air-opt-esch.txt für die Verben wie *apparair -  jau appar/apparesch*, die mit und ohne -esch konjugiert werden können.
   * wordlists/verb-er-esch.txt für die Verben wie *absolver – jau absolvesch*, auch eine kleine Gruppe und nicht überall als regelmässig gesehen.
   * wordlists/verb-ir-esch.txt für die Verben wie *finir – jau finesch*, wobei dieser Gruppe viele Lemmata angehören.
   * wordlists/verb-er2.txt für die Verben wie *currer*, die trotz -erEndung wie *partir* konjugiert werden. Diese Verben wurden hier implementiert, da sie ohne Aufwand wie die anderen Gruppen verarbeitet werden können.
