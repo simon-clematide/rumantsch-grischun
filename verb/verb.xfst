@@ -82,6 +82,9 @@ define VerbAirInf @txt"wordlists/verb-air.txt" ;
 
 # Verbs like: apparair - jau apparesch
 define VerbAirEschInf  @txt"wordlists/verb-air-esch.txt" ;
+# optional -esch morpheme
+define VerbAirOptEschInf @txt"wordlists/verb-air-opt-esch.txt" ;
+
 
 # 1. conjugaziun according to Caduff et al
 # Verbs like: gidar - jau gid
@@ -116,7 +119,7 @@ define VerbIrEschInf  @txt"wordlists/verb-ir-esch.txt" ;
 # Regular Verb Processing
 ################################################################################
 # Deleting the infinitive ending to get the stems
-define VerbAirStem [VerbAirInf
+define VerbAirStem [[VerbAirInf|VerbAirOptEschInf]
 	.o. [{air} -> "@H" || _ .#.]];
 define VerbArStem  [[VerbArInf|VerbArOptEschInf]
 	.o. [{iar} -> "@I" || [{gl}|{g}] _ .#.]
@@ -129,7 +132,7 @@ define VerbEr2Stem [VerbEr2Inf
 	.o. [{er}  -> "@I" || _ .#.]];
 define VerbIrStem  [VerbIrInf
 	.o. [{ir}  -> "@I" || _ .#.]];
-define VerbAirEschStem [VerbAirEschInf
+define VerbAirEschStem [[VerbAirEschInf|VerbAirOptEschInf]
 	.o. [{air} -> "@H" || _ .#.]];
 define VerbArEschStem  [[VerbArEschInf|VerbArOptEschInf]
 	.o. [{iar} -> "@I" || [{gl}|{g}] _ .#.]
@@ -153,15 +156,18 @@ define VerbIrEsch  [VerbIrEschStem  VerbIrEschEnd];
 
 # Defining the infinitve of the verbs
 define Infinitive [
-	[ VerbAirInf|
-	VerbArInf|
-	VerbErInf|
-	VerbIrInf|
-	VerbEr2Inf|
-	VerbAirEschInf|
-	VerbArEschInf|
-	VerbErEschInf|
-	VerbIrEschInf]
+	[ VerbAirInf
+	| VerbAirEschInf
+	| VerbAirOptEschInf
+	| VerbArEschInf
+	| VerbArInf
+	| VerbArOptEschInf
+	| VerbEr2Inf
+	| VerbErEschInf
+	| VerbErInf
+	| VerbIrEschInf
+	| VerbIrInf
+	]
 	["+Verb"]:0 ["+Inf"]:0 ];
 
 # Collection of all regular verbs for further processing
