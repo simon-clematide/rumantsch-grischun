@@ -76,36 +76,41 @@ define VerbIrEschEnd ;
 ################################################################################
 # Loading regular lemmata
 ################################################################################
+# 2. conjugaziun according to Caduff et al
 # Verbs like: temair - jau tem
-read text < wordlists/verb-air.txt
-define VerbAirInf ;
+define VerbAirInf @txt"wordlists/verb-air.txt" ;
+
 # Verbs like: apparair - jau apparesch
-read text < wordlists/verb-air-esch.txt
-define VerbAirEschInf ;
+define VerbAirEschInf  @txt"wordlists/verb-air-esch.txt" ;
 
+# 1. conjugaziun according to Caduff et al
 # Verbs like: gidar - jau gid
-read text < wordlists/verb-ar.txt
-define VerbArInf ;
+define VerbArInf @txt"wordlists/verb-ar.txt" ;
+
 # Verbs like: gratular - jau gratulesch
-read text < wordlists/verb-ar-esch.txt
-define VerbArEschInf ;
+define VerbArEschInf @txt"wordlists/verb-ar-esch.txt" ;
 
+# Verbs like: occupar - jau occup/occupesch
+# optional -esch morpheme
+define VerbArOptEschInf @txt"wordlists/verb-ar-opt-esch.txt" ;
+
+# 3. conjugaziun according to Caduff et al
 # Verbs like: vender - jau vend (nus vendain)
-read text < wordlists/verb-er.txt
-define VerbErInf ;
-# Verbs like: currer - jau cur (but: nus currin)
-read text < wordlists/verb-er2.txt
-define VerbEr2Inf ;
-# Verbs like: absolver - jau absolvesch
-read text < wordlists/verb-er-esch.txt
-define VerbErEschInf ;
+define VerbErInf  @txt"wordlists/verb-er.txt" ;
 
+# Verbs like: currer - jau cur (but: nus currin)
+define VerbEr2Inf @txt"wordlists/verb-er2.txt" ;
+
+# Verbs like: absolver - jau absolvesch
+define VerbErEschInf @txt"wordlists/verb-er-esch.txt" ;
+
+# 4. conjugaziun according to Caduff et al
 # Verbs like: partir - jau part
-read text < wordlists/verb-ir.txt
-define VerbIrInf ;
+define VerbIrInf @txt"wordlists/verb-ir.txt" ;
+
 # Verbs like: finir - jau finesch
-read text < wordlists/verb-ir-esch.txt
-define VerbIrEschInf ;
+define VerbIrEschInf  @txt"wordlists/verb-ir-esch.txt" ;
+
 
 ################################################################################
 # Regular Verb Processing
@@ -113,7 +118,7 @@ define VerbIrEschInf ;
 # Deleting the infinitive ending to get the stems
 define VerbAirStem [VerbAirInf
 	.o. [{air} -> "@H" || _ .#.]];
-define VerbArStem  [VerbArInf
+define VerbArStem  [[VerbArInf|VerbArOptEschInf]
 	.o. [{iar} -> "@I" || [{gl}|{g}] _ .#.]
 	.o. [{ar}  -> "@H" || _ .#.]];
 define VerbErStem  [VerbErInf
@@ -126,7 +131,7 @@ define VerbIrStem  [VerbIrInf
 	.o. [{ir}  -> "@I" || _ .#.]];
 define VerbAirEschStem [VerbAirEschInf
 	.o. [{air} -> "@H" || _ .#.]];
-define VerbArEschStem  [VerbArEschInf
+define VerbArEschStem  [[VerbArEschInf|VerbArOptEschInf]
 	.o. [{iar} -> "@I" || [{gl}|{g}] _ .#.]
 	.o. [{ar}  -> "@H" || _ .#.]];
 define VerbErEschStem  [VerbErEschInf

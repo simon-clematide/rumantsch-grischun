@@ -1,6 +1,5 @@
 abominar
 abreviar
-abstrahar
 accentuar
 acclimatisar
 accumular
@@ -41,7 +40,6 @@ banalisar
 bastardisar
 benefiziar
 birocratisar
-bloccar
 botanisar
 brastular
 brentinar
@@ -64,7 +62,6 @@ centralisar
 chanalisar
 chantunalisar
 chapitalisar
-chastiar
 circular
 circumdar
 civilisar
@@ -76,7 +73,6 @@ codar
 cofinanziar
 coitar
 collaziunar
-colliar
 colonisar
 commerzialisar
 commerziar
@@ -87,13 +83,11 @@ conciliar
 concretisar
 confecziunar
 congediar
-conjugar
 consultar
 contabilisar
 contaminar
 convergiar
 convogar
-cooperar
 coordinar
 copiar
 copular
@@ -103,10 +97,8 @@ criminalisar
 cristallisar
 cristianisar
 culminar
-cumbinar
 cumular
 cundiziunar
-cunfinar
 cuntariar
 cuntinuar
 deanonimisar
@@ -118,11 +110,8 @@ decodar
 decontaminar
 decretar
 decriminalisar
-decunfinar
-delegar
 deliberar
 demagasinar
-demascrar
 demilitarisar
 deminar
 demissiunar
@@ -153,7 +142,6 @@ dischirradiar
 dischorganisar
 disciplinar
 discriminar
-discussiunar
 disfavurisar
 dissimular
 divergiar
@@ -162,7 +150,6 @@ divinisar
 doctergiar
 domiciliar
 dominar
-donnegiar
 dramatisar
 economisar
 effectuar
@@ -171,14 +158,12 @@ electrisar
 eliminar
 emagliar
 embuttigliar
-empagliar
 emploiar
 emulsiunar
 enclavigliar
 engrevgiar
 entular
 enviar
-envilgiar
 erbarisar
 eroisar
 essenzialisar
@@ -188,11 +173,9 @@ evaluar
 examinar
 exiliar
 expiar
-exportar
 expropriar
 externalisar
 fabular
-facilitar
 famigliarisar
 fanatisar
 fantisar
@@ -214,7 +197,6 @@ fraternisar
 fraudular
 fulminar
 funcziunalisar
-funcziunar
 furiar
 fusiunar
 galvanisar
@@ -224,7 +206,6 @@ germanisar
 gesticular
 gestiunar
 ghettoisar
-giginar
 giuditgar
 globalisar
 gloriar
@@ -245,7 +226,6 @@ immunisar
 implantar
 impressiunar
 improvisar
-incassar
 incendiar
 indemnisar
 individualisar
@@ -292,7 +272,6 @@ mecanisar
 medegiar
 memorisar
 menstruar
-menziunar
 metallisar
 minar
 miniaturisar
@@ -319,7 +298,6 @@ nomadisar
 nominar
 normalisar
 occasiunar
-occupar
 odiar
 omogenisar
 ondular
@@ -373,7 +351,6 @@ privatisar
 privilegiar
 proclamar
 procrear
-procurar
 professiunalisar
 profetisar
 profitar
@@ -399,7 +376,6 @@ recumbinar
 redimensiunar
 redomiciliar
 reexaminar
-reexportar
 regiunalisar
 regiuvinar
 regular
@@ -421,7 +397,6 @@ ritmisar
 ritualisar
 rivalisar
 romanisar
-ruinar
 sadular
 salarisar
 sancziunar
@@ -431,7 +406,6 @@ sautigliar
 saziar
 schematisar
 schimgiar
-schoccar
 scolarisar
 scrutinar
 secularisar
@@ -459,7 +433,6 @@ spintisar
 spiritualisar
 spiunar
 sponsurisar
-spurtar
 stabilisar
 stagiunar
 standardisar
@@ -474,7 +447,6 @@ stimular
 stinar
 stipular
 strangular
-striunar
 subsidiar
 subvenziunar
 sunergiar
@@ -485,7 +457,6 @@ surfertilisar
 surmodular
 surpopular
 sursaziar
-survegliar
 surzinar
 sutlingiar
 sutminar
@@ -529,7 +500,6 @@ variar
 velegiar
 verbalisar
 verdinar
-viagiar
 victorisar
 violar
 virilisar
