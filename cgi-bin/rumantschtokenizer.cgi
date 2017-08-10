@@ -45,7 +45,7 @@ undef $/ ;
 die "Keine Datei $CGIDIR/ vorhanden\n" unless -x "$CGIDIR/$file";
 die "cannot fork: $!" unless defined($pid = open(SICHERES_KIND, "-|"));
 if ($pid == 0) {
-  exec("perl $CGIDIR/tools/tokenizer.pl $tmpdatei /dev/stdout")
+  exec("perl $CGIDIR/tools/tokenizer.pl $tmpdatei /dev/stdout | $CGIDIR/tools/vert2sentperline.py")
 	or die "Kann $! $?  nicht ausfuehren: $!";
 } else {
   undef $/ ;
