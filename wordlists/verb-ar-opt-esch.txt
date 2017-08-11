@@ -1,10 +1,11 @@
 abitar
+abstrahar
 accordar
 adattar
-abstrahar
 bloccar
 chastiar
 colliar
+confirmar
 conjugar
 cooperar
 cumbinar

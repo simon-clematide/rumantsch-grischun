@@ -39,7 +39,6 @@ agitar
 agiuditgar
 agiuntar
 agiustar
-agraffar
 agravar
 alarmar
 alienar
@@ -124,6 +123,7 @@ bardigliar
 barlunar
 barricadar
 barschunar
+basar
 basegnar
 bassegiar
 bastar
@@ -422,6 +422,7 @@ deplorar
 deportar
 depositar
 deprimar
+depurtar
 derasar
 derivar
 derschar
@@ -580,6 +581,7 @@ enquagliar
 enragischar
 enramar
 enraschar
+enriclar
 enrullar
 ensalar
 ensavunar
@@ -654,6 +656,7 @@ fermar
 fermentar
 festinar
 festivar
+fidar
 fieutrar
 figurar
 filar
@@ -705,6 +708,7 @@ fritgar
 frittar
 frottar
 fructifitgar
+fruschar
 frustrar
 fufragnar
 fugar
@@ -782,6 +786,7 @@ implitgar
 implorar
 imponar
 importar
+impostar
 impraschunar
 impregnar
 impussibilitar
@@ -1536,6 +1541,7 @@ sigillar
 siglientar
 sigliottar
 signalar
+signar
 signifitgar
 silar
 sillabar
@@ -1839,6 +1845,7 @@ transfurmar
 translatar
 transliterar
 translocar
+transmidar
 transpirar
 transplantar
 transportar

@@ -9,9 +9,11 @@ adiziunar
 adrenalinisar
 adular
 affiliar
+agraffar
 albiergiar
 alfabetisar
 alingiar
+allegar
 allicinar
 alluviar
 amortisar
@@ -21,6 +23,7 @@ anonimisar
 appellar
 applitgar
 appreziar
+arbitrar
 arginar
 ariar
 armonisar
@@ -54,6 +57,7 @@ canonisar
 capitular
 caracterisar
 caramelisar
+cartar
 catalisar
 cataloghisar
 categorisar
@@ -74,6 +78,7 @@ codar
 cofinanziar
 coitar
 collaziunar
+collecziunar
 colonisar
 commerzialisar
 commerziar
@@ -102,10 +107,12 @@ cumular
 cundiziunar
 cuntariar
 cuntinuar
+curclar
 deanonimisar
 decafeinar
 decentralisar
 declamar
+declassar
 declinar
 decodar
 decontaminar
@@ -126,10 +133,13 @@ depenalisar
 depersunalisar
 depolitisar
 depopular
+deregular
+desperar
 destinar
 determinar
 detronisar
 deviar
+diabolisar
 dialoghisar
 differenziar
 digitalisar
@@ -148,9 +158,11 @@ dissimular
 divergiar
 divinar
 divinisar
+divorziar
 doctergiar
 domiciliar
 dominar
+downloadar
 dramatisar
 economisar
 effectuar
@@ -159,6 +171,7 @@ electrisar
 eliminar
 emagliar
 embuttigliar
+emoziunalisar
 emploiar
 emulsiunar
 enclavigliar
@@ -190,6 +203,7 @@ fissiunar
 fixar
 flexibilisar
 fluctuar
+focussar
 formular
 fotocopiar
 fotosintetisar
@@ -238,6 +252,7 @@ ingiuriar
 iniziar
 inocular
 inseminar
+insinuar
 inspecziunar
 instituziunalisar
 instrumentalisar
@@ -257,6 +272,7 @@ licenziar
 linearisar
 lingiar
 localisar
+lonschar
 lusingiar
 macular
 magasinar
@@ -269,8 +285,10 @@ marmorisar
 marterisar
 masculinisar
 materialisar
+maximar
 mecanisar
 medegiar
+megliurar
 memorisar
 menstruar
 metallisar
@@ -293,6 +311,7 @@ narcotisar
 nasalisar
 natiralisar
 naziunalisar
+negoziar
 neutralisar
 nobilisar
 nomadisar
@@ -309,6 +328,7 @@ orizontalisar
 ospitalisar
 padrinar
 paginar
+panaschar
 papagagliar
 paralisar
 parodiar
@@ -355,6 +375,7 @@ procrear
 professiunalisar
 profetisar
 profitar
+profundar
 psicologisar
 pucliar
 pulverisar
@@ -373,6 +394,7 @@ recapitular
 recolonisar
 reconciliar
 recopiar
+recrear
 recumbinar
 redimensiunar
 redomiciliar
@@ -405,6 +427,7 @@ sanforisar
 satinar
 sautigliar
 saziar
+scannar
 schematisar
 schimgiar
 scolarisar
@@ -448,6 +471,7 @@ stimular
 stinar
 stipular
 strangular
+subordinar
 subsidiar
 subvenziunar
 sunergiar
@@ -505,6 +529,7 @@ victorisar
 violar
 virilisar
 visar
+visiunar
 visualisar
 vocalisar
 votar

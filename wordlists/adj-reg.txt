@@ -25,6 +25,7 @@ anteriur
 antischel
 apart
 aparti
+arbitrar
 armen
 armonic
 arrogant
@@ -483,6 +484,7 @@ pratic
 precar
 precis
 preferenzial
+preliminar
 premurus
 preschent
 prescolar
@@ -670,11 +672,13 @@ vegl
 venal
 verbal
 vertical
+veterinar
 vieut
 violent
 virtual
 vis
 vischin
+visiunar
 visual
 vital
 vocal
