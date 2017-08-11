@@ -314,7 +314,7 @@ Gliz	Gliz+Prop
 e	e+Conj
 Patnasa	Patnasa+Prop
 furma	furmar+Verb+PresInd+3P+Sg
-Capeder	Capeder+Prep
+Capeder	Capeder+Prop
 la	il+Art+Def+Fem+Sg
 part	part+Noun+Fem+Sg
 Dadens	Dadens+Prop
@@ -368,7 +368,7 @@ collina	collina+Noun+Fem+Sg
 cun	cun+Prep
 las	il+Art+Def+Fem+Pl
 scaluttas	scalutta+Noun+Fem+Pl
-preistoricas	preistorica+Adj+Fem+Pl
+preistoricas	preistoric+Adj+Fem+Pl
 .	.+Sent
 
 La	*il+Art+Def+Fem+Sg

@@ -75,6 +75,7 @@ catedral
 categoric
 causal
 celestial
+celtic
 central
 chalendar
 chantunal
@@ -320,6 +321,7 @@ integral
 interchantunal
 intercultural
 interdisciplinar
+interessant
 intern
 internaziunal
 interregiunal
@@ -516,6 +518,7 @@ pur
 quiet
 racolt
 radical
+radund
 rar
 rat
 raziunal
