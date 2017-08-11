@@ -45,6 +45,7 @@ acquist
 acril
 acronim
 act
+actuar
 actuariat
 actur
 acusticher
@@ -659,6 +660,7 @@ bh
 biat
 bibliobus
 bibliocenter
+bibliotecar
 bicarbonat
 bidet
 bidun
@@ -832,6 +834,7 @@ buglialatg
 buglider
 buglion
 bul
+bulgar
 bulgur
 bulieu
 bulieu-cresta
@@ -6056,6 +6059,7 @@ settantavel
 settavel
 sex
 sex-appeal
+sextar
 sez
 sfalsifitgader
 sfarfatg
@@ -6786,6 +6790,7 @@ tartagnim
 tartogn
 tartuffel
 tat
+tatar
 tatg
 tatgader
 tatgariel
@@ -6892,6 +6897,7 @@ terrorissem
 terrur
 terz
 terzet
+terziar
 terzonn
 tesaurus
 test
@@ -7585,6 +7591,7 @@ zappin
 zappitschim
 zappun
 zappunet
+zar
 zavrader
 zavragl
 zefir

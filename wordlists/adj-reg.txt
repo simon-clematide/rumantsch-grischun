@@ -6,6 +6,7 @@ adequat
 administrativ
 adual
 adulter
+agrar
 agricul
 alcoholic
 alpin
@@ -33,6 +34,7 @@ artisanal
 asocial
 asper
 atmosferic
+atomar
 attent
 audiovisual
 aut
@@ -40,6 +42,7 @@ autmedieval
 autocton
 autogen
 autonom
+autoritar
 auxiliar
 aval
 avert
@@ -50,14 +53,17 @@ banal
 basegnus
 bass
 baud
+bibliotecar
 bidimensiunal
 bilateral
 biogen
 biologic
+bipolar
 bler
 brav
 brin
 brutal
+bulgar
 bullar
 bun
 burgais
@@ -69,6 +75,7 @@ categoric
 causal
 celestial
 central
+chalendar
 chantunal
 chaud
 chilen
@@ -111,6 +118,7 @@ creativ
 criminal
 cristiansocial
 crudel
+culinar
 cultural
 cumin
 cumpact
@@ -136,6 +144,7 @@ decentral
 decis
 decisiv
 defais
+deficitar
 definitiv
 defunct
 democratic
@@ -170,6 +179,8 @@ effectiv
 egual
 electoral
 electronic
+elementar
+elitar
 emoziunal
 emprim
 encletg
@@ -183,6 +194,7 @@ envers
 episcopal
 epocal
 equivalent
+ereditar
 essenzial
 eterogen
 eterosexual
@@ -217,6 +229,7 @@ extraordinari
 extravagant
 extrem
 facultativ
+famigliar
 fanatic
 fatal
 fatalist
@@ -228,6 +241,7 @@ fenomenal
 ferm
 fess
 feudal
+fiduziar
 filosofic
 final
 finanzial
@@ -304,6 +318,7 @@ intact
 integral
 interchantunal
 intercultural
+interdisciplinar
 intern
 internaziunal
 interregiunal
@@ -317,17 +332,22 @@ istoric
 lateral
 led
 legal
+legendar
 liant
 liberal
 liger
+linear
 liss
+litterar
 loial
 lontan
+lunar
 lung
 lungurus
 luxurius
 madir
 maiestus
+maioritar
 mal
 malcuntent
 malencletg
@@ -394,6 +414,7 @@ nunconvenziunal
 nuncuntent
 nunformal
 nunpartischant
+nunpopular
 nunprevesi
 nunsincer
 objectiv
@@ -432,6 +453,7 @@ pauc
 pauschal
 pecuniar
 penal
+penitenziar
 pensiv
 perencletg
 periferic
@@ -450,6 +472,7 @@ plant
 plaun
 plenar
 plurilings
+polar
 politecnic
 politic
 polizial
@@ -457,6 +480,7 @@ pontifical
 pornografic
 postal
 pratic
+precar
 precis
 preferenzial
 premurus
@@ -466,7 +490,9 @@ presidenzial
 presidial
 pretais
 previs
+primar
 principal
+prioritar
 privat
 privlus
 problematic
@@ -491,8 +517,10 @@ radical
 rar
 rat
 raziunal
+reacziunar
 real
 realistic
+rectangular
 redacziunal
 regiunal
 regular
@@ -507,12 +535,14 @@ restant
 retratg
 ris
 roial
+rudimentar
 ruis
 rumen
 rural
 rustical
 sacerdotal
 sacral
+sanitar
 satisfatg
 schizofren
 scientific
@@ -521,6 +551,7 @@ scumpars
 scuss
 secret
 sectorial
+secular
 secundar
 segir
 segund
@@ -545,6 +576,7 @@ sitg
 sloven
 smers
 social
+societar
 socio-demografic
 sociocultural
 solid
@@ -552,6 +584,7 @@ solitari
 spargnus
 spazial
 specific
+spectacular
 speditiv
 spezial
 spiertal
@@ -562,6 +595,7 @@ squisit
 stagiunal
 stagn
 statal
+statutar
 stgars
 stort
 stradal
@@ -590,6 +624,7 @@ suspais
 suttapost
 tadlond
 talian
+tatar
 teatral
 temalier
 temporal
@@ -599,9 +634,11 @@ termal
 terren
 territorial
 terroristic
+terziar
 topografic
 tost
 total
+totalitar
 tradiziunal
 transalpin
 transcunfinal
@@ -611,15 +648,18 @@ traversal
 triumfal
 trivial
 tschetschen
+tschientenar
 turkmen
 tutg
 uffizial
 ulteriur
 uman
+umanitar
 unanim
 unic
 unilateral
 unitar
+universitar
 unsch
 urgent
 usual
@@ -639,3 +679,4 @@ visual
 vital
 vocal
 voluntar
+vulgar
