@@ -1,20 +1,11 @@
 FN	s.C.	s.C.+Noun+Abbr
 FN	nagin’	nagin+Pron+Indef+Fem+3P+Sg+Apo
-FN	radund	radund+Adj+Masc+Sg
-FN	linguistica	linguistica+Adj+Fem+Sg
-FN	preistoricas	preistorica+Adj+Fem+Pl
 FN	chor-baselgia	chor-baselgia+Noun+Masc+Sg
 FN	davent	davent+Adv
 FN	;	;+Punct+End
-FN	celtica	celtic+Adj+Fem+Sg
-FN	amez	amez+Prep
-FN	veglias	veglia+Adj+Fem+Pl
-FN	or	or+Adv
-FN	Interessant	*interessant+Adj+Masc+Sg
+FN	veglias	veglia+Adj+Fem+Pl   #SC Unregelmässiges Adjektiv, braucht implementation
+FN	or	or+Adv #SC Ist das Adverb und Präposition?
 FN	marchescha	marcheschar+Verb+PresInd+3P+Sg
 FN	conglomerat	conglomerat+Noun+Masc+Sg
 FN	:	:+Punct+End
-FN	usuala	usual+Adj+Fem+Sg
-FN	Capeder	Capeder+Prep
-FN	=	=+Symbol
 FN	plaiv-mamma	plaiv-mamma+Noun+Fem+Sg
