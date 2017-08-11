@@ -59,6 +59,7 @@ adiever
 aditiv
 adjectiv
 administratur
+admiral
 adolescent
 adom
 adoptader
@@ -199,6 +200,7 @@ anestetic
 anet
 anghel
 anim
+animal
 animal-simbol
 animatur
 anis
@@ -761,11 +763,11 @@ bragialim
 bragim
 bragizi
 brama
-brassader
-brassamaruns
 brassà-bov
 brassà-chavriel
 brassà-portg
+brassader
+brassamaruns
 brastger
 brastoc
 bratsch
@@ -982,6 +984,7 @@ carburant
 carburatur
 cardamon
 cardifiol
+cardinal
 cardiochirurg
 cardiogram
 cardiomobil
@@ -1168,11 +1171,11 @@ chaset
 chasperet
 chasseur
 chastagner
+chastè-fortezza
 chastellan
 chasti
 chastrat
 chastravin
-chastè-fortezza
 chat
 chatinim
 chatsch
@@ -2722,6 +2725,7 @@ fricativ
 fried
 friessen
 frisbee
+fritgal
 frittader
 frontispizi
 frontist
@@ -2920,6 +2924,7 @@ giudizi
 giuf
 giugaret
 giughiez
+gìun
 giuncher
 giurader
 giurisdictur
@@ -2931,6 +2936,7 @@ giuven
 giuvenaster
 giuvenessendi
 giuvenot
+giuvnal
 givel
 givlim
 gizzalieunga
@@ -3060,7 +3066,6 @@ gutter
 guttin
 guvern
 guvernagl
-gìun
 habitus
 hades
 haf
@@ -3402,6 +3407,7 @@ laminat
 lampadari
 lampiun
 landamma
+ländler
 langegher
 lappavinars
 lappi
@@ -3551,7 +3557,6 @@ luteran
 luteranissem
 lutgader
 luxus
-ländler
 macac
 machissem
 macho
@@ -3711,14 +3716,14 @@ marsch
 marschal
 marschar
 marschlos
+martè-numerader
+martè-perfurader
 martelliez
 martgadar
 martir
 martiri
 martuf
 martuffel
-martè-numerader
-martè-perfurader
 marun
 maruner
 marus
@@ -3930,6 +3935,7 @@ mistgel
 mistgel-furtga
 mistgel-tamarisc
 misticissem
+mistral
 mistun
 mitigiant
 mitraglier
@@ -4022,6 +4028,7 @@ muc
 mucs
 mudregiader
 mudregim
+müeslin
 mugrin
 mui
 mulat
@@ -4093,7 +4100,6 @@ mutschign
 mutschignus
 mutschli
 muvel
-müeslin
 na
 na-guaud
 nadir
@@ -4258,6 +4264,7 @@ obsidian
 obstachel
 ocapi
 occident
+occidental
 occultissem
 occupant
 ocean
@@ -4657,6 +4664,7 @@ peperoncini
 peperoni
 pepsin
 per
+pèr
 perchasa
 percurs
 percussur
@@ -4667,6 +4675,7 @@ perfecziunament
 perfecziunissem
 perfurader
 perimeter
+pèrin
 periost
 periscop
 perlmut
@@ -4704,6 +4713,8 @@ petroli
 petschier
 petting
 pez
+pèz
+pèz-pulaster
 piano
 piccolo
 pichet
@@ -4842,6 +4853,7 @@ plumbadi
 plumin
 plunader
 plunder
+plural
 pluralissem
 pluricalculader
 pluricellular
@@ -4854,6 +4866,7 @@ plusquamperfect
 pluvial
 pluviometer
 pneu
+pocal
 podest
 podium
 podologia
@@ -5258,10 +5271,6 @@ putter
 puz
 puzpan
 puzzle
-pèr
-pèrin
-pèz
-pèz-pulaster
 quac
 quachegim
 quader
@@ -5309,6 +5318,7 @@ radar
 raddichio
 radi
 radiatur
+radical
 radicalissem
 radicalsocialist
 radio
@@ -5360,8 +5370,8 @@ rasdiv
 raspacots
 rassissem
 rastafarianissem
-raster
 rastè-fier
+raster
 rasuir
 rataplan
 ratrac
@@ -5628,8 +5638,8 @@ ruaus
 rubiesti
 rubin
 ruc
-rudiment
 rudè-rudella
+rudiment
 ruffian
 ruffianissem
 rufid
@@ -6479,6 +6489,7 @@ stipendi
 stiriez
 stirim
 stiropor
+stival
 stivalet
 stizzafieu
 stoic
@@ -6584,6 +6595,7 @@ sulnodun
 sulom
 sultan
 sultg
+sumbrival
 sumbrivament
 sumbrivet
 summand
@@ -7132,13 +7144,13 @@ truclet
 trugl
 trumeau
 trumf
+trümpi
 trunc
 truscal
 truschader
 truschet
 trust
 trutg
-trümpi
 tschabargal
 tschaco
 tschadun
@@ -7355,11 +7367,11 @@ utilitarissem
 utilitarist
 utopist
 utschac
+utschè-mezmieur
+utschè-osp
 utscheller
 utschellet
 utschellin
-utschè-mezmieur
-utschè-osp
 uvatsch
 uvestg
 uvestgieu
@@ -7368,9 +7380,9 @@ vacanzier
 vaccin
 vacum
 vacuometer
+vadè-tschierv
 vadellin
 vadler
-vadè-tschierv
 vagabund
 vagabundagi
 vagant
@@ -7522,6 +7534,7 @@ vivari
 vizi
 vlies
 vocabulari
+vocal
 volant
 volley
 volt

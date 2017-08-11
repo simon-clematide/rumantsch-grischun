@@ -11,6 +11,7 @@ ambizius
 ambulant
 andetg
 anguschus
+animal
 annex
 annual
 anonim
@@ -23,6 +24,7 @@ armonic
 arrogant
 ars
 artifizial
+asocial
 asper
 atmosferic
 attent
@@ -67,6 +69,7 @@ communicativ
 confamigliar
 confurm
 confus
+conjugal
 constituziunal
 consultativ
 contextual
@@ -293,10 +296,10 @@ mulsch
 multifar
 mundial
 musical
+naìv
 nat
 natiral
 naziunal
-naìv
 necessari
 negativ
 nivlus
@@ -313,6 +316,7 @@ objectiv
 obligant
 obligatoric
 obscen
+occidental
 occult
 offert
 omogen
@@ -373,6 +377,7 @@ pulit
 pur
 quiet
 racolt
+radical
 rar
 rat
 raziunal
@@ -485,4 +490,5 @@ vieut
 violent
 vis
 vischin
+vocal
 voluntar
