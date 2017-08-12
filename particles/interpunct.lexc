@@ -6,7 +6,7 @@
 ! Last change: July 2015
 
 
-Multichar_Symbols +Sent +CM +Punct +End +Beg +Symbol
+Multichar_Symbols +Sent +CM +Punc +End +Beg +Symbol
 
 LEXICON Root
 %.	SENT;
@@ -51,13 +51,13 @@ LEXICON COMMA
 +CM:0	#;
 
 LEXICON PUNCT
-+Punct:0	#;
++Punc:0	#;
 
 LEXICON PUNCTBEG
-+Punct+Beg:0	#;
++Punc+Beg:0	#;
 
 LEXICON PUNCTEND
-+Punct+End:0	#;
++Punc+End:0	#;
 
 LEXICON SYMBOL
 +Symbol:0	#;

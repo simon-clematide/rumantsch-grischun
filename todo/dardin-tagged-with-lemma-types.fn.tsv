@@ -2,10 +2,10 @@ FN	s.C.	s.C.+Noun+Abbr
 FN	nagin’	nagin+Pron+Indef+Fem+3P+Sg+Apo
 FN	chor-baselgia	chor-baselgia+Noun+Masc+Sg
 FN	davent	davent+Adv
-FN	;	;+Punct+End
+FN	;	;+Punc+End
 FN	veglias	veglia+Adj+Fem+Pl   #SC Unregelmässiges Adjektiv, braucht implementation
 FN	or	or+Adv #SC Ist das Adverb und Präposition?
 FN	marchescha	marcheschar+Verb+PresInd+3P+Sg
 FN	conglomerat	conglomerat+Noun+Masc+Sg
-FN	:	:+Punct+End
+FN	:	:+Punc+End
 FN	plaiv-mamma	plaiv-mamma+Noun+Fem+Sg
