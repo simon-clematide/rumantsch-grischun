@@ -293,9 +293,6 @@ unifitgescha
 usurpescha
 valitescha
 valiteschan
-verifitgescha
-verifitgeschan
-verifitgeschian
 viandescha
 visitescha
 vulnerescha
