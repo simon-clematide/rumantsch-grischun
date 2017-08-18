@@ -7365,6 +7365,7 @@ usit
 ustaria
 ustier
 usufruct
+usufructuari
 usurpader
 uterus
 util
