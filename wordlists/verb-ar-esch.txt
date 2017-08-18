@@ -525,6 +525,7 @@ variar
 velegiar
 verbalisar
 verdinar
+verifitgar
 victorisar
 violar
 virilisar
