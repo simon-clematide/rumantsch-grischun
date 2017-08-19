@@ -1,30 +1,30 @@
-assicurabel	_	versicherungsfähig ||| versicherbar
-brischabel	_	__
-conresponsabel	_	__
-ertabel	_	__
-giustifitgabel	_	__
-inabel	_	untüchtig ||| untauglich
-insupperabel	_	__
-nunacceptabel	_	__
-nunstancabel	_	__
-observabel	_	__
-portabel	_	__
-prubabel	_	__
-remarcabel	_	__
-reponsabel	_	__
-respunsabel	_	__
-schefrespunsabel	_	__
-spendabel	_	__
-surmuntabel	_	überbrückbar
-tascabel	_	__
-tastgabel	_	Taschen-
-beibel	_	__
-eurocumpatibel	_	eurokompatibel ||| europafähig ||| europaverträglich
-gibel	_	__
-horribel	_	__
-illegibel	_	unlesbar ||| unleserlich
-inconfundibel	_	__
-invesibel	_	__
-nibel	_	__
-nunprevedibel	_	__
-vesibel	_	__
+assicurabel	o	versicherungsfähig ||| versicherbar
+brischabel	x	__
+conresponsabel	x	__
+ertabel	x	__
+giustifitgabel	o	__
+inabel	x	untüchtig ||| untauglich
+insupperabel	x	__
+nunacceptabel	o	__
+nunstancabel	x	__
+observabel	o	__
+portabel	x	__
+prubabel	x	__
+remarcabel	x	__
+reponsabel	o	__
+respunsabel	x	__
+schefrespunsabel	x	__
+spendabel	x	__
+surmuntabel	o	überbrückbar
+tascabel	x	__
+tastgabel	o	Taschen-
+beibel	x	__
+eurocumpatibel	o	eurokompatibel ||| europafähig ||| europaverträglich
+gibel	x	__
+horribel	x	__
+illegibel	o	unlesbar ||| unleserlich
+inconfundibel	?	__
+invesibel	x	__
+nibel	x	__
+nunprevedibel	?	__
+vesibel	x	__
