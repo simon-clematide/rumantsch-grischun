@@ -189,10 +189,10 @@ Verbformen:
 
 	+PresInd	Präsens Indikativ
 	+ImpInd	Imperfekt Indikativ
-	+Conj	Konjunktiv
+	+Con		Konjunktiv
 	+Cond	Konditional
 	+Impv	Imperativ
-	+Inf	Infinitiv
+	+Inf		Infinitiv
 	+Gerund	Gerundium
 	+PastPart	Partizip Vergangenheit
 	
@@ -407,7 +407,7 @@ Lemma | Wortart | Form     | Person | Genus | Numerus |
 midar | +Verb   | +PresInd | +1P    |       | +Sg     |
       |         | +ImpInd  | +2P    |       | +Pl     |
       |         | +Cond    |        |       |         |
-      |         | +Conj    |        |       |         |
+      |         | +Con     |        |       |         |
       |         | +Impv    |        |       |         |
       |         |          |        |       |         |
 midar | +Verb   | +Inf     |        |       |         |
