@@ -4,6 +4,57 @@ Institut für Computerlinguistik, Universität Zürich, Lizenz: Creative Commons
 
 Reto Baumgartner, Martina Bachmann, Rolf Badat, Daniel Hegglin, Susanna Tron, Melanie Widmer
 
+Table of Contents
+=================
+
+   * [Morphologieanalyse für Rumantsch Grischun](#morphologieanalyse-für-rumantsch-grischun)
+      * [<a name="user-content-sec1"></a> 1 Abstract](#-1-abstract)
+      * [<a name="user-content-sec2"></a> 2 Linguistische Formalisierung](#-2-linguistische-formalisierung)
+      * [<a name="user-content-sec3"></a> 3 Installation](#-3-installation)
+      * [<a name="user-content-sec4"></a> 4  Benutzung](#-4--benutzung)
+      * [<a name="user-content-sec5"></a> 5 Verwendete Tags](#-5-verwendete-tags)
+         * [<a name="user-content-sec5.1"></a> 5.1  Wortartentags](#-51--wortartentags)
+         * [<a name="user-content-sec5.2"></a> 5.2 Genauere Einteilung der Wortarten](#-52-genauere-einteilung-der-wortarten)
+         * [<a name="user-content-sec5.3"></a> 5.3 Deklination und Konjugation](#-53-deklination-und-konjugation)
+         * [<a name="user-content-sec5.4"></a> 5.4  Weitere Tags](#-54--weitere-tags)
+      * [<a name="user-content-sec6"></a> 6  Wortarten](#-6--wortarten)
+         * [<a name="user-content-sec6.1"></a> 6.1  Adjektive](#-61--adjektive)
+            * [<a name="user-content-sec6.1.1"></a> 6.1.1  Regelmässige Adjektive](#-611--regelmässige-adjektive)
+            * [<a name="user-content-sec6.1.2"></a> 6.1.2  Adjektive mit Partizipendung](#-612--adjektive-mit-partizipendung)
+            * [<a name="user-content-sec6.1.3"></a> 6.1.3  Unveränderliche Adjektive](#-613--unveränderliche-adjektive)
+            * [<a name="user-content-sec6.1.4"></a> 6.1.4  Unregelmässige Adjektive](#-614--unregelmässige-adjektive)
+            * [<a name="user-content-sec6.1.5"></a> 6.1.5  Adjektiv-Guesser](#-615--adjektiv-guesser)
+         * [<a name="user-content-sec6.2"></a> 6.2  Adverbien](#-62--adverbien)
+            * [<a name="user-content-sec6.2.1"></a> 6.2.1  Adverbien aus unveränderlichen Adjektiven](#-621--adverbien-aus-unveränderlichen-adjektiven)
+            * [<a name="user-content-sec6.2.2"></a> 6.2.2  Unregelmässige Adverbien](#-622--unregelmässige-adverbien)
+         * [<a name="user-content-sec6.3"></a> 6.3  Artikel](#-63--artikel)
+         * [<a name="user-content-sec6.4"></a> 6.4  Buchstaben und Initialen](#-64--buchstaben-und-initialen)
+         * [<a name="user-content-sec6.5"></a> 6.5  Interjektionen](#-65--interjektionen)
+         * [<a name="user-content-sec6.6"></a> 6.6 Interpunktion](#-66-interpunktion)
+         * [<a name="user-content-sec6.7"></a> 6.7 Konjunktionen und Subjunktionen](#-67-konjunktionen-und-subjunktionen)
+         * [<a name="user-content-sec6.8"></a> 6.8  Numerale und Zahlen](#-68--numerale-und-zahlen)
+         * [<a name="user-content-sec6.9"></a> 6.9 Präpositionen](#-69-präpositionen)
+         * [<a name="user-content-sec6.10"></a> 6.10 Pronomina](#-610-pronomina)
+         * [<a name="user-content-sec6.11"></a> 6.11 Substantive](#-611-substantive)
+            * [<a name="user-content-sec6.11.1"></a> 6.11.1 Regelmässige Substantive](#-6111-regelmässige-substantive)
+            * [<a name="user-content-sec6.11.2"></a> 6.11.2 Singulariatantum und Pluraliatantum](#-6112-singulariatantum-und-pluraliatantum)
+            * [<a name="user-content-sec6.11.3"></a> 6.11.3 Substantive auf -à, -ì und -è](#-6113-substantive-auf--à--ì-und--è)
+            * [<a name="user-content-sec6.11.4"></a> 6.11.4 Unregelmässige Substantive](#-6114-unregelmässige-substantive)
+            * [<a name="user-content-sec6.11.5"></a> 6.11.5 Hypothetische Formen](#-6115-hypothetische-formen)
+            * [<a name="user-content-sec6.11.6"></a> 6.11.6 Abkürzungen und Namen](#-6116-abkürzungen-und-namen)
+         * [<a name="user-content-sec6.12"></a> 6.12 Verben](#-612-verben)
+            * [<a name="user-content-sec6.12.1"></a> 6.12.1 Regelmässige Verben](#-6121-regelmässige-verben)
+            * [<a name="user-content-sec6.12.2"></a> 6.12.2 Verben mit Vokalwechsel](#-6122-verben-mit-vokalwechsel)
+            * [<a name="user-content-sec6.12.3"></a> 6.12.3 Unregelmässige Verben](#-6123-unregelmässige-verben)
+            * [<a name="user-content-sec6.12.4"></a> 6.12.4 Unregelmässige Verbpartizipien](#-6124-unregelmässige-verbpartizipien)
+            * [<a name="user-content-sec6.12.5"></a> 6.12.5 Guesser für Verben](#-6125-guesser-für-verben)
+      * [<a name="user-content-sec7"></a> 7 Schreibregeln](#-7-schreibregeln)
+      * [<a name="user-content-sec8"></a> 8 Traditionelle Schriftidiome](#-8-traditionelle-schriftidiome)
+      * [<a name="user-content-sec9"></a> 9 Tokenisierung](#-9-tokenisierung)
+      * [Literatur](#literatur)
+      * [Changelog](#changelog)
+
+
 ## <a name="sec1"></a> 1 Abstract
 
 Dies ist die konzeptuelle Dokumentation des finite-state-basierten Morphologiesystem für die schweizerische Landessprache Rumantsch Grischun. Teilweise sind auch die traditionellen Standardvarietäten des Rätoromanischen behandelt. Die linguistische Formalisierung orientiert sich an existierenden Systemen für die nah verwandte Sprache Italienisch. 
@@ -25,7 +76,7 @@ Für die Installation müssen die Dateien des Archivs im gewünschten Ordner ent
 
 Befehl | Erklärung |
 -------|-----------|
-`make` | (für die Installation mit xfst) |
+`make` | (für die Installation mit foma) |
 `make -f Makefile-foma` |(für die Installation mit foma)|
 `make -f Makefile-idioms` | (Erkennung der Schriftidiome, mit xfst) |
 `make -f Makefile-idioms-foma` | (Erkennung der Schriftidiome, mit foma)  |
@@ -374,17 +425,15 @@ Die Implementierung der Verben erfolgt in `verb/verb.xfst` und es wird nach drei
 #### <a name="sec6.12.1"></a> 6.12.1 Regelmässige Verben
 Die regelmässigen Verben wurden in folgende Listen aufgeteilt:
 
-  * wordlists/verb-ar.txt für die Verben wie *gidar – jau gid*, die als regelmässige Verben im engsten Sinn gelten. Diese Liste enthält leider noch Lemmata, die nicht hinein gehören.
-  * wordlists/verb-air.txt für die Verben wie *temair – jau tem*, auch regelmässigen im engsten Sinn.
-  * wordlists/verb-er.txt für die Verben wie *vender – jau vend*, auch regelmässigen im engsten Sinn.
-  * wordlists/verb-ir.txt für die Verben wie *partir – jau part*, auch regelmässigen im engsten Sinn.
-  * wordlists/verb-ar-esch.txt für die Verben wie *gratular – jau gratulesch*, also Verben mit der Endung -esch vor den unbetonten Endungen.
-  * wordlists/verb-air-esch.txt für die Verben wie *apparair – jau apparesch*, wobei diese Gruppe sehr klein ist und nicht überall als regelmässig gilt.
-  * wordlists/verb-ar-opt-esch.txt für die Verben wie *abitar -  jau abit/abitesch*, die mit und ohne -esch konjugiert werden können.
-  * wordlists/verb-air-opt-esch.txt für die Verben wie *apparair -  jau appar/apparesch*, die mit und ohne -esch konjugiert werden können.
-  * wordlists/verb-er-esch.txt für die Verben wie *absolver – jau absolvesch*, auch eine kleine Gruppe und nicht überall als regelmässig gesehen.
-  * wordlists/verb-ir-esch.txt für die Verben wie *finir – jau finesch*, wobei dieser Gruppe viele Lemmata angehören.
-  * wordlists/verb-er2.txt für die Verben wie *currer*, die trotz -erEndung wie *partir* konjugiert werden. Diese Verben wurden hier implementiert, da sie ohne Aufwand wie die anderen Gruppen verarbeitet werden können.
+  * `wordlists/verb-ar.txt` für die Verben wie *gidar – jau gid*, die als regelmässige Verben im engsten Sinn gelten. Diese Liste enthält leider noch Lemmata, die nicht hinein gehören.
+  * `wordlists/verb-air.txt` für die Verben wie *temair – jau tem*, auch regelmässigen im engsten Sinn.
+  * `wordlists/verb-er.txt` für die Verben wie *vender – jau vend*, auch regelmässigen im engsten Sinn.
+  * `wordlists/verb-ir.txt` für die Verben wie *partir – jau part*, auch regelmässigen im engsten Sinn.
+  * `wordlists/verb-ar-esch.txt` für die Verben wie *gratular–jaugratulesch*, also Verben mit der Endung -esch vor den unbetonten Endungen.
+  * `wordlists/verb-air-esch.txt` für die Verben wie *apparair – jau apparesch*, wobei diese Gruppe sehr klein ist und nicht überall als regelmässig gilt.
+  * `wordlists/verb-er-esch.txt` für die Verben wie *absolver – jau absolvesch*, auch eine kleine Gruppe und nicht überall als regelmässig gesehen.
+  * `wordlists/verb-ir-esch.txt` für die Verben wie *finir – jau finesch*, wobei dieser Gruppe viele Lemmata angehören.
+  * `wordlists/verb-er2.txt` für die Verben wie *currer*, die trotz -erEndung wie *partir* konjugiert werden. Diese Verben wurden hier implementiert, da sie ohne Aufwand wie die anderen Gruppen verarbeitet werden können.
 
 Nicht als Unregelmässigkeiten zählen die Endung -el in der 1. Person Präsens Singular, die Vermeidung von Konsonantenverdoppelungen am Wortende, durch die Schreibweise bedingte Besonderheiten mit ‹c›, ‹g› und ‹gl›, sowie unregelmässige Partizipformen.
 Die Endungen (inkl. suffigierte Personalpronomina) für diese Verben sind in lexc geschrieben und liegen in folgenden Dateien vor:
@@ -448,3 +497,4 @@ Ein einfacher perl-basierter Tokeniser, der diese Regeln umsetzt, :
 
 ## Changelog
   - 2017-07-28: Konvertierung aus originaler PDF-Dokumentation aus 2013 (Simon Clematide)
+``
