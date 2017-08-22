@@ -10,6 +10,8 @@ from collections import defaultdict
 
 UNKNOWNFREQTHRESHOLD = 1
 
+IGNOREDPOSTAGS = set()
+RESTRICTEDPOSTAGS = set()
 """
 Module for testing the correctness and completeness of transducers according to test words
 """
@@ -42,6 +44,10 @@ def read_testdata(testfiles, options=None):
                         data[d[1]] = set()
                 else:
                     if len(d) > 1:
+                        if options.ignore:
+                            tags = d[1].split('+',1)
+                            if tags[0] in IGNOREDPOSTAGS:
+                                continue
                         data[d[0]].add(d[1])
                     if len(d) == 1:
                         data[d[0]] = set()
@@ -57,6 +63,12 @@ def test_fsm(fsm, data, options=None):
         word_results = set()
         result = None
         for result in fsm.apply_up(wf):
+            if options.restrict or options.ignore:
+                tags = result.split('+',2)
+                if len(tags) > 1:
+                     if ((options.ignore and tags[1] in IGNOREDPOSTAGS)
+                        or (options.restrict and not tags[1] in RESTRICTEDPOSTAGS)) :
+                        continue
             word_results.add(result)
 
         # False positives
@@ -109,7 +121,7 @@ def main():
     """
     Invoke this module as a script
     """
-    global UNKNOWNFREQTHRESHOLD
+    global UNKNOWNFREQTHRESHOLD, IGNOREDPOSTAGS,RESTRICTEDPOSTAGS
     parser = OptionParser(
         usage = '%prog [OPTIONS] TRANSDUCER TESTFILE ...',
         version='1.00',
@@ -143,8 +155,11 @@ def main():
                       action='store', dest='unknown_threshold', default=1, type=int,
                       help='minimal number of occurrence for unknown word analysis (default %default)')
     parser.add_option('-i', '--ignore',
-                      action='store', dest='ignore', default="",
-                      help='comma-separated list of POS tags to ignore')
+                      action='store', dest='ignore', default=None,
+                      help='plus-separated list of POS tags to ignore')
+    parser.add_option('-r', '--restrict',
+                      action='store', dest='restrict', default=None,
+                      help='plus-separated list of POS tags to ignore')
 
     (options, args) = parser.parse_args()
     if options.debug:
@@ -159,6 +174,14 @@ def main():
     if options.mode == 'unknown':
         UNKNOWNFREQTHRESHOLD = options.unknown_threshold
         print('# info: threshold for unknowns set to', UNKNOWNFREQTHRESHOLD, file=sys.stderr)
+
+    if not options.ignore is None:
+        for t in options.ignore.split('+'):
+            IGNOREDPOSTAGS.add(t)
+    if not options.restrict is None:
+        for t in options.restrict.split('+'):
+            RESTRICTEDPOSTAGS.add(t)
+
     process(options=options,args=args)
 
 
