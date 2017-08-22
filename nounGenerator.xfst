@@ -11,31 +11,64 @@ source noun/noun.xfst
 
 set show-flags ON
 set obey-flags ON
+#set print-space ON
 
-define diacritize [ "+Noun" -> "@U.POS.+Noun@", "+Masc" -> "@U.GEN.+Masc@", "+Fem" -> "@U.GEN.+Fem@", "+Pl" -> "@U.NUM.+Pl@", "+Sg" -> "@U.NUM.+Sg@" ] ;
+define diacritizeNoun [ #
+	"+Noun" -> "@U.POS.+Noun@", 
+	"+Masc" -> "@U.GEN.+Masc@", 
+	"+Fem" -> "@U.GEN.+Fem@", 
+	"+MF" -> "@U.GEN.+MF@", 
+	"+Pl" -> "@U.NUM.+Pl@", 
+	"+Sg" -> "@U.NUM.+Sg@",
+	
+	] ;
 
-define deleteFlagsLower [ "@U.POS.+Noun@" -> 0, "@U.GEN.+Masc@" -> 0, "@U.GEN.+Fem@" -> 0, "@U.NUM.+Pl@" -> 0, "@U.NUM.+Sg@" -> 0 ] ;
+# all morphological category values for nouns
 
-define materializeUpper [ "@U.POS.+Noun@" -> "+Noun", "@U.GEN.+Masc@" -> "+Masc", "@U.GEN.+Fem@" -> "+Fem", "@U.NUM.+Pl@" -> "+Pl", "@U.NUM.+Sg@" -> "+Sg" ] ; 
+define NounValues [ #
+	  "+Noun"
+	| "+Masc"
+	| "+Fem"
+	| "+Pl"
+	| "+Sg"
+	| "+Prop"
+];
 
-read regex [ Nouns.i .o. diacritize ] ;
+
+
+define optDeleteNounValues [ NounValues (->) 0 ];
+
+
+define materializeNoun [ #
+	"@E.POS.+Noun@" "+Noun"
+	[ "@U.GEN.+Masc@" "+Masc"
+	| "@U.GEN.+Fem@"  "+Fem"
+#	| "@U.GEN.+MF@"   "+MF"
+	]
+	[ "@U.NUM.+Pl@" "+Pl"
+	| "@U.NUM.+Sg@" "+Sg"
+	] ] ;
+
+
+read regex [ Nouns.i .o. diacritizeNoun ] ;
 
 twosided flag-diacritics
-
+print random-words
 define DIACRITIZED ;
 
-read regex [ DIACRITIZED .o. deleteFlagsLower ] ;
+read regex [ DIACRITIZED ]; # .o. deleteFlagsLower ] ;
 
 define diacritizedUpper ;
-
-read regex [ diacritizedUpper.i .o. materializeUpper ] ;
-
+twosided flag-diacritics
+read regex [ diacritizedUpper  materializeNoun ] .o. optDeleteNounValues ;
+eliminate flags
+print random-words
 define finalUpsideDown ;
 
-define final [ finalUpsideDown.i ] ;
+define final [ finalUpsideDown ] ;
 
 read regex final ;
-
+eliminate flags
 echo *** Beispiele für upper side ***
 print random-upper
 
