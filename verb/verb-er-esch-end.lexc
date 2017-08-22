@@ -6,7 +6,7 @@
 
 ! These endings are modeled after Caduff&Caprez article 106
 
-Multichar_Symbols +Verb +PresInd +ImpInd +Cond +Conj +Impv +Gerund +PastPart +1P +2P +3P +Sg +Pl +Pron +Pers +Masc +Fem +MF +Nom 
+Multichar_Symbols +Verb +PresInd +ImpInd +Cond +Con +Impv +Gerund +PastPart +1P +2P +3P +Sg +Pl +Pron +Pers +Masc +Fem +MF +Nom 
 ^| +Apo *IGL *LA *INS *EL
 
 LEXICON Root
@@ -58,16 +58,16 @@ LEXICON IMPERFECT
 
 ! Conjunctive
 LEXICON CONJUNCTIVE
-+Verb+Conj+1P+Sg:eschia		# ;
-+Verb+Conj+2P+Sg:eschias	# ;
-+Verb+Conj+3P+Sg:eschia		# ;
-+Verb+Conj+1P+Pl:eschian	# ;
-+Verb+Conj+2P+Pl:eschias	# ;
-+Verb+Conj+3P+Pl:eschian	# ;
++Verb+Con+1P+Sg:eschia		# ;
++Verb+Con+2P+Sg:eschias	# ;
++Verb+Con+3P+Sg:eschia		# ;
++Verb+Con+1P+Pl:eschian	# ;
++Verb+Con+2P+Pl:eschias	# ;
++Verb+Con+3P+Pl:eschian	# ;
 !! Suffigated Forms:
-+Verb+Conj+3P+Sg+Apo:eschian	# ;
-+Verb+Conj+1P+Pl^|+Pron+Pers+Nom+1P+MF+Pl:eschiansa	#;
-+Verb+Conj+3P+Pl^|+Pron+Pers+Nom+3P+MF+Pl:eschiani	#;
++Verb+Con+3P+Sg+Apo:eschian	# ;
++Verb+Con+1P+Pl^|+Pron+Pers+Nom+1P+MF+Pl:eschiansa	#;
++Verb+Con+3P+Pl^|+Pron+Pers+Nom+3P+MF+Pl:eschiani	#;
 
 
 ! Conditional:

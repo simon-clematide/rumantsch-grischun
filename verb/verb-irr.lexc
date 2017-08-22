@@ -6,7 +6,7 @@
 
 ! These verbs are listed in Caduff&Caprez in article 128
 
-Multichar_Symbols +Verb +PresInd +ImpInd +Cond +Conj +Impv +Inf +Gerund +1P +2P +3P +Sg +Pl
+Multichar_Symbols +Verb +PresInd +ImpInd +Cond +Con +Impv +Inf +Gerund +1P +2P +3P +Sg +Pl
 *DOUB +Pron +Pers +Masc +Fem +MF +Nom ^| +Apo
 
 LEXICON Root
@@ -378,7 +378,7 @@ surrir+Verb+Impv+2P+Pl:sirriai	# ;
 LEXICON TERRENISAR
 terrenisar+Verb+PresInd+3P+Sg:terrena	# ;
 terrenisar+Verb+ImpInd+3P+Sg:terrenava	# ;
-terrenisar+Verb+Conj+3P+Sg:terrenia		# ;
+terrenisar+Verb+Con+3P+Sg:terrenia		# ;
 terrenisar+Verb+Cond+3P+Sg:terrenass	# ;
 terrenisar+Verb+Gerund:terrenond		# ;
 terrenisar						InfEnd ;
@@ -484,16 +484,16 @@ LEXICON ImpIndEnd
 
 ! Conjunctive:
 LEXICON ConjEnd
-+Verb+Conj+1P+Sg:a	# ;
-+Verb+Conj+2P+Sg:as	# ;
-+Verb+Conj+3P+Sg:a	# ;
-+Verb+Conj+1P+Pl:an	# ;
-+Verb+Conj+2P+Pl:as	# ;
-+Verb+Conj+3P+Pl:an	# ;
++Verb+Con+1P+Sg:a	# ;
++Verb+Con+2P+Sg:as	# ;
++Verb+Con+3P+Sg:a	# ;
++Verb+Con+1P+Pl:an	# ;
++Verb+Con+2P+Pl:as	# ;
++Verb+Con+3P+Pl:an	# ;
 !! Suffigated Forms:
-+Verb+Conj+3P+Sg+Apo:an	# ;
-+Verb+Conj+1P+Pl^|+Pron+Pers+Nom+1P+MF+Pl:ansa	#;
-+Verb+Conj+3P+Pl^|+Pron+Pers+Nom+3P+MF+Pl:ani	#;
++Verb+Con+3P+Sg+Apo:an	# ;
++Verb+Con+1P+Pl^|+Pron+Pers+Nom+1P+MF+Pl:ansa	#;
++Verb+Con+3P+Pl^|+Pron+Pers+Nom+3P+MF+Pl:ani	#;
 
 
 ! Conditional
