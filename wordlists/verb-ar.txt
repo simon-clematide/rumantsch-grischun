@@ -1803,7 +1803,6 @@ teleguidar
 tementar
 tempestar
 temprar
-tendar
 tentar
 terrar
 terrassar
