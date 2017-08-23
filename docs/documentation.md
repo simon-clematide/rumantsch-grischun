@@ -98,7 +98,7 @@ oder sie können auf der Kommandozeile für die Analyse mittels lookup/flookup v
 
 ## 5 Verwendete Tags
 <a name="sec5"></a>
-### 5.1  Wortartentags
+### 5.1 Wortartentags
 <a name="sec5.1"></a>
 
 	+Adj	Adjektiv  
