@@ -318,5 +318,20 @@ compact sigma
 print sigma
 save stack fstbinaries/adjectivegenerator.fst
 
+################################################################################
+#  all
+################################################################################
+
+read regex [ #
+			[
+			 @"fstbinaries/adjectivegenerator.fst"
+			  | @"fstbinaries/verbgenerator.fst"
+				  | @"fstbinaries/noungenerator.fst"
+			  ]
+			];
+sort out
+save stack  fstbinaries/generator.fst
 
 
+
+define Generator; 
