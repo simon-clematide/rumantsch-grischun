@@ -1,0 +1,322 @@
+# -*- coding: utf-8 -*-
+# Authors: Nora Lötscher & Noëmi Aepli, Simon Clematide
+
+################################################################################
+# Generation of known words from lemmas and (under-)specified
+# morphological features
+################################################################################
+
+# Requires the successful build of Grischun.fst
+set show-flags ON
+set obey-flags ON
+#set print-space ON
+
+################################################################################
+# Generally useful stuff
+################################################################################
+
+# Main POS tags
+define diacritizePOS [ #
+	"+Adj" -> "@U.POS.+Adj@", 
+	"+Adv" -> "@U.POS.+Adv@", 
+	"+Art" -> "@U.POS.+Art@", 
+	"+Conj" -> "@U.POS.+Conj@", 
+	"+Dig" -> "@U.POS.+Dig@", 
+	"+Initial" -> "@U.POS.+Initial@", 
+	"+Interj" -> "@U.POS.+Interj@", 
+	"+Let" -> "@U.POS.+Let@", 
+	"+Noun" -> "@U.POS.+Noun@", 
+	"+Num" -> "@U.POS.+Num@", 
+	"+Prep" -> "@U.POS.+Prep@", 
+	"+Pron" -> "@U.POS.+Pron@", 
+	"+Prop" -> "@U.POS.+Prop@", 
+	"+Punc" -> "@U.POS.+Punc@", 
+	"+PUNCT" -> "@U.POS.+PUNCT@", 
+	"+Rom" -> "@U.POS.+Rom@", 
+	"+Subj" -> "@U.POS.+Subj@", 
+	"+Verb" -> "@U.POS.+Verb@"
+	];
+
+# Subtypes for pronouns
+define diacritizePOSPRON [ # 
+	"+Dem" -> "@U.POSPRON.+Dem@", 
+	"+Indef" -> "@U.POSPRON.+Indef@", 
+	"+Interrog" -> "@U.POSPRON.+Interrog@", 
+	"+Pers" -> "@U.POSPRON.+Pers@", 
+	"+Poss" -> "@U.POSPRON.+Poss@", 
+	"+Refl" -> "@U.POSPRON.+Refl@"
+	];
+# Subtypes for numerals
+define diacritizePOSNUM [ # 
+	"+Card" -> "@U.POSNUM.+Card@", 
+	"+Dec" -> "@U.POSNUM.+Dec@", 
+	"+Degree" -> "@U.POSNUM.+Degree@", 
+	"+Ord" -> "@U.POSNUM.+Ord@", 
+	"+Percent" -> "@U.POSNUM.+Percent@"
+	];
+define diacritizePOSPUNC [ # 
+	"+Beg" -> "@U.POSPUNC.+Beg@", 
+	"+End" -> "@U.POSPUNC.+End@", 
+	"+Mid" -> "@U.POSPUNC.+Mid@"
+	];
+
+
+define diacritizeCASE [ #
+	"+Acc" -> "@U.CASE.+Acc@", 
+	"+AccDat" -> "@U.CASE.+AccDat@", 
+	"+Nom" -> "@U.CASE.+Nom@"
+	];
+
+define diacritizeNUMBER [ #
+	"+Pl" -> "@U.NUMBER.+Pl@", 
+	"+Sg" -> "@U.NUMBER.+Sg@"
+	];
+define diacritizeGENDER [ #
+	"+Masc" -> "@U.GENDER.+Masc@", 
+	"+Fem" -> "@U.GENDER.+Fem@", 
+	"+MF" -> "@U.GENDER.+MF@"
+	];
+define diacritizePERSON [ #
+	"+1P" -> "@U.PERSON.+1P@", 
+	"+2P" -> "@U.PERSON.+2P@", 
+	"+3P" -> "@U.PERSON.+3P@"
+	];
+define diacritizeTENSEASP [ #
+	"+PresInd" -> "@U.TENSEASP.+PresInd@", 
+	"+PastPart" -> "@U.TENSEASP.+PastPart@", 
+	"+Gerund" -> "@U.TENSEASP.+Gerund@", 
+	"+Inf" -> "@U.TENSEASP.+Inf@", 
+	"+Cond" -> "@U.TENSEASP.+Cond@", 
+	"+Apo" -> "@U.TENSEASP.+Apo@",	
+	"+Con" -> "@U.TENSEASP.+Con@", 
+	"+ImpInd" -> "@U.TENSEASP.+ImpInd@", 
+	"+Impv" -> "@U.TENSEASP.+Impv@" 
+	] ;
+define diacritizeDEGREE [ #
+	"+Comp" -> "@U.DEGREE.+Comp@",
+	"+Sup" -> "@U.DEGREE.+Sup@"
+	];
+define diacritizeMISC [ #
+	"+Aton" -> "@U.MISC.+Aton@",
+	"+Ton" ->  "@U.MISC.+Ton@",
+	"+Prop" ->  "@U.MISC.+Prop@",
+	"+Apo" ->  "@U.MISC.+Apo@"
+
+	];	
+define diacritizeALL [ #
+      diacritizePOS
+	  .o. diacritizePOSPRON
+		.o. diacritizePOSNUM
+		 .o. diacritizePOSPUNC
+		  .o. diacritizeCASE 
+		   .o. diacritizeNUMBER 
+			.o. diacritizeGENDER
+			 .o. diacritizePERSON
+			  .o. diacritizeTENSEASP
+			   .o. diacritizeDEGREE
+				.o.  diacritizeMISC
+			   ];
+
+define morphValues [ #
+	 "+1P" 
+	|"+2P" 
+	|"+3P" 
+	|"+Acc" 
+	|"+AccDat" 
+	|"+Adj" 
+	|"+Adv" 
+	|"+Apo" 
+	|"+Apo" 
+	|"+Art" 
+	|"+Aton" 
+	|"+Beg" 
+	|"+Card" 
+	|"+Comp" 
+	|"+Cond" 
+	|"+Conj" 
+	|"+Con" 
+	|"+Dec" 
+	|"+Degree" 
+	|"+Dem" 
+	|"+Dig" 
+	|"+End" 
+	|"+Fem" 
+	|"+Gerund" 
+	|"+ImpInd" 
+	|"+Impv" 
+	|"+Indef" 
+	|"+Inf" 
+	|"+Initial" 
+	|"+Interj" 
+	|"+Interrog" 
+	|"+Let" 
+	|"+Masc" 
+	|"+MF" 
+	|"+Mid" 
+	|"+Nom" 
+	|"+Noun" 
+	|"+Num" 
+	|"+Ord" 
+	|"+PastPart" 
+	|"+Percent" 
+	|"+Pers" 
+	|"+Pl" 
+	|"+Poss" 
+	|"+Prep" 
+	|"+PresInd" 
+	|"+Pron" 
+	|"+Prop" 
+	|"+Prop" 
+	|"+Punc" 
+	|"+PUNCT" 
+	|"+Refl" 
+	|"+Rom" 
+	|"+Sg" 
+	|"+Subj" 
+	|"+Sup" 
+	|"+Ton" 
+	|"+Verb" 
+];
+
+define optDeleteMorphValues [ morphValues (->) 0 ];
+
+################################################################################
+# Verbs
+################################################################################
+
+# Normalization of verb lemmas
+define OrthoRule @"fstbinaries/OrthoRule.fst" ; 
+
+# Inflected verbs (need a bit of normalization)
+define Verb [ @"fstbinaries/Verb.fst" .o. OrthoRule ] ; 
+
+define materializeVerb [ #	
+		"@E.POS.+Verb@"  "+Verb"
+		  [ "@R.TENSEASP.+PresInd@" "+PresInd"
+			| "@R.TENSEASP.+ImpInd@" "+ImpInd"
+			| "@R.TENSEASP.+Con@" "+Con" 
+			| "@R.TENSEASP.+PastPart@" "+PastPart" 
+			| "@R.TENSEASP.+Impv@" "+Impv"
+			| "@R.TENSEASP.+Cond@" "+Cond"
+			| "@R.TENSEASP.+Gerund@" "+Gerund" ]
+		  [ "@R.PERSON.+1P@" "+1P" 
+			| "@R.PERSON.+2P@" "+2P"
+			  | "@R.PERSON.+3P@" "+3P"]
+		  [ "@R.NUMBER.+Sg@" "+Sg"
+			| "@R.NUMBER.+Pl@" "+Pl"]
+		 ];
+
+
+
+#define materializeUpper [materializeUpperFinite ];
+read regex [ Verb.i .o. diacritizePOS .o. diacritizeTENSEASP .o. diacritizePERSON .o. diacritizeNUMBER ] ;
+
+twosided flag-diacritics
+
+define VerbDiacritic ;
+
+#read regex [ DIACRITIZED ] ; # .o. deleteFlagsLower ] ;
+#twosided flag-diacritics
+#define diacritizedUpper ;
+
+#read regex diacritizedUpper ;
+#twosided flag-diacritics
+#print random-words
+
+# 
+read regex [ #
+			[  VerbDiacritic  materializeVerb ]
+			.o. optDeleteMorphValues
+			 ] ;
+twosided flag-diacritics
+
+eliminate flags
+compact sigma
+save stack fstbinaries/verbgenerator.fst
+
+#print sigma
+#print random-words
+
+
+define VerbGenerator ;
+
+
+################################################################################
+# Nouns (including proper nouns)
+################################################################################
+
+define Noun [ @"fstbinaries/Noun.fst" ] ; 
+
+define materializeNoun [ #
+	"@E.POS.+Noun@" "+Noun"
+	[ "@R.GENDER.+Masc@" "+Masc"
+	| "@R.GENDER.+Fem@"  "+Fem"
+	]
+	[ "@R.NUMBER.+Pl@" "+Pl"
+	| "@R.NUMBER.+Sg@" "+Sg"
+	  ]
+	|
+		"@E.POS.+Prop@" "+Prop"
+	] ;
+
+read regex [ Noun.i .o. diacritizePOS .o. diacritizeGENDER .o. diacritizeNUMBER ] ;
+
+twosided flag-diacritics
+
+define NounDiacritic ;
+
+read regex [ #
+			[  NounDiacritic  materializeNoun ]
+			.o. optDeleteMorphValues
+			 ] ;
+twosided flag-diacritics
+
+eliminate flags
+compact sigma
+save stack fstbinaries/noungenerator.fst
+
+define NounGenerator;
+
+################################################################################
+#  Adjectives
+################################################################################
+
+define Adjective [ @"fstbinaries/Adjective.fst" .o. OrthoRule ] ; 
+
+define materializeAdjective [ #
+	"@E.POS.+Adj@" "+Adj"
+	[
+	 "@R.DEGREE.+Comp@" "+Comp"
+	 | "@R.DEGREE.+Sup@" "+Sup"
+	 | ["@D.DEGREE.+Sup@"  "@D.DEGREE.+Comp@"] 
+	]
+	[
+	 "@R.GENDER.+Masc@" "+Masc"
+	 | "@R.GENDER.+Fem@" "+Fem"
+	 | "@R.GENDER.+MF@" "+MF"
+	]
+	[
+	 "@R.NUMBER.+Pl@" "+Pl"
+	 | "@R.NUMBER.+Sg@" "+Sg"
+	]
+	] ;
+
+read regex [ Adjective.i .o. diacritizePOS .o. diacritizeDEGREE .o. diacritizeGENDER .o. diacritizeNUMBER ] ;
+
+twosided flag-diacritics
+
+define AdjectiveDiacritic ;
+
+read regex [ #
+			[  AdjectiveDiacritic  materializeAdjective ]
+			.o. optDeleteMorphValues
+			 ] ;
+twosided flag-diacritics
+
+eliminate flags
+compact sigma
+print sigma
+save stack fstbinaries/adjectivegenerator.fst
+
+
+

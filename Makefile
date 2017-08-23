@@ -14,9 +14,9 @@ else ifeq ($(XFST),xfst)
 XFSTCMD:=xfst -f
 endif
 
-build: Grischun.fst GrischunGuessing.fst cgi-bin/data/GrischunGuessing.fst 
+build: Grischun.fst GrischunGuessing.fst cgi-bin/data/GrischunGuessing.fst  fstbinaries/generator.fst
 
-cgi: cgi-bin/data/crf-morphpos-model cgi-bin/tools/analyse.py
+cgi: cgi-bin/data/crf-morphpos-model cgi-bin/tools/analyse.py fstbinaries/generator.fst
 
 world: build cgi
 
@@ -40,6 +40,9 @@ Grischun.fst GrischunGuessing.fst : collection-RG.xfst \
  art-pron/art.lexc \
  art-pron/pron.lexc
 	$(XFSTCMD) collection-RG.xfst
+
+# Generator
+fstbinaries/generator.fst: Grischun.fst
 
 # Networks for the major parts of speech
 fstbinaries/Adjective.fst fstbinaries/AdjectiveGuessing.fst : adj/adj.xfst \
@@ -105,6 +108,9 @@ cgi-bin/data/crf-morphpos-model:crf-morphological-analyzer/train/trainall.txt.mo
 	ln -f $< $@
 cgi-bin/tools/analyse.py:crf-morphological-analyzer/lib/analyse.py
 	mkdir -p $(@D) && ln -f $< $@
-	
+
+cgi-bin/data/generator.fst: fstbinaries/generator.fst
+	ln -f $< $@
+
 crf-morphological-analyzer/train/trainall.txt.mod:
 	cd crf-morphological-analyzer && make final
