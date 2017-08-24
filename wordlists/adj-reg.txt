@@ -544,6 +544,7 @@ ris
 roial
 rudimentar
 ruis
+rumantsch
 rumen
 rural
 rustical
