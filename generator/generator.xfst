@@ -317,7 +317,7 @@ eliminate flags
 compact sigma
 print sigma
 save stack fstbinaries/adjectivegenerator.fst
-
+define AdjectiveGenerator ;
 ################################################################################
 #  all
 ################################################################################
