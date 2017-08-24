@@ -36,6 +36,7 @@ entaifer
 entamez
 entant
 enturn
+era
 fitg
 forsa
 gea
