@@ -426,48 +426,48 @@ decentralisaziun	decentralisaziun	+Noun+Fem+Sg
 è	esser	+Verb+PresInd+3P+Sg
 defensiva	defensiva	+Adj+Fem+Sg
 .	.	+Sent
-:   :   +Sent   #DONE Martin 2017-08-24
+
 L’	*il	+Art+Def+Masc+Sg+Apo
 institut	institut	+Noun+Masc+Sg
 dal	da	+Prep^=+Art+Def+Masc+Sg
 Dicziunari	*dicziunari	+Noun+Masc+Sg
-Rumantsch	*rumantschar	+Verb+PresInd+1P+Sg
-Grischun	Grischun	+Prop
+Rumantsch	*rumantsch	+Adj+Masc+Sg
+Grischun	*grischun	+Adj+Masc+Sg
 (	(	+Punc+Beg
-DRG	DRG	+Abbr
+DRG	DRG	+Prop+Abbr
 )	)	+Punc+End
 è	esser	+Verb+PresInd+3P+Sg
-gist	gist	+Adj+Sup^DB+Adv
+gist	gist	+Adj+Sup^DB+Adv #PROBLEM
 s’	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg+Apo
 installà	installar	+Verb+PastPart+Masc+Sg
 da	da	+Prep
-nov	nov	+Adj+Masc+Sg
+nov	nov	+Adj+Masc+Sg    #PROBLEM
 a	a	+Prep
 Cuira	Cuira	+Prop
 e	e	+Conj
 na	na	+Adv
 vul	vulair	+Verb+PresInd+3P+Sg
 betg	betg	+Adv
-midadas	midar	+Verb+PastPart+Fem+Pl
+midadas	midada	+Noun+Fem+Pl
 .	.	+Sent
 
 La	*il	+Art+Def+Fem+Sg
 gruppa	gruppa	+Noun+Fem+Sg
 da	da	+Prep
 lavur	lavur	+Noun+Fem+Sg
-demussa	demussar	+Verb+Impv+2P+Sg
+demussa	demussar	+Verb+PresInd+3P+Sg
 chapientscha	chapientscha	+Noun+Fem+Sg
 per	per	+Prep
 ils	il	+Art+Def+Masc+Pl
 arguments	arguments	+Noun+Masc+Pl
 dal	da	+Prep^=+Art+Def+Masc+Sg
-DRG	DRG	+Abbr
+DRG	DRG	+Prop+Abbr
 .	.	+Sent
 
 La	*il	+Art+Def+Fem+Sg
-LR	LR	+Prop
+LR	LR	+Prop+Abbr
 ha	avair	+Verb+PresInd+3P+Sg
-pintgas	pintga	+Noun+Fem+Pl+UNKNOWN
+pintgas	pintga	+Noun+Fem+Pl+UNKNOWN    #PROBLEM Fehler: sollte 'pitschnas'
 pussaivladads	pussaivladad	+Noun+Fem+Pl
 da	da	+Prep
 decentralisar	decentralisar	+Verb+Inf
@@ -485,13 +485,13 @@ Grischun	Grischun	+Prop
 che	che	+Subj
 vegn	vegnir	+Verb+PresInd+3P+Sg
 acceptà	acceptar	+Verb+PastPart+Masc+Sg
-pli	pli	+Adv
+pli	pli	+Adv    #PROBLEM
 u	u	+Conj
 main	pauc	+Adj+Comp^DB+Adv
 da	da	+Prep
 tuttas	tut	+Pron+Indef+Fem+Pl
 varts	vart	+Noun+Fem+Pl
-sco	sco	+Conj
+sco	sco	+Conj   #PROBLEM adv.?
 center	center	+Noun+Masc+Sg
 ,	,	+CM
 che	che	+Subj
@@ -500,7 +500,7 @@ l’	il	+Art+Def+Masc+Sg+Apo
 inscunter	inscunter	+Noun+Masc+Sg
 surregiunal	surregiunal	+Adj+Masc+Sg
 ed	e	+Conj+Apo
-interidiomatic	interidiomatic	+Adj+Masc+Sg+UNKNOWN
+interidiomatic	interidiomatic	+Adj+Masc+Sg
 ,	,	+CM
 nua	nua	+Adv
 ch’	che	+Subj+Apo
@@ -509,9 +509,9 @@ immobiglias	immobiglias	+Noun+Fem+Pl
 realisadas	realisar	+Verb+PastPart+Fem+Pl
 per	per	+Prep
 instituziuns	instituziun	+Noun+Fem+Pl
-rumantschas	rumantschar	+Verb+PresInd+2P+Sg
+rumantschas	rumantsch	+Adj+Fem+Pl
 e	e	+Conj
-nua	nuar	+Verb+Impv+2P+Sg
+nua	nua	+Adv
 che	che	+Subj
 contacts	contact	+Noun+Masc+Pl
 cun	cun	+Prep
@@ -523,7 +523,7 @@ numerusas	numerus	+Adj+Fem+Pl
 autras	auter	+Adj+Fem+Pl
 instituziuns	instituziun	+Noun+Fem+Pl
 èn	esser	+Verb+PresInd+3P+Pl
-tgunsch	tgunsch	+Noun+Masc+Sg+UNKNOWN
+tgunsch	tgunsch	+Adj    #PROBLEM
 pussaivels	pussaivel	+Adj+Masc+Pl
 .	.	+Sent
 
@@ -531,20 +531,20 @@ Sin	*sin	+Prep
 fundament	fundament	+Noun+Masc+Sg
 dal	da	+Prep^=+Art+Def+Masc+Sg
 rapport	rapport	+Noun+Masc+Sg
-intermediar	intermediar	+Verb+Inf
-duai	duair	+Verb+Impv+2P+Pl
+intermediar	intermediar	+Adj+Masc+Sg
+duai	duair	+Verb+PresInd+3P+Sg
 la	il	+Art+Def+Fem+Sg
-guppa	guppa	+Noun+Fem+Sg+UNKNOWN
+guppa	guppa	+Noun+Fem+Sg    #PROBLEM Fehler: sollte "gruppa" heissen
 da	da	+Prep
-lavur	lavurar	+Verb+PresInd+1P+Sg
+lavur	lavur	+Noun+Masc+Sg
 preparar	preparar	+Verb+Inf
 il	il	+Art+Def+Masc+Sg
 rapport	rapport	+Noun+Masc+Sg
 final	final	+Adj+Masc+Sg
 cun	cun	+Prep
-propostas	propost	+Adj+Fem+Pl
+propostas	proposta	+Noun+Fem+Pl
 che	che	+Subj
-duain	duair	+Verb+PresInd+1P+Pl
+duain	duair	+Verb+PresInd+3P+Pl
 vegnir	vegnir	+Verb+Inf
 discutadas	discutar	+Verb+PastPart+Fem+Pl
 en	en	+Prep
@@ -555,5 +555,6 @@ delegads	delegà	+Noun+Masc+Pl
 da	da	+Prep
 l’	il	+Art+Def+Masc+Sg+Apo
 onn	onn	+Noun+Masc+Sg
-proxim	proxim	+Noun+Masc+Sg
+proxim	proxim	+Adj+Masc+Sg
 .	.	+Sent
+:   :   +Sent   #DONE Martin 2017-08-24
