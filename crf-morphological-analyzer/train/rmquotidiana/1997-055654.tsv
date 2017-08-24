@@ -177,25 +177,25 @@ da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 LR	LR	+Prop+Abbr
 .	.	+Sent
-:   :   +Sent   #DONE Martin 2017-08-23
+
 Il	*il	+Art+Def+Masc+Sg
 program	program	+Noun+Masc+Sg
 per	per	+Prep
 1998	1998	+Dig+Card
-cuntegn	cuntegnair	+Verb+PresInd+1P+Sg
+cuntegn	cuntegnair	+Verb+PresInd+1P+Sg #PROBLEM Fehler: sollte cuntegna heissen
 dentant	dentant	+Adv
-era	esser	+Verb+ImpInd+1P+Sg
+era	era	+Adv
 in	in	+Art+Indef+Masc+Sg
 grond	grond	+Adj+Masc+Sg
 dumber	dumber	+Noun+Masc+Sg
 da	da	+Prep
-novas	nova	+Noun+Fem+Pl
+novas	nov	+Adj+Fem+Pl
 lavurs	lavur	+Noun+Fem+Pl
 previsas	previs	+Adj+Fem+Pl
 ,	,	+CM
-uschia	uschia	+Interj
+uschia	uschia	+Adv #PROBLEM
 tranter	tranter	+Prep
-auter	auter	+Adj+Masc+Sg
+auter	auter	+Adj+Masc+Sg    #PROBLEM
 dad	da	+Prep+Apo
 animar	animar	+Verb+Inf
 inscunters	inscunter	+Noun+Masc+Pl
@@ -213,13 +213,13 @@ linguistic	linguistic	+Adj+Masc+Sg
 dad	da	+Prep+Apo
 eleger	eleger	+Verb+Inf
 il	il	+Art+Def+Masc+Sg
-rumantsch	rumantschar	+Verb+PresInd+1P+Sg
+rumantsch	rumantsch	+Noun+Masc+Sg
 (	(	+Punc+Beg
-empè	empè	+Noun+Fem+Sg+UNKNOWN
+empè	empè	+Prep   #PROBLEM  
 da	da	+Prep
-talian	talian	+Adj+Masc+Sg
+talian	talian	+Noun+Masc+Sg
 )	)	+Punc+End
-sco	sco	+Conj
+sco	sco	+Adv    #PROBLEM
 segund	segund	+Adj+Masc+Sg
 linguatg	linguatg	+Noun+Masc+Sg
 en	en	+Prep
@@ -231,30 +231,30 @@ animar	animar	+Verb+Inf
 il	il	+Art+Def+Masc+Sg
 Chantun	*chantun	+Noun+Masc+Sg
 da	da	+Prep
-s’	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg+Apo
+s’	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg+Apo #PROBLEM
 engaschar	engaschar	+Verb+Inf
 per	per	+Prep
-ch’	che	+Subj+Apo
+ch’	che	+Subj+Apo   #PROBLEM
 i	i	+Pron+Pers+Nom+3P+MF+Sg
-possia	pudair	+Verb+Con+1P+Sg
+possia	pudair	+Verb+Con+3P+Sg
 vegnir	vegnir	+Verb+Inf
 scolà	scolar	+Verb+PastPart+Masc+Sg
-avunda	avund	+Adj+Fem+Sg+UNKNOWN
-scolastas	scolasta	+Noun+Fem+Pl+UNKNOWN
+avunda	avunda	+Adv    #PROBLEM
+scolastas	scolasta	+Noun+Fem+Pl
 e	e	+Conj
 scolasts	scolast	+Noun+Masc+Pl
-rumantschs	rumantsch	+Adj+Masc+Pl+UNKNOWN
+rumantschs	rumantsch	+Adj+Masc+Pl
 ,	,	+CM
 da	da	+Prep
 pretender	pretender	+Verb+Inf
-che	che	+Subj
+che	che	+Subj   #PROBLEM
 scolaras	scolara	+Noun+Fem+Pl
 e	e	+Conj
 scolars	scolars	+Noun+Masc+Pl
-che	che	+Subj
+che	che	+Subj   #PROBLEM pron. rel.
 han	avair	+Verb+PresInd+3P+Pl
-gì	avair	+Verb+PastPart+Masc+Sg
-rumantsch	rumantschar	+Verb+PresInd+1P+Sg
+gì	avair	+Verb+PastPart+Masc+Sg  #PROBLEM Sg. + Pl.
+rumantsch	rumantsch	+Noun+Masc+Sg
 en	en	+Prep
 scola	scola	+Noun+Fem+Sg
 fundamentala	fundamental	+Adj+Fem+Sg
@@ -262,23 +262,23 @@ van	ir	+Verb+PresInd+3P+Pl
 ad	a	+Prep+Apo
 uras	uras	+Noun+Fem+Pl
 da	da	+Prep
-rumantsch	rumantschar	+Verb+PresInd+1P+Sg
+rumantsch	rumantsch	+Noun+Masc+Sg
 en	en	+Prep
 las	il	+Art+Def+Fem+Pl
 scolas	scola	+Noun+Fem+Pl
-medias	medias	+Noun+Fem+Pl
+medias	medias	+Noun+Fem+Pl    #PROBLEM
 ,	,	+CM
 da	da	+Prep
 sustegnair	sustegnair	+Verb+Inf
 il	il	+Art+Def+Masc+Sg
 project	project	+Noun+Masc+Sg
-La	*ella	+Pron+Pers+AccDat+Aton+3P+Fem+Sg
+La	*il	+Art+Def+Fem+Sg
 Quotidiana	Quotidiana	+Prop
 e	e	+Conj
 dad	da	+Prep+Apo
 infurmar	infurmar	+Verb+Inf
-sur	sur	+Adv
-internet	internet	+Adj+Masc+Sg+UNKNOWN
+sur	sur	+Adv    #PROBLEM
+internet	internet	+Noun+Masc+Sg
 .	.	+Sent
 
 Sin	*sin	+Prep
@@ -286,7 +286,7 @@ fundament	fundament	+Noun+Masc+Sg
 da	da	+Prep
 duas	dus	+Num+Card+Fem
 intervenziuns	intervenziun	+Noun+Fem+Pl
-pertutgant	pertutgant	+Adj+Masc+Sg+UNKNOWN
+pertutgant	pertutgant	+Prep   #PROBLEM
 la	il	+Art+Def+Fem+Sg
 dumonda	dumonda	+Noun+Fem+Sg
 da	da	+Prep
@@ -295,10 +295,10 @@ decentralisaziun	decentralisaziun	+Noun+Fem+Sg
 da	da	+Prep
 las	il	+Art+Def+Fem+Pl
 instituziuns	instituziun	+Noun+Fem+Pl
-rumantschas	rumantschar	+Verb+PresInd+2P+Sg
+rumantschas	rumantsch	+Adj+Fem+Pl
 ha	avair	+Verb+PresInd+3P+Sg
 la	il	+Art+Def+Fem+Sg
-LR	LR	+Prop
+LR	LR	+Prop+Abbr
 installà	installar	+Verb+PastPart+Masc+Sg
 ina	in	+Art+Indef+Fem+Sg
 gruppa	gruppa	+Noun+Fem+Sg
@@ -317,7 +317,7 @@ da	da	+Prep
 lavur	lavur	+Noun+Fem+Sg
 dal	da	+Prep^=+Art+Def+Masc+Sg
 moviment	moviment	+Noun+Masc+Sg
-rumantsch	rumantschar	+Verb+PresInd+1P+Sg
+rumantsch	rumantsch	+Adj+Masc+Sg
 ,	,	+CM
 dad	da	+Prep+Apo
 eruir	eruir	+Verb+Inf
@@ -342,11 +342,11 @@ pussaivels	pussaivel	+Adj+Masc+Pl
 e	e	+Conj
 da	da	+Prep
 far	far	+Verb+Inf
-propostas	propost	+Adj+Fem+Pl
-concretas	concreta	+Noun+Fem+Pl+UNKNOWN
+propostas	proposta	+Noun+Fem+Pl
+concretas	concret	+Adj+Fem+Pl
 concernent	concernent	+Prep
 il	il	+Art+Def+Masc+Sg
-proxim	proxim	+Noun+Masc+Sg
+proxim	proxim	+Adj+Masc+Sg
 proceder	proceder	+Noun+Masc+Sg
 .	.	+Sent
 
@@ -354,7 +354,7 @@ Uss	*uss	+Adv
 è	esser	+Verb+PresInd+3P+Sg
 in	in	+Art+Indef+Masc+Sg
 rapport	rapport	+Noun+Masc+Sg
-intermediar	intermediar	+Verb+Inf
+intermediar	intermediar	+Adj+Masc+Sg
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 gruppa	gruppa	+Noun+Fem+Sg
@@ -365,8 +365,9 @@ maun	maun	+Noun+Masc+Sg
 
 Naginas	*nagin	+Pron+Indef+Fem+Pl
 soluziuns	soluziun	+Noun+Fem+Pl
-simplas	in+Num	+Adj+Fem+Pl
-Las	*ellas	+Pron+Pers+AccDat+Aton+3P+Fem+Pl
+simplas	simpel  +Adj+Fem+Pl
+
+Las	*il	+Art+Def+Fem+Pl
 discussiuns	discussiun	+Noun+Fem+Pl
 da	da	+Prep
 fin	fin	+Prep
@@ -375,21 +376,21 @@ han	avair	+Verb+PresInd+3P+Pl
 mussà	mussar	+Verb+PastPart+Masc+Sg
 che	che	+Subj
 soluziuns	soluziun	+Noun+Fem+Pl
-simplas	in+Num	+Adj+Fem+Pl
-n’	n'	+Adv
+simplas	simpel  +Adj+Fem+Pl
+n’	n'	+Adv    #PROBLEM
 èn	esser	+Verb+PresInd+3P+Pl
 betg	betg	+Adv
 pussaivlas	pussaivel	+Adj+Fem+Pl
 ,	,	+CM
-ch’	che	+Subj+Apo
+ch’	che	+Subj+Apo   
 il	il	+Art+Def+Masc+Sg
 Radio	*radio	+Noun+Masc+Sg
 e	e	+Conj
 la	il	+Art+Def+Fem+Sg
 Televisiun	*televisiun	+Noun+Fem+Sg
-rumantscha	rumantschar	+Verb+PresInd+3P+Sg
+rumantscha	rumantsch	+Adj+Fem+Sg
 (	(	+Punc+Beg
-RTvR	RTvR	+Prop
+RTvR	RTvR	+Prop+Abbr
 )	)	+Punc+End
 han	avair	+Verb+PresInd+3P+Pl
 ina	in	+Art+Indef+Fem+Sg
@@ -403,8 +404,8 @@ speziala	spezial	+Adj+Fem+Sg
 e	e	+Conj
 na	na	+Adv
 vulan	vulair	+Verb+PresInd+3P+Pl
-senz’	senzar	+Verb+PresInd+3P+Sg+Apo+UNKNOWN
-auter	auter	+Adj+Masc+Sg
+senz’	senza	+Prep+Apo
+auter	auter	+Adj+Masc+Sg    #PROBLEM
 acceptar	acceptar	+Verb+Inf
 intervenziuns	intervenziun	+Noun+Fem+Pl
 e	e	+Conj
@@ -418,14 +419,14 @@ ordaifer	ordaifer	+Prep
 La	*il	+Art+Def+Fem+Sg
 tenuta	tenuta	+Noun+Fem+Sg
 da	da	+Prep
-RTvR	RTvR	+Prop
-envers	envers	+Adj+Masc+Pl
+RTvR	RTvR	+Prop+Abbr
+envers	envers	+Prep
 ina	in	+Art+Indef+Fem+Sg
 decentralisaziun	decentralisaziun	+Noun+Fem+Sg
 è	esser	+Verb+PresInd+3P+Sg
-defensiva	defensiva	+Noun+Fem+Sg
+defensiva	defensiva	+Adj+Fem+Sg
 .	.	+Sent
-
+:   :   +Sent   #DONE Martin 2017-08-24
 L’	*il	+Art+Def+Masc+Sg+Apo
 institut	institut	+Noun+Masc+Sg
 dal	da	+Prep^=+Art+Def+Masc+Sg
