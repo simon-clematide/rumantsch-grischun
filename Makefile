@@ -16,7 +16,7 @@ endif
 
 build: Grischun.fst GrischunGuessing.fst cgi-bin/data/GrischunGuessing.fst  fstbinaries/generator.fst
 
-cgi: cgi-bin/data/crf-morphpos-model cgi-bin/tools/analyse.py fstbinaries/generator.fst
+cgi: cgi-bin/data/crf-morphpos-model cgi-bin/tools/analyse.py cgi-bin/data/generator.fst
 
 world: build cgi
 
