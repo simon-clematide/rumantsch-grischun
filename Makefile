@@ -42,8 +42,8 @@ Grischun.fst GrischunGuessing.fst : collection-RG.xfst \
 	$(XFSTCMD) collection-RG.xfst
 
 # Generator
-fstbinaries/generator.fst: Grischun.fst
-	$(XFSTCMD) generator/generator.xfst
+fstbinaries/generator.fst: generator/generator.xfst Grischun.fst
+	$(XFSTCMD) $<
 
 # Networks for the major parts of speech
 fstbinaries/Adjective.fst fstbinaries/AdjectiveGuessing.fst : adj/adj.xfst \

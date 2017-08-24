@@ -256,7 +256,7 @@ define materializeNoun [ #
 	| "@R.NUMBER.+Sg@" "+Sg"
 	  ]
 	|
-		"@E.POS.+Prop@" "+Prop"
+		"@R.POS.+Prop@" "+Prop"
 	] ;
 
 read regex [ Noun.i .o. diacritizePOS .o. diacritizeGENDER .o. diacritizeNUMBER ] ;
