@@ -192,24 +192,44 @@ define Verb [ @"fstbinaries/Verb.fst" .o. OrthoRule ] ;
 
 define materializeVerb [ #	
 		"@E.POS.+Verb@"  "+Verb"
-		  [ "@R.TENSEASP.+PresInd@" "+PresInd"
+		[
+		  [
+		  	[ "@R.TENSEASP.+PresInd@" "+PresInd"
 			| "@R.TENSEASP.+ImpInd@" "+ImpInd"
 			| "@R.TENSEASP.+Con@" "+Con" 
-			| "@R.TENSEASP.+PastPart@" "+PastPart" 
+
 			| "@R.TENSEASP.+Impv@" "+Impv"
-			| "@R.TENSEASP.+Cond@" "+Cond"
-			| "@R.TENSEASP.+Gerund@" "+Gerund" ]
-		  [ "@R.PERSON.+1P@" "+1P" 
+			| "@R.TENSEASP.+Cond@" "+Cond" 
+			]
+		 	[ "@R.PERSON.+1P@" "+1P" 
 			| "@R.PERSON.+2P@" "+2P"
-			  | "@R.PERSON.+3P@" "+3P"]
-		  [ "@R.NUMBER.+Sg@" "+Sg"
-			| "@R.NUMBER.+Pl@" "+Pl"]
+			| "@R.PERSON.+3P@" "+3P"
+			]
+			[ "@R.NUMBER.+Sg@" "+Sg"
+			| "@R.NUMBER.+Pl@" "+Pl"
+			]
+		]
+		|
+			["@R.TENSEASP.+Gerund@" "+Gerund" ]
+		|
+			[
+			"@R.TENSEASP.+PastPart@" "+PastPart" 
+				[ "@R.GENDER.+Masc@" "+Masc"
+				| "@R.GENDER.+Fem@"  "+Fem"
+				]
+				[ "@R.NUMBER.+Pl@" "+Pl"
+				| "@R.NUMBER.+Sg@" "+Sg"
+	 			 ]
+
+			]
+		]	
+		
 		 ];
 
 
 
 #define materializeUpper [materializeUpperFinite ];
-read regex [ Verb.i .o. diacritizePOS .o. diacritizeTENSEASP .o. diacritizePERSON .o. diacritizeNUMBER ] ;
+read regex [ Verb.i .o. diacritizePOS .o. diacritizeTENSEASP .o. diacritizePERSON .o. diacritizeNUMBER .o. diacritizeGENDER ] ;
 
 twosided flag-diacritics
 
