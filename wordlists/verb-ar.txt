@@ -874,6 +874,7 @@ lavurar
 lectorar
 legar
 legitimar
+legrar
 levar
 leventar
 liar
@@ -1317,7 +1318,6 @@ roborar
 rotar
 rubagliar
 rubar
-rudlar
 rufidar
 rugalar
 rugar
@@ -1597,6 +1597,7 @@ spiar
 spiclar
 spidar
 spievlar
+spiglar
 spirar
 spisgentar
 spizzar
@@ -1744,6 +1745,7 @@ surmangiar
 surmuntar
 surpajar
 surpassar
+surpavlar
 surpigliar
 surpledar
 surrepreschentar
