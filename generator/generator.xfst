@@ -103,6 +103,12 @@ define diacritizeMISC [ #
 	"+Apo" ->  "@U.MISC.+Apo@"
 
 	];	
+
+define diacritizeAPO [ #
+	"+Apo" ->  "@U.APO.+Apo@"
+
+	];	
+
 define diacritizeALL [ #
       diacritizePOS
 	  .o. diacritizePOSPRON
@@ -319,9 +325,18 @@ define materializeAdjective [ #
 	 "@R.NUMBER.+Pl@" "+Pl"
 	 | "@R.NUMBER.+Sg@" "+Sg"
 	]
+	[
+	 ["@R.APO.+Apo@" "+Apo"
+	 | "@D.APO.+Apo@"]
+	]
+
 	] ;
 
-read regex [ Adjective.i .o. diacritizePOS .o. diacritizeDEGREE .o. diacritizeGENDER .o. diacritizeNUMBER ] ;
+define normalizeAsciiApo [
+	[ ["`"|"´"|"’"]   -> "'" ||  _ "+Adj" $["+Apo"] ]
+	] ;
+
+read regex [ Adjective.i .o. diacritizePOS .o. diacritizeDEGREE .o. diacritizeGENDER .o. diacritizeNUMBER .o. diacritizeAPO] ;
 
 twosided flag-diacritics
 
@@ -329,6 +344,7 @@ define AdjectiveDiacritic ;
 
 read regex [ #
 			[  AdjectiveDiacritic  materializeAdjective ]
+			
 			.o. optDeleteMorphValues
 			 ] ;
 twosided flag-diacritics
@@ -336,6 +352,11 @@ twosided flag-diacritics
 eliminate flags
 compact sigma
 print sigma
+
+define AdjectiveGenerator ;
+
+read regex normalizeAsciiApo.i .o. AdjectiveGenerator ;
+
 save stack fstbinaries/adjectivegenerator.fst
 define AdjectiveGenerator ;
 ################################################################################
