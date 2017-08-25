@@ -1,8 +1,11 @@
 abolir
-acquirir
 accumplir
+acquirir
 ademplir
 aderir
+admonir
+admonir
+agir
 applanir
 applaudir
 assortir
@@ -71,6 +74,7 @@ flurir
 furnir
 garantir
 garnir
+gestir
 guarir
 guntgir
 impedir
