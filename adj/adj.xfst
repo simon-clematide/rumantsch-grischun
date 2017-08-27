@@ -23,9 +23,7 @@ define Consonant  [b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|z];
 define Letter [Vowel|Consonant];
 
 # Cleanup
-define Cleanup ["+Adj" -> 0 , "+Sup" -> 0 ,
-	"+Fem" -> 0 , "+Masc" -> 0 ,
-	"+Sg" -> 0 , "+Pl" -> 0 ];
+define Cleanup [ [Numerus|Genus|Label|"+Sup"] -> 0 ];
 
 ################################################################################
 # Regelmässige Adjektive
@@ -58,18 +56,18 @@ define DoublingStems ;
 
 # Verdopplung des Endkonsonanten
 define Doubling [
-	b -> {bb} || _ .#. ,, 
-	c -> {cc} || _ .#. ,, 
-	d -> {dd} || _ .#. ,,
-	f -> {ff} || _ .#. ,,
-	g -> {gg} || _ .#. ,,
-	l -> {ll} || _ .#. ,,
-	m -> {mm} || _ .#. ,,
-	n -> {nn} || _ .#. ,,
-	p -> {pp} || _ .#. ,,
-	r -> {rr} || _ .#. ,,
-	t -> {tt} || _ .#. ,,
-	z -> {zz} || _ .#.];
+	b -> {bb}, 
+	c -> {cc}, 
+	d -> {dd},
+	f -> {ff},
+	g -> {gg},
+	l -> {ll},
+	m -> {mm},
+	n -> {nn},
+	p -> {pp},
+	r -> {rr},
+	t -> {tt},
+	z -> {zz} || _ .#. ];
 
 define DoubStems [DoublingStems .o. Doubling];
 
@@ -81,11 +79,25 @@ define DoublingSup  [DoubStems Label "+Sup" Genus Numerus];
 define DoublingLex [DoublingMasc|DoublingFem|DoublingSup];
 
 
+#  i-Einfügung in Feminin bei -gl Endung
+define GlStems @txt"wordlists/adj-glia.txt";
+
+define IInsertion [	[..] -> {i} || _ .#. ] ;
+
+define GliStems [GlStems .o. IInsertion];
+
+#  Anhängung der entsprechenden Tags
+define GlMasc [GlStems Label "+Masc" Numerus];
+define GlFem  [GliStems Label "+Fem" Numerus];
+define GlSup  [GlStems Label "+Sup" Genus Numerus];
+
+define GlLex [GlMasc|GlFem|GlSup];
+
 # Alle regelmässigen Adjektive mit Tags
-define RegLex [NonDoublingLex|DoublingLex];
+define RegLex [NonDoublingLex|DoublingLex|GlLex];
 
 # Erstellungsregeln
-define R1 [[. .] -> {s}                  || \[s] _ "+Adj" [$["+Masc" "+Pl"] - $["+Sup"]]];
+define R1 [[. .] -> {s}       || \[s] _ "+Adj" [$["+Masc" "+Pl"] - $["+Sup"]]];
 define R2 [[. .] -> {a}            || _ "+Adj" [$["+Fem" "+Sg"] - $["+Sup"]]];
 define R3 [[. .] -> {as}           || _ "+Adj" [$["+Fem" "+Pl"] - $["+Sup"]]];
 define R4 [[. .] -> "@H" {ischem}  || _ "+Adj" [$["+Sup" "+Masc" "+Sg"]]];

@@ -1,0 +1,6 @@
+giagl
+grugl
+marvegl
+satigl
+trugl
+vegl

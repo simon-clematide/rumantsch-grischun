@@ -274,7 +274,6 @@ global
 gratuit
 grev
 grond
-grugl
 guvernamental
 helvetic
 holograf
@@ -675,7 +674,6 @@ usufructuari
 vag
 vargugnus
 vegetal
-vegl
 venal
 verbal
 vertical
