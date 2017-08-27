@@ -143,16 +143,43 @@ define VerbErEschStem  [VerbErEschInf
 define VerbIrEschStem  [VerbIrEschInf
 	.o. [{ir}  -> "@I" || _ .#.]];
 
+################################################################################
+# Dealing with -el variant in 1. person Sg indicative for verbs with 
+################################################################################
+# https://gitlab.cl.uzh.ch/siclemat/rumantsch-morphologie/issues/12
+#  *  ir-Verben, die die 1. Person immer auf -esch bilden, bilden diese Variante nie (z.B. chavrir)
+#   *  ar-Verben, die optional -esch haben, können auch die -el-Variante haben (z.B: enquadrar)
+#   *  ir-Verben, die nicht auf -esch enden in der 1. Person und auf -vrir im Infinitiv, haben immer die -el-Variante
+#   *  ar-Verben, die nicht obligatorisch auf -esch enden in der 1. Person und auf die folgenden Endungen enden haben die -el-Variante:
+# 
+#     * -brar, -crar, -drar, -grar -prar, -trar, vrar
+#     * -blar, -clar, -dlar, -glar -plar,  -tlar, -vlar, 
+
+#     * -flar --zlar -slar, -schlar,
+
+define ElInsertionLeftContext [ #
+	[[b|c|d|g|p|t|v] [r|l]] # both Cr and Cl  
+	| [f|z|s|{sch}] l      # only Cl
+	] ;
+
+define OptEl1PSgInsertion [
+[  [..] (->) {el}	|| ElInsertionLeftContext _ "+Verb" "+PresInd" "+1P" "+Sg" ]
+];
+
+
 # Adding the conjugation endings to the stems
 define VerbAir [VerbAirStem VerbErEnd];
-define VerbAr  [VerbArStem  VerbArEnd];
+define VerbAr  [VerbArStem  VerbArEnd] .o. OptEl1PSgInsertion;
 define VerbEr  [VerbErStem  VerbErEnd];
 define VerbIr  [VerbIrStem  VerbIrEnd];
 define VerbEr2 [VerbEr2Stem VerbIrEnd];
 define VerbAirEsch [VerbAirEschStem VerbErEschEnd];
-define VerbArEsch  [VerbArEschStem  VerbArEschEnd];
+define VerbArEsch  [VerbArEschStem  VerbArEschEnd] ;
 define VerbErEsch  [VerbErEschStem  VerbErEschEnd];
 define VerbIrEsch  [VerbIrEschStem  VerbIrEschEnd];
+
+
+
 
 # Defining the infinitve of the verbs
 define Infinitive [
