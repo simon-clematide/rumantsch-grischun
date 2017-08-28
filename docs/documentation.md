@@ -246,6 +246,7 @@ Wie regelmässige Adjektive (wie *calm – calma*) werden auch die Adjektive mit
   * `wordlists/adj-reg.txt` für die ganz regelmässigen Adjektive. Diese Liste sollte erweitert werden.
   * `wordlists/asj-doubling.txt` für die Adjektive mit Konsonantenverdopplung. Diese Liste sollte erweitert werden.
   * `wordlists/adj-e.txt` für die Adjektive mit flüchtigem Vokal.
+  * `wordlists/adj-glia.txt` für Adjektive mit i-Einfügung in der femininen Form
 
 
 #### 6.1.2 Adjektive mit Partizipendung
