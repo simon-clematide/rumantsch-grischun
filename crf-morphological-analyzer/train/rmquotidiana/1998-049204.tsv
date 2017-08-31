@@ -4,23 +4,23 @@ hajan	avair	+Verb+Con+3P+Pl
 lavur	lavur	+Noun+Fem+Sg
 ,	,	+CM
 professiun	professiun	+Noun+Fem+Sg
-ed	e	+Conj+Apo
+e	e	+Conj
 l’	il	+Art+Def+Masc+Sg+Apo
 individualissem	individualissem	+Noun+Masc+Sg
-prendia	prender	+Verb+Con+1P+Sg
-surmaun	surmaun	+Noun+Masc+Sg+UNKNOWN
+prendia	prender	+Verb+Con+3P+Sg
+surmaun	surmaun	+Noun+Masc+Sg
 .	.	+Sent
 
 Il	*il	+Art+Def+Masc+Sg
 dumber	dumber	+Noun+Masc+Sg
 da	da	+Prep
-Rumantschs	*rumantsch	+Adj+Masc+Pl
+Rumantschs	Rumantsch	+Prop
 emigrads	emigrar	+Verb+PastPart+Masc+Pl
 sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Pl
 reduceschia	reducir	+Verb+Con+3P+Sg
 –	–	+Punc
 era	era	+Adv
-sco	sco	+Conj
+sco	sco	+Adv
 consequenza	consequenza	+Noun+Fem+Sg
 da	da	+Prep
 famiglias	famiglia	+Noun+Fem+Pl
@@ -32,24 +32,24 @@ L’	*il	+Art+Def+Masc+Sg+Apo
 emprima	emprim	+Adj+Fem+Sg
 generaziun	generaziun	+Noun+Fem+Sg
 dals	da	+Prep^=+Art+Def+Masc+Pl
-emigrads	emigrar	+Verb+PastPart+Masc+Pl
+emigrads	emigrar	+Noun+Masc+Pl
 en	en	+Prep
 la	il	+Art+Def+Fem+Sg
-Bassa	*bass	+Adj+Fem+Sg
+Bassa	Bassa	+Prop
 –	–	+Punc
 las	il	+Art+Def+Fem+Pl
 annadas	annada	+Noun+Fem+Pl
 grondas	grond	+Adj+Fem+Pl
 –	–	+Punc
-saja	esser	+Verb+Con+1P+Sg
+saja	esser	+Verb+Con+3P+Sg
 ussa	ussa	+Adv
 pensiunada	pensiunà	+Adj+Fem+Sg
 u	u	+Conj
 sin	sin	+Prep
 via	via	+Noun+Fem+Sg
-vers	vers	+Noun+Masc+Pl
+vers	vers	+Prep
 la	il	+Art+Def+Fem+Sg
-terza	terza	+Noun+Fem+Sg
+terza	terza	+Adj+Fem+Sg
 fasa	fasa	+Noun+Fem+Sg
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
@@ -57,8 +57,8 @@ vita	vita	+Noun+Fem+Sg
 .	.	+Sent
 
 Lur	*lur	+Pron+Poss+Masc+Sg
-figlialonza	figlialonza	+Noun+Fem+Sg+UNKNOWN
-haja	avair	+Verb+Con+1P+Sg
+figlialanza	figlialanza	+Noun+Fem+Sg
+haja	avair	+Verb+Con+3P+Sg
 forsa	forsa	+Adv
 anc	anc	+Adv
 tscherts	tschert	+Pron+Indef+Masc+Pl
@@ -70,20 +70,20 @@ rumantsch	rumantsch	+Adj+Masc+Sg
 .	.	+Sent
 
 Ma	*ma	+Conj
-tar	tarar	+Verb+PresInd+1P+Sg
+tar	tar	+Prep
 la	il	+Art+Def+Fem+Sg
 segunda	segund	+Adj+Fem+Sg
 generaziun	generaziun	+Noun+Fem+Sg
 dals	da	+Prep^=+Art+Def+Masc+Pl
-creschids	creschì	+Adj+Masc+Pl
+creschids	creschì	+Noun+Masc+Pl
 si	si	+Prep
 en	en	+Prep
 la	il	+Art+Def+Fem+Sg
-Bassa	*bass	+Adj+Fem+Sg
+Bassa	Bassa	+Prop
 n’	n'	+Adv
 existian	exister	+Verb+Con+3P+Pl
-tant	tant	+Pron+Indef+Masc+Sg
-sco	sco	+Conj
+tant	tant	+Adv	#PROBLEM: 85 und 86 bilden eine Einheit.
+sco	sco	+Adv
 nagins	nagin	+Pron+Indef+Masc+Pl
 lioms	liom	+Noun+Masc+Pl
 pli	pli	+Adv
@@ -106,50 +106,49 @@ s’	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg+Apo
 accelereschia	accelerar	+Verb+Con+3P+Sg
 en	en	+Prep
 Svizra	Svizra	+Prop
-tudestga	tudestgar	+Verb+Impv+2P+Sg
+tudestga	tudestg	+Adj+Fem+Sg
 e	e	+Conj
 che	che	+Subj
 questa	quest	+Pron+Dem+Fem+Sg
 sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg
-fetschia	far	+Verb+Con+1P+Sg
+fetschia	far	+Verb+Con+3P+Sg
 insumma	insumma	+Adv
 senza	senza	+Prep
 difficultads	difficultads	+Noun+Fem+Pl
-tant	tant	+Pron+Indef+Masc+Sg
+tant	tant	+Conj	#PROBLEM: 118 und 123 bilden eine Einheit, cf. Grammatica 252
 en	en	+Prep
 la	il	+Art+Def+Fem+Sg
 Svizra	Svizra	+Prop
 franzosa	franzos	+Adj+Fem+Sg
-sco	sco	+Conj
+sco	sco	+Conj   #PROBLEM
 en	en	+Prep
 il	il	+Art+Def+Masc+Sg
 Tessin	Tessin	+Prop
 .	.	+Sent
 
 Anc	*anc	+Adv
-dettia	dar	+Verb+Con+1P+Sg
-igl	i	+Pron+Pers+Nom+3P+MF+Sg+Apo
+dettia	dar	+Verb+Con+3P+Sg^|+Pron+Pers+Nom+3P+MF+Sg	#PROBLEM: Pronomen nicht sichtbar, cf. Grammatica 212
 en	en	+Prep
 la	il	+Art+Def+Fem+Sg
-Bassa	*bass	+Adj+Fem+Sg
+Bassa	Bassa	+Prop
 pli	pli	+Adv
-che	che	+Subj
+che	che	+Conj
 50	50	+Dig+Card
 uniuns	uniuns	+Noun+Fem+Pl
-grischunas	grischun	+Adj+Fem+Pl+UNKNOWN
+grischunas	grischun	+Adj+Fem+Pl
 .	.	+Sent
 
-Strusch	Strusch	+Prop
+Strusch	Strusch	+Adv
 la	il	+Art+Def+Fem+Sg
 mesadad	mesadad	+Noun+Fem+Sg
 da	da	+Prep
-questas	questas	+Noun+Fem+Pl
+questas	questas	+Pron+Dem+Fem+Pl
 sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Pl
 cumponan	cumponer	+Verb+PresInd+3P+Pl
 da	da	+Prep
-Rumantschas	*rumantsch	+Adj+Fem+Pl
+Rumantschas	*rumantsch	+Prop	#PROBLEM: Nomen oder Prop?
 e	e	+Conj
-Rumantschs	*rumantsch	+Adj+Masc+Pl
+Rumantschs	*rumantsch	+Prop	#PROBLEM
 .	.	+Sent
 
 Latiers	*latiers	+Adv
