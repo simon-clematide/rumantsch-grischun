@@ -185,6 +185,7 @@ esser+Verb+PresInd+2P+Pl:essas	# ;
 esser+Verb+PresInd+3P+Pl:èn		PronPl3 ;
 esser+Verb+ImpInd+1P+Sg:era		# ;
 esser+Verb+ImpInd+2P+Sg:eras	# ;
+esser+Verb+ImpInd+3P+Sg:era		# ;
 esser+Verb+ImpInd+3P+Sg:er		PronSg3 ; ! Only stem. Endings to be added.
 esser+Verb+ImpInd+1P+Pl:eran	PronPl1 ;
 esser+Verb+ImpInd+2P+Pl:eras	# ;
