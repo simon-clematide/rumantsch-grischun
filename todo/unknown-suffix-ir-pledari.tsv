@@ -1,6 +1,6 @@
-acquirir	o	akquirieren (econ.) ||| erwerben (akquirieren)
-admonir	o	rügen ||| warnen (ermahnen) ||| ermahnen ||| erinnern (mahnen) ||| aufrütteln (ermahnen) ||| einen Verweis erteilen ||| vermahnen ||| verwarnen ||| einschärfen (ermahnen) ||| zureden (ermahnen) ||| mahnen
-affluir	o	einströmen ||| zufliessen ||| zuströmen ||| zuführen
+acquirir	e	akquirieren (econ.) ||| erwerben (akquirieren)
+admonir	e	rügen ||| warnen (ermahnen) ||| ermahnen ||| erinnern (mahnen) ||| aufrütteln (ermahnen) ||| einen Verweis erteilen ||| vermahnen ||| verwarnen ||| einschärfen (ermahnen) ||| zureden (ermahnen) ||| mahnen
+affluir	e	einströmen ||| zufliessen ||| zuströmen ||| zuführen
 approfundir	x	__
 aschidadir	x	__
 aschidagir	x	__
@@ -12,9 +12,9 @@ beinreussir	x	__
 capir	x	__
 concipir	x	__
 cumponir	x	__
-cuntradir	o	widerstreiten (widersprechen) ||| hohnsprechen (widersprechen) ||| widersprechen ||| bestreiten ||| widersagen ||| abstreiten ||| Kontra geben
+cuntradir	i	widerstreiten (widersprechen) ||| hohnsprechen (widersprechen) ||| widersprechen ||| bestreiten ||| widersagen ||| abstreiten ||| Kontra geben
 cuntribuir	x	__
-cunvegnir	o	sich auszahlen (sich lohnen) ||| sich rentieren (fig. sich lohnen) ||| zusagen ||| passen (genehm sein) ||| sich schicken (sich gehören, sich ziemen) ||| liegen (zusagen, gefallen) ||| behagen ||| konvenieren (übereinkommen) ||| sich ziemen ||| sich lohnen (sich auszahlen)
+cunvegnir	i	sich auszahlen (sich lohnen) ||| sich rentieren (fig. sich lohnen) ||| zusagen ||| passen (genehm sein) ||| sich schicken (sich gehören, sich ziemen) ||| liegen (zusagen, gefallen) ||| behagen ||| konvenieren (übereinkommen) ||| sich ziemen ||| sich lohnen (sich auszahlen)
 currir	x	__
 cusir	x	__
 dademplir	x	__
@@ -22,7 +22,7 @@ dagir	x	__
 dattribuir	x	__
 deir	x	__
 descuvrir	x	__
-desdir	o	kündigen ||| absagen ||| abblasen ||| aufkündigen (Wohnung, Kapital) ||| abbestellen ||| auflösen (fig. kündigen)
+desdir	i	kündigen ||| absagen ||| abblasen ||| aufkündigen (Wohnung, Kapital) ||| abbestellen ||| auflösen (fig. kündigen)
 dimpedir	x	__
 dinstruir	x	__
 dintervegnir	x	__
@@ -32,14 +32,14 @@ dividir	x	__
 dudir	x	__
 eir	x	__
 elisir	x	__
-empunir	o	anfügen (tecn.)
+empunir	e	anfügen (tecn.)
 encurir	x	__
 enfirmir	x	__
 entelgir	x	__
 entellir	o	nur in der Verbindung: dar d'entellir
 fallir	x	__
 galdeir	x	__
-gestir	o	verfahren (info.) ||| führen (verwalten, betreiben)
+gestir	e	verfahren (info.) ||| führen (verwalten, betreiben)
 gnir	x	__
 grir	x	__
 guerir	x	__
@@ -47,7 +47,7 @@ imbellir	x	__
 infirmir	x	__
 ingrondir	x	__
 intercurrir	x	__
-intervegnir	o	sich einschalten (eingreifen) ||| erfahren ||| dreinreden (sich einmischen) ||| einhaken ||| intervenieren ||| hineinreden (sich einmischen) ||| sich einmischen ||| dazwischenfahren ||| mitmischen (eingreifen) ||| dazwischenreden ||| dazwischentreten (eingreifen) ||| einschreiten ||| eingreifen (einschreiten) ||| hören (erfahren)
+intervegnir	i	sich einschalten (eingreifen) ||| erfahren ||| dreinreden (sich einmischen) ||| einhaken ||| intervenieren ||| hineinreden (sich einmischen) ||| sich einmischen ||| dazwischenfahren ||| mitmischen (eingreifen) ||| dazwischenreden ||| dazwischentreten (eingreifen) ||| einschreiten ||| eingreifen (einschreiten) ||| hören (erfahren)
 lavegnir	x	__
 lentir	x	__
 maindir	o	geschweige (denn)
@@ -55,23 +55,23 @@ martuir	x	__
 negligir	x	__
 nuir	x	__
 nundir	o	geschweige (denn)
-nuspir	o	__
+nuspir	e	__
 offerir	x	__
 pitir	x	__
 plaisir	x	__
 plascheir	x	__
-predir	o	voraussagen ||| wahrsagen ||| weissagen ||| prophezeien ||| vorhersagen
+predir	i	voraussagen ||| wahrsagen ||| weissagen ||| prophezeien ||| vorhersagen
 profundir	x	__
 prolungir	x	__
 prosperir	x	__
-provegnir	o	erwachsen ||| entstehen ||| sich herleiten ||| herrühren ||| entstammen ||| herkommen ||| entspriessen
+provegnir	i	erwachsen ||| entstehen ||| sich herleiten ||| herrühren ||| entstammen ||| herkommen ||| entspriessen
 pudeir	x	__
 quir	x	__
 reavrir	x	__
 repartir	x	__
 retir	x	__
 retransferir	x	__
-revegnir	o	wiederkommen ||| nachhaken (fig. nachbohren, zurückkommen auf) ||| nachbohren (fig. nachhaken, zurückkommen auf) ||| zurückkommen (auf etwas)
+revegnir	i	wiederkommen ||| nachhaken (fig. nachbohren, zurückkommen auf) ||| nachbohren (fig. nachhaken, zurückkommen auf) ||| zurückkommen (auf etwas)
 sagir	x	__
 saglir	x	__
 santeir	x	__
