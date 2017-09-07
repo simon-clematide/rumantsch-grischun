@@ -3052,7 +3052,7 @@ temperatura	+Noun+Fem+Sg
 da	+Prep
 la	+Art+Fem+Sg
 mar	+Verb+Inf
-variescha	+Verb+3P+Sg
+variescha	+Verb+PresInd+3P+Sg
 tranter	+Prep
 3	+Dig+Card
 °C	+Noun+Masc+Pl
