@@ -4151,4 +4151,3 @@ che	+Subj
 la	+Art+Fem+Sg
 publicaziun	+Noun+Fem+Sg
 .	+Sent
-
