@@ -944,7 +944,7 @@ rumantschas	+Adj+Fem+Pl
 
 Quellas	+Pron+Dem+Fem+Pl
 na	+Adv
-dastgaivan	+Verb+ImpInd+3P+Pl    typo korrigiert von -avian auf -aivan
+dastgaivan	+Verb+ImpInd+3P+Pl    
 simplamain	+Adj^DB+Adv
 betg	+Adv
 mancar	+Verb+Inf
