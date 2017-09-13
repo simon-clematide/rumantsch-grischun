@@ -131,7 +131,7 @@ ha	+Verb+PresInd+3P+Sg
 el	+Pron+Pers+Nom+3P+Masc+Sg
 passentà	+Verb+PastPart+Masc+Sg
 là	+Adv
-si’	+Verb+3P+Sg
+si’	+Pron+Poss+Fem+Sg
 uffanza	+Noun+Fem+Sg
 .	+Sent
 
@@ -649,7 +649,7 @@ organisà	+Verb+PastPart+Masc+Sg
 da	+Prep
 nov	+Adv+Masc+Sg
 ,	+CM
-èsi	+Verb+3P+Sg^|+Pron
+èsi	+Verb+PresInd+3P+Sg^|+Pron
 stà	+Verb+PastPart+Masc+Sg
 necessari	+Adj+Masc+Sg
 d’	+Prep
@@ -824,14 +824,14 @@ pratitgar	+Verb+Inf
 questa	+Pron+Dem+Fem+Sg
 professiun	+Noun+Fem+Sg
 ,	+CM
-saja	+Verb+Con+3P+Sg
+saja	+Verb+PresCon+3P+Sg
 quai	+Pron+Dem
 pervia	+Adv
 da	+Prep
 ponderaziuns	+Noun+Fem+Pl
 finanzialas	+Adj+Fem+Pl
 ,	+CM
-saja	+Verb+Con+3P+Sg
+saja	+Verb+PresCon+3P+Sg
 quai	+Pron+Dem
 ch’	+Subj
 el	+Pron+Pers+Nom+3P+Masc+Sg
@@ -845,7 +845,7 @@ ses	+Pron+Poss+Masc+Pl
 duns	+Noun+Masc+Pl
 musicals	+Adj+Masc+Pl
 na	+Adv
-sajan	+Verb+Con+3P+Pl
+sajan	+Verb+PresCon+3P+Pl
 betg	+Adv
 buns	+Adj+Masc+Pl
 avunda	+Adv
@@ -944,7 +944,7 @@ rumantschas	+Adj+Fem+Pl
 
 Quellas	+Pron+Dem+Fem+Pl
 na	+Adv
-dastgavian	+Verb+3P+Pl
+dastgaivan	+Verb+ImpInd+3P+Pl    typo korrigiert von -avian auf -aivan
 simplamain	+Adj^DB+Adv
 betg	+Adv
 mancar	+Verb+Inf
@@ -1384,7 +1384,7 @@ ansiels	+Noun+Masc+Pl
 .	+Sent
 
 Daspera	+Adv
-datti	+Verb+3P+Sg^|+Pron
+datti	+Verb+PresInd+3P+Sg^|+Pron
 las	+Art+Masc+Pl
 muntaneras	+Noun+Masc+Pl
 dals	+Prep^=+Art+Masc+Pl
@@ -1436,7 +1436,7 @@ muntanera	+Noun+Fem+Sg
 Tranter	+Prep
 bucs	+Noun+Masc+Pl
 rivalisants	+Adj+Masc+Pl
-datti	+Verb+3P+Sg^|+Pron
+datti	+Verb+PresInd+3P+Sg^|+Pron
 cumbats	+Noun+Masc+Pl
 .	+Sent
 
@@ -1619,7 +1619,7 @@ scientificamain	+Adj^DB+Adv
 ch’	+Subj
 ils	+Art+Masc+Pl
 alvs	+Noun+Masc+Pl
-sajan	+Verb+Con+3P+Pl
+sajan	+Verb+PresCon+3P+Pl
 superiurs	+Adj+Masc+Pl
 als	+Prep^=+Art+Masc+Pl
 nairs	+Adj+Masc+Pl
@@ -1640,7 +1640,7 @@ il	+Art+Masc+Sg
 temp	+Noun+Masc+Sg
 antic	+Adj+Masc+Sg
 na	+Adv
-datti	+Verb+3P+Sg^|+Pron
+datti	+Verb+PresInd+3P+Sg^|+Pron
 naginas	+Pron+Indef+Fem+Pl
 statisticas	+Noun+Fem+Pl
 fidadas	+Adj+Fem+Pl
@@ -1683,7 +1683,7 @@ archeologicas	+Adj+Masc+Pl
 
 Uschia	+Adv
 n’	+Adv
-èsi	+Verb+3P+Sg^|+Pron
+èsi	+Verb+PresInd+3P+Sg^|+Pron
 per	+Prep
 exempel	+Noun+Masc+Sg
 betg	+Adv
@@ -2068,7 +2068,7 @@ Gallia	+Prop
 
 En	+Prep
 general	+Adj+Masc+Sg
-eri	+Verb+3P+Sg^|+Pron
+eri	+Verb+ImpInd+3P+Sg^|+Pron
 usità	+Verb+PastPart+Masc+Sg
 tar	+Prep
 ils	+Art+Masc+Pl
@@ -2112,7 +2112,7 @@ Nord	+Prop
 
 Ses	+Pron+Poss+Masc+Sg
 territori	+Noun+Masc+Sg
-cumpiglia	+Verb+3P+Sg
+cumpiglia	+Verb+PresInd+3P+Sg
 radund	+Adv
 43	+Dig+Card
 000	+Dig+Card
@@ -2286,7 +2286,7 @@ e	+Conj
 las	+Noun+Fem+Pl
 Inslas	+Prop
 Feroe	+Prop
-cumpiglia	+Verb+3P+Sg
+cumpiglia	+Verb+PresInd+3P+Sg
 il	+Art+Masc+Sg
 Danemarc	+Prop
 ina	+Art+Fem+Sg
@@ -2336,7 +2336,7 @@ e	+Conj
 las	+Art+Fem+Pl
 costas	+Noun+Fem+Pl
 enchavadas	+Adj+Fem+Pl
-cumpiglia	+Verb+3P+Sg
+cumpiglia	+Verb+PresInd+3P+Sg
 il	+Art+Masc+Sg
 stadi	+Noun+Masc+Sg
 plitost	+Adv
@@ -2655,7 +2655,7 @@ vesaivla	+Adj+Fem+Sg
 enfin	+Prep
 oz	+Adv
 e	+Conj
-sparta	+Verb+3P+Sg
+sparta	+Verb+PresInd+3P+Sg
 il	+Art+Masc+Sg
 Danemarc	+Prop
 en	+Prep
@@ -2825,7 +2825,7 @@ furmas	+Noun+Fem+Pl
 e	+Conj
 conturas	+Noun+Fem+Pl
 e	+Conj
-cumpiglia	+Verb+3P+Sg
+cumpiglia	+Verb+PresInd+3P+Sg
 numerus	+Adj+Masc+Pl
 fiords	+Noun+Masc+Pl
 che	+Subj
@@ -2884,7 +2884,7 @@ da	+Prep
 la	+Art+Fem+Sg
 mar	+Noun+Fem+Sg
 che	+Subj
-taglia	+Verb+3P+Sg
+taglia	+Verb+PresInd+3P+Sg
 il	+Art+Masc+Sg
 Jutland	+Prop
 quasi	+Adv
