@@ -215,7 +215,7 @@ define AdvShort [ AdvShortStems "+Adv":0 ] ;
 read text < wordlists/prt-neg.txt
 define PrtNegStems ;
 
-define PrtNeg [ PrtNegStems "+Prt""+Neg":0 ] ;
+define PrtNeg [ PrtNegStems ["+Prt" "+Neg"]:0 ] ;
 
 
 
