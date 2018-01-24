@@ -42,7 +42,7 @@ temp	temp+Noun+Masc+Sg
 da	da+Prep
 bronz	bronz+Noun+Masc+Sg
 )	)+Punc+End
-che	che+Subj
+che	che+Pron+Rel
 sa	sai+Pron+Refl+AccDat+Aton+3P+MF+Pl
 chattan	chattar+Verb+PresInd+3P+Pl
 sin	sin+Prep
@@ -266,7 +266,7 @@ conglomerat	conglomerat+Noun+Masc+Sg
 da	da+Prep
 differents	different+Adj+Masc+Pl
 aclauns	aclaun+Noun+Masc+Pl
-che	che+Subj
+che	che+Pron+Rel
 furman	furmar+Verb+PresInd+3P+Pl
 en	en+Prep
 lur	lur+Pron+Poss+Fem+Sg
@@ -280,7 +280,7 @@ Dardin	Dardin+Prop
 Capeder	Capeder+Prop
 :	:+Punc+End
 aclaun	aclaun+Noun+Masc+Sg
-che	che+Subj
+che	che+Pron+Rel
 giascha	giaschair+Verb+PresInd+3P+Sg
 en	en+Prep
 direcziun	direcziun+Noun+Fem+Sg
@@ -455,7 +455,7 @@ en	en+Prep
 vischinanza	vischinanza+Noun+Fem+Sg
 da	da+Prep
 Caprè	Caprè+Prop
-che	che+Subj
+che	che+Pron+Rel
 furma	furmar+Verb+PresInd+3P+Sg
 ensemen	ensemen+Adv
 cun	cun+Prep
@@ -506,7 +506,7 @@ e	e+Conj
 baselgia	baselgia+Noun+Fem+Sg
 Interessant	*interessant+Adj+Masc+Sg
 è	esser+Verb+PresInd+3P+Sg
-ch’	che+Subj+Apo
+ch’	che+Pron+Rel+Apo
 i	i+Pron+Pers+Nom+3P+MF+Sg
 deva	dar+Verb+ImpInd+3P+Sg
 sper	sper+Prep
@@ -519,4 +519,3 @@ fracziuns	fracziun+Noun+Fem+Pl
 dal	da+Prep^=+Art+Def+Masc+Sg
 vitg	vitg+Noun+Masc+Sg
 .	.+Sent
-
