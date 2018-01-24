@@ -1,51 +1,53 @@
 Pia	*pia	+Adv
 hai	avair	+Verb+PresInd+1P+Sg
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
-emprendì	emprender	+Verb+PastPart+Masc+Sg
-d’avair	d’avair	+Prep
+emprendì	emprender	+Verb+PastPart+Sg
+d’	da	+Prep+Apo
+avair	avair	+Verb+Inf
 gugent	gugent	+Adv
 quai	quai	+Pron+Dem
-che	che	+Subj
+che	che	+Pron+Rel 
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
-retschaivel	retschaivel	+Adj+Masc+Sg+UNKNOWN
+retschaivel	retschaiver	+Verb+PresInd+1P+Sg
 .	.	+Sent
 
 Perquai	*perquai	+Conj
-sun	sun	+Noun+Masc+Sg
+sun	esser	+Verb+PresInd+1P+Sg
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
 segir	segir	+Adj+Masc+Sg
 :	:	+Sent
 
-L’aura	L’aura	+Adv
+L’	*il	+Art+Def+Masc+Sg+Apo
+aura	aura	+Noun+Fem+Sg
 vegn	vegnir	+Verb+PresInd+3P+Sg
 ad	a	+Prep+Apo
-esser	esser	+Noun+Masc+Sg
+esser	esser	+Verb+Inf
 oz	oz	+Adv
 uschia	uschia	+Adv
 sco	sco	+Conj
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
-giavischel	giavischel	+Adj+Masc+Sg+UNKNOWN
+giavischel	giavischar	+Verb+PresInd+1P+Sg
 .	.	+Sent
 »	»	+Punc+End
 
 A	*a	+Prep
 moda	moda	+Noun+Fem+Sg
-sabia	sabia	+Noun+Fem+Sg+UNKNOWN
-aschunta	aschunt	+Adj+Fem+Sg+UNKNOWN
+sabia	sabia	+Adj+Fem+Sg
+aschunta	agiuntar	Verb+PresInd+3P+Sg+Lingo	@agiuntescha
 Anthony	Anthony	+Prop
-de	de	+Adj+Masc+Sg+UNKNOWN
+de	de	+Prop
 Mello	Mello	+Prop
 :	:	+Sent
 
 «	«	+Punc+Beg
 Tge	*tge	+Pron+Interrog
-che	che	+Subj
+che	che	+Pron+Rel
 vegn	vegnir	+Verb+PresInd+3P+Sg
-er	esser	+Verb+ImpInd+3P+Sg
+er	er	+Adv
 a	a	+Prep
 capitar	capitar	+Verb+Inf
 ,	,	+CM
-noss	noss	+Adj+Masc+Pl+UNKNOWN
+noss	nos	+Pron+Poss+Masc+Pl
 pensum	pensum	+Noun+Masc+Sg
 èsi	esser	+Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+3P+MF+Sg
 da	da	+Prep
@@ -59,7 +61,7 @@ discletg	discletg	+Noun+Masc+Sg
 »	»	+Punc+End
 
 Quai	*quai	+Pron+Dem
-che	che	+Subj
+che	che	+Pron+Rel
 è	esser	+Verb+PresInd+3P+Sg
 gartegià	gartegiar	+Verb+PastPart+Masc+Sg
 è	esser	+Verb+PresInd+3P+Sg
@@ -67,14 +69,14 @@ era	era	+Adv
 reussì	reussir	+Verb+PastPart+Masc+Sg
 ,	,	+CM
 schain	dir	+Verb+PresInd+1P+Pl
-nus	sai	+Pron+Refl+Acc+Ton+1P+MF+Pl
+nus	nus	+Pron+Pers+Nom+1P+MF+Pl	
 .	.	+Sent
 
 Las	*il	+Art+Def+Fem+Pl
 stentas	stenta	+Noun+Fem+Pl
 èn	esser	+Verb+PresInd+3P+Pl
 sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg
-pajadas	pajada	+Noun+Fem+Pl
+pajadas	pajar	+Verb+PastPart+Fem+Pl
 ed	e	+Conj+Apo
 animeschan	animar	+Verb+PresInd+3P+Pl
 da	da	+Prep
@@ -84,11 +86,11 @@ cuntinuar	cuntinuar	+Verb+Inf
 In	*in	+Art+Indef+Masc+Sg
 cletg	cletg	+Noun+Masc+Sg
 spezial	spezial	+Adj+Masc+Sg
-che	che	+Subj
-sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Pl
+che	che	+Pron+Rel
+sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg
 dat	dar	+Verb+PresInd+3P+Sg
 adina	adina	+Adv
-puspe	puspe	+Adj+Masc+Sg+UNKNOWN
+puspe	puspè	+Adv+Typo	@puspè
 da	da	+Prep
 nov	nov	+Adj+Masc+Sg
 e	e	+Conj
@@ -97,7 +99,8 @@ da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 nova	nov	+Adj+Fem+Sg
 schanza	schanza	+Noun+Fem+Sg
-d’adina	d’adina	+Prep
+d’	da	+Prep+Apo
+adina	adina	+Adv
 puspè	puspè	+Adv
 pudair	pudair	+Verb+Inf
 sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg
