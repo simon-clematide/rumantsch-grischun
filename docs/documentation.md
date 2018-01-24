@@ -152,7 +152,8 @@ Satzzeichen:
 	+Punc +End	schliessende Satzzeichen
 
 Partikel:
-	+Prt +Neg	Negationspartikel (na, betg)
+
+	+Prt +Neg	Negationspartikel (*betg*, *na*, *n'* *nun*)
 
 Abkürzungen:  
 
