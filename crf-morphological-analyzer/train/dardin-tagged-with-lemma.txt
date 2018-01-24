@@ -37,7 +37,7 @@ scaluttas	scalutta+Noun+Fem+Pl
 preistoricas	preistoric+Adj+Fem+Pl
 (	(+Punc+Beg
 probablamain	probabel+Adj^DB+Adv
-dal	da+Prep^=+Art+Def+Masc+Sg
+dal	da+Prep^|+Art+Def+Masc+Sg
 temp	temp+Noun+Masc+Sg
 da	da+Prep
 bronz	bronz+Noun+Masc+Sg
@@ -56,7 +56,7 @@ vitg	vitg+Noun+Masc+Sg
 
 Il	*il+Art+Def+Masc+Sg
 num	num+Noun+Masc+Sg
-dal	da+Prep^=+Art+Def+Masc+Sg
+dal	da+Prep^|+Art+Def+Masc+Sg
 vitg	vitg+Noun+Masc+Sg
 vegn	vegnir+Verb+PresInd+3P+Sg
 menziunà	menziunar+Verb+PastPart+Masc+Sg
@@ -123,7 +123,7 @@ quai	quai+Pron+Dem
 fin	fin+Prep
 la	il+Art+Def+Fem+Sg
 mesadad	mesadad+Noun+Fem+Sg
-dal	da+Prep^=+Art+Def+Masc+Sg
+dal	da+Prep^|+Art+Def+Masc+Sg
 19avel	19+Dig+Ord+Masc+Sg
 tschientaner	tschientaner+Noun+Masc+Sg
 .	.+Sent
@@ -182,10 +182,10 @@ part	part+Noun+Fem+Sg
 en	en+Prep
 ils	il+Art+Def+Masc+Pl
 secturs	sectur+Noun+Masc+Pl
-dal	da+Prep^=+Art+Def+Masc+Sg
+dal	da+Prep^|+Art+Def+Masc+Sg
 mastergn	mastergn+Noun+Masc+Sg
 ,	,+CM
-dals	da+Prep^=+Art+Def+Masc+Pl
+dals	da+Prep^|+Art+Def+Masc+Pl
 servetschs	servetschs+Noun+Masc+Pl
 e	e+Conj
 da	da+Prep
@@ -346,7 +346,7 @@ aclaun	aclaun+Noun+Masc+Sg
 en	en+Prep
 il	il+Art+Def+Masc+Sg
 sid	sid+Noun+Masc+Sg
-dal	da+Prep^=+Art+Def+Masc+Sg
+dal	da+Prep^|+Art+Def+Masc+Sg
 vitg	vitg+Noun+Masc+Sg
 .	.+Sent
 
@@ -422,7 +422,7 @@ tschert	tschert+Pron+Indef+Masc+Sg
 senn	senn+Noun+Masc+Sg
 il	il+Art+Def+Masc+Sg
 center	center+Noun+Masc+Sg
-dal	da+Prep^=+Art+Def+Masc+Sg
+dal	da+Prep^|+Art+Def+Masc+Sg
 conglomerat	conglomerat+Noun+Masc+Sg
 d’	da+Prep+Apo
 aclauns	aclaun+Noun+Masc+Pl
@@ -485,7 +485,7 @@ Casut	Casut+Prop
 terminescha	terminar+Verb+PresInd+3P+Sg
 il	il+Art+Def+Masc+Sg
 conglomerat	conglomerat+Noun+Masc+Sg
-dals	da+Prep^=+Art+Def+Masc+Pl
+dals	da+Prep^|+Art+Def+Masc+Pl
 differents	different+Adj+Masc+Pl
 aclauns	aclaun+Noun+Masc+Pl
 en	en+Prep
@@ -516,6 +516,6 @@ existents	existent+Adj+Masc+Pl
 anc	anc+Adv
 ulteriuras	ulteriur+Adj+Fem+Pl
 fracziuns	fracziun+Noun+Fem+Pl
-dal	da+Prep^=+Art+Def+Masc+Sg
+dal	da+Prep^|+Art+Def+Masc+Sg
 vitg	vitg+Noun+Masc+Sg
 .	.+Sent
