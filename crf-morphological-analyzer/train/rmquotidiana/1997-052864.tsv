@@ -1,12 +1,12 @@
 Mintgamai	*mintgamai	+Adv
 l’	il	+Art+Def+Masc+Sg+Apo
 atun	atun	+Noun+Masc+Sg
-pon	pudair	+Verb+PresInd+3P+Sg+Apo
+pon	pudair	+Verb+PresInd+3P+Pl
 ins	ins	+Pron+Indef
 survegnir	survegnir	+Verb+Inf
 quella	quel	+Pron+Dem+Fem+Sg
 en	en	+Prep
-fitg	fitgar	+Verb+PresInd+1P+Sg
+fitg	fitg	+Adv
 buna	bun	+Adj+Fem+Sg
 qualitad	qualitad	+Noun+Fem+Sg
 ed	e	+Conj+Apo
@@ -17,11 +17,11 @@ varietad	varietad	+Noun+Fem+Sg
 
 La	*il	+Art+Def+Fem+Sg
 charn	charn	+Noun+Fem+Sg
-selvadia	selvadi	+Adj+Fem+Sg+UNKNOWN
+selvadia	selvadi	+Adj+Fem+Sg
 è	esser	+Verb+PresInd+3P+Sg
 anc	anc	+Adv
 natira	natira	+Noun+Fem+Sg
-pura	pura	+Noun+Fem+Sg
+pura	pur	+Adj+Fem+Sg
 :	:	+Sent
 
 Ils	*il	+Art+Def+Masc+Pl
@@ -30,7 +30,7 @@ creschan	crescher	+Verb+PresInd+3P+Pl
 en	en	+Prep
 in’	in	+Art+Indef+Fem+Sg+Apo
 aria	aria	+Noun+Fem+Sg
-sauna	sauna	+Noun+Fem+Sg
+sauna	saun	+Adj+Fem+Sg
 ,	,	+CM
 en	en	+Prep
 lur	lur	+Pron+Poss+Masc+Pl
@@ -42,7 +42,7 @@ e	e	+Conj
 cun	cun	+Prep
 il	il	+Art+Def+Masc+Sg
 nutriment	nutriment	+Noun+Masc+Sg
-ch’	che	+Subj+Apo
+ch’	che	+Pron+Rel+Apo
 els	els	+Pron+Pers+Nom+3P+Masc+Pl
 han	avair	+Verb+PresInd+3P+Pl
 gugent	gugent	+Adv
@@ -50,13 +50,13 @@ gugent	gugent	+Adv
 
 Sajettada	*sajettada	+Noun+Fem+Sg
 sco	sco	+Conj
-ch’	che	+Subj+Apo
+ch’	che	+Pron+Rel+Apo
 i	i	+Pron+Pers+Nom+3P+MF+Sg
 s’	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg+Apo
-auda	udir	+Verb+Impv+2P+Sg
+auda	udir	+Verb+PresInd+3P+Sg
 ,	,	+CM
 bain	bun	+Adj^DB+Adv
-preparada	preparà	+Adj+Fem+Sg
+preparada	preparar	+Verb+PastPart+Fem+Sg
 e	e	+Conj
 cuschinada	cuschinar	+Verb+PastPart+Fem+Sg
 professiunalmain	professiunal	+Adj^DB+Adv
@@ -65,8 +65,8 @@ la	il	+Art+Def+Fem+Sg
 selvaschina	selvaschina	+Noun+Fem+Sg
 in	in	+Art+Indef+Masc+Sg
 punct	punct	+Noun+Masc+Sg
-culinar	culinar	+Verb+Inf+UNKNOWN
-culminant	culminant	+Noun+Masc+Sg+UNKNOWN
+culinar	culinar	+Adj+Masc+Sg
+culminant	culminant	+Adj+Masc+Sg
 sin	sin	+Prep
 la	il	+Art+Def+Fem+Sg
 maisa	maisa	+Noun+Fem+Sg
@@ -74,29 +74,29 @@ d’	da	+Prep+Apo
 atun	atun	+Noun+Masc+Sg
 ,	,	+CM
 in	in	+Art+Indef+Masc+Sg
-spir	spirar	+Verb+PresInd+1P+Sg
+spir	spir	+Adj+Masc+Sg
 daletg	daletg	+Noun+Masc+Sg
-che	che	+Subj
-na	na	+Adv
-duai	duair	+Verb+Impv+2P+Pl
-betg	betg	+Adv
+che	che	+Pron+Rel
+na	na	+Prt+Neg
+duai	duair	+Verb+PresInd+3P+Sg
+betg	betg	+Prt+Neg
 far	far	+Verb+Inf
-patertgar	patertgar	+Verb+Inf+UNKNOWN
+patertgar	patertgar	+Verb+Inf
 ad	a	+Prep+Apo
 in	in	+Art+Indef+Masc+Sg
 engrasch	engrasch	+Noun+Masc+Sg
 sfurzà	sfurzar	+Verb+PastPart+Masc+Sg
 ,	,	+CM
 ad	a	+Prep+Apo
-antibiotica	antibiotica	+Noun+Fem+Sg+UNKNOWN
+antibiotica	antibiotica	+Noun+Fem+Sg
 u	u	+Conj
-schizunt	schizunt	+Adj+Masc+Sg+UNKNOWN
+schizunt	schizunt	+Adv
 a	a	+Prep
 la	il	+Art+Def+Fem+Sg
 sturnadad	sturnadad	+Noun+Fem+Sg
-bovina	bovin	+Adj+Fem+Sg+UNKNOWN
+bovina	bovin	+Adj+Fem+Sg
 .	.	+Sent
 
 Spezialmain	*spezial	+Adj^DB+Adv
-bun	bun	+Noun+Masc+Sg
+bun	bun	+Adj+Masc+Sg
 :	:	+Sent
