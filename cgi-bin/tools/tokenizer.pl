@@ -35,13 +35,13 @@ $text =~ s/(\d\d\d\d)(\.)/\1 \2/g;
 # Apostrophierung behandeln
 ## Es wird nur abgetrennt, wenn der Apostroph zum ersten Teil gehoert. 
 ## Ist ein Vokal vom nachfolgenden Teil elidiert, gilt dies als Endung.
-$text =~ s/([a-zäöüàèìòùâêîôûáéíóúA-ZÄÖÜÀÈÌÒÙÂÊÎÔÛÁÉÍÓÚ])('|’)(h?[aeiouyäöüàèìòùâêîôûáéíóú])/\1\2 \3/ig;
+$text =~ s/([a-zäöüàèìòùâêîôûáéíóúA-ZÄÖÜÀÈÌÒÙÂÊÎÔÛÁÉÍÓÚ])(['’])(h?[aeiouyäöüàèìòùâêîôûáéíóú])/\1\2 \3/ig;
 # Klammern einzeln stehen lassen:
 $text =~ s/([({\[])/ \1 /g;
 $text =~ s/([)}\]])/ \1 /g;
 # Anfuehrungszeichen abtrennen
 $text =~ s/([^a-zäöüàèìòùâêîôûáéíóúA-ZÄÖÜÀÈÌÒÙÂÊÎÔÛÁÉÍÓÚ])([«"„‚‹])([a-zäöüàèìòùâêîôûáéíóúA-ZÄÖÜÀÈÌÒÙÂÊÎÔÛÁÉÍÓÚ])()/\1 \2 \3/g;
-$text =~ s/([«"„‚‹])([a-zäöüàèìòùâêîôûáéíóúA-ZÄÖÜÀÈÌÒÙÂÊÎÔÛÁÉÍÓÚ])()/\1 \2/g;
+$text =~ s/^([«"„‚‹])([a-zäöüàèìòùâêîôûáéíóúA-ZÄÖÜÀÈÌÒÙÂÊÎÔÛÁÉÍÓÚ])/\1 \2/g;
 $text =~ s/([a-zäöüàèìòùâêîôûáéíóúA-ZÄÖÜÀÈÌÒÙÂÊÎÔÛÁÉÍÓÚ?!.])([»"“‘›])([^a-zäöüàèìòùâêîôûáéíóúA-ZÄÖÜÀÈÌÒÙÂÊÎÔÛÁÉÍÓÚ])/\1 \2 \3/g;
 # Abkürzungen behandeln
 $text =~ s/(usw|etc) \./\1\./g;
