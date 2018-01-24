@@ -151,7 +151,7 @@ maisterdetectivs	masterdetectiv	+Noun+Masc+Pl
 
 Il	*il	+Art+Def+Masc+Sg
 clou	clou	+Noun+Masc+Sg
-dal	da	+Prep^=+Art+Def+Masc+Sg
+dal	da	+Prep^|+Art+Def+Masc+Sg
 carnet	carnet	+Noun+Masc+Sg
 :	:	+Sent	
 il	il	+Art+Def+Masc+Sg
@@ -169,9 +169,9 @@ crimi	crimi	+Noun+Masc+Sg
 curt	curt	+Adj+Masc+Sg
 e	e	+Conj
 d’	da	+Prep+Apo
-al	a	+Prep^=+Art+Def+Masc+Sg
+al	a	+Prep^|+Art+Def+Masc+Sg
 trametter	trametter	+Verb+Inf
-al	a	+Prep^=+Art+Def+Masc+Sg
+al	a	+Prep^|+Art+Def+Masc+Sg
 team	team	+Noun+Masc+Sg
 da	da	+Prep
 detectivs	detectiv	+Noun+Masc+Pl
@@ -277,17 +277,17 @@ cun	cun	+Prep
 in’	in	+Art+Indef+Fem+Sg+Apo
 emprima	emprim	+Adj+Fem+Sg
 elecziun	elecziun	+Noun+Fem+Sg
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 pli	pli	+Adv
 interessants	interessant	+Adj+Masc+Pl
 crimis	crimi	+Noun+Masc+Pl
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 lecturs	lectur	+Noun+Masc+Pl
 e	e	+Conj
 da	da	+Prep
 las	il	+Art+Def+Fem+Pl
 lecturas	lectur	+Noun+Fem+Pl
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 carnets	carnet	+Noun+Masc+Pl
 OSL	OSL	+Prop
 sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg
@@ -340,7 +340,7 @@ trics	trics	+Noun+Masc+Pl
 e	e	+Conj
 bleras	bler	+Adj+Fem+Pl
 infurmaziuns	infurmaziuns	+Noun+Fem+Pl
-dal	da	+Prep^=+Art+Def+Masc+Sg
+dal	da	+Prep^|+Art+Def+Masc+Sg
 team	team	+Noun+Masc+Sg
 JSMM	JSMM	+Prop
 cumpletteschan	cumplettar	+Verb+PresInd+3P+Pl
@@ -386,7 +386,7 @@ Turitg	Turitg	+Prop
 .	.	+Sent
 
 Vus	*vus	+Pron+Pers+Acc+Ton+2P+MF+Pl
-al	a	+Prep^=+Art+Def+Masc+Sg
+al	a	+Prep^|+Art+Def+Masc+Sg
 pudais	pudair	+Verb+PresInd+2P+Pl
 retrair	retrair	+Verb+Inf
 da	da	+Prep

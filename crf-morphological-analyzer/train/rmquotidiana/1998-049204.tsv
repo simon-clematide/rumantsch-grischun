@@ -31,7 +31,7 @@ pitschnas	pitschen	+Adj+Fem+Pl
 L’	*il	+Art+Def+Masc+Sg+Apo
 emprima	emprim	+Adj+Fem+Sg
 generaziun	generaziun	+Noun+Fem+Sg
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 emigrads	emigrar	+Noun+Masc+Pl
 en	en	+Prep
 la	il	+Art+Def+Fem+Sg
@@ -74,7 +74,7 @@ tar	tar	+Prep
 la	il	+Art+Def+Fem+Sg
 segunda	segund	+Adj+Fem+Sg
 generaziun	generaziun	+Noun+Fem+Sg
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 creschids	creschì	+Noun+Masc+Pl
 si	si	+Prep
 en	en	+Prep

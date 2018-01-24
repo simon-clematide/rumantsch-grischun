@@ -25,7 +25,7 @@ Cuira	Cuira	+Prop
 stattan	star	+Verb+PresInd+3P+Pl
 las	il	+Art+Def+Fem+Pl
 elecziuns	elecziuns	+Noun+Fem+Pl
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 gremis	gremi	+Noun+Masc+Pl
 per	per	+Prep
 il	il	+Art+Def+Masc+Sg
@@ -123,7 +123,7 @@ Silvia	Silvia	+Prop
 Steiner	Steiner	+Prop
 (	(	+Punc+Beg
 Uniun	*uniun	+Noun+Fem+Sg
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 Grischs	*grisch	+Noun+Masc+Pl   #PROBLEM auch +Prop
 )	)	+Punc+End
 stattan	star	+Verb+PresInd+3P+Pl
@@ -161,7 +161,7 @@ puncts	puncts	+Noun+Masc+Pl
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 lavur	lavur	+Noun+Fem+Sg
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 davos	davos	+Adj+Masc+Pl    #PROBLEM
 onns	onn	+Noun+Masc+Pl
 sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Pl #PROBLEM
@@ -207,7 +207,7 @@ regiunalas	regiunal	+Adj+Fem+Pl
 dad	da	+Prep+Apo
 animar	animar	+Verb+Inf
 vischnancas	vischnanca	+Noun+Fem+Pl
-al	a	+Prep^=+Art+Def+Masc+Sg
+al	a	+Prep^|+Art+Def+Masc+Sg
 cunfin	cunfin	+Noun+Masc+Sg
 linguistic	linguistic	+Adj+Masc+Sg
 dad	da	+Prep+Apo
@@ -315,7 +315,7 @@ da	da	+Prep
 plazzas	plazza	+Noun+Fem+Pl
 da	da	+Prep
 lavur	lavur	+Noun+Fem+Sg
-dal	da	+Prep^=+Art+Def+Masc+Sg
+dal	da	+Prep^|+Art+Def+Masc+Sg
 moviment	moviment	+Noun+Masc+Sg
 rumantsch	rumantsch	+Adj+Masc+Sg
 ,	,	+CM
@@ -429,7 +429,7 @@ defensiva	defensiva	+Adj+Fem+Sg
 
 L’	*il	+Art+Def+Masc+Sg+Apo
 institut	institut	+Noun+Masc+Sg
-dal	da	+Prep^=+Art+Def+Masc+Sg
+dal	da	+Prep^|+Art+Def+Masc+Sg
 Dicziunari	*dicziunari	+Noun+Masc+Sg
 Rumantsch	*rumantsch	+Adj+Masc+Sg
 Grischun	*grischun	+Adj+Masc+Sg
@@ -460,7 +460,7 @@ chapientscha	chapientscha	+Noun+Fem+Sg
 per	per	+Prep
 ils	il	+Art+Def+Masc+Pl
 arguments	arguments	+Noun+Masc+Pl
-dal	da	+Prep^=+Art+Def+Masc+Sg
+dal	da	+Prep^|+Art+Def+Masc+Sg
 DRG	DRG	+Prop+Abbr
 .	.	+Sent
 
@@ -529,7 +529,7 @@ pussaivels	pussaivel	+Adj+Masc+Pl
 
 Sin	*sin	+Prep
 fundament	fundament	+Noun+Masc+Sg
-dal	da	+Prep^=+Art+Def+Masc+Sg
+dal	da	+Prep^|+Art+Def+Masc+Sg
 rapport	rapport	+Noun+Masc+Sg
 intermediar	intermediar	+Adj+Masc+Sg
 duai	duair	+Verb+PresInd+3P+Sg
