@@ -5,7 +5,7 @@
 ! Date: June 2013
 
 
-Multichar_Symbols +Art +Def +Indef ^= ^| +Prep
+Multichar_Symbols +Art +Def +Indef ^| ^| +Prep
 +Pron +Pers +Refl +Poss +Dem +Interrog
 ^DB +Noun +Nom +AccDat +Acc
 +Masc +Fem +MF +1P +2P +3P +Sg +Pl
@@ -35,14 +35,14 @@ in+Art+Indef+Fem+Sg+Apo:egn'	#;
 
 
 LEXICON DEFINITEWITHPREP
-a+Prep^=+Art+Def+Masc+Sg:agli	#;
-! a+Prep^=+Art+Def+Masc+Sg:i'ls	#; ! form?
+a+Prep^|+Art+Def+Masc+Sg:agli	#;
+! a+Prep^|+Art+Def+Masc+Sg:i'ls	#; ! form?
 
-a+Prep^=+Art+Def+Masc+Sg:digl	#;
-a+Prep^=+Art+Def+Masc+Sg:digls	#;
+a+Prep^|+Art+Def+Masc+Sg:digl	#;
+a+Prep^|+Art+Def+Masc+Sg:digls	#;
 
-en+Prep^=+Art+Def+Masc+Sg:agl	#;
-en+Prep^=+Art+Def+Masc+Sg:agls	#;
+en+Prep^|+Art+Def+Masc+Sg:agl	#;
+en+Prep^|+Art+Def+Masc+Sg:agls	#;
 
 ! pronouns
 LEXICON PERSONAL

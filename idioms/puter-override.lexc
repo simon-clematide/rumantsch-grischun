@@ -5,7 +5,7 @@
 ! Date: June 2013
 
 
-Multichar_Symbols +Art +Def +Indef ^= ^| +Prep
+Multichar_Symbols +Art +Def +Indef ^| ^| +Prep
 +Pron +Pers +Refl +Poss +Dem +Interrog
 ^DB +Noun +Nom +AccDat +Acc
 +Masc +Fem +MF +1P +2P +3P +Sg +Pl
@@ -30,23 +30,23 @@ in+Art+Indef+Fem+Sg:üna	#;
 in+Art+Indef+Fem+Sg+Apo:ün'	#;
 
 LEXICON DEFINITEWITHPREP
-en+Prep^=+Art+Def+Masc+Sg:i'l	#;
-en+Prep^=+Art+Def+Masc+Sg:i'ls	#;
-en+Prep^=+Art+Def+Fem+Sg:illa	#;
-en+Prep^=+Art+Def+Fem+Sg+Apo:ill'	#;
-en+Prep^=+Art+Def+Fem+Pl:illas	#;
+en+Prep^|+Art+Def+Masc+Sg:i'l	#;
+en+Prep^|+Art+Def+Masc+Sg:i'ls	#;
+en+Prep^|+Art+Def+Fem+Sg:illa	#;
+en+Prep^|+Art+Def+Fem+Sg+Apo:ill'	#;
+en+Prep^|+Art+Def+Fem+Pl:illas	#;
 
-per+Prep^=+Art+Def+Masc+Sg:pel	#;
-per+Prep^=+Art+Def+Masc+Sg:pels	#;
-per+Prep^=+Art+Def+Fem+Sg:pella	#;
-per+Prep^=+Art+Def+Fem+Sg+Apo:pell'	#;
-per+Prep^=+Art+Def+Fem+Pl:pellas	#;
+per+Prep^|+Art+Def+Masc+Sg:pel	#;
+per+Prep^|+Art+Def+Masc+Sg:pels	#;
+per+Prep^|+Art+Def+Fem+Sg:pella	#;
+per+Prep^|+Art+Def+Fem+Sg+Apo:pell'	#;
+per+Prep^|+Art+Def+Fem+Pl:pellas	#;
 
-cun+Prep^=+Art+Def+Masc+Sg:cul	#;
-cun+Prep^=+Art+Def+Masc+Sg:culs	#;
-cun+Prep^=+Art+Def+Fem+Sg:culla	#;
-cun+Prep^=+Art+Def+Fem+Sg+Apo:cull'	#;
-cun+Prep^=+Art+Def+Fem+Pl:cullas	#;
+cun+Prep^|+Art+Def+Masc+Sg:cul	#;
+cun+Prep^|+Art+Def+Masc+Sg:culs	#;
+cun+Prep^|+Art+Def+Fem+Sg:culla	#;
+cun+Prep^|+Art+Def+Fem+Sg+Apo:cull'	#;
+cun+Prep^|+Art+Def+Fem+Pl:cullas	#;
 
 ! pronouns
 LEXICON PERSONAL

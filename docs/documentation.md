@@ -310,7 +310,7 @@ Lemma | Wortart | Grenze | Wortart | Bestimmth| Genus | Numerus | Endung |
 in    | +Art    |        |         | +Def     | +Masc | +Sg     |        |
       |         |        |         |          | +Fem  | +Pl     | +Apo   |
       |         |        |         |          |       |         |        |
-da    | +Prep   | ^=     | +Art    |          |       |         |        | 
+da    | +Prep   | ^|     | +Art    |          |       |         |        | 
 
 Diese Formen sind komplett in lexc aufgelistet und in der Datei `art-pron/art.lexc` zu finden. Hier ist keine Erweiterung nötig.
 

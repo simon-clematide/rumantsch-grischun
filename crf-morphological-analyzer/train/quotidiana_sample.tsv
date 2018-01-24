@@ -17,7 +17,7 @@ cristiandemocratica	cristiandemocratic	+Adj+Fem+Sg
 (	(	+Punc+Beg
 pcd	pcd	+Noun+Masc+Sg
 )	)	+Punc+End
-dal	da	+Prep^=+Art+Def+Masc+Sg
+dal	da	+Prep^|+Art+Def+Masc+Sg
 Grischun	Grischun	+Prop
 tratg	trair	+Verb+PastPart+Masc+Sg
 ina	in	+Art+Indef+Fem+Sg
@@ -60,7 +60,7 @@ innovaziun	innovaziun	+Noun+Fem+Sg
 per	per	+Prep
 il	il	+Art+Def+Masc+Sg
 Grischun	Grischun	+Prop
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 giuvens	giuven	+Adj+Masc+Pl
 cristiandemocrats	cristiandemocrat	+Noun+Masc+Pl+UNKNOWN
 da	da	+Prep

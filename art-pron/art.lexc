@@ -7,7 +7,7 @@
 
 ! The article is explained in Caduff&Caprez in articles 152, 153, 154
 
-Multichar_Symbols +Art +Def +Indef +Masc +Fem +Sg +Pl ^= +Prep +Apo
+Multichar_Symbols +Art +Def +Indef +Masc +Fem +Sg +Pl ^| +Prep +Apo
 
 LEXICON Root
 DEFINITE ;
@@ -31,14 +31,14 @@ in+Art+Indef+Fem+Sg+Apo:in'	#;
 ! The combination of prepositions with feminine articles is not encouraged
 ! according to Caduff&Caprez, but included for better coverage.
 LEXICON DEFINITEWITHPREP
-a+Prep^=+Art+Def+Masc+Sg:al	#;
-a+Prep^=+Art+Def+Masc+Pl:als	#;
-a+Prep^=+Art+Def+Fem+Sg:alla	#;
-a+Prep^=+Art+Def+Fem+Sg+Apo:all'	#;
-a+Prep^=+Art+Def+Fem+Pl:allas	#;
+a+Prep^|+Art+Def+Masc+Sg:al	#;
+a+Prep^|+Art+Def+Masc+Pl:als	#;
+a+Prep^|+Art+Def+Fem+Sg:alla	#;
+a+Prep^|+Art+Def+Fem+Sg+Apo:all'	#;
+a+Prep^|+Art+Def+Fem+Pl:allas	#;
 
-da+Prep^=+Art+Def+Masc+Sg:dal	#;
-da+Prep^=+Art+Def+Masc+Pl:dals	#;
-da+Prep^=+Art+Def+Fem+Sg:dalla	#;
-da+Prep^=+Art+Def+Fem+Sg+Apo:dall' #;
-da+Prep^=+Art+Def+Fem+Pl:dallas	#;
+da+Prep^|+Art+Def+Masc+Sg:dal	#;
+da+Prep^|+Art+Def+Masc+Pl:dals	#;
+da+Prep^|+Art+Def+Fem+Sg:dalla	#;
+da+Prep^|+Art+Def+Fem+Sg+Apo:dall' #;
+da+Prep^|+Art+Def+Fem+Pl:dallas	#;

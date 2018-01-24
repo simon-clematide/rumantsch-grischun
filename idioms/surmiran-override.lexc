@@ -5,7 +5,7 @@
 ! Date: June 2013
 
 
-Multichar_Symbols +Art +Def +Indef ^= ^| +Prep
+Multichar_Symbols +Art +Def +Indef ^| ^| +Prep
 +Pron +Pers +Refl +Poss +Dem +Interrog
 ^DB +Noun +Nom +AccDat +Acc
 +Masc +Fem +MF +1P +2P +3P +Sg +Pl
@@ -35,28 +35,28 @@ in+Art+Indef+Fem+Sg+Apo:en'	#;
 
 LEXICON DEFINITEWITHPREP
 ! not contracted: sen + la; per
-da+Prep^=+Art+Def+Masc+Sg:digl	#;
-da+Prep^=+Art+Def+Masc+Sg:digls	#;
-da+Prep^=+Art+Def+Fem+Sg:dalla	#;
-da+Prep^=+Art+Def+Fem+Pl:dallas	#;
+da+Prep^|+Art+Def+Masc+Sg:digl	#;
+da+Prep^|+Art+Def+Masc+Sg:digls	#;
+da+Prep^|+Art+Def+Fem+Sg:dalla	#;
+da+Prep^|+Art+Def+Fem+Pl:dallas	#;
 
 ! TODO: Forms to check: agl, agls
-! a+Prep^=+Art+Def+Masc+Sg:agl	#;
-! a+Prep^=+Art+Def+Masc+Sg:agls	#;
-a+Prep^=+Art+Def+Fem+Sg:alla	#;
-a+Prep^=+Art+Def+Fem+Pl:allas	#;
+! a+Prep^|+Art+Def+Masc+Sg:agl	#;
+! a+Prep^|+Art+Def+Masc+Sg:agls	#;
+a+Prep^|+Art+Def+Fem+Sg:alla	#;
+a+Prep^|+Art+Def+Fem+Pl:allas	#;
 
-cun+Prep^=+Art+Def+Masc+Sg:cugl	#;
-cun+Prep^=+Art+Def+Masc+Sg:cugls	#;
-cun+Prep^=+Art+Def+Fem+Sg:culla	#;
-cun+Prep^=+Art+Def+Fem+Pl:cullas	#;
+cun+Prep^|+Art+Def+Masc+Sg:cugl	#;
+cun+Prep^|+Art+Def+Masc+Sg:cugls	#;
+cun+Prep^|+Art+Def+Fem+Sg:culla	#;
+cun+Prep^|+Art+Def+Fem+Pl:cullas	#;
 
-sin+Prep^=+Art+Def+Masc+Sg:segl	#;
-sin+Prep^=+Art+Def+Masc+Sg:segls	#;
+sin+Prep^|+Art+Def+Masc+Sg:segl	#;
+sin+Prep^|+Art+Def+Masc+Sg:segls	#;
 
 ! TODO: Forms to check: agl, agls
-! en+Prep^=+Art+Def+Masc+Sg:agl	#;
-! en+Prep^=+Art+Def+Masc+Sg:agls	#;
+! en+Prep^|+Art+Def+Masc+Sg:agl	#;
+! en+Prep^|+Art+Def+Masc+Sg:agls	#;
 
 
 ! pronouns

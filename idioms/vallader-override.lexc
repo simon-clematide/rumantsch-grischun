@@ -5,7 +5,7 @@
 ! Date: June 2013
 
 
-Multichar_Symbols +Art +Def +Indef ^= ^| +Prep
+Multichar_Symbols +Art +Def +Indef ^| ^| +Prep
 +Pron +Pers +Refl +Poss +Dem +Interrog
 ^DB +Noun +Nom +AccDat +Acc
 +Masc +Fem +MF +1P +2P +3P +Sg +Pl
@@ -32,28 +32,28 @@ in+Art+Indef+Fem+Sg+Apo:ün'	#;
 LEXICON DEFINITEWITHPREP
 ! a, da as in Rumantsch Grischun
 
-pro+Prep^=+Art+Def+Masc+Sg:prol	#;
-pro+Prep^=+Art+Def+Masc+Sg:prols	#;
+pro+Prep^|+Art+Def+Masc+Sg:prol	#;
+pro+Prep^|+Art+Def+Masc+Sg:prols	#;
 
-en+Prep^=+Art+Def+Masc+Sg:i'l	#;
-en+Prep^=+Art+Def+Masc+Sg:i'ls	#;
-en+Prep^=+Art+Def+Fem+Sg:illa	#;
-en+Prep^=+Art+Def+Fem+Pl:illas	#;
+en+Prep^|+Art+Def+Masc+Sg:i'l	#;
+en+Prep^|+Art+Def+Masc+Sg:i'ls	#;
+en+Prep^|+Art+Def+Fem+Sg:illa	#;
+en+Prep^|+Art+Def+Fem+Pl:illas	#;
 
-per+Prep^=+Art+Def+Masc+Sg:pel	#;
-per+Prep^=+Art+Def+Masc+Sg:pels	#;
-per+Prep^=+Art+Def+Fem+Sg:pella	#;
-per+Prep^=+Art+Def+Fem+Pl:pellas	#;
+per+Prep^|+Art+Def+Masc+Sg:pel	#;
+per+Prep^|+Art+Def+Masc+Sg:pels	#;
+per+Prep^|+Art+Def+Fem+Sg:pella	#;
+per+Prep^|+Art+Def+Fem+Pl:pellas	#;
 
-cun+Prep^=+Art+Def+Masc+Sg:cul	#;
-cun+Prep^=+Art+Def+Masc+Sg:culs	#;
-cun+Prep^=+Art+Def+Fem+Sg:culla	#;
-cun+Prep^=+Art+Def+Fem+Pl:cullas	#;
+cun+Prep^|+Art+Def+Masc+Sg:cul	#;
+cun+Prep^|+Art+Def+Masc+Sg:culs	#;
+cun+Prep^|+Art+Def+Fem+Sg:culla	#;
+cun+Prep^|+Art+Def+Fem+Pl:cullas	#;
 
-sin+Prep^=+Art+Def+Masc+Sg:sül	#;
-sin+Prep^=+Art+Def+Masc+Sg:süls	#;
-sin+Prep^=+Art+Def+Fem+Sg:sülla	#;
-sin+Prep^=+Art+Def+Fem+Pl:süllas	#;
+sin+Prep^|+Art+Def+Masc+Sg:sül	#;
+sin+Prep^|+Art+Def+Masc+Sg:süls	#;
+sin+Prep^|+Art+Def+Fem+Sg:sülla	#;
+sin+Prep^|+Art+Def+Fem+Pl:süllas	#;
 
 
 

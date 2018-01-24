@@ -20,7 +20,7 @@ saur	+Noun+Masc+Sg
 èn	+Verb+3P+Pl
 la	+Art+Fem+Sg
 gruppa	+Noun+Fem+Sg
-dals	+Prep^=+Art+Masc+Pl
+dals	+Prep^|+Art+Masc+Pl
 vertebrads	+Noun+Masc+Pl
 terresters	+Adj+Masc+Pl
 (	+Punc+Beg
@@ -183,7 +183,7 @@ temps	+Noun+Masc+Pl
 era	+Verb+3P+Sg
 la	+Art+Fem+Sg
 pluralitad	+Noun+Fem+Sg
-dals	+Prep^=+Art+Masc+Pl
+dals	+Prep^|+Art+Masc+Pl
 dinosaurs	+Noun+Masc+Pl
 pitschna	+Adj+Fem+Sg
 ed	+Conj
@@ -197,7 +197,7 @@ che	+Subj
 almain	+Adv
 tschertas	+Pron+Indef+Fem+Pl
 gruppas	+Noun+Fem+Pl
-dals	+Prep^=+Art+Masc+Pl
+dals	+Prep^|+Art+Masc+Pl
 dinosaurs	+Noun+Masc+Pl
 èn	+Verb+3P+Pl
 stadas	+Verb+PastPart+Fem+Pl
@@ -210,7 +210,7 @@ chaud	+Adj+Masc+Sg
 .	+Sent
 
 Sistematica	+Noun+Fem+Sg
-dals	+Prep^=+Art+Masc+Pl
+dals	+Prep^|+Art+Masc+Pl
 dinosaurs	+Noun+Masc+Pl
 Sco	+Prop
 ils	+Art+Masc+Pl
@@ -229,11 +229,11 @@ diapsids	+Noun+Masc+Pl
 Quels	+Pron+Dem+Masc+Pl
 sa	+Pron+Refl+AccDat+Aton+3P+MF+Pl
 differenzieschan	+Verb+3P+Pl
-dals	+Prep^=+Art+Masc+Pl
+dals	+Prep^|+Art+Masc+Pl
 sinapsids	+Noun+Masc+Pl
 (	+Punc+Beg
 or	+Adv
-dals	+Prep^=+Art+Masc+Pl
+dals	+Prep^|+Art+Masc+Pl
 quals	+Pron+Dem+Masc+Pl
 ils	+Art+Masc+Pl
 mammals	+Noun+Masc+Pl
@@ -241,7 +241,7 @@ mammals	+Noun+Masc+Pl
 naschids	+Verb+PastPart+Masc+Pl
 )	+Punc+End
 e	+Conj
-dals	+Prep^=+Art+Masc+Pl
+dals	+Prep^|+Art+Masc+Pl
 anapsids	+Noun+Masc+Pl
 (	+Punc+Beg
 las	+Art+Fem+Pl
@@ -350,7 +350,7 @@ batschida	+Noun+Fem+Sg
 Ils	+Art+Masc+Pl
 saurischia	+Noun+Masc+Pl
 ,	+CM
-als	+Prep^=+Art+Masc+Pl
+als	+Prep^|+Art+Masc+Pl
 quals	+Pron+Indef+Masc+Pl
 tant	+Pron+Indef+Masc+Sg
 ils	+Art+Masc+Pl
@@ -381,7 +381,7 @@ tras	+Prep
 l’	+Art+Fem+Sg
 ossa	+Noun+Fem+Sg
 distanta	+Adj+Fem+Sg
-dal	+Prep^=+Art+Masc+Sg
+dal	+Prep^|+Art+Masc+Sg
 pubis	+Noun+Masc+Sg
 e	+Conj
 da	+Prep
@@ -395,13 +395,13 @@ illustraziuns	+Noun+Fem+Pl
 
 L’	+Art+Masc+Sg
 ossa	+Noun+Masc+Sg
-dal	+Prep^=+Art+Masc+Sg
+dal	+Prep^|+Art+Masc+Sg
 pubis	+Noun+Masc+Sg
 e	+Conj
 da	+Prep
 l’	+Art+Masc+Sg
 ischium	+Noun+Masc+Sg
-dals	+Prep^=+Art+Masc+Pl
+dals	+Prep^|+Art+Masc+Pl
 ornitischia	+Noun+Masc+Pl
 erbivors	+Adj+Masc+Pl
 va	+Verb+3P+Sg
@@ -415,7 +415,7 @@ enavos	+Adv
 
 La	+Art+Fem+Sg
 classificaziun	+Noun+Fem+Sg
-dals	+Prep^=+Art+Masc+Pl
+dals	+Prep^|+Art+Masc+Pl
 dinosaurs	+Noun+Masc+Pl
 n’	+Adv
 è	+Verb+3P+Sg
@@ -511,7 +511,7 @@ pauc	+Adv
 sco	+Conj
 ils	+Art+Masc+Pl
 abitants	+Noun+Masc+Pl
-dal	+Prep^=+Art+Masc+Sg
+dal	+Prep^|+Art+Masc+Sg
 mesozoicum	+Noun+Masc+Sg
 ,	+CM
 ils	+Art+Masc+Pl
