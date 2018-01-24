@@ -213,11 +213,11 @@ Verbformen:
 ### 5.4 Weitere Tags
 <a name="sec5.4"></a>
  
-Komposition:
+Derivationsangaben, Klitika:
 
 	ˆDB	Derivationsgrenze
-	ˆ|	Grenze vor Suffigierung
-	ˆ=	Kompositionsgrenze (ausser Substantive)
+	ˆ|	Grenze für Klitika (Pronomen, bestimmte Artikel)
+
 
 Diverse: 
 

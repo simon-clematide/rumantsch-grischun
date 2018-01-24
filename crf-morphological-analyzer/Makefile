@@ -50,7 +50,7 @@ train/quotidiana-no-lemma.txt: train/rmquotidiana/done.txt
 
 # build the full training set for evaluation
 $(TRAIN): $(EVALTRAIN) $(EVALTEST)
-	cat $+ > $@
+	perl -lne 's/\+(Lingo|Typo)//g; print;' $+ > $@
 
 
 EVALMODEL:=$(EVALTRAIN).mod
