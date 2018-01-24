@@ -266,6 +266,7 @@ genetic
 geologic
 giagliard
 gimnasial
+gist
 giudizial
 giuridic
 glazial

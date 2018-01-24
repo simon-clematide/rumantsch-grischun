@@ -63,8 +63,8 @@ Dies ist die konzeptuelle Dokumentation des finite-state-basierten Morphologiesy
 
 ## 1 Linguistische Formalisierung 
 <a name="sec2"></a>
-Die Grammatik von [Caduff et al (2009)](#caduff-et-al-2009) dient als Grundlage für die Wortbildung. 
-Die Wortlisten stammen grösstenteils aus dem [Pledari grond online](#lia-rumantscha-2013) der Lia Rumantscha. 
+Die Grammatik von [Caduff et al (2009)](#caduff-et-al-2009) dient als Grundlage für die Wortbildung. Zudem wurde die Grammatik [Lia Rumantscha (2006)](#lia-rumantscha-2006) für linguistische Fragen beigezogen.
+Die Wortlisten stammen grösstenteils aus dem [Pledari grond online](#lia-rumantscha-2018) der Lia Rumantscha. 
 Die Wahl der Tags folgte den Empfehlungen von [Beesley und Karttunen (2003, 335-366)](#beesley-and-karttunen-2003). Bei Zweifelsfällen wurde das Online-Morphologieanalysesystem von [Xerox Corporation (2013)](#xerox-corporation-2013) für Italienisch verwendet. 
 
 ## 3 Installation
@@ -258,7 +258,7 @@ Wie regelmässige Adjektive (wie *calm – calma*) werden auch die Adjektive mit
 
 #### 6.1.2 Adjektive mit Partizipendung
 <a name="sec6.1.2"></a> 
-Diese Adjektive enden in *-à* oder *-ì* (*affectuà – affectuada* oder *partì – partida*). Die meisten sind Partizipien, die im [Pledari grond online](#lia-rumantscha-2013) als Lemma aufgelistet sind.
+Diese Adjektive enden in *-à* oder *-ì* (*affectuà – affectuada* oder *partì – partida*). Die meisten sind Partizipien, die im [Pledari grond online](#lia-rumantscha-2018) als Lemma aufgelistet sind.
 
 Diese Adjektive sind aufgelistet in:
 
@@ -281,6 +281,7 @@ Der Guesser für unbekannte Adjektivformen ist nur für regelmässigen Adjektive
 
 ### 6.2 Adverbien
 <a name="sec6.2"></a>
+
 Adverbien sind folgendermassen markiert:
 
 Lemma | Wortart | Steigerungsstufe | Derivationsgrenze | Wortart|
@@ -365,7 +366,7 @@ Bei den Netzwerken wird unterschieden zwischen Zahlen und Zahlwörtern. Während
 
 ### 6.9 Präpositionen
 <a name="sec6.9"></a> 
-Präpositionen werden mit dem Tag +Prep markiert. Bei Apostrophierung oder Hiatustilger steht zusätzlich der Tag +Apo . Die Präpositionen sind in particles/prep.lexc gelistet.
+Präpositionen werden mit dem Tag `+Prep` markiert. Bei Apostrophierung oder Hiatustilger steht zusätzlich das Tag `+Apo` . Die Präpositionen sind in particles/prep.lexc gelistet.
 Zur Kombination aus Artikel und Präposition steht mehr bei 6.3.
 
 ### 6.10 Pronomina 
@@ -385,7 +386,7 @@ tut   |         | +Indef   |            |-       | +Fem  | +Pl  |        |
 che   | +Pron   | +Rel     |            |        |       |      |        |
     
 Bei den Demonstrativ-, Interrogativ- und Indefinitpronomina stehen Deklinationsendungen nur bei veränderlichen Lemmata. Die Possessivpronomina können zu Substantiven deriviert werden. Dabei steht das Tag `ˆDB` und die restlichen Tags wie bei den Substantiven.
-Die Pronomina sind in `art-pron/pron.lexc` aufgelistet. Entgegen Caduff und entsprechend gibt es ein Relativpronomen `che`.
+Die Pronomina sind in `art-pron/pron.lexc` aufgelistet. Entgegen [Caduff et al (2009)](#caduff-et-al-2009) und aber entsprechend [Lia Rumantscha (2006)](#lia-rumantscha-2006) gibt es ein Relativpronomen *che*.
 
 ### 6.11 Substantive
 <a name="sec6.11"></a> 
@@ -540,7 +541,9 @@ Ein einfacher perl-basierter Tokeniser, der diese Regeln umsetzt, :
 
 <a name="caduff-et-al-2009">[Caduff et al (2009)]</a>: Renzo Caduff, Uorschla N. Caprez und Georges Darms. Grammatica d’instrucziun dal rumantsch grischun (versiun curregida). Seminari da rumantsch da l’Universitad da Friburg, Fribourg, 2009. URL <http://www.chatta.ch/uploads/tx_icsrg/GrammaticaRG2009.pdf>
 
-<a name="lia-rumantscha-2013">[Lia Rumantscha (2013)]</a> Lia Rumantscha. Pledari grond online. URL <http://www.pledarigrond.ch> (letzter Zugriff: 2013-07-07). Onlinewörterbuch für Rumantsch Grischun.
+<a name="lia-rumantscha-2018">[Lia Rumantscha (2018)]</a> Lia Rumantscha. Pledari grond online. URL <http://www.pledarigrond.ch> (letzter Zugriff: 2018-01-24). Onlinewörterbuch für Rumantsch Grischun.
+
+<a name="lia-rumantscha-2006">[Lia Rumantscha (2006)]</a> Rumantsch Grischun Per Rumantschs: Grammatica I. URL <http://www.pledarigrond.ch/assets/binary/grammatica.pdf>
 
 <a name="xerox-corporation">[Xerox Corporation 2013]</a> Xerox Corporation. Open xerox: Morphological analysis. URL <http://open.xerox.com/Services/fst-nlp-tools/Consume/176> (letzter Zugriff: 2013-07-24). Online-Morphologieanalyse.
 
