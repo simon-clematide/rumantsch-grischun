@@ -8,15 +8,15 @@ e	e	+Conj
 l’	il	+Art+Def+Masc+Sg+Apo
 individualissem	individualissem	+Noun+Masc+Sg
 prendia	prender	+Verb+Con+3P+Sg
-surmaun	surmaun	+Noun+Masc+Sg
+surmaun	surmaun	+Adv
 .	.	+Sent
 
 Il	*il	+Art+Def+Masc+Sg
 dumber	dumber	+Noun+Masc+Sg
 da	da	+Prep
-Rumantschs	Rumantsch	+Prop
-emigrads	emigrar	+Verb+PastPart+Masc+Pl
-sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Pl
+Rumantschs	Rumantsch	+Prop	#Problem +Noun+Masc+Sg?
+emigrads	emigrar	+Verb+PastPart+Masc+Pl	#Problem +Adj+Masc+Pl?
+sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg
 reduceschia	reducir	+Verb+Con+3P+Sg
 –	–	+Punc
 era	era	+Adv
@@ -32,7 +32,7 @@ L’	*il	+Art+Def+Masc+Sg+Apo
 emprima	emprim	+Adj+Fem+Sg
 generaziun	generaziun	+Noun+Fem+Sg
 dals	da	+Prep^|+Art+Def+Masc+Pl
-emigrads	emigrar	+Noun+Masc+Pl
+emigrads	emigrar	+Verb+PastPart+Masc+Pl	#Problem +Noun+Masc+Pl?
 en	en	+Prep
 la	il	+Art+Def+Fem+Sg
 Bassa	Bassa	+Prop
@@ -56,7 +56,7 @@ la	il	+Art+Def+Fem+Sg
 vita	vita	+Noun+Fem+Sg
 .	.	+Sent
 
-Lur	*lur	+Pron+Poss+Masc+Sg
+Lur	*lur	+Pron+Poss+MF+Sg
 figlialanza	figlialanza	+Noun+Fem+Sg
 haja	avair	+Verb+Con+3P+Sg
 forsa	forsa	+Adv
@@ -75,14 +75,14 @@ la	il	+Art+Def+Fem+Sg
 segunda	segund	+Adj+Fem+Sg
 generaziun	generaziun	+Noun+Fem+Sg
 dals	da	+Prep^|+Art+Def+Masc+Pl
-creschids	creschì	+Noun+Masc+Pl
+creschids	creschids	+Noun+Masc+Pl
 si	si	+Prep
 en	en	+Prep
 la	il	+Art+Def+Fem+Sg
 Bassa	Bassa	+Prop
-n’	n'	+Adv
+n’	n'	+Prt+Neg
 existian	exister	+Verb+Con+3P+Pl
-tant	tant	+Adv	#PROBLEM: 85 und 86 bilden eine Einheit.
+tant	tant	+Adv
 sco	sco	+Adv
 nagins	nagin	+Pron+Indef+Masc+Pl
 lioms	liom	+Noun+Masc+Pl
@@ -97,7 +97,7 @@ Grischun	Grischun	+Prop
 
 Latiers	*latiers	+Adv
 vegnia	vegnir	+Verb+Con+3P+Sg
-ch’	che	+Subj+Apo
+ch’	che	+Conj+Apo
 il	il	+Art+Def+Masc+Sg
 process	process	+Noun+Masc+Sg
 d’	da	+Prep+Apo
@@ -108,26 +108,26 @@ en	en	+Prep
 Svizra	Svizra	+Prop
 tudestga	tudestg	+Adj+Fem+Sg
 e	e	+Conj
-che	che	+Subj
+che	che	+Conj
 questa	quest	+Pron+Dem+Fem+Sg
 sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg
 fetschia	far	+Verb+Con+3P+Sg
 insumma	insumma	+Adv
 senza	senza	+Prep
-difficultads	difficultads	+Noun+Fem+Pl
-tant	tant	+Conj	#PROBLEM: 118 und 123 bilden eine Einheit, cf. Grammatica 252
+difficultads	difficultad	+Noun+Fem+Pl
+tant	tant	+Adv	#Problem: 118 und 123 bilden eine Einheit, cf. Grammatica 252
 en	en	+Prep
 la	il	+Art+Def+Fem+Sg
 Svizra	Svizra	+Prop
 franzosa	franzos	+Adj+Fem+Sg
-sco	sco	+Conj   #PROBLEM
+sco	sco	+Adv
 en	en	+Prep
 il	il	+Art+Def+Masc+Sg
 Tessin	Tessin	+Prop
 .	.	+Sent
 
 Anc	*anc	+Adv
-dettia	dar	+Verb+Con+3P+Sg^|+Pron+Pers+Nom+3P+MF+Sg	#PROBLEM: Pronomen nicht sichtbar, cf. Grammatica 212
+dettia	dar	+Verb+Con+3P+Sg^|+Pron+Pers+Nom+3P+MF+Sg
 en	en	+Prep
 la	il	+Art+Def+Fem+Sg
 Bassa	Bassa	+Prop
@@ -146,9 +146,9 @@ questas	questas	+Pron+Dem+Fem+Pl
 sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Pl
 cumponan	cumponer	+Verb+PresInd+3P+Pl
 da	da	+Prep
-Rumantschas	*rumantsch	+Prop	#PROBLEM: Nomen oder Prop?
+Rumantschas	*rumantsch	+Prop	#Problem +Noun+Fem+Pl
 e	e	+Conj
-Rumantschs	*rumantsch	+Prop	#PROBLEM
+Rumantschs	*rumantsch	+Prop	#Poblem +Noun+Masc+Pl
 .	.	+Sent
 
 Latiers	*latiers	+Adv
