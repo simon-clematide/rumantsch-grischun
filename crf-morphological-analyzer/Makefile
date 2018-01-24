@@ -38,11 +38,15 @@ JOBSIZE?=40
 TRAIN:=train/trainall.txt
 EVALTRAIN+=train/train-nolemmas.txt
 EVALTRAIN+=train/dardin-tagged-out-lemma.txt
+EVALTRAIN+=train/quotidiana-no-lemma.txt
 EVALTEST:=test/dino-corr.txt
 
 # remove the lemmas for training
 train/dardin-tagged-out-lemma.txt: train/dardin-tagged-with-lemma.txt
 	perl -F"\t" -lane 's/(^\S+)\t([^+]*)(.*)/\1\t\3/g;print' < $< > $@
+
+train/quotidiana-no-lemma.txt: train/rmquotidiana/done.txt
+	cd $(<D) && cat -s $$(cat $(<F)) | cut -f 1,3 > $(abspath $@)
 
 # build the full training set for evaluation
 $(TRAIN): $(EVALTRAIN) $(EVALTEST)
