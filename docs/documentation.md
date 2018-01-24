@@ -223,6 +223,8 @@ Diverse:
 	*	Grossschreibung
 	+UNKNOWN	Unbekannte Form
 	+Apo	Apostrophierte Form oder mit Hiatustilger
+    +Typo   Vertipper (Korrigierte Form kann in 4. Spalte mit @KORRIGIERT eingetragen werden.)
+    +Lingo  Ein linguistischer Fehler (anderes Idiom)
 
 Die Tags `+UNKNOWN` und `*` können in `collection-RG.xfst` geändert werden. Für die Kompilierung mit den Schriftidiomen können die Tags am Beginn der Datei `collection.xfst` geändert werden.
 
