@@ -114,6 +114,7 @@ oder sie können auf der Kommandozeile für die Analyse mittels lookup/flookup v
 	+Prep	Präposition  
 	+Pron	Pronomen  
 	+Prop	Namen  
+	+Prt	Partikel (Negationspartikel)  
 	+Punc	Satzzeichen  
 	+PUNCT	weitere Zeichen im Satz  
 	+Rom	römische Zahlen  
@@ -149,6 +150,9 @@ Satzzeichen:
 	+Punc +Beg	öffnende Satzzeichen
 	+Punc +Mid	mittlere Satzzeichen
 	+Punc +End	schliessende Satzzeichen
+
+Partikel:
+	+Prt +Neg	Negationspartikel (na, betg)
 
 Abkürzungen:  
 
