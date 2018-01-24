@@ -15,7 +15,7 @@ rumantscha	rumantsch	+Adj+Fem+Sg
 (	(	+Punc+Beg
 LR	LR	+Prop+Abbr
 )	)	+Punc+End
-che	che	+Subj
+che	che	+Pron+Rel
 ha	avair	+Verb+PresInd+3P+Sg
 lieu	lieu	+Noun+Masc+Sg
 mez	mez	+Adj+Masc+Sg
@@ -25,11 +25,11 @@ Cuira	Cuira	+Prop
 stattan	star	+Verb+PresInd+3P+Pl
 las	il	+Art+Def+Fem+Pl
 elecziuns	elecziuns	+Noun+Fem+Pl
-dals	da	+Prep^|+Art+Def+Masc+Pl
+dals	da	+Prep^=+Art+Def+Masc+Pl
 gremis	gremi	+Noun+Masc+Pl
 per	per	+Prep
 il	il	+Art+Def+Masc+Sg
-proxim	proxim	+Noun+Masc+Sg
+proxim	proxim	+Adj+Masc+Sg
 trienni	trienni	+Noun+Masc+Sg
 ,	,	+CM
 il	il	+Art+Def+Masc+Sg
@@ -46,7 +46,7 @@ da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 gruppa	gruppa	+Noun+Fem+Sg
 incumbensada	incumbensà	+Adj+Fem+Sg
-pertutgant	pertutgant	+Prep
+pertutgant	pertutgar	+Verb+Gerund+Lingo	@pertutgond
 la	il	+Art+Def+Fem+Sg
 decentralisaziun	decentralisaziun	+Noun+Fem+Sg
 da	da	+Prep
@@ -59,7 +59,7 @@ rumantschs	rumantsch	+Adj+Masc+Pl
 Da	*da	+Prep
 la	il	+Art+Def+Fem+Sg
 suprastanza	suprastanza	+Noun+Fem+Sg
-sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg #PROBLEM
+sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg
 retiran	retrair	+Verb+PresInd+3P+Pl    
 vicepresident	vicepresident	+Noun+Masc+Sg
 Gion	Gion	+Prop
@@ -91,7 +91,7 @@ duas	dus	+Num+Card+Fem
 uniuns	uniun	+Noun+Fem+Pl
 proponan	proponer	+Verb+PresInd+3P+Pl
 da	da	+Prep
-nov	nov	+Adj+Masc+Sg    #PROBLEM
+nov	nov	+Adj+Masc+Sg
 Martin	Martin	+Prop
 Cantieni	Cantieni	+Prop
 (	(	+Punc+Beg
@@ -122,8 +122,8 @@ e	e	+Conj
 Silvia	Silvia	+Prop
 Steiner	Steiner	+Prop
 (	(	+Punc+Beg
-Uniun	*uniun	+Noun+Fem+Sg
-dals	da	+Prep^|+Art+Def+Masc+Pl
+Uniun	*uniun	+Noun+Fem+Sg	#Problem auch +Prop
+dals	da	+Prep^=+Art+Def+Masc+Pl #Problem auch +Prop
 Grischs	*grisch	+Noun+Masc+Pl   #PROBLEM auch +Prop
 )	)	+Punc+End
 stattan	star	+Verb+PresInd+3P+Pl
@@ -137,7 +137,7 @@ ils	il	+Art+Def+Masc+Pl
 auters	auter	+Adj+Masc+Pl
 posts	post	+Noun+Masc+Pl
 vegni	vegnir	vegnir+Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+3P+MF+Sg    
-a	a	+Prep   #PROBLEM Pluralform
+a	a	+Prep
 dar	dar	+Verb+Inf
 differentas	different	+Adj+Fem+Pl
 midadas	midada	+Noun+Fem+Pl
@@ -156,19 +156,19 @@ fitg	fitg	+Adv
 voluminus	voluminus	+Adj+Masc+Sg
 .	.	+Sent
 
-Blers	*bler	+Adj+Masc+Pl    #PROBLEM pron.indef?
+Blers	*bler	+Adj+Masc+Pl
 puncts	puncts	+Noun+Masc+Pl
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 lavur	lavur	+Noun+Fem+Sg
-dals	da	+Prep^|+Art+Def+Masc+Pl
-davos	davos	+Adj+Masc+Pl    #PROBLEM
+dals	da	+Prep^=+Art+Def+Masc+Pl
+davos	davos	+Adj+Masc+Pl
 onns	onn	+Noun+Masc+Pl
-sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Pl #PROBLEM
+sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Pl
 repetan	repeter	+Verb+PresInd+3P+Pl
 ,	,	+CM
 damai	damai	+Adv    #PROBLEM conj mit che
-ch’	che	+Subj+Apo
+ch’	che	+Rel+Pron+Apo
 els	els	+Pron+Pers+Nom+3P+Masc+Pl
 èn	esser	+Verb+PresInd+3P+Pl
 pensum	pensum	+Noun+Masc+Sg
@@ -193,9 +193,9 @@ novas	nov	+Adj+Fem+Pl
 lavurs	lavur	+Noun+Fem+Pl
 previsas	previs	+Adj+Fem+Pl
 ,	,	+CM
-uschia	uschia	+Adv #PROBLEM
+uschia	uschia	+Adv
 tranter	tranter	+Prep
-auter	auter	+Adj+Masc+Sg    #PROBLEM
+auter	auter	+Adj+Masc+Sg
 dad	da	+Prep+Apo
 animar	animar	+Verb+Inf
 inscunters	inscunter	+Noun+Masc+Pl
@@ -215,11 +215,11 @@ eleger	eleger	+Verb+Inf
 il	il	+Art+Def+Masc+Sg
 rumantsch	rumantsch	+Noun+Masc+Sg
 (	(	+Punc+Beg
-empè	empè	+Prep   #PROBLEM  
+empè	empè	+Prep
 da	da	+Prep
 talian	talian	+Noun+Masc+Sg
 )	)	+Punc+End
-sco	sco	+Adv    #PROBLEM
+sco	sco	+Adv
 segund	segund	+Adj+Masc+Sg
 linguatg	linguatg	+Noun+Masc+Sg
 en	en	+Prep
@@ -231,15 +231,15 @@ animar	animar	+Verb+Inf
 il	il	+Art+Def+Masc+Sg
 Chantun	*chantun	+Noun+Masc+Sg
 da	da	+Prep
-s’	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg+Apo #PROBLEM
+s’	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg+Ap
 engaschar	engaschar	+Verb+Inf
 per	per	+Prep
-ch’	che	+Subj+Apo   #PROBLEM
+ch’	che	+Pron+Rel+Apo
 i	i	+Pron+Pers+Nom+3P+MF+Sg
 possia	pudair	+Verb+Con+3P+Sg
 vegnir	vegnir	+Verb+Inf
 scolà	scolar	+Verb+PastPart+Masc+Sg
-avunda	avunda	+Adv    #PROBLEM
+avunda	avunda	+Adv
 scolastas	scolasta	+Noun+Fem+Pl
 e	e	+Conj
 scolasts	scolast	+Noun+Masc+Pl
@@ -247,13 +247,13 @@ rumantschs	rumantsch	+Adj+Masc+Pl
 ,	,	+CM
 da	da	+Prep
 pretender	pretender	+Verb+Inf
-che	che	+Subj   #PROBLEM
+che	che	+Pron+Rel
 scolaras	scolara	+Noun+Fem+Pl
 e	e	+Conj
 scolars	scolars	+Noun+Masc+Pl
-che	che	+Subj   #PROBLEM pron. rel.
+che	che	+Pron+Rel
 han	avair	+Verb+PresInd+3P+Pl
-gì	avair	+Verb+PastPart+Masc+Sg  #PROBLEM Sg. + Pl.
+gì	avair	+Verb+PastPart+Masc+Pl
 rumantsch	rumantsch	+Noun+Masc+Sg
 en	en	+Prep
 scola	scola	+Noun+Fem+Sg
@@ -266,7 +266,7 @@ rumantsch	rumantsch	+Noun+Masc+Sg
 en	en	+Prep
 las	il	+Art+Def+Fem+Pl
 scolas	scola	+Noun+Fem+Pl
-medias	medias	+Noun+Fem+Pl    #PROBLEM
+medias	medias	+Adj+Fem+Pl
 ,	,	+CM
 da	da	+Prep
 sustegnair	sustegnair	+Verb+Inf
@@ -277,7 +277,7 @@ Quotidiana	Quotidiana	+Prop
 e	e	+Conj
 dad	da	+Prep+Apo
 infurmar	infurmar	+Verb+Inf
-sur	sur	+Adv    #PROBLEM
+sur	sur	+Adv    #PROBLEM +Prep?
 internet	internet	+Noun+Masc+Sg
 .	.	+Sent
 
@@ -286,7 +286,7 @@ fundament	fundament	+Noun+Masc+Sg
 da	da	+Prep
 duas	dus	+Num+Card+Fem
 intervenziuns	intervenziun	+Noun+Fem+Pl
-pertutgant	pertutgant	+Prep   #PROBLEM
+pertutgant	pertutgar	+Verb+Gerund+Lingo	@pertutgond
 la	il	+Art+Def+Fem+Sg
 dumonda	dumonda	+Noun+Fem+Sg
 da	da	+Prep
@@ -344,7 +344,7 @@ da	da	+Prep
 far	far	+Verb+Inf
 propostas	proposta	+Noun+Fem+Pl
 concretas	concret	+Adj+Fem+Pl
-concernent	concernent	+Prep
+concernent	concerner	+Verb+Gerund+Lingo	@concernend
 il	il	+Art+Def+Masc+Sg
 proxim	proxim	+Adj+Masc+Sg
 proceder	proceder	+Noun+Masc+Sg
@@ -373,16 +373,16 @@ da	da	+Prep
 fin	fin	+Prep
 uss	uss	+Adv
 han	avair	+Verb+PresInd+3P+Pl
-mussà	mussar	+Verb+PastPart+Masc+Sg
-che	che	+Subj
+mussà	mussar	+Verb+PastPart+Masc+Pl
+che	che	+Pron+Rel
 soluziuns	soluziun	+Noun+Fem+Pl
 simplas	simpel  +Adj+Fem+Pl
-n’	n'	+Adv    #PROBLEM
+n’	n'	+Prt+Neg+Apo
 èn	esser	+Verb+PresInd+3P+Pl
-betg	betg	+Adv
+betg	betg	+Prt+Neg
 pussaivlas	pussaivel	+Adj+Fem+Pl
 ,	,	+CM
-ch’	che	+Subj+Apo   
+ch’	che	+Pron+Rel+Apo   
 il	il	+Art+Def+Masc+Sg
 Radio	*radio	+Noun+Masc+Sg
 e	e	+Conj
@@ -402,10 +402,10 @@ posiziun	posiziun	+Noun+Fem+Sg
 instituziunala	instituziunal	+Adj+Fem+Sg
 speziala	spezial	+Adj+Fem+Sg
 e	e	+Conj
-na	na	+Adv
+na	na	+Prt+Neg
 vulan	vulair	+Verb+PresInd+3P+Pl
 senz’	senza	+Prep+Apo
-auter	auter	+Adj+Masc+Sg    #PROBLEM
+auter	auter	+Adj+Masc+Sg
 acceptar	acceptar	+Verb+Inf
 intervenziuns	intervenziun	+Noun+Fem+Pl
 e	e	+Conj
@@ -413,7 +413,7 @@ propostas	proposta	+Noun+Fem+Pl
 da	da	+Prep
 decentralisaziun	decentralisaziun	+Noun+Fem+Sg
 d’	da	+Prep+Apo
-ordaifer	ordaifer	+Prep
+ordaifer	ordaifer	+Adv
 .	.	+Sent
 
 La	*il	+Art+Def+Fem+Sg
@@ -437,17 +437,17 @@ Grischun	*grischun	+Adj+Masc+Sg
 DRG	DRG	+Prop+Abbr
 )	)	+Punc+End
 è	esser	+Verb+PresInd+3P+Sg
-gist	gist	+Adj+Sup^DB+Adv #PROBLEM
+gist	gist	+Adv
 s’	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg+Apo
 installà	installar	+Verb+PastPart+Masc+Sg
 da	da	+Prep
-nov	nov	+Adj+Masc+Sg    #PROBLEM
+nov	nov	+Adj+Masc+Sg
 a	a	+Prep
 Cuira	Cuira	+Prop
 e	e	+Conj
-na	na	+Adv
+na	na	+Prt+Neg
 vul	vulair	+Verb+PresInd+3P+Sg
-betg	betg	+Adv
+betg	betg	+Prt+Neg
 midadas	midada	+Noun+Fem+Pl
 .	.	+Sent
 
@@ -460,7 +460,7 @@ chapientscha	chapientscha	+Noun+Fem+Sg
 per	per	+Prep
 ils	il	+Art+Def+Masc+Pl
 arguments	arguments	+Noun+Masc+Pl
-dal	da	+Prep^|+Art+Def+Masc+Sg
+dal	da	+Prep|+Art+Def+Masc+Sg
 DRG	DRG	+Prop+Abbr
 .	.	+Sent
 
@@ -482,19 +482,19 @@ lieu	lieu	+Noun+Masc+Sg
 en	en	+Prep
 il	il	+Art+Def+Masc+Sg
 Grischun	Grischun	+Prop
-che	che	+Subj
+che	che	+Pron+Rel
 vegn	vegnir	+Verb+PresInd+3P+Sg
 acceptà	acceptar	+Verb+PastPart+Masc+Sg
-pli	pli	+Adv    #PROBLEM
+pli	pli	+Adv
 u	u	+Conj
-main	pauc	+Adj+Comp^DB+Adv
+main	main	+Adv
 da	da	+Prep
 tuttas	tut	+Pron+Indef+Fem+Pl
 varts	vart	+Noun+Fem+Pl
-sco	sco	+Conj   #PROBLEM adv.?
+sco	sco	+Adv
 center	center	+Noun+Masc+Sg
 ,	,	+CM
-che	che	+Subj
+che	che	+Pron+Rel
 favurisescha	favurisar	+Verb+PresInd+3P+Sg
 l’	il	+Art+Def+Masc+Sg+Apo
 inscunter	inscunter	+Noun+Masc+Sg
@@ -503,7 +503,7 @@ ed	e	+Conj+Apo
 interidiomatic	interidiomatic	+Adj+Masc+Sg
 ,	,	+CM
 nua	nua	+Adv
-ch’	che	+Subj+Apo
+ch’	che	+Pron+Rel+Apo
 immobiglias	immobiglias	+Noun+Fem+Pl
 èn	esser	+Verb+PresInd+3P+Pl
 realisadas	realisar	+Verb+PastPart+Fem+Pl
@@ -512,7 +512,7 @@ instituziuns	instituziun	+Noun+Fem+Pl
 rumantschas	rumantsch	+Adj+Fem+Pl
 e	e	+Conj
 nua	nua	+Adv
-che	che	+Subj
+che	che	+Pron+Rel
 contacts	contact	+Noun+Masc+Pl
 cun	cun	+Prep
 l’	il	+Art+Def+Fem+Sg+Apo
@@ -523,7 +523,7 @@ numerusas	numerus	+Adj+Fem+Pl
 autras	auter	+Adj+Fem+Pl
 instituziuns	instituziun	+Noun+Fem+Pl
 èn	esser	+Verb+PresInd+3P+Pl
-tgunsch	tgunsch	+Adj    #PROBLEM
+tgunsch	tgunsch	+Adv
 pussaivels	pussaivel	+Adj+Masc+Pl
 .	.	+Sent
 
@@ -543,7 +543,7 @@ rapport	rapport	+Noun+Masc+Sg
 final	final	+Adj+Masc+Sg
 cun	cun	+Prep
 propostas	proposta	+Noun+Fem+Pl
-che	che	+Subj
+che	che	+Pron+Rel
 duain	duair	+Verb+PresInd+3P+Pl
 vegnir	vegnir	+Verb+Inf
 discutadas	discutar	+Verb+PastPart+Fem+Pl
