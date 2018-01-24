@@ -210,6 +210,14 @@ define AdvShortStems ;
 
 define AdvShort [ AdvShortStems "+Adv":0 ] ;
 
+# 2b. Einlesen der Negationspartikel
+###############################################################################
+read text < wordlists/prt-neg.txt
+define PrtNegStems ;
+
+define PrtNeg [ PrtNegStems "+Prt""+Neg":0 ] ;
+
+
 
 ################################################################################
 #                                                                              #
@@ -217,7 +225,7 @@ define AdvShort [ AdvShortStems "+Adv":0 ] ;
 #                                                                              #
 ################################################################################
 
-define Adverb [ AdvShort | AdvAdjMasc | [ AdvIrr .P. [ AdvReg | AdvE | AdvPart] ] ];
+define Adverb [ PrtNeg | AdvShort | AdvAdjMasc | [ AdvIrr .P. [ AdvReg | AdvE | AdvPart] ] ];
 
 read regex Adverb ;
 save stack fstbinaries/Adverb.fst
