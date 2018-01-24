@@ -63,7 +63,7 @@ Dies ist die konzeptuelle Dokumentation des finite-state-basierten Morphologiesy
 
 ## 1 Linguistische Formalisierung 
 <a name="sec2"></a>
-Die Grammatik von [Caduff et al (2006)](#Caduff-et-al-2006) dient als Grundlage für die Wortbildung. 
+Die Grammatik von [Caduff et al (2009)](#caduff-et-al-2009) dient als Grundlage für die Wortbildung. 
 Die Wortlisten stammen grösstenteils aus dem [Pledari grond online](#lia-rumantscha-2013) der Lia Rumantscha. 
 Die Wahl der Tags folgte den Empfehlungen von [Beesley und Karttunen (2003, 335-366)](#beesley-and-karttunen-2003). Bei Zweifelsfällen wurde das Online-Morphologieanalysesystem von [Xerox Corporation (2013)](#xerox-corporation-2013) für Italienisch verwendet. 
 
@@ -213,7 +213,7 @@ Verbformen:
 ### 5.4 Weitere Tags
 <a name="sec5.4"></a>
  
-Derivationsangaben, Klitika:
+Derivationsangaben, [Klitika](https://en.wikipedia.org/wiki/Clitic):
 
 	ˆDB	Derivationsgrenze
 	ˆ|	Grenze für Klitika (Pronomen, bestimmte Artikel)
@@ -538,7 +538,7 @@ Ein einfacher perl-basierter Tokeniser, der diese Regeln umsetzt, :
 
 <a name="beesley-karttunen-2003">[Beesley und Karttunen (2003)]</a> Kenneth R. Beesley und Lauri Karttunen. Finite-State Morphology: Xerox Tools and Techniques. CSLI Publications, 2003.
 
-<a name="caduff-et-al-2006">[Caduff et al (2006)]</a>: Renzo Caduff, Uorschla N. Caprez und Georges Darms. Grammatica d’instrucziun dal rumantsch grischun. Seminari da rumantsch da l’Universitad da Friburg, Fribourg, 2006.
+<a name="caduff-et-al-2009">[Caduff et al (2009)]</a>: Renzo Caduff, Uorschla N. Caprez und Georges Darms. Grammatica d’instrucziun dal rumantsch grischun (versiun curregida). Seminari da rumantsch da l’Universitad da Friburg, Fribourg, 2009. URL <http://www.chatta.ch/uploads/tx_icsrg/GrammaticaRG2009.pdf>
 
 <a name="lia-rumantscha-2013">[Lia Rumantscha (2013)]</a> Lia Rumantscha. Pledari grond online. URL <http://www.pledarigrond.ch> (letzter Zugriff: 2013-07-07). Onlinewörterbuch für Rumantsch Grischun.
 
@@ -547,8 +547,10 @@ Ein einfacher perl-basierter Tokeniser, der diese Regeln umsetzt, :
 
 
 ## Changelog
+  - 2018-01-24: Update documentation (clitica, negation particles, typos/lingos); update bibliographical references
+  - 2017-08-23: Small changes and a TOC
   - 2017-07-28: Konvertierung aus originaler PDF-Dokumentation aus 2013 (Simon Clematide)
-  - 2917-08-23: Small changes and a TOC
+
 ``
 
 
