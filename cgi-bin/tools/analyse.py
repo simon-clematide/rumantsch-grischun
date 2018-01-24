@@ -1,3 +1,4 @@
+#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 # Author: Reto Baumgartner
 
@@ -34,7 +35,7 @@ blankLine = False
 
 def betterPrint(token, analysis):
     if lemmaSplit:
-        analysisPlus = re.sub(r'^([^^]+)\+(Abbr|Adj|Adv|Art|CM|Conj|Dig|Initial|Interj|Let|Noun|Num|Prep|Pron|Prop|Punc|PUNCT|Rom|Sent|Subj|Verb)', r'\1\t+\2', analysis, 1)
+        analysisPlus = re.sub(r'\+(Abbr|Adj|Adv|Art|CM|Conj|Dig|Initial|Interj|Let|Noun|Num|Prep|Pron|Prop|Punc|PUNCT|Rom|Sent|Subj|Verb)', r'\t+\1', analysis, count=1)
         print(token + "\t" + analysisPlus)
     else:
         print(token + "\t" + analysis)
