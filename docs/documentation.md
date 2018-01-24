@@ -375,9 +375,10 @@ mes   | +Pron   | +Poss    |            |        | +Masc | +Sg  |        |
 lez   | +Pron   | +Dem     |            |        |       |      |        |
 tgi   |         | +Interrog|            |        | +Masc | +Sg  | +Apo   |
 tut   |         | +Indef   |            |-       | +Fem  | +Pl  |        |
+che   | +Pron   | +Rel     |            |        |       |      |        |
     
 Bei den Demonstrativ-, Interrogativ- und Indefinitpronomina stehen Deklinationsendungen nur bei veränderlichen Lemmata. Die Possessivpronomina können zu Substantiven deriviert werden. Dabei steht das Tag `ˆDB` und die restlichen Tags wie bei den Substantiven.
-Die Pronomina sind in `art-pron/pron.lexc` aufgelistet.
+Die Pronomina sind in `art-pron/pron.lexc` aufgelistet. Entgegen Caduff und entsprechend gibt es ein Relativpronomen `che`.
 
 ### 6.11 Substantive
 <a name="sec6.11"></a> 
