@@ -59,6 +59,7 @@ adia
 adiever
 aditiv
 adjectiv
+adjunct
 administratur
 admiral
 adolescent

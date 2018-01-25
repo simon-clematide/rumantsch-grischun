@@ -277,6 +277,7 @@ glisch
 global
 gratuit
 grev
+grischun
 grond
 guvernamental
 helvetic
@@ -441,9 +442,11 @@ optimal
 opziunal
 oral
 oransch
+organisatoric
 oriental
 original
 originar
+oriund
 orizontal
 papal
 paradoxal

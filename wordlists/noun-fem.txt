@@ -65,6 +65,7 @@ adesiun
 adestrezza
 adgiudicaziun
 adiziun
+adjuncta
 adjutantura
 administraziun
 admiraziun
@@ -226,6 +227,7 @@ androsa
 anecdota
 anemia
 anemona
+anestesia
 angelica
 angina
 anguscha
@@ -389,8 +391,8 @@ assamblea
 assegnaziun
 assicuranza
 assimilaziun
-assistenza
 assistenta
+assistenza
 associaziun
 assortida
 asta
@@ -4050,6 +4052,7 @@ mamma
 mammetta
 manada
 manadira
+manadra
 mancanza
 mandarina
 mandolina
