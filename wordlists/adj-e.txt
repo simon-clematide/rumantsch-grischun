@@ -30,6 +30,7 @@ annullabel
 aper
 applitgabel
 appreziabel
+assicurabel
 assimilabel
 attatgabel
 auter
@@ -154,6 +155,7 @@ documentabel
 domesticabel
 donnegiaivel
 duaivel
+dubel
 dubitabel
 dubitaivel
 dumbraivel
@@ -176,6 +178,7 @@ ereopermeabel
 eromovibel
 ertaivel
 ester
+eurocumpatibel
 evitabel
 examinabel
 excitabel
@@ -183,6 +186,7 @@ executabel
 exequibel
 explitgabel
 explotabel
+exportabel
 extensibel
 extraterrester
 factibel
@@ -193,6 +197,7 @@ fidabel
 fidaivel
 fidel
 finanziabel
+fissibel
 fixabel
 flaivel
 flectabel
@@ -204,6 +209,7 @@ fraschel
 fritgaivel
 furber
 furnibel
+georeferenziabel
 giavischabel
 giavischaivel
 gidaivel
@@ -222,6 +228,7 @@ gulivabel
 hassegiabel
 identifitgabel
 idrosolvibel
+illegibel
 illuster
 imaginabel
 immovibel
@@ -235,6 +242,7 @@ imperscrutabel
 implacabel
 implementabel
 imponderabel
+imponibel
 importabel
 impressiunabel
 imprevisibel
@@ -280,6 +288,7 @@ incurregibel
 indecifrabel
 indescrivibel
 indesistibel
+indestituibel
 indestruibel
 indigeribel
 indiscutabel
@@ -294,6 +303,7 @@ indumbrabel
 induvrabel
 inelegibel
 inertabel
+ineruibel
 inevitabel
 inexaminabel
 inexauribel
@@ -308,7 +318,10 @@ inflammabel
 inflexibel
 inimaginabel
 innavigabel
+innegoziabel
+innobel
 innobelabel
+inoxidabel
 insaziabel
 inscenabel
 inschignaivel
@@ -350,7 +363,9 @@ irraschunaivel
 irrealisabel
 irreconciliabel
 irrecuperabel
+irrecusabel
 irrefusabel
+irrefutabel
 irremplazzabel
 irrenunziabel
 irreparabel
@@ -393,6 +408,7 @@ manieraivel
 manischabel
 mediocher
 megabel
+meglierabel
 mellen
 memorabel
 meritaivel
@@ -434,9 +450,11 @@ nunconfortabel
 nunconfundibel
 nunconquistabel
 nunconsegnabel
+nunconservabel
 nunconsiderabel
 nuncontestabel
 nuncontrollabel
+nunconvertibel
 nuncredibel
 nuncristianaivel
 nuncumprovabel
@@ -476,6 +494,7 @@ nunmidaivel
 nunmisericordaivel
 nunmovibel
 nunnavigabel
+nunnegoziabel
 nunnobel
 nunpajabel
 nunpassabel
@@ -492,15 +511,18 @@ nunprofitaivel
 nunpussaivel
 nunraschunaivel
 nunrealisabel
+nunrembursabel
 nunremplazzabel
 nunrentabel
 nunresponsabel
+nunrestituibel
 nunrumpaivel
 nunsalvabel
 nunschliabel
 nunseparabel
 nunsequestrabel
 nunservetschaivel
+nunsfundrabel
 nunsnegabel
 nunsociabel
 nunsragischabel
@@ -512,6 +534,7 @@ nunstizzaivel
 nunsurmuntabel
 nunsurventschaivel
 nunsurvesaivel
+nunsustegnibel
 nuntegnibel
 nuntransibel
 nuntranslatabel
@@ -528,6 +551,7 @@ nuschaivel
 obedaivel
 octupel
 onuraivel
+operaziunalisabel
 oraifer
 orribel
 ospitaivel
@@ -538,6 +562,7 @@ palpabel
 pasabel
 paschaivel
 passabel
+patentabel
 patratgabel
 pauper
 pazinghel
@@ -596,6 +621,7 @@ reciclabel
 recumandabel
 recumandaivel
 recumprabel
+recuperabel
 redaivel
 rediscontabel
 refusabel
@@ -632,6 +658,7 @@ salutaivel
 sanadaivel
 sbassabel
 sbittaivel
+scalabel
 schlargiabel
 schliabel
 scolabel
@@ -643,6 +670,7 @@ sequestrabel
 serrabel
 servetschaivel
 sextupel
+sfendibel
 sfurzabel
 sgarschaivel
 sisavel
@@ -667,6 +695,7 @@ stimabel
 stizzabel
 strapatschabel
 stressabel
+structurabel
 sturnichel
 suandabel
 subenziunabel
@@ -685,6 +714,7 @@ sustegnibel
 svanaivel
 sventiraivel
 svizzer
+tastgabel
 taxabel
 terapabel
 terrester
@@ -707,6 +737,7 @@ tutsaviaivel
 udibel
 umilitaivel
 undraivel
+urbarisabel
 utilisabel
 valabel
 valaivel

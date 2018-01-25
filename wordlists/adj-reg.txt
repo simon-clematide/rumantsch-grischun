@@ -1,4 +1,3 @@
-
 abazial
 abissic
 abitual
@@ -19,7 +18,7 @@ accumpagnant
 accumulant
 accumulativ
 accusant
-accusatoricchantunus
+accusatoric
 acetic
 acidifitgant
 acquisitiv
@@ -158,6 +157,7 @@ antiseptic
 antistatic
 antitrombotic
 antropic
+antropoid
 antropologic
 antropometric
 antroposofic
@@ -752,6 +752,7 @@ dinamic
 dinamometric
 dinastic
 dionisic
+diploid
 diplomatic
 direct
 directdemocratic
@@ -995,6 +996,7 @@ farinus
 farisaic
 farmaceutic
 faschistic
+faschistoid
 fascinant
 fastidius
 fatal
@@ -1187,6 +1189,7 @@ grippal
 grippus
 grischent
 grischun
+grobulan
 grond
 grondius
 gudagnant
@@ -1203,6 +1206,7 @@ guvernamental
 guvernativ
 halal
 hanseatic
+haploid
 hectic
 heliografic
 helvetic
@@ -1559,6 +1563,7 @@ malscuidus
 malsegir
 maltratg
 malvulent
+mamiferoid
 mancant
 mandatant
 manglus
@@ -1670,6 +1675,7 @@ monarchic
 monastic
 monetar
 mongolic
+mongoloid
 monocentric
 monociclic
 monocristallin
@@ -1826,6 +1832,7 @@ nunsentimental
 nunsignifitgant
 nunsincer
 nunsistematic
+nunsontg
 nunspecific
 nunsportiv
 nunstatal
@@ -1934,6 +1941,7 @@ paralitic
 paraliturgic
 parallel
 paramedicinal
+paranoid
 paraplegic
 parapsicologic
 parapublic
@@ -2335,6 +2343,7 @@ roial
 romanic
 romantic
 rombic
+romboid
 romus
 rotant
 rotativ
@@ -2389,6 +2398,7 @@ scherminativ
 schicanus
 schiglius
 schizofren
+schizoid
 schovinistic
 schurnalistic
 scientific
@@ -2399,7 +2409,6 @@ scolastic
 scrivent
 scrofulus
 scrupulus
-scuidus
 scuidus
 scumpars
 scuss
@@ -2525,6 +2534,7 @@ solistic
 solitari
 solvent
 somatic
+sontg
 sortint
 sovietic
 spargnus
