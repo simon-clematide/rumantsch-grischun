@@ -205,7 +205,7 @@ via	+Noun+Fem+Sg
 en	+Prep
 scola	+Noun+Fem+Sg
 e	+Conj
-natiralmain	+Adj^DB+Adv
+natiralmain	+Adv
 cun	+Prep
 la	+Art+Fem+Sg
 clientella	+Noun+Fem+Sg
@@ -295,7 +295,7 @@ enviern	+Noun+Masc+Sg
 In	+Num+Card+Masc
 onn	+Noun+Masc+Sg
 pli	+Adv
-tard	+Adj^DB+Adv
+tard	+Adv
 è	+Verb+PresInd+3P+Sg
 el	+Pron+Pers+Nom+3P+Masc+Sg
 sa	+Pron+Refl+AccDat+Aton+3P+MF+Sg
@@ -526,7 +526,7 @@ pitschens	+Adj+Masc+Pl
 ch’	+Subj
 èn	+Verb+PresInd+3P+Pl
 cumparids	+Noun+Masc+Sg
-regularmain	+Adj^DB+Adv
+regularmain	+Adv
 a	+Prep
 partir	+Verb+Inf
 dals	+Prep^|+Art+Masc+Pl
@@ -570,7 +570,7 @@ a	+Prep
 la	+Art+Fem+Sg
 lunga	+Adv+Fem+Sg
 ,	+CM
-numnadamain	+Adj^DB+Adv
+numnadamain	+Adv
 ils	+Art+Masc+Pl
 emprims	+Num+Ord+Masc+Pl
 trais	+Num+Card+MF
@@ -599,9 +599,9 @@ Bund	+Prop
 che	+Subj
 ha	+Verb+PresInd+3P+Sg
 influenzà	+Verb+PastPart+Masc+Sg
-decisivamain	+Adj^DB+Adv
+decisivamain	+Adv
 e	+Conj
-persistentamain	+Adj^DB+Adv
+persistentamain	+Adv
 la	+Art+Fem+Sg
 scena	+Noun+Fem+Sg
 da	+Prep
@@ -627,7 +627,7 @@ Bundi	+Prop
 è	+Verb+PresInd+3P+Sg
 quai	+Pron+Dem
 pli	+Adv
-tard	+Adj^DB+Adv
+tard	+Adv
 schizunt	+Adv
 daventà	+Verb+PastPart+Masc+Sg
 sia	+Pron+Poss+Fem+Sg
@@ -801,7 +801,7 @@ che	+Subj
 Gian	+Prop
 Bundi	+Prop
 fiss	+Verb+Cond+3P+Sg
-atgnamain	+Adj^DB+Adv
+atgnamain	+Adv
 gugent	+Adv
 stà	+Verb+PastPart+Masc+Pl
 musicist	+Noun+Masc+Sg
@@ -945,7 +945,7 @@ rumantschas	+Adj+Fem+Pl
 Quellas	+Pron+Dem+Fem+Pl
 na	+Adv
 dastgaivan	+Verb+ImpInd+3P+Pl    
-simplamain	+Adj^DB+Adv
+simplamain	+Adv
 betg	+Adv
 mancar	+Verb+Inf
 .	+Sent
@@ -1035,7 +1035,7 @@ Capra	+Prop
 ibex	+Prop
 )	+Punc+End
 u	+Conj
-simplamain	+Adj^DB+Adv
+simplamain	+Adv
 capricorn	+Noun+Masc+Sg
 ,	+CM
 era	+Adv
@@ -1088,7 +1088,7 @@ Capra	+Prop
 El	+Pron+Pers+Nom+3P+Masc+Sg
 è	+Verb+PresInd+3P+Sg
 parentà	+Verb+PastPart+Masc+Sg
-stretgamain	+Adj^DB+Adv
+stretgamain	+Adv
 cun	+Prep
 il	+Art+Masc+Sg
 capricorn	+Noun+Masc+Sg
@@ -1614,7 +1614,7 @@ empruvava	+Verb+ImpInd+3P+Sg
 da	+Prep
 demussar	+Verb+Inf
 ‹	+Punc+Beg
-scientificamain	+Adj^DB+Adv
+scientificamain	+Adv
 ›	+Punc+End
 ch’	+Subj
 ils	+Art+Masc+Pl
@@ -1690,7 +1690,7 @@ betg	+Adv
 pussaivel	+Adj+Masc+Sg
 d’	+Prep
 eruir	+Verb+Inf
-precisamain	+Adj^DB+Adv
+precisamain	+Adv
 ,	+CM
 tge	+Pron+Interrog
 impurtanza	+Noun+Fem+Sg
@@ -1757,7 +1757,7 @@ debit	+Noun+Masc+Sg
 ,	+CM
 sclavaria	+Noun+Fem+Sg
 sfurzada	+Adj+Fem+Sg
-giuridicamain	+Adj^DB+Adv
+giuridicamain	+Adv
 ,	+CM
 naschientscha	+Noun+Fem+Sg
 en	+Prep
@@ -1786,7 +1786,7 @@ guerrils	+Adj+Masc+Pl
 furmava	+Verb+ImpInd+3P+Sg
 al	+Prep^|+Art+Masc+Sg
 cumenzament	+Noun+Masc+Sg
-probablamain	+Adj^DB+Adv
+probablamain	+Adv
 l’	+Art+Fem+Sg
 excepziun	+Noun+Fem+Sg
 .	+Sent
@@ -1834,7 +1834,7 @@ per	+Prep
 acquistar	+Verb+Inf
 sclavs	+Noun+Masc+Pl
 era	+Verb+ImpInd+3P+Sg
-oriundamain	+Adj^DB+Adv
+oriundamain	+Adv
 il	+Art+Masc+Sg
 rapiment	+Noun+Masc+Sg
 d’	+Prep
@@ -1863,7 +1863,7 @@ massa	+Noun+Fem+Sg
 è	+Verb+PresInd+3P+Sg
 in	+Art+Masc+Sg
 fenomen	+Noun+Masc+Sg
-relativamain	+Adj^DB+Adv
+relativamain	+Adv
 tardiv	+Noun+Masc+Sg
 ed	+Conj
 ha	+Verb+PresInd+3P+Sg
@@ -2052,7 +2052,7 @@ Caria	+Prop
 ils	+Art+Masc+Pl
 Romans	+Prop
 pli	+Adv
-tard	+Adj^DB+Adv
+tard	+Adv
 cunzunt	+Adv
 da	+Prep
 la	+Art+Fem+Sg
@@ -2201,7 +2201,7 @@ Uniun	+Prop
 europeica	+Adj+Fem+Sg
 .	+Sent
 
-Sulettamain	+Adj^DB+Adv
+Sulettamain	+Adv
 en	+Prep
 il	+Art+Masc+Sg
 sid	+Noun+Masc+Sg
@@ -2215,7 +2215,7 @@ in	+Art+Masc+Sg
 auter	+Adj+Masc+Sg
 stadi	+Noun+Masc+Sg
 ,	+CM
-numnadamain	+Adj^DB+Adv
+numnadamain	+Adv
 cun	+Prep
 la	+Art+Fem+Sg
 Germania	+Prop
@@ -2271,7 +2271,7 @@ che	+Subj
 quest	+Pron+Dem+Masc+Sg
 territori	+Noun+Masc+Sg
 appartegneva	+Verb+ImpInd+3P+Sg
-temporarmain	+Adj^DB+Adv
+temporarmain	+Adv
 a	+Prep
 la	+Art+Fem+Sg
 Germania	+Prop
@@ -2590,7 +2590,7 @@ Danemarc	+Prop
 è	+Verb+PresInd+3P+Sg
 vegnida	+Verb+PastPart+Fem+Sg
 furmada	+Verb+PastPart+Fem+Sg
-essenzialmain	+Adj^DB+Adv
+essenzialmain	+Adv
 da	+Prep
 las	+Art+Fem+Pl
 epocas	+Noun+Fem+Pl
@@ -2763,7 +2763,7 @@ situadas	+Adj+Fem+Pl
 davantvart	+Adv
 ha	+Verb+PresInd+3P+Sg
 conturas	+Noun+Fem+Pl
-relativamain	+Adj^DB+Adv
+relativamain	+Adv
 gulivas	+Adj+Fem+Pl
 ed	+Conj
 è	+Verb+PresInd+3P+Sg
@@ -2888,7 +2888,7 @@ taglia	+Verb+PresInd+3P+Sg
 il	+Art+Masc+Sg
 Jutland	+Prop
 quasi	+Adv
-cumplettamain	+Adj^DB+Adv
+cumplettamain	+Adv
 dal	+Prep^|+Art+Masc+Sg
 vest	+Noun+Masc+Sg
 a	+Prep
@@ -3032,7 +3032,7 @@ al	+Prep^|+Art+Masc+Sg
 Current	+Prop
 dal	+Prep^|+Art+Masc+Sg
 Golf	+Prop
-respectivamain	+Adj^DB+Adv
+respectivamain	+Adv
 al	+Prep^|+Art+Masc+Sg
 Current	+Prop
 da	+Prep
@@ -3075,7 +3075,7 @@ societad	+Noun+Fem+Sg
 danaisa	+Adj+Fem+Sg
 è	+Verb+PresInd+3P+Sg
 urbanisada	+Verb+PastPart+Fem+Sg
-fermamain	+Adj^DB+Adv
+fermamain	+Adv
 .	+Sent
 
 Varga	+Adv
@@ -3150,7 +3150,7 @@ las	+Art+Fem+Pl
 scaluttas	+Noun+Fem+Pl
 preistoricas	+Adj+Fem+Pl
 (	+Punc+Beg
-probablamain	+Adj^DB+Adv
+probablamain	+Adv
 dal	+Prep^|+Art+Masc+Sg
 temp	+Noun+Masc+Sg
 da	+Prep
@@ -3434,7 +3434,7 @@ Baselgia	+Prop
 
 Gliz	+Prop
 :	+Punc+End
-medemamain	+Adj^DB+Adv
+medemamain	+Adv
 situà	+Verb+PastPart+Masc+Sg
 en	+Prep
 direcziun	+Noun+Fem+Sg
@@ -3954,7 +3954,7 @@ dal	+Prep^|+Art+Masc+Sg
 tschientaner	+Noun+Masc+Sg
 .	+Sent
 
-Medemamain	+Adj^DB+Adv
+Medemamain	+Adv
 ina	+Art+Fem+Sg
 donaziun	+Noun+Fem+Sg
 è	+Verb+PresInd+3P+Sg
@@ -4048,7 +4048,7 @@ oz	+Adv
 I	+Pron+Pers+Nom+3P+MF+Sg
 sa	+Pron+Refl+AccDat+Aton+3P+MF+Sg
 chapescha	+Verb+PresInd+3P+Sg
-atgnamain	+Adj^DB+Adv
+atgnamain	+Adv
 da	+Prep
 sez	+Pron+Refl+AccDat+Ton+3P+MF+Sg
 che	+Subj
