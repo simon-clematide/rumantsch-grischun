@@ -10,14 +10,12 @@ acquistabel
 admirabel
 admissibel
 adumbatten
-schlamper
 affabel
 agreabel
 aiver
 aleman
 alienabel
 allegher
-legher
 allegraivel
 allontanabel
 alpester
@@ -83,7 +81,9 @@ convertibel
 corruptibel
 cotschen
 credibel
+creditaivel
 crettaivel
+cristianaivel
 cristifidaivel
 crititgabel
 crudaivel
@@ -380,7 +380,9 @@ irreversibel
 irrevocabel
 lamentabel
 lavabel
+legher
 legibel
+legraivel
 liber
 lieder
 ludaivel
@@ -391,6 +393,7 @@ magher
 magnetisabel
 maladester
 malamiaivel
+malchapaivel
 malchapibel
 malcrettaivel
 malcumadaivel
@@ -408,6 +411,7 @@ malsagidaivel
 malsanadaivel
 malservetschaivel
 maltransibel
+malundraivel
 manaivel
 mangiabel
 manidel
@@ -669,6 +673,7 @@ sanadaivel
 sbassabel
 sbittaivel
 scalabel
+schlamper
 schlargiabel
 schliabel
 schuber
