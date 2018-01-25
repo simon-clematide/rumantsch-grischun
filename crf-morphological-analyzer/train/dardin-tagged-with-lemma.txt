@@ -36,7 +36,7 @@ las	il+Art+Def+Fem+Pl
 scaluttas	scalutta+Noun+Fem+Pl
 preistoricas	preistoric+Adj+Fem+Pl
 (	(+Punc+Beg
-probablamain	probabel+Adj^DB+Adv
+probablamain	probablamain+Adv
 dal	da+Prep^|+Art+Def+Masc+Sg
 temp	temp+Noun+Masc+Sg
 da	da+Prep
@@ -323,7 +323,7 @@ Baselgia	Baselgia+Prop
 
 Gliz	Gliz+Prop
 :	:+Punc+End
-medemamain	medem+Adj^DB+Adv
+medemamain	medemamain+Adv
 situà	situar+Verb+PastPart+Masc+Sg
 en	en+Prep
 direcziun	direcziun+Noun+Fem+Sg
@@ -335,7 +335,7 @@ da	da+Prep
 communicaziun	communicaziun+Noun+Fem+Sg
 Breil-Schlans	Breil-Schlans+Prop
 ,	,+CM
-gist	gist+Adj+Sup^DB+Adv
+gist	gist+Adv
 sper	sper+Prep
 Capeder	Capeder+Prop
 .	.+Sent
