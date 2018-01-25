@@ -425,7 +425,7 @@ ni	+Adv
 terminada	+Verb+PastPart+Fem+Sg
 ni	+Adv
 regulada	+Verb+PastPart+Fem+Sg
-cleramain	+Adj^DB+Adv
+cleramain	+Adv
 .	+Sent
 
 D’	+Prep
