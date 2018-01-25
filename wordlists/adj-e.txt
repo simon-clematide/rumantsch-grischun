@@ -1,3 +1,6 @@
+giuvenin
+vallader
+tschientupel
 abel
 abitabel
 abominabel
@@ -10,9 +13,13 @@ acquistabel
 admirabel
 admissibel
 adumbatten
+raffader
+vegliander
+proper
 affabel
 agreabel
 aiver
+aleman
 alienabel
 allegher
 allegraivel
@@ -411,6 +418,7 @@ negoziabel
 nettegiabel
 nizzaivel
 nobel
+nonupel
 numnabel
 nunaccessibel
 nunamicabel
@@ -522,6 +530,7 @@ nunviolabel
 nunvisabel
 nuschaivel
 obedaivel
+octupel
 onuraivel
 oraifer
 orribel
@@ -577,6 +586,7 @@ punibel
 purtabel
 pussaivel
 pussibel
+quadrupel
 qualifitgabel
 quantavel
 quantifitgabel
@@ -630,9 +640,11 @@ scolabel
 semipermeabel
 sensibel
 separabel
+septupel
 sequestrabel
 serrabel
 servetschaivel
+sextupel
 sfurzabel
 sgarschaivel
 sisavel
@@ -686,6 +698,7 @@ translatabel
 translocabel
 transmissibel
 transportabel
+tripel
 tschainsibel
 tschientavel
 turbel
@@ -701,6 +714,7 @@ vardaivel
 variabel
 vendibel
 venerabel
+ventgupel
 ventiraivel
 verifitgabel
 veritabel

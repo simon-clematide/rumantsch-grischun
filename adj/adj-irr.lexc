@@ -27,14 +27,14 @@ LEXICON Root
 		lartg:largias				FEM_PLURAL;
 		lartg:larg					SUPERLATIVE;
 ! apostrophated feminie forms
-		bun:bun'					FEM_SG_APOSTROPHATED;
-		mal:mal'					FEM_SG_APOSTROPHATED;
-		bel:bell'					FEM_SG_APOSTROPHATED;
-		trid:trid'					FEM_SG_APOSTROPHATED;
-		nausch:nausch'				FEM_SG_APOSTROPHATED;
-		mez:mes'					FEM_SG_APOSTROPHATED;
-		agen:atgn'					FEM_SG_APOSTROPHATED;
-		aut:aut'					FEM_SG_APOSTROPHATED;
+		bun:bun'					FEM_SG_APOSTROPH;
+		mal:mal'					FEM_SG_APOSTROPH;
+		bel:bell'					FEM_SG_APOSTROPH;
+		trid:trid'					FEM_SG_APOSTROPH;
+		nausch:nausch'				FEM_SG_APOSTROPH;
+		mez:mes'					FEM_SG_APOSTROPH;
+		agen:atgn'					FEM_SG_APOSTROPH;
+		aut:aut'					FEM_SG_APOSTROPH;
 		
 LEXICON MASC_SINGULAR
 		+Adj+Masc+Sg:0				#;
@@ -54,5 +54,5 @@ LEXICON SUPERLATIVE
 		+Adj+Sup+Fem+Sg:ischma		#;
 		+Adj+Sup+Fem+Pl:ischmas		#;
 
-LEXICON FEM_SG_APOSTROPHATED
-		+Adj+Fem+Sg+Apo:0				#;
+LEXICON FEM_SG_APOSTROPH
+		+Adj+Fem+Sg+Apo:0			#;

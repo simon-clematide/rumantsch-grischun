@@ -60,6 +60,7 @@ bilateral
 biogen
 biologic
 bipolar
+blau
 bler
 brav
 brin
@@ -348,6 +349,7 @@ linguistic
 liss
 litterar
 loial
+lom
 lontan
 lunar
 lung

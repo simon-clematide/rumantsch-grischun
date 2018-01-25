@@ -4,3 +4,8 @@ marvegl
 satigl
 trugl
 vegl
+uniling
+multiling
+pluriling
+beltg
+chavortg

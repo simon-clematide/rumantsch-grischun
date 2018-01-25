@@ -79,12 +79,19 @@ define DoublingSup  [DoubStems Label "+Sup" Genus Numerus];
 define DoublingLex [DoublingMasc|DoublingFem|DoublingSup];
 
 
-#  i-Einfügung in Feminin bei -gl Endung
+#  i-Einfügung in Feminin bei -gl Endung und u-Einfügung in Feminin bei -ling
 define GlStems @txt"wordlists/adj-glia.txt";
 
-define IInsertion [	[..] -> {i} || _ .#. ] ;
+# For -gl adjectives
+define IInsertionR1 [	[..] -> {i} || {gl} _ .#. ] ;
+# For -tg adjectives
+define IInsertionR2 [	{tg} -> {gi} ||  _ .#. ] ;
 
-define GliStems [GlStems .o. IInsertion];
+define IInsertion [ IInsertionR1 .o. IInsertionR2 ];
+# For -ling adjectives
+define UInsertion [	[..] -> {u} || {ling} _ .#. ] ;
+
+define GliStems [GlStems .o. IInsertion .o. UInsertion];
 
 #  Anhängung der entsprechenden Tags
 define GlMasc [GlStems Label "+Masc" Numerus];
@@ -121,6 +128,7 @@ define Regular [RegLex .o. RegRules .o. Cleanup];
 # von der regelmässigen Bildung abweichenden Flektierungen. "el" wird zu "la", "er" wird zu "ra"
 # "en" wird zu "na". Die Bildung des Plurals erfolgt wie bei der regelmässigen Form durch das
 # Hinzufügen eines -s am Ende der Singular-Form. Diese Worte wurden in der Datei adj-e.txt hinterlegt.
+# -ling => -lingua
 #
 # Eine besondere Behandlung erfolgt für Worte die auf -scal enden. Diese Endung wird zu -scla in der weiblichen Form.
 # Beispiel: viscal (masc./sing.) -> viscla (masc./sing.). Auch diese Wörter wurden in der zugehörigen Datei eingefügt. 
@@ -137,6 +145,7 @@ define FleStems ;
 
 # Special Cases
 define VowelDrop1 [
+	{giuvenin} -> {giuvnin} || _ .#. ,,
 	{bbe}  -> b  || _ [l|n|r] .#. ,,
 	{cche} -> c  || _ [l|n|r] .#. ,,
 	{che}  -> c  || \[s] _ [l|n|r] .#. ,,

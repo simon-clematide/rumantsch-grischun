@@ -9,7 +9,7 @@ Multichar_Symbols +Adj +Masc +Fem +Sg +Pl +Comp
 
 LEXICON Root
 		bun+Adj+Comp+Masc:meglier	NUMERUS;
-		bun+Adj+Comp+Fem:meglr		NUMERUS;
+		bun+Adj+Comp+Fem:meglra		NUMERUS;
 		mal:pir						LABELS;
 		nausch+Adj+Comp+Masc:mender		NUMERUS;
 		nausch+Adj+Comp+Fem:menda		NUMERUS;
