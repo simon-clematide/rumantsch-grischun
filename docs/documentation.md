@@ -251,9 +251,9 @@ Die Integration der Adjektive findet in `adj/adj.xfst` statt. Es wird eine Aufte
 Wie regelmässige Adjektive (wie *calm – calma*) werden auch die Adjektive mit Konsonantenverdoppelung vor der femininen Endung (wie *brut – brutta*) und Adjektive mit flüchtigem Vokal (wie *liber – libra*) behandelt. Durch eine vorausgehende Behandlung können alle schliesslich wie regelmässige Adjektive behandelt werden. Die drei Adjektivuntergruppen sind in folgenden Dateien aufgelistet:
 
   * `wordlists/adj-reg.txt` für die ganz regelmässigen Adjektive. Diese Liste sollte erweitert werden.
-  * `wordlists/asj-doubling.txt` für die Adjektive mit Konsonantenverdopplung. Diese Liste sollte erweitert werden.
-  * `wordlists/adj-e.txt` für die Adjektive mit flüchtigem Vokal.
-  * `wordlists/adj-glia.txt` für Adjektive mit i-Einfügung in der femininen Form
+  * `wordlists/asj-doubling.txt` für die Adjektive mit Konsonantenverdopplung. Diese Liste wurde mit Pledari-Grond abgeglichen, insofern dort spezielle Annotation zur femininen Form vorhanden sind.
+  * `wordlists/adj-e.txt` für die Adjektive mit flüchtigem Vokal oder weiteren Besonderheiten im Zusammenhang mit dem Laut e.
+  * `wordlists/adj-glia.txt` für Adjektive mit i- oder u-Einfügung in der femininen Form (*multiling*)
 
 
 #### 6.1.2 Adjektive mit Partizipendung
