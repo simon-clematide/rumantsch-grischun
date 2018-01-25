@@ -60,6 +60,7 @@ alarmant
 alcalic
 alcoholic
 aleatoric
+alexandrin
 alfabetic
 alfanumeric
 alifatic
@@ -98,6 +99,7 @@ andalus
 andant
 andetg
 andragogic
+androgin
 anecdotic
 anemic
 anerobic
@@ -175,6 +177,7 @@ approvant
 approximativ
 apsidial
 aptic
+aquamarin
 aquatic
 arameic
 arbitrar
@@ -185,6 +188,7 @@ architectonic
 archivaric
 arctic
 ardent
+argentin
 argumental
 argumentativ
 aric
@@ -206,6 +210,7 @@ artisanal-industrial
 artistic
 ascendent
 ascetic
+aschin
 asclepiadeic
 ascorbic
 aserbeidschanic
@@ -216,6 +221,7 @@ asmatic
 asocial
 aspectativ
 asper
+assassin
 assimilatoric
 associativ
 astrologic
@@ -241,6 +247,7 @@ audiovisual
 auditiv
 austral
 aut
+autalpin
 autarchic
 autentic
 autmedieval
@@ -275,6 +282,7 @@ bacterial
 bacteriologic
 bacteriostatic
 bagliaffus
+bainplain
 bainstant
 bainvegnent
 bainvis
@@ -295,6 +303,7 @@ bass
 baterlus
 baud
 belletristic
+bellin
 belmus
 benefizient
 bengal
@@ -320,6 +329,7 @@ birocratic
 bisexual
 bituminus
 bivalent
+bizantin
 blasfemic
 blau
 blau-atschal
@@ -329,6 +339,7 @@ bloccant
 bolschevic
 boreal
 botanic
+bovin
 brachial
 bragialent
 bragint
@@ -360,6 +371,7 @@ buttanus
 buttatschus
 buttunus
 cabarettistic
+calanchin
 caldeic
 calligrafic
 calm
@@ -405,6 +417,7 @@ celestial
 celtic
 celtoilliric
 central
+centralalpin
 centralistic
 centric
 centrifugal
@@ -417,11 +430,13 @@ chajus
 chalendar
 chaltschinus
 chamegiant
+chanin
 chantunal
 chapital
 chapitalistic
 chaprizius
 char
+charin
 charnal
 charnus
 chastiant
@@ -451,10 +466,12 @@ circulant
 cirillic
 cirquital
 cistic
+citadin
 citologic
 civic
 civil
 civil-statal
+civilin
 clandestin
 classic
 classicistic
@@ -521,6 +538,7 @@ congruent
 conic
 conjugal
 conjunctural
+consanguin
 conscient
 conscienzius
 consecutiv
@@ -532,6 +550,7 @@ consistent
 consorzial
 conspirativ
 constant
+constantin
 constituent
 constituziunal
 constructiv
@@ -581,6 +600,7 @@ cridulent
 criminal
 criptic
 criptografic
+cristallin
 cristcatolic
 cristiandemocratic
 cristiansocial
@@ -762,6 +782,7 @@ ditg
 divergent
 divers
 divertent
+divin
 divisiunistic
 doctrinal
 dogmatic
@@ -776,6 +797,7 @@ dramaturgic
 drastic
 dualistic
 dubius
+dultschin
 durant
 ebraic
 ecclesiastic
@@ -832,6 +854,7 @@ encletg
 enclitic
 enconuschent
 endemic
+endocrin
 endogen
 energetic
 energic
@@ -853,6 +876,7 @@ envers
 epic
 epidemic
 epidemiologic
+epigin
 epigrammatic
 episcopal
 episodic
@@ -871,6 +895,7 @@ erotic
 erratic
 eruptiv
 ervus
+erzegovin
 escapistic
 escatologic
 esitant
@@ -923,6 +948,7 @@ exenzial
 exigent
 existent
 existenzial
+exocrin
 exorbitant
 exotic
 expansiv
@@ -980,6 +1006,7 @@ favugnus
 federal
 federalistic
 federativ
+feminin
 feministic
 fenologic
 fenomenal
@@ -998,12 +1025,14 @@ figurativ
 filantropic
 filarmonic
 filatelistic
+filippin
 filistrus
 filmic
 filogenetic
 filologic
 filosofic
 filus
+fin
 final
 finanzial
 fiscal
@@ -1083,9 +1112,11 @@ generativ
 generic
 generus
 genetic
+genevrin
 genital
 geniturial
 gentil
+genuin
 geocentric
 geochemic
 geodetic
@@ -1105,12 +1136,14 @@ geriatric
 gerontologic
 gesuitic
 ghignus
+giacubin
 giagliard
 giaschent
 giaudaholic
 giavinant
 gigant
 gigantic
+gigin
 gimnasial
 gimnastic
 giovial
@@ -1326,6 +1359,7 @@ intellectual
 intelligent
 intensiv
 interactiv
+interalpin
 intercedent
 interchantunal
 intercommunal
@@ -1384,6 +1418,7 @@ ionisant
 iperactiv
 iperprofessiunal
 ipertextual
+ipogin
 ipotecar
 ipotetic
 ironic
@@ -1395,6 +1430,7 @@ irrelevant
 irreligius
 irreverent
 irritant
+isabellin
 islamic
 islamistic
 isogonal
@@ -1420,6 +1456,7 @@ kurpic
 labial
 laconic
 lactant
+ladin
 laic
 laicistic
 lainus
@@ -1429,6 +1466,7 @@ lasciv
 lastic
 latent
 lateral
+latin
 lativ
 launus
 lavurus
@@ -1439,6 +1477,7 @@ legislativ
 leprus
 lesbic
 letargic
+levin
 lexical
 lexicografic
 lexicologic
@@ -1477,6 +1516,7 @@ logopedic
 logoterapeutic
 loial
 lom
+lomin
 longitudinal
 lontan
 lucrativ
@@ -1530,6 +1570,7 @@ manual
 manzegnus
 marcant
 marginal
+marin
 mariologic
 marmugnus
 marnus
@@ -1538,6 +1579,7 @@ marv
 marxistic
 marzial
 maschinal
+masculin
 masochistic
 massiv
 matematic
@@ -1545,6 +1587,7 @@ material
 materialistic
 maternal
 matrimonial
+matutin
 mauric
 maximal
 mecanic
@@ -1573,6 +1616,7 @@ mercenaric
 meridiunal
 meritocratic
 merovingic
+meskin
 mess
 metabolic
 metacognitiv
@@ -1610,6 +1654,7 @@ minuzius
 miraculus
 mirveglius
 misantropic
+misogin
 misterius
 mistic
 mitic
@@ -1627,6 +1672,7 @@ monetar
 mongolic
 monocentric
 monociclic
+monocristallin
 monofasal
 monogeniturial
 monografic
@@ -1635,6 +1681,7 @@ monopolistic
 monosillabic
 monovalent
 monstrus
+montenegrin
 monumental
 moral
 moralisant
@@ -1660,6 +1707,7 @@ multiplicativ
 multisectorial
 mundial
 municipal
+muntagnard
 muntagnus
 mural
 murdent
@@ -1668,6 +1716,7 @@ museal
 musical
 musivic
 muslimic
+mussagnin
 mutschignus
 nairent
 naìv
@@ -1691,6 +1740,7 @@ negatoric
 negligent
 neoclassicistic
 neogotic
+neolatin
 neolitic
 neomedieval
 nepotistic
@@ -1854,6 +1904,7 @@ osmanic
 osmotic
 ospital
 ospitant
+ostalpin
 ostentativ
 osteologic
 ostrogotic
@@ -1942,6 +1993,7 @@ peremtoric
 perencletg
 perfurant
 periclitant
+perifer
 periferic
 periodic
 peritonal
@@ -1977,8 +2029,11 @@ pirenaic
 pirotecnic
 pitagoreic
 pitgiv
+pitschnin
+pittin
 piztgant
 placativ
+plain
 planisatoric
 planiv
 planori
@@ -2009,6 +2064,7 @@ pointillistic
 polar
 polemic
 policiclic
+policristallin
 polifonic
 poligonal
 poligonometric
@@ -2039,6 +2095,7 @@ potent
 potenzial
 pragmatic
 pratic
+prealpin
 precar
 precedent
 precipitant
@@ -2377,9 +2434,11 @@ sepulcral
 sequent
 sequenzial
 serafic
+serain
 serial
 serius
 serpegiant
+serpentin
 sesent
 setg
 settentriunal
@@ -2433,10 +2492,12 @@ sintetic
 sintomatic
 sintonic
 siric
+siro-palestin
 sistematic
 sistemic
 sitg
 situativ
+sixtin
 sloven
 smanatschant
 smers
@@ -2543,6 +2604,7 @@ studentic
 stupent
 sturn
 suandant
+subalpin
 subarctic
 subclinic
 subconscient
@@ -2608,6 +2670,7 @@ suspais
 suspectus
 suspensiv
 suspirant
+sutmarin
 sutproporziunal
 suttapost
 svapurant
@@ -2727,6 +2790,8 @@ tschantschus
 tschessant
 tschetschen
 tschientenar
+tschuberlin
+tuatschin
 tuberculus
 tubulus
 tuffalent
@@ -2845,6 +2910,7 @@ vulgar
 workaholic
 xerografic
 xilografic
+zaclin
 zähringic
 zaidlus
 zaristic
