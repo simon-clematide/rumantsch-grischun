@@ -172,6 +172,8 @@ define FleLex [FleMasc|FleFem|FleSup];
 # Endgültige Definition
 define Fleeing [FleLex .o. RegRules .o. Cleanup];
 
+
+
 ################################################################################
 # Adjektive mit Partizip-Endung
 ################################################################################
@@ -229,6 +231,19 @@ define Partizip [ParLex .o. ParRules .o. Cleanup];
 read text < wordlists/adj-inv.txt
 define InvStems;
 define Invariable [InvStems Label Genus Numerus] .o. Cleanup ;
+
+
+################################################################################
+#
+# Abspeichern der regulären weiblichen Singularformen für die reguläre Adverbialbildung
+#
+################################################################################
+
+define RegularAdjFemSgPos [[ [$["+Fem" "+Sg"] - $["+Sup"]] .o. [Regular|Fleeing]].l];
+
+read regex RegularAdjFemSgPos ;
+save stack fstbinaries/RegularAdjFemSgPos.fst
+clear stack
 
 ################################################################################
 # Integration möglicher Formen, die wegen der Endungen Adjektive sein könnten.

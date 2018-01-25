@@ -26,7 +26,8 @@ define AdvVokal [a|e|i|o|u|y|à|è|ì|ò|ù|é|ó];
 define AdvKonsonant  [b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|z];
 define Letter [AdvVokal|AdvKonsonant];
 
-define AdjAdvLabels [ ["+Adj" [0|"+Sup"] "^DB" "+Adv"] ] ;
+#define AdjAdvLabels [ ["+Adj" [0|"+Sup"] "^DB" "+Adv"] ] ;
+define AdjAdvLabels [ "+Adv" ] ;
 
 define AdjAdvLabelDeleter [ ["+Adj"|"+Adv"|"+Comp"|"+Sup"|"^DB"] -> 0 ] ;
 
@@ -83,7 +84,7 @@ define NonDoublingLex [NonDoublingStems AdjAdvLabels];
 # Alle regelmässigen Adjektive mit Tags
 define RegLex [NonDoublingLex|DoublingLex];
 
-define AdvReg [RegLex .o. RegRules .o. AdjAdvLabelDeleter];
+define AdvReg [ [RegLex "@A" {main} ] .o. RegRules .o. AdjAdvLabelDeleter];
 
 
 # 1.2 Bildung der Adverbien aus Adjektiven mit flüchtigem Vokal
@@ -128,7 +129,12 @@ define VowelDrop [VowelDrop1 .o. VowelDrop2];
 define FleLex [[FleStems .o. VowelDrop] AdjAdvLabels];
 
 # 1.2.3 Definition (Anhänung der Endungen)
-define AdvE [FleLex .o. RegRules .o. AdjAdvLabelDeleter];
+define AdvE [ [FleLex "@A" {main} ] .o. RegRules .o. AdjAdvLabelDeleter];
+
+
+
+define RegularAdjFemSgPos [@"fstbinaries/RegularAdjFemSgPos.fst" ];
+define AdvE [RegularAdjFemSgPos .o. [a -> 0 || AdvVokal AdvKonsonant Letter* [{al}|{ar}|{il}] _ ]].u {main} "+Adv":0 ;
 
 
 # 1.3 Bildung der Adverbien aus Adjektiven mit Parizipendung
@@ -146,8 +152,9 @@ define PartEnd [[{à} -> {ad}] .o. [{ì} -> {id}]];
 define PartLex [[PartStems .o. PartEnd] AdjAdvLabels];
 
 # 1.3.3 Definition (Anhänung der Endungen)
-define AdvPart [PartLex .o. RegRules .o. AdjAdvLabelDeleter];
+define AdvPart [ [ PartLex "@A" {main} ].o. RegRules .o. AdjAdvLabelDeleter];
 
+define AdvPart [ [PartStems .o. PartEnd].l {amain} "+Adv":0 ];
 
 # 1.4 Bildung der Adverbien aus unveränderlichen Adjektiven
 ################################################################################
@@ -225,7 +232,8 @@ define PrtNeg [ PrtNegStems ["+Prt" "+Neg"]:0 ] ;
 #                                                                              #
 ################################################################################
 
-define Adverb [ PrtNeg | AdvShort | AdvAdjMasc | [ AdvIrr .P. [ AdvReg | AdvE | AdvPart] ] ];
+#define Adverb [ PrtNeg | AdvShort | AdvAdjMasc | [ AdvIrr .P. [ AdvReg | AdvE | AdvPart] ] ];
+define Adverb [ PrtNeg | AdvShort | AdvAdjMasc | [ AdvIrr .P. [ AdvE | AdvPart] ] ];
 
 read regex Adverb ;
 save stack fstbinaries/Adverb.fst
