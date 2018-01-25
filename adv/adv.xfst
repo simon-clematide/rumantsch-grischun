@@ -26,41 +26,12 @@ define AdvVokal [a|e|i|o|u|y|à|è|ì|ò|ù|é|ó];
 define AdvKonsonant  [b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|z];
 define Letter [AdvVokal|AdvKonsonant];
 
+define AdvADeletionRule [a -> 0 || AdvVokal AdvKonsonant Letter* [{al}|{ar}|{il}] _ ];
+
 #define AdjAdvLabels [ ["+Adj" [0|"+Sup"] "^DB" "+Adv"] ] ;
 define AdjAdvLabels [ "+Adv" ] ;
 
 define AdjAdvLabelDeleter [ ["+Adj"|"+Adv"|"+Comp"|"+Sup"|"^DB"] -> 0 ] ;
-
-
-
-# 1.1 Bildung der Adverbien aus regelmässigen Adjektiven
-################################################################################
-
-# Adjektive ohne Verdopplung des Endkonsonanten
-read text wordlists/adj-reg.txt
-define NonDoublingStems ;
-
-# Adjektive mit Verdopplung des Endkonsonanten
-read text wordlists/adj-doubling.txt
-define DoublingStems ;
-
-# 1.1.1 Bei akzentuiertem Vokal vor einem Konsonanten am Ende der männlichen
-# Form kommt es dabei zu einer Verdoppelung dieses Konsonanten für die weibliche
-# Form, und deshalb wiederum für das Adverb.
-
-define Doubling [
-	b -> {bb} || _ .#. ,, 
-	c -> {cc} || _ .#. ,, 
-	d -> {dd} || _ .#. ,,
-	f -> {ff} || _ .#. ,,
-	g -> {gg} || _ .#. ,,
-	l -> {ll} || _ .#. ,,
-	m -> {mm} || _ .#. ,,
-	n -> {nn} || _ .#. ,,
-	p -> {pp} || _ .#. ,,
-	r -> {rr} || _ .#. ,,
-	t -> {tt} || _ .#. ,,
-	z -> {zz} || _ .#.];
 
 # 1.1.2 Regelmässige Adverbien werden gebildet, indem der Suffix -main an die 
 #       weibliche Form des Adjektivs angehängt wird. Endet das Adjektiv auf 
@@ -74,87 +45,28 @@ define R3 ["@A" -> a ];
 define R4 [[. .] -> "@H" {ischem} || _ "+Adj" [$["+Sup"]]];
 define RegRules [R1 .o. R2 .o. R3 .o. R4];
 
-
-# 1.1.3 Definition
-
-# Anhängung der entsprechenden Tags
-define DoublingLex [[DoublingStems .o. Doubling] AdjAdvLabels];
-define NonDoublingLex [NonDoublingStems AdjAdvLabels];
-
-# Alle regelmässigen Adjektive mit Tags
-define RegLex [NonDoublingLex|DoublingLex];
-
-define AdvReg [ [RegLex "@A" {main} ] .o. RegRules .o. AdjAdvLabelDeleter];
-
-
-# 1.2 Bildung der Adverbien aus Adjektiven mit flüchtigem Vokal
+# 1.1 Bildung der Adverbien aus regelmässigen Adjektiven und solchen mit flüchtigem Vokal
 ################################################################################
-
-# Erstellen der Wortliste
-read text wordlists/adj-e.txt
-define FleStems ;
-
-# 1.2.1 Wenn die männliche Form mit -en, -el oder -er endet, verliert die 
-#       weiblichen Form das "e" dieser Endung (VowelDrop2). Zuvor werden 
-#       ortographische Besonderheiten für die Adjektive allegher, mellen, 
-#       viscal, stanchel, svizzer behandelt (VowelDrop1).
-
-define VowelDrop1 [
-	{bbe}  -> b  || _ [l|n|r] .#. ,,
-	{cche} -> c  || _ [l|n|r] .#. ,,
-	{che}  -> c  || \[s] _ [l|n|r] .#. ,,
-	{sca}  -> {sc} || _ [l|n|r] .#. ,,
-	{sche} -> {sch} || _ [l|n|r] .#. ,,
-	{dde}  -> d  || _ [l|n|r] .#. ,,
-	{ffe}  -> f  || _ [l|n|r] .#. ,,
-	{gghe} -> g  || _ [l|n|r] .#. ,,
-	{ghe}  -> g  || _ [l|n|r] .#. ,,
-	{glie} -> {gl} || _ [n|r]   .#. ,,
-	{lle}  -> l  || _ [n|r]   .#. ,,
-	{mme}  -> m  || _ [l|n|r] .#. ,,
-	{nne}  -> n  || _ [l|r]   .#. ,,
-	{nne}  -> n  || _ [l|r]   .#. ,,
-	{ppe}  -> p  || _ [l|n|r] .#. ,,
-	{rre}  -> r  || _ [l|n]   .#. ,,
-	{tte}  -> t  || _ [l|n|r] .#. ,,
-	{zze}  -> z  || _ [l|n|r] .#. ];
-
-define VowelDrop2 [ e -> 0 || AdvKonsonant _ [l|n|r] .#. ];
-
-# Collected
-define VowelDrop [VowelDrop1 .o. VowelDrop2];
-
-# 1.2.2 Bildung des Stammes für die Adverbform und Anhängung der entsprechenden
-# Tags
-define FleLex [[FleStems .o. VowelDrop] AdjAdvLabels];
-
-# 1.2.3 Definition (Anhänung der Endungen)
-define AdvE [ [FleLex "@A" {main} ] .o. RegRules .o. AdjAdvLabelDeleter];
-
-
+# Formen werden von der Adjektivflexion bereitgestellt.
+# Alle regulären femininen Formen im Singular.
+################################################################################
 
 define RegularAdjFemSgPos [@"fstbinaries/RegularAdjFemSgPos.fst" ];
-define AdvE [RegularAdjFemSgPos .o. [a -> 0 || AdvVokal AdvKonsonant Letter* [{al}|{ar}|{il}] _ ]].u {main} "+Adv":0 ;
+
+define AdvE [RegularAdjFemSgPos .o. AdvADeletionRule].l {main} "+Adv":0 ;
 
 
-# 1.3 Bildung der Adverbien aus Adjektiven mit Parizipendung
+# 1.3 Bildung der Adverbien aus Adjektiven mit Partizipendung
 ################################################################################
 
-# Erstellen der Wortliste
+# Einlesen der Wortliste
 read text wordlists/adj-part.txt
 define PartStems ;
 
 # 1.3.1 Ersetzen der Endung -à/-ì um danach regelmässig weiterzufahren
-define PartEnd [[{à} -> {ad}] .o. [{ì} -> {id}]];
+define PartEnd [{à} -> {ad}, {ì} -> {id} || _ .#.];
 
-# 1.3.2 Bildung des Stammes für die Adverbform und Anhängung der entsprechenden
-# Tags
-define PartLex [[PartStems .o. PartEnd] AdjAdvLabels];
-
-# 1.3.3 Definition (Anhänung der Endungen)
-define AdvPart [ [ PartLex "@A" {main} ].o. RegRules .o. AdjAdvLabelDeleter];
-
-define AdvPart [ [PartStems .o. PartEnd].l {amain} "+Adv":0 ];
+define AdvPart [ [PartStems .o. PartEnd].l a {main} "+Adv":0 ];
 
 # 1.4 Bildung der Adverbien aus unveränderlichen Adjektiven
 ################################################################################
@@ -184,16 +96,18 @@ define AdvIrr ;
 # 1.7 Bildung der Adverbien aus Adjektiven, bei denen die männliche Form auch
 #     ein Adverb sein kann:
 ################################################################################
+# NOT USED ANYMORE; 
+# Sind jetzt entweder in adv-short.txt oder in adv-irr.lexc
+#
+#read text < wordlists/adv-adj.txt
+#define AdvAdjMascStems ;
 
-read text < wordlists/adv-adj.txt
-define AdvAdjMascStems ;
-
-define AdvAdjMascLex [ AdvAdjMascStems AdjAdvLabels ] ;
+#define AdvAdjMascLex [ AdvAdjMascStems AdjAdvLabels ] ;
 
 
 # 1.7.1 Definition
 
-define AdvAdjMasc [ AdvAdjMascLex .o. AdjAdvLabelDeleter ] ;
+#define AdvAdjMasc [ AdvAdjMascLex .o. AdjAdvLabelDeleter ] ;
 
 
 ################################################################################
@@ -219,10 +133,12 @@ define AdvShort [ AdvShortStems "+Adv":0 ] ;
 
 # 2b. Einlesen der Negationspartikel
 ###############################################################################
-read text < wordlists/prt-neg.txt
-define PrtNegStems ;
 
-define PrtNeg [ PrtNegStems ["+Prt" "+Neg"]:0 ] ;
+define PrtNegStems [ {na}]|{betg}|{nun}];
+define PrtNegApoStems [ {n'}];
+
+define PrtNeg [ PrtNegStems ["+Prt" "+Neg"]:0 
+			  | PrtNegStems ["+Prt" "+Neg" "+Apo"]:0 ] ;
 
 
 
@@ -232,8 +148,7 @@ define PrtNeg [ PrtNegStems ["+Prt" "+Neg"]:0 ] ;
 #                                                                              #
 ################################################################################
 
-#define Adverb [ PrtNeg | AdvShort | AdvAdjMasc | [ AdvIrr .P. [ AdvReg | AdvE | AdvPart] ] ];
-define Adverb [ PrtNeg | AdvShort | AdvAdjMasc | [ AdvIrr .P. [ AdvE | AdvPart] ] ];
+define Adverb [ PrtNeg | AdvShort | [ AdvIrr .P. [ AdvE | AdvPart] ] ];
 
 read regex Adverb ;
 save stack fstbinaries/Adverb.fst

@@ -79,6 +79,7 @@ celtic
 central
 chalendar
 chantunal
+char
 chaud
 chilen
 cirquital
@@ -230,6 +231,7 @@ extragiudizial
 extraordinari
 extravagant
 extrem
+facil
 facultativ
 famigliar
 fanatic
@@ -263,6 +265,7 @@ futur
 garmadi
 general
 genetic
+gentil
 geologic
 giagliard
 gimnasial
@@ -505,6 +508,7 @@ problematic
 procentual
 processual
 professiunal
+profund
 proporziunal
 propost
 propri
@@ -594,6 +598,7 @@ spazial
 specific
 spectacular
 speditiv
+spert
 spezial
 spiertal
 spital

@@ -4,7 +4,7 @@
 ! Author: Reto Baumgartner
 ! Date: June 2013
 
-Multichar_Symbols +Adj +Adv +Sup +Comp ^DB
+Multichar_Symbols +Adv +Sup +Comp
 
 LEXICON Root
 POSITIVE ;
@@ -12,31 +12,41 @@ COMPARATIVE ;
 SUPERLATIVE ;
 
 LEXICON POSITIVE
-agen:atgnamain	PosEnd ;
-bun:bain		PosEnd ;
-bun:bunamain	PosEnd ;
-lartg:largiamain	PosEnd ;
-mez:mesamain	PosEnd ;
+atgnamain	PosEnd ;
+bain	PosEnd ;
+bler	PosEnd ;
+bunamain	PosEnd ;
+largiamain	PosEnd ;
+mesamain	PosEnd ;  ! mez als Adjektiv
+mal	PosEnd ;
+pauc	PosEnd ;
 
 LEXICON COMPARATIVE
-bler:dapli		CompEnd ;
-bun:meglier		CompEnd ;
-mal:pir			CompEnd ;
-nausch:mender	CompEnd ;
-pauc:main		CompEnd ;
-pauc:damain		CompEnd ;
+bler:dapli	CompEnd ;
+bain:meglier	CompEnd ;
+mal:pir	CompEnd ;
+mal:mender	CompEnd ;
+pauc:main	CompEnd ;
+pauc:damain	CompEnd ;
 
 LEXICON SUPERLATIVE
 agen:atgnischem	SupEnd ;
-bun:bunischem	SupEnd ;
-lartg:largischem	SupEnd ;
+bain:bainischem	SupEnd ;
+bain:bunischem	SupEnd ;
+bler:blerischem	SupEnd ;
+largiamain:largischem	SupEnd ;
+mal:malischem	SupEnd ;
 mez:mesischem	SupEnd ;
+nausch:nauschischem	SupEnd ;
+pauc:pauchischem	SupEnd ;
+
 
 LEXICON PosEnd
-+Adj^DB+Adv:0 # ;
++Adv:0	# ;
 
 LEXICON CompEnd
-+Adj+Comp^DB+Adv:0 # ;
++Adv+Comp:0	# ;
 
 LEXICON SupEnd
-+Adj+Sup^DB+Adv:0 # ;
++Adv+Sup:0	# ;
+
