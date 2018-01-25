@@ -55,11 +55,11 @@ i	i	+Pron+Pers+Nom+3P+MF+Sg
 s’	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg+Apo
 auda	udir	+Verb+PresInd+3P+Sg
 ,	,	+CM
-bain	bun	+Adj^DB+Adv
+bain	bun	+Adv
 preparada	preparar	+Verb+PastPart+Fem+Sg
 e	e	+Conj
 cuschinada	cuschinar	+Verb+PastPart+Fem+Sg
-professiunalmain	professiunal	+Adj^DB+Adv
+professiunalmain	professiunalmain	+Adv
 è	esser	+Verb+PresInd+3P+Sg
 la	il	+Art+Def+Fem+Sg
 selvaschina	selvaschina	+Noun+Fem+Sg
@@ -97,6 +97,6 @@ sturnadad	sturnadad	+Noun+Fem+Sg
 bovina	bovin	+Adj+Fem+Sg
 .	.	+Sent
 
-Spezialmain	*spezial	+Adj^DB+Adv
+Spezialmain	*spezialmain	+Adv
 bun	bun	+Adj+Masc+Sg
 :	:	+Sent

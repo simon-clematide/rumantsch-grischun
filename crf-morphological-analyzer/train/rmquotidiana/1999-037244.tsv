@@ -137,7 +137,7 @@ giuvenils	giuvenil	+Noun+Masc+Pl
 Curt	*curt	+Adj+Masc+Sg
 temp	temp	+Noun+Masc+Sg
 pli	pli	+Adv
-tard	tard	+Adj^DB+Adv	# ?
+tard	tard	+Adv
 è	esser	+Verb+PresInd+3P+Sg
 suandà	suandar	+Verb+PastPart+Masc+Sg
 il	il	+Art+Def+Masc+Sg
@@ -268,7 +268,7 @@ a	a	+Prep
 tut	tut	+Pron+Indef+Masc+Sg
 las	il	+Art+Def+Fem+Pl
 brevs	brev	+Noun+Fem+Pl
-persunalmain	persunal	+Adj^DB+Adv
+persunalmain	persunalmain	+Adv
 .	.	+Sent
 
 Il	*il	+Art+Def+Masc+Sg
