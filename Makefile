@@ -55,7 +55,8 @@ fstbinaries/Adjective.fst fstbinaries/AdjectiveGuessing.fst : adj/adj.xfst \
  wordlists/adj-inv.txt
 	$(XFSTCMD) adj/adj.xfst
 
-fstbinaries/Adverb.fst : adv/adv.xfst \
+fstbinaries/Adverb.fst : fstbinaries/Adjective.fst\
+ adv/adv.xfst \
  wordlists/adj-reg.txt \
  wordlists/adj-e.txt \
  wordlists/adj-inv.txt \
