@@ -56,6 +56,7 @@ agroclimatic
 agronimic
 agronomic
 alarmant
+albanais
 alcalic
 alcoholic
 aleatoric
@@ -172,6 +173,7 @@ apologetic
 apopletic
 apostolic
 apparent
+appenzellais
 appetisant
 approvant
 approximativ
@@ -180,6 +182,7 @@ aptic
 aquamarin
 aquatic
 arameic
+aranais
 arbitrar
 arcaic
 archeologic
@@ -246,6 +249,7 @@ audiovisiv
 audiovisual
 auditiv
 austral
+austro-ungarais
 aut
 autalpin
 autarchic
@@ -287,6 +291,8 @@ bainstant
 bainvegnent
 bainvis
 bainvulent
+balcanais
+balinais
 ballantschant
 ballistic
 balluccant
@@ -299,14 +305,17 @@ barbus
 basaltic
 basegnus
 basic
+basilais
 bass
 baterlus
 baud
+bavarais
 belletristic
 bellin
 belmus
 benefizient
 bengal
+berlinais
 bestial
 biblic
 bibliografic
@@ -367,6 +376,8 @@ bumbastic
 bun
 burascus
 burgais
+burgognais
+burmais
 buttanus
 buttatschus
 buttunus
@@ -377,7 +388,9 @@ calligrafic
 calm
 calmant
 calvinistic
+camerunais
 canaanitic
+canadais
 cancerus
 canerus
 cannibalic
@@ -398,6 +411,7 @@ carmalant
 carolingic
 carpatic
 carstic
+cartaghinais
 cartent
 cartografic
 casual
@@ -449,6 +463,7 @@ chemotecnic
 cheramic
 chichergnus
 chilen
+chinais
 chinestetic
 chinetic
 chinologic
@@ -520,6 +535,7 @@ conceptual
 concepziunal
 concertant
 concessiv
+concis
 concludent
 concordant
 concurrenzial
@@ -534,6 +550,7 @@ confortant
 confurm
 confus
 congenial
+congolais
 congruent
 conic
 conjugal
@@ -595,6 +612,7 @@ creativ
 cremus
 creschent
 crestus
+cretais
 cridant
 cridulent
 criminal
@@ -663,9 +681,11 @@ current
 cursiv
 cursoric
 curt
+curtais
 custus
 cutizzant
 cuvert
+danais
 dascus
 davos
 debitant
@@ -859,6 +879,7 @@ endocrin
 endogen
 energetic
 energic
+engiadinais
 engianus
 englais
 engurd
@@ -1013,6 +1034,7 @@ feministic
 fenologic
 fenomenal
 ferm
+feroais
 fervent
 fess
 festiv
@@ -1037,6 +1059,7 @@ filus
 fin
 final
 finanzial
+finlandais
 fiscal
 fisic
 fisical
@@ -1081,6 +1104,8 @@ frenetic
 frequent
 fricziunal
 frigotecnic
+fris
+frislandais
 fritgus
 frizzant
 frontal
@@ -1137,9 +1162,11 @@ geotermic
 geriatric
 gerontologic
 gesuitic
+ghanais
 ghignus
 giacubin
 giagliard
+giapunais
 giaschent
 giaudaholic
 giavinant
@@ -1156,7 +1183,9 @@ giudizius
 giuridic
 giurisprudenzial
 glamurus
+glarunais
 glazial
+glis
 glisch
 glischant
 glischnant
@@ -1192,6 +1221,7 @@ grischun
 grobulan
 grond
 grondius
+grönlandais
 gudagnant
 guelfic
 guliv
@@ -1308,6 +1338,7 @@ individual
 individualistic
 indoeuropeic
 indolent
+indonais
 inductiv
 indulgent
 industrial
@@ -1425,6 +1456,9 @@ ipertextual
 ipogin
 ipotecar
 ipotetic
+iracais
+iranais
+irlandais
 ironic
 irraziunal
 irreal
@@ -1437,6 +1471,7 @@ irritant
 isabellin
 islamic
 islamistic
+islandais
 isogonal
 isolant
 isoritmic
@@ -1456,6 +1491,7 @@ jenic
 jiddic
 jordanic
 kimric
+kirghis
 kurpic
 labial
 laconic
@@ -1486,6 +1522,7 @@ lexical
 lexicografic
 lexicologic
 liant
+libanais
 liberal
 liberaldemocratic
 liberaleconomic
@@ -1523,6 +1560,7 @@ lom
 lomin
 longitudinal
 lontan
+lucernais
 lucrativ
 lucullic
 ludic
@@ -1533,6 +1571,7 @@ lung
 lunghent
 lungurus
 lusingiant
+luxemburgais
 luxurius
 macroscopic
 madir
@@ -1561,7 +1600,9 @@ malquaidus
 malsaun
 malscuidus
 malsegir
+maltais
 maltratg
+malvis
 malvulent
 mamiferoid
 mancant
@@ -1622,6 +1663,7 @@ meridiunal
 meritocratic
 merovingic
 meskin
+mesolcinais
 mess
 metabolic
 metacognitiv
@@ -1647,6 +1689,7 @@ mieut
 miffus
 migrant
 migratoric
+milanais
 militant
 militar
 mimic
@@ -1734,6 +1777,7 @@ natal
 natiral
 natiralistic
 nativ
+nauruais
 nautic
 naval
 nazistic
@@ -1741,6 +1785,7 @@ naziunal
 naziunalistic
 naziunalsocialistic
 necessari
+neerlandais
 negativ
 negatoric
 negligent
@@ -1765,11 +1810,14 @@ nominal
 nominativ
 nonchalant
 nordic
+nordirlandais
 normal
+norvegiais
 nostalgic
 notarial
 notoric
 nov
+novzelandais
 nuclear
 numeric
 numerus
@@ -1817,9 +1865,11 @@ nunpolitic
 nunpolizial
 nunpopular
 nunpratic
+nunprecis
 nunpregiudizial
 nunpretensius
 nunprevesi
+nunprevis
 nunprivlus
 nunproblematic
 nunproductiv
@@ -1866,6 +1916,7 @@ offert
 olfactoric
 oligarchic
 olimpic
+ollandais
 omeopatic
 ominus
 omnipotent
@@ -1921,8 +1972,10 @@ ozius
 pacific
 pacifistic
 pailus
+palais
 palandrant
 paleografic
+palestinais
 palidus
 palliativ
 paneuropeic
@@ -2029,6 +2082,7 @@ petgaminus
 petitoric
 petrochemic
 picant
+piemuntais
 pietistic
 pietus
 pigmeic
@@ -2081,6 +2135,7 @@ politic
 politic-finanzial
 polivalent
 polizial
+polonais
 pontifical
 populistic
 pornografic
@@ -2434,6 +2489,7 @@ semipublic
 semistatal
 semitic
 semitransparent
+senegalais
 sensaziunal
 sensitiv
 sensual
@@ -2466,12 +2522,14 @@ sguazzus
 sgulant
 sgulatschant
 sguzius
+siamais
 sibillinic
 sibiric
 sideric
 siderurgic
 sidoccidental
 sidoriental
+sidsudanais
 siemiant
 siemius
 sigmatic
@@ -2634,6 +2692,7 @@ successiv
 successural
 succulent
 sucus
+sudanais
 sudetic
 suffert
 suffizient
@@ -2683,13 +2742,17 @@ suspirant
 sutmarin
 sutproporziunal
 suttapost
+svabais
 svapurant
+svedais
 sventulant
+svevais
 tachimetric
 tachistic
 tactic
 tadlond
 tagliant
+tailandais
 talentus
 talian
 tangenzial
@@ -2743,11 +2806,13 @@ terren
 territorial
 terroristic
 terziar
+tessinais
 textual
 tipic
 tipografic
 tipologic
 tirannic
+tirolais
 titanic
 tolerant
 tonal
@@ -2808,7 +2873,9 @@ tuffalent
 tugnus
 tumultus
 turbulent
+turchis
 turistic
+turitgais
 turkmen
 turmentus
 turniclus
@@ -2816,6 +2883,7 @@ turpegius
 tutg
 tutpreschent
 tutpussant
+ucranais
 ufficinal
 uffizial
 uffizius
@@ -2829,6 +2897,8 @@ umoral
 umoristic
 unanim
 undegiant
+unfis
+ungarais
 ungrofinnic
 unic
 unidimensiunal
@@ -2838,6 +2908,7 @@ unitar
 universal
 universitar
 unsch
+uranais
 urbanistic
 urgent
 urogenital
@@ -2846,9 +2917,11 @@ usufructuari
 utilitaristic
 utopic
 vacant
+vadais
 vag
 vagant
 vaginal
+valdais
 valent
 valisic
 valurus
@@ -2874,6 +2947,7 @@ venus
 verbal
 verdent
 vermanus
+veronais
 vertebral
 vertent
 vertical
@@ -2883,6 +2957,8 @@ veterinar
 viagiant
 viandant
 victorius
+viennais
+vietnamais
 vieut
 vigilant
 vigurus
