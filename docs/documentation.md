@@ -282,25 +282,28 @@ Der Guesser für unbekannte Adjektivformen ist nur für regelmässigen Adjektive
 ### 6.2 Adverbien
 <a name="sec6.2"></a>
 
+Adverbien werden nicht (mehr) auf Adjektive zurückgeführt. Es wird nur die Steigerung normalisiert für die Lemmatisierung.
 Adverbien sind folgendermassen markiert:
 
-Lemma | Wortart | Steigerungsstufe | Derivationsgrenze | Wortart|
-------|---------|------------------|-------------------|--------|
-bun   | +Adj    |                  |^DB                |+Adv    |
-      |         | +Sup             |                   |        |
-main  | +Adv    | 
+Wortform   |Lemma | Wortart | Steigerungsstufe | 
+-----------|------|---------|------------------|
+bler       | bler | +Adv    |                  |
+dapli      | bler | +Adv    | +Comp            |
+blerischem | bler | +Adv    | +Sup             |
+pauchischem| pauc | +Adv    | +Sup             |
 
-Die oben gelistete Behandlung wie bei *bun* behandelt Adverbien, die von Adjektiven abgeleitet sind. Die untere Art zeigt, wie Kurzadverbien behandelt werden. Die Adverbformen werden in `adv/adv.xfst` gesammelt. Die Implementierung der Formen geschieht analog zu den regelmässigen Adjektiven [(Kapitel 6.1.1)](#sec6.1.1) und den Adjektiven mit Partizipendung [(Kapitel 6.1.2)](#sec6.1.2). Auf die Behandlung der unregelmässigen Formen und der unveränderlichen muss hier aber weiter eingegangen werden.
+Die Formden der produktiv aus regulären Adjektiven gebildeten Adverbien auf -amain werden von adj/adj.xfst abgespeichert. Deshalb müssen zuerst Adjektive kompiliert werden. Die Adverbformen werden in `adv/adv.xfst` erzeugt. Auf die Behandlung der unregelmässigen Formen und der unveränderlichen muss hier aber weiter eingegangen werden.
+Die Negationspartikel sind bei den Adverbien definiert in `adv/adv.xfst`.
 
-#### 6.2.1 Adverbien aus unveränderlichen Adjektiven
+#### 6.2.1 Nicht abgeleitete Adverbien
 <a name="sec6.2.1"></a>
-Diese Adverbien sind aufgelistet in:
+Adverbien, welche keine oder keine unregelmässige Steigerung haben und nicht aus Adjektiven abgeleitet werden, werden in einer Liste gesammelt. Es gibt darin auf -amain-Adverbien, welche kein entsprechendes Adjektiv haben. Falls ein Adverb hier aufgeführt ist und zusätzlich noch seine Adjektiv-Basis zur Verfügung steht, ist das kein Problem, da keine Analyseduplikate entstehen. 
 
-  * `wordlists/adv-adj.txt`. Die Liste muss möglicherweise erweitert werden.
+  * `wordlists/adv-short.txt`. 
 
 #### 6.2.2 Unregelmässige Adverbien
 <a name="sec6.2.2"></a>
-Adjektive, welche die feminine Form unregelmässig bilden, zeigen dieses Verhalten auch bei den Adverbien (z. B. *lartg – largia – larigamain*). Diese Formen sind komplett in lexc geschrieben und überschreiben regelmässige Formen, die die gleiche Oberseite aufweisen: `adv/adv-irr.lexc`.
+Die wenigen Adjektive, welche die feminine Form unregelmässig bilden (`adj/adj-irr.lexc`), zeigen dieses Verhalten auch bei den Adverbien (z. B. *largiamain, atgnamain*). Diese Formen sind in lexc erfasst `adv/adv-irr.lexc`. Die unregelmässig gesteigerten Adverbien sind vollständig aufgelistet.
 
 ### 6.3 Artikel
 <a name="sec6.3"></a>
