@@ -134,11 +134,11 @@ define AdvShort [ AdvShortStems "+Adv":0 ] ;
 # 2b. Einlesen der Negationspartikel
 ###############################################################################
 
-define PrtNegStems [ {na}]|{betg}|{nun}];
+define PrtNegStems [ {na}|{betg}|{nun}];
 define PrtNegApoStems [ {n'}];
 
 define PrtNeg [ PrtNegStems ["+Prt" "+Neg"]:0 
-			  | PrtNegStems ["+Prt" "+Neg" "+Apo"]:0 ] ;
+			  | PrtNegApoStems ["+Prt" "+Neg" "+Apo"]:0 ] ;
 
 
 

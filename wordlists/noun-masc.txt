@@ -353,6 +353,7 @@ assegnader
 assegnaziun
 assens
 assessur
+assistent
 assortider
 assortiment
 aster
@@ -2931,6 +2932,7 @@ gìun
 giuncher
 giurader
 giurisdictur
+giurist
 giustachars
 giustificativ
 giustrader
@@ -3577,6 +3579,7 @@ magazin
 magher
 magi
 magiel
+magister
 magistrat
 magiur
 magl

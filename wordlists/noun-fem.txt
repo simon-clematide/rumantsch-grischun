@@ -390,6 +390,7 @@ assegnaziun
 assicuranza
 assimilaziun
 assistenza
+assistenta
 associaziun
 assortida
 asta
@@ -1319,6 +1320,7 @@ colla
 collascha
 collatura
 collaudaziun
+collavuratura
 collavuraziun
 collaziun
 collecta
@@ -3078,6 +3080,7 @@ giurada
 giuria
 giurisdicziun
 giurisprudenza
+giurista
 giustia
 giustificabladad
 giustificaziun
@@ -3934,6 +3937,7 @@ madritscha
 mafia
 magasinaziun
 magia
+magistra
 magistraglia
 magistrata
 magistratura
@@ -6374,6 +6378,7 @@ sdrenada
 sdrima
 seccatura
 secessiun
+secretaria
 secretezza
 secreziun
 secta
