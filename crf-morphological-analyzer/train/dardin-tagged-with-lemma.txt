@@ -198,7 +198,7 @@ Dardin	Dardin+Prop
 existan	exister+Verb+PresInd+3P+Pl
 las	il+Art+Def+Fem+Pl
 suandantas	suandant+Adj+Fem+Pl
-uniuns	uniuns+Noun+Fem+Pl
+uniuns	uniun+Noun+Fem+Pl
 :	:+Punc+End
 uniun	uniun+Noun+Fem+Sg
 da	da+Prep
