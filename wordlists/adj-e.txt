@@ -25,6 +25,7 @@ amicabel
 amortisabel
 ampel
 amplifitgabel
+simpel
 amuraivel
 analisabel
 annullabel

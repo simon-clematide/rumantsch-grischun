@@ -658,6 +658,7 @@ cranial
 craniosacral
 crappus
 creativ
+credul
 cremus
 creschent
 crestus
@@ -1179,6 +1180,7 @@ fritgus
 frizzant
 frontal
 fructifitgant
+frul
 frustrant
 fugitiv
 fulinant
@@ -1751,6 +1753,7 @@ maschinal
 masculin
 masochistic
 massiv
+mastgel
 mastraler
 matematic
 material
@@ -1831,6 +1834,7 @@ mineralogic
 minimal
 ministerial
 minoic
+minuscul
 minuzius
 miraculus
 mirveglius
@@ -2232,6 +2236,7 @@ perseverant
 persian
 persistent
 perspectivic
+persul
 persunal
 persvadent
 persvas
@@ -2572,6 +2577,7 @@ retrospectiv
 retrosternal
 revisiunistic
 revoltant
+ridicul
 rigurus
 rinforzant
 rinfrestgant
@@ -2799,6 +2805,7 @@ solistic
 solitari
 solvent
 somatic
+somnambul
 sontg
 sortint
 sovietic
@@ -2992,6 +2999,7 @@ teatral
 tebaic
 teban
 tecnic
+tecnic-agricul
 tecnic-biologic
 tecnic-climatic
 tecnic-cultural
@@ -3167,7 +3175,6 @@ valent
 valisic
 vallesan
 valurus
-van
 van
 vanaglorius
 vandal
