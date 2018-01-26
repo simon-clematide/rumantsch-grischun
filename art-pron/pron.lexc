@@ -135,6 +135,7 @@ ses+Pron+Poss+Masc+Sg:ses	#;
 ses+Pron+Poss^DB+Noun+Masc+Sg:sieu	#;
 ses+Pron+Poss:ses@U.FLEX.MPl@	PossEnd;
 ses+Pron+Poss:sia@U.FLEX.FSg@	PossEnd;
+ses+Pron+Poss+Fem+Sg+Apo:s'@U.FLEX.FSg@	#;
 ses+Pron+Poss:sias@U.FLEX.FPl@	PossEnd;
 ! nus
 noss+Pron+Poss:noss@U.FLEX.MSg@	PossEnd;

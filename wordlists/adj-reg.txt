@@ -1,3 +1,4 @@
+
 abazial
 abissic
 abitual
@@ -84,7 +85,6 @@ alternant
 alternativ
 altimetric
 altruistic
-alvaster
 alvent
 amar
 amaric
@@ -281,6 +281,7 @@ australian
 austro-ungarais
 aut
 autalpin
+autarc
 autarchic
 autentic
 autmedieval
@@ -350,6 +351,7 @@ bellin
 belmus
 benefizient
 bengal
+bergamasc
 berlinais
 bestial
 biangular
@@ -572,7 +574,6 @@ cletg
 climactic
 climatic
 clinic
-cloder
 coaxial
 codicologic
 coerent
@@ -818,7 +819,6 @@ derullant
 desastrus
 descendent
 deschent
-deschentaster
 desert
 desiderus
 despotic
@@ -1041,6 +1041,7 @@ etnic
 etnografic
 etnolinguistic
 etnopolitic
+etrusc
 eucaristic
 euclidic
 eufonic
@@ -1359,6 +1360,7 @@ gregorian
 grev
 grippal
 grippus
+grischaun
 grischent
 grischun
 grobian
@@ -1370,6 +1372,7 @@ grotesc
 gualser
 gudagnant
 guelfic
+guerresc
 guerril
 guliv
 gulonic
@@ -1462,6 +1465,7 @@ imprevis
 imprudent
 impudent
 impulsiv
+impurtant
 impurtant
 impussant
 inactiv
@@ -1691,6 +1695,7 @@ lapidar
 larmant
 larmus
 lasciv
+lass
 lastic
 latent
 lateral
@@ -1705,6 +1710,7 @@ legendar
 legislativ
 leprus
 lesbic
+lescher
 letargic
 levin
 levogir
@@ -1777,6 +1783,7 @@ magnific
 maiestus
 maioritar
 maisteril
+maiusc
 mal
 maladiv
 malaic
@@ -1948,6 +1955,7 @@ monochasan
 monociclic
 monocristallin
 monofasal
+monogam
 monogeniturial
 monografic
 monomotoric
@@ -2398,6 +2406,7 @@ pneumatic
 podologic
 poetic
 pointillistic
+polac
 polar
 polemic
 policiclic
@@ -2445,6 +2454,7 @@ prealpin
 precar
 precedent
 precipitant
+precis
 precis
 preclinic
 preclusiv
@@ -2588,6 +2598,7 @@ puritan
 purpur
 purtant
 purtretistic
+pussant
 pussant
 putativ
 puter
@@ -2949,6 +2960,7 @@ spectral
 speculativ
 speditiv
 spelmus
+spèr
 spert
 spezial
 spiertal
@@ -3188,6 +3200,7 @@ tipic
 tipografic
 tipologic
 tirannic
+tirc
 tirolais
 titanic
 titular
@@ -3244,6 +3257,7 @@ trumpus
 tschajerus
 tschantscherlus
 tschantschus
+tschec
 tschessant
 tschetschen
 tschientenar
@@ -3394,14 +3408,6 @@ vital
 viv
 vivent
 vivifitgant
-polac
-guerresc
-autarc
-tirc
-maiusc
-etrusc
-bergamasc
-tschec
 vivipar
 vizius
 vocal
@@ -3426,11 +3432,3 @@ zionistic
 ziplus
 zoologic
 zotlus
-spèr
-monogam
-lass
-grischaun
-impurtant
-pussant
-precis
-

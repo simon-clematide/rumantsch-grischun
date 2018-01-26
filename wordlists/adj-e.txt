@@ -19,6 +19,7 @@ allegher
 allegraivel
 allontanabel
 alpester
+alvaster
 amabel
 amiaivel
 amicabel
@@ -55,6 +56,7 @@ chapibel
 chapitalisabel
 charrabel
 chastiabel
+cloder
 colliabel
 combel
 combustibel
@@ -130,6 +132,7 @@ definibel
 demontabel
 deplorabel
 derivabel
+deschentaster
 deschsettavel
 desiderabel
 destituibel
@@ -600,7 +603,6 @@ planisabel
 plaschaivel
 plausibel
 plegabel
-pluffer
 pluffer
 plunabel
 pover
