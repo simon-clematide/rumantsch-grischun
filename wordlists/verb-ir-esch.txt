@@ -4,7 +4,7 @@ acquirir
 ademplir
 aderir
 admonir
-admonir
+affluir
 agir
 applanir
 applaudir
@@ -56,6 +56,7 @@ embustir
 empitschnir
 empizzir
 emplenir
+empunir
 encotschnir
 endirir
 engrondir
@@ -94,6 +95,7 @@ lubir
 malchapir
 malreussir
 munir
+nuspir
 nutrir
 obedir
 offrir
