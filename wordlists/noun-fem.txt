@@ -1354,7 +1354,6 @@ coluraziun
 coma
 combustibilitad
 combustiun
-comic
 comica
 commandita
 commembra
@@ -4442,7 +4441,6 @@ mungia
 muniessa
 muniziun
 muntada
-muntagnard
 muntanella
 muntanera
 muntogna
