@@ -224,6 +224,7 @@ girabel
 giudibel
 giustabel
 giustificabel
+giustifitgabel
 giuven
 giuvenin
 glischen
@@ -447,6 +448,7 @@ nizzaivel
 nobel
 nonupel
 numnabel
+nunacceptabel
 nunaccessibel
 nunamicabel
 nunamortisabel
@@ -565,6 +567,7 @@ nunviolabel
 nunvisabel
 nuschaivel
 obedaivel
+observabel
 octupel
 onuraivel
 operaziunalisabel
@@ -655,6 +658,7 @@ renconuschibel
 renovabel
 rentabel
 reparabel
+reponsabel
 reproducibel
 rescontabel
 resistibel
@@ -726,6 +730,7 @@ superabel
 superbel
 supportabel
 surbajegiabel
+surmuntabel
 sursensibel
 surterrester
 surventschibel

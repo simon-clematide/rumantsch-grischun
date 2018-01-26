@@ -1,4 +1,3 @@
-
 abazial
 abissic
 abitual
@@ -318,6 +317,7 @@ bacterial
 bacteriologic
 bacteriostatic
 bagliaffus
+baininqual
 bainplain
 bainstant
 bainvegnent
@@ -912,6 +912,7 @@ dramatic
 dramaturgic
 drastic
 dretgangular
+dual
 dualistic
 dubius
 dultschamar
@@ -1192,6 +1193,7 @@ flattus
 floccus
 flogistic
 floral
+floreal
 fluctuant
 fluorescent
 flurint
@@ -1466,11 +1468,11 @@ imprudent
 impudent
 impulsiv
 impurtant
-impurtant
 impussant
 inactiv
 inadequat
 inattentiv
+inaugural
 incestuus
 incident
 inclus
@@ -2136,6 +2138,7 @@ nunsentimental
 nunsignifitgant
 nunsincer
 nunsistematic
+nunsocial
 nunsontg
 nunspecific
 nunspectacular
@@ -2203,6 +2206,7 @@ opziunal
 oral
 oransch
 oratoric
+orchestral
 organic
 organisatoric
 orgasmic
@@ -2315,6 +2319,7 @@ pediatric
 pedofil
 pegiurativ
 pellitschus
+pelvair
 penal
 pendent
 penderlant
@@ -2395,6 +2400,7 @@ pluralistic
 pluriannual
 pluricellular
 pluricentric
+pluricultural
 pluridimensional
 plurilateral
 plurilings
@@ -2454,7 +2460,6 @@ prealpin
 precar
 precedent
 precipitant
-precis
 precis
 preclinic
 preclusiv
@@ -2598,7 +2603,6 @@ puritan
 purpur
 purtant
 purtretistic
-pussant
 pussant
 putativ
 puter
@@ -3231,6 +3235,7 @@ transhelvetic
 transitiv
 transitoric
 transmedial
+transnaziunal
 transozeanic
 transparent
 transsexual
@@ -3430,5 +3435,6 @@ zaidlus
 zaristic
 zionistic
 ziplus
+zonal
 zoologic
 zotlus
