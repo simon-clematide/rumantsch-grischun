@@ -31,3 +31,4 @@ tschuf
 violet
 fiac
 caput
+tschec

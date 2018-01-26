@@ -44,6 +44,15 @@ adventiv
 adversativ
 affectiv
 affectuus
+devot
+amuraun
+endoterm
+libertar
+exoterm
+isocor
+ganglionar
+poliglott
+polifon
 affirmativ
 afgan
 aforistic
@@ -1177,6 +1186,7 @@ frigotecnic
 fris
 frislandais
 fritgus
+frivol
 frizzant
 frontal
 fructifitgant
@@ -2162,6 +2172,7 @@ parapsicologic
 parapublic
 parasitic
 parastatal
+paregl
 parent
 parisian
 paritetic
