@@ -25,7 +25,6 @@ amicabel
 amortisabel
 ampel
 amplifitgabel
-simpel
 amuraivel
 analisabel
 annullabel
@@ -602,6 +601,7 @@ plaschaivel
 plausibel
 plegabel
 pluffer
+pluffer
 plunabel
 pover
 praticabel
@@ -691,6 +691,7 @@ sfendibel
 sfurzabel
 sgarschaivel
 siemiader
+simpel
 sisavel
 smarschaivel
 smesiraivel
