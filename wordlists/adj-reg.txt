@@ -311,6 +311,7 @@ avertent
 aviatic
 axial
 azotic
+azur
 babilonic
 bacterial
 bacteriologic
@@ -363,10 +364,12 @@ bidimensiunal
 bidirecziunal
 biennal
 biergnus
+biflor
 bigam
 bilateral
 bimensil
 bimillennar
+bimotor
 binar
 binaziunal
 biochemic
@@ -464,6 +467,7 @@ carinzian
 carismatic
 caritativ
 carmalant
+carnivor
 carolingic
 carpatic
 carstic
@@ -769,6 +773,7 @@ danais
 dascus
 davos
 debitant
+debitur
 decadent
 decent
 decentral
@@ -824,6 +829,7 @@ detg
 deuterocanonic
 devot
 devozius
+dextrogir
 diabetic
 diabolic
 diaconic
@@ -857,6 +863,7 @@ dinastic
 dionisic
 diploid
 diplomatic
+dir
 direct
 directdemocratic
 directiv
@@ -1001,6 +1008,7 @@ epocal
 equiangular
 equivalent
 eraldic
+erbivor
 ereditar
 ergonomic
 ermeneutic
@@ -1111,6 +1119,7 @@ facil
 factic
 facultativ
 fadius
+fair
 fallic
 famigliar
 famus
@@ -1499,6 +1508,7 @@ inexistent
 infam
 infantil
 infectus
+inferiur
 infernal
 infidel
 inflatoric
@@ -1567,6 +1577,7 @@ interguvernamental
 interimal
 interimistic
 interinstituziunal
+interiur
 interlocal
 interlocutoric
 intermanaschial
@@ -1609,6 +1620,7 @@ inuman
 inutil
 invan
 invasiv
+invasur
 inventiv
 invernal
 investigativ
@@ -1695,6 +1707,7 @@ leprus
 lesbic
 letargic
 levin
+levogir
 lexical
 lexicografic
 lexicologic
@@ -1774,6 +1787,7 @@ malencletg
 malguliv
 malinschignus
 malizius
+malmadir
 malmaglius
 malobedient
 malpazient
@@ -1823,6 +1837,7 @@ materialistic
 maternal
 matrimonial
 matutin
+maur
 mauric
 maximal
 mecanic
@@ -1983,6 +1998,7 @@ musivic
 muslimic
 mussagnin
 mutschignus
+nair
 nairent
 naìv
 napolitan
@@ -2123,6 +2139,7 @@ nunterritorial
 nuntradiziunal
 nuntransparent
 nunuffizial
+nunvair
 nunverbal
 nunviolent
 nunviril
@@ -2135,6 +2152,7 @@ obligant
 obligatoric
 obligaziunar
 obscen
+obscur
 obsessiv
 occasiunal
 occidental
@@ -2409,6 +2427,7 @@ possessoric
 post-estiv
 postal
 postcreativ
+posteriur
 postglazial
 postindustrial
 postmedieval
@@ -2442,6 +2461,7 @@ preindustrial
 preistoric
 preliminar
 prematrimonial
+prematur
 premurus
 prenatal
 prenumeric
@@ -2513,6 +2533,7 @@ prosaic
 prospectiv
 prosperant
 protectiv
+protectur
 protecziunistic
 protegint
 protestant
@@ -2564,6 +2585,7 @@ purifitgant
 puril
 puristic
 puritan
+purpur
 purtant
 purtretistic
 pussant
@@ -2624,6 +2646,7 @@ referenzial
 reflexiv
 refluent
 refurmatoric
+refurmatur
 refurmistic
 refusant
 regenerativ
@@ -2672,6 +2695,7 @@ retratg
 retroactiv
 retrospectiv
 retrosternal
+revelatur
 revisiunistic
 revoltant
 revoluziunar
@@ -2908,6 +2932,7 @@ solitari
 solvent
 somatic
 somnambul
+sonor
 sontg
 sortint
 sovietic
@@ -2974,6 +2999,7 @@ stgars
 stgiffus
 stgimant
 stgimus
+stgir
 stgirent
 stilistic
 stimulant
@@ -2981,6 +3007,7 @@ stocastic
 stoic
 stort
 stradal
+stramadir
 strapatschant
 strategic
 stravagant
@@ -3222,6 +3249,7 @@ tschetschen
 tschientenar
 tschintgultim
 tschuberlin
+tschur
 tuatschin
 tuberculus
 tubular
@@ -3293,6 +3321,7 @@ vadais
 vag
 vagant
 vaginal
+vair
 vaiv
 valdais
 valent
