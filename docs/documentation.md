@@ -1,6 +1,7 @@
 # Morphologieanalyse für Rumantsch Grischun
 
 Institut für Computerlinguistik, Universität Zürich, Lizenz: Creative Commons Attribution-ShareAlike 4.0
+Viele Einträge stammen (mit freundlicher Genehmigung) aus <http://www.pledarigrond.ch>, welche unter CC Attribution 4.0 International veröffentlicht sind.
 
 Reto Baumgartner, Martina Bachmann, Rolf Badat, Daniel Hegglin, Susanna Tron, Melanie Widmer,  Nora Lötscher, Noëmi Aepli, Martin Cantieni, Victoria Mosca
 
@@ -106,6 +107,7 @@ oder sie können auf der Kommandozeile für die Analyse mittels lookup/flookup v
 	+Art	Artikel  
 	+Conj	Konjunktion  
 	+Dig	Zahlen in Ziffernschreibung  
+	+For    Fremdwörter (ausser wenn Namen)
 	+Initial	Initialenabkürzungen wie A.  
 	+Interj	Interjektion  
 	+Let	Buchstabe  
