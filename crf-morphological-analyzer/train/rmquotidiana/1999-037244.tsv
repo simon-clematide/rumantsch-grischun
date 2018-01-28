@@ -9,7 +9,7 @@ per	per	+Prep
 la	il	+Art+Def+Fem+Sg
 Giuventetgna	*giuventetgna	+Noun+Fem+Sg
 (	(	+Punc+Beg
-OSL	OSL	+Prop+Abbr
+OSL	OSL	+Abbr
 )	)	+Punc+End
 ha	avair	+Verb+PresInd+3P+Sg
 edì	edì	+Verb+PastPart+Masc+Sg
@@ -59,7 +59,7 @@ Il	*il	+Art+Def+Masc+Sg
 team	team	+Noun+Masc+Sg
 da	da	+Prep
 detectivs	detectiv	+Noun+Masc+Pl
-JSMM	JSMM	+Prop+Abbr
+JSMM	JSMM	+Abbr
 schlia	schliar	+Verb+PresInd+3P+Sg
 cun	cun	+Prep
 garanzia	garanzia	+Noun+Fem+Sg

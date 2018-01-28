@@ -74,7 +74,7 @@ Tello	Tello+Prop
 l’	il+Art+Def+Masc+Sg+Apo
 onn	onn+Noun+Masc+Sg
 865	865+Dig+Card
-s.C.	s.C.+Noun+Abbr
+s.C.	s.C.+Abbr
 cun	cun+Prep
 la	il+Art+Def+Fem+Sg
 furma	furma+Noun+Fem+Sg
