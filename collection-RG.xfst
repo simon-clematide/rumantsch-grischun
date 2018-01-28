@@ -65,7 +65,9 @@ define Article ;
 read lexc art-pron/pron.lexc
 define Pronoun ;
 
-# Orthographig rules:
+define Foreign [@txt"wordlists/for.txt" "+For":0 ] ;
+
+# Orthographic rules:
 load stack fstbinaries/Capitalization.fst
 define Capitalization ;
 
@@ -84,6 +86,7 @@ define GrischunWords [
 	Conjunction|
 	Preposition|
 	Interjection|
+	Foreign|
 	Article|
 	Pronoun];
 define GrischunLowerCase [GrischunWords .o. OrthoRule];
