@@ -352,6 +352,7 @@ anorac
 anorecticher
 ansertgel
 ansiel
+ansiel-chavriel
 antagonissem
 antagonist
 antecedent
@@ -1189,6 +1190,7 @@ boier
 boiler
 bolero
 bolid
+boller
 bolleret
 bolometer
 bolschevic
@@ -1199,6 +1201,8 @@ bondellin
 bondellins
 bonsai
 bonus
+bonz
+bonzer
 boogie-woogie
 bookmark
 boom
@@ -1361,6 +1365,7 @@ bulli
 bullun
 bully
 bulzani
+bulzania
 bumbardader
 bumbardament
 bumbardin
@@ -2214,6 +2219,7 @@ conclus
 concordat
 concrettaivel
 concubinat
+concuratur
 concurrent
 concurs
 concursit
@@ -2374,6 +2380,7 @@ correferat
 correferent
 correspundent
 corridor
+corruptur
 corsar
 corset
 cortegi
@@ -2968,6 +2975,7 @@ devon
 dewar
 dextrin
 di
+dia
 diabetes
 diabetic
 diabeticher
@@ -2983,6 +2991,7 @@ diameter
 dianter
 diapason
 diaporama
+diapositiv
 diari
 dias
 diascop
@@ -3335,6 +3344,7 @@ embratschament
 embrio
 embrioblast
 embrugl
+embrugliament
 embustì
 emettur
 emettur-receptur
@@ -3575,6 +3585,7 @@ exil
 exilià
 existent
 existenzialissem
+existenzialist
 exit
 exodus
 exorcissem
@@ -3596,6 +3607,7 @@ exposimeter
 expositur
 express
 expressiunissem
+expressiunist
 exsudat
 extensur
 exteriur
@@ -3713,6 +3725,7 @@ femnariel
 femnin
 femnom
 femnun
+fendachavels
 fendacrosa
 fenilalanin
 fenitoin
@@ -3926,6 +3939,7 @@ formaldehid
 formalin
 formalissem
 format
+Formazzais
 formular
 fortepiano
 forum
@@ -4078,6 +4092,8 @@ furtget
 furuncul
 fusel
 fussà
+fussballin
+fussballino
 fussé
 fustg
 fusti
@@ -4781,6 +4797,7 @@ individualist
 indizi
 indol
 indossament
+indossant
 indossatari
 indri
 indriz
@@ -5154,6 +5171,7 @@ lamantin
 lamaschi
 lamba
 lamegl
+lament
 lamentim
 lamezi
 laminat
@@ -5220,6 +5238,7 @@ lavurant
 lavuratori
 lavurdi
 lavurer
+lavurunz
 lavurus
 layout
 lazaret
@@ -5275,6 +5294,7 @@ liber
 liberader
 liberal
 liberalissem
+liberatur
 libero
 libertin
 libli
@@ -5391,6 +5411,7 @@ luo
 lurachel-tscharvè
 luschard
 luschard-tegu
+luschardun
 lushai
 lusingiader
 lutegiel
@@ -5449,6 +5470,8 @@ maglialard
 magliamams
 magliaprers
 magliasems
+magliaspada
+magliaspadas
 magliatinta
 magliatut
 magliuc
@@ -5502,6 +5525,8 @@ maledivic
 malengraziament
 malesser
 maletg
+maletg-engiavin
+maletg-engiavinera
 maletg-furmicler
 malfatg
 malfatschent
@@ -5642,6 +5667,8 @@ marschlos
 martè-numerader
 martè-perfurader
 martelliez
+martellin
+martellina
 martgà
 martgadant
 martgadar
@@ -5666,6 +5693,7 @@ maschaidatissis
 mascher
 maschinist
 maschlos
+maschlos	
 maschun
 mascottin
 masculin
@@ -5709,6 +5737,7 @@ mazler
 mazzacrader
 mazzaculla
 mazzacun
+mazzaliun
 mazzament
 mazzamustgas
 mazzet
@@ -5900,6 +5929,8 @@ ministeri
 ministerial
 ministral
 ministrant
+minitramp
+minitrampolin
 minitrottinet
 minium
 minorit
@@ -5980,6 +6011,7 @@ mohawk
 moksha
 mol
 molaforschs
+molametal
 molar
 molavaider
 moldav
@@ -6711,6 +6743,7 @@ parallelissem
 parallelogram
 paralozza
 paramagnetissem
+paramaun
 paramerda
 parameter
 paranaiv
@@ -6726,6 +6759,7 @@ parasgulada
 parasgulader
 parasgular
 parasimpaticus
+parasit
 parasitissem
 parasol
 parasol-channa
@@ -6754,9 +6788,11 @@ pari
 pariel
 pariser
 pariset
+parisetta
 parisette
 parlament
 parlamentarissem
+parler
 parlet
 parmesan
 parmuglier
@@ -6966,6 +7002,7 @@ pèrin
 perineum
 periost
 periscop
+perit
 perlmut
 perm
 permess
@@ -7300,6 +7337,7 @@ portabrevs
 portacabels
 portacartulinas
 portachaltschiels
+portachandaila
 portachargia
 portachartas
 portachascha
@@ -7309,6 +7347,7 @@ portadents
 portadocuments
 portafegl
 portafieuters
+portaflur
 portaflurs
 portafortuna
 portafritgs
@@ -7370,6 +7409,7 @@ posachazzetta
 posamaun
 posape
 posaspatlas
+posaunist
 positiv
 positivissem
 positron
@@ -7614,6 +7654,7 @@ protegiamaisa
 protegiapenis
 protegiapet
 protegiapult
+protegiaslip
 protegiastgaina
 protegiatgil
 protein
@@ -7622,6 +7663,7 @@ protest
 protestant
 protestantissem
 protocol
+protocollist
 proton
 protoplanet
 protoplasma
@@ -7723,6 +7765,7 @@ purgiativ
 purin
 purissem
 puritanissem
+purmentist
 purpur
 purschè
 purschellin
@@ -7851,6 +7894,7 @@ raischen
 raiun
 rajasthani
 rambot
+rambottel
 ramissem
 rampign
 rampignader
@@ -8869,6 +8913,7 @@ sfalsifitgader
 sfarfatg
 sfarfuglim
 sfarlattim
+sfendachavels
 sfendacrap-mustgat
 sfendamieulas
 sferoid
@@ -8900,6 +8945,7 @@ sfundret
 sfurat
 sfurmiclim
 sfurzim
+sfuschignunz
 sgaralieunga
 sgargugl
 sgnappamustgas
@@ -9410,6 +9456,7 @@ stgauda-aria
 stgauda-ovs
 stgauda-ureglias
 stgaudacafé
+stgaudacor
 stgaudader
 stgaudagnirunchels
 stgaudament
@@ -9746,6 +9793,7 @@ sutterran
 sutterren
 suttetg
 suttitel
+suttstgala
 suttun
 sutuffizier
 suveran
@@ -9805,6 +9853,7 @@ tagliadiamants
 tagliafain
 tagliafil
 tagliaflucs
+tagliaflus
 taglialaina
 taglialegums
 tagliant
@@ -10046,6 +10095,7 @@ testat
 testicul
 testosteron
 testun
+tet
 tetanospasmin
 tetanus
 tetg
@@ -10431,6 +10481,7 @@ tschamplun
 tschanc
 tschancun
 tschantscherlim
+tschappachazzetta
 tscharesch
 tscharescher
 tscharescher-primla

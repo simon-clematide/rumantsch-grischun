@@ -116,6 +116,7 @@ adualitad
 adulaziun
 adurada
 aduraziun
+adversaria
 adversitad
 advocata
 advocatura
@@ -147,6 +148,7 @@ agentura
 agenzia
 agilitad
 agiografia
+agitatura
 agitaziun
 agiudicaziun
 agiunta
@@ -373,6 +375,7 @@ anorexia
 anormalitad
 anserina
 ansola
+antagonista
 antenna
 antenna-cuppa
 antenna-parasol
@@ -567,6 +570,7 @@ aspradad
 asprezza
 assamblea
 assegnaziun
+assessura
 assicuranza
 assimilaziun
 assistenta
@@ -1698,6 +1702,7 @@ citrona-cedrat
 citronella
 city
 civilisaziun
+civilista
 cladonia
 claffa
 clafoutis
@@ -1883,6 +1888,7 @@ concentraziun
 concepidra
 concepziun
 concessiun
+concessiunaria
 conchiglia
 conchiglia-tarader
 concilianza
@@ -1898,6 +1904,7 @@ concretisaziun
 concubina
 conculpaivladad
 concupiscenza
+concuratura
 concurrenta
 concurrenza
 condemnaziun
@@ -1964,6 +1971,7 @@ consequenza
 conserva
 conservabladad
 conservativa
+conservatura
 conservaziun
 consideraziun
 consistenza
@@ -2095,6 +2103,7 @@ corrida
 corrigenda
 corrosiun
 corruptibladad
+corruptura
 corrupziun
 corrusiun
 corticoid
@@ -3409,6 +3418,7 @@ exibiziunista
 exigenza
 exiliaziun
 existenza
+existenzialista
 exocitosa
 exorcisaziun
 exortaziun
@@ -3434,6 +3444,7 @@ exportaziun
 expositura
 exposiziun
 expressiun
+expressiunista
 expressivitad
 expropriaziun
 expulsiun
@@ -3804,6 +3815,7 @@ formalissem
 formalitad
 format
 formataziun
+Formazzaisa
 forminx
 formulaziun
 forsch
@@ -4127,6 +4139,7 @@ gilgia-fain
 gilgia-paradisia
 gimbri
 gimnadenia
+gimnasiasta
 gimnastica
 ginaivra
 ginecologa
@@ -4249,6 +4262,7 @@ graduaziun
 grafia
 grafica
 graficra
+grafologa
 grafologia
 grafunera
 gramfia
@@ -4626,6 +4640,7 @@ indoctrinaziun
 indogermanistica
 indolenza
 indoleranza
+indossanta
 inducziun
 indulgenza
 industria
@@ -4885,6 +4900,7 @@ iperuricamia
 ipnosa
 ipocicloida
 ipocrisia
+ipocrita
 ipodermis
 ipofisa
 iposplenia
@@ -5062,6 +5078,7 @@ lavuratscha
 lavurera
 lavuretta
 lavuruna
+lavurunza
 lavurusadad
 lectura
 lectura-scrittira
@@ -5071,6 +5088,7 @@ lega
 legalisaziun
 legalitad
 legastenia
+legataria
 legaziun
 legenda
 legibilitad
@@ -5122,6 +5140,7 @@ libella
 liberala
 liberalisaziun
 liberalitad
+liberatura
 liberaziun
 libertad
 libido
@@ -5190,6 +5209,7 @@ litera
 litgiva
 litiasa
 litigant
+litigianta
 litinenta
 litispendenza
 lito
@@ -5580,6 +5600,7 @@ mazza
 mazzacra
 mazzacrada
 mazzacradra
+mazzaliuna
 mecanica
 mecanisaziun
 mecanoterapia
@@ -5667,6 +5688,7 @@ mesiraziun
 mesomeria
 mess
 messa
+mestiza
 metabolia
 metadatoteca
 metafisica
@@ -6280,6 +6302,7 @@ ocarina
 occasiun
 occlusiun
 occultaziun
+occupanta
 occupaziun
 occurrenza
 oceanografia
@@ -6549,6 +6572,7 @@ parapsicologia
 parapulvra
 parascurlatta
 parasguladra
+parasita
 parasitologia
 paratscha
 paraula
@@ -6566,6 +6590,7 @@ parlamanza
 parmuglia
 parmugliera
 parnassina
+parochiana
 parodia
 parodontitis
 parodontosa
@@ -6626,6 +6651,7 @@ pastoraziun
 pastracca
 pastriglia
 pastrigliada
+pastrigliunza
 pastura
 patangada
 patella
@@ -6768,6 +6794,7 @@ perioda
 periodica
 periodicitad
 peristaltica
+perita
 peritonitis
 perla
 perlocuziun
@@ -6833,6 +6860,7 @@ pestgadra
 pestgera
 pestilenza
 petarda
+petenta
 petgaminusadad
 petiziun
 petrificaziun
@@ -7025,6 +7053,7 @@ polemica
 polemonia
 poleposition
 poleschera
+policista
 policlinica
 policromia
 polifagia
@@ -7076,6 +7105,7 @@ porusitad
 posa
 posamentadra
 posauna
+posaunista
 poschetta
 positura
 posiziun
@@ -7334,6 +7364,7 @@ protestanta
 proto-industrialisaziun
 protocita
 protocollaziun
+protocollista
 protoistorgia
 protorenaschientscha
 protuberanza
@@ -7430,6 +7461,7 @@ puraria
 purezza
 purificaziun
 puritad
+purmentista
 purschella
 purschida
 purschlera
@@ -7473,6 +7505,7 @@ quarta
 quasi-cuntrabanda
 quasi-giurisdicziun
 quasi-obligaziun
+querulanta
 querulanza
 questa
 questiun
@@ -7834,6 +7867,7 @@ resgia
 resgiadira
 resgietta
 resgiutta
+residenta
 residenza
 resignaziun
 resilienza
@@ -7965,6 +7999,7 @@ ritmisaziun
 ritscha
 ritualisaziun
 riva
+rivala
 rivalitad
 riztga
 robinia
@@ -8557,6 +8592,7 @@ sfundrera
 sfunsada
 sfunsella
 sfuratta
+sfuschignunza
 sgara
 sgarella
 sgarmeretta
@@ -8729,6 +8765,7 @@ soluziun
 solvabilitad
 solvenza
 sombrezza
+somnambula
 somnolenza
 sonata
 sonatina
@@ -9417,6 +9454,7 @@ tarschola
 tartagnada
 tartaruga
 tartina
+tartogna
 taschentada
 tasta
 tastadura
