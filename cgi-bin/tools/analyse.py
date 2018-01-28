@@ -40,7 +40,7 @@ def betterPrint(token, analysis):
     else:
         print(token + "\t" + analysis)
 
-def processSentence(sentence, lastsentence,options=None):
+def processSentence(sentence, lastsentence, options=None):
     # Collect output from morphology analysis:
     if options.debug: print >> sys.stderr, '#MORPHO-CALL', " ".join([flookup, analyseautomat])
     sentence_utf8 = sentence.encode('utf-8')
@@ -54,7 +54,8 @@ def processSentence(sentence, lastsentence,options=None):
     #input_file.seek(0)
 
     # Collect output from PoS-tagging
-    if options.debug: print >> sys.stderr, '#CRF-CALL', " ".join([wapiti, "label", "-m", taggingmodel, "-n", "3", "-p", "-s"])
+    if options.debug:
+        print >> sys.stderr, '#CRF-CALL', " ".join([wapiti, "label", "-m", taggingmodel, "-n", "3", "-p", "-s"])
     pos = subprocess.Popen(
         [wapiti, "label", "-m", taggingmodel, "-n", "3", "-p", "-s"],
         stdin = subprocess.PIPE, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
@@ -99,6 +100,8 @@ def processSentence(sentence, lastsentence,options=None):
                     matchingminus2.append((postoken, morphoanalysis, posscore, postagging))
                 else:
                     notmatching.append((postoken, morphoanalysis, posscore, postagging))
+                    if options.debug:
+                        print('notmatching',notmatching,file=sys.stderr)
 
         # Choose and print the best candidate
         if len(matching) > 0:
@@ -171,7 +174,7 @@ def main():
         lastsentence = False
         if sentencecounter == len(sentences):
             lastsentence = True
-        processSentence(s, lastsentence,options=options)
+        processSentence(s, lastsentence, options=options)
         if sentenesSplit and not lastsentence:
             print("")
 
