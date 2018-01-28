@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Reto Baumgartner
 
-from __future__ import division
+from __future__ import division, print_function
 import sys
 import subprocess
 import re
@@ -42,20 +42,22 @@ def betterPrint(token, analysis):
 
 def processSentence(sentence, lastsentence, options=None):
     # Collect output from morphology analysis:
-    if options.debug: print >> sys.stderr, '#MORPHO-CALL', " ".join([flookup, analyseautomat])
+    if options.debug:
+        print('#MORPHO-CALL', " ".join([flookup, analyseautomat]),file=sys.stderr)
     sentence_utf8 = sentence.encode('utf-8')
     morpho = subprocess.Popen(
         [flookup, analyseautomat],
         stdin = subprocess.PIPE, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
     morphoout, stderr = morpho.communicate(sentence_utf8)
     morphowords = morphoout.decode('utf-8').rstrip().split("\n\n")
-    if options.debug: print >> sys.stderr,morphowords
+    if options.debug:
+        print(morphowords, file=sys.stderr)
     # Rewind input
     #input_file.seek(0)
 
     # Collect output from PoS-tagging
     if options.debug:
-        print >> sys.stderr, '#CRF-CALL', " ".join([wapiti, "label", "-m", taggingmodel, "-n", "3", "-p", "-s"])
+        print('#CRF-CALL', " ".join([wapiti, "label", "-m", taggingmodel, "-n", "3", "-p", "-s"]),file=sys.stderr)
     pos = subprocess.Popen(
         [wapiti, "label", "-m", taggingmodel, "-n", "3", "-p", "-s"],
         stdin = subprocess.PIPE, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
@@ -101,7 +103,7 @@ def processSentence(sentence, lastsentence, options=None):
                 else:
                     notmatching.append((postoken, morphoanalysis, posscore, postagging))
                     if options.debug:
-                        print('notmatching',notmatching,file=sys.stderr)
+                        print('notmatching', notmatching, file=sys.stderr)
 
         # Choose and print the best candidate
         if len(matching) > 0:
@@ -176,7 +178,7 @@ def main():
             lastsentence = True
         processSentence(s, lastsentence, options=options)
         if sentenesSplit and not lastsentence:
-            print("")
+            print()
 
 
 if __name__ == '__main__':
