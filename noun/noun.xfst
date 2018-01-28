@@ -106,8 +106,8 @@ define Nouns [Invariable |[NounIrr .P. RegularNouns]];
 ################################################################################
 # Proper nouns and abbreviations for nouns
 ################################################################################
-define AbbreviationsRaw @txt"wordlists/noun-abbr.txt";
-define Abbreviations [AbbreviationsRaw "+Noun":0 "+Abbr":0];
+#define AbbreviationsRaw @txt"wordlists/noun-abbr.txt";
+#define Abbreviations [AbbreviationsRaw "+Noun":0 "+Abbr":0];
 
 define ProperRaw @txt"wordlists/noun-proper.txt";
 define Proper [ProperRaw "+Prop":0];

@@ -102,6 +102,7 @@ oder sie können auf der Kommandozeile für die Analyse mittels lookup/flookup v
 ### 5.1 Wortartentags
 <a name="sec5.1"></a>
 
+	+Abbr	Abkürzung
 	+Adj	Adjektiv  
 	+Adv	Adverb  
 	+Art	Artikel  
@@ -225,7 +226,7 @@ Diverse:
 
 	*	Grossschreibung
 	+UNKNOWN	Unbekannte Form
-	+Apo	Apostrophierte Form oder mit Hiatustilger
+	+Apo	Apostrophierte Form oder mit Hiatustilger (z.B. *ed* statt *e* vor Vokal)
     +Typo   Vertipper (Korrigierte Form kann in 4. Spalte mit @KORRIGIERT eingetragen werden.)
     +Lingo  Ein linguistischer Fehler (anderes Idiom)
 
@@ -233,6 +234,8 @@ Die Tags `+UNKNOWN` und `*` können in `collection-RG.xfst` geändert werden. F�
 
 ## 6 Wortarten
 <a name="sec6"></a> 
+Abkürzungen (`+Abbr`) werden unabhängig von der Wortart gesetzt. Z.B. *resp.* oder * *.
+
 ### 6.1 Adjektive
 <a name="sec6.1"></a> 
 Adjektive sind folgendermassen markiert:

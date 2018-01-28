@@ -58,7 +58,7 @@ che	+Subj
 cumparan	+Verb+3P+Pl
 en	+Prep
 furma	+Noun+Fem+Sg
-d’	+Prep
+d’	+Prep+Apo
 ossa	+Noun+Fem+Sg
 petrifitgada	+Adj+Fem+Sg
 .	+Sent
@@ -86,7 +86,7 @@ gastrolits	+Noun+Masc+Pl
 ed	+Conj
 excrements	+Noun+Masc+Pl
 petrifitgads	+Adj+Masc+Pl
-ch’	+Subj
+ch’	+Subj+Apo
 èn	+Verb+3P+Pl
 vegnids	+Verb+PastPart+Masc+Pl
 mantegnids	+Verb+PastPart+Masc+Pl
@@ -109,11 +109,11 @@ tut	+Pron+Indef+Masc+Sg
 ils	+Art+Masc+Pl
 continents	+Noun+Masc+Pl
 inclus	+Adj+Masc+Sg
-l’	+Art+Fem+Sg
+l’	+Art+Fem+Sg+Apo
 Antarctica	+Prop
 ,	+CM
 damai	+Adv
-ch’	+Subj
+ch’	+Subj+Apo
 ils	+Art+Masc+Pl
 dinosaurs	+Noun+Masc+Pl
 han	+Verb+3P+Pl
@@ -158,7 +158,7 @@ dinosaurs	+Adj+Masc+Pl
 ed	+Conj
 i	+Pron+Pers+Nom+3P+MF+Sg
 suondan	+Verb+3P+Pl
-mintg’	+Pron+Indef+Masc+Sg
+mintg’	+Pron+Indef+Masc+Sg+Apo
 onn	+Noun+Masc+Sg
 novas	+Adj+Fem+Pl
 .	+Sent
@@ -216,7 +216,7 @@ Sco	+Prop
 ils	+Art+Masc+Pl
 blers	+Adj+Masc+Pl
 reptils	+Noun+Masc+Pl
-d’	+Prep
+d’	+Prep+Apo
 ozendi	+Noun+Masc+Sg
 vegnan	+Verb+3P+Pl
 ils	+Art+Masc+Pl
@@ -246,7 +246,7 @@ anapsids	+Noun+Masc+Pl
 (	+Punc+Beg
 las	+Art+Fem+Pl
 tartarugas	+Noun+Fem+Pl
-d’	+Prep
+d’	+Prep+Apo
 ozendi	+Noun+Masc+Sg
 )	+Punc+End
 tras	+Prep
@@ -289,7 +289,7 @@ chavazza	+Noun+Fem+Sg
 .	+Sent
 
 Descendents	+Noun+Masc+Pl
-d’	+Prep
+d’	+Prep+Apo
 ozendi	+Noun+Masc+Sg
 da	+Prep
 questa	+Pron+Dem+Fem+Sg
@@ -378,14 +378,14 @@ pon	+Verb+3P+Pl
 vegnir	+Verb+Inf
 identifitgads	+Verb+PastPart+Masc+Pl
 tras	+Prep
-l’	+Art+Fem+Sg
+l’	+Art+Fem+Sg+Apo
 ossa	+Noun+Fem+Sg
 distanta	+Adj+Fem+Sg
 dal	+Prep^|+Art+Masc+Sg
 pubis	+Noun+Masc+Sg
 e	+Conj
 da	+Prep
-l’	+Art+Masc+Sg
+l’	+Art+Masc+Sg+Apo
 ischium	+Noun+Masc+Sg
 (	+Punc+Beg
 mira	+Verb+Impv+Sg
@@ -393,13 +393,13 @@ illustraziuns	+Noun+Fem+Pl
 )	+Punc+End
 .	+Sent
 
-L’	+Art+Masc+Sg
+L’	+Art+Masc+Sg+Apo
 ossa	+Noun+Masc+Sg
 dal	+Prep^|+Art+Masc+Sg
 pubis	+Noun+Masc+Sg
 e	+Conj
 da	+Prep
-l’	+Art+Masc+Sg
+l’	+Art+Masc+Sg+Apo
 ischium	+Noun+Masc+Sg
 dals	+Prep^|+Art+Masc+Pl
 ornitischia	+Noun+Masc+Pl
@@ -417,7 +417,7 @@ La	+Art+Fem+Sg
 classificaziun	+Noun+Fem+Sg
 dals	+Prep^|+Art+Masc+Pl
 dinosaurs	+Noun+Masc+Pl
-n’	+Adv
+n’	+Adv+Apo
 è	+Verb+3P+Sg
 enfin	+Prep
 oz	+Adv
@@ -428,7 +428,7 @@ regulada	+Verb+PastPart+Fem+Sg
 cleramain	+Adv
 .	+Sent
 
-D’	+Prep
+D’	+Prep+Apo
 ina	+Art+Fem+Sg
 vart	+Noun+Fem+Sg
 existan	+Verb+3P+Pl
@@ -437,7 +437,7 @@ bleras	+Adj+Fem+Pl
 largias	+Noun+Fem+Pl
 ,	+CM
 da	+Prep
-l’	+Art+Fem+Sg
+l’	+Art+Fem+Sg+Apo
 autra	+Adj+Fem+Sg
 vart	+Noun+Masc+Sg
 po	+Conj
@@ -450,7 +450,7 @@ che	+Subj
 pretendan	+Verb+3P+Pl
 da	+Prep
 restructurar	+Verb+Inf
-l’	+Art+Fem+Sg
+l’	+Art+Fem+Sg+Apo
 ordinaziun	+Noun+Fem+Sg
 vertenta	+Adj+Fem+Sg
 .	+Sent
@@ -461,11 +461,11 @@ dinosauria	+Noun+Masc+Pl
 è	+Verb+3P+Sg
 vegnì	+Verb+PastPart+Masc+Sg
 definì	+Verb+PastPart+Masc+Sg
-l’	+Art+Masc+Sg
+l’	+Art+Masc+Sg+Apo
 onn	+Noun+Masc+Sg
 1842	+Dig+Card
 da	+Prep
-l’	+Art+Masc+Sg
+l’	+Art+Masc+Sg+Apo
 anatom	+Noun+Masc+Sg
 englais	+Adj+Masc+Pl
 Sir	+Prop
@@ -478,7 +478,7 @@ dinosaurs	+Noun+Masc+Pl
 èn	+Verb+3P+Pl
 segnads	+Verb+PastPart+Masc+Pl
 tras	+Prep
-in’	+Art+Fem+Sg
+in’	+Art+Fem+Sg+Apo
 enorma	+Adj+Fem+Sg
 varietad	+Noun+Fem+Sg
 da	+Prep

@@ -67,6 +67,9 @@ define Pronoun ;
 
 define Foreign [@txt"wordlists/for.txt" "+For":0 ] ;
 
+define Abbreviations [@txt"wordlists/abbr.txt" "+Abbr":0 ] ;
+
+
 # Orthographic rules:
 load stack fstbinaries/Capitalization.fst
 define Capitalization ;
@@ -87,6 +90,7 @@ define GrischunWords [
 	Preposition|
 	Interjection|
 	Foreign|
+	Abbreviations|
 	Article|
 	Pronoun];
 define GrischunLowerCase [GrischunWords .o. OrthoRule];
