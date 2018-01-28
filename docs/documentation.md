@@ -446,7 +446,7 @@ Die Verarbeitung für unbekannte Formen enthält die regelmässigen Substantive,
 
 #### 6.11.6 Abkürzungen und Namen
 <a name="sec6.11.6"></a> 
-In `wordlists/noun-abbr.txt` sind Abkürzungen für Substantive enthalten. Sie tragen die Tags +Noun +Abbr . Ist eine Abkürzungsliste vorhanden, empfiehlt es sich, diesen Teil zu ersetzen.
+In `wordlists/abbr.txt` sind Abkürzungen und Akronyme enthalten. Sie haben das Wortartentag `+Abbr`. 
 In `wordlists/noun-proper.txt` sind Namen aufgelistet. Für Personennamen liegt es nahe, aus bestehenden System diesen Teil zu übernehmen. Für sprachspezifische Namen werden aber spezifische Listen vonnöten sein.
 
 ### 6.12 Verben
