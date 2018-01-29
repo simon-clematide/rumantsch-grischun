@@ -46,7 +46,7 @@ $text =~ s/([a-zäöüàèìòùâêîôûáéíóúA-ZÄÖÜÀÈÌÒÙÂÊÎÔ�
 # Doppelpunkt zwischen Ziffern
 $text =~ s/(\d+) : ?(\d+)/\1:\2/g;
 # Abkürzungen behandeln
-$text =~ s/(usw|etc|resp|) \./\1\./g;
+$text =~ s/(usw|etc|resp) \./\1\./g;
 $text =~ s/\s+/ /g;
 $text =~ s/\n+/ /g;
 
