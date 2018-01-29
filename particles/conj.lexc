@@ -38,6 +38,7 @@ che:ch'	VOCSUBEND;
 sche	SUBEND;
 sche:sch'	VOCSUBEND;
 schebain	SUBEND;
+cunquai	SUBEND;
 
 !! Combinations are not part of the morphology:
 ! nua che, cur che, perquai che, etc.
