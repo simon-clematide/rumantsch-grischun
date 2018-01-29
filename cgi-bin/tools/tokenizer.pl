@@ -22,7 +22,7 @@ while (<INFILE>){
 close (INFILE);
 
 # Satzzeichen abtrennen:
-$text =~ s/([;:?!])/ \1/g;
+$text =~ s/([;:?!])\b/ \1/g;
 #
 $text =~ s/(\D)\,/\1 \,/g;
 $text =~ s/(\d)\,(\s)/\1 \,\2/g;
