@@ -12,13 +12,17 @@ abitadi
 abitant
 abitur
 aboliziunissem
+Aborigin
 abort
 abscess
 absint
 absolutissem
+absolvent
 absorbader
 abstal
+abstenziunist
 abunament
+abunent
 abus
 academicher
 academissem
@@ -39,6 +43,7 @@ accord
 accordader
 accordant
 accordeon
+accordeonist
 accrediment
 accreditiv
 accu
@@ -65,6 +70,7 @@ acquist
 acquittament
 acril
 acrilamid
+acrobat
 acrolect
 acronim
 acrostichon
@@ -74,6 +80,7 @@ actant
 actinium
 activatur
 activissem
+activist
 actuar
 actuariat
 actur
@@ -81,6 +88,7 @@ acusticher
 acziunari
 acziunariat
 acziunissem
+acziunist
 adapter
 adatg
 adattur
@@ -90,6 +98,7 @@ adempliment
 adenin
 adenom
 adenosin
+aderent
 adet
 adgiudicament
 adia
@@ -97,8 +106,10 @@ adiever
 aditiv
 adjectiv
 adjunct
+adjutant
 administratur
 admiral
+admiratur
 admonider
 adolescent
 adom
@@ -238,6 +249,7 @@ alpaca
 alpegiant
 alpha
 alpinissem
+alpinist
 alt
 altar
 altar-stgaffa
@@ -258,6 +270,7 @@ alvet-aurora
 alvet-reseda
 alvurn
 amalgam
+amant
 amar
 amaradi
 amarament
@@ -272,11 +285,13 @@ amatur
 ambassadur
 ambient
 ambit
+ambizius
 ambon
 ambrodel
 ambulatori
 amebicid
 amen
+americanist
 amet
 ametist
 amfetamin
@@ -285,6 +300,7 @@ amfibol
 amfibolit
 amfipod
 amfiteater
+ami
 amiant
 amid
 amilogram
@@ -329,12 +345,15 @@ anè
 anellid
 anemicher
 anemometer
+anestesist
 anestetic
 anet
 aneurisma
 anghel
 anglicissem
 anglist
+anglofon
+Anglosaxon
 angul
 anidrid
 anilin
@@ -356,7 +375,9 @@ ansiel-chavriel
 antagonissem
 antagonist
 antecedent
+antecessur
 antem
+antenat
 antennarid
 antependi
 antependium
@@ -379,7 +400,9 @@ antidot
 antidschihadist
 antidumping
 antierox
+antiextremist
 antifaschissem
+antifaschist
 antiflogisticum
 antifonari
 antigen
@@ -407,6 +430,7 @@ antonim
 antracit
 antropofag
 antropoid
+antropolog
 antroponim
 anus
 aorist
@@ -414,6 +438,7 @@ apatit
 aperitiv
 apero
 aperol
+apicultur
 apocrif
 apofillit
 apogeum
@@ -477,6 +502,7 @@ archiprer
 architect
 architrav
 archiv
+archivari
 archuvestg
 archuvestgieu
 arcosol
@@ -488,6 +514,7 @@ areometer
 argentin
 argentit
 argient
+argienter
 argon
 argonaut
 argument
@@ -509,6 +536,7 @@ aroma
 aromatic
 aromunic
 arpret
+arpretist
 arquebusier
 arrak
 arranschader
@@ -529,6 +557,7 @@ arsuc
 art
 artefact
 artg
+artger
 artget
 artifizi
 artifizier
@@ -568,6 +597,7 @@ aspirant
 aspiratur
 aspirin
 asprun
+ass
 assagl
 assami
 assassin
@@ -577,6 +607,7 @@ assediant
 assegn
 assegnà
 assegnader
+assegnant
 assegnaziun
 assemblader
 assens
@@ -599,6 +630,7 @@ astragl
 astragl-chicra
 astragl-esparsetta
 astrolabi
+astrolog
 astromobil
 astronaut
 astronom
@@ -610,6 +642,7 @@ ateist
 atelier
 atlant
 atlas
+atlet
 atoll
 atom
 atrium
@@ -655,12 +688,14 @@ aulos
 aur
 aur-chaura
 aur-giat
+aurer
 auspizi
 austenit
 austori
 austrel
 austronesian
 aut
+autcumissari
 autcumissariat
 autissem
 autist
@@ -676,8 +711,10 @@ autoconcept
 autoconsum
 autocrat
 autocumond
+autodidact
 autodischarmament
 autodrom
+autoelectricist
 autoevaluaziun
 autofon
 autogiudicament
@@ -690,9 +727,11 @@ automaticher
 automatissem
 automobil
 automobilissem
+automobilist
 autonettegiader
 autonettegiament
 autoprovediment
+autoproveditur
 autopurtret
 autoregulatur
 autosensur
@@ -726,6 +765,7 @@ avantchasa
 avantchastè
 avantchor
 avantcorp
+avantgardist
 avantglatscher
 avantguerra
 avantitel
@@ -736,9 +776,11 @@ avantporta
 avantpost
 avantterren
 avanzament
+avar
 avaric
 avat
 avatar
+avdant
 avegnir
 aventurier
 avers
@@ -748,6 +790,7 @@ avestic
 aviader
 aviader-dinamo
 aviament
+aviatur
 avieul
 avieuler
 aviez
@@ -780,6 +823,7 @@ babau
 babingtonit
 babissem
 babnoss
+babun
 babyboom
 baccalà
 baccanal
@@ -862,9 +906,11 @@ bambus
 banc
 banc-baselgia
 banchet
+banchier
 banchin
 bancomat
 bancs
+bandaschist
 bandì
 bandierel
 bandischà
@@ -915,6 +961,7 @@ barion
 barist
 barit
 bariton
+barlac(ca)
 barlot
 barman
 baroc
@@ -930,6 +977,7 @@ bartgom
 baruffant
 baruffun
 barun
+barun(essa)
 basaa
 basaliom
 basalt
@@ -938,6 +986,7 @@ basc
 baschkir
 baseball
 basegn
+basegnus
 basicranio
 basilect
 basilic
@@ -946,6 +995,7 @@ basrin
 bass
 basset
 bassin
+bassist
 bassventer
 bast
 bastard
@@ -981,6 +1031,7 @@ battaporta
 battarel
 battarin
 battarissem
+battarist
 battastrada
 battatarader
 battavia
@@ -1021,6 +1072,7 @@ beamer
 bebop
 bec
 bec-papagagl
+beduin
 beefallo
 beffarel
 begliet
@@ -1032,6 +1084,7 @@ benagl
 benedictin
 benefactur
 benefizi
+benefiziari
 benefiziat
 bengiamin
 bentonit
@@ -1079,6 +1132,7 @@ bier
 bierer
 bierin
 biestg
+bigamist
 bigl
 bigl-cisterna
 bigliard
@@ -1100,8 +1154,11 @@ bini
 binom
 bintgun
 biogas
+biograf
+biolog
 biom
 biopur
+biotecnicist
 bioterrorissem
 biotin
 biotop
@@ -1110,8 +1167,10 @@ biquintil
 birbant
 birman
 biro
+birocrat
 birocratissem
 birofon
+birolist
 bischen
 bischenet
 bischu
@@ -1120,6 +1179,7 @@ biscotg
 biscuit
 biscutin
 biserptil
+bisexual
 bismut
 bison
 bist
@@ -1174,14 +1234,17 @@ bloccachadaina
 bloccader
 blog
 blogger
+bloghist
 blues
 bluf
 blusunz
 bluztger
 boardist
 bob
+bobist
 bodybuilder
 bodybuilding
+Boem
 bogn
 bogn-maria
 boicot
@@ -1218,9 +1281,11 @@ boscop
 boson
 bostg
 bostgaglia
+bostger
 bostget
 bostitch
 bot
+botanist
 botox
 botsch
 bottel
@@ -1230,6 +1295,7 @@ bouldering
 boulevard
 bouqué
 bouquet
+bouquetier
 bov
 bov-mustgat
 bov-watussi
@@ -1241,6 +1307,7 @@ bovist-satget
 bowling
 boxar
 boxer
+boxist
 bozzetto
 bradip
 brager
@@ -1275,6 +1342,7 @@ bratschol
 break
 bregia
 bren
+Breton
 brevet
 brevier
 brezel
@@ -1332,11 +1400,13 @@ bückling
 bucs
 budget
 budissem
+budist
 buf
 buffer
 buffet
 buffiez
 buffim
+buffun
 buggy
 buginais
 bugl
@@ -1390,6 +1460,7 @@ burdel
 burdi
 burgais
 burgamester
+Burgognais
 buriat
 burka
 burlettun
@@ -1402,6 +1473,7 @@ bursariel
 burschè
 burser
 burset
+bursian(a
 burtg
 burtget
 burunduc
@@ -1410,6 +1482,7 @@ bustab
 butan
 butanol
 butigant
+butigar
 butin
 butinader
 butrichel
@@ -1424,6 +1497,7 @@ buttatschun
 buttun
 buttuner
 bypass
+cabalist
 cabaret
 cabarettist
 cabel
@@ -1448,12 +1522,15 @@ caf
 cafanun
 café
 cafein
+cafetier
 caiman
 cainozoicum
 cajac
 cake
 cake-stailalava
 calam
+Calancais
+Calanchin
 calander
 calandragi
 calasantin
@@ -1468,6 +1545,7 @@ caliber
 calif
 calipso
 calium
+calligraf
 calmativ
 caloid
 calorimeter
@@ -1483,6 +1561,7 @@ camarier
 camasutra
 cambi
 cambium
+Cambodschan
 cambrium
 cameleon
 camerari
@@ -1490,6 +1569,7 @@ camfer
 camiun
 camiun-cisterna
 camiun-tractor
+camiunist
 camp
 campader
 campadi
@@ -1497,17 +1577,20 @@ campanil
 campanilissem
 campilobacter
 campiun
+campiun(essa)
 campiunadi
 campus
 camufladi
 camuflagi
 canadais
 canagl
+canagl(ia)
 canapé
 canapé-letg
 canarin
 cancan
 cancer
+cancerolog
 candelaber
 candidat
 canedel
@@ -1520,12 +1603,16 @@ canon
 canoni
 canonicat
 cantinier
+cantor
 canu
+canut
 canutissem
+canutist
 canyoning
 canzional
 caolin
 caos
+caot
 cap
 capanegal
 cape
@@ -1547,6 +1634,7 @@ capsaicin
 captain
 captcha
 capugl
+capuriun
 caput
 car
 caracal
@@ -1598,12 +1686,15 @@ carnifex
 carnissem
 carnivor
 carnun
+Caroling
+carossarist
 carotin
 carpaccio
 carpel
 carpun
 carpus
 carré
+carrierist
 carschen
 carschun
 carschun-chamutsch
@@ -1611,6 +1702,8 @@ carschun-funtauna
 carst
 carstgaun
 cartel
+cartent
+cartograf
 cartoon
 cartoonista
 cartusian
@@ -1632,6 +1725,7 @@ cassettofon
 cassier
 cassis
 castel
+Castilian
 casting
 castur
 casual
@@ -1645,6 +1739,7 @@ catar
 cataract
 cataster
 catcher
+catechet
 catechissem
 cateder
 catenoid
@@ -1670,12 +1765,15 @@ ceder
 celenterat
 celiac
 celibat
+cellist
 cello
 cellofan
 cellulite
 cellulitis
 celluloid
 celsius
+Celt
+cembalist
 cembalo
 cement
 cementader
@@ -1701,6 +1799,7 @@ ceremoniari
 certificat
 cesium
 cessiunari
+cessur
 cetan
 cevapcici
 chadanatsch
@@ -1745,6 +1844,7 @@ chamin
 chamischut
 chamorro
 champ
+champagnard
 chamutsch
 chanal
 chanaster
@@ -1771,6 +1871,8 @@ chanunier
 chanvà
 chanvalin
 chanvel
+chanzlist
+chanzunier
 chapè
 chapeller
 chapital
@@ -1809,6 +1911,7 @@ chargiatelefonin
 chargiaterra
 chargiatramosas
 chariel
+charin
 charnatsch
 charniez
 charolais
@@ -1849,6 +1952,7 @@ chastrat
 chastravin
 chat
 chatinim
+chatist
 chatsch
 chatschader
 chatschadur
@@ -1930,8 +2034,11 @@ chazzer
 check
 check-in
 check-point
+chemicant
+chemicist
 chemigraf
 cheminé
+cheminist
 chepi
 cheramicher
 cheramist
@@ -1954,12 +2061,15 @@ chilus
 chimosin
 chimus
 chindel
+chinesiolog
 chinin
 chinook
 chip
 chipewyan
 chipmunc
+chiropractur
 chiropraticher
+chirurg
 chischner
 chit
 chitin
@@ -1972,7 +2082,9 @@ chonver
 chor
 chor-baselgia
 choral
+choreograf
 chorion
+chorist
 chou-chou
 chowder
 chutney
@@ -1999,6 +2111,7 @@ cilinder
 cimbal
 cimbel
 cimometer
+cineast
 cinefil
 cinescop
 cinic
@@ -2034,14 +2147,17 @@ clamader
 clan
 clapragnim
 claqueur
+clarinettist
 classament
 classic
 classicher
 classicissem
+classicist
 classifitgader
 classopanto
 clauder
 claus
+claustral
 claustrigl
 clavà
 clavazin
@@ -2067,6 +2183,7 @@ clima
 climacteri
 climacterium
 climagram
+climatolog
 climax
 climbim
 clincher
@@ -2120,6 +2237,7 @@ codader
 code
 codein
 codex
+coeditur
 coeffizient
 coencim
 coesit
@@ -2161,6 +2279,7 @@ colon
 colonel
 colonialissem
 colonialist
+colonisatur
 colonist
 colorit
 coloss
@@ -2171,8 +2290,10 @@ colugo
 columb
 columbari
 columbin
+columnist
 colurant
 colurissem
+colurist
 colurit
 coma
 combi
@@ -2187,11 +2308,14 @@ commando
 commember
 commendatur
 commentari
+commentatur
 commerzi
 commerziant
 commiliton
 committent
 commoditad
+communicant
+communicatur
 communissem
 communist
 commutatur
@@ -2200,9 +2324,11 @@ compustur
 computer
 comtur
 con
+conburgais
 concarstgaun
 concartent
 concedant
+concedent
 concentrat
 concentratur
 concepider
@@ -2210,6 +2336,7 @@ concept
 concepziun
 concern
 concert
+concertist
 concessiunament
 concessiunari
 concierge
@@ -2232,8 +2359,10 @@ condor
 condroitin
 conduct
 conductur
+confamigliar
 confect
 confecziunament
+conferenzier
 conferiment
 confess
 confessiunal
@@ -2241,6 +2370,7 @@ confessur
 confident
 confiert
 confirmader
+confirmand
 confirmatur
 confisier
 confit
@@ -2251,12 +2381,14 @@ confort
 confortader
 confrar
 confrunt
+confundatur
 confusiunari
 confuzianissem
 congarant
 congedi
 congiurà
 congress
+congressist
 congudagnader
 conguerregiant
 coniin
@@ -2268,8 +2400,11 @@ connossament
 connubi
 conopeum
 conquistador
+conquistadur
 conrectorat
 conrectur
+consanguin
+conscolar
 consegnader
 consegnant
 consens
@@ -2282,6 +2417,7 @@ conservatori
 conservatur
 consilium
 consistori
+consoci
 consolader
 consolidament
 consommé
@@ -2290,6 +2426,7 @@ consonantissem
 consort
 consorts
 consorzi
+conspiratur
 construct
 constructivissem
 constructur
@@ -2309,6 +2446,7 @@ contact
 contadi
 container
 contemplader
+contemporan
 conter
 context
 continent
@@ -2316,6 +2454,7 @@ contingent
 continuum
 conto
 conto-salari
+contorist
 contract
 contractant
 contrahent
@@ -2334,6 +2473,7 @@ conventual
 convers
 converter
 convertider
+convertit
 convict
 convischin
 convischinadi
@@ -2342,12 +2482,15 @@ convoi
 convolut
 cookie
 cooperativissem
+cooperatur
 cooptà
+coordinatur
 copiader
 copilot
 copist
 coprocessur
 coprocrom
+coproducent
 coptic
 copyright
 cor
@@ -2355,18 +2498,22 @@ corc
 cord
 cordalin
 cordam
+corder
 cordofon
 cordoli
 cordon
 cordonbleu
 cordun
+corepetitur
 coriandel
 coriander
+Corint
 coristoblastom
 corium
 corn
 corner
 cornet
+cornettist
 cornic
 cornichel
 cornichon
@@ -2375,7 +2522,9 @@ corporal
 corpul
 corpus
 correctiv
+corrector
 correctorat
+correctur
 correferat
 correferent
 correspundent
@@ -2392,6 +2541,7 @@ corv
 corvagl
 cosac
 cosmeticher
+cosmolog
 cosmonaut
 cosmopolit
 cosmopolitissem
@@ -2400,6 +2550,7 @@ coss
 cost
 costin
 costum
+costumist
 cot
 cotiledon
 cotschen
@@ -2408,6 +2559,7 @@ couloir
 countdown
 coup
 coupé
+couturier
 cover
 cowboy
 crab
@@ -2438,6 +2590,7 @@ craul
 craval
 cravallist
 creader
+createater(s)
 creatinin
 creatur
 credenzial
@@ -2457,6 +2610,7 @@ crescher
 crest
 crest-baselgia
 crest-fossa
+Cretais
 cretin
 cretinissem
 cric
@@ -2466,6 +2620,8 @@ criec
 cril
 crim
 crimi
+criminal
+criminalist
 criogen
 criolit
 crioscop
@@ -2475,6 +2631,8 @@ cripton
 criptorchissem
 crisam
 cristal
+cristian
+cristiandemocrat
 cristianissem
 criteri
 criticaster
@@ -2497,6 +2655,7 @@ cromer
 cromesqui
 cromosom
 cron
+cronist
 cronometer
 cronometragi
 cronometrist
@@ -2525,8 +2684,10 @@ cual
 cualet
 cualin
 cub
+Cuban
 cubeba
 cubissem
+cubist
 cubus
 cuc
 cuccalori
@@ -2536,6 +2697,7 @@ cucun
 cucunin
 cucurbitazin
 cudesch
+cudescher
 cudeschet
 cudeschun
 cudogn
@@ -2570,6 +2732,7 @@ culligraf
 culm
 culmar
 culp
+culpant
 cult
 cultim
 cultivatur
@@ -2630,12 +2793,18 @@ cumpraschunier
 cumpressur
 cumprimider
 cumpromiss
+cumproprietari
 cumulus
+cunabitant
+cunactur
 cunacziunari
 cunarrestà
 cunaucziunari
+cunautist
 cunautur
+cunbenefiziari
 cuncontrahent
+cuncreditur
 cundebitur
 cundiever
 cundiment
@@ -2643,22 +2812,32 @@ cundiziunament
 cundriz
 cundun
 cunfin
+cunfinant
+cunfinari
 cunfittadin
+Cungrischun
 cunigl
 cunigl-botschet
 cunigl-fieu
 cunigl-vulp
 cunimpressari
 cuninculpà
+cuniniziant
 cuninventader
 cunlegatari
+cunlocatari
 cunmandant
 cunmotociclist
+cunorganisatur
+cunpassagier
 cunpatrun
 cunpsalmist
 cunrapport
+cunredactur
+cunsindicalist
 cuntadin
 cuntegn
+cunteller
 cunter
 cunteralver
 cunterargument
@@ -2681,6 +2860,7 @@ cuntracrutsch
 cuntraculp
 cuntracumond
 cuntrademonstrant
+cuntradictur
 cuntrafactur
 cuntrafort
 cuntragarant
@@ -2719,6 +2899,7 @@ cuntschant
 cuntschapels
 cuntschet
 cunvendider
+cunviagiatur
 cup
 cupid
 cupitgader
@@ -2740,6 +2921,7 @@ curlist
 curnagl
 current
 currider
+curridur
 currier
 curriez
 currim
@@ -2771,6 +2953,7 @@ cusseglier
 cussin
 custodi
 cusu-vulpet
+cusunz
 cutizzim
 cutrin
 cutsch
@@ -2793,6 +2976,7 @@ cyborg
 d'uffizi
 dabun
 dachasa
+dactilograf
 dactilus
 dadaissem
 dadens
@@ -2816,6 +3000,7 @@ dasch
 dascharin
 dat
 datader
+datatipist
 datin
 dativ
 datler
@@ -2855,6 +3040,7 @@ decodadi
 decollatur
 decolté
 decor
+decoratur
 decoratur-expositur
 decotg
 decrement
@@ -2876,6 +3062,7 @@ definitiv
 deflectur
 defraudader
 defraudant
+defunct
 defurmatur
 degu
 deissem
@@ -2884,6 +3071,7 @@ delcredere
 delegà
 delfin
 delfinari
+deliberatur
 delict
 delinquent
 deliri
@@ -2899,6 +3087,7 @@ demodulatur
 demon
 demonim
 demonstrader
+demonstrant
 demoscop
 demuni
 dendrit
@@ -2908,6 +3097,7 @@ dent-chaun
 dent-liun
 dentigliun
 dentin
+dentist
 dentun
 denunziant
 deodorant
@@ -2931,11 +3121,13 @@ deputà
 deputat
 derivant
 derivat
+dermatolog
 derschader
 dervet
 dervisch
 desablunadi
 desaster
+descendent
 deseret
 desert
 desertur
@@ -2958,10 +3150,13 @@ destruider
 det
 det-pe
 detagl
+detaglist
 detaschament
+detectiv
 detectur
 detergent
 determinissem
+determinist
 detretschament
 dettal
 detunatur
@@ -2984,6 +3179,7 @@ diafragma
 diagram
 dial
 dialect
+dialectolog
 dialog
 diamagnetissem
 diamant
@@ -3037,6 +3233,7 @@ diluvial
 diminutiv
 dimmer
 dimora
+dimorant
 dinamissem
 dinamit
 dinamo
@@ -3050,6 +3247,7 @@ diorit
 dioxid
 dioxin
 diplom
+diplomand
 diplomat
 diplur
 diptichon
@@ -3142,6 +3340,7 @@ doctorat
 docu
 document
 documentalist
+documentarist
 dodecaeder
 dogaressa
 doge
@@ -3153,6 +3352,7 @@ dogrib
 dollar
 dolmen
 dolomit
+Dolomitan
 dom
 domcantor
 domchor
@@ -3162,7 +3362,9 @@ domicilià
 domiciliatari
 dominatur
 domini
+dominican
 domptur
+donatari
 donatur
 döner
 dongiovanni
@@ -3190,10 +3392,12 @@ dratguir
 dravida
 dress
 dretg
+dretger
 dribbling
 dril
 drink
 driver
+droghist
 dromedar
 dropdown
 drudel
@@ -3256,6 +3460,7 @@ e-government
 e-guide
 e-mail
 e-quint
+Ebrer
 ebullioscop
 echinoderma
 echolot
@@ -3265,6 +3470,7 @@ eclectic
 eclecticissem
 eclogit
 eco
+ecologist
 econom
 economist
 ecosistem
@@ -3279,6 +3485,7 @@ edict
 edifizi
 editorial
 editur
+educatur
 efedrin
 effect
 effect-tgiralla
@@ -3309,19 +3516,25 @@ elect
 electorat
 electret
 electric
+electricist
 electrobass
 electrocardiogram
 electrocontrollader
 electrocumond
 electroencefalogram
 electrofilter
+electroinschigner
+electroinstallatur
 electrolabor
 electrolavuratori
 electrolit
 electromagnet
 electromaterial
+electromecanist
 electron
+electronist
 electrosmog
+electrotecnicist
 electrotren
 electur
 electurat
@@ -3422,6 +3635,7 @@ enguladitsch
 enlozzament
 ennavader
 ennivlament
+enolog
 enquagl
 enritgiment
 ensaina
@@ -3436,6 +3650,7 @@ enterrament
 entertainer
 entiert
 entir
+entomolog
 entrecôte
 entrée
 entretschament
@@ -3463,6 +3678,7 @@ epigon
 epigonissem
 epigraf
 epigram
+epileptic
 epilog
 episcopat
 epitaf
@@ -3485,9 +3701,13 @@ eraldic
 erapatit
 erbari
 erbicid
+erborist
 ercul
+eremit
 eremitadi
 eremitagi
+eretic
+ergoterapeut
 eritem
 eritrocit
 eritropoietin
@@ -3502,6 +3722,7 @@ eroissem
 erold
 eromobil
 eromodel
+eronaut
 eroplan
 eroport
 erosol
@@ -3520,20 +3741,24 @@ essay
 essenzial
 esser
 ester
+estet
 estragon
 estrogen
 etan
 etanol
+etatist
 eter
 eternit
 etero
 eterocop
+eterosexual
 eteroterm
 ethos
 etimon
 etnolect
 etnolog
 etolog
+Etrusc
 ettitic
 etui
 eucaliptus
@@ -3544,6 +3769,7 @@ eufonium
 eugenol
 eunuc
 eurocheque
+eurocrat
 eurocredit
 euromartgà
 europium
@@ -3561,8 +3787,10 @@ ewe
 ex
 ex-ami
 ex-libris
+ex-partenari
 ex-um
 examen
+examinatur
 exantem
 exauriment
 exaustur
@@ -3574,6 +3802,8 @@ excitader
 exclamatur
 excrement
 excurs
+excursiunist
+executur
 exeget
 exempel
 exemplar
@@ -3582,6 +3812,7 @@ exercizi
 exibiziunissem
 exibiziunist
 exil
+exilant
 exilià
 existent
 existenzialissem
@@ -3605,12 +3836,15 @@ export
 exposé
 exposimeter
 expositur
+expresident
 express
 expressiunissem
 expressiunist
+expropriant
 exsudat
 extensur
 exteriur
+extern
 extract
 extractur
 extrem
@@ -3663,6 +3897,7 @@ fanestra
 fanestrigl
 fanestrin
 fantassem
+fantast
 fanti
 fantom
 far
@@ -3672,11 +3907,13 @@ fargun
 farinent
 farisaissem
 fariser
+farmaceut
 farmer
 farnaclet
 fasan
 fasch
 faschissem
+faschist
 fascichel
 fasor
 fastatg
@@ -3701,6 +3938,7 @@ fax
 faxader
 fazielet
 federalissem
+federalist
 feedback
 feeling
 feferminz
@@ -3717,6 +3955,7 @@ feldzeugmaister
 felentà
 felesch
 felesch-lantschetta
+fellach
 femicid
 femidom
 feminin
@@ -3730,6 +3969,7 @@ fendacrosa
 fenilalanin
 fenitoin
 fenix
+fenizian
 fennec
 fennic
 fenol
@@ -3762,6 +4002,7 @@ fetus
 feud
 feudalissem
 feuilleton
+feuilletonist
 feumer
 fiac
 fiasco
@@ -3773,6 +4014,7 @@ fideicommis
 fidelin
 fidibus
 fidschian
+fiduziant
 fiduziari
 fier
 fier-chazzetta
@@ -3792,6 +4034,7 @@ filaicht
 filament
 filantrop
 filap
+filarmonist
 filatelist
 fildarom
 filet
@@ -3800,6 +4043,7 @@ filien
 filien-luf
 filien-utschè
 filin
+Filippin
 filippino
 filister
 filistier
@@ -3821,6 +4065,7 @@ fimariel
 fimarium
 final
 finale
+finalist
 finanzier
 finit
 finitad
@@ -3837,6 +4082,7 @@ fisi
 fisicat
 fisilier
 fisiolog
+fisioterapeut
 fist
 fistet
 fit
@@ -3860,6 +4106,7 @@ flagellat
 flagiolet
 flair
 flaivel
+Flam
 flamenco
 flamingo
 flanader
@@ -3874,13 +4121,16 @@ flattader
 flattim
 flattur
 flatus
+flautist
 flavivirus
 flavonoid
 flectader
 flectar
 fleece
 flegma
+flegmatic
 fletom
+flexostampadur
 flipchart
 flipper
 flirt
@@ -3904,6 +4154,7 @@ fluorid
 fluorit
 fluret
 flurin
+flurist
 fluss
 flutget
 flutsch
@@ -3938,6 +4189,7 @@ forensicher
 formaldehid
 formalin
 formalissem
+formalist
 format
 Formazzais
 formular
@@ -3951,11 +4203,15 @@ fossa
 fossal
 fossil
 fotocopiader
+fotocumpositur
 fotodesign
+fotograf
 fotogram
 fotogrametader
 fotogrammetader
 fotogrammeter
+fotolaborant
+fotolitograf
 fotomodel
 foton
 fotoreportader
@@ -3980,6 +4236,7 @@ framework
 franader
 franc
 franciscan
+francofon
 franctiradur
 frandaivel
 frangipani
@@ -4010,13 +4267,16 @@ fresader
 fresbee
 fresco
 frestg
+freudian
 frevo
 fricassà
 fricativ
 fried
 friessen
 fringhel
+Fris
 frisbee
+Frislandais
 frisun
 frisunz
 fritg
@@ -4056,6 +4316,7 @@ fund
 fundagl
 fundament
 fundamentalissem
+fundamentalist
 fundatur
 fundraising
 fundus
@@ -4072,6 +4333,7 @@ furet
 furfural
 furier
 furius
+Furlan
 furmader
 furmanter
 furmaritschs
@@ -4114,6 +4376,7 @@ gadolinium
 gaelic
 gag
 gagat
+Gal(la)
 galago
 galalit
 galant
@@ -4122,8 +4385,10 @@ galdin
 galgant
 galiot
 galizian
+gallarist
 gallicissem
 galop
+galun
 galvanoplasticher
 galvanostegist
 gambitsch
@@ -4136,6 +4401,8 @@ ganglion
 gangster
 ganit
 garant
+garaschist
+gardarobier
 gardina
 gardist
 garegiament
@@ -4150,6 +4417,7 @@ gasettist
 gasometer
 gastrin
 gastrinom
+gastroenterolog
 gastromicet
 gastronom
 gastroscop
@@ -4175,6 +4443,7 @@ generalissem
 generalist
 generatur
 genericum
+generus
 geneticher
 geni
 genitiv
@@ -4188,12 +4457,14 @@ gentilum
 genus
 geofisicher
 geofon
+geograf
 geolog
 geomaticher
 geometer
 geopunct
 georadar
 geoservetsch
+geotecnicist
 geotop
 geotriangul
 geotricum
@@ -4205,6 +4476,7 @@ geriater
 germanissem
 germanist
 germanium
+germanofon
 gerontolog
 gerundi
 gest
@@ -4215,6 +4487,7 @@ geysir
 gheco
 ghetto
 ghinseng
+ghitarrist
 giabus
 giabuset
 giachet
@@ -4264,6 +4537,7 @@ gig
 gigant
 gigantissem
 gigatlon
+gigatlonist
 gigot
 gilbertais
 gilet
@@ -4305,7 +4579,9 @@ giro
 girometer
 giroscop
 girun
+gist
 giubilament
+giubilar
 giubileum
 giudaissem
 giudicament
@@ -4325,12 +4601,15 @@ giuncher
 giura
 giurà
 giurader
+Giurassian
 giurisdictur
 giurist
+giuror
 giustachars
 giustificativ
 giustrader
 giuvel
+giuvelier
 giuven
 giuvenaster
 giuvenessendi
@@ -4351,6 +4630,7 @@ glariel
 glatsch
 glatscher
 glatschun
+glaziolog
 glicerin
 glicogen
 glicolipid
@@ -4393,6 +4673,7 @@ gnosticher
 gnu
 gnugniez
 gnugnim
+gnugnun
 gobelet
 gobelin
 gobiun
@@ -4410,6 +4691,7 @@ goniometer
 gorgonzola
 gorontalo
 gospel
+Got
 gotlandium
 gourmet
 grà
@@ -4440,6 +4722,7 @@ grassitsch
 grasslut
 grassottel
 gratinà
+gratulant
 graun
 graunin
 gravader
@@ -4465,16 +4748,19 @@ grip
 grippissem
 grippun
 grisch
+Grischun
 grizzly
 grobian
 groffel
 grog
+grondaner
 grondangul
 gronducadi
 groppatsch
 gros
 gross
 grossatsch
+grossist
 grotesc
 gru
 grufti
@@ -4504,11 +4790,13 @@ guardiastgomias
 guarider
 guaritur
 guatader
+Guatemaltec
 guaud
 guaudet
 gudogn
 guegl
 guerizin
+guerregiant
 guerrier
 guerriglier
 gugliel
@@ -4538,6 +4826,7 @@ gutter
 guttin
 guvern
 guvernagl
+guvernatur
 gwichin
 gymel
 gyros
@@ -4580,6 +4869,7 @@ hasch
 hasché
 haschemit
 haschisch
+haschist
 hashtag
 hausa
 haussier
@@ -4597,6 +4887,7 @@ helium
 hellenissem
 helvetissem
 hematom
+hemofil
 hemoglobin
 hentger
 heptagon
@@ -4617,6 +4908,7 @@ himachali
 hindi
 hindu
 hinduissem
+hinduist
 hip-hop
 hippi
 hipster
@@ -4635,6 +4927,7 @@ holojectur
 homeshopping
 hometrainer
 homosapiens
+Honduran
 honor
 hooligan
 hooliganissem
@@ -4673,6 +4966,7 @@ idealissem
 idealist
 identificatur
 identifitgader
+ideolog
 idiofon
 idiolect
 idiom
@@ -4699,6 +4993,7 @@ ierdi
 iert
 iesen
 igbo
+igienist
 iglu
 ignitron
 ignorant
@@ -4715,6 +5010,8 @@ illetrissem
 illuminatur
 illuminissem
 illusiunissem
+illusiunist
+illustratur
 ilocano
 ilum
 image
@@ -4737,6 +5034,7 @@ imperatur-schuldà
 imperfect
 imperi
 imperialissem
+imperialist
 impermeabel
 impertinent
 impetus
@@ -4752,6 +5050,7 @@ impregnader
 impresario
 impressari
 impressiunissem
+impressiunist
 impressum
 imprimat
 imprimatur
@@ -4768,7 +5067,9 @@ incassament
 incasso
 incendi
 incendiament
+incendiari
 incest
+incestuus
 incident
 incipit
 inclusori
@@ -4795,6 +5096,7 @@ individi
 individualissem
 individualist
 indizi
+Indogerman
 indol
 indossament
 indossant
@@ -4809,6 +5111,7 @@ infantarist
 infanticid
 infanticidi
 infarct
+inferiur
 infimum
 infinit
 infinitiv
@@ -4823,6 +5126,7 @@ infurmant
 ingiant
 ingiantader
 ingiurià
+Ingusch
 ingush
 inibitur
 inimi
@@ -4830,8 +5134,11 @@ inizi
 inizià
 iniziant
 injectur
+innocent
 innovatur
 input
+inquilin
+inquisitur
 insatg
 inschign
 inschigner
@@ -4840,6 +5147,7 @@ insect
 insecticid
 insectivor
 inserat
+inserent
 inseriment
 insert
 inserziun
@@ -4847,16 +5155,20 @@ insider
 inspectur
 inspecturat
 inspiratur
+inspizient
 installatur
 instigader
+instigant
 instigatur
 instinct
 institut
 instructur
 instruì
 instrument
+instrumentalist
 instrumentari
 insudat
+insulan
 insular
 insurgent
 intellect
@@ -4886,6 +5198,8 @@ internament
 internat
 internaziunalissem
 internet
+internist
+interpellant
 interprendent
 interprendider
 interpret
@@ -5017,10 +5331,12 @@ japonais
 jard
 jargon
 jass
+jassist
 jauer
 javanais
 jazz
 jazzer
+jazzist(a(
 jeep
 jejunum
 jenic
@@ -5053,9 +5369,12 @@ jugendstil
 juhè
 juke-box
 jukebox
+junghian
+junior
 junket
 jupe
 juvel
+juvelier
 juvenil
 kabard
 kabuki
@@ -5079,6 +5398,7 @@ kebab
 kefir
 kelp
 kenguru
+Kenian
 kerli
 ketschup
 keuper
@@ -5101,6 +5421,7 @@ kimono
 kincaju
 kino
 kiosc
+Kirghis
 kirsch
 kitesurfing
 kitsch
@@ -5133,12 +5454,15 @@ l'auter
 l'Autischem
 l'ego
 l'empernaivel
+l'emprim
 l'impedir
 l'infallibel
 label
 labirint
 labor
+laborant
 laboratori
+laborist
 labourissem
 labrador
 labradorit
@@ -5151,6 +5475,7 @@ lader
 ladernitsch
 ladim
 ladimer
+Ladin
 ladinissem
 ladino
 ladritsch
@@ -5162,6 +5487,7 @@ laicat
 laicissem
 laicist
 lain
+lainari
 lainom
 lajet
 lajetg
@@ -5193,6 +5519,7 @@ lantschet
 laot
 laparoscop
 lapislazuli
+Lapon
 lappavinars
 lappi
 lappiez
@@ -5224,6 +5551,8 @@ latsch
 lattun
 laud
 laudamus
+laudatur
+laureat
 lauroceras
 lausser
 lavabo
@@ -5233,6 +5562,7 @@ lavandin
 lavarnaun
 lavativ
 lavavaiders
+laviner
 lavor
 lavurant
 lavuratori
@@ -5247,6 +5577,7 @@ lazarit
 leader
 leasing
 lecitin
+lector
 lectorat
 lectur
 lecziunari
@@ -5254,6 +5585,7 @@ lef
 lefzagl
 legat
 legatari
+legatur
 legislatur
 legiunari
 leguan
@@ -5264,6 +5596,7 @@ leninissem
 lenziel
 leopard
 leporello
+leprus
 leprusari
 lepton
 ler
@@ -5295,9 +5628,12 @@ liberader
 liberal
 liberalissem
 liberatur
+Liberian
 libero
 libertin
 libli
+librari
+librarist
 libret
 librettist
 libroc
@@ -5313,6 +5649,7 @@ liftier
 lign
 lignin
 liguster
+liliputan
 limbo
 limburgais
 limfocit
@@ -5346,6 +5683,7 @@ litgafemnas
 litgamauns
 litgaspida
 litgatgil
+litgatgil(s)
 litgen
 litgen-barba
 litgen-chalesch
@@ -5368,18 +5706,23 @@ livel
 livestream
 lob
 lobissem
+lobist
 lobul
 local
 localissem
 locatari
 locatur
+locomotivist
+locutur
 loden
 loft
 logaritmus
+logic
 logical
 logl
 logo
 logoped
+logoterapeut
 lojban
 lolly
 lom
@@ -5387,6 +5730,7 @@ lombard
 lomiader
 lontan
 looping
+Loren
 loris
 losartan
 lotto
@@ -5404,6 +5748,7 @@ luiseno
 lulli
 lumbago
 lumbardun
+Lumnezian
 lumpagrossa
 lunch
 lunda
@@ -5437,6 +5782,7 @@ macrofag
 macrolid
 macromolecul
 macrovirus
+Madagasc
 mader
 madrigal
 madurais
@@ -5453,6 +5799,7 @@ magister
 magistrat
 magiur
 magl
+magl(ia)
 maglia-avieuls
 maglia-insects
 magliacadavers
@@ -5529,6 +5876,7 @@ maletg
 maletg-engiavin
 maletg-engiavinera
 maletg-furmicler
+malfactur
 malfatg
 malfatschent
 malguvern
@@ -5541,6 +5889,8 @@ malordinà
 malpass
 malputgà
 malruaus
+malsanitsch
+malsaun
 malscuidus
 malspiert
 malt
@@ -5586,6 +5936,7 @@ mangiabain
 mangiacudeschs
 mangiar
 manglament
+manglus
 mango
 mania
 manierissem
@@ -5640,6 +5991,7 @@ marcun
 mardi-tschaiver
 marel
 marenghin
+marginal
 margnac
 mari
 marì
@@ -5654,9 +6006,11 @@ marketing
 markup
 marmel
 marmelist
+marmorist
 marmugn
 marmugniez
 marmugnim
+marmugnun
 marodeur
 maronit
 marosser
@@ -5728,8 +6082,10 @@ matscheur
 mattatsch
 mattet
 mattin
+maturand
 maun
 maunin
+Maur
 mausoleum
 maxi-cosi
 maximum
@@ -5746,7 +6102,9 @@ mazzot
 mbundu
 meander
 mecanissem
+mecanist
 mecanist-decollatur
+mecatronist
 mecen
 mecenat
 mechapracticist
@@ -5761,9 +6119,11 @@ mediatur
 medicament
 medium
 medley
+medunz
 megafon
 megahit
 megalit
+megaloman
 megastar
 megl
 meglier
@@ -5798,6 +6158,7 @@ meningiom
 meniscus
 mennonit
 mentol
+mentur
 menu
 menuet
 mer
@@ -5806,6 +6167,7 @@ mercenari
 mercenariat
 merder
 meridian
+meridiunal
 merino
 merit
 merlot
@@ -5816,6 +6178,7 @@ mesenteri
 mesirader
 mesiraglisch
 mesirin
+Mesolcinais
 mesolect
 mesoliticum
 meson
@@ -5859,6 +6222,7 @@ micel
 micmac
 micro-element
 micro-organissem
+microbiolog
 microbiom
 microcensus
 microchip
@@ -5868,6 +6232,7 @@ microcosmos
 microfag
 microfilm
 microfon
+micromecanist
 micrometer
 micropreparat
 microprocessur
@@ -5901,6 +6266,7 @@ milliavel
 millibar
 millimeter
 millipes
+milliunari
 mim
 mimetissem
 min
@@ -5920,6 +6286,7 @@ minihelicopter
 minijupe
 minim
 minimalissem
+minimalist
 minimum
 miniparsol
 minipaunin
@@ -5953,6 +6320,7 @@ mir-chasa
 mir-spartafieu
 mirabeller
 miracul
+miradur
 mirandais
 miriofil
 mirliton
@@ -5970,10 +6338,12 @@ missile
 missiunari
 mister
 misteri
+misterius
 mistgel
 mistgel-chapitscha
 mistgel-furtga
 mistgel-tamarisc
+mistic
 misticissem
 mistral
 mistun
@@ -6008,6 +6378,7 @@ modus
 mofa
 mogn
 mogul
+mohammedan
 mohawk
 moksha
 mol
@@ -6023,6 +6394,8 @@ mollusc
 moloc
 moltun
 monachissem
+monarc
+monarchist
 monasteri
 mongin
 mongo
@@ -6090,6 +6463,7 @@ moster
 motel
 motetus
 motiv
+motivatur
 motociclissem
 motociclist
 motor
@@ -6100,6 +6474,7 @@ motto
 mountainbike
 mountainbiker
 moviment
+moziunari
 muc
 mucs
 mudregiader
@@ -6113,12 +6488,14 @@ muflun
 mufti
 mugrin
 mui
+mulassier
 mulat
 mulestader
 mulet
 muletg
 mulgara
 mulin
+muliner
 mulissier
 mullah
 mulschader
@@ -6167,7 +6544,9 @@ muscul
 museum
 musical
 musicant
+musicist
 musicist-chantadur
+musicolog
 musket
 musketier
 muslim
@@ -6195,7 +6574,9 @@ mutschli
 muvel
 n'ko
 na
+na-Grischun
 na-guaud
+na-Rumantsch
 nabab
 nadir
 naftalin
@@ -6216,6 +6597,7 @@ narcist
 narcotic
 narghilé
 narisch
+narratur
 nartex
 narval
 nas
@@ -6235,6 +6617,7 @@ natural
 naturopat
 naufragi
 nauru
+Nauruais
 nausch
 nauschun
 navajo
@@ -6247,6 +6630,7 @@ nazissem
 naziunalissem
 naziunalist
 naziunalsocialissem
+naziunalsocialist
 necessari
 necrolog
 nectar
@@ -6283,6 +6667,7 @@ neoplatonissem
 neopren
 neozoicum
 neozon
+Nepalais
 nepotissem
 neptunium
 nerd
@@ -6297,10 +6682,13 @@ nettegiament
 nettegiapipas
 nettegiar
 nettegiavaiders
+nettegiunz
 neuroleptic
+neurolog
 neuron
 neurotissem
 neurotransmettur
+Neuschatelais
 neutrin
 neutron
 neutrum
@@ -6359,6 +6747,9 @@ noviz
 noviziat
 novritg
 novum
+nozzadur
+Nub
+nubil
 nucleus
 nudader
 nudar
@@ -6379,12 +6770,15 @@ numismat
 numnà
 numnader
 nunadempliment
+nuncartent
 nuncommerziant
 nunconformist
 nuncumbattant
 nundaivet
 nundebit
 nundiever
+nunelectur
+nunenconuschent
 nunesser
 nunimpedir
 nunmaridà
@@ -6395,8 +6789,10 @@ nunpajament
 nunpartischant
 nunresident
 nunsenn
+nunsportist
 nunsuccess
 nunzi
+nurser
 nusch-fau
 nuschegl
 nuschegl-schember
@@ -6431,10 +6827,12 @@ obturatur
 ocapi
 occident
 occidental
+Occitan
 occlusiv
 occultissem
 occupant
 ocean
+oceanograf
 ochetus
 octaeder
 octan
@@ -6447,11 +6845,13 @@ octogon
 octopter
 octopus
 ocular
+oculist
 odeon
 odi
 odurant
 odurat
 offensur
+offerent
 offertori
 offis
 offside
@@ -6474,6 +6874,7 @@ olocen
 om
 omagi
 omega
+omeopat
 omicidi
 omicron
 ominid
@@ -6484,6 +6885,7 @@ omofon
 omograf
 omomorfissem
 omosexual
+oncolog
 onetimer
 onix
 onn
@@ -6501,9 +6903,11 @@ opiat
 opioid
 opium
 opossum
+opponent
 opportunissem
 opportunist
 oppost
+oppressur
 optant
 optativ
 optimissem
@@ -6515,6 +6919,7 @@ oranschat
 oranscher
 oraon
 oratori
+oratur
 orbit
 orbituari
 orcan
@@ -6531,11 +6936,14 @@ organicher
 organigram
 organisatur
 organissem
+organist
 organum
 orgassem
 orgelet
 orgelin
 orient
+Oriental
+orientalist
 orificium
 origami
 origano
@@ -6546,6 +6954,7 @@ orizont
 ormon
 ornament
 ornat
+ornitolog
 ornitorinc
 oromo
 oropax
@@ -6555,6 +6964,9 @@ orticultur
 ortocenter
 ortodontist
 ortogon
+ortoped
+ortopedist
+ortoptist
 ortoscop
 ortulan
 osage
@@ -6576,6 +6988,9 @@ ossetic
 ossun
 ost
 ostagi
+osteolog
+osteopat
+Ostfris
 ostium
 ostnordost
 ostracissem
@@ -6584,6 +6999,7 @@ otgavel
 otgavelfinal
 otger
 otgmiller
+otorinolaringolist
 otoscop
 ottonic
 outfit
@@ -6649,6 +7065,7 @@ pajament
 pajanissem
 pajass
 pajataglia
+pajaun
 pal
 paladin
 palancà
@@ -6667,6 +7084,7 @@ paleoalgonchium
 paleocen
 paleograf
 paleoliticum
+paleontolog
 paleozoicum
 paler
 palfier
@@ -6679,6 +7097,7 @@ palizun
 palladi
 palladianissem
 pallasch
+palletsch
 palmarès
 palmiped
 palmtop
@@ -6718,6 +7137,7 @@ papa
 papagagl
 papat
 papaver
+papetarist
 papiamento
 papirus
 par
@@ -6744,7 +7164,6 @@ parallelissem
 parallelogram
 paralozza
 paramagnetissem
-paramaun
 paramaun
 paramerda
 parameter
@@ -6782,6 +7201,7 @@ parchet
 parcometer
 pardun
 parenchim
+parent
 parfait
 parfum
 parfumader
@@ -6792,7 +7212,9 @@ pariser
 pariset
 parisetta
 parisette
+Parisian
 parlament
+parlamentari
 parlamentarissem
 parler
 parlet
@@ -6818,6 +7240,7 @@ participant
 particularissem
 particularist
 partisan
+partiziunari
 parvis
 paschto
 pasler
@@ -6831,6 +7254,7 @@ passagi
 passagier
 passalom
 passamaun
+passant
 passape
 passaport
 passaspaisas
@@ -6856,6 +7280,7 @@ pastiche
 pastinac
 pastinet
 pastizier
+pastizier(a)-confisier
 pastrac
 pastrietsch
 pastrigl
@@ -6883,7 +7308,9 @@ patratgar
 patriarc
 patriarcat
 patrimoni
+patriot
 patriotissem
+patrizian
 patriziat
 patrocini
 patroneur
@@ -6909,6 +7336,7 @@ pavian
 pavigliun
 paviment
 pavlader
+pavlunz
 pavun
 pazient
 pe
@@ -6929,9 +7357,12 @@ pedant
 pedantaria
 pedel
 pederast
+pedicurist
 pedofil
+pedolog
 pedometer
 pedrist
+pedun
 pegiurament
 pegn
 pel-cunigl
@@ -6941,6 +7372,7 @@ pelegrin
 pelegrinadi
 pelican
 pellitsch
+pellitscher
 penalti
 pendagl
 pendant
@@ -6953,11 +7385,13 @@ pendì
 pendicularist
 pendrader
 pendular
+pendulari
 pendulin
 penel
 penetrader
 penicillin
 penis
+penitent
 penn
 pensader
 pensament
@@ -6983,9 +7417,11 @@ per
 pèr
 perchasa
 percurs
+percussiunist
 percussur
 perdatemp
 perdavant
+perdent
 perdun
 perdunament
 perfect
@@ -7046,6 +7482,7 @@ petal
 petent
 peterschigl
 petgen
+petiziunari
 petrolacosaur
 petroli
 petschier
@@ -7054,6 +7491,7 @@ pez
 pèz
 pèz-pulaster
 pi
+pianist
 piano
 piccolo
 pichel
@@ -7063,6 +7501,7 @@ piclarosinas
 piclunz
 picnic
 pictogram
+pictur
 piedestal
 piercing
 pierten
@@ -7086,6 +7525,7 @@ pilesch
 pilon
 pilorus
 pilot
+pilot(a)-instructur
 pilotadi
 pimpel
 pin
@@ -7103,6 +7543,7 @@ piroman
 pirotecnicist
 pirrotin
 pisass
+pisch
 pischader
 pischaletg
 pischarot
@@ -7258,7 +7699,9 @@ pocal
 podcast
 podest
 podestat
+podist
 podium
+podolog
 podologia
 poem
 poet
@@ -7274,6 +7717,7 @@ poliacril
 poliamid
 policentrissem
 policist
+policonstructur
 policopiader
 polidesigner
 poliester
@@ -7281,6 +7725,7 @@ polietilen
 polietilenglicol
 poligamist
 poligon
+poligraf
 polilexem
 polimecanist
 polimer
@@ -7295,6 +7740,7 @@ politecnicum
 politeissem
 politicaster
 politicher
+politolog
 poliuretan
 pollen
 poller
@@ -7430,6 +7876,8 @@ postludi
 postomat
 postscriptum
 postscrit
+posttenent
+postulant
 postulat
 pot
 pot-au-feu
@@ -7440,6 +7888,7 @@ poveresser
 povratsch
 powerplay
 prà
+practicist
 pradaun
 prader
 pragmaticher
@@ -7463,11 +7912,13 @@ precipizi
 precisiunissem
 precursur
 predatur
+predecessur
 predefunct
 predi
 prediabetes
 predicament
 predicat
+predicatur
 prediplom
 prediscurs
 preditgant
@@ -7480,6 +7931,7 @@ prefix
 prefluent
 pregiudizi
 prelat
+prelectur
 prelegat
 prelevament
 preludi
@@ -7493,6 +7945,7 @@ prenuschegl
 prepajament
 preparader
 preparat
+preparatur
 prepensiunament
 prepotent
 preprocessur
@@ -7527,16 +7980,23 @@ pretur
 preventiv
 preverb
 prevost
+primabitant
 primappuntà
 primaran
 primassicurader
+primassistent
 primat
+primatist
 primbibliotecar
 primbler
 primcamarier
+primcandidat
 primchantadur
+primcommunicant
 primdefensur
+primemprendist
 primeur
+primexpert
 primfactur
 primgeniturs
 primgigant
@@ -7549,6 +8009,9 @@ primiziant
 primlitinent
 primminister
 primsacerdot
+primselvicultur
+primtiradur
+primviolonist
 princip
 principadi
 principal
@@ -7561,6 +8024,7 @@ prion
 prisma
 priur
 priurat
+privat
 privel
 privilegi
 pro
@@ -7581,12 +8045,14 @@ proconsul
 proctolog
 procurar
 procuratur
+procurist
 prodecan
 prodigiosin
 producent
 producider
 product
 productmanager
+productur
 proemium
 profan
 profanader
@@ -7614,10 +8080,12 @@ project
 projectil
 projectur
 prolet
+proletari
 proletariat
 prolog
 prometium
 promil
+prominent
 promontori
 promotur
 pronom
@@ -7628,8 +8096,10 @@ propanol
 propeller
 propiest
 propilon
+proponent
 proporz
 proprietari
+propugnatur
 propulsader
 propulsur
 prorectur
@@ -7644,6 +8114,7 @@ protagonist
 protectur
 protecturat
 protecziunissem
+protecziunist
 protegì
 protegia-ureglias
 protegiabucca
@@ -7666,6 +8137,7 @@ protestant
 protestantissem
 protocol
 protocollist
+protomartir
 proton
 protoplanet
 protoplasma
@@ -7678,6 +8150,8 @@ prova
 provaventils
 provedider
 provediment
+proveditur
+Provenzal
 proverbi
 proviant
 provider
@@ -7688,21 +8162,28 @@ provitamin
 provocatur
 proxim
 prurit
+Prussian
 pruvament
 psalm
 psalmist
 psalteri
 pseudo-cristianissem
+pseudo-umanist
 pseudocaloid
 pseudocode
 pseudonim
 psicolog
+psicopat
+psicoterapeut
 pterigium
 pterosaur
 public
 publican
+publicatur
+publicist
 puc
 puck
+puclarin
 pudair
 pudel
 puder
@@ -7719,6 +8200,7 @@ puletg
 puletg-chaval
 pulger
 pulieder
+pulitur
 pullover
 pulmun
 pulom
@@ -7766,6 +8248,7 @@ purgiatieri
 purgiativ
 purin
 purissem
+purist
 puritanissem
 purmentist
 purpur
@@ -7842,6 +8325,7 @@ quintal
 quintet
 quintil
 quintin
+quintist
 quit
 quità
 quiz
@@ -7866,11 +8350,15 @@ radical
 radicalissem
 radicalist
 radicalsocialist
+radiestesist
 radio
 radiofon
+radiofonist
+radiofonist(a)-amatur
 radiogoniometer
 radiolar
 radiolarit
+radiolog
 radionavigatur
 radiopirat
 radioregistratur
@@ -7879,6 +8367,8 @@ radiosilenzi
 radiosvegliarin
 radiotelecumond
 radiotelefon
+radiotelefonist
+radiotelegrafist
 radiotelegram
 radium
 radius
@@ -7914,6 +8404,7 @@ rang
 rangader
 ranger
 ranunchel
+ranver
 ranzlegiez
 rap
 rapanui
@@ -7959,14 +8450,17 @@ ravugl
 ravun
 raz
 raziunalissem
+raziunalist
 raziunament
 reacquist
 reacquistader
 reactur
 reactur-batschigl
+reacziunari
 realisatur
 realisaziun
 realissem
+realist
 rearmament
 reassicurà
 rebab
@@ -7975,6 +8469,7 @@ rebat
 rebattider
 rebec
 rebel
+rebel(la)
 rebelliun
 rebound
 rebus
@@ -7989,6 +8484,7 @@ rechat
 rechaud
 reciclader
 recicladi
+reciclatur
 recidivist
 recipient
 recitativ
@@ -8012,6 +8508,7 @@ redemptorist
 rediffusur
 redimensiunament
 rediscont
+rediscont(aziun)
 redova
 redrizzader
 reducent
@@ -8049,12 +8546,14 @@ reginavel
 register
 registratur
 regiunalissem
+regiunalist
 regl
 reglader
 regladi
 reglament
 regord
 regress
+regress(iun)
 regressant
 regruppament
 reguard
@@ -8087,6 +8586,7 @@ rempar
 remplazzament
 remplazzant
 ren
+Renan
 renconuschider
 rendaquint
 rendering
@@ -8103,6 +8603,7 @@ renum
 renviader
 renviament
 reoptant
+reorganisatur
 reparader
 repartider
 repass
@@ -8123,11 +8624,14 @@ represchentant
 reprocopist
 reproducider
 reproduct
+reprograf
 reptil
 republican
 requiem
+requirent
 requisit
 requisitori
+requisitur
 resch
 reschim
 reschissur
@@ -8159,6 +8663,7 @@ resultat
 resun
 resvegl
 resveratrol
+Ret
 retabel
 retagl
 retagls
@@ -8206,6 +8711,7 @@ revestgiment
 revestgir
 revier
 revisiunissem
+revisiunist
 revisur
 revisurat
 revitalisant
@@ -8299,6 +8805,7 @@ root
 rosbif
 roser
 rosoli
+rotarian
 rotaziun
 rotur
 roulet
@@ -8307,6 +8814,7 @@ rowdy
 ruandais
 ruaus
 rubacors
+rubadur
 rubidium
 rubiesti
 rubin
@@ -8324,8 +8832,10 @@ rughim
 rugn
 ruider
 ruinafestas
+rullettunz
 rulo
 rum
+Rumantschun
 rumba
 rument
 rumider
@@ -8362,6 +8872,7 @@ sabatical
 sabayon
 sabel
 sabi
+Sabin
 sabiut
 sablé
 sablun
@@ -8369,6 +8880,7 @@ sablunader
 sablunadi
 sabotader
 sabrin
+sacerdot
 sacerdozi
 sacrament
 sacramentar
@@ -8426,10 +8938,12 @@ salpeter
 salsiz
 saltarello
 salter
+saltimbanc
 salto
 saludader
 salun
 salvaconduct
+Salvadorian
 salvament
 salvconduct
 samaritan
@@ -8451,6 +8965,7 @@ sander
 sandinist
 sandustgel
 sandwich
+sanestrer
 sanetsch
 sang
 sang-nas
@@ -8459,6 +8974,7 @@ sanghet-manera
 sango
 sanguin
 sanguinic
+sanitari
 sanitgel
 sanscrit
 santali
@@ -8480,6 +8996,7 @@ sascagnim
 sastrair
 satan
 satanissem
+satanist
 satellit
 satg
 satgados
@@ -8498,6 +9015,7 @@ sav
 savair
 save
 savetsch
+savrin
 savun
 savun-buglia
 savuner
@@ -8566,6 +9084,7 @@ scat
 scatol
 scenari
 scenarist
+scenograf(-a)
 scepter
 scepticher
 scepticissem
@@ -8603,16 +9122,24 @@ schaschin
 schaschlic
 schassis
 schatg
+schaum
 schec
 schef
 schefaccusader
 schefadjutant
 schefcoach
+schefcontabilist
 schefcumandant
 schefcuschinier
 schefdirigent
+schefeditur
 schefemploià
+scheffuncziunari
 schefinschigner
+schefmecanist
+schefmedi
+schefpastizier(a)-confisier
+schefpilot
 schefsergent
 schel
 schelentader
@@ -8659,6 +9186,7 @@ schlem
 schlep
 schleri
 schlittun
+schlittunz
 schlogn
 schlop
 schloppapiertg
@@ -8689,8 +9217,11 @@ schrapnel
 schrebertin
 schubregiader
 schuldà
+schuletg
 schumber
 schumber-centrifuga
+schumellin
+Schuob
 schurnal
 schurnalier
 schurnalissem
@@ -8721,6 +9252,7 @@ scorbut
 scornà
 scorpiun
 scorset
+scortun
 scotom
 scout
 scraper
@@ -8743,6 +9275,7 @@ scrivlim
 scrivlottiez
 scrivlottim
 scroc
+scroc(ca)
 scrol
 scroller
 scrotum
@@ -8761,6 +9294,7 @@ scuffel
 scuflà
 scuidus
 scul
+sculptur
 scumbigl
 scumond
 scunc
@@ -8786,6 +9320,7 @@ sdregliader
 secret
 secretari
 secretariat
+secretun
 sect
 sectari
 sectur
@@ -8802,6 +9337,7 @@ segarievens
 seghel
 segirader
 segiurn
+segl(ia)
 segment
 segn
 segnacudesch
@@ -8843,6 +9379,7 @@ semnader
 semperverd
 semperviv
 senat
+senatur
 senav
 seneschall
 senior
@@ -8876,6 +9413,7 @@ seragl
 serenizi
 serer
 sergent
+serigraf
 serin
 sermon
 serolog
@@ -8887,6 +9425,7 @@ serpentin
 serragl
 serraporta
 serraretscha
+serrer
 serum
 serval
 server
@@ -8899,6 +9438,7 @@ servofrain
 servomanischadi
 ses
 sesam
+sessiunist
 set
 setgentader
 settantavel
@@ -8907,6 +9447,7 @@ settentriun
 setting
 sex
 sex-appeal
+sexist
 sextar
 sextet
 sextil
@@ -8983,6 +9524,7 @@ sgruflader
 sgrufliez
 sguard
 sguaz
+sguazzunz
 sgulatschim
 sgumbrament
 sgurdin
@@ -8998,6 +9540,7 @@ shorthander
 showbusiness
 shuttle
 sibilant
+Sibirian
 siblant
 siblet
 sicigium
@@ -9028,9 +9571,11 @@ sigliun
 signader
 signal
 signalament
+signant
 signatar
 signatari
 signet
+signun
 signur
 sikh
 sikhissem
@@ -9047,6 +9592,7 @@ simbolissem
 simpaticus
 simpatisant
 simposi
+simulant
 simulatur
 sincretissem
 sincrofasotron
@@ -9055,6 +9601,7 @@ sincronissem
 sincrotron
 sindhi
 sindicalissem
+sindicalist
 sindicat
 sindrom
 singalais
@@ -9071,6 +9618,7 @@ sintom
 sintomtrias
 sir
 sirdar
+Sirian
 sirtaki
 sirup
 sisal
@@ -9089,6 +9637,7 @@ skater
 skating
 skelet
 skeleton
+skeletonist
 skerz
 ski
 skiatlon
@@ -9103,6 +9652,7 @@ slamuz
 slang
 slapshot
 slapstick
+Slav
 slip
 slogan
 slot
@@ -9144,11 +9694,15 @@ snowboardist
 snuizi
 sochel
 soci
+socialagog
+socialdemocrat
 socialesser
 socialissem
 socialist
+societari
 sociolect
 sociolinguist
+sociolog
 socius
 sofa
 sofissem
@@ -9157,6 +9711,7 @@ sofisticissem
 sogdian
 solarium
 sold
+solist
 solitari
 soliton
 solo
@@ -9174,8 +9729,10 @@ sonet
 songhai
 soninke
 sonogram
+sontg
 sontget
 sopran
+sopranist
 sorb
 sorbet
 sorbit
@@ -9189,6 +9746,7 @@ soundtrack
 sousafon
 souvenir
 spa
+spadist
 spagat
 spagliadur
 spaid
@@ -9210,6 +9768,7 @@ spass
 spassadur
 spassegiader
 spassin
+spastic
 spatlain
 spavantegl
 spavent
@@ -9231,6 +9790,7 @@ spectrum
 speculant
 speculantissem
 speditur
+speleolog
 spell-checker
 spelm
 spendi
@@ -9347,6 +9907,7 @@ stadi-spiunader
 stadion
 stage
 stagiari
+stagiunal
 stagiunament
 stagiunari
 staglià
@@ -9364,6 +9925,7 @@ stallun
 stambutg
 stamin
 stampader
+stampadur
 stampat
 stan
 standard
@@ -9404,6 +9966,7 @@ stendachomma
 stendadetta
 stendafil
 stendapolesch
+stenodactilograf
 stenograf
 stenogram
 stent
@@ -9430,6 +9993,8 @@ stgadanim
 stgaffal
 stgaffider
 stgaffiment
+stgain
+stgainunz
 stgalfin
 stgalim
 stgalper
@@ -9497,6 +10062,7 @@ stimulus
 stinà
 stinchel
 stipendi
+stipendiat
 stiriez
 stirim
 stiropor
@@ -9562,6 +10128,8 @@ struptgà
 strut
 stublar
 stuc
+stuc(ca)
+stuc(ca)s
 stuccatur
 studegiaret
 studegiez
@@ -9588,6 +10156,7 @@ stylist
 suaditsch
 suaduir
 subagent
+subaltern
 subconscient
 subdit
 subel
@@ -9624,6 +10193,7 @@ suffel
 suffix
 suffragan
 suffragi
+suffrint
 sufi
 sufissem
 suflà
@@ -9668,10 +10238,12 @@ sunnit
 suondacultura
 super-G
 superarchitect
+superatlet
 superbab
 supercargo
 supercontinent
 supererox
+superfavurit
 superfosfat
 supergigant
 superiur
@@ -9684,6 +10256,7 @@ supertalent
 supertalentà
 supertip
 superuman
+supervisur
 suppleant
 supplement
 support
@@ -9694,6 +10267,7 @@ supprimider
 supraconductur
 suprasonic
 suprastadi
+suprastant
 suprematissem
 supremum
 suramaun
@@ -9710,6 +10284,7 @@ surdiever
 surdmit
 surdorader-enramader
 surfing
+surfist
 suricat
 surlevtg
 surmanader
@@ -9717,6 +10292,7 @@ surmar
 surmiran
 surnum
 suross
+surpais
 surpassader
 surpassadi
 surpassament
@@ -9765,9 +10341,11 @@ sutcontract
 sutdiever
 sutdirectur
 sutelement
+sutfittadin
 sutfurnitur
 sutlegat
 sutlegatari
+sutlocatari
 sutmarin
 sutmaun
 sutmenu
@@ -9782,12 +10360,14 @@ sutprocuratur
 sutprovediment
 sutpurtader
 sutregister
+sutrepreschentant
 sutsecretari
 sutsilvan
 sutstritg
 sutsutbiadi
 sutsvilup
 suttamaun
+suttamess
 suttape
 suttarpun
 suttema
@@ -9800,6 +10380,7 @@ suttun
 sutuffizier
 suveran
 suvi
+Svabais
 svalitabigliets
 svalitader
 svaniment
@@ -9808,6 +10389,7 @@ svari
 svegliarin
 sventà
 sventuliez
+Svevais
 sviader
 sviament
 svidatestas
@@ -9892,11 +10474,13 @@ tamazi
 tamberl
 tambur
 tamburin
+Tamil
 tampanin
 tampun
 tamtam
 tanc
 tancadi
+tanchist
 tancomat
 tandem
 tanga
@@ -9915,6 +10499,7 @@ tar
 tarader
 tarbot
 tardivament
+tardivant
 target
 targlinader
 targliniez
@@ -9955,6 +10540,7 @@ taxader
 taxameter
 taxi
 taxibus
+taxidermist
 taxist
 taxofon
 taxometer
@@ -9964,8 +10550,14 @@ team-clav
 teamwork
 teaser
 teater
+teatrist
+Teban
 tecnetium
+tecnicist
 tecno
+tecno-poligraf
+tecnocrat
+tecnolog
 tecodont
 tectit
 teddy
@@ -9990,6 +10582,7 @@ telefonat
 telefonin
 telefonist
 telegraf
+telegrafist
 telegram
 telema
 telemanipulatur
@@ -9998,6 +10591,7 @@ telemarc
 telemeter
 teleobjectiv
 teleobservatur
+teleoperatur
 telequintader
 teleschurnal
 telescop
@@ -10042,9 +10636,11 @@ tentachel
 tentacul
 tentim
 teodolit
+teolog
 teorem
 teoreticher
 tequila
+terapeut
 teratom
 teremin
 tereno
@@ -10055,6 +10651,7 @@ termaglim
 termin
 terminal
 terminus
+termist
 termiter
 termobimetal
 termocontact
@@ -10095,6 +10692,7 @@ testament
 testard
 testat
 testicul
+testimoni
 testosteron
 testun
 tet
@@ -10103,6 +10701,7 @@ tetanus
 tetg
 tetg-chasa
 tetgal
+tetger
 tetgom
 tetgom-baselgia
 tetlà
@@ -10185,6 +10784,7 @@ tir
 tiracua
 tiracucuns
 tiracurvas
+tiradur
 tirafil
 tirafils
 tiragiu
@@ -10211,6 +10811,7 @@ titan
 titel
 titer
 titubant
+titular
 tiv
 tizun
 tizzafieu
@@ -10221,6 +10822,7 @@ toc
 tochet
 tof
 töffin
+töffist
 tokelau
 tolchergnim
 toler
@@ -10231,9 +10833,13 @@ ton
 toner
 tonga
 top
+top-passlunghist
 toparchitect
 topas
+topatlet
+topcandidat
 topcuschinier
+topfavurit
 topinambur
 topmanagement
 topmodel
@@ -10266,6 +10872,7 @@ touchscreen
 toupet
 toxicodependent
 toxicoman
+toxocoman
 tozzel
 trà
 trabant
@@ -10281,6 +10888,7 @@ trad
 tradiment
 traditur
 tradiziunalissem
+tradiziunalist
 traductur
 traffic
 traffitgant
@@ -10322,6 +10930,7 @@ transister
 transistur
 transit
 translatur
+translocatur
 transmetter
 transmettur
 transparent
@@ -10373,6 +10982,7 @@ travertin
 traviament
 trax
 tredi
+tregant
 trekking
 trema
 trembel
@@ -10403,6 +11013,7 @@ triangul
 trias
 triatlet
 triatlon
+triatlonist
 tribun
 tribunal
 tribut
@@ -10420,6 +11031,7 @@ trigon
 tril
 trilliun
 trilobit
+trimellin
 trimester
 trio
 trip
@@ -10450,6 +11062,7 @@ trottader
 trottinet
 trottuar
 trotzkissem
+trotzkist
 truader
 truament
 trubadur
@@ -10457,6 +11070,7 @@ truclet
 trugl
 trumbettin
 trumbettist
+trumbist
 trumeau
 trumf
 trümpi
@@ -10560,6 +11174,7 @@ tschivel
 tschivliez
 tschivlom
 tschivlot
+tschivlunz
 tschof
 tschop
 tschorv
@@ -10643,6 +11258,7 @@ tuss
 tustgin
 tutgiez
 tutgim
+tutor
 tutori
 tutoriat
 tuvaluan
@@ -10669,6 +11285,7 @@ ugaritic
 uigl
 uiguric
 ulcus
+uler
 uliver
 ulm
 ultimatum
@@ -10682,6 +11299,7 @@ um-strom
 uman
 uman-serp
 umanissem
+umanist
 umatsch
 umblaz
 umbli
@@ -10717,6 +11335,7 @@ uran
 uraninit
 urari
 urat
+urbanist
 urbari
 urdain
 urden
@@ -10725,6 +11344,7 @@ uregl
 ureglier
 uregliers
 ureglin
+urer
 ureter
 urin
 urinal
@@ -10803,6 +11423,7 @@ vai
 vaider
 vaider-stgima
 vaiderin
+vaidrer
 vaiv
 valanagut
 valdais
@@ -10811,6 +11432,7 @@ valium
 vallà
 vallabi
 vallader
+Vallon
 vallun
 vallutg
 valzer
@@ -10845,6 +11467,7 @@ veganissem
 vegetali
 vegetari
 vegetarissem
+vegl(ia)
 vegliandrament
 vegliet
 vegliochel
@@ -10862,6 +11485,7 @@ vendagasettas
 vendalatg
 vendemiader
 vendider
+veneratur
 vent
 ventagl
 ventatsch
@@ -10920,6 +11544,7 @@ veto
 vexillum
 viadi
 viaduct
+viagiant
 viagiatur
 vial
 viandant
@@ -10928,11 +11553,14 @@ vibrafon
 vibratur
 vicari
 vicariat
+vicechancelier
 vicedirectur
 viceintendant
 vicemanader
+vicemastral
 vicepresident
 vicepresidi
+victur
 vid
 video
 video-lifestream
@@ -10962,6 +11590,7 @@ vin
 vin-schampagn
 vinars
 vinarsin
+vindicatur
 vinificatur
 vinil
 vinin
@@ -10969,12 +11598,15 @@ violader
 violatur
 violinist
 violoncello
+violonist
 virelai
 virivari
 virolog
+virtuos
 virus
 virustatic
 virustgel
+visagist
 viscatga
 vischin
 vischinadi
@@ -10986,6 +11618,7 @@ visum
 visun
 visur
 vitalizi
+vitaliziari
 vitamin
 vitaparcours
 vitg
@@ -10996,6 +11629,7 @@ viturin
 viva
 vivabain
 vivari
+vivent
 vizdum
 vizi
 vlies
@@ -11105,6 +11739,7 @@ zappunet
 zar
 zarevitsch
 zarissem
+zarist
 zavrader
 zavragl
 zaza
@@ -11137,6 +11772,7 @@ zochel
 zodiac
 zon
 zoo
+zoolog
 zoom
 zooplancton
 zootrop
