@@ -37,7 +37,7 @@ if ($rawtextlength < 1) {
 $Rawtext =~ s/\r//g;
 # simple tokenizer
 if ($Rawtext =~ /\b \b/) {
-	$Rawtext =~ s/([.,:;!?])/ \1/g;
+	#$Rawtext =~ s/([.,:;!?])/ \1/g;
 	$Rawtext =~ s/([’'])/\1 /g;
 	$Rawtext =~ s/ +/\n/g;
 
