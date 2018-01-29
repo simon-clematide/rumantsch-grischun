@@ -4806,7 +4806,6 @@ ictiologia
 idea
 idealisaziun
 idealista
-ideas
 identificaziun
 identitad
 ideografia
@@ -5798,7 +5797,6 @@ maisina
 maistra
 maistria
 maiuscla
-maiusclas
 maizena
 majestra
 mal'administraziun
@@ -6251,7 +6249,6 @@ miniatura
 miniaturisaziun
 minibar
 miniera
-minieras
 minimalisaziun
 minimalista
 minimisaziun
@@ -6316,7 +6313,6 @@ mittezza
 mixtura
 mnemonica
 mobiglia
-mobiglias
 mobilisaziun
 mobilitad
 moccatina
@@ -6644,7 +6640,6 @@ norma
 normalia
 normalisaziun
 normalitad
-normas
 normaziun
 nostalgia
 nota
@@ -6664,7 +6659,6 @@ novella
 novellistica
 novena
 novitad
-novitads
 noviza
 novritga
 noziun
@@ -7217,7 +7211,6 @@ patinera
 patinunza
 patissaria
 patlauna
-patlaunas
 patogenesa
 patologia
 patologisaziun
@@ -7808,7 +7801,6 @@ preschuna
 prescola
 prescolina
 prescripziun
-prescripziuns
 preselecziun
 preserenaziun
 preservaziun
@@ -8385,7 +8377,6 @@ regiunalitad
 regiuvinaziun
 regla
 reglamentaziun
-reglas
 regradaziun
 regressiun
 regulabilitad
@@ -9331,7 +9322,6 @@ significaziun
 signuna
 signura
 signuria
-signurs
 silba
 silena-cucu
 silena-curuna
@@ -9839,7 +9829,6 @@ struva-staila
 struvadira
 struvera
 stucca
-stuccas
 stuccatura
 stuccaturaria
 studenta
@@ -10390,7 +10379,6 @@ tgisa
 tgunschadad
 tgutga
 tgutgadad
-tgutgadads
 tgutgaria
 tiara
 tiarella
