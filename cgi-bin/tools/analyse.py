@@ -166,7 +166,7 @@ def processSentence(sentence, lastsentence, options=None):
                 betterPrint(notmatching[-1][0], notmatching[-1][0] + notmatching[-1][3]+'+UNKNOWN')
             else:
 
-                betterPrint(notmatching[-1][0], notmatching[-1][1]+'+UNKNOWN')
+                betterPrint(notmatching[-1][0], notmatching[-1][1])
         if blankLine and wordcounter == len(morphowords) and lastsentence:
             pass
         elif blankLine:
