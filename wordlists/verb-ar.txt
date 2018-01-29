@@ -1708,7 +1708,6 @@ suar
 suatar
 subentrar
 sublimar
-subsurdar
 subtrahar
 suernar
 suflar
@@ -1729,7 +1728,6 @@ surchargiar
 surchatschar
 surcollar
 surcromar
-surdar
 surdorar
 surelevar
 surexcitar
