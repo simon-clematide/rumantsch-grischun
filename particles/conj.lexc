@@ -35,6 +35,7 @@ ubain	CONEND;
 LEXICON SUB
 che		SUBEND;
 che:ch'	VOCSUBEND;
+daco SUBEND;
 sche	SUBEND;
 sche:sch'	VOCSUBEND;
 schebain	SUBEND;
