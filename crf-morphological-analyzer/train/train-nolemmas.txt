@@ -654,7 +654,7 @@ stà	+Verb+PastPart+Masc+Sg
 necessari	+Adj+Masc+Sg
 d’	+Prep
 engaschar	+Verb+Inf
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 secretari	+Noun+Masc+Pl
 permanent	+Adj+Masc+Pl
 ed	+Conj
@@ -665,7 +665,7 @@ Gian	+Prop
 Bundi	+Prop
 –	+Punc+Mid
 oramai	+Adv
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 criticist	+Noun+Masc+Sg
 da	+Prep
 musica	+Noun+Fem+Sg
@@ -683,7 +683,7 @@ ha	+Verb+PresInd+3P+Sg
 Gian	+Prop
 Bundi	+Prop
 chalà	+Verb+PastPart+Masc+Sg
-l’	+Art+Masc+Sg
+l’	+Art+Def+Masc+Sg
 onn	+Noun+Masc+Sg
 1919	+Dig+Card
 sco	+Adv
@@ -728,7 +728,7 @@ da	+Prep
 musica	+Noun+Fem+Sg
 ch’	+Subj+Apo
 avevan	+Verb+ImpInd+3P+Pl
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 grond’	+Adj+Fem+Sg+Apo
 impurtanza	+Noun+Fem+Sg
 .	+Sent
@@ -813,7 +813,7 @@ ha	+Verb+PresInd+3P+Sg
 dentant	+Adv
 –	+Punc+Mid
 per	+Prep
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 motiv	+Noun+Masc+Sg
 nunenconuschent	+Adj+Masc+Sg
 –	+Punc+Mid
@@ -851,13 +851,13 @@ buns	+Adj+Masc+Pl
 avunda	+Adv
 per	+Prep
 far	+Verb+Inf
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 carriera	+Noun+Fem+Sg
 sco	+Conj
 pianist	+Noun+Masc+Pl
 .	+Sent
 
-In	+Art+Masc+Sg
+In	+Art+Indef+Masc+Sg
 auter	+Adj+Masc+Sg
 renviament	+Noun+Masc+Sg
 è	+Verb+PresInd+3P+Sg
@@ -907,7 +907,7 @@ l’	+Art+Def+Fem+Sg+Apo
 Europa	+Prop
 ,	+CM
 davant	+Prep
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 auditori	+Noun+Masc+Sg
 da	+Prep
 Svizras	+Noun+Fem+Pl
@@ -925,7 +925,7 @@ n’	+Prt+Neg+Apo
 ha	+Verb+PresInd+3P+Sg
 mai	+Adv
 dà	+Verb+PastPart+Masc+Sg
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 sairada	+Noun+Fem+Sg
 da	+Prep
 chanzuns	+Noun+Fem+Pl
@@ -936,7 +936,7 @@ fissan	+Verb+Cond+3P+Pl
 vegnidas	+Verb+PastPart+Fem+Pl
 intunadas	+Verb+PastPart+Fem+Pl
 er	+Adv
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 pèr	+Noun+Masc+Sg
 chanzuns	+Noun+Fem+Pl
 rumantschas	+Adj+Fem+Pl
@@ -978,7 +978,7 @@ svizzers	+Adj+Masc+Pl
 .	+Sent
 
 D’	+Prep+Apo
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 vart	+Noun+Fem+Sg
 ha	+Verb+PresInd+3P+Sg
 el	+Pron+Pers+Nom+3P+Masc+Sg
@@ -1044,7 +1044,7 @@ u	+Conj
 macun	+Noun+Masc+Sg
 ,	+CM
 è	+Verb+PresInd+3P+Sg
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 spezia	+Noun+Fem+Sg
 da	+Prep
 chauras	+Noun+Fem+Sg
@@ -1249,7 +1249,7 @@ stortas	+Adj+Fem+Pl
 Omaduas	+Pron+Indef+Fem+Pl
 schlattainas	+Noun+Fem+Pl
 han	+Verb+PresInd+3P+Pl
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 barba-chaura	+Noun+Fem+Sg
 .	+Sent
 
@@ -1258,7 +1258,7 @@ bucs	+Noun+Masc+Pl
 han	+Verb+PresInd+3P+Pl
 la	+Art+Def+Fem+Sg
 stad	+Noun+Fem+Sg
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 pail	+Noun+Masc+Sg
 brin	+Adj+Masc+Sg
 stgir	+Adj+Masc+Sg
@@ -1371,7 +1371,7 @@ autezzas	+Noun+Fem+Pl
 Moda	+Noun+Fem+Sg
 da	+Prep
 viver	+Verb+Inf
-Ina	+Art+Fem+Sg
+Ina	+Art+Indef+Fem+Sg
 muntanera	+Noun+Fem+Sg
 da	+Prep
 capricorns	+Noun+Masc+Pl
@@ -1388,8 +1388,8 @@ ansiels	+Noun+Masc+Pl
 
 Daspera	+Adv
 datti	+Verb+PresInd+3P+Sg^|+Pron
-las	+Art+Masc+Pl
-muntaneras	+Noun+Masc+Pl
+las	+Art+Det+Fem+Pl
+muntaneras	+Noun+Fem+Pl
 dals	+Prep^|+Art+Def+Masc+Pl
 bucs	+Noun+Masc+Pl
 giuvens	+Adj+Masc+Pl
@@ -1443,7 +1443,7 @@ datti	+Verb+PresInd+3P+Sg^|+Pron
 cumbats	+Noun+Masc+Pl
 .	+Sent
 
-In	+Art+Masc+Sg
+In	+Art+Indef+Masc+Sg
 buc	+Noun+Masc+Sg
 sto	+Verb+PresInd+3P+Sg
 almain	+Adv
@@ -1452,17 +1452,17 @@ sis	+Num+Card+MF
 onns	+Adj+Masc+Pl
 per	+Prep
 avair	+Verb+Inf
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 schanza	+Noun+Fem+Sg
 da	+Prep
 ventscher	+Verb+Inf
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 tal	+Pron+Indef+Masc+Sg
 cumbat	+Noun+Masc+Sg
 e	+Conj
 da	+Prep
 gudagnar	+Verb+Inf
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 ‹	+Punc+Beg
 harem	+Noun+Masc+Sg
 ›	+Punc+End
@@ -1487,7 +1487,7 @@ quella	+Pron+Dem+Fem+Sg
 .	+Sent
 
 Suenter	+Prep
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 gravidanza	+Noun+Fem+Sg
 da	+Prep
 tschintg	+Num+Card+MF
@@ -1500,7 +1500,7 @@ matg	+Noun+Masc+Sg
 u	+Prep
 il	+Art+Def+Masc+Sg
 zercladur	+Noun+Masc+Sg
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 ansiel	+Noun+Masc+Sg
 ,	+CM
 darar	+Adv
@@ -1523,11 +1523,11 @@ el	+Pron+Pers+Nom+3P+Masc+Sg
 tetta	+Verb+PresInd+3P+Sg
 dentant	+Adv
 durant	+Prep
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 onn	+Noun+Masc+Sg
 .	+Sent
 
-In	+Art+Masc+Sg
+In	+Art+Indef+Masc+Sg
 capricorn	+Noun+Masc+Sg
 po	+Verb+PresInd+3P+Sg
 vegnir	+Verb+Inf
@@ -1543,7 +1543,7 @@ En	+Prop
 intginas	+Pron+Indef+Fem+Pl
 regiuns	+Noun+Fem+Pl
 da	+Prep
-las	+Art+Fem+Sg
+las	+Art+Indef+Fem+Sg
 Alps	+Prop
 ha	+Verb+PresInd+3P+Sg
 la	+Art+Def+Fem+Sg
@@ -1555,7 +1555,7 @@ che	+Subj
 quests	+Pron+Dem+Masc+Pl
 animals	+Noun+Masc+Pl
 han	+Verb+PresInd+3P+Pl
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 grond’	+Adj+Fem+Sg+Apo
 influenza	+Noun+Fem+Sg
 sin	+Prep
@@ -1659,7 +1659,7 @@ il	+Art+Def+Masc+Sg
 commerzi	+Noun+Masc+Sg
 da	+Prep
 sclavs	+Noun+Masc+Pl
-intercontinental	+Art+Masc+Sg
+intercontinental	+Adj+Masc+Sg
 dal	+Prep^|+Art+Def+Masc+Sg
 temp	+Noun+Masc+Sg
 modern	+Adj+Masc+Sg
@@ -1823,7 +1823,7 @@ pia	+Adv
 stà	+Verb+PastPart+Masc+Sg
 al	+Prep^|+Art+Masc+Sg
 cumenzament	+Noun+Masc+Sg
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 pass	+Noun+Masc+Sg
 uman	+Adj+Masc+Sg
 .	+Sent
@@ -1864,7 +1864,7 @@ sclavaria	+Noun+Fem+Sg
 en	+Prep
 massa	+Noun+Fem+Sg
 è	+Verb+PresInd+3P+Sg
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 fenomen	+Noun+Masc+Sg
 relativamain	+Adv
 tardiv	+Noun+Masc+Sg
@@ -1876,10 +1876,10 @@ cun	+Prep
 la	+Art+Def+Fem+Sg
 fundaziun	+Noun+Fem+Sg
 da	+Prep
-gronds	+Art+Masc+Pl
+gronds	+Adj+Masc+Pl
 martgads	+Noun+Masc+Pl
 da	+Prep
-sclavs	+Art+Masc+Pl
+sclavs	+Noun+Masc+Pl
 enturn	+Prep
 600	+Dig+Card
 a.C.	+?
@@ -2002,7 +2002,7 @@ tar	+Prep
 il	+Art+Def+Masc+Sg
 train	+Noun+Masc+Sg
 dad	+Prep
-in’	+Art+Fem+Sg+Apo
+in’	+Art+Indef+Fem+Sg+Apo
 armada	+Noun+Fem+Sg
 romana	+Adj+Fem+Sg
 .	+Sent
@@ -2103,7 +2103,7 @@ Kongeriget	+Prop
 Danmark	+Prop
 )	+Punc+End
 è	+Verb+PresInd+3P+Sg
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 stadi	+Noun+Masc+Sg
 situà	+Verb+PastPart+Masc+Sg
 en	+Prep
@@ -2144,7 +2144,7 @@ onn	+Noun+Masc+Sg
 )	+Punc+End
 furman	+Verb+PresInd+3P+Pl
 radund	+Adv
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 terz	+Noun+Masc+Sg
 da	+Prep
 la	+Art+Def+Fem+Sg
@@ -2173,11 +2173,11 @@ Questas	+Pron+Dem+Fem+Pl
 duas	+Num+Card+Fem
 regiuns	+Noun+Fem+Pl
 possedan	+Verb+PresInd+3P+Pl
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 vasta	+Adj+Fem+Sg
 autonomia	+Noun+Fem+Sg
 ,	+CM
-in’	+Art+Fem+Sg+Apo
+in’	+Art+Indef+Fem+Sg+Apo
 atgna	+Adj+Fem+Sg
 bandiera	+Noun+Fem+Sg
 ed	+Conj
@@ -2211,10 +2211,10 @@ sid	+Noun+Masc+Sg
 posseda	+Verb+PresInd+3P+Sg
 il	+Art+Def+Masc+Sg
 Danemarc	+Prop
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 cunfin	+Noun+Masc+Sg
 cun	+Prep
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 auter	+Adj+Masc+Sg
 stadi	+Noun+Masc+Sg
 ,	+CM
@@ -2243,7 +2243,7 @@ al	+Prep^|+Art+Masc+Sg
 Danemarc	+Prop
 )	+Punc+End
 viva	+Verb+PresInd+3P+Sg
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 minoritad	+Noun+Fem+Sg
 danaisa	+Adj+Fem+Sg
 detg	+Adv
@@ -2265,7 +2265,7 @@ Nord	+Prop
 ,	+CM
 viva	+Verb+PresInd+3P+Sg
 percunter	+Adv
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 minoritad	+Noun+Fem+Sg
 tudestga	+Adj+Fem+Sg
 ,	+CM
@@ -2292,7 +2292,7 @@ Feroe	+Prop
 cumpiglia	+Verb+PresInd+3P+Sg
 il	+Art+Def+Masc+Sg
 Danemarc	+Prop
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 surfatscha	+Noun+Fem+Sg
 da	+Prep
 43	+Dig+Card
@@ -2304,7 +2304,7 @@ Il	+Art+Def+Masc+Sg
 pajais	+Noun+Masc+Sg
 è	+Verb+PresInd+3P+Sg
 pia	+Adv
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 zic	+Noun+Masc+Sg
 pli	+Adv
 grond	+Adj+Masc+Sg
@@ -2348,7 +2348,7 @@ plitost	+Adv
 pitschen	+Adj+Masc+Sg
 rivas	+Noun+Fem+Pl
 d’	+Prep+Apo
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 lunghezza	+Noun+Fem+Sg
 enorma	+Adj+Fem+Sg
 da	+Prep
@@ -2369,7 +2369,7 @@ Germania	+Prop
 )	+Punc+End
 ed	+Conj
 ha	+Verb+PresInd+3P+Sg
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 lunghezza	+Noun+Fem+Sg
 da	+Prep
 67	+Dig+Card
@@ -2514,7 +2514,7 @@ Jutland	+Prop
 è	+Verb+PresInd+3P+Sg
 pir	+Adv
 daventada	+Verb+PastPart+Fem+Sg
-in’	+Art+Fem+Sg+Apo
+in’	+Art+Indef+Fem+Sg+Apo
 insla	+Noun+Fem+Sg
 tras	+Prep
 il	+Art+Def+Masc+Sg
@@ -2689,7 +2689,7 @@ planiv	+Adj+Masc+Sg
 (	+Punc+Beg
 e	+Conj
 d’	+Prep+Apo
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 material	+Noun+Masc+Sg
 main	+Adv
 fritgaivel	+Adj+Masc+Sg
@@ -2884,7 +2884,7 @@ dal	+Prep^|+Art+Def+Masc+Sg
 pled	+Noun+Masc+Sg
 ,	+CM
 mabain	+Adv
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 bratsch	+Noun+Masc+Sg
 da	+Prep
 la	+Art+Def+Fem+Sg
@@ -2907,7 +2907,7 @@ Il	+Art+Def+Masc+Sg
 Danemarc	+Prop
 giascha	+Verb+PresInd+3P+Sg
 en	+Prep
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 situaziun	+Noun+Fem+Sg
 exponida	+Adj+Fem+Sg
 tranter	+Prep
@@ -3122,7 +3122,7 @@ persunas	+Noun+Fem+Pl
 .	+Sent
 Dardin	+Prop
 è	+Verb+PresInd+3P+Sg
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 fracziun	+Noun+Fem+Sg
 da	+Prep
 la	+Art+Def+Fem+Sg
@@ -3204,7 +3204,7 @@ furma	+Noun+Fem+Sg
 Ardunae	+Prop
 ›	+Punc+End
 (	+Punc+Beg
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 num	+Noun+Masc+Sg
 da	+Prep
 derivanza	+Noun+Fem+Sg
@@ -3377,12 +3377,12 @@ Dardin	+Prop
 n’	+Prt+Neg+Apo
 è	+Verb+PresInd+3P+Sg
 betg	+Adv
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 vitg	+Noun+Masc+Sg
 cumpact	+Adj+Masc+Sg
 ,	+CM
 mabain	+Conj
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 conglomerat	+Noun+Masc+Sg
 da	+Prep
 differents	+Adj+Masc+Pl
@@ -3474,7 +3474,7 @@ El	+Pron+Pers+Nom+3P+Masc+Sg
 sa	+Pron+Refl+AccDat+Aton+3P+MF+Sg
 cumpona	+Verb+PresInd+3P+Sg
 d’	+Prep+Apo
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 suletta	+Adj+Fem+Sg
 chasa	+Noun+Fem+Sg
 .	+Sent
@@ -3536,7 +3536,7 @@ scola	+Noun+Fem+Sg
 e	+Conj
 furma	+Verb+PresInd+3P+Sg
 en	+Prep
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 tschert	+Adj+Masc+Sg
 senn	+Noun+Masc+Sg
 il	+Art+Def+Masc+Sg
@@ -3595,7 +3595,7 @@ da	+Prep
 Dardin	+Prop
 situà	+Verb+PastPart+Masc+Sg
 en	+Prep
-direcziun	+Art+Masc+Sg
+direcziun	+Noun+Fem+Sg
 ost	+Noun+Masc+Sg
 .	+Sent
 
@@ -3608,7 +3608,7 @@ dals	+Prep^|+Art+Def+Masc+Pl
 differents	+Adj+Masc+Pl
 aclauns	+Noun+Masc+Pl
 en	+Prep
-direcziun	+Art+Masc+Sg
+direcziun	+Noun+Fem+Sg
 ost	+Noun+Masc+Sg
 .	+Sent
 
@@ -3694,7 +3694,7 @@ sedia	+Noun+Fem+Sg
 a	+Prep
 Cuira	+Prop
 è	+Verb+PresInd+3P+Sg
-in	+Art+Masc+Sg
+in	+Art+Indef+Masc+Sg
 dals	+Prep^|+Art+Def+Masc+Pl
 quatter	+Num+Card+MF
 vocabularis	+Noun+Masc+Pl
@@ -3895,7 +3895,7 @@ Fototeca	+Noun+Fem+Sg
 Essend	+Verb+Gerund
 il	+Art+Def+Masc+Sg
 DRG	+Abbr
-in’	+Art+Fem+Sg+Apo
+in’	+Art+Indef+Fem+Sg+Apo
 ovra	+Noun+Fem+Sg
 illustrada	+Adj+Fem+Sg
 che	+Subj
@@ -3968,7 +3968,7 @@ tschientaner	+Noun+Masc+Sg
 .	+Sent
 
 Medemamain	+Adv
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 donaziun	+Noun+Fem+Sg
 è	+Verb+PresInd+3P+Sg
 il	+Art+Def+Masc+Sg
@@ -4041,7 +4041,7 @@ ensemen	+Adv
 cun	+Prep
 Chasper	+Prop
 Pult	+Prop
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 massa	+Noun+Fem+Sg
 da	+Prep
 material	+Noun+Masc+Sg
@@ -4068,7 +4068,7 @@ che	+Subj
 quests	+Pron+Dem+Masc+Pl
 documents	+Noun+Masc+Pl
 d’	+Prep+Apo
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 vegliadetgna	+Noun+Fem+Sg
 da	+Prep
 tschient	+Num+Card+MF
@@ -4085,7 +4085,7 @@ DRG.	+Abbr
 Latiers	+Adv
 exista	+Verb+PresInd+3P+Sg
 er	+Adv
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 copia	+Noun+Fem+Sg
 da	+Prep
 microfilm	+Noun+Masc+Sg
@@ -4095,7 +4095,7 @@ en	+Prep
 il	+Art+Def+Masc+Sg
 rom	+Noun+Masc+Sg
 d’	+Prep+Apo
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 acziun	+Noun+Fem+Sg
 da	+Prep
 plirs	+Adj+Masc+Pl
@@ -4105,7 +4105,7 @@ il	+Art+Def+Masc+Sg
 questiunari	+Noun+Masc+Sg
 registrà	+Verb+PastPart+Masc+Sg
 en	+Prep
-ina	+Art+Fem+Sg
+ina	+Art+Indef+Fem+Sg
 banca	+Noun+Fem+Sg
 da	+Prep
 datas	+Noun+Fem+Pl
