@@ -72,7 +72,9 @@ fstbinaries/Noun.fst fstbinaries/NounGuessing.fst : noun/noun.xfst \
  wordlists/noun-masc-plur.txt \
  wordlists/noun-masc-sing.txt \
  wordlists/noun-part.txt \
- wordlists/noun-proper.txt
+ wordlists/noun-proper.txt \
+ wordlists/noun-proper-giv-fem.txt \
+wordlists/noun-proper-giv-masc.txt
 	$(XFSTCMD) noun/noun.xfst
 
 fstbinaries/Numeral.fst fstbinaries/Number.fst : num/num.xfst
