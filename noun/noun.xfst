@@ -109,7 +109,9 @@ define Nouns [Invariable |[NounIrr .P. RegularNouns]];
 #define AbbreviationsRaw @txt"wordlists/noun-abbr.txt";
 #define Abbreviations [AbbreviationsRaw "+Noun":0 "+Abbr":0];
 
-define ProperRaw @txt"wordlists/noun-proper.txt";
+define ProperRaw [ @txt"wordlists/noun-proper.txt"
+				| @txt"wordlists/noun-proper-giv-masc.txt"
+				| @txt"wordlists/noun-proper-giv-fem.txt"] ;
 define Proper [ProperRaw "+Prop":0];
 
 ################################################################################
