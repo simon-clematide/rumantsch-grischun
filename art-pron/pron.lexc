@@ -224,6 +224,9 @@ tut+Pron+Indef+Masc+Pl:tuts	#;
 tut+Pron+Indef+Fem+Sg:tutta	#;
 tut+Pron+Indef+Fem+Pl:tuttas	#;
 
+! omadu
+omadus+Pron+Indef+Masc+Pl:omadus	#;
+omadus+Pron+Indef+Fem+Pl:omaduas	#;
 
 
 !! Endings:
