@@ -418,7 +418,7 @@ d’	+Prep+Apo
 enviern	+Noun+Masc+Sg
 1895/96	+?
 fin	+Prep
-al	+Prep^|+Art+Masc+Sg
+al	+Prep^|+Art+Def+Masc+Sg
 semester	+Noun+Masc+Sg
 da	+Prep
 stad	+Noun+Fem+Sg
@@ -444,7 +444,7 @@ d’	+Prep+Apo
 enviern	+Noun+Masc+Sg
 1897	+Dig+Card
 fin	+Prep
-al	+Prep^|+Art+Masc+Sg
+al	+Prep^|+Art+Def+Masc+Sg
 semester	+Noun+Masc+Sg
 da	+Prep
 stad	+Noun+Fem+Sg
@@ -1787,7 +1787,7 @@ d’	+Prep+Apo
 acts	+Noun+Masc+Pl
 guerrils	+Adj+Masc+Pl
 furmava	+Verb+ImpInd+3P+Sg
-al	+Prep^|+Art+Masc+Sg
+al	+Prep^|+Art+Def+Masc+Sg
 cumenzament	+Noun+Masc+Sg
 probablamain	+Adv
 l’	+Art+Def+Fem+Sg+Apo
@@ -1821,7 +1821,7 @@ sclavaria	+Noun+Fem+Sg
 è	+Verb+PresInd+3P+Sg
 pia	+Adv
 stà	+Verb+PastPart+Masc+Sg
-al	+Prep^|+Art+Masc+Sg
+al	+Prep^|+Art+Def+Masc+Sg
 cumenzament	+Noun+Masc+Sg
 in	+Art+Indef+Masc+Sg
 pass	+Noun+Masc+Sg
@@ -2239,7 +2239,7 @@ ch’	+Subj+Apo
 appartegneva	+Verb+ImpInd+3P+Sg
 pli	+Adv
 baud	+Adv
-al	+Prep^|+Art+Masc+Sg
+al	+Prep^|+Art+Def+Masc+Sg
 Danemarc	+Prop
 )	+Punc+End
 viva	+Verb+PresInd+3P+Sg
@@ -2315,7 +2315,7 @@ Svizra	+Prop
 
 Dal	+Prep^|+Art+Def+Masc+Sg
 nord	+Noun+Masc+Sg
-al	+Prep^|+Art+Masc+Sg
+al	+Prep^|+Art+Def+Masc+Sg
 sid	+Noun+Masc+Sg
 mesira	+Verb+PresInd+3P+Sg
 il	+Art+Def+Masc+Sg
@@ -2875,7 +2875,7 @@ pajais	+Noun+Masc+Sg
 n’	+Prt+Neg+Apo
 è	+Verb+PresInd+3P+Sg
 nagin	+Pron+Indef+Masc+Sg
-fiord	+Adj+Masc+Sg
+fiord	+Noun+Masc+Sg
 en	+Prep
 il	+Art+Def+Masc+Sg
 vair	+Adj+Masc+Sg
@@ -2902,7 +2902,8 @@ l’	+Art+Def+Masc+Sg+Apo
 ost	+Noun+Masc+Sg
 .	+Sent
 
-Clima	+Prep
+Clima	+Noun+Masc+Sg
+
 Il	+Art+Def+Masc+Sg
 Danemarc	+Prop
 giascha	+Verb+PresInd+3P+Sg
@@ -3023,7 +3024,7 @@ pensar	+Verb+Inf
 
 Per	+Prep
 regla	+Noun+Fem+Sg
-sa	+Pron+Refl+AccDat+Aton+3P+MF+Sg
+sa	+Pron+Refl+AccDat+Aton+3P+MF+Pl
 movan	+Verb+PresInd+3P+Pl
 ellas	+Pron+Pers+Nom+3P+Fem+Pl
 enturn	+Prep
@@ -3034,12 +3035,12 @@ schelira	+Noun+Fem+Sg
 e	+Conj
 quai	+Pron+Dem
 grazia	+Noun+Fem+Sg
-al	+Prep^|+Art+Masc+Sg
+al	+Prep^|+Art+Def+Masc+Sg
 Current	+Prop
 dal	+Prep^|+Art+Def+Masc+Sg
 Golf	+Prop
 respectivamain	+Adv
-al	+Prep^|+Art+Masc+Sg
+al	+Prep^|+Art+Def+Masc+Sg
 Current	+Prop
 da	+Prep
 l’	+Art+Def+Fem+Sg+Apo
@@ -3676,7 +3677,7 @@ dal	+Prep^|+Art+Def+Masc+Sg
 16avel	+Dig+Card+Masc+Sg
 tschientaner	+Noun+Masc+Sg
 fin	+Prep
-al	+Prep^|+Art+Masc+Sg
+al	+Prep^|+Art+Def+Masc+Sg
 di	+Noun+Masc+Sg
 dad	+Prep
 oz	+Adv
@@ -3759,7 +3760,7 @@ biblioteca	+Noun+Fem+Sg
 da	+Prep
 princip	+Noun+Fem+Sg
 accessiblas	+Adj+Fem+Pl
-al	+Prep^|+Art+Masc+Sg
+al	+Prep^|+Art+Def+Masc+Sg
 public	+Noun+Masc+Sg
 (	+Punc+Beg
 cun	+Prep

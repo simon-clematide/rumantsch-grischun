@@ -240,7 +240,7 @@ Dapi	*dapi+Prep
 radund	radund+Adj+Masc+Sg
 20	20+Dig+Card
 onns	onn+Noun+Masc+Pl
-n’	n'+Adv
+n’	na+Prt+Neg+Apo
 ha	avair+Verb+PresInd+3P+Sg
 Dardin	Dardin+Prop
 nagin’	nagin+Pron+Indef+Fem+Sg+Apo
@@ -253,9 +253,9 @@ Ils	*il+Art+Def+Masc+Pl
 aclauns	aclaun+Noun+Masc+Pl
 
 Dardin	Dardin+Prop
-n’	n'+Adv
+n’	na+Prt+Neg+Apo
 è	esser+Verb+PresInd+3P+Sg
-betg	betg+Adv
+betg	betg+Prt+Neg
 in	in+Art+Indef+Masc+Sg
 vitg	vitg+Noun+Masc+Sg
 cumpact	cumpact+Adj+Masc+Sg
@@ -496,6 +496,7 @@ ost	ost+Noun+Masc+Sg
 Ils	*il+Art+Def+Masc+Pl
 anteriurs	anteriur+Adj+Masc+Pl
 aclauns	aclaun+Noun+Masc+Pl
+
 L’	*il+Art+Def+Masc+Sg+Apo
 aclaun	aclaun+Noun+Masc+Sg
 da	da+Prep
@@ -504,6 +505,7 @@ cun	cun+Prep
 chasa-pravenda	chasa-pravenda+Noun+Fem+Sg
 e	e+Conj
 baselgia	baselgia+Noun+Fem+Sg
+
 Interessant	*interessant+Adj+Masc+Sg
 è	esser+Verb+PresInd+3P+Sg
 ch’	che+Pron+Rel+Apo
