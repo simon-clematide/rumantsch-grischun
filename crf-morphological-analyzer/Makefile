@@ -40,10 +40,13 @@ TRAIN:=train/trainall.txt
 EVALTRAIN+=train/train-misc-no-lemma.txt
 EVALTRAIN+=train/dardin-no-lemma.txt
 EVALTRAIN+=train/quotidiana-no-lemma.txt
-EVALTEST:=test/dino-corr.txt
+EVALTEST:=train/wiki-dino-no-lemma.txt
 
 # remove the lemmas for training
 train/dardin-no-lemma.txt: train/dardin.tsv
+	cut -f 1,3 $< > $@
+# remove the lemmas for training
+train/wiki-dino-no-lemma.txt: train/wiki-dino.tsv
 	cut -f 1,3 $< > $@
 
 # Separate lemma from morphological features
