@@ -36,14 +36,22 @@ JOBSIZE?=40
 # Built from different training files and separate test file.
 #####################################################################
 TRAIN:=train/trainall.txt
-EVALTRAIN+=train/train-nolemmas.txt
-EVALTRAIN+=train/dardin-tagged-out-lemma.txt
+EVALTRAIN+=train/train-misc-no-lemma.txt
+EVALTRAIN+=train/dardin-tagged-no-lemma.txt
 EVALTRAIN+=train/quotidiana-no-lemma.txt
 EVALTEST:=test/dino-corr.txt
 
 # remove the lemmas for training
-train/dardin-tagged-out-lemma.txt: train/dardin-tagged-with-lemma.txt
+train/dardin-tagged-no-lemma.txt: train/dardin-tagged-with-lemma.txt
 	perl -F"\t" -lane 's/(^\S+)\t([^+]*)(.*)/\1\t\3/g;print' < $< > $@
+# Separate lemma from morphological features
+train/dardin-tagged-with-lemma.tsv: train/dardin-tagged-with-lemma.txt
+	perl -F"\t" -lane 's/(^\S+)\t([^+]*)(.*)/\1\t\2\t\3/g;print' < $< > $@
+
+
+train/train-misc-no-lemma.txt: train/train-misc.tsv
+	cut -f 1,3 $< > $@
+
 
 train/quotidiana-no-lemma.txt: train/rmquotidiana/done.txt
 	cd $(<D) && cat -s $$(cat $(<F)) | cut -f 1,3 > $(abspath $@)
