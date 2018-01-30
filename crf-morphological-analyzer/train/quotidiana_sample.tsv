@@ -15,7 +15,7 @@ la	il	+Art+Def+Fem+Sg
 partida	partida	+Noun+Fem+Sg
 cristiandemocratica	cristiandemocratic	+Adj+Fem+Sg 
 (	(	+Punc+Beg
-pcd	pcd	+Noun+Masc+Sg
+pcd	pcd	+Abbr
 )	)	+Punc+End
 dal	da	+Prep^|+Art+Def+Masc+Sg
 Grischun	Grischun	+Prop
@@ -52,7 +52,7 @@ la	il	+Art+Def+Fem+Sg
 Regenza	*regenza	+Noun+Fem+Sg
 sco	sco	+Conj
 cunterproposta	cunterproposta	+Noun+Fem+Sg
-vers	vers	+Noun+Masc+Pl
+vers	vers	+Prep
 il	il	+Art+Def+Masc+Sg
 fond	fond	+Noun+Masc+Sg
 d’	da	+Prep+Apo
@@ -62,7 +62,7 @@ il	il	+Art+Def+Masc+Sg
 Grischun	Grischun	+Prop
 dals	da	+Prep^|+Art+Def+Masc+Pl
 giuvens	giuven	+Adj+Masc+Pl
-cristiandemocrats	cristiandemocrat	+Noun+Masc+Pl+UNKNOWN
+cristiandemocrats	cristiandemocrat	+Noun+Masc+Pl
 da	da	+Prep
 noss	noss	+Pron+Poss^DB+Noun+Masc+Pl
 Chantun	*chantun	+Noun+Masc+Sg
@@ -78,13 +78,13 @@ la	il	+Art+Def+Fem+Sg
 fracziun	fracziun	+Noun+Fem+Sg
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
-pcd	pcd	+Noun+Fem+Sg
+pcd	pcd	+Abbr
 en	en	+Prep
 il	il	+Art+Def+Masc+Sg
 Cussegl	*cussegl	+Noun+Masc+Sg
 grond	grond	+Adj+Masc+Sg
 ,	,	+CM
-ch’	che	+Subj+Apo
+ch’	che	+Pron+Rel+Apo
 era	esser	+Verb+ImpInd+1P+Sg
 dentant	dentant	+Adv
 vegnida	vegnir	+Verb+PastPart+Fem+Sg
@@ -92,9 +92,9 @@ refusada	refusar	+Verb+PastPart+Fem+Sg
 da	da	+Prep
 quel	quel	+Pron+Dem+Masc+Sg
 ,	,	+CM
-prevedevan	prevedevar	+Verb+PresInd+3P+Pl+UNKNOWN
+prevedevan	prevedevar	+Verb+PresInd+3P+Pl
 dad	da	+Prep+Apo
-applitagar	applitagar	+Verb+Inf+UNKNOWN
+applitagar	applitagar	+Verb+Inf
 ils	il	+Art+Def+Masc+Pl
 retgavs	retgav	+Noun+Masc+Pl
 extraordinaris	extraordinari	+Adj+Masc+Pl
@@ -102,11 +102,11 @@ da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 Banca	*banca	+Noun+Fem+Sg
 chantunala	chantunal	+Adj+Fem+Sg
-grischuna	grischuna	+Noun+Fem+Sg+UNKNOWN
+grischuna	grischuna	+Adj+Fem+Sg
 per	per	+Prep
 projects	project	+Noun+Masc+Pl
 spezials	spezial	+Adj+Masc+Pl
-che	che	+Subj
+che	che	+Pron+Rel
 avevan	avair	+Verb+ImpInd+3P+Pl
 sco	sco	+Conj
 finamira	finamira	+Noun+Fem+Sg
@@ -118,14 +118,14 @@ e	e	+Conj
 da	da	+Prep
 dar	dar	+Verb+Inf
 impuls	impuls	+Noun+Masc+Pl
-innovativs	innovativ	+Noun+Masc+Pl+UNKNOWN
+innovativs	innovativ	+Adj+Masc+Pl
 e	e	+Conj
 durabels	durabel	+Adj+Masc+Pl
 .	.	+Sent
 
 Tenor	*tenor	+Prep
 la	il	+Art+Def+Fem+Sg
-pcd	pcd	+Noun+Fem+Sg
+pcd	pcd	+Abbr
 realisescha	realisar	+Verb+PresInd+3P+Sg
 questa	quest	+Pron+Dem+Fem+Sg
 fundaziun	fundaziun	+Noun+Fem+Sg
@@ -140,11 +140,11 @@ intenziuns	intenziun	+Noun+Fem+Pl
 In	*in	+Art+Indef+Masc+Sg
 ulteriur	ulteriur	+Adj+Masc+Sg
 fatg	far	+Verb+PastPart+Masc+Sg
-dètg	dètg	+Noun+Masc+Sg+UNKNOWN
-legraivel	legraivel	+Adj+Masc+Sg+UNKNOWN
+dètg	dètg	+Adv	#PROBLEM
+legraivel	legraivel	+Adj+Masc+Sg
 per	per	+Prep
 la	il	+Art+Def+Fem+Sg
-pcd	pcd	+Noun+Fem+Sg
+pcd	pcd	+Abbr
 è	esser	+Verb+PresInd+3P+Sg
 che	che	+Subj
 la	il	+Art+Def+Fem+Sg
@@ -152,15 +152,15 @@ famiglia	famiglia	+Noun+Fem+Sg
 e	e	+Conj
 pèrs	pèr	+Noun+Masc+Pl
 vegnan	vegnir	+Verb+PresInd+3P+Pl
-favorisads	favorisar	+Verb+PastPart+Masc+Pl+UNKNOWN
+favorisads	favorisar	+Verb+PastPart+Masc+Pl
 tras	tras	+Prep
 la	il	+Art+Def+Fem+Sg
 taglia	taglia	+Noun+Fem+Sg
 .	.	+Sent
 
-Tar	*tarar	+Verb+PresInd+1P+Sg
+Tar	*tar	+Prep
 la	il	+Art+Def+Fem+Sg
-novissima	novissim	+Adj+Fem+Sg+UNKNOWN
+novissima	novissim	+Adj+Fem+Sg
 revisiun	revisiun	+Noun+Fem+Sg
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
@@ -174,7 +174,7 @@ vegnì	vegnir	+Verb+PastPart+Masc+Sg
 resguardà	resguardar	+Verb+PastPart+Masc+Sg
 sco	sco	+Conj
 la	il	+Art+Def+Fem+Sg
-pcd	pcd	+Noun+Fem+Sg
+pcd	pcd	+Abbr
 aveva	avair	+Verb+ImpInd+3P+Sg
 gì	avair	+Verb+PastPart+Masc+Sg
 proponì	proponer	+Verb+PastPart+Masc+Sg
@@ -194,7 +194,7 @@ votaziuns	votaziun	+Noun+Fem+Pl
 federalas	federal	+Adj+Fem+Pl
 è	esser	+Verb+PresInd+3P+Sg
 la	il	+Art+Def+Fem+Sg
-pcd	pcd	+Noun+Fem+Sg
+pcd	pcd	+Abbr
 fitg	fitg	+Adv
 satisfatga	satisfatg	+Adj+Fem+Sg
 ch’	che	+Subj+Apo
@@ -211,19 +211,19 @@ da	da	+Prep
 famiglia	famiglia	+Noun+Fem+Sg
 in	in	+Art+Indef+Masc+Sg
 postulat	postulat	+Noun+Masc+Sg
-central	central	+Adj+Masc+Sg+UNKNOWN
+central	central	+Adj+Masc+Sg
 dad	da	+Prep+Apo
 ella	ella	+Pron+Pers+Acc+Ton+3P+Fem+Sg
 .	.	+Sent
 
-Era	*esser	+Verb+ImpInd+1P+Sg
+Era	*era	+Adv
 è	esser	+Verb+PresInd+3P+Sg
 ella	ella	+Pron+Pers+Acc+Ton+3P+Fem+Sg
-loscha	loscha	+Noun+Fem+Sg
+loscha	loscha	+Noun+Fem+Sg	# PROBLEM
 ch’	che	+Subj+Apo
 il	il	+Art+Def+Masc+Sg
 Chantun	*chantun	+Noun+Masc+Sg
-grischun	grischun	+Adj+Masc+Sg+UNKNOWN
+grischun	grischun	+Adj+Masc+Sg
 ha	avair	+Verb+PresInd+3P+Sg
 sancziunà	sancziunar	+Verb+PastPart+Masc+Sg
 –	–	+Punc
@@ -232,7 +232,7 @@ ferm	ferm	+Adj+Masc+Sg
 sustegn	sustegn	+Noun+Masc+Sg
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
-pcd	pcd	+Noun+Fem+Sg
+pcd	pcd	+Abbr
 –	–	+Punc
 la	il	+Art+Def+Fem+Sg
 lescha	lescha	+Noun+Fem+Sg
@@ -249,7 +249,7 @@ ost	ost	+Noun+Masc+Sg
 –	–	+Punc
 e	e	+Conj
 quai	quai	+Pron+Dem
-cunter	cunter	+Noun+Masc+Sg
+cunter	cunter	+Prep
 il	il	+Art+Def+Masc+Sg
 trend	trend	+Noun+Masc+Sg+UNKNOWN
 en	en	+Prep
@@ -259,19 +259,19 @@ Chantuns	*chantun	+Noun+Masc+Pl
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 Svizra	Svizra	+Prop
-orientala	oriental	+Adj+Fem+Sg+UNKNOWN
+orientala	oriental	+Adj+Fem+Sg
 .	.	+Sent
 
-Tar	*tarar	+Verb+PresInd+1P+Sg
+Tar	*tar	+Prep
 las	il	+Art+Def+Fem+Pl
-elecziuns	elecziuns	+Noun+Fem+Pl
-cirquitalas	cirquital	+Adj+Fem+Pl+UNKNOWN
+elecziuns	elecziun	+Noun+Fem+Pl
+cirquitalas	cirquital	+Adj+Fem+Pl
 2006	2006	+Dig+Card
 è	esser	+Verb+PresInd+3P+Sg
 la	il	+Art+Def+Fem+Sg
-pcd	pcd	+Noun+Fem+Sg
+pcd	pcd	+Abbr
 sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg
-movida	movida	+Noun+Fem+Sg+UNKNOWN
+movida	movida	+Noun+Fem+Sg+UNKNOWN	# PROBLEM
 entaifer	entaifer	+Adv
 las	il	+Art+Def+Fem+Pl
 fluctuaziuns	fluctuaziun	+Noun+Fem+Pl
@@ -289,7 +289,7 @@ dà	dar	+Verb+PastPart+Masc+Sg
 –	–	+Punc
 per	per	+Prep
 part	part	+Noun+Fem+Sg
-tar	tarar	+Verb+PresInd+1P+Sg
+tar	tar	+Prep
 resultats	resultat	+Noun+Masc+Pl
 piz	piz	+Noun+Masc+Sg
 a	a	+Prep
@@ -307,7 +307,7 @@ tuttina	tuttina	+Adv
 è	esser	+Verb+PresInd+3P+Sg
 la	il	+Art+Def+Fem+Sg
 fracziun	fracziun	+Noun+Fem+Sg
-cristiandemocratica	cristiandemocratic	+Adj+Fem+Sg+UNKNOWN
+cristiandemocratica	cristiandemocratic	+Adj+Fem+Sg
 restada	restar	+Verb+PastPart+Fem+Sg
 la	il	+Art+Def+Fem+Sg
 pli	pli	+Adv
@@ -327,26 +327,26 @@ onn	onn	+Noun+Masc+Sg
 –	–	+Punc
 che	che	+Subj
 ha	avair	+Verb+PresInd+3P+Sg
-gist	gist	+Adj+Sup^DB+Adv
+gist	gist	+Adv
 entschavì	entschaiver	+Verb+PastPart+Masc+Sg
 –	–	+Punc
 avertescha	avertir	+Verb+PresInd+3P+Sg
 la	il	+Art+Def+Fem+Sg
-pcd	pcd	+Noun+Fem+Sg
+pcd	pcd	+Abbr
 da	da	+Prep
 las	il	+Art+Def+Fem+Pl
 tendenzas	tendenza	+Noun+Fem+Pl
 da	da	+Prep
 centralisaziun	centralisaziun	+Noun+Fem+Sg
-tar	tarar	+Verb+PresInd+1P+Sg
+tar	tar	+Prep
 Confederaziun	*confederaziun	+Noun+Fem+Sg
 e	e	+Conj
 Chantun	*chantun	+Noun+Masc+Sg
 .	.	+Sent
 
 Quai	*quai	+Pron+Dem
-trend	trend	+Noun+Fem+Sg+UNKNOWN
-effectueschia	effectuar+Verb	+Conj+3P+Sg
+trend	trend	+Noun+Fem+Sg
+effectueschia	effectuar	+Verb+Conj+3P+Sg
 la	il	+Art+Def+Fem+Sg
 sperdita	sperdita	+Noun+Fem+Sg
 da	da	+Prep
@@ -355,6 +355,6 @@ da	da	+Prep
 lavur	lavur	+Noun+Fem+Sg
 en	en	+Prep
 regiuns	regiun	+Noun+Fem+Pl
-periferas	perifer	+Adj+Fem+Pl+UNKNOWN
+periferas	perifer	+Adj+Fem+Pl
 dischavantagiadas	dischavantagiar	+Verb+PastPart+Fem+Pl
 .	.	+Sent
