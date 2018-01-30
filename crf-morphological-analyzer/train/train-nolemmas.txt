@@ -4033,7 +4033,7 @@ piuniers	+Noun+Masc+Pl
 dal	+Prep^|+Art+Def+Masc+Sg
 DRG	+Abbr
 Robert	+Prop
-de	+Conj
+de	+Prop
 Planta	+Prop
 e	+Conj
 Florian	+Prop
@@ -4083,7 +4083,9 @@ en	+Prep
 salv	+Adj+Masc+Sg
 en	+Prep
 il	+Art+Def+Masc+Sg
-DRG.	+Abbr
+DRG	+Abbr
+.	+Sent
+
 Latiers	+Adv
 exista	+Verb+PresInd+3P+Sg
 er	+Adv
