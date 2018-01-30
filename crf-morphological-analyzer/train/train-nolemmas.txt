@@ -3121,6 +3121,7 @@ Copenhagen	+Prop
 883	+Dig+Card
 persunas	+Noun+Fem+Pl
 .	+Sent
+
 Dardin	+Prop
 è	+Verb+PresInd+3P+Sg
 ina	+Art+Indef+Fem+Sg
