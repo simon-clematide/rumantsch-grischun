@@ -37,29 +37,37 @@ JOBSIZE?=40
 #####################################################################
 TRAIN:=train/trainall.txt
 
+EVALTRAIN+=train/quotidiana-done-no-lemma.txt
 EVALTRAIN+=train/train-misc-no-lemma.txt
 EVALTRAIN+=train/dardin-no-lemma.txt
-EVALTRAIN+=train/quotidiana-no-lemma.txt
+
 EVALTEST:=train/wiki-dino-no-lemma.txt
 
-# remove the lemmas for training
-train/dardin-no-lemma.txt: train/dardin.tsv
+train-tsv-files+=$(EVALTRAIN:-no-lemma.txt=.tsv)
+train-tsv-files+=$(EVALTEST:-no-lemma.txt=.tsv)
+
+%-no-lemma.txt: %.tsv
 	cut -f 1,3 $< > $@
 # remove the lemmas for training
-train/wiki-dino-no-lemma.txt: train/wiki-dino.tsv
-	cut -f 1,3 $< > $@
+#train/dardin-no-lemma.txt: train/dardin.tsv
+#	cut -f 1,3 $< > $@
+# remove the lemmas for training
+#train/wiki-dino-no-lemma.txt: train/wiki-dino.tsv
+#	cut -f 1,3 $< > $@
 
 # Separate lemma from morphological features
 #train/dardin-tagged-with-lemma.tsv: train/dardin-tagged-with-lemma.txt
 #	perl -F"\t" -lane 's/(^\S+)\t([^+]*)(.*)/\1\t\2\t\3/g;print' < $< > $@
 
 
-train/train-misc-no-lemma.txt: train/train-misc.tsv
-	cut -f 1,3 $< > $@
+#train/train-misc-no-lemma.txt: train/train-misc.tsv
+#	cut -f 1,3 $< > $@
 
-
-train/quotidiana-no-lemma.txt: train/rmquotidiana/done.txt
-	cd $(<D) && cat -s $$(cat $(<F)) | cut -f 1,3 > $(abspath $@)
+train/quotidiana-done.tsv:train/rmquotidiana/done.txt
+	cd $(<D) && cat -s $$(cat $(<F))  > $(abspath $@)
+	
+#train/quotidiana-done-no-lemma.txt: train/quotidiana-done.tsv
+#	cut -f 1,3 $< > $@
 
 # build the full training set for evaluation
 $(TRAIN): $(EVALTRAIN) $(EVALTEST)
@@ -120,4 +128,11 @@ final: $(MODEL)
 # General rule for non-existing directories
 %.d:
 	mkdir -p $@
+
+# Quality assurance	
+include qa.mk
+
+
 SHELL:=/bin/bash
+
+

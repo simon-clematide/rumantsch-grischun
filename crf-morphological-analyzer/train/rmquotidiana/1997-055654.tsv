@@ -13,7 +13,7 @@ la	il	+Art+Def+Fem+Sg
 Lia	*lia	+Noun+Fem+Sg
 rumantscha	rumantsch	+Adj+Fem+Sg
 (	(	+Punc+Beg
-LR	LR	+Prop+Abbr
+LR	LR	+Abbr
 )	)	+Punc+End
 che	che	+Pron+Rel
 ha	avair	+Verb+PresInd+3P+Sg
@@ -25,7 +25,7 @@ Cuira	Cuira	+Prop
 stattan	star	+Verb+PresInd+3P+Pl
 las	il	+Art+Def+Fem+Pl
 elecziuns	elecziuns	+Noun+Fem+Pl
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 gremis	gremi	+Noun+Masc+Pl
 per	per	+Prep
 il	il	+Art+Def+Masc+Sg
@@ -74,7 +74,7 @@ Rumantscha	*rumantsch	+Adj+Fem+Sg
 da	da	+Prep
 Surmeir	Surmeir	+Prop
 (	(	+Punc+Beg
-URS	URS	+Prop+Abbr
+URS	URS	+Abbr
 )	)	+Punc+End
 e	e	+Conj
 Gion	Gion	+Prop
@@ -101,7 +101,7 @@ e	e	+Conj
 Rina	Rina	+Prop
 Steier	Steier	+Prop
 (	(	+Punc+Beg
-URS	URS	+Prop+Abbr
+URS	URS	+Abbr
 )	)	+Punc+End
 .	.	+Sent
 
@@ -123,7 +123,7 @@ Silvia	Silvia	+Prop
 Steiner	Steiner	+Prop
 (	(	+Punc+Beg
 Uniun	*uniun	+Noun+Fem+Sg	#Problem auch +Prop
-dals	da	+Prep^=+Art+Def+Masc+Pl #Problem auch +Prop
+dals	da	+Prep^|+Art+Def+Masc+Pl #Problem auch +Prop
 Grischs	*grisch	+Noun+Masc+Pl   #PROBLEM auch +Prop
 )	)	+Punc+End
 stattan	star	+Verb+PresInd+3P+Pl
@@ -136,7 +136,7 @@ tar	tar	+Prep
 ils	il	+Art+Def+Masc+Pl
 auters	auter	+Adj+Masc+Pl
 posts	post	+Noun+Masc+Pl
-vegni	vegnir	vegnir+Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+3P+MF+Sg
+vegni	vegnir	+Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+3P+MF+Sg
 a	a	+Prep
 dar	dar	+Verb+Inf
 differentas	different	+Adj+Fem+Pl
@@ -161,21 +161,21 @@ puncts	puncts	+Noun+Masc+Pl
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 lavur	lavur	+Noun+Fem+Sg
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 davos	davos	+Adj+Masc+Pl
 onns	onn	+Noun+Masc+Pl
 sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Pl
 repetan	repeter	+Verb+PresInd+3P+Pl
 ,	,	+CM
 damai	damai	+Adv	#PROBLEM conj mit che
-ch’	che	+Rel+Pron+Apo
+ch’	che	+Pron+Rel+Apo
 els	els	+Pron+Pers+Nom+3P+Masc+Pl
 èn	esser	+Verb+PresInd+3P+Pl
 pensum	pensum	+Noun+Masc+Sg
 cuntinuant	cuntinuant	+Adj+Masc+Sg
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
-LR	LR	+Prop+Abbr
+LR	LR	+Abbr
 .	.	+Sent
 
 Il	*il	+Art+Def+Masc+Sg
@@ -298,7 +298,7 @@ instituziuns	instituziun	+Noun+Fem+Pl
 rumantschas	rumantsch	+Adj+Fem+Pl
 ha	avair	+Verb+PresInd+3P+Sg
 la	il	+Art+Def+Fem+Sg
-LR	LR	+Prop+Abbr
+LR	LR	+Abbr
 installà	installar	+Verb+PastPart+Masc+Sg
 ina	in	+Art+Indef+Fem+Sg
 gruppa	gruppa	+Noun+Fem+Sg
@@ -390,7 +390,7 @@ la	il	+Art+Def+Fem+Sg
 Televisiun	*televisiun	+Noun+Fem+Sg
 rumantscha	rumantsch	+Adj+Fem+Sg
 (	(	+Punc+Beg
-RTvR	RTvR	+Prop+Abbr
+RTvR	RTvR	+Abbr
 )	)	+Punc+End
 han	avair	+Verb+PresInd+3P+Pl
 ina	in	+Art+Indef+Fem+Sg
@@ -419,7 +419,7 @@ ordaifer	ordaifer	+Adv
 La	*il	+Art+Def+Fem+Sg
 tenuta	tenuta	+Noun+Fem+Sg
 da	da	+Prep
-RTvR	RTvR	+Prop+Abbr
+RTvR	RTvR	+Abbr
 envers	envers	+Prep
 ina	in	+Art+Indef+Fem+Sg
 decentralisaziun	decentralisaziun	+Noun+Fem+Sg
@@ -434,7 +434,7 @@ Dicziunari	*dicziunari	+Noun+Masc+Sg
 Rumantsch	*rumantsch	+Adj+Masc+Sg
 Grischun	*grischun	+Adj+Masc+Sg
 (	(	+Punc+Beg
-DRG	DRG	+Prop+Abbr
+DRG	DRG	+Abbr
 )	)	+Punc+End
 è	esser	+Verb+PresInd+3P+Sg
 gist	gist	+Adv
@@ -460,12 +460,12 @@ chapientscha	chapientscha	+Noun+Fem+Sg
 per	per	+Prep
 ils	il	+Art+Def+Masc+Pl
 arguments	arguments	+Noun+Masc+Pl
-dal	da	+Prep|+Art+Def+Masc+Sg
-DRG	DRG	+Prop+Abbr
+dal	da	+Prep^|+Art+Def+Masc+Sg
+DRG	DRG	+Abbr
 .	.	+Sent
 
 La	*il	+Art+Def+Fem+Sg
-LR	LR	+Prop+Abbr
+LR	LR	+Abbr
 ha	avair	+Verb+PresInd+3P+Sg
 pitschnas	pitschen	+Adj+Fem+Pl
 pussaivladads	pussaivladad	+Noun+Fem+Pl
