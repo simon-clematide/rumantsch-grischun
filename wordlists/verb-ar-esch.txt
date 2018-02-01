@@ -298,6 +298,7 @@ cudeschar
 cuirassar
 culminar
 cultivar
+cumparar
 cumpensar
 cumpilar
 cumplettar
@@ -1087,6 +1088,7 @@ rangar
 rapinar
 rappar
 rarifitgar
+rasar
 ratifitgar
 raziunalisar
 raziunar

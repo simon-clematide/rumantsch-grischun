@@ -1,6 +1,7 @@
 abandunar
 abassar
 abitar
+absentar
 accelerar
 acceptar
 accordar
@@ -126,6 +127,7 @@ carmalar
 chajar
 chalar
 chalirar
+chaltgar
 chaltschinar
 chamegiar
 chaminar
@@ -135,6 +137,7 @@ charezzar
 chargiar
 charplinar
 charsinar
+chasar
 chaschar
 chaschunar
 chasegliar
@@ -142,6 +145,7 @@ chassar
 chastrar
 chatschar
 chattar
+chattinar
 chavar
 chiffar
 chittar
@@ -152,6 +156,7 @@ cliccar
 cloccar
 clutschar
 coabitar
+coachar
 collar
 collaudar
 collavurar
@@ -203,9 +208,9 @@ cugnar
 cular
 cultivar
 cumadar
+cumblidar
 cumenzar
 cumpagnar
-cumparar
 cumparegliar
 cumpensar
 cumpigliar
@@ -231,6 +236,7 @@ cuschinar
 cussegliar
 custar
 cutizzar
+cuvernar
 cuzzar
 daguttar
 daratgar
@@ -244,6 +250,7 @@ declerar
 decuraschar
 deditgar
 defurmar
+degnar
 degradar
 demonstrar
 demussar
@@ -303,16 +310,23 @@ embarassar
 embartgar
 embavagliar
 emblidar
+embratgar
 embratschar
 embrugliar
 empastar
+empatgar
+empatschar
+empipar
 emplantar
 emplunar
 emprestar
 encapslar
 enchadanar
 enchaminar
+enchaschar
 enchastrar
+enchavar
+enclinar
 encrappar
 encrennar
 encugnar
@@ -322,11 +336,14 @@ endatar
 endirar
 endisar
 endrizzar
+endurmentar
 enfaschar
 enferlar
 enfieutrar
 enfilar
+enfitgar
 enfivlar
+enfurtgar
 engaschar
 engianar
 engiavinar
@@ -406,6 +423,7 @@ flirtar
 flizzar
 flommegiar
 fomentar
+fonar
 fracassar
 franzlar
 fraudar
@@ -421,6 +439,7 @@ fugar
 fugentar
 fugnar
 fullar
+fultschar
 fundar
 furitgar
 furmar
@@ -553,6 +572,7 @@ maridar
 marmugnar
 marschar
 martgadar
+martirar
 marventar
 maschadar
 mascrar
@@ -600,6 +620,7 @@ paffegiar
 paivrar
 pajar
 palandrar
+palar
 palentar
 paletschar
 palpagnar
@@ -645,6 +666,7 @@ piztgar
 pizzar
 planegiar
 plantar
+platgar
 platschergnar
 plazzar
 pledar
@@ -682,6 +704,7 @@ prolungar
 pronunziar
 propagar
 prosperar
+prosternar
 protestar
 protocollar
 provocar
@@ -717,7 +740,6 @@ ranschar
 ranzlegiar
 rapportar
 raquintar
-rasar
 raschlar
 raschunar
 raspar
@@ -743,6 +765,7 @@ redublar
 reelavurar
 reengaschar
 reflectar
+refrestgentar
 refurmar
 refusar
 regalar
@@ -787,6 +810,7 @@ retardar
 retschertgar
 returnar
 retuschar
+revantschar
 revelar
 revocar
 riflar
@@ -857,6 +881,7 @@ schicanar
 schilpegiar
 schirentar
 schladar
+schlantschar
 schlargiar
 schlavar
 schlavazzar
@@ -865,6 +890,7 @@ schlittar
 schluccar
 schlugar
 schlugnar
+schluitar
 schluppegiar
 schluppentar
 schluppettar
@@ -883,6 +909,7 @@ scrivlar
 scrivlottar
 scrochegiar
 scrollar
+scruschignar
 scuar
 scucunar
 scuflar
@@ -905,6 +932,7 @@ sdrappar
 sdratschar
 sdregliar
 sdreglientar
+sdrimar
 segar
 segirar
 segnar
@@ -963,6 +991,7 @@ sgnappar
 sgnervar
 sgniclar
 sgnuflar
+sgobar
 sgragnar
 sgranellar
 sgrasar
@@ -998,6 +1027,7 @@ smanatschar
 smanzegnar
 smardegliar
 smarschunar
+smaschar
 smatgar
 smaultar
 smerdar
@@ -1022,6 +1052,7 @@ sparunar
 spassegiar
 spategliar
 spaventar
+spelatschar
 spendrar
 sperar
 spetgar
@@ -1074,6 +1105,8 @@ startagliar
 statgar
 stavlar
 stenschentar
+stentar
+sterzar
 stgadanar
 stgalprar
 stgaltgagnar
@@ -1124,6 +1157,7 @@ struztgar
 stschorvar
 stuccar
 studegiar
+stufar
 stuffientar
 stumplar
 stunar
@@ -1189,6 +1223,7 @@ tampunar
 tangar
 tantugnar
 targlinar
+tarschinar
 tarscholar
 tartagnar
 taschentar
@@ -1218,6 +1253,7 @@ tolerar
 torturar
 tractar
 traffitgar
+trafilar
 trafurar
 traglischar
 tralaschar
@@ -1229,6 +1265,7 @@ transmidar
 transpirar
 transportar
 transtgargiar
+trapassar
 traplar
 traplignar
 trassegnar
@@ -1281,6 +1318,7 @@ undrar
 unflar
 unifitgar
 urar
+urentar
 urlar
 urtar
 urticlar
@@ -1289,6 +1327,9 @@ usurpar
 valitar
 vannar
 vanzar
+vargar
+varghentar
+vargugnar
 vegliar
 velar
 verdegiar

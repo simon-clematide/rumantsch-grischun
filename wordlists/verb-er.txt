@@ -1,10 +1,13 @@
 abatter
 absolver
+accorscher
 admetter
 agiunscher
 arder
 ascender
 batter
+circumcider
+circumscriver
 cleger
 coexister
 coincider
@@ -40,6 +43,7 @@ descriver
 diffunder
 dismetter
 dissolver
+dissuader
 divider
 eleger
 emetter
@@ -53,6 +57,7 @@ excluder
 exister
 extender
 giunscher
+imprimer
 impunder
 includer
 infunder
@@ -111,9 +116,11 @@ restrenscher
 reveder
 revender
 reviver
+rietscher
 rumper
 sbatter
 scader
+scoder
 sconuscher
 scriver
 scuder
@@ -125,10 +132,12 @@ smerscher
 smetter
 sparter
 spender
+sperder
 stender
 stenscher
 sterner
 strenscher
+subscriver
 succumber
 surencleger
 surleger

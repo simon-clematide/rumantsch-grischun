@@ -16,6 +16,7 @@ intervegnir
 migir
 offrir
 partir
+pervegnir
 predir
 presentir
 proseguir
