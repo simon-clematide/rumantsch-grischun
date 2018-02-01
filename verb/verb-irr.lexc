@@ -31,6 +31,7 @@ STAR ;
 STUAIR ;
 SURRIR ;
 TERRENISAR ;
+TRAIR ;
 VAIR ;
 VEGNIR ;
 VULAIR ;
@@ -390,6 +391,19 @@ terrenisar+Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+1P+MF+Sg:terreni	# ;
 terrenisar+Verb+ImpInd+3P+Sg^|+Pron+Pers+Nom+1P+MF+Sg:terrenavi	# ;
 terrenisar+Verb+Cond+3P+Sg^|+Pron+Pers+Nom+1P+MF+Sg:terrenassi	# ;
 
+LEXICON TRAIR
+trair+Verb+PresInd+1P+Sg:tir		PronSg1 ;
+trair+Verb+PresInd+2P+Sg:tiras		# ;
+trair+Verb+PresInd+3P+Sg:tira		PronSg3Short ;
+trair+Verb+PresInd+1P+Pl:tirain	PronPl1 ;
+trair+Verb+PresInd+2P+Pl:tirais		# ;
+trair+Verb+PresInd+3P+Pl:tiran		PronPl3 ;
+trair:tira						ImpIndEnd ;
+trair:tiri					ConjEnd ;
+trair:tiras						CondEnd ;
+trair:tiro						GerundEnd ;
+trair							InfEnd ;
+
 
 LEXICON VAIR
 vair+Verb+PresInd+1P+Sg:ves		PronSg1 ;
@@ -447,6 +461,7 @@ cuntra	FAR ;
 
 LEXICON DISPREFIX
 dis		FAR ;
+dis     TRAIR ;
 
 LEXICON PREPREFIX
 pre		VAIR ;
@@ -454,11 +469,13 @@ pre		VEGNIR ;
 
 LEXICON REPREFIX
 re		VAIR ;
+re      TRAIR ;
 
 LEXICON SPREFIX
 s		FAR ;
 s		FUGIR ;
 s		NUAR ;
+s		TRAIR ;
 
 LEXICON STRAPREFIX
 stra	COIER  ;
@@ -468,6 +485,7 @@ sutta	STAR ;
 
 LEXICON SURPREFIX
 sur	DAR ;
+sur	TRAIR ;
 
 LEXICON SUBSURPREFIX
 subsur	DAR ;
