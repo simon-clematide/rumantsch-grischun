@@ -394,15 +394,17 @@ terrenisar+Verb+Cond+3P+Sg^|+Pron+Pers+Nom+1P+MF+Sg:terrenassi	# ;
 LEXICON TRAIR
 trair+Verb+PresInd+1P+Sg:tir		PronSg1 ;
 trair+Verb+PresInd+2P+Sg:tiras		# ;
-trair+Verb+PresInd+3P+Sg:tira		PronSg3Short ;
+trair+Verb+PresInd+3P+Sg:tira		PronSg3 ;
 trair+Verb+PresInd+1P+Pl:tirain	PronPl1 ;
 trair+Verb+PresInd+2P+Pl:tirais		# ;
 trair+Verb+PresInd+3P+Pl:tiran		PronPl3 ;
 trair:tira						ImpIndEnd ;
 trair:tiri					ConjEnd ;
-trair:tiras						CondEnd ;
+trair:tira						CondEnd ;
 trair:tiro						GerundEnd ;
 trair							InfEnd ;
+trair+Verb+Impv+2P+Sg:tira		# ;
+trair+Verb+Impv+2P+Pl:tirai	# ;
 
 
 LEXICON VAIR

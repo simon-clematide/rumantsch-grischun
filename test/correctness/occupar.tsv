@@ -1,0 +1,51 @@
+#Preschent
+occup	occupar+Verb+PresInd+1P+Sg
+occupa	occupar+Verb+PresInd+1P+Sg^|+Pron+Pers+Nom+1P+MF+Sg
+occupesch	occupar+Verb+PresInd+1P+Sg
+occupescha	occupar+Verb+PresInd+1P+Sg^|+Pron+Pers+Nom+1P+MF+Sg
+occupas	occupar+Verb+PresInd+2P+Sg
+occupeschas	occupar+Verb+PresInd+2P+Sg
+occupa	occupar+Verb+PresInd+3P+Sg
+occupescha	occupar+Verb+PresInd+3P+Sg
+occupain	occupar+Verb+PresInd+1P+Pl
+occupais	occupar+Verb+PresInd+2P+Pl
+occupan	occupar+Verb+PresInd+3P+Pl
+occupeschan	occupar+Verb+PresInd+3P+Pl
+#Imperfect
+occupava	occupar+Verb+ImpInd+1P+Sg
+occupavas	occupar+Verb+ImpInd+2P+Sg
+occupava	occupar+Verb+ImpInd+3P+Sg
+occupavan	occupar+Verb+ImpInd+1P+Pl
+occupavas	occupar+Verb+ImpInd+2P+Pl
+occupavan	occupar+Verb+ImpInd+3P+Pl
+#Conjunctiv
+occupia	occupar+Verb+Con+1P+Sg
+occupeschia	occupar+Verb+Con+1P+Sg
+occupias	occupar+Verb+Con+2P+Sg
+occupia	occupar+Verb+Con+3P+Sg
+occupeschia	occupar+Verb+Con+3P+Sg
+occupian	occupar+Verb+Con+1P+Pl	
+occupias	occupar+Verb+Con+2P+Pl	
+occupian	occupar+Verb+Con+3P+Pl
+#Cundiziunal
+occupass	occupar+Verb+Cond+1P+Sg
+occupassas	occupar+Verb+Cond+2P+Sg
+occupass	occupar+Verb+Cond+3P+Sg
+occupassan	occupar+Verb+Cond+1P+Pl
+occupassas	occupar+Verb+Cond+2P+Pl
+occupassan	occupar+Verb+Cond+3P+Pl
+#Particip Perfect
+occupà	occupar+Verb+PastPart+Masc+Sg
+occupada	occupar+Verb+PastPart+Fem+Sg
+occupads	occupar+Verb+PastPart+Masc+Pl
+occupadas	occupar+Verb+PastPart+Fem+Pl
+#Imperativ
+occupescha	occupar+Verb+Impv+2P+Sg
+occupa	occupar+Verb+Impv+2P+Sg
+occupai	occupar+Verb+Impv+2P+Pl
+#Gerundi
+occupond	occupar+Verb+Gerund
+#FP	occupeschia	occupar+Verb+Con+3P+Sg
+#FP	occupian	occupar+Verb+Con+3P+Sg+Apo
+#FP	occupescha	occupar+Verb+PresInd+1P+Sg^|+Pron+Pers+Nom+1P+MF+Sg
+#FP	occupa	occupar+Verb+PresInd+1P+Sg^|+Pron+Pers+Nom+1P+MF+Sg

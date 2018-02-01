@@ -12,6 +12,7 @@ UNKNOWNFREQTHRESHOLD = 1
 
 IGNOREDPOSTAGS = set()
 RESTRICTEDPOSTAGS = set()
+IGNOREMORPHTAGS = set()
 """
 Module for testing the correctness and completeness of transducers according to test words
 """
@@ -64,11 +65,14 @@ def test_fsm(fsm, data, options=None):
         result = None
         for result in fsm.apply_up(wf):
             if options.restrict or options.ignore:
-                tags = result.split('+',2)
+                tags = result.split('+')
                 if len(tags) > 1:
-                     if ((options.ignore and tags[1] in IGNOREDPOSTAGS)
+                    if ((options.ignore and tags[1] in IGNOREDPOSTAGS)
                         or (options.restrict and not tags[1] in RESTRICTEDPOSTAGS)) :
                         continue
+                    if options.morph_ignore:
+                        if set(tags).intersection(IGNOREMORPHTAGS):
+                            continue
             word_results.add(result)
 
         # False positives
@@ -76,6 +80,10 @@ def test_fsm(fsm, data, options=None):
 
         # False negatives
         fn =  data[wf] - word_results
+
+        # True positives
+        tp = data[wf].intersection(word_results)
+
         if options.mode == 'unknown' and not word_results:
             print(wf)
             continue
@@ -87,6 +95,9 @@ def test_fsm(fsm, data, options=None):
                 print("FP\t%s\t%s" %(wf, a), file=sys.stdout)
         for a in fn:
             print("FN\t%s\t%s" %(wf, a), file=sys.stdout)
+        if not options.quiet:
+            for a in tp:
+                print("TP\t%s\t%s" %(wf, a), file=sys.stdout)
         if not ( fp or fn) and not options.quiet:
             print('# test ok for wf:', wf, file=sys.stderr)
 
@@ -157,6 +168,9 @@ def main():
     parser.add_option('-i', '--ignore',
                       action='store', dest='ignore', default=None,
                       help='plus-separated list of POS tags to ignore')
+    parser.add_option('-I', '--morph_ignore',
+                      action='store', dest='morph_ignore', default=None,
+                      help='plus-separated list of morph tags that result in analyses to be ignored')
     parser.add_option('-r', '--restrict',
                       action='store', dest='restrict', default=None,
                       help='plus-separated list of POS tags to ignore')
@@ -181,6 +195,9 @@ def main():
     if not options.restrict is None:
         for t in options.restrict.split('+'):
             RESTRICTEDPOSTAGS.add(t)
+    if not options.morph_ignore is None:
+        for t in options.morph_ignore.split('+'):
+            IGNOREMORPHTAGS.add(t)
 
     process(options=options,args=args)
 

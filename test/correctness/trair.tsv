@@ -1,0 +1,43 @@
+#Preschent
+tir	trair+Verb+PresInd+1P+Sg
+tira	trair+Verb+PresInd+1P+Sg^|+Pron+Pers+Nom+1P+MF+Sg
+tiras	trair+Verb+PresInd+2P+Sg
+tira	trair+Verb+PresInd+3P+Sg
+tirain	trair+Verb+PresInd+1P+Pl
+tirais	trair+Verb+PresInd+2P+Pl
+tiran	trair+Verb+PresInd+3P+Pl
+
+#Imperfect
+tirava	trair+Verb+ImpInd+1P+Sg
+tiravas	trair+Verb+ImpInd+2P+Sg
+tirava	trair+Verb+ImpInd+3P+Sg
+tiravan	trair+Verb+ImpInd+1P+Pl
+tiravas	trair+Verb+ImpInd+2P+Pl
+tiravan	trair+Verb+ImpInd+3P+Pl
+
+#Conjunctiv
+tiria	trair+Verb+Con+1P+Sg
+tirias	trair+Verb+Con+2P+Sg
+tiria	trair+Verb+Con+3P+Sg
+tirian	trair+Verb+Con+1P+Pl	
+tirias	trair+Verb+Con+2P+Pl	
+tirian	trair+Verb+Con+3P+Pl
+
+#Cundiziunal
+tirass	trair+Verb+Cond+1P+Sg
+tirassas	trair+Verb+Cond+2P+Sg
+tirass	trair+Verb+Cond+3P+Sg
+tirassan	trair+Verb+Cond+1P+Pl
+tirassas	trair+Verb+Cond+2P+Pl
+tirassan	trair+Verb+Cond+3P+Pl
+
+#Particip Perfect
+tratg	trair+Verb+PastPart+Masc+Sg
+tratga	trair+Verb+PastPart+Fem+Sg
+tratgs	trair+Verb+PastPart+Masc+Pl
+tratgas	trair+Verb+PastPart+Fem+Pl
+#Imperativ
+tira	trair+Verb+Impv+2P+Sg
+tirai	trair+Verb+Impv+2P+Pl
+#Gerundi
+tirond	trair+Verb+Gerund
