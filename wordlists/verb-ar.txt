@@ -7,7 +7,6 @@ acceptar
 accordar
 accumadar
 accumpagnar
-accusar
 acquistar
 adattar
 administrar
@@ -17,10 +16,7 @@ adossar
 adurar
 affidar
 affirmar
-affischar
 affittar
-affruntar
-agitar
 agiuditgar
 agiuntar
 agravar
@@ -44,11 +40,9 @@ arranschar
 arrivar
 arsentar
 aschentar
-aspirar
 assegnar
 atgisar
 attatgar
-attestar
 augmentar
 auzar
 avanzar
@@ -64,7 +58,6 @@ ballantschar
 ballar
 ballinar
 balluccar
-bamboschar
 bandaschar
 bandegiar
 bandunar
@@ -86,7 +79,6 @@ bavrar
 bavrentar
 beffegiar
 beffergnar
-beneventar
 berglar
 beschlar
 biattar
@@ -97,10 +89,8 @@ bischar
 bitschar
 bittar
 blagar
-blasfemar
 blasmar
 blastemmar
-blessar
 boccar
 botschar
 boxar
@@ -123,10 +113,8 @@ calmar
 candidar
 capitar
 capslar
-carmalar
 chajar
 chalar
-chalirar
 chaltgar
 chaltschinar
 chamegiar
@@ -155,17 +143,14 @@ clapragnar
 cliccar
 cloccar
 clutschar
-coabitar
 coachar
 collar
 collaudar
 collavurar
-collectar
 collidar
 collocar
 commentar
 communitgar
-commuventar
 concentrar
 concurrenzar
 condemnar
@@ -173,7 +158,6 @@ confermar
 confessar
 confidar
 confortar
-confruntar
 congualar
 conquistar
 consegnar
@@ -189,7 +173,6 @@ contemplar
 contestar
 controllar
 convocar
-cooptar
 corrodar
 crappar
 cratschlar
@@ -201,7 +184,6 @@ crivlar
 cruschar
 cuccar
 cuchegiar
-cucunar
 cuflar
 cugliunar
 cugnar
@@ -228,7 +210,6 @@ cuntrastar
 cuntschar
 cupidar
 cupitgar
-curar
 cursar
 curtegiar
 cuschentar
@@ -249,7 +230,6 @@ dechantar
 declerar
 decuraschar
 deditgar
-defurmar
 degnar
 degradar
 demonstrar
@@ -269,7 +249,6 @@ detaschar
 detretschar
 deturnar
 diagnostitgar
-dictar
 difficultar
 dilucidar
 diromar
@@ -281,10 +260,8 @@ dischonurar
 discreditar
 discutar
 disfidar
-disfigurar
 disgustar
 dispensar
-dispitar
 dissegnar
 distatgar
 distgargiar
@@ -292,7 +269,6 @@ disturbar
 documentar
 dotar
 drajar
-dressar
 dretgar
 drillar
 drizzar
@@ -304,7 +280,6 @@ durar
 durmentar
 duschar
 elavurar
-elevar
 emballar
 embarassar
 embartgar
@@ -331,14 +306,12 @@ encrappar
 encrennar
 encugnar
 encuraschar
-encurunar
 endatar
 endirar
 endisar
 endrizzar
 endurmentar
 enfaschar
-enferlar
 enfieutrar
 enfilar
 enfitgar
@@ -352,18 +325,15 @@ engirar
 englatschar
 englittar
 engraschar
-engravar
 engraziar
 enguttar
 enlatschar
 ennavar
 enquadrar
 enquagliar
-enragischar
 enraschar
 enriclar
 enrullar
-ensalar
 ensavunar
 enschendrar
 enserrar
@@ -372,7 +342,6 @@ entagliar
 entardar
 entrar
 entretschar
-entruidar
 entscherclar
 entupar
 enumerar
@@ -387,7 +356,6 @@ ertar
 evitar
 exchavar
 exercitar
-expirar
 explitgar
 explotar
 expulsar
@@ -398,11 +366,9 @@ fallar
 falsifitgar
 faschar
 fastagiar
-fastizar
 fatschentar
 faudar
 fermar
-fermentar
 festinar
 festivar
 fidar
@@ -419,7 +385,6 @@ fladegiar
 fladunar
 flaivlentar
 flippar
-flirtar
 flizzar
 flommegiar
 fomentar
@@ -430,7 +395,6 @@ fraudar
 fravegiar
 fregar
 frequentar
-fresar
 frestgentar
 fritgar
 fruschar
@@ -463,9 +427,7 @@ glischar
 glischentar
 glischnar
 gnivar
-gnugnar
 grattar
-grittentar
 gruppar
 guardar
 guatar
@@ -485,8 +447,6 @@ illustrar
 imitar
 immigrar
 impegnar
-implorar
-importar
 impostar
 incitar
 inclinar
@@ -496,7 +456,6 @@ inditgar
 infiltrar
 inflammar
 influenzar
-ingiantar
 inoltrar
 inscuntrar
 inspirar
@@ -504,19 +463,14 @@ installar
 instigar
 instradar
 insuflar
-insultar
 integrar
 intercalar
 interessar
 interpretar
 interrogar
-intgantar
 intimar
 intschendrar
 intschensar
-intunar
-inundar
-inventar
 investigar
 irritar
 isar
@@ -540,7 +494,6 @@ liar
 liberar
 lignar
 limitar
-lintschar
 liquidar
 litgar
 lomiar
@@ -555,7 +508,6 @@ magunar
 maldisar
 malegiar
 malgartegiar
-maltractar
 mancar
 manchentar
 manegiar
@@ -610,7 +562,6 @@ nizzegiar
 notar
 numnar
 obligar
-observar
 odurar
 operar
 optimar
@@ -654,10 +605,8 @@ pestgar
 petgnar
 pezzar
 piclar
-picturar
 pigliar
 pinar
-pipar
 pipegiar
 pisar
 pischar
@@ -670,18 +619,15 @@ platgar
 platschergnar
 plazzar
 pledar
-pledentar
 plegar
 plirar
 pluminar
 plunar
 pluntar
 pluschignar
-postar
 pratitgar
 predegiar
 predeliberar
-prefabritgar
 prefurmar
 pregiar
 prelavar
@@ -696,7 +642,6 @@ pressegiar
 prestampar
 prestar
 prestgaudar
-presumar
 prezavrar
 privar
 prognostitgar
@@ -705,7 +650,6 @@ pronunziar
 propagar
 prosperar
 prosternar
-protestar
 protocollar
 provocar
 publitgar
@@ -749,7 +693,6 @@ ravgentar
 reacquistar
 reaffittar
 rebumbar
-recaltgar
 rechargiar
 reconfermar
 reconquistar
@@ -759,10 +702,8 @@ rectifitgar
 recular
 recumenzar
 recumprar
-recusar
 redrizzar
 redublar
-reelavurar
 reengaschar
 reflectar
 refrestgentar
@@ -774,11 +715,9 @@ reglar
 regnar
 reguardar
 regurdar
-reimportar
 relaschar
 relatar
 remagliar
-remartgar
 remblar
 remesirar
 remortgar
@@ -789,7 +728,6 @@ renovar
 rentar
 renumnar
 renunziar
-reparar
 repassar
 replantar
 represchentar
@@ -799,7 +737,6 @@ reservar
 resgiar
 resguardar
 respectar
-respirar
 restampar
 restar
 resultar
@@ -808,7 +745,6 @@ resunar
 resvegliar
 retardar
 retschertgar
-returnar
 retuschar
 revantschar
 revelar
@@ -817,7 +753,6 @@ riflar
 rimar
 rimnar
 rinforzar
-rinfrestgar
 ristgar
 ritschar
 rubagliar
@@ -837,7 +772,6 @@ sajettar
 salidar
 salvar
 sanestrar
-saramentar
 sauar
 saumar
 sautar
@@ -877,7 +811,6 @@ schelar
 schelentar
 schendrar
 schermigliar
-schicanar
 schilpegiar
 schirentar
 schladar
@@ -1054,14 +987,12 @@ spategliar
 spaventar
 spelatschar
 spendrar
-sperar
 spetgar
 spiar
 spiclar
 spidar
 spievlar
 spiglar
-spirar
 spisgentar
 spizzar
 splanar
@@ -1079,7 +1010,6 @@ splugliar
 spluntar
 spogliar
 spretschar
-sprintar
 sprinzlar
 sprizzar
 spulvrar
@@ -1089,7 +1019,6 @@ squassar
 squintar
 squitschar
 squittar
-sragischar
 srentar
 sromar
 stagliar
@@ -1146,7 +1075,6 @@ strapatschar
 straschinar
 strasunar
 stregliar
-stressar
 stridar
 stritgar
 strivlar
@@ -1230,8 +1158,6 @@ taschentar
 tatgar
 tavlegiar
 taxar
-telefonar
-tementar
 tempestar
 temprar
 tentar
@@ -1250,9 +1176,7 @@ tippar
 tissientar
 tizzar
 tolerar
-torturar
 tractar
-traffitgar
 trafilar
 trafurar
 traglischar
@@ -1262,7 +1186,6 @@ tramuntar
 transfurmar
 translatar
 transmidar
-transpirar
 transportar
 transtgargiar
 trapassar

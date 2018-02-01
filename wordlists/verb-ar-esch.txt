@@ -688,7 +688,6 @@ immunisar
 impaginar
 impestar
 impiegar
-implantar
 implementar
 implitgar
 implodar
@@ -1039,7 +1038,6 @@ professar
 professiunalisar
 profetisar
 profilar
-profitar
 profundar
 prognostitgar
 programmar
