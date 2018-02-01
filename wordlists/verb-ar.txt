@@ -1207,6 +1207,7 @@ tschalattar
 tschancunar
 tschantschar
 tschappar
+tschareschar
 tschavattar
 tschegnar
 tschentar

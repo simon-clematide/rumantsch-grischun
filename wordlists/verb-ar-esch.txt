@@ -466,6 +466,7 @@ doctergiar
 doctorar
 documentar
 domesticar
+domestitgar
 domiciliar
 dominar
 dopar
@@ -1431,7 +1432,6 @@ trumbettar
 trumpar
 tschairar
 tschantscherlar
-tschareschar
 tschelar
 tschitschapulvrar
 tubaccar

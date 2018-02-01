@@ -118,3 +118,6 @@ cgi-bin/data/generator.fst: fstbinaries/generator.fst
 
 crf-morphological-analyzer/train/trainall.txt.mod:
 	cd crf-morphological-analyzer && make final
+
+include test.mk
+
