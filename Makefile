@@ -120,7 +120,7 @@ crf-morphological-analyzer/train/trainall.txt.mod:
 	cd crf-morphological-analyzer && make final
 
 # html docs
-html: www/documenation.html
+html: www/documentation.html
 www/documentation.html: docs/documentation.md
 	pandoc -f markdown_github --self-contained --css=docs/css/GitHub.css -t html $< > $@
 
