@@ -51,6 +51,7 @@ empagliar
 encurunar
 enferlar
 engravar
+enquadrar
 enragischar
 ensalar
 entruidar

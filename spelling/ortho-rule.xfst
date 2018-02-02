@@ -20,7 +20,9 @@ define Char [Letter|{'}|{-}|{.}|{ß}|{’}|{´}|{`}];
 # To write a hard 'g' or 'c' sound the letter h is set before e end i:
 ################################################################################
 
-define HardCG1 [ "@H" -> 0 || {tg} _ ];
+define VerbsWithoutHInsertion [{recognosc}|{confisc}];
+
+define HardCG1 [ "@H" -> 0 || [{tg}|VerbsWithoutHInsertion] _ ];
 define HardCG2 [ c c "@H" -> c h || _ FrontVowel ];
 define HardCG3 [ "@H" -> h || [c|g] _ FrontVowel ];
 define HardCG4 [ "@H" -> 0 ];

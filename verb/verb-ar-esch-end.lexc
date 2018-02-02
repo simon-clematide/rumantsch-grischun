@@ -23,6 +23,7 @@ PASTPART;
 !=========
 ! Present Indicative
 LEXICON PRESENT
++Verb+PresInd+1P+Sg:*EL	# ;
 +Verb+PresInd+1P+Sg:esch	# ;
 +Verb+PresInd+2P+Sg:eschas	# ;
 +Verb+PresInd+3P+Sg:escha	# ;
@@ -65,7 +66,7 @@ LEXICON CONJUNCTIVE
 +Verb+Con+2P+Pl:eschias	# ;
 +Verb+Con+3P+Pl:eschian	# ;
 !! Suffigated Forms:
-+Verb+Con+3P+Sg+Apo:eschian	# ;
++Verb+Con+3P+Sg+Apo:eschian	# ;                         ! see Caduff 2009 §211; before "ins"
 +Verb+Con+1P+Pl^|+Pron+Pers+Nom+1P+MF+Pl:eschiansa	#;
 +Verb+Con+3P+Pl^|+Pron+Pers+Nom+3P+MF+Pl:eschiani	#;
 

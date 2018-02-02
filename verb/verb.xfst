@@ -114,10 +114,12 @@ define VerbIrInf @txt"wordlists/verb-ir.txt" ;
 # Verbs like: finir - jau finesch
 define VerbIrEschInf  @txt"wordlists/verb-ir-esch.txt" ;
 
-
+# Special Verbs with shortened infinitive
+define ShortenedArEschInfinitiv [{beam}|{ambl}|{smatgargn}];
 ################################################################################
 # Regular Verb Processing
 ################################################################################
+
 # Deleting the infinitive ending to get the stems
 define VerbAirStem [[VerbAirInf|VerbAirOptEschInf]
 	.o. [{air} -> "@H" || _ .#.]];
@@ -134,42 +136,21 @@ define VerbIrStem  [VerbIrInf
 	.o. [{ir}  -> "@I" || _ .#.]];
 define VerbAirEschStem [[VerbAirEschInf|VerbAirOptEschInf]
 	.o. [{air} -> "@H" || _ .#.]];
-define VerbArEschStem  [[VerbArEschInf|VerbArOptEschInf]
-	.o. [{iar} -> "@I" || [{gl}|{g}] _ .#.]
-	.o. [{ar}  -> "@H" || _ .#.]];
+define VerbArEschStem  [ [VerbArEschInf|VerbArOptEschInf]
+	.o. [ {iar} -> "@I" || [{gl}|{g}] _ .#. ]
+	.o. [ {ar}  -> "@H" || _ .#. ]
+	.o. [ [..] -> {ar} || .#. ShortenedArEschInfinitiv  _ "@H"] ];
 define VerbErEschStem  [VerbErEschInf
 	.o. [{ier} -> "@I" || {gl} _ .#.]
 	.o. [{er}  -> "@I" || _ .#.]];
 define VerbIrEschStem  [VerbIrEschInf
 	.o. [{ir}  -> "@I" || _ .#.]];
 
-################################################################################
-# Dealing with -el variant in 1. person Sg indicative for verbs with 
-################################################################################
-# https://gitlab.cl.uzh.ch/siclemat/rumantsch-morphologie/issues/12
-#  *  ir-Verben, die die 1. Person immer auf -esch bilden, bilden diese Variante nie (z.B. chavrir)
-#   *  ar-Verben, die optional -esch haben, können auch die -el-Variante haben (z.B: enquadrar)
-#   *  ir-Verben, die nicht auf -esch enden in der 1. Person und auf -vrir im Infinitiv, haben immer die -el-Variante
-#   *  ar-Verben, die nicht obligatorisch auf -esch enden in der 1. Person und auf die folgenden Endungen enden haben die -el-Variante:
-# 
-#     * -brar, -crar, -drar, -grar -prar, -trar, vrar
-#     * -blar, -clar, -dlar, -glar -plar,  -tlar, -vlar, 
-
-#     * -flar --zlar -slar, -schlar,
-
-define ElInsertionLeftContext [ #
-	[[b|c|d|g|p|t|v] [r|l]] # both Cr and Cl  
-	| [f|z|s|{sch}] l      # only Cl
-	] ;
-
-define OptEl1PSgInsertion [
-[  [..] (->) {el}	|| ElInsertionLeftContext _ "+Verb" "+PresInd" "+1P" "+Sg" ]
-];
 
 
 # Adding the conjugation endings to the stems
 define VerbAir [VerbAirStem VerbErEnd];
-define VerbAr  [VerbArStem  VerbArEnd] .o. OptEl1PSgInsertion;
+define VerbAr  [VerbArStem  VerbArEnd] ;
 define VerbEr  [VerbErStem  VerbErEnd];
 define VerbIr  [VerbIrStem  VerbIrEnd];
 define VerbEr2 [VerbEr2Stem VerbIrEnd];
@@ -231,6 +212,8 @@ define VerbGuessIrInf     [ Letter* PlainVowel+ Consonant+ PlainVowel* {ir} ];
 define VerbGuessArEschInf [ Letter* PlainVowel+ Consonant+ {ular}|{inar}|{isar}|{uar}|{iunar}|{iar} ];
 # Verbs like: finir - jau finesch
 define VerbGuessIrEschInf [ Letter* PlainVowel+ Consonant+ PlainVowel* {ir} ];
+
+
 
 # Deleting the infinitive ending to get the stems
 define VerbGuessAirStem [VerbGuessAirInf
@@ -338,15 +321,43 @@ define SuffIns3 [{a} "*INS" -> {'}];
 define SuffIns4 ["*INS" -> 0];
 define SuffIns [SuffIns1 .o. SuffIns2 .o. SuffIns3 .o. SuffIns4];
 
+
+################################################################################
+# Dealing with -el variant in 1. person Sg indicative for verbs with 
+################################################################################
+# https://gitlab.cl.uzh.ch/siclemat/rumantsch-morphologie/issues/12
+#  *  ir-Verben, die die 1. Person immer auf -esch bilden, bilden diese Variante nie (z.B. chavrir)
+#   *  ar-Verben, die optional -esch haben, können auch die -el-Variante haben (z.B: enquadrar)
+#   *  ir-Verben, die nicht auf -esch enden in der 1. Person und auf -vrir im Infinitiv, haben immer die -el-Variante
+#   *  ar-Verben, die nicht obligatorisch auf -esch enden in der 1. Person und auf die folgenden Endungen enden haben die -el-Variante:
+# 
+#     * -brar, -crar, -drar, -grar -prar, -trar, vrar
+#     * -blar, -clar, -dlar, -glar -plar,  -tlar, -vlar, 
+
+#     * -flar --zlar -slar, -schlar,
+
+define ElInsertionLeftContext [ #
+	[[b|c|d|g|p|t|v] [r|l]] # both Cr and Cl  
+	| [f|z|s|{sch}] l      # only Cl
+	] ;
+
+define OptEl1PSgInsertion [
+[  [..] (->) {el}  ElInsertionLeftContext _ "+Verb" "+PresInd" "+1P" "+Sg" ]
+];
+
+define ArNoEl [{detasch}|{sau}|{reengasch}];
+define IrNoEl [{runtg}];
+define OptEl [{spigl}|{dasd}];
 # 1P. Sg. Ending -el
-define EndEl1 ["*EL" -> 0 \/ Vowel {gl} _];
+define EndEl0 ["*EL" (->) {el} \/ .#. OptEl ("@H" |"@I") _ ];
+define EndEl1 ["*EL" -> 0 \/ [Vowel {gl}| ArNoEl|IrNoEl] ("@H" |"@I") _ ];
 define EndEl2 ["*EL" -> {el} \/ {g} "@I" _];
-define EndEl3 ["*EL" -> {el} \/ .#. Consonant* Vowel+ _];
-define EndEl4 ["*EL" -> {el} \/ {mi}|{zi} _];
-define EndEl5 ["*EL" -> {el} \/ {li}|{giasch}|{plasch}|{tasch}|{distingu} _];
-define EndEl6 ["*EL" (->) {el} \/ [Nonliquid {r}|{l}|{mn}|{vd}] _];
+define EndEl3 ["*EL" -> {el} \/ .#. Consonant* Vowel+ ("@H") _];
+define EndEl4 ["*EL" -> {el} \/ [{mi}|{zi} ] ("@H") _];
+define EndEl5 ["*EL" -> {el} \/ [{li}|{engasch}|{giasch}|{plasch}|{tasch}|{distingu}] ("@H") _];
+define EndEl6 ["*EL" (->) {el} \/ [Nonliquid {r}|{l}|{mn}|{vd}|{schn}|{ptg}|{tgn}|{uvr}|{sm}] ("@H" |"@I") _ ];
 define EndEl7 ["*EL" -> 0];
-define EndEl [EndEl1 .o. EndEl2 .o. EndEl3 .o. EndEl4 .o. EndEl5 .o. EndEl6 .o.
+define EndEl [EndEl0 .o.EndEl1 .o. EndEl2 .o. EndEl3 .o. EndEl4 .o. EndEl5 .o. EndEl6 .o.
 EndEl7];
 
 # i/j in Conjunctive
