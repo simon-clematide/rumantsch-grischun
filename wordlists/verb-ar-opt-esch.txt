@@ -6,17 +6,18 @@ adattar
 affischar
 affruntar
 agitar
+allegrar
 approvar
 aspirar
 attestar
 bamboschar
 beneventar
+blagar
 blasfemar
 blessar
 bloccar
 carmalar
 chalirar
-chastiar
 coabitar
 collavurar
 collectar
@@ -44,6 +45,7 @@ disfigurar
 dispitar
 donnegiar
 dressar
+drillar
 dubitar
 elavurar
 elevar
@@ -61,6 +63,7 @@ explitgar
 exportar
 fabritgar
 facilitar
+fallar
 fastizar
 fermentar
 flirtar
@@ -90,6 +93,7 @@ marcar
 menziunar
 observar
 occupar
+parcar
 picturar
 pipar
 plazzar
@@ -107,7 +111,6 @@ recusar
 reelavurar
 reexportar
 refusar
-reglar
 reimportar
 remartgar
 reparar
@@ -127,11 +130,13 @@ sragischar
 stagnar
 stressar
 striunar
+stuccar
 survegliar
 suspectar
 sviluppar
 telefonar
 tementar
+tippar
 torturar
 traffitgar
 transpirar

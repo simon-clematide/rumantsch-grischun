@@ -22,7 +22,6 @@ agiuntar
 agravar
 alarmar
 alienar
-allegrar
 allontanar
 amar
 amplifitgar
@@ -88,7 +87,6 @@ bisbigliar
 bischar
 bitschar
 bittar
-blagar
 blasmar
 blastemmar
 boccar
@@ -153,7 +151,6 @@ commentar
 communitgar
 concentrar
 concurrenzar
-condemnar
 confermar
 confessar
 confidar
@@ -169,9 +166,7 @@ constatar
 consternar
 consumar
 contactar
-contemplar
 contestar
-controllar
 convocar
 corrodar
 crappar
@@ -270,7 +265,6 @@ documentar
 dotar
 drajar
 dretgar
-drillar
 drizzar
 dubitar
 dublegiar
@@ -280,7 +274,6 @@ durar
 durmentar
 duschar
 elavurar
-emballar
 embarassar
 embartgar
 embavagliar
@@ -341,11 +334,9 @@ entagliar
 entardar
 entrar
 entretschar
-entscherclar
 entupar
 enumerar
 envidar
-enviluppar
 enzonnegiar
 enzugliar
 erodar
@@ -361,7 +352,6 @@ expulsar
 extorcar
 extrar
 fabritgar
-fallar
 falsifitgar
 faschar
 fastagiar
@@ -383,13 +373,10 @@ fladar
 fladegiar
 fladunar
 flaivlentar
-flippar
-flizzar
 flommegiar
 fomentar
 fonar
 fracassar
-franzlar
 fraudar
 fravegiar
 fregar
@@ -406,7 +393,6 @@ fultschar
 fundar
 furitgar
 furmar
-galoppar
 garegiar
 gartegiar
 generar
@@ -577,7 +563,6 @@ palpagnar
 palpar
 panugliar
 parar
-parcar
 paregiar
 paschentar
 passar
@@ -616,7 +601,6 @@ planegiar
 plantar
 platgar
 platschergnar
-plazzar
 pledar
 plegar
 plirar
@@ -710,7 +694,6 @@ refurmar
 refusar
 regalar
 registrar
-reglar
 regnar
 reguardar
 regurdar
@@ -789,7 +772,6 @@ sbittar
 sblundregiar
 sbluttar
 sbottar
-sbozzar
 sbrajattar
 sbrajazzar
 sbrigar
@@ -818,7 +800,6 @@ schlargiar
 schlavar
 schlavazzar
 schliar
-schlittar
 schluccar
 schlugar
 schlugnar
@@ -1082,7 +1063,6 @@ struptgar
 struvegiar
 struztgar
 stschorvar
-stuccar
 studegiar
 stufar
 stuffientar
@@ -1170,8 +1150,6 @@ tgisar
 tgittar
 tgular
 tibar
-tiplar
-tippar
 tissientar
 tizzar
 tolerar

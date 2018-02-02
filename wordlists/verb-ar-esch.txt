@@ -201,6 +201,7 @@ charrar
 charrotschar
 chartografar
 chartunar
+chastiar
 chavaltgar
 chavistrar
 chillar
@@ -248,6 +249,7 @@ conciliar
 concordar
 concretisar
 concurrenzar
+condemnar
 condensar
 condolar
 confecziunar
@@ -270,6 +272,7 @@ contactar
 contagiar
 contaminar
 contar
+contemplar
 contingentar
 contractar
 contristar
@@ -497,6 +500,7 @@ eliminar
 eloxar
 emagliar
 emancipar
+emballar
 embalsamar
 emburgaisar
 embuttigliar
@@ -522,12 +526,14 @@ enivrar
 enlattar
 enramar
 ensemnar
+entscherclar
 entular
 entusiasmar
 enumerar
 envaidrar
 envernar
 enviar
+enviluppar
 enzonar
 epilar
 equilibrar
@@ -603,6 +609,8 @@ flancar
 flattar
 flectar
 flexibilisar
+flippar
+flizzar
 flottar
 fluctuar
 fludrar
@@ -619,6 +627,7 @@ fotosintetisar
 fracziunar
 fragmentar
 francar
+franzlar
 fraternisar
 fraudular
 frisar
@@ -630,6 +639,7 @@ fulminar
 funcziunalisar
 furiar
 fusiunar
+galoppar
 galvanisar
 garaschar
 gargarisar
@@ -784,6 +794,7 @@ irritar
 islamisar
 isolar
 italianisar
+jodlar
 kilometrar
 kitar
 laborar
@@ -1128,6 +1139,7 @@ registrar
 regiunalisar
 regiuvinar
 reglamentar
+reglar
 regruppar
 regular
 reincorporar
@@ -1211,6 +1223,7 @@ saziar
 sbariffar
 sbletschergnar
 sbloccar
+sbozzar
 sbuttatschar
 sbuttellar
 scalpar
@@ -1221,6 +1234,7 @@ schampunar
 schelifitgar
 schematisar
 schimgiar
+schlittar
 schlunganar
 schonglar
 schraffar
@@ -1404,6 +1418,7 @@ tgutglar
 timunar
 tintinar
 tipisar
+tiplar
 tirannisar
 titular
 tolerar

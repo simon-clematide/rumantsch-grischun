@@ -274,18 +274,32 @@ define VerbGuessRaw [
 define Delete [[Vowel|Consonant] "*DEL" -> 0] .o. ["*DEL" -> 0];
 define NonDouble [i "*DOUB" i -> i] .o. ["*DOUB" -> 0];
 define LastConsonant [{bb} -> b, 
-					  {cc} ("@H") -> c, 
+					  {cc}  -> c, 
                       {dd} -> d, 
                       {ff} -> f,
-                      {gg} ("@H") -> g,
+                      {gg} -> g,
                       {ll} -> l,
                       {mm} -> m,
-                      {nn} -> n,
+ #                     {nn} -> n,
                       {pp} -> p,
                       {rr} -> r,
                       {tt} -> t,
-                      {zz} -> z \/ _ .#.];
-
+                      {zz}  -> z  ||  _  ("@H") ("*EL")  .#.] ; 
+#                       .o. 
+#                        [{zz}  -> z  || _ ("@H") .#. ] .o.
+#                       [{bb} "@H" -> b "@H",
+#                       {dd} "@H" -> d "@H",
+#                       {ff} "@H" -> f "@H",
+#                       {gg} "@H" -> g "@H",
+#                        {ll} "@H" -> l "@H",
+#                        {mm} "@H" -> m "@H", 
+#                       {nn} "@H" -> n "@H",
+#                        {pp} "@H" -> p "@H",
+#                        {rr} "@H" -> r "@H", 
+#                     {tt} "@H" -> t "@H", 
+#                      {zz} "@H" -> z "@H"
+#                      ||  _  .#.];
+# define LastConsonant [{zz}  -> z  || _ ("@H") ("*EL")  .#. ];
 # Ensure vowel doubling in feminine forms
 define DuplicateT [ {t@} -> {tt} || _ [a|{as}]];
 define DuplicateZ [ {z@} -> {zz} || _ [a|{as}]];
@@ -345,19 +359,21 @@ define OptEl1PSgInsertion [
 [  [..] (->) {el}  ElInsertionLeftContext _ "+Verb" "+PresInd" "+1P" "+Sg" ]
 ];
 
-define ArNoEl [{detasch}|{sau}|{reengasch}];
+define ArNoEl [{detasch}|{sau}|{reengasch}|{plazz}];
 define IrNoEl [{runtg}];
-define OptEl [{spigl}|{dasd}];
+define OptEl [{spigl}|{dasd}|{engasch}];
+define OblEl [{franzl}|{chasti}|{regl} ];
 # 1P. Sg. Ending -el
 define EndEl0 ["*EL" (->) {el} \/ .#. OptEl ("@H" |"@I") _ ];
+define EndEl00 ["*EL" -> {el} \/ .#. OblEl ("@H" |"@I") _ ];
 define EndEl1 ["*EL" -> 0 \/ [Vowel {gl}| ArNoEl|IrNoEl] ("@H" |"@I") _ ];
 define EndEl2 ["*EL" -> {el} \/ {g} "@I" _];
 define EndEl3 ["*EL" -> {el} \/ .#. Consonant* Vowel+ ("@H") _];
 define EndEl4 ["*EL" -> {el} \/ [{mi}|{zi} ] ("@H") _];
-define EndEl5 ["*EL" -> {el} \/ [{li}|{engasch}|{giasch}|{plasch}|{tasch}|{distingu}] ("@H") _];
+define EndEl5 ["*EL" -> {el} \/ [{li}|{giasch}|{plasch}|{tasch}|{distingu}] ("@H") _];
 define EndEl6 ["*EL" (->) {el} \/ [Nonliquid {r}|{l}|{mn}|{vd}|{schn}|{ptg}|{tgn}|{uvr}|{sm}] ("@H" |"@I") _ ];
 define EndEl7 ["*EL" -> 0];
-define EndEl [EndEl0 .o.EndEl1 .o. EndEl2 .o. EndEl3 .o. EndEl4 .o. EndEl5 .o. EndEl6 .o.
+define EndEl [EndEl0 .o. EndEl00 .o.EndEl1 .o. EndEl2 .o. EndEl3 .o. EndEl4 .o. EndEl5 .o. EndEl6 .o.
 EndEl7];
 
 # i/j in Conjunctive
