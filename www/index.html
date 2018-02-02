@@ -38,7 +38,7 @@ function autoResize(id){
 
 		<body >
 		<p><a href="http://www.uzh.ch" >University of Zurich</a> | <a href="http://www.cl.uzh.ch" >Institute of Computational Linguistics</a> | Contact for questions and resources: <a href="http://www.cl.uzh.ch/siclemat" >Simon Clematide</a>
-		Many lexical entries are taken from <a target="_blank" href="http://pledarigrond.ch/rumantschgrischun">Pledari Grond</a> (available by the CC 4.0 license from <a target="_blank" href="http://www.liarumantscha.ch/">Lia Rumantscha</>).
+		<p>Many lexical entries are taken from <a target="_blank" href="http://pledarigrond.ch/rumantschgrischun">Pledari Grond</a> (available by the CC 4.0 license from <a target="_blank" href="http://www.liarumantscha.ch/">Lia Rumantscha</>).</p>
 <form action="/kitt/cgi-bin/rumansh/dev/rumantschlexicalanalysis.cgi" method="POST" accept-charset="UTF-8" name="FormName" target="resultat">
 <h2>Morphological Analysis of Individual Words</h2>
 <p>Words which are unknown to the morphological analyzer are analyzed by an unknown word guesser and their analyses are marked by the tag +UNKNOWN. Words which cannot be guessed by the unknown word guesser get the string "+?" as their analysis.</p>
@@ -126,7 +126,7 @@ bel+Fem+Sg
 			<h2>References</h2>
 			<p>Note: We use a conditional random field sequence classifier (<a target="_blank" href="http://wapiti.limsi.fr">wapiti</a>) for selecting the most probable analysis of a word in the context of the sentence. Unknown words get the analysis which seems most probable in the context. Unfortunately, the most probable tag according to our model (derived from only 4'500 words) can  be the wrong tag in reality.<p>
 
-			<p>A detailed description of the morphological tags and the implementation of the morphological analysis can be found in the <a href="http://kitt.cl.uzh.ch/kitt/rumansh/documentation.pdf" >documentation</a>.</p>
+			<p>A detailed description of the morphological tags and the implementation of the morphological analysis can be found in the <a href="documentation.html" >documentation</a>.</p>
 				</body>
 
 </html>

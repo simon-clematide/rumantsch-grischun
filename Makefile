@@ -119,5 +119,10 @@ cgi-bin/data/generator.fst: fstbinaries/generator.fst
 crf-morphological-analyzer/train/trainall.txt.mod:
 	cd crf-morphological-analyzer && make final
 
+# html docs
+html: www/documenation.html
+www/documentation.html: docs/documentation.md
+	pandoc -f markdown_github --self-contained --css=docs/css/GitHub.css -t html $< > $@
+
 include test.mk
 
