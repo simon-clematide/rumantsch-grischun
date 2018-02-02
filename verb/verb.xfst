@@ -114,8 +114,6 @@ define VerbIrInf @txt"wordlists/verb-ir.txt" ;
 # Verbs like: finir - jau finesch
 define VerbIrEschInf  @txt"wordlists/verb-ir-esch.txt" ;
 
-# Special Verbs with shortened infinitive
-define ShortenedArEschInfinitiv [{beam}|{ambl}|{smatgargn}];
 ################################################################################
 # Regular Verb Processing
 ################################################################################
@@ -138,8 +136,8 @@ define VerbAirEschStem [[VerbAirEschInf|VerbAirOptEschInf]
 	.o. [{air} -> "@H" || _ .#.]];
 define VerbArEschStem  [ [VerbArEschInf|VerbArOptEschInf]
 	.o. [ {iar} -> "@I" || [{gl}|{g}] _ .#. ]
-	.o. [ {ar}  -> "@H" || _ .#. ]
-	.o. [ [..] -> {ar} || .#. ShortenedArEschInfinitiv  _ "@H"] ];
+	.o. [ {ar}  -> "@H" || _ .#. ] ] ; 
+
 define VerbErEschStem  [VerbErEschInf
 	.o. [{ier} -> "@I" || {gl} _ .#.]
 	.o. [{er}  -> "@I" || _ .#.]];
@@ -359,9 +357,9 @@ define OptEl1PSgInsertion [
 [  [..] (->) {el}  ElInsertionLeftContext _ "+Verb" "+PresInd" "+1P" "+Sg" ]
 ];
 
-define ArNoEl [{detasch}|{sau}|{reengasch}|{plazz}];
+define ArNoEl [{detasch}|{sau}|{engasch}|{plazz}];
 define IrNoEl [{runtg}];
-define OptEl [{spigl}|{dasd}|{engasch}];
+define OptEl [{spigl}|{dasd}];
 define OblEl [{franzl}|{chasti}|{regl} ];
 # 1P. Sg. Ending -el
 define EndEl0 ["*EL" (->) {el} \/ .#. OptEl ("@H" |"@I") _ ];

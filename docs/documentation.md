@@ -16,7 +16,7 @@ Reto Baumgartner, Martina Bachmann, Rolf Badat, Daniel Hegglin, Susanna Tron, Me
       * [3 Installation](#3-installation)
       * [4  Benutzung](#4--benutzung)
       * [5 Verwendete Tags](#5-verwendete-tags)
-         * [5.1  Wortartentags](#51--wortartentags)
+         * [5.1 Wortartentags](#51-wortartentags)
          * [5.2 Genauere Einteilung der Wortarten](#52-genauere-einteilung-der-wortarten)
          * [5.3 Deklination und Konjugation](#53-deklination-und-konjugation)
          * [5.4 Weitere Tags](#54-weitere-tags)
@@ -28,7 +28,7 @@ Reto Baumgartner, Martina Bachmann, Rolf Badat, Daniel Hegglin, Susanna Tron, Me
             * [6.1.4 Unregelmässige Adjektive](#614-unregelmässige-adjektive)
             * [6.1.5 Adjektiv-Guesser](#615-adjektiv-guesser)
          * [6.2 Adverbien](#62-adverbien)
-            * [6.2.1 Adverbien aus unveränderlichen Adjektiven](#621-adverbien-aus-unveränderlichen-adjektiven)
+            * [6.2.1 Nicht abgeleitete Adverbien](#621-nicht-abgeleitete-adverbien)
             * [6.2.2 Unregelmässige Adverbien](#622-unregelmässige-adverbien)
          * [6.3 Artikel](#63-artikel)
          * [6.4 Buchstaben und Initialen](#64-buchstaben-und-initialen)
@@ -58,18 +58,25 @@ Reto Baumgartner, Martina Bachmann, Rolf Badat, Daniel Hegglin, Susanna Tron, Me
       * [Changelog](#changelog)
 
 <!-- END-OF-TOC  -->      
-     
+
+<a name="abstract"></a>
+
 ## Abstract
 Dies ist die konzeptuelle Dokumentation des finite-state-basierten Morphologiesystem für die schweizerische Landessprache Rumantsch Grischun. Teilweise sind auch die traditionellen Standardvarietäten des Rätoromanischen behandelt. Die linguistische Formalisierung orientiert sich an existierenden Systemen für die nah verwandte Sprache Italienisch. 
 
+
+<a name="1-linguistische-formalisierung"></a>
+
 ## 1 Linguistische Formalisierung 
-<a name="sec2"></a>
 Die Grammatik von [Caduff et al (2009)](#caduff-et-al-2009) dient als Grundlage für die Wortbildung. Zudem wurde die Grammatik [Lia Rumantscha (2006)](#lia-rumantscha-2006) für linguistische Fragen beigezogen.
 Die Wortlisten stammen grösstenteils aus dem [Pledari grond online](#lia-rumantscha-2018) der Lia Rumantscha. 
 Die Wahl der Tags folgte den Empfehlungen von [Beesley und Karttunen (2003, 335-366)](#beesley-and-karttunen-2003). Bei Zweifelsfällen wurde das Online-Morphologieanalysesystem von [Xerox Corporation (2013)](#xerox-corporation-2013) für Italienisch verwendet. 
 
+
+<a name="3-installation"></a>
+
 ## 3 Installation
-<a name="sec3"></a>
+
 Das Morphologiesystem lässt sich einfach mit dem Build-Werkzeug `make` kompilieren. Die Voraussetzung für die Installation sind die [Finite-State-Werkzeuge von Xerox](http://www.stanford.edu/~laurik/fsmbook/home.html) (xfst) oder alternativ Mans Huldens [Open-Source-Variante Foma](http://code.google.com/p/foma/) (foma). Im folgenden bezeichnet `xfst/foma` das jeweils verwendete Werkzeug.
 
 
@@ -87,8 +94,11 @@ Befehl | Erklärung |
 
 Mit diesen Kommandos können die Netzwerke nach Änderungen in den Wörterlisten oder der weiteren Verarbeitung aktualisiert werden. 
 
+
+<a name="4--benutzung"></a>
+
 ## 4  Benutzung
-<a name="sec4"></a> 
+ 
  Die bei der Installation erstellten Dateien mit .fst können in xfst/foma geladen werden und dort weiterverwendet werden mit:
 
 `xfst[0]: load stack GrischunGuessing.fst`  
@@ -97,10 +107,13 @@ oder sie können auf der Kommandozeile für die Analyse mittels lookup/flookup v
 
 `$ lookup Grischun.fst < tokenis-Infile.txt > Outfile.txt`
 
+<a name="5-verwendete-tags"></a>
+
 ## 5 Verwendete Tags
-<a name="sec5"></a>
+
+<a name="51-wortartentags"></a>
+
 ### 5.1 Wortartentags
-<a name="sec5.1"></a>
 
 	+Abbr	Abkürzung
 	+Adj	Adjektiv  
@@ -125,7 +138,7 @@ oder sie können auf der Kommandozeile für die Analyse mittels lookup/flookup v
 	+Verb	Verb  
 
 ### 5.2 Genauere Einteilung der Wortarten
-<a name="sec5.2"></a>
+<a name="52-genauere-einteilung-der-wortarten"></a>
 
 Pronomen:
 
@@ -162,8 +175,10 @@ Abkürzungen:
 
 	+Noun +Abbr	Abkürzungen von Substantiven
 
+
+<a name="53-deklination-und-konjugation"></a>
+
 ### 5.3 Deklination und Konjugation
-<a name="sec5.3"></a>
 Kasus:  
 
 	+Nom	Nominativ
@@ -212,9 +227,12 @@ Verbformen:
 	+Inf		Infinitiv
 	+Gerund	Gerundium
 	+PastPart	Partizip Vergangenheit
+
+
+<a name="54-weitere-tags"></a>
 	
 ### 5.4 Weitere Tags
-<a name="sec5.4"></a>
+
  
 Derivationsangaben, [Klitika](https://en.wikipedia.org/wiki/Clitic):
 
@@ -232,12 +250,15 @@ Diverse:
 
 Die Tags `+UNKNOWN` und `*` können in `collection-RG.xfst` geändert werden. Für die Kompilierung mit den Schriftidiomen können die Tags am Beginn der Datei `collection.xfst` geändert werden.
 
+
+<a name="6-wortarten"></a> 
+
 ## 6 Wortarten
-<a name="sec6"></a> 
 Abkürzungen (`+Abbr`) werden unabhängig von der Wortart gesetzt. Z.B. *resp.* oder * *.
 
+<a name="61-adjektive"></a> 
+
 ### 6.1 Adjektive
-<a name="sec6.1"></a> 
 Adjektive sind folgendermassen markiert:
 
 
@@ -284,9 +305,10 @@ Die unregelmässigen Adjektive teilen sich in zwei Gruppen auf, nämlich in diej
 <a name="sec6.1.5"></a>
 Der Guesser für unbekannte Adjektivformen ist nur für regelmässigen Adjektiven (inkl. Konsonantenverdoppelung und flüchtigen Vokal) implementiert. Die Adjektive mit Partizipendung wurden bewusst weggelassen, da solche Formen in erster Linie eher Verbformen sind und so einerseits schon integriert sind, andererseits auch bereits in den meisten Fällen korrekt analysiert werden können.
 
-### 6.2 Adverbien
-<a name="sec6.2"></a>
 
+<a name="62-adverbien"></a>
+
+### 6.2 Adverbien
 Adverbien werden nicht (mehr) auf Adjektive zurückgeführt. Es wird nur die Steigerung normalisiert für die Lemmatisierung.
 Adverbien sind folgendermassen markiert:
 
@@ -310,8 +332,11 @@ Adverbien, welche keine oder keine unregelmässige Steigerung haben und nicht au
 <a name="sec6.2.2"></a>
 Die wenigen Adjektive, welche die feminine Form unregelmässig bilden (`adj/adj-irr.lexc`), zeigen dieses Verhalten auch bei den Adverbien (z. B. *largiamain, atgnamain*). Diese Formen sind in lexc erfasst `adv/adv-irr.lexc`. Die unregelmässig gesteigerten Adverbien sind vollständig aufgelistet.
 
+
+<a name="63-artikel"></a>
+
 ### 6.3 Artikel
-<a name="sec6.3"></a>
+
 Die Artikel und Präpositionalartikel sind folgendermassen markiert:
 
 Lemma | Wortart | Grenze | Wortart | Bestimmth| Genus | Numerus | Endung |
@@ -323,13 +348,19 @@ da    | +Prep   | ^|     | +Art    |          |       |         |        |
 
 Diese Formen sind komplett in lexc aufgelistet und in der Datei `art-pron/art.lexc` zu finden. Hier ist keine Erweiterung nötig.
 
+
+<a name="64-buchstaben-und-initialen"></a>
+
 ### 6.4 Buchstaben und Initialen
-<a name="sec6.4"></a>
+
 Als Initialen zählt die Kombination aus einem Grossbuchstaben mit einem Punkt. Sie werden mit `+Initial` gekennzeichnet. Buchstaben sind dagegen Minuskel und Majuskel und sie werden mit `+Let` gekennzeichnet. Als Kriterium für die Wahl der Buchstaben wurden die Zeichensätze ISO 8859-1 und ISO 8859-15 gewählt und die Buchstaben daraus kombiniert.
 Die Buchstaben und Initialen sind in `particles/letter.lexc` aufgelistet.
 
+
+<a name="65-interjektionen"></a>
+
 ### 6.5 Interjektionen
-<a name="sec6.5"></a>
+
 Die Interjektionen tragen das Tag `+Interj` und sie sind in `particles/interj.lexc` aufgelistet.
 
 ### 6.6 Interpunktion
@@ -535,7 +566,7 @@ Die Transduktoren für die Analyse der Schriftidiome sind nach deren Namen benan
 
 
 ## 9 Tokenisierung
-<a name="sec9"></a> 
+<a name="9-tokenisierung"></a> 
 Das System erwartet Eingabetexte, die nach Leerstellen tokenisiert wurden. Des weiteren sollten auch Satzzeichen als Tokens stehen, jedoch Zahlen nicht aufgeteilt werden. Mehrworttokens sind nur bei unveränderlichen Wortarten wie Namen erlaubt.
 Die Tokenisierung beim Apostroph sollte nach folgender Regel gehen: Ist der Teil vor dem Apostroph verkürzt und nach dem Apostroph ein Vokal, soll getrennt werden und der Apostroph zu ersten Teil gehören (*l’onn* → *l’* + *onn*). Ist hingegen der Teil nach dem Apostroph verkürzt und somit ein Konsonant nach dem Apostroph, soll es als ein Token angesehen werden und nicht getrennt werden (*gida’l* → *gida’l*). Konsonanten hingegen werden im Rätoromanischen nicht durch Apostroph ersetzt.
 Ein einfacher perl-basierter Tokeniser, der diese Regeln umsetzt, :
@@ -562,6 +593,5 @@ Ein einfacher perl-basierter Tokeniser, der diese Regeln umsetzt, :
   - 2017-08-23: Small changes and a TOC
   - 2017-07-28: Konvertierung aus originaler PDF-Dokumentation aus 2013 (Simon Clematide)
 
-``
 
 

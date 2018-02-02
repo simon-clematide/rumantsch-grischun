@@ -23,7 +23,7 @@ PASTPART;
 !=========
 ! Present Indicative
 LEXICON PRESENT
-+Verb+PresInd+1P+Sg:*EL	# ;
+!+Verb+PresInd+1P+Sg:*EL	# ;
 +Verb+PresInd+1P+Sg:esch	# ;
 +Verb+PresInd+2P+Sg:eschas	# ;
 +Verb+PresInd+3P+Sg:escha	# ;
