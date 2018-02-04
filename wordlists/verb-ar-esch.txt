@@ -524,7 +524,6 @@ enlattar
 enramar
 enrullar
 ensemnar
-entscherclar
 entular
 entusiasmar
 enumerar

@@ -351,7 +351,7 @@ define OptEl1PSgInsertion [
 define ArNoEl [{detasch}|{sau}|{engasch}|{plazz}];
 define IrNoEl [{runtg}];
 define OptEl [{spigl}|{dasd}];
-define OblEl [{chasch}|{tripl}|{franzl}|{chasti}|{regl} |{bandasch}];
+define OblEl [{enrasch}|{chasch}|{tripl}|{franzl}|{chasti}|{regl} |{bandasch}];
 # 1P. Sg. Ending -el
 define EndEl0 ["*EL" (->) {el} \/ .#. OptEl ("@H" |"@I") _ ];
 define EndEl00 ["*EL" -> {el} \/ .#. OblEl ("@H" |"@I") _ ];
