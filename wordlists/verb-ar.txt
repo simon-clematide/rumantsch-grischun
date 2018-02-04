@@ -325,7 +325,6 @@ ennavar
 enquagliar
 enraschar
 enriclar
-enrullar
 ensavunar
 enschendrar
 enserrar

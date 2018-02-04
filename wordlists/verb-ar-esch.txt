@@ -522,6 +522,7 @@ engrevgiar
 enivrar
 enlattar
 enramar
+enrullar
 ensemnar
 entscherclar
 entular

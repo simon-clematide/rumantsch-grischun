@@ -529,6 +529,8 @@ Die Endungen (inkl. suffigierte Personalpronomina) für diese Verben sind in lex
   * `verb/verb-ir-esch-end.lexc` für *finir – jau finesch*.
 
 Da der Infinitiv separat implementiert ist, können für verschiedene Verbgruppen die gleichen Endungen verwendet werden. Der richtige Anschluss der Pronomina und die Entscheidung über die Endung -el werden durch Ersetzungsregeln in `verb/verb.xfst` sichergestellt.
+Verben wie *enrullar* (*jau enrol/enrullesch*) werden doppelt erfasst. Einerseits als `wordlists/verb-ar-esch.txt` Eintrag und für die unregelmässige Form gibt es noch einen Eintragin `verb/verb-vchg.lexc`.
+
 
 #### 6.12.2 Verben mit Vokalwechsel
 <a name="sec6.12.2"></a> 
