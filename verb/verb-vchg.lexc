@@ -16,6 +16,8 @@ Multichar_Symbols +Verb +PresInd +ImpInd +Cond +Con +Impv +Inf +Gerund +PastPart
 LEXICON Root
 !----- Verbs in -ar: -----
 acclamar:acclam		Stem13Ar;	acclamar:acclom		Stem2;
+accumadar:accumad	Stem13Ar;	accumpagnar:accumod	Stem2;
+accumpagnar:accumpagn	Stem13Ar;	accumpagnar:accumpogn	Stem2;
 chamar:cham			Stem13Ar;	chamar:chaum		Stem2;
 clamar:clam			Stem13Ar;	clamar:clom			Stem2;
 crudar:crud			Stem13Ar;	crudar:crod 		Stem2;
@@ -77,6 +79,7 @@ surduvrar:surduvr	Stem13Ar;	surduvrar:surdovr	Stem2;
 surmanar:surman		Stem13Ar;	surmanar:surmain	Stem2;
 tadlar:tadl			Stem13Ar;	tadlar:taidl		Stem2;
 telecumandar:telecumand	Stem13Ar;	telecumandar:telecumond	Stem2;
+trafurar:trafur		Stem13Ar;	trafurar:trafor	Stem2;
 tschanar:tschan		Stem13Ar;	tschanar:tschain	Stem2;
 tschufragnar:tschufragn	Stem13Ar;	tschufragnar:tschufrogn	Stem2;
 tuffar:tuff			Stem13Ar;	tuffar:tof	Stem2;

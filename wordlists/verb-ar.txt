@@ -5,8 +5,6 @@ absentar
 accelerar
 acceptar
 accordar
-accumadar
-accumpagnar
 acquistar
 adattar
 administrar
@@ -23,6 +21,7 @@ agravar
 alarmar
 alienar
 allontanar
+alpegiar
 amar
 amplifitgar
 anguschar
@@ -57,13 +56,13 @@ ballantschar
 ballar
 ballinar
 balluccar
-bandaschar
 bandegiar
 bandunar
 barattar
 bardigliar
 barlunar
 barschunar
+baruffar
 basar
 basegnar
 bassegiar
@@ -788,6 +787,7 @@ schabegiar
 schanegiar
 schaschinar
 schaumar
+schazegiar
 schelar
 schelentar
 schendrar
@@ -1136,7 +1136,6 @@ tatgar
 tavlegiar
 taxar
 tempestar
-temprar
 tentar
 tettar
 tezzar
@@ -1153,7 +1152,6 @@ tizzar
 tolerar
 tractar
 trafilar
-trafurar
 traglischar
 tralaschar
 trampar
@@ -1184,6 +1182,7 @@ tschantschar
 tschappar
 tschareschar
 tschavattar
+tscheccar
 tschegnar
 tschentar
 tscherclar

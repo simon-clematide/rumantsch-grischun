@@ -11,6 +11,7 @@ approvar
 aspirar
 attestar
 bamboschar
+bandaschar
 beneventar
 blagar
 blasfemar
@@ -147,6 +148,7 @@ suspectar
 sviluppar
 telefonar
 tementar
+temprar
 tippar
 torturar
 traffitgar
