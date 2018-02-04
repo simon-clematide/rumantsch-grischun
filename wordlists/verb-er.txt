@@ -65,6 +65,7 @@ includer
 infunder
 inscriver
 intender
+intermetter
 interprender
 interrumper
 invader
@@ -142,6 +143,7 @@ sterner
 strenscher
 subscriver
 succumber
+succurrer
 surencleger
 surleger
 surprender

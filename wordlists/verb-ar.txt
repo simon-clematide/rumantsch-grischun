@@ -293,6 +293,7 @@ enchaschar
 enchastrar
 enchavar
 enclinar
+encollar
 encrappar
 encrennar
 encugnar
@@ -308,6 +309,7 @@ enfilar
 enfitgar
 enfivlar
 enfurtgar
+enfuttar
 engaschar
 engianar
 engiavinar
@@ -358,6 +360,7 @@ faudar
 fermar
 festinar
 festivar
+ficcar
 fidar
 fieutrar
 figurar
@@ -577,6 +580,7 @@ pegnar
 pendrar
 penellar
 penetrar
+pennar
 pensar
 perdunar
 periclitar
@@ -674,6 +678,7 @@ raspar
 ratifitgar
 ravaschar
 ravgentar
+razzar
 reacquistar
 reaffittar
 rebumbar
@@ -766,6 +771,7 @@ sballunar
 sbalunziar
 sbarbugliar
 sbarbuttar
+sbarrar
 sbartgar
 sbassar
 sbavar
@@ -962,6 +968,7 @@ snarrentar
 snegar
 sniffar
 snizzar
+spalazzar
 spaletschar
 spargnar
 sparpagliar
@@ -969,6 +976,7 @@ sparunar
 spassegiar
 spategliar
 spaventar
+spazzar
 spelatschar
 spendrar
 spetgar
@@ -1101,6 +1109,7 @@ surpavlar
 surpigliar
 surpledar
 surrepreschentar
+sursbrajattar
 sursegirar
 sursegnar
 surstampar
