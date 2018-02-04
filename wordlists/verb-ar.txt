@@ -135,7 +135,6 @@ chiffar
 chittar
 citar
 claccar
-clapragnar
 cliccar
 cloccar
 clutschar
@@ -382,6 +381,7 @@ frequentar
 frestgentar
 fritgar
 fruschar
+fuar
 fufragnar
 fugar
 fugentar
@@ -608,6 +608,7 @@ plunar
 pluntar
 pluschignar
 pratitgar
+preannunziar
 predegiar
 predeliberar
 prefurmar
@@ -737,6 +738,7 @@ rinforzar
 ristgar
 ritschar
 rubagliar
+ruclar
 rufidar
 rugar
 rullar
@@ -747,7 +749,6 @@ ruppar
 ruschnar
 rusignar
 sablar
-sacrifitgar
 sagiar
 sajettar
 salidar
@@ -806,6 +807,7 @@ schluppegiar
 schluppentar
 schluppettar
 schluppinar
+schnorrar
 schnuffar
 schubregiar
 schumbrar
@@ -814,6 +816,7 @@ sclavinar
 sclerentar
 scolar
 scornar
+scoznar
 scratgar
 scrennar
 scrimar
@@ -857,6 +860,7 @@ serpegiar
 serrar
 setgar
 setgentar
+sfadiar
 sfalsifitgar
 sfarfugliar
 sfarlattar
@@ -908,6 +912,7 @@ sgranellar
 sgrasar
 sgrassar
 sgrattar
+sgriflar
 sgriflignar
 sgriziar
 sgriztgar
