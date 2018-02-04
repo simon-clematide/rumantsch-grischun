@@ -18,6 +18,8 @@ blessar
 bloccar
 carmalar
 chalirar
+chapunar
+chastrar
 coabitar
 collavurar
 collectar
@@ -49,6 +51,7 @@ drillar
 dubitar
 elavurar
 elevar
+emballar
 empagliar
 encurunar
 enferlar
@@ -58,6 +61,7 @@ enragischar
 ensalar
 entruidar
 envilgiar
+enviluppar
 expirar
 explitgar
 exportar
@@ -66,14 +70,18 @@ facilitar
 fallar
 fastizar
 fermentar
+flippar
 flirtar
+flizzar
 fresar
 funcziunar
 fundar
+galoppar
 giavischar
 giginar
 gnugnar
 grittentar
+ignivar
 implantar
 implorar
 importar
@@ -119,7 +127,10 @@ returnar
 rinfrestgar
 ruinar
 saramentar
+sbozzar
+schemar
 schicanar
+schlittar
 schoccar
 signifitgar
 sperar
@@ -140,4 +151,5 @@ tippar
 torturar
 traffitgar
 transpirar
+triplar
 viagiar

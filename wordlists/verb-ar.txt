@@ -128,7 +128,6 @@ chaschar
 chaschunar
 chasegliar
 chassar
-chastrar
 chatschar
 chattar
 chattinar
@@ -169,6 +168,7 @@ contactar
 contestar
 convocar
 corrodar
+crablar
 crappar
 cratschlar
 crennar
@@ -232,7 +232,6 @@ demussar
 denunziar
 depassar
 deplorar
-deportar
 depositar
 depurtar
 derasar
@@ -393,6 +392,8 @@ fultschar
 fundar
 furitgar
 furmar
+futrar
+futtar
 garegiar
 gartegiar
 generar
@@ -562,7 +563,6 @@ paletschar
 palpagnar
 palpar
 panugliar
-parar
 paregiar
 paschentar
 passar
@@ -801,13 +801,12 @@ schlavar
 schlavazzar
 schliar
 schluccar
-schlugar
-schlugnar
 schluitar
 schluppegiar
 schluppentar
 schluppettar
 schluppinar
+schnuffar
 schubregiar
 schumbrar
 schuschurar
@@ -889,7 +888,6 @@ sfullar
 sfundrar
 sfunsar
 sfurmiclar
-sfurzar
 sfuschignar
 sgarar
 sgargugliar
@@ -1211,6 +1209,7 @@ turblar
 turmentar
 turnar
 turnentar
+turpegiar
 tussignar
 tutgar
 umifitgar

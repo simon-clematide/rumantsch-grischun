@@ -388,6 +388,7 @@ deplazzar
 deplorar
 depolitisar
 depopular
+deportar
 depositar
 deprimar
 dequotar
@@ -500,7 +501,6 @@ eliminar
 eloxar
 emagliar
 emancipar
-emballar
 embalsamar
 emburgaisar
 embuttigliar
@@ -533,7 +533,6 @@ enumerar
 envaidrar
 envernar
 enviar
-enviluppar
 enzonar
 epilar
 equilibrar
@@ -609,8 +608,6 @@ flancar
 flattar
 flectar
 flexibilisar
-flippar
-flizzar
 flottar
 fluctuar
 fludrar
@@ -639,7 +636,6 @@ fulminar
 funcziunalisar
 furiar
 fusiunar
-galoppar
 galvanisar
 garaschar
 gargarisar
@@ -738,7 +734,9 @@ infantilisar
 infectar
 infestar
 infeudar
+infiltrar
 infizar
+inflammar
 influenzar
 infoliar
 infurmar
@@ -948,6 +946,7 @@ parafar
 parafrasar
 paragrafar
 paralisar
+parar
 parasitar
 parcellar
 parfumar
@@ -1223,7 +1222,6 @@ saziar
 sbariffar
 sbletschergnar
 sbloccar
-sbozzar
 sbuttatschar
 sbuttellar
 scalpar
@@ -1234,7 +1232,6 @@ schampunar
 schelifitgar
 schematisar
 schimgiar
-schlittar
 schlunganar
 schonglar
 schraffar

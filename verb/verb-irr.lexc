@@ -32,8 +32,9 @@ STUAIR ;
 SURRIR ;
 TERRENISAR ;
 TRAIR ;
-VAIR ;
+! VAIR ; ! Virtual stem; not a verb (but used for revair)
 VEGNIR ;
+VESAIR ;
 VULAIR ;
 ! Prefigated irregular verbs
 CUNTRAPREFIX ;
@@ -45,6 +46,47 @@ STRAPREFIX ;
 SURPREFIX ;
 SUBSURPREFIX ;
 SUTTAPREFIX ;
+
+! Prefixes:
+!==========
+LEXICON CUNTRAPREFIX
+cuntra	FAR ;
+cuntra  DIR ;
+
+LEXICON CUNPREFIX
+cun		FAR ;
+
+LEXICON DISPREFIX
+dis		FAR ;
+dis     TRAIR ;
+
+LEXICON PREPREFIX
+pre		VAIR ;
+pre		VEGNIR ;
+
+LEXICON REPREFIX
+re		VAIR ;
+re      TRAIR ;
+
+LEXICON SPREFIX
+s		FAR ;
+s		FUGIR ;
+s		NUAR ;
+s		TRAIR ;
+
+LEXICON STRAPREFIX
+stra	COIER  ;
+
+LEXICON SUTTAPREFIX
+sutta	STAR ;
+
+LEXICON SURPREFIX
+sur	DAR ;
+sur	TRAIR ;
+
+LEXICON SUBSURPREFIX
+subsur	DAR ;
+
 
 LEXICON AVAIR
 avair+Verb+PresInd+1P+Sg:hai	PronSg1 ;
@@ -420,6 +462,19 @@ vair:vese					CondEnd ;
 vair:vese					GerundEnd ;
 vair						InfEnd ;
 
+LEXICON VESAIR
+vesair+Verb+PresInd+1P+Sg:ves		PronSg1 ;
+vesair+Verb+PresInd+2P+Sg:vesas		# ;
+vesair+Verb+PresInd+3P+Sg:vesa		PronSg3Short ;
+vesair+Verb+PresInd+1P+Pl:vesain	PronPl1 ;
+vesair+Verb+PresInd+2P+Pl:vesais	# ;
+vesair+Verb+PresInd+3P+Pl:vesan		PronPl3 ;
+vesair:vese					ImpIndEnd ;
+vesair:vesi					ConjEnd ;
+vesair:vese					CondEnd ;
+vesair:vese					GerundEnd ;
+vesair						InfEnd ;
+
 
 LEXICON VEGNIR
 vegnir+Verb+PresInd+1P+Sg:vegn		PronSg1 ;
@@ -456,41 +511,6 @@ vulair+Verb+PresInd+1P+Pl:lain	PronPl1 ;
 vulair+Verb+ImpInd+1P+Sg:leva	# ;
 vulair+Verb+Cond+1P+Sg:less		PronSg1 ;
 
-! Prefixes:
-!==========
-LEXICON CUNTRAPREFIX
-cuntra	FAR ;
-
-LEXICON DISPREFIX
-dis		FAR ;
-dis     TRAIR ;
-
-LEXICON PREPREFIX
-pre		VAIR ;
-pre		VEGNIR ;
-
-LEXICON REPREFIX
-re		VAIR ;
-re      TRAIR ;
-
-LEXICON SPREFIX
-s		FAR ;
-s		FUGIR ;
-s		NUAR ;
-s		TRAIR ;
-
-LEXICON STRAPREFIX
-stra	COIER  ;
-
-LEXICON SUTTAPREFIX
-sutta	STAR ;
-
-LEXICON SURPREFIX
-sur	DAR ;
-sur	TRAIR ;
-
-LEXICON SUBSURPREFIX
-subsur	DAR ;
 
 
 ! Endings:

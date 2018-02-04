@@ -3,7 +3,6 @@ avrir
 bragir
 buglir
 consentir
-cuntradir
 cunvegnir
 cuvrir
 desdir

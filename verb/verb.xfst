@@ -101,6 +101,10 @@ define VerbArOptEschInf @txt"wordlists/verb-ar-opt-esch.txt" ;
 # Verbs like: vender - jau vend (nus vendain)
 define VerbErInf  @txt"wordlists/verb-er.txt" ;
 
+# Verbs like: promover - jau promov/promovesch
+
+define VerbErOptEschInf @txt"wordlists/verb-er-opt-esch.txt" ;
+
 # Verbs like: currer - jau cur (but: nus currin)
 define VerbEr2Inf @txt"wordlists/verb-er2.txt" ;
 
@@ -124,7 +128,7 @@ define VerbAirStem [[VerbAirInf|VerbAirOptEschInf]
 define VerbArStem  [[VerbArInf|VerbArOptEschInf]
 	.o. [{iar} -> "@I" || [{gl}|{g}] _ .#.]
 	.o. [{ar}  -> "@H" || _ .#.]];
-define VerbErStem  [VerbErInf
+define VerbErStem  [[VerbErInf | VerbErOptEschInf]
 	.o. [{ier} -> "@I" || {gl} _ .#.]
 	.o. [{er}  -> "@I" || _ .#.]]; 
 define VerbEr2Stem [VerbEr2Inf
@@ -138,7 +142,7 @@ define VerbArEschStem  [ [VerbArEschInf|VerbArOptEschInf]
 	.o. [ {iar} -> "@I" || [{gl}|{g}] _ .#. ]
 	.o. [ {ar}  -> "@H" || _ .#. ] ] ; 
 
-define VerbErEschStem  [VerbErEschInf
+define VerbErEschStem  [ [VerbErEschInf | VerbErOptEschInf]
 	.o. [{ier} -> "@I" || {gl} _ .#.]
 	.o. [{er}  -> "@I" || _ .#.]];
 define VerbIrEschStem  [VerbIrEschInf
@@ -282,22 +286,9 @@ define LastConsonant [{bb} -> b,
                       {pp} -> p,
                       {rr} -> r,
                       {tt} -> t,
-                      {zz}  -> z  ||  _  ("@H") ("*EL")  .#.] ; 
-#                       .o. 
-#                        [{zz}  -> z  || _ ("@H") .#. ] .o.
-#                       [{bb} "@H" -> b "@H",
-#                       {dd} "@H" -> d "@H",
-#                       {ff} "@H" -> f "@H",
-#                       {gg} "@H" -> g "@H",
-#                        {ll} "@H" -> l "@H",
-#                        {mm} "@H" -> m "@H", 
-#                       {nn} "@H" -> n "@H",
-#                        {pp} "@H" -> p "@H",
-#                        {rr} "@H" -> r "@H", 
-#                     {tt} "@H" -> t "@H", 
-#                      {zz} "@H" -> z "@H"
-#                      ||  _  .#.];
-# define LastConsonant [{zz}  -> z  || _ ("@H") ("*EL")  .#. ];
+                      {zz}  -> z  ||  _  ("@H"|"@I") ("*EL")  .#.] ; 
+
+
 # Ensure vowel doubling in feminine forms
 define DuplicateT [ {t@} -> {tt} || _ [a|{as}]];
 define DuplicateZ [ {z@} -> {zz} || _ [a|{as}]];

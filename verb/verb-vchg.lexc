@@ -33,6 +33,7 @@ fanar:fan			Stem13Ar;	fanar:fain			Stem2;
 franar:fran			Stem13Ar;	franar:frain		Stem2;
 furar:fur			Stem13Ar;	furar:for			Stem2;
 gudagnar:gudagn		Stem13Ar;	gudagnar:gudogn		Stem2;
+inflammar:inflamm	Stem13Ar;	inflammar:inflom	Stem2;
 luar:lu				Stem13Ar;	luar:lieu			Stem2;
 ludar:lud			Stem13Ar;	ludar:laud			Stem2;
 manar:man			Stem13Ar;	manar:main			Stem2;
@@ -54,9 +55,12 @@ repussar:repuss		Stem13Ar;	repussar:repauss	Stem2;
 ruassar:ruass		Stem13Ar;	ruassar:ruauss		Stem2;
 sbuvar:sbuv			Stem13Ar;	sbuvar:sbov			Stem2;
 schluppar:schlupp	Stem13Ar;	schluppar:schlopp	Stem2;
+schlugar:schlug		Stem13Ar;	schlugar:schlog		Stem2;
+schlugnar:schlugn	Stem13Ar;	schlugnar:schlogn	Stem2;
 scrudar:scrud		Stem13Ar;	scrudar:scrod		Stem2;
 scumandar:scumand	Stem13Ar;	scumandar:scumond	Stem2;
 sdermanar:sderman	Stem13Ar;	sdermanar:sdermain	Stem2;
+sfurzar:sfurz		Stem13Ar; 	sfurzar:sforz		Stem2;
 sgiamiar:sgiami		Stem13Ar;	sgiamiar:sgiomi		Stem2;
 sgramar:sgram		Stem13Ar;	sgramar:sgrom		Stem2;
 sgular:sgul			Stem13Ar;	sgular:sgol			Stem2;
@@ -75,7 +79,10 @@ tadlar:tadl			Stem13Ar;	tadlar:taidl		Stem2;
 telecumandar:telecumand	Stem13Ar;	telecumandar:telecumond	Stem2;
 tschanar:tschan		Stem13Ar;	tschanar:tschain	Stem2;
 tschufragnar:tschufragn	Stem13Ar;	tschufragnar:tschufrogn	Stem2;
+tuffar:tuff			Stem13Ar;	tuffar:tof	Stem2;
 uvar:uv				Stem13Ar;	uvar:ov				Stem2;
+vannar:vann			Stem13Ar;   vannar:vonn			Stem2;
+zaccagnar:zaccagn	Stem13Ar;   zaccagnar:zaccogn	Stem2;
 !----- Verbs in -ir: -----
 durmir:durm			Stem13Ir;	durmir:dorm			Stem2;
 emplenir:emplen		Stem13Ir;	emplenir:emplain	Stem2;
@@ -110,9 +117,9 @@ torrer:turr			Stem3Er;	torrer:torr			Stem12Er;
 volver:vulv			Stem3Er;	volver:volv			Stem12Er;
 !----- Verbs in -air: -----
 dulair:dul			Stem13Air;	dulair:dol			Stem2;
-giudar:giud			Stem13Air;	giudar:giaud		Stem2;
+giudair:giud		Stem13Air;	giudair:giaud		Stem2;
 rumagnair:rumagn	Stem13Air;	rumagnair:rumogn	Stem2;
-surgiudar:surgiud	Stem13Air;	surgiudar:surgiaud	Stem2;
+surgiudair:surgiud	Stem13Air;	surgiudair:surgiaud	Stem2;
 !----- Irregular forms of these verbs: -----
 !	Irregular;
 
