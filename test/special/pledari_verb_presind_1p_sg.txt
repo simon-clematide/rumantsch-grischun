@@ -2571,9 +2571,7 @@ sabl	sablar+Verb+PresInd+1P+Sg
 sablel	sablar+Verb+PresInd+1P+Sg
 sablunesch	sablunar+Verb+PresInd+1P+Sg
 sabotesch	sabotar+Verb+PresInd+1P+Sg
-macrifitgesch	sacrifitgar+Verb+PresInd+1P+Sg
 sacrifitgesch	sacrifitgar+Verb+PresInd+1P+Sg
-madulesch	sadular+Verb+PresInd+1P+Sg
 sadulesch	sadular+Verb+PresInd+1P+Sg
 sagel	sagiar+Verb+PresInd+1P+Sg
 sajet	sajettar+Verb+PresInd+1P+Sg
@@ -2583,7 +2581,6 @@ salaschesch	salaschar+Verb+PresInd+1P+Sg
 saldesch	saldar+Verb+PresInd+1P+Sg
 salid	salidar+Verb+PresInd+1P+Sg
 salutesch	salutar+Verb+PresInd+1P+Sg
-malv	salvar+Verb+PresInd+1P+Sg
 salv	salvar+Verb+PresInd+1P+Sg
 sanesch	sanar+Verb+PresInd+1P+Sg
 sanctifitgesch	sanctifitgar+Verb+PresInd+1P+Sg
