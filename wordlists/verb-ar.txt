@@ -222,7 +222,6 @@ daventar
 debitar
 dechantar
 declerar
-decuraschar
 deditgar
 degnar
 degradar

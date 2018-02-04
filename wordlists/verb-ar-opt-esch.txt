@@ -41,6 +41,7 @@ cumbinar
 cunfinar
 curar
 decunfinar
+decuraschar
 defurmar
 delegar
 demascrar
