@@ -79,7 +79,7 @@ EVALMODEL:=$(EVALTRAIN).mod
 RMTEMP:=touch
 
 ### Evaluate using 10-fold cross-validation
-# Testfold are specified, devset folds are derived from that 
+# Test folds are specified, devset folds are derived from them
 FOLDS?= 1 2 3 4 5 6 7 8 9 10
 TPL:=$(basename $(notdir $(TEMPLATE)))
 CVDATA_OUT:= $(TPL)_cv.d
@@ -132,7 +132,7 @@ final: $(MODEL)
 # Quality assurance	
 include qa.mk
 
-
+include learn.mk
 SHELL:=/bin/bash
 
 

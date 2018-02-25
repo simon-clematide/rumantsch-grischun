@@ -18,13 +18,16 @@ LEXICON Root
 acclamar:acclam		Stem13Ar;	acclamar:acclom		Stem2;
 accumadar:accumad	Stem13Ar;	accumadar:accumod	Stem2;
 accumpagnar:accumpagn	Stem13Ar;	accumpagnar:accumpogn	Stem2;
+bagnar:bagn			Stem13Ar;	bagnar:bogn		Stem2;
 chamar:cham			Stem13Ar;	chamar:chaum		Stem2;
 clamar:clam			Stem13Ar;	clamar:clom			Stem2;
 clapragnar:clapragn Stem13Ar;	clapragnar:claprogn	Stem2;
+cresmar:cresm		Stem13Ar;	cresmar:craism		Stem2;
 crudar:crud			Stem13Ar;	crudar:crod 		Stem2;
 cumadar:cumad		Stem13Ar;	cumadar:cumod		Stem2;
 cumandar:cumand		Stem13Ar;	cumandar:cumond		Stem2;
 cumpagnar:cumpagn	Stem13Ar;	cumpagnar:cumpogn	Stem2;
+depurtar:depurt		Stem13Ar;	depurtar:deport		Stem2;
 dumagnar:dumagn		Stem13Ar;	dumagnar:dumogn		Stem2;
 dumandar:dumand		Stem13Ar;	dumandar:dumond		Stem2;
 dustar:dust			Stem13Ar;	dustar:dost			Stem2;
@@ -32,23 +35,39 @@ duvrar:duvr			Stem13Ar;	duvrar:dovr			Stem2;
 empruvar:empruv		Stem13Ar;	empruvar:emprov		Stem2;
 empurtar:empurt 	Stem13Ar;	empurtar:emport		Stem2;
 empustar:empust		Stem13Ar;	empustar:empost		Stem2;
+enchadanar:enchadan	Stem13Ar;	enchadanar:enchadain	Stem2;
+engianar:engian		Stem13Ar;	engianar:engion		Stem2;
 engular:engul		Stem13Ar;	engular:engol		Stem2;
 ennavar:ennav		Stem13Ar;	ennavar:ennaiv		Stem2;
 enrullar:enrull		Stem13Ar;	enrullar:enroll		Stem2;
 entupar:entup		Stem13Ar;	entupar:entaup		Stem2;
 exclamar:exclam		Stem13Ar;	exclamar:exclom		Stem2;
 fanar:fan			Stem13Ar;	fanar:fain			Stem2;
+giugar:giug			Stem13Ar;	giugar:giog			Stem2;
+intschensar:intschens	Stem13Ar;	intschensar:intschains	Stem2;
+
+prezavrar:prezavr		Stem13Ar;	prezavrar:prezaivr		Stem2;
+premaschadar:premaschad		Stem13Ar;	premaschadar:premaschaid		Stem2;
+spruvar:spruv		Stem13Ar;	spruvar:sprov		Stem2;
+struclar:strucl		Stem13Ar;	struclar:strocl		Stem2;
+
+stgavagnar:stgavagn		Stem13Ar;	stgavagnar:stgavogn		Stem2;
+maschadar:maschad	Stem13Ar;	maschadar:maschaid	Stem2;
 franar:fran			Stem13Ar;	franar:frain		Stem2;
+fufragnar:fufragn	Stem13Ar;	fufragnar:fufrogn	Stem2;
 furar:fur			Stem13Ar;	furar:for			Stem2;
 gudagnar:gudagn		Stem13Ar;	gudagnar:gudogn		Stem2;
 inflammar:inflamm	Stem13Ar;	inflammar:inflom	Stem2;
 luar:lu				Stem13Ar;	luar:lieu			Stem2;
 ludar:lud			Stem13Ar;	ludar:laud			Stem2;
+lugar:lug			Stem13Ar;	lugar:log			Stem2;
+malduvrar:malduvr	Stem13Ar;	malduvrar:maldovr	Stem2;
 manar:man			Stem13Ar;	manar:main			Stem2;
 mular:mul			Stem13Ar;	mular:mol			Stem2;
 nudar:nud			Stem13Ar;	nudar:nod			Stem2;
 ordinar:ordin		Stem13Ar;	ordinar:ordain		Stem2;
 palesar:pales		Stem13Ar;	palesar:palais		Stem2;
+palpagnar:palpagn	Stem13Ar;	palpagnar:palpogn		Stem2;
 pasar:pas			Stem13Ar;	pasar:pais			Stem2;
 perfurar:perfur		Stem13Ar;	perfurar:perfor		Stem2;
 pruvar:pruv			Stem13Ar;	pruvar:prov			Stem2;
@@ -85,6 +104,7 @@ surdumandar:surdumand	Stem13Ar;	surdumandar:surdumond	Stem2;
 surduvrar:surduvr	Stem13Ar;	surduvrar:surdovr	Stem2;
 surmanar:surman		Stem13Ar;	surmanar:surmain	Stem2;
 tadlar:tadl			Stem13Ar;	tadlar:taidl		Stem2;
+tartagnar:tartagn	Stem13Ar;	tartagnar:tartogn		Stem2;
 telecumandar:telecumand	Stem13Ar;	telecumandar:telecumond	Stem2;
 trafurar:trafur		Stem13Ar;	trafurar:trafor	Stem2;
 tschanar:tschan		Stem13Ar;	tschanar:tschain	Stem2;
@@ -93,12 +113,25 @@ tuffar:tuff			Stem13Ar;	tuffar:tof	Stem2;
 uvar:uv				Stem13Ar;	uvar:ov				Stem2;
 vannar:vann			Stem13Ar;   vannar:vonn			Stem2;
 zaccagnar:zaccagn	Stem13Ar;   zaccagnar:zaccogn	Stem2;
+pulstrar:pulstr		Stem13Ar;   pulstrar:polstr	Stem2;
+regurdar:regurd		Stem13Ar;   regurdar:regord	Stem2;
+platschergnar:platschergn		Stem13Ar;   platschergnar:platschrogn	Stem2;
+rudlar:rudl		Stem13Ar;   rudlar:rodl	Stem2;
+rugar:rug		Stem13Ar;   rugar:rog	Stem2;
+rullar:rull		Stem13Ar;   rullar:rol	Stem2;
+
+
+
 !----- Verbs in -ir: -----
 durmir:durm			Stem13Ir;	durmir:dorm			Stem2;
 emplenir:emplen		Stem13Ir;	emplenir:emplain	Stem2;
 murir:mur			Stem13Ir;	murir:mor			Stem2;
 surudir:surud		Stem13Ir;	surudir:suraud		Stem2;
 udir:ud				Stem13Ir;	udir:aud			Stem2;
+proseguir:prosegu	Stem13Ir;	proseguir:proseguel	Stem2;
+
+
+
 !----- Verbs in -er: -----
 baiver:bav			Stem3Er;	baiver:baiv			Stem12Er;
 clauder:clud		Stem3Er;	clauder:claud		Stem12Er;

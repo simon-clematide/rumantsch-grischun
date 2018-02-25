@@ -118,6 +118,9 @@ define VerbIrInf @txt"wordlists/verb-ir.txt" ;
 # Verbs like: finir - jau finesch
 define VerbIrEschInf  @txt"wordlists/verb-ir-esch.txt" ;
 
+define VerbIrOptEschInf @txt"wordlists/verb-ir-opt-esch.txt" ;
+
+
 ################################################################################
 # Regular Verb Processing
 ################################################################################
@@ -134,7 +137,7 @@ define VerbErStem  [[VerbErInf | VerbErOptEschInf]
 define VerbEr2Stem [VerbEr2Inf
 	.o. [{ier} -> "@I" || {gl} _ .#.]
 	.o. [{er}  -> "@I" || _ .#.]];
-define VerbIrStem  [VerbIrInf
+define VerbIrStem  [[VerbIrInf | VerbIrOptEschInf]
 	.o. [{ir}  -> "@I" || _ .#.]];
 define VerbAirEschStem [[VerbAirEschInf|VerbAirOptEschInf]
 	.o. [{air} -> "@H" || _ .#.]];
@@ -145,7 +148,7 @@ define VerbArEschStem  [ [VerbArEschInf|VerbArOptEschInf]
 define VerbErEschStem  [ [VerbErEschInf | VerbErOptEschInf]
 	.o. [{ier} -> "@I" || {gl} _ .#.]
 	.o. [{er}  -> "@I" || _ .#.]];
-define VerbIrEschStem  [VerbIrEschInf
+define VerbIrEschStem  [[ VerbIrEschInf|VerbIrOptEschInf]
 	.o. [{ir}  -> "@I" || _ .#.]];
 
 
@@ -282,7 +285,7 @@ define LastConsonant [{bb} -> b,
                       {gg} -> g,
                       {ll} -> l,
                       {mm} -> m,
-                      {nn} -> n,
+#                      {nn} -> n,
                       {pp} -> p,
                       {rr} -> r,
                       {tt} -> t,
@@ -350,8 +353,8 @@ define OptEl1PSgInsertion [
 
 define ArNoEl [{detasch}|{sau}|{engasch}|{plazz}];
 define IrNoEl [{runtg}];
-define OptEl [{spigl}|{dasd}];
-define OblEl [{decurasch}|{extingu}|{enrasch}|{chasch}|{tripl}|{franzl}|{chasti}|{regl} |{bandasch}];
+define OptEl [{spigl}|{dasd}|{craism}|{tripl}|{tipl}|{rodl}];
+define OblEl [{decurasch}|{extingu}|{enrasch}|{enflivl}|{chasch}|{franzl}|{chasti}|{regl} |{bandasch}];
 # 1P. Sg. Ending -el
 define EndEl0 ["*EL" (->) {el} \/ .#. OptEl ("@H" |"@I") _ ];
 define EndEl00 ["*EL" -> {el} \/ .#. OblEl ("@H" |"@I") _ ];
@@ -362,7 +365,7 @@ define EndEl4 ["*EL" -> {el} \/ [{mi}|{zi} ] ("@H") _];
 define EndEl5 ["*EL" -> {el} \/ [{li}|{giasch}|{plasch}|{tasch}|{distingu}] ("@H") _];
 define EndEl6 ["*EL" (->) {el} \/ [Nonliquid {r}|{l}|{mn}|{vd}|{schn}|{ptg}|{tgn}|{uvr}|{sm}] ("@H" |"@I") _ ];
 define EndEl7 ["*EL" -> 0];
-define EndEl [EndEl0 .o. EndEl00 .o.EndEl1 .o. EndEl2 .o. EndEl3 .o. EndEl4 .o. EndEl5 .o. EndEl6 .o.
+define EndEl [EndEl00 .o. EndEl0 .o.EndEl1 .o. EndEl2 .o. EndEl3 .o. EndEl4 .o. EndEl5 .o. EndEl6 .o.
 EndEl7];
 
 # i/j in Conjunctive

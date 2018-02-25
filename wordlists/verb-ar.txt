@@ -231,7 +231,6 @@ denunziar
 depassar
 deplorar
 depositar
-depurtar
 derasar
 derivar
 derschar
@@ -243,7 +242,6 @@ deturnar
 diagnostitgar
 difficultar
 dilucidar
-diromar
 disar
 dischertar
 dischimpegnar
@@ -286,7 +284,6 @@ emplantar
 emplunar
 emprestar
 encapslar
-enchadanar
 enchaminar
 enchaschar
 enchastrar
@@ -296,7 +293,6 @@ encollar
 encrappar
 encrennar
 encugnar
-encuraschar
 endatar
 endirar
 endisar
@@ -310,7 +306,6 @@ enfivlar
 enfurtgar
 enfuttar
 engaschar
-engianar
 engiavinar
 engiavunar
 engirar
@@ -386,7 +381,6 @@ frestgentar
 fritgar
 fruschar
 fuar
-fufragnar
 fugar
 fugentar
 fugnar
@@ -407,7 +401,6 @@ giavinar
 giavrinar
 gidar
 girar
-giugar
 giustifitgar
 givlar
 gizzar
@@ -459,12 +452,12 @@ interpretar
 interrogar
 intimar
 intschendrar
-intschensar
 investigar
 irritar
 isar
 jodlar
 ladar
+lajegiar
 lalar
 lamentar
 lantschar
@@ -516,11 +509,9 @@ martgadar
 martirar
 marventar
 maschadar
-mascrar
 masdigliar
 mastegiar
 mastgar
-mazzacrar
 mazzar
 meglierar
 meritar
@@ -563,10 +554,10 @@ palandrar
 palar
 palentar
 paletschar
-palpagnar
 palpar
 panugliar
 paregiar
+paregliar
 paschentar
 passar
 passentar
@@ -620,7 +611,6 @@ prefurmar
 pregiar
 prelavar
 prelevar
-premaschadar
 preparar
 preschelentar
 preschentar
@@ -641,9 +631,7 @@ prosternar
 protocollar
 provocar
 publitgar
-pudrar
 pugnar
-pulstrar
 pumpar
 pundar
 puntar
@@ -681,6 +669,7 @@ ravgentar
 razzar
 reacquistar
 reaffittar
+rebattegiar
 rebumbar
 rechargiar
 reconfermar
@@ -702,7 +691,6 @@ regalar
 registrar
 regnar
 reguardar
-regurdar
 relaschar
 relatar
 remagliar
@@ -747,7 +735,6 @@ rubagliar
 ruclar
 rufidar
 rugar
-rullar
 ruminar
 runar
 runcar
@@ -1070,7 +1057,6 @@ stregliar
 stridar
 stritgar
 strivlar
-struclar
 struptgar
 struvegiar
 struztgar

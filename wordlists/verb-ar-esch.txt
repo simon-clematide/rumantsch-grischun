@@ -425,6 +425,7 @@ dimensiunar
 dinamisar
 diplomar
 direntar
+diromar
 dischapprovar
 discharmar
 discharretar
@@ -511,6 +512,7 @@ emulsiunar
 encablar
 enchareschar
 enclavigliar
+encuraschar
 endatar
 endentar
 enfarinar
@@ -586,6 +588,7 @@ fecundar
 feminisar
 fertilisar
 festivar
+fieutrar
 figurar
 filmar
 filoschar
@@ -1064,6 +1067,7 @@ pubertar
 publitgar
 pucliar
 pulsar
+pulstrar
 pulverisar
 punctar
 punctuar
@@ -1134,7 +1138,6 @@ registrar
 regiunalisar
 regiuvinar
 reglamentar
-reglar
 regruppar
 regular
 reincorporar
@@ -1449,6 +1452,7 @@ turbinar
 turniclar
 uffizialisar
 umanisar
+umidifitgesch
 umiliar
 undrar
 unfisar

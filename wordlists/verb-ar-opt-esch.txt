@@ -49,6 +49,7 @@ dictar
 discussiunar
 discutar
 disfigurar
+disgraziar
 dispitar
 donnegiar
 dressar
@@ -80,6 +81,7 @@ fermentar
 flippar
 flirtar
 flizzar
+franzlar
 fresar
 funcziunar
 fundar
@@ -94,6 +96,7 @@ implorar
 importar
 incassar
 ingiantar
+inschignar
 inspirar
 instigar
 insultar
@@ -105,8 +108,11 @@ inventar
 lintschar
 maltractar
 marcar
+mascrar
+mazzacrar
 menziunar
 observar
+obstinar
 occupar
 parcar
 picturar
@@ -120,12 +126,14 @@ privar
 procurar
 profitar
 protestar
+pudrar
 rapportar
 recaltgar
 recusar
 reelavurar
 reexportar
 refusar
+reglar
 reimportar
 remartgar
 reparar
@@ -153,6 +161,7 @@ striunar
 stuccar
 survegliar
 suspectar
+sutcolliar
 sviluppar
 telefonar
 tementar

@@ -18,7 +18,6 @@ partir
 pervegnir
 predir
 presentir
-proseguir
 provegnir
 recuvrir
 rescuvrir

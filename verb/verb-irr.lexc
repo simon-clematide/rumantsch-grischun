@@ -39,7 +39,9 @@ VULAIR ;
 ! Prefigated irregular verbs
 CUNPREFIX ;
 CUNTRAPREFIX ;
+DESPREFIX ;
 DISPREFIX ;
+EMPREFIX ;
 EXPREFIX ;
 PREPREFIX ;
 REPREFIX ;
@@ -52,6 +54,9 @@ SUTTAPREFIX ;
 ! Prefixes:
 !==========
 
+LEXICON ATPREFIX
+at		TRAIR ;
+
 LEXICON CUNPREFIX
 cun		FAR ;
 
@@ -59,18 +64,30 @@ LEXICON CUNTRAPREFIX
 cuntra	FAR ;
 cuntra  DIR ;
 
+
+LEXICON EMPREFIX
+em		PUDAIR ;
+
+
 LEXICON DISPREFIX
 dis		FAR ;
 dis     TRAIR ;
+
+
+LEXICON DESPREFIX
+des		DIR ;
+
 
 LEXICON EXPREFIX
 ex		TRAIR ;
 
 LEXICON PREPREFIX
+pre		DIR ;
 pre		VAIR ;
 pre		VEGNIR ;
 
 LEXICON REPREFIX
+re		FAR ;
 re		VAIR ;
 re      TRAIR ;
 
