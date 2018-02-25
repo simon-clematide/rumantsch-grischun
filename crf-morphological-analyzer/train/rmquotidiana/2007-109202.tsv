@@ -29,7 +29,7 @@ per	per	+Prep
 
 In	*in	+Art+Indef+Masc+Sg
 fatg	fatg	+Noun+Masc+Sg
-fitg	fitgar	+Verb+PresInd+1P+Sg
+fitg	fitg	+Adv
 legraivel	legraivel	+Adj+Masc+Sg
 è	esser	+Verb+PresInd+3P+Sg
 la	il	+Art+Def+Fem+Sg
@@ -64,7 +64,7 @@ dals	da	+Prep^|+Art+Def+Masc+Pl
 giuvens	giuven	+Adj+Masc+Pl
 cristiandemocrats	cristiandemocrat	+Noun+Masc+Pl
 da	da	+Prep
-noss	noss	+Pron+Poss^DB+Noun+Masc+Pl
+noss	noss	+Pron+Poss+Masc+Sg
 Chantun	*chantun	+Noun+Masc+Sg
 .	.	+Sent
 
@@ -85,16 +85,16 @@ Cussegl	*cussegl	+Noun+Masc+Sg
 grond	grond	+Adj+Masc+Sg
 ,	,	+CM
 ch’	che	+Pron+Rel+Apo
-era	esser	+Verb+ImpInd+1P+Sg
+era	esser	+Verb+ImpInd+3P+Sg
 dentant	dentant	+Adv
 vegnida	vegnir	+Verb+PastPart+Fem+Sg
 refusada	refusar	+Verb+PastPart+Fem+Sg
 da	da	+Prep
 quel	quel	+Pron+Dem+Masc+Sg
 ,	,	+CM
-prevedevan	prevedevar	+Verb+PresInd+3P+Pl
+prevedevan	preveder	+Verb+PresInd+3P+Pl+Typo	@prevedan
 dad	da	+Prep+Apo
-applitagar	applitagar	+Verb+Inf
+applitagar	applitgar	+Verb+Inf+Typo	@applitgar
 ils	il	+Art+Def+Masc+Pl
 retgavs	retgav	+Noun+Masc+Pl
 extraordinaris	extraordinari	+Adj+Masc+Pl
@@ -139,14 +139,14 @@ intenziuns	intenziun	+Noun+Fem+Pl
 
 In	*in	+Art+Indef+Masc+Sg
 ulteriur	ulteriur	+Adj+Masc+Sg
-fatg	far	+Verb+PastPart+Masc+Sg
-dètg	dètg	+Adv	#PROBLEM
+fatg	fatg	+Noun+Masc+Sg
+dètg	detg	+Adv+Typo	@detg
 legraivel	legraivel	+Adj+Masc+Sg
 per	per	+Prep
 la	il	+Art+Def+Fem+Sg
 pcd	pcd	+Abbr
 è	esser	+Verb+PresInd+3P+Sg
-che	che	+Subj
+che	che	+Subj	Problem:+Pron+Rel?
 la	il	+Art+Def+Fem+Sg
 famiglia	famiglia	+Noun+Fem+Sg
 e	e	+Conj
@@ -160,7 +160,7 @@ taglia	taglia	+Noun+Fem+Sg
 
 Tar	*tar	+Prep
 la	il	+Art+Def+Fem+Sg
-novissima	novissim	+Adj+Fem+Sg
+novissima	nov	+Adj+Fem+Sg	Problem: Wie annotiert man die Steigerung -issima?+Superlativ?
 revisiun	revisiun	+Noun+Fem+Sg
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
@@ -218,28 +218,28 @@ ella	ella	+Pron+Pers+Acc+Ton+3P+Fem+Sg
 
 Era	*era	+Adv
 è	esser	+Verb+PresInd+3P+Sg
-ella	ella	+Pron+Pers+Acc+Ton+3P+Fem+Sg
-loscha	loscha	+Noun+Fem+Sg	# PROBLEM
+ella	ella	+Pron+Pers+3P+Fem+Sg
+loscha	losch	+Adj+Fem+Sg	
 ch’	che	+Subj+Apo
 il	il	+Art+Def+Masc+Sg
 Chantun	*chantun	+Noun+Masc+Sg
 grischun	grischun	+Adj+Masc+Sg
 ha	avair	+Verb+PresInd+3P+Sg
 sancziunà	sancziunar	+Verb+PastPart+Masc+Sg
-–	–	+Punc
+–	–	+Punc+Beg
 cun	cun	+Prep
 ferm	ferm	+Adj+Masc+Sg
 sustegn	sustegn	+Noun+Masc+Sg
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 pcd	pcd	+Abbr
-–	–	+Punc
+–	–	+Punc+End
 la	il	+Art+Def+Fem+Sg
 lescha	lescha	+Noun+Fem+Sg
 per	per	+Prep
 gidar	gidar	+Verb+Inf
 ils	il	+Art+Def+Masc+Pl
-pajais	pajar	+Verb+PresInd+2P+Pl
+pajais	pajais	+Noun+Masc+Sg
 da	da	+Prep
 l’	il	+Art+Def+Fem+Sg+Apo
 Europa	Europa	+Prop
@@ -251,7 +251,7 @@ e	e	+Conj
 quai	quai	+Pron+Dem
 cunter	cunter	+Prep
 il	il	+Art+Def+Masc+Sg
-trend	trend	+Noun+Masc+Sg+UNKNOWN
+trend	trend	+Noun+Masc+Sg
 en	en	+Prep
 tut	tut	+Pron+Indef+Masc+Sg
 tschels	tschel	+Pron+Dem+Masc+Pl
@@ -271,7 +271,7 @@ cirquitalas	cirquital	+Adj+Fem+Pl
 la	il	+Art+Def+Fem+Sg
 pcd	pcd	+Abbr
 sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg
-movida	movida	+Noun+Fem+Sg+UNKNOWN	# PROBLEM
+movida	mover	+Verb+PastPart+Fem+Sg
 entaifer	entaifer	+Adv
 las	il	+Art+Def+Fem+Pl
 fluctuaziuns	fluctuaziun	+Noun+Fem+Pl
@@ -284,9 +284,9 @@ tschernas	tscherna	+Noun+Fem+Pl
 D’	*da	+Prep+Apo
 ina	in	+Art+Indef+Fem+Sg
 vart	vart	+Noun+Fem+Sg
-hai	avair	+Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+1P+MF+Sg
+hai	avair	+Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+3P+MF+Sg
 dà	dar	+Verb+PastPart+Masc+Sg
-–	–	+Punc
+–	–	+Punc+Beg
 per	per	+Prep
 part	part	+Noun+Fem+Sg
 tar	tar	+Prep
@@ -294,7 +294,7 @@ resultats	resultat	+Noun+Masc+Pl
 piz	piz	+Noun+Masc+Sg
 a	a	+Prep
 cup	cup	+Noun+Masc+Sg
-–	–	+Punc
+–	–	+Punc+End
 ina	in	+Art+Indef+Fem+Sg
 sperdita	sperdita	+Noun+Fem+Sg
 da	da	+Prep
@@ -324,12 +324,12 @@ a	a	+Prep
 l’	il	+Art+Def+Masc+Sg+Apo
 onn	onn	+Noun+Masc+Sg
 2007	2007	+Dig+Card
-–	–	+Punc
-che	che	+Subj
+–	–	+Punc+Beg
+che	che	+Pron+Rel
 ha	avair	+Verb+PresInd+3P+Sg
 gist	gist	+Adv
 entschavì	entschaiver	+Verb+PastPart+Masc+Sg
-–	–	+Punc
+–	–	+Punc+End
 avertescha	avertir	+Verb+PresInd+3P+Sg
 la	il	+Art+Def+Fem+Sg
 pcd	pcd	+Abbr
@@ -345,7 +345,7 @@ Chantun	*chantun	+Noun+Masc+Sg
 .	.	+Sent
 
 Quai	*quai	+Pron+Dem
-trend	trend	+Noun+Fem+Sg
+trend	trend	+Noun+Masc+Sg
 effectueschia	effectuar	+Verb+Conj+3P+Sg
 la	il	+Art+Def+Fem+Sg
 sperdita	sperdita	+Noun+Fem+Sg
