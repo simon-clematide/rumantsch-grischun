@@ -2,7 +2,7 @@ La	*il	+Art+Def+Fem+Sg
 partida	partida	+Noun+Fem+Sg
 socialdemocratica	socialdemocratic	+Adj+Fem+Sg
 (	(	+Punc+Beg
-PS	PS	+Prop
+PS	PS	+Abbr	#PROBLEM: +Prop?
 )	)	+Punc+End
 ha	avair	+Verb+PresInd+3P+Sg
 lantschà	lantschar	+Verb+PastPart+Masc+Sg
@@ -21,13 +21,13 @@ Il	*il	+Art+Def+Masc+Sg
 candidat	candidat	+Noun+Masc+Sg
 Peter	Peter	+Prop
 Peyer	Peyer	+Prop
-less	vulair	+Verb+Cond+1P+Sg+UNKNOWN
+less	vulair	+Verb+Cond+3P+Sg+UNKNOWN	#PROBLEM: Fehler, wäre vuless
 era	era	+Adv
 persvader	persvader	+Verb+Inf
 votants	votant	+Noun+Masc+Pl
 e	e	+Conj
 votantas	votanta	+Noun+Fem+Pl
-ch’	che	+Subj+Apo
+ch’	che	+Pron+Rel
 elegessan	eleger	+Verb+Cond+3P+Pl
 atgnamain	atgnamain	+Adv
 betg	betg	+Prt+Neg
@@ -40,8 +40,8 @@ dar	dar	+Verb+Inf
 paisa	paisa	+Noun+Fem+Sg
 ad	a	+Prep+Apo
 in	in	+Art+Indef+Masc+Sg
-tema	tema	+Noun+Fem+Sg
-burgais	burgais	+Noun+Masc+Pl
+tema	tema	+Noun+Masc+Sg
+burgais	burgais	+Adj+Masc+Sg
 en	en	+Prep
 sia	ses	+Pron+Poss+Fem+Sg
 campagna	campagna	+Noun+Fem+Sg
@@ -58,7 +58,7 @@ participescha	participar	+Verb+PresInd+3P+Sg
 per	per	+Prep
 l’	il	+Art+Def+Fem+Sg+Apo
 emprima	emprim	+Adj+Fem+Sg
-giada	giada	+Noun+Fem+Sg
+giada	giada	+Noun+Fem+Sg	#PROBLEM: ?
 ad	a	+Prep+Apo
 in	in	+Art+Indef+Masc+Sg
 campiunadi	campiunadi	+Noun+Masc+Sg
@@ -77,15 +77,15 @@ sut	sut	+Prep
 onns	onn	+Noun+Masc+Pl
 .	.	+Sent
 
-Jogscha	Jogscha	+Noun+Fem+Sg+UNKNOWN
-Abderhalden	Abderhalden	+Prop+UNKNOWN
+Jogscha	Jogscha	+Prop
+Abderhalden	Abderhalden	+Prop
 da	da	+Prep
 Zernez	Zernez	+Prop
 parta	parter	+Verb+PresInd+3P+Sg
 per	per	+Prep
 l’	il	+Art+Def+Fem+Sg+Apo
-emprima	emprim	+Adj+Fem+Sg
-giada	giada	+Noun+Fem+Sg
+emprima	emprim	+Adj+Fem+Sg	#PROBLEM: ?
+giada	giada	+Noun+Fem+Sg	#PROBLEM: ?
 ad	a	+Prep+Apo
 in	in	+Art+Indef+Masc+Sg
 campiunadi	campiunadi	+Noun+Masc+Sg
@@ -113,7 +113,7 @@ campiunadi	campiunadi	+Noun+Masc+Sg
 mundial	mundial	+Adj+Masc+Sg
 en	en	+Prep
 il	il	+Art+Def+Masc+Sg
-Goms	Goms	+Prop+UNKNOWN
+Goms	Goms	+Prop
 en	en	+Prep
 la	il	+Art+Def+Fem+Sg
 categoria	categoria	+Noun+Fem+Sg
@@ -124,7 +124,7 @@ onns	onn	+Noun+Masc+Pl
 
 La	*il	+Art+Def+Fem+Sg
 cursa	cursa	+Noun+Fem+Sg
-che	che	+Subj
+che	che	+Pron+Rel
 cumbinescha	cumbinar	+Verb+PresInd+3P+Sg
 il	il	+Art+Def+Masc+Sg
 stil	stil	+Noun+Masc+Sg
@@ -132,16 +132,16 @@ classic	classic	+Adj+Masc+Sg
 ed	e	+Conj+Apo
 il	il	+Art+Def+Masc+Sg
 stil	stil	+Noun+Masc+Sg
-liber	liber	+Noun+Masc+Sg
+liber	liber	+Adj+Masc+Sg
 è	esser	+Verb+PresInd+3P+Sg
 ina	in	+Art+Indef+Fem+Sg
 da	da	+Prep
 las	il	+Art+Def+Fem+Pl
 cursas	cursa	+Noun+Fem+Pl
-preferidas	preferir	+Verb+PastPart+Fem+Pl
+preferidas	preferì	+Adj+Fem+Pl
 da	da	+Prep
-Jogscha	Jogscha	+Prop+UNKNOWN
-Abderhalden	Abderhalden	+Prop+UNKNOWN
+Jogscha	Jogscha	+Prop
+Abderhalden	Abderhalden	+Prop
 .	.	+Sent
 
 Ella	*ella	+Pron+Pers+Nom+3P+Fem+Sg
@@ -153,37 +153,37 @@ duas	dus	+Num+Card+Fem
 disciplinas	disciplina	+Noun+Fem+Pl
 en	en	+Prep
 la	il	+Art+Def+Fem+Sg
-medema	medem	+Adj+Fem+Sg
+medema	medem	+Adj+Fem+Sg	#PROBLEM: ?
 cursa	cursa	+Noun+Fem+Sg
 .	.	+Sent
 
 Passlung	*passlung	+Noun+Masc+Sg
 :	:	+Sent
-Jogscha	Jogscha	+Prop+UNKNOWN
-Abderhalden	Abderhalden	+Prop+UNKNOWN
+Jogscha	Jogscha	+Prop
+Abderhalden	Abderhalden	+Prop
 
 Legenda	*legenda	+Noun+Fem+Sg
 :	:	+Sent
 Tadlar	*tadlar	+Verb+Inf
-il	il	+Art+Def+Masc+Sg
-audio	audio	+Noun+Masc+Sg+UNKNOWN
+il	il	+Art+Def+Masc+Sg	#PROBLEM: Müsste l' sein
+audio	audio	+Noun+Masc+Sg
 «	«	+Punc+Beg
 Passlung	*passlung	+Noun+Masc+Sg
 :	:	+Sent
-Jogscha	Jogscha	+Prop+UNKNOWN
-Abderhalden	Abderhalden	+Prop+UNKNOWN
+Jogscha	Jogscha	+Prop
+Abderhalden	Abderhalden	+Prop
 »	»	+Punc+End
 .	.	+Sent
 
 Durada	*durada	+Noun+Fem+Sg
-3:13	3:13	+Dig+Card+UNKNOWN
-minutas.	minutas.	+Adv+UNKNOWN
-3:13	3:13	+Dig+Card+UNKNOWN
-min	min	+Noun+Masc+Sg
+3:13	3:13	+Dig+Card	#PROBLEM: Zeit?
+minutas.	minutas.	+Adv+UNKNOWN	#PROBLEM Tokenizer?
+3:13	3:13	+Dig+Card	#PROBLEM: Zeit?
+min	min	+Noun+Masc+Sg	#PROBLEM: Abkürzung? mit Punkt?
 ,	,	+CM
-Sportissimo	Sportissimo	+Prop+UNKNOWN
+Sportissimo	Sportissimo	+Prop
 dals	da	+Prep^|+Art+Def+Masc+Pl
-28.01.2018	28.01.2018	+Dig+Card+UNKNOWN
+28.01.2018	28.01.2018	+Dig+Card	#PROBLEM: Datum, sollte eigentlich mit Bindestrich separiert werden (28-01-2018)
 .	.	+Sent
 
 Gudagnà	*gudagnar	+Verb+PastPart+Masc+Sg
@@ -191,18 +191,18 @@ la	il	+Art+Def+Fem+Sg
 cursa	cursa	+Noun+Fem+Sg
 da	da	+Prep
 30	30	+Dig+Card
-kilometers	kilometer	+Noun+Masc+Pl+UNKNOWN
+kilometers	kilometer	+Noun+Masc+Pl
 en	en	+Prep
 il	il	+Art+Def+Masc+Sg
 stil	stil	+Noun+Masc+Sg
 classic	classic	+Adj+Masc+Sg
 tar	tar	+Prep
 La	*il	+Art+Def+Fem+Sg
-Diagonela	Diagonela	+Prop+UNKNOWN
+Diagonela	Diagonela	+Prop
 a	a	+Prep
-Zuoz	Zuoz	+Prop
+Zuoz	Zuoz	+Prop	#PROBLEM: Das sind keine richtigen Sätze. Zwischentitel?
 La	*il	+Art+Def+Fem+Sg
-giuvna	giuvna	+Noun+Fem+Sg
+giuvna	giuven	+Adj+Fem+Sg
 passlunghista	passlunghista	+Noun+Fem+Sg
 da	da	+Prep
 Zernez	Zernez	+Prop
@@ -212,9 +212,9 @@ durant	durant	+Prep
 questa	quest	+Pron+Dem+Fem+Sg
 stagiun	stagiun	+Noun+Fem+Sg
 in	in	+Art+Indef+Masc+Sg
-per	per	+Prep
+per	per	+Noun+Masc+Sg	#PROBLEM: eigentlich "in pèr". Nomen?, +Pron+Indef
 cursas	cursa	+Noun+Fem+Pl
-per	per	+Prep
+per	per	+Prep	
 vegnir	vegnir	+Verb+Inf
 en	en	+Prep
 furma	furma	+Noun+Fem+Sg
@@ -228,8 +228,8 @@ nova	nov	+Adj+Fem+Sg
 stagiun	stagiun	+Noun+Fem+Sg
 n'	n'	+Prt+Neg+Apo
 è	esser	+Verb+PresInd+3P+Sg
-Jogscha	Jogscha	+Prop+UNKNOWN
-Abderhalden	Abderhalden	+Prop+UNKNOWN
+Jogscha	Jogscha	+Prop
+Abderhalden	Abderhalden	+Prop
 anc	anc	+Adv
 betg	betg	+Prt+Neg
 vegnida	vegnir	+Verb+PastPart+Fem+Sg
@@ -239,7 +239,7 @@ turas	tura	+Noun+Fem+Pl
 
 Uss	*uss	+Adv
 dentant	dentant	+Adv
-vai	ir	+Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+1P+MF+Sg
+vai	ir	+Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+1P+MF+Sg	#PROBLEM: 1P? warum nicht 3P?
 adina	adina	+Adv
 meglier	bun	+Adj+Comp+Masc+Sg
 .	.	+Sent
@@ -248,14 +248,14 @@ La	*il	+Art+Def+Fem+Sg
 meglra	bun	+Adj+Comp+Fem+Sg
 prestaziun	prestaziun	+Noun+Fem+Sg
 ha	avair	+Verb+PresInd+3P+Sg
-Abderhalden	Abderhalden	+Prop+UNKNOWN
+Abderhalden	Abderhalden	+Prop
 mussà	mussar	+Verb+PastPart+Masc+Sg
 la	il	+Art+Def+Fem+Sg
-fin	fin	+Prep
+fin	fin	+Noun+Fem+Sg	#PROBLEM: Zusammengesetztes Wort, Mittelteil trotzdem Präposition?
 d’	da	+Prep+Apo
 emna	emna	+Noun+Fem+Sg
 passada	passà	+Adj+Fem+Sg
-nua	nuar	+Verb+PresInd+3P+Sg
+nua	nua	+Adv
 che	che	+Subj
 ella	ella	+Pron+Pers+Nom+3P+Fem+Sg
 ha	avair	+Verb+PresInd+3P+Sg
@@ -264,23 +264,23 @@ la	il	+Art+Def+Fem+Sg
 cursa	cursa	+Noun+Fem+Sg
 da	da	+Prep
 30	30	+Dig+Card
-kilometers	kilometer	+Noun+Masc+Pl+UNKNOWN
+kilometers	kilometer	+Noun+Masc+Pl
 en	en	+Prep
 il	il	+Art+Def+Masc+Sg
 stil	stil	+Noun+Masc+Sg
 classic	classic	+Adj+Masc+Sg
 tar	tar	+Prep
 La	*il	+Art+Def+Fem+Sg
-Diagonela	Diagonela	+Prop+UNKNOWN
+Diagonela	Diagonela	+Prop
 a	a	+Prep
 Zuoz	Zuoz	+Prop
 .	.	+Sent
 
-Abderhalden	Abderhalden	+Prep+UNKNOWN
-era	era	+Adv
+Abderhalden	Abderhalden	+Prop
+era	esser	+Verb+ImpInd+3P+Sg
 la	il	+Art+Def+Fem+Sg
 pli	pli	+Adv
-sperta	spert	+Adj+Fem+Sg+UNKNOWN
+sperta	spert	+Adj+Fem+Sg
 e	e	+Conj
 cun	cun	+Prep
 quest	quest	+Pron+Dem+Masc+Sg
@@ -314,9 +314,9 @@ en	en	+Prep
 banc	banc	+Noun+Masc+Sg
 scola	scola	+Noun+Fem+Sg
 en	en	+Prep
-Norvegia	Norvegia	+Prop
-Jogscha	Jogscha	+Prop+UNKNOWN
-Abderhalden	Abderhalden	+Prop+UNKNOWN
+Norvegia	Norvegia	+Prop	#PROBLEM: Kein ganzer Satz (Zwischentitel)
+Jogscha	Jogscha	+Prop
+Abderhalden	Abderhalden	+Prop
 ha	avair	+Verb+PresInd+3P+Sg
 fatg	far	+Verb+PastPart+Masc+Sg
 la	il	+Art+Def+Fem+Sg
@@ -324,15 +324,15 @@ matura	matura	+Noun+Fem+Sg
 a	a	+Prep
 l’	il	+Art+Def+Fem+Sg+Apo
 Institut	*institut	+Noun+Masc+Sg
-Otalpin	Otalpin	+Prop+UNKNOWN
+Otalpin	Otalpin	+Prop
 a	a	+Prep
 Ftan	Ftan	+Prop
 .	.	+Sent
 
 Là	*là	+Adv
-era	era	+Adv
+era	esser	+Verb+ImpInd+3P+Sg
 ella	ella	+Pron+Pers+Nom+3P+Fem+Sg
-part	part	+Noun+Fem+Sg
+part	part	+Noun+Fem+Sg	#PROBLEM: ?
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 classa	classa	+Noun+Fem+Sg
@@ -350,7 +350,7 @@ da	da	+Prep
 Zernez	Zernez	+Prop
 sport	sport	+Noun+Masc+Sg
 a	a	+Prep
-Meraker	Meraker	+Prop+UNKNOWN
+Meraker	Meraker	+Prop
 en	en	+Prep
 Norvegia	Norvegia	+Prop
 .	.	+Sent
@@ -361,7 +361,7 @@ en	en	+Prep
 Scandinavia	Scandinavia	+Prop
 ha	avair	+Verb+PresInd+3P+Sg
 in	in	+Art+Indef+Masc+Sg
-bun	bun	+Noun+Masc+Sg
+bun	bun	+Adj+Masc+Sg
 num	num	+Noun+Masc+Sg
 tar	tar	+Prep
 sportists	sportist	+Noun+Masc+Pl
@@ -369,22 +369,22 @@ svizzers	svizzer	+Adj+Masc+Pl
 .	.	+Sent
 
 Gia	*gia	+Adv
-Selina	Selina	+Prop+UNKNOWN
-Gasparin	Gasparin	+Prop+UNKNOWN
+Selina	Selina	+Prop
+Gasparin	Gasparin	+Prop
 u	u	+Conj
-er	esser	+Verb+ImpInd+3P+Sg
-Laurien	Laurien	+Prop+UNKNOWN
-van	ir	+Verb+PresInd+3P+Pl
-der	der	+Noun+Masc+Sg+UNKNOWN
-Graaff	Graaff	+Prop+UNKNOWN
+er	era	+Adv+Apo
+Laurien	Laurien	+Prop
+van	van	+Prop
+der	der	+Prop
+Graaff	Graaff	+Prop
 han	avair	+Verb+PresInd+3P+Pl
 studegià	studegiar	+Verb+PastPart+Masc+Sg
 a	a	+Prep
-Meraker	Meraker	+Prop+UNKNOWN
+Meraker	Meraker	+Prop
 .	.	+Sent
 
 Jogscha	Jogscha	+Prop
-Abderhalden	Abderhalden	+Prop+UNKNOWN
+Abderhalden	Abderhalden	+Prop
 da	da	+Prep
 Zernez	Zernez	+Prop
 parta	parter	+Verb+PresInd+3P+Sg
@@ -419,7 +419,7 @@ campiunadi	campiunadi	+Noun+Masc+Sg
 mundial	mundial	+Adj+Masc+Sg
 en	en	+Prep
 il	il	+Art+Def+Masc+Sg
-Goms	Goms	+Prop+UNKNOWN
+Goms	Goms	+Prop
 en	en	+Prep
 la	il	+Art+Def+Fem+Sg
 categoria	categoria	+Noun+Fem+Sg
@@ -430,7 +430,7 @@ onns	onn	+Noun+Masc+Pl
 
 La	*il	+Art+Def+Fem+Sg
 cursa	cursa	+Noun+Fem+Sg
-che	che	+Subj
+che	che	+Pron+Rel
 cumbinescha	cumbinar	+Verb+PresInd+3P+Sg
 il	il	+Art+Def+Masc+Sg
 stil	stil	+Noun+Masc+Sg
@@ -438,16 +438,16 @@ classic	classic	+Adj+Masc+Sg
 ed	e	+Conj+Apo
 il	il	+Art+Def+Masc+Sg
 stil	stil	+Noun+Masc+Sg
-liber	liber	+Noun+Masc+Sg
+liber	liber	+Adj+Masc+Sg
 è	esser	+Verb+PresInd+3P+Sg
 ina	in	+Art+Indef+Fem+Sg
 da	da	+Prep
 las	il	+Art+Def+Fem+Pl
 cursas	cursa	+Noun+Fem+Pl
-preferidas	preferir	+Verb+PastPart+Fem+Pl
+preferidas	preferì	+Adj+Fem+Pl	#PROBLEM: ? Hier schliesslich in der Funktion als Adjektiv...
 da	da	+Prep
 Jogscha	Jogscha	+Prop
-Abderhalden	Abderhalden	+Prop+UNKNOWN
+Abderhalden	Abderhalden	+Prop
 .	.	+Sent
 
 Ella	*ella	+Pron+Pers+Nom+3P+Fem+Sg
@@ -459,37 +459,37 @@ duas	dus	+Num+Card+Fem
 disciplinas	disciplina	+Noun+Fem+Pl
 en	en	+Prep
 la	il	+Art+Def+Fem+Sg
-medema	medem	+Adj+Fem+Sg
+medema	medem	+Adj+Fem+Sg	#PROBLEM: ?
 cursa	cursa	+Noun+Fem+Sg
 .	.	+Sent
 
 Passlung	*passlung	+Noun+Masc+Sg
 :	:	+Sent
 Jogscha	Jogscha	+Prop
-Abderhalden	Abderhalden	+Prop+UNKNOWN
+Abderhalden	Abderhalden	+Prop	PROBLEM: Legende/Zwischentitel
 
 Legenda	*legenda	+Noun+Fem+Sg
 :	:	+Sent
 Tadlar	*tadlar	+Verb+Inf
-il	il	+Art+Def+Masc+Sg
-audio	audio	+Noun+Masc+Sg+UNKNOWN
+il	il	+Art+Def+Masc+Sg	#PROBLEM: Müsste apostrophiert werden «l'»
+audio	audio	+Noun+Masc+Sg
 «	«	+Punc+Beg
 Passlung	*passlung	+Noun+Masc+Sg
-:	:	+Sent
+:	:	+Sent	#PROBLEM eher +Punc?
 Jogscha	Jogscha	+Prop
-Abderhalden	Abderhalden	+Prop+UNKNOWN
+Abderhalden	Abderhalden	+Prop
 »	»	+Punc+End
-.	.	+Sent
+.	.	+Sent	#PROBLEM +Sent ist nicht dokumentiert in docs?
 
 Durada	*durada	+Noun+Fem+Sg
-3:13	3:13	+Dig+Card+UNKNOWN
-minutas.	minutas.	+Adv+UNKNOWN
-3:13	3:13	+Dig+Card+UNKNOWN
-min	min	+Noun+Masc+Sg
+3:13	3:13	+Dig+Card	#PROBLEM: Zeit?
+minutas.	minutas.	+Noun+Fem+Pl	#PROBLEM: Tokenizer?
+3:13	3:13	+Dig+Card	#PROBLEM: Zeit?
+min	min	+Noun+Abbr
 ,	,	+CM
-Sportissimo	Sportissimo	+Prop+UNKNOWN
+Sportissimo	Sportissimo	+Prop
 dals	da	+Prep^|+Art+Def+Masc+Pl
-28.01.2018	28.01.2018	+Dig+Card+UNKNOWN
+28.01.2018	28.01.2018	+Dig+Card	#PROBLEM: Datum, eigentlich mit Bindestrich getrennt
 .	.	+Sent
 
 Gudagnà	*gudagnar	+Verb+PastPart+Masc+Sg
@@ -504,9 +504,9 @@ stil	stil	+Noun+Masc+Sg
 classic	classic	+Adj+Masc+Sg
 tar	tar	+Prep
 La	*il	+Art+Def+Fem+Sg
-Diagonela	Diagonela	+Prop+UNKNOWN
+Diagonela	Diagonela	+Prop
 a	a	+Prep
-Zuoz	Zuoz	+Prop
+Zuoz	Zuoz	+Prop	#PROBLEM: Zwischentitel, Sätze wiederholen sich?
 La	*il	+Art+Def+Fem+Sg
 giuvna	giuvna	+Noun+Fem+Sg
 passlunghista	passlunghista	+Noun+Fem+Sg
@@ -518,7 +518,7 @@ durant	durant	+Prep
 questa	quest	+Pron+Dem+Fem+Sg
 stagiun	stagiun	+Noun+Fem+Sg
 in	in	+Art+Indef+Masc+Sg
-per	per	+Prep
+per	per	+Prep	#PROBLEM: eigentlich pèr, +Pron+Indef 
 cursas	cursa	+Noun+Fem+Pl
 per	per	+Prep
 vegnir	vegnir	+Verb+Inf
@@ -535,7 +535,7 @@ stagiun	stagiun	+Noun+Fem+Sg
 n'	n'	+Prt+Neg+Apo
 è	esser	+Verb+PresInd+3P+Sg
 Jogscha	Jogscha	+Prop
-Abderhalden	Abderhalden	+Prop+UNKNOWN
+Abderhalden	Abderhalden	+Prop
 anc	anc	+Adv
 betg	betg	+Prt+Neg
 vegnida	vegnir	+Verb+PastPart+Fem+Sg
@@ -545,23 +545,23 @@ turas	tura	+Noun+Fem+Pl
 
 Uss	*uss	+Adv
 dentant	dentant	+Adv
-vai	ir	+Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+1P+MF+Sg
+vai	ir	+Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+1P+MF+Sg	#PROBLEM: 1P? 3P
 adina	adina	+Adv
-meglier	bun	+Adj+Comp+Masc+Sg
+meglier	bun	+Adj+Comp+Masc+Sg	
 .	.	+Sent
 
 La	*il	+Art+Def+Fem+Sg
 meglra	bun	+Adj+Comp+Fem+Sg
 prestaziun	prestaziun	+Noun+Fem+Sg
 ha	avair	+Verb+PresInd+3P+Sg
-Abderhalden	Abderhalden	+Prop+UNKNOWN
+Abderhalden	Abderhalden	+Prop
 mussà	mussar	+Verb+PastPart+Masc+Sg
 la	il	+Art+Def+Fem+Sg
-fin	fin	+Prep
+fin	fin	+Noun+Fem+Sg
 d’	da	+Prep+Apo
 emna	emna	+Noun+Fem+Sg
 passada	passà	+Adj+Fem+Sg
-nua	nuar	+Verb+PresInd+3P+Sg
+nua	nua	+Adv	#PROBLEM: Oder auch +Subj?
 che	che	+Subj
 ella	ella	+Pron+Pers+Nom+3P+Fem+Sg
 ha	avair	+Verb+PresInd+3P+Sg
@@ -577,13 +577,13 @@ stil	stil	+Noun+Masc+Sg
 classic	classic	+Adj+Masc+Sg
 tar	tar	+Prep
 La	*il	+Art+Def+Fem+Sg
-Diagonela	Diagonela	+Prop+UNKNOWN
+Diagonela	Diagonela	+Prop
 a	a	+Prep
 Zuoz	Zuoz	+Prop
 .	.	+Sent
 
-Abderhalden	Abderhalden	+Prep+UNKNOWN
-era	era	+Adv
+Abderhalden	Abderhalden	+Prop
+era	esser	+Verb+ImpInd+3P+Sg
 la	il	+Art+Def+Fem+Sg
 pli	pli	+Adv
 sperta	spert	+Adj+Fem+Sg
@@ -622,7 +622,7 @@ scola	scola	+Noun+Fem+Sg
 en	en	+Prep
 Norvegia	Norvegia	+Prop
 Jogscha	Jogscha	+Prop
-Abderhalden	Abderhalden	+Prop+UNKNOWN
+Abderhalden	Abderhalden	+Prop
 ha	avair	+Verb+PresInd+3P+Sg
 fatg	far	+Verb+PastPart+Masc+Sg
 la	il	+Art+Def+Fem+Sg
@@ -630,13 +630,13 @@ matura	matura	+Noun+Fem+Sg
 a	a	+Prep
 l’	il	+Art+Def+Fem+Sg+Apo
 Institut	*institut	+Noun+Masc+Sg
-Otalpin	Otalpin	+Prop+UNKNOWN
+Otalpin	Otalpin	+Prop
 a	a	+Prep
 Ftan	Ftan	+Prop
 .	.	+Sent
 
 Là	*là	+Adv
-era	era	+Adv
+era	esser	+Verb+ImpInd+3P+Sg
 ella	ella	+Pron+Pers+Nom+3P+Fem+Sg
 part	part	+Noun+Fem+Sg
 da	da	+Prep
@@ -656,7 +656,7 @@ da	da	+Prep
 Zernez	Zernez	+Prop
 sport	sport	+Noun+Masc+Sg
 a	a	+Prep
-Meraker	Meraker	+Prop+UNKNOWN
+Meraker	Meraker	+Prop
 en	en	+Prep
 Norvegia	Norvegia	+Prop
 .	.	+Sent
@@ -667,36 +667,36 @@ en	en	+Prep
 Scandinavia	Scandinavia	+Prop
 ha	avair	+Verb+PresInd+3P+Sg
 in	in	+Art+Indef+Masc+Sg
-bun	bun	+Noun+Masc+Sg
+bun	bun	+Adj+Masc+Sg
 num	num	+Noun+Masc+Sg
 tar	tar	+Prep
 sportists	sportist	+Noun+Masc+Pl
-svizzers	svizzer	+Adj+Masc+Pl
+svizzers	svizzer	+Adj+Masc+Pl	#PROBLEM: +Prop oder +Adj?
 .	.	+Sent
 
 Gia	*gia	+Adv
-Selina	Selina	+Prop+UNKNOWN
-Gasparin	Gasparin	+Prop+UNKNOWN
+Selina	Selina	+Prop
+Gasparin	Gasparin	+Prop
 u	u	+Conj
-er	esser	+Verb+ImpInd+3P+Sg
-Laurien	Laurien	+Prop+UNKNOWN
-van	ir	+Verb+PresInd+3P+Pl
-der	der	+Noun+Masc+Sg+UNKNOWN
-Graaff	Graaff	+Prop+UNKNOWN
+er	era	+Adv+Apo
+Laurien	Laurien	+Prop
+van	van	+Prop
+der	der	+Prop
+Graaff	Graaff	+Prop
 han	avair	+Verb+PresInd+3P+Pl
 studegià	studegiar	+Verb+PastPart+Masc+Sg
 a	a	+Prep
-Meraker	Meraker	+Prop+UNKNOWN
+Meraker	Meraker	+Prop
 .	.	+Sent
 
 Il	*il	+Art+Def+Masc+Sg
 fundatur	fundatur	+Noun+Masc+Sg
 dad	da	+Prep+Apo
-Ikea	Ikea	+Prop+UNKNOWN
-Ingvar	Ingvar	+Prop+UNKNOWN
-Kamprad	Kamprad	+Prop+UNKNOWN
+Ikea	Ikea	+Prop
+Ingvar	Ingvar	+Prop
+Kamprad	Kamprad	+Prop
 saja	esser	+Verb+Con+3P+Sg
-mort	mort	+Noun+Masc+Sg
+mort	murir	+Verb+PastPart+Masc+S
 suenter	suenter	+Prep
 curta	curt	+Adj+Fem+Sg
 malsogna	malsogna	+Noun+Fem+Sg
@@ -716,9 +716,9 @@ da	da	+Prep
 mobiglias	mobiglia	+Noun+Fem+Pl
 .	.	+Sent
 
-Ingvar	Ingvar	+Prep+UNKNOWN
-Kamprad	Kamprad	+Prop+UNKNOWN
-era	era	+Adv
+Ingvar	Ingvar	+Prop
+Kamprad	Kamprad	+Prop
+era	esser	+Verb+ImpInd+3P+Sg
 in	in	+Art+Indef+Masc+Sg
 dals	da	+Prep^|+Art+Def+Masc+Pl
 pli	pli	+Adv
@@ -728,7 +728,7 @@ dal	da	+Prep^|+Art+Def+Masc+Sg
 mund	mund	+Noun+Masc+Sg
 .	.	+Sent
 
-Lung	*lung	+Adj+Masc+Sg
+Lung	*lung	+Adj+Masc+Sg	#PROBLEM: Halb romanisch...
 temp	temp	+Noun+Masc+Sg
 aveva	avair	+Verb+ImpInd+3P+Sg
 el	el	+Pron+Pers+Nom+3P+Masc+Sg
@@ -739,10 +739,10 @@ chantun	chantun	+Noun+Masc+Sg
 Vad	Vad	+Prop
 .	.	+Sent
 
-Kamprad	Kamprad	+Prop+UNKNOWN
+Kamprad	Kamprad	+Prop
 aveva	avair	+Verb+ImpInd+3P+Sg
 fundà	fundar	+Verb+PastPart+Masc+Sg
-Ikea	Ikea	+Prop+UNKNOWN
+Ikea	Ikea	+Prop
 en	en	+Prep
 la	il	+Art+Def+Fem+Sg
 vegliadetgna	vegliadetgna	+Noun+Fem+Sg
@@ -763,14 +763,14 @@ sia	ses	+Pron+Poss+Fem+Sg
 vita	vita	+Noun+Fem+Sg
 ,	,	+CM
 ha	avair	+Verb+PresInd+3P+Sg
-Ikea	Ikea	+Prop+UNKNOWN
+Ikea	Ikea	+Prop
 communitgà	communitgar	+Verb+PastPart+Masc+Sg
-via	via	+Noun+Fem+Sg
+via	via	+Prep
 il	il	+Art+Def+Masc+Sg
 servetsch	servetsch	+Noun+Masc+Sg
 da	da	+Prep
 novitads	novitad	+Noun+Fem+Pl
 curtas	curt	+Adj+Fem+Pl
-Twitter	Twitter	+Prop+UNKNOWN
+Twitter	Twitter	+Prop
 .	.	+Sent
 
