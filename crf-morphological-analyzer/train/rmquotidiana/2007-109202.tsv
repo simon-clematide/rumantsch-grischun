@@ -13,7 +13,7 @@ directori	directori	+Noun+Masc+Sg
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 partida	partida	+Noun+Fem+Sg
-cristiandemocratica	cristiandemocratic	+Adj+Fem+Sg 
+cristiandemocratica	cristiandemocratic	+Adj+Fem+Sg
 (	(	+Punc+Beg
 pcd	pcd	+Abbr
 )	)	+Punc+End
@@ -92,9 +92,9 @@ refusada	refusar	+Verb+PastPart+Fem+Sg
 da	da	+Prep
 quel	quel	+Pron+Dem+Masc+Sg
 ,	,	+CM
-prevedevan	preveder	+Verb+PresInd+3P+Pl+Typo	@prevedan
+prevedevan	preveder	+Verb+ImpInd+3P+Pl
 dad	da	+Prep+Apo
-applitagar	applitgar	+Verb+Inf+Typo	@applitgar
+applitagar	applitgar	+Verb+Inf+Typo	#PROBLEM: applitgar
 ils	il	+Art+Def+Masc+Pl
 retgavs	retgav	+Noun+Masc+Pl
 extraordinaris	extraordinari	+Adj+Masc+Pl
@@ -108,7 +108,7 @@ projects	project	+Noun+Masc+Pl
 spezials	spezial	+Adj+Masc+Pl
 che	che	+Pron+Rel
 avevan	avair	+Verb+ImpInd+3P+Pl
-sco	sco	+Conj
+sco	sco	+Conj	#PROBLEM: eher +Adv?
 finamira	finamira	+Noun+Fem+Sg
 la	il	+Art+Def+Fem+Sg
 creaziun	creaziun	+Noun+Fem+Sg
@@ -140,13 +140,13 @@ intenziuns	intenziun	+Noun+Fem+Pl
 In	*in	+Art+Indef+Masc+Sg
 ulteriur	ulteriur	+Adj+Masc+Sg
 fatg	fatg	+Noun+Masc+Sg
-dètg	detg	+Adv+Typo	@detg
+dètg	detg	+Adv+Typo	#PROBLEM: typo:detg
 legraivel	legraivel	+Adj+Masc+Sg
 per	per	+Prep
 la	il	+Art+Def+Fem+Sg
 pcd	pcd	+Abbr
 è	esser	+Verb+PresInd+3P+Sg
-che	che	+Subj	Problem:+Pron+Rel?
+che	che	+Subj	#PROBLEM: ?	
 la	il	+Art+Def+Fem+Sg
 famiglia	famiglia	+Noun+Fem+Sg
 e	e	+Conj
@@ -160,7 +160,7 @@ taglia	taglia	+Noun+Fem+Sg
 
 Tar	*tar	+Prep
 la	il	+Art+Def+Fem+Sg
-novissima	nov	+Adj+Fem+Sg	Problem: Wie annotiert man die Steigerung -issima?+Superlativ?
+novissima	nov	+Adj+Sup+Fem+Sg	#PROBLEM: eigentlich «falscher» Superlativ, aber eingebürgert, im PG.
 revisiun	revisiun	+Noun+Fem+Sg
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
@@ -223,7 +223,7 @@ loscha	losch	+Adj+Fem+Sg
 ch’	che	+Subj+Apo
 il	il	+Art+Def+Masc+Sg
 Chantun	*chantun	+Noun+Masc+Sg
-grischun	grischun	+Adj+Masc+Sg
+grischun	grischun	+Adj+Masc+Sg	#PROBLEM: +Prop und eher: «chantun Grischun»
 ha	avair	+Verb+PresInd+3P+Sg
 sancziunà	sancziunar	+Verb+PastPart+Masc+Sg
 –	–	+Punc+Beg
@@ -255,7 +255,7 @@ trend	trend	+Noun+Masc+Sg
 en	en	+Prep
 tut	tut	+Pron+Indef+Masc+Sg
 tschels	tschel	+Pron+Dem+Masc+Pl
-Chantuns	*chantun	+Noun+Masc+Pl
+Chantuns	*chantun	+Noun+Masc+Pl	#PROBLEM: eigentlich Kleinschreibung
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 Svizra	Svizra	+Prop
@@ -271,8 +271,8 @@ cirquitalas	cirquital	+Adj+Fem+Pl
 la	il	+Art+Def+Fem+Sg
 pcd	pcd	+Abbr
 sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg
-movida	mover	+Verb+PastPart+Fem+Sg
-entaifer	entaifer	+Adv
+movida	mover	+Verb+PastPart+Fem+Sg+Typo	#PROBLEM: Pledari Grond: muvida
+entaifer	entaifer	+Prep	#PROBLEM: Adv?
 las	il	+Art+Def+Fem+Pl
 fluctuaziuns	fluctuaziun	+Noun+Fem+Pl
 da	da	+Prep
@@ -293,7 +293,7 @@ tar	tar	+Prep
 resultats	resultat	+Noun+Masc+Pl
 piz	piz	+Noun+Masc+Sg
 a	a	+Prep
-cup	cup	+Noun+Masc+Sg
+cup	cup	+Noun+Masc+Sg	#PROBLEM: piz a cup, Kompositum
 –	–	+Punc+End
 ina	in	+Art+Indef+Fem+Sg
 sperdita	sperdita	+Noun+Fem+Sg
@@ -356,5 +356,5 @@ lavur	lavur	+Noun+Fem+Sg
 en	en	+Prep
 regiuns	regiun	+Noun+Fem+Pl
 periferas	perifer	+Adj+Fem+Pl
-dischavantagiadas	dischavantagiar	+Verb+PastPart+Fem+Pl
+dischavantagiadas	dischavantagià	+Adj+Fem+Pl
 .	.	+Sent
