@@ -11184,5 +11184,6 @@ zutgeriera
 zutgerificaziun
 mesemna
 gievgia
-sonda
 dumengia
+chemicalia
+socca
