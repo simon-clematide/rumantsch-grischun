@@ -5,13 +5,13 @@ mars	mars	+Noun+Masc+Sg
 ha	avair	+Verb+PresInd+3P+Sg
 il	il	+Art+Def+Masc+Sg
 pievel	pievel	+Noun+Masc+Sg
-svizzer	svizzer	+Adj+Masc+Sg	#PROBLEM: +Prop
+svizzer	svizzer	+Adj+Masc+Sg	#PROBLEM: +Prop?
 da	da	+Prep
 decider	decider	+Verb+Inf
 davart	davart	+Prep
 l’	il	+Art+Def+Fem+Sg+Apo
 iniziativa	iniziativa	+Noun+Fem+Sg
-che	che	+Subj
+che	che	+Pron+Rel
 pretenda	pretender	+Verb+PresInd+3P+Sg
 da	da	+Prep
 reducir	reducir	+Verb+Inf
@@ -36,7 +36,7 @@ l’	il	+Art+Def+Fem+Sg+Apo
 iniziativa	iniziativa	+Noun+Fem+Sg
 orientà	orientar	+Verb+PastPart+Masc+Sg
 las	il	+Art+Def+Fem+Pl
-medias	medias	+Noun+Fem+Pl
+medias	media	+Noun+Fem+Pl	#PROBLEM: Medium?
 a	a	+Prep
 Berna	Berna	+Prop
 davart	davart	+Prep
@@ -49,7 +49,7 @@ massiva	massiv	+Adj+Fem+Sg
 ,	,	+CM
 dentant	dentant	+Adv
 betg	betg	+Prt+Neg
-bain	bun	+Adv
+bain	bain	+Adv
 ponderada	ponderà	+Adj+Fem+Sg
 .	.	+Sent
 
@@ -57,18 +57,18 @@ Cun	*cun	+Prep
 ina	in	+Art+Indef+Fem+Sg
 iniziativa	iniziativa	+Noun+Fem+Sg
 populara	popular	+Adj+Fem+Sg
-pretendan	pretender	+Verb+PresInd+3P+Pl#################################################################################3
-passa	passa	+Noun+Fem+Sg
+pretendan	pretender	+Verb+PresInd+3P+Pl
+passa	passa	+Adv
 100	100	+Dig+Card
-000	000	+Dig+Card
-burgaisas	burgais	+Adj+Fem+Pl
+000	000	+Dig+Card	#PROBLEM: Tokenizer
+burgaisas	burgais	+Noun+Fem+Pl
 e	e	+Conj
 burgais	burgais	+Noun+Masc+Pl
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 confederaziun	confederaziun	+Noun+Fem+Sg
 ,	,	+CM
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 chantuns	chantun	+Noun+Masc+Pl
 e	e	+Conj
 da	da	+Prep
@@ -76,8 +76,8 @@ las	il	+Art+Def+Fem+Pl
 vischnancas	vischnanca	+Noun+Fem+Pl
 ina	in	+Art+Indef+Fem+Sg
 reducziun	reducziun	+Noun+Fem+Sg
-massiva	massiv	+Adj+Fem+Sg+UNKNOWN
-dal	da	+Prep^=+Art+Def+Masc+Sg
+massiva	massiv	+Adj+Fem+Sg
+dal	da	+Prep^|+Art+Def+Masc+Sg
 traffic	traffic	+Noun+Masc+Sg
 privat	privat	+Adj+Masc+Sg
 sin	sin	+Prep
@@ -87,19 +87,19 @@ via	via	+Noun+Fem+Sg
 La	*il	+Art+Def+Fem+Sg
 finamira	finamira	+Noun+Fem+Sg
 è	esser	+Verb+PresInd+3P+Sg
-–	–	+Punc
+–	–	+Punc+Beg
 en	en	+Prep
 vista	vista	+Noun+Fem+Sg
 a	a	+Prep
 l’	il	+Art+Def+Masc+Sg+Apo
 augment	augment	+Noun+Masc+Sg
-enorm	enorm	+Adj+Sup^DB+Adv
-dal	da	+Prep^=+Art+Def+Masc+Sg
+enorm	enorm	+Adj+Masc+Sg
+dal	da	+Prep^|+Art+Def+Masc+Sg
 traffic	traffic	+Noun+Masc+Sg
 ils	il	+Art+Def+Masc+Pl
 decennis	decenni	+Noun+Masc+Pl
 passads	passà	+Adj+Masc+Pl
-–	–	+Punc
+–	–	+Punc+End
 da	da	+Prep
 meglierar	meglierar	+Verb+Inf
 il	il	+Art+Def+Masc+Sg
@@ -107,8 +107,8 @@ spazi	spazi	+Noun+Masc+Sg
 da	da	+Prep
 viver	viver	+Verb+Inf
 en	en	+Prep
-noss	noss	+Adj+Masc+Pl+UNKNOWN
-pajais	pajar	+Verb+PresInd+2P+Pl
+noss	noss	+Pron+Poss+Masc+Sg
+pajais	pajais	+Noun+Masc+Sg
 e	e	+Conj
 sin	sin	+Prep
 questa	quest	+Pron+Dem+Fem+Sg
@@ -118,7 +118,7 @@ arrivar	arrivar	+Verb+Inf
 a	a	+Prep
 la	il	+Art+Def+Fem+Sg
 situaziun	situaziun	+Noun+Fem+Sg
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 onns	onn	+Noun+Masc+Pl
 settanta	settanta	+Num+Card+MF
 .	.	+Sent
@@ -127,16 +127,16 @@ Ils	*il	+Art+Def+Masc+Pl
 iniziants	iniziant	+Noun+Masc+Pl
 fan	far	+Verb+PresInd+3P+Pl
 valair	valair	+Verb+Inf
-mesiras	mesiras	+Noun+Fem+Pl
+mesiras	mesira	+Noun+Fem+Pl
 necessarias	necessari	+Adj+Fem+Pl
-cunter	cunter	+Noun+Masc+Sg
+cunter	cunter	+Prep
 las	il	+Art+Def+Fem+Pl
 consequenzas	consequenza	+Noun+Fem+Pl
 negativas	negativ	+Adj+Fem+Pl
-dal	da	+Prep^=+Art+Def+Masc+Sg
+dal	da	+Prep^|+Art+Def+Masc+Sg
 traffic	traffic	+Noun+Masc+Sg
-motorisà	motorisar	+Verb+PastPart+Masc+Sg
-sco	sco	+Conj
+motorisà	motorisà	+Adj+Masc+Sg
+sco	sco	+Conj	#PROBLEM: +Adv?
 la	il	+Art+Def+Fem+Sg
 canera	canera	+Noun+Fem+Sg
 ,	,	+CM
@@ -149,7 +149,7 @@ aria	aria	+Noun+Fem+Sg
 il	il	+Art+Def+Masc+Sg
 privel	privel	+Noun+Masc+Sg
 d’	da	+Prep+Apo
-accidents	accidents	+Noun+Masc+Pl
+accidents	accident	+Noun+Masc+Pl
 e	e	+Conj
 la	il	+Art+Def+Fem+Sg
 betunaziun	betunaziun	+Noun+Fem+Sg
@@ -161,10 +161,10 @@ cuntrada	cuntrada	+Noun+Fem+Sg
 Tenor	*tenor	+Prep
 l’	il	+Art+Def+Fem+Sg+Apo
 iniziativa	iniziativa	+Noun+Fem+Sg
-duai	duair	+Verb+Impv+2P+Pl
+duai	duair	+Verb+PresInd+3P+Sg
 il	il	+Art+Def+Masc+Sg
 traffic	traffic	+Noun+Masc+Sg
-motorisà	motorisar	+Verb+PastPart+Masc+Sg
+motorisà	motorisà	+Adj+Masc+Sg
 individual	individual	+Adj+Masc+Sg
 vegnir	vegnir	+Verb+Inf
 reducì	reducir	+Verb+PastPart+Masc+Sg
@@ -185,13 +185,13 @@ il	il	+Art+Def+Masc+Sg
 pievel	pievel	+Noun+Masc+Sg
 .	.	+Sent
 
-Lantschada	*lantschada	+Noun+Fem+Sg
+Lantschada	*lantschar	+Verb+PastPart+Fem+Sg
 ed	e	+Conj+Apo
 inoltrada	inoltrar	+Verb+PastPart+Fem+Sg
 è	esser	+Verb+PresInd+3P+Sg
-l’	il	+Art+Def+Masc+Sg+Apo
+l’	il	+Art+Def+Fem+Sg+Apo
 iniziativa	iniziativa	+Noun+Fem+Sg
-vegnida	vegnida	+Noun+Fem+Sg
+vegnida	vegnida	+Verb+PastPart+Fem+Sg
 d’	da	+Prep+Apo
 ina	in	+Art+Indef+Fem+Sg
 gruppa	gruppa	+Noun+Fem+Sg
@@ -199,7 +199,7 @@ cun	cun	+Prep
 il	il	+Art+Def+Masc+Sg
 num	num	+Noun+Masc+Sg
 «	«	+Punc+Beg
-umverkehR	umverkehR	+Noun+Masc+Sg
+umverkehR	umverkehR	+Prop
 »	»	+Punc+End
 .	.	+Sent
 
@@ -208,9 +208,9 @@ cussegl	cussegl	+Noun+Masc+Sg
 federal	federal	+Adj+Masc+Sg
 s’	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg+Apo
 è	esser	+Verb+PresInd+3P+Sg
-exprimì	exprimer	+Verb+PastPart+Masc+Sg
-cleramain	cler	+Adj^DB+Adv
-cunter	cunter	+Noun+Masc+Sg
+exprimì	exprimer	+Verb+PastPart+Masc+Sg	#PROBLEM: sollte «è s'exprimì» sein
+cleramain	cleramain	+Adv
+cunter	cunter	+Prep
 l’	il	+Art+Def+Fem+Sg+Apo
 iniziativa	iniziativa	+Noun+Fem+Sg
 .	.	+Sent
@@ -224,7 +224,7 @@ ina	in	+Art+Indef+Fem+Sg
 cuntraproposta	cuntraproposta	+Noun+Fem+Sg
 e	e	+Conj
 recumonda	recumandar	+Verb+PresInd+3P+Sg
-al	a	+Prep^=+Art+Def+Masc+Sg
+al	a	+Prep^|+Art+Def+Masc+Sg
 pievel	pievel	+Noun+Masc+Sg
 da	da	+Prep
 refusar	refusar	+Verb+Inf
@@ -232,23 +232,23 @@ quella	quel	+Pron+Dem+Fem+Sg
 iniziativa	iniziativa	+Noun+Fem+Sg
 .	.	+Sent
 
-L’	*il	+Art+Def+Masc+Sg+Apo
+L’	*il	+Art+Def+Fem+Sg+Apo
 acceptaziun	acceptaziun	+Noun+Fem+Sg
 da	da	+Prep
 l’	il	+Art+Def+Fem+Sg+Apo
 iniziativa	iniziativa	+Noun+Fem+Sg
-avess	avair	+Verb+Cond+1P+Sg
+avess	avair	+Verb+Cond+3P+Sg
 consequenzas	consequenza	+Noun+Fem+Pl
 fitg	fitg	+Adv
 negativas	negativ	+Adj+Fem+Pl
 per	per	+Prep
-nossa	noss	+Pron+Poss^DB+Noun+Fem+Sg
+nossa	noss	+Pron+Poss+Fem+Sg
 economia	economia	+Noun+Fem+Sg
 .	.	+Sent
 
 Il	*il	+Art+Def+Masc+Sg
 cussegl	cussegl	+Noun+Masc+Sg
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 chantuns	chantun	+Noun+Masc+Pl
 ha	avair	+Verb+PresInd+3P+Sg
 refusà	refusar	+Verb+PastPart+Masc+Sg
@@ -256,8 +256,8 @@ l’	il	+Art+Def+Fem+Sg+Apo
 iniziativa	iniziativa	+Noun+Fem+Sg
 cun	cun	+Prep
 33	33	+Dig+Card
-cunter	cunter	+Noun+Masc+Sg
-nulla	nulla	+Noun+Fem+Sg
+cunter	cunter	+Prep
+nulla	nulla	+Noun+Fem+Sg	#PROBLEM: Num?
 vuschs	vusch	+Noun+Fem+Pl
 ed	e	+Conj+Apo
 il	il	+Art+Def+Masc+Sg
@@ -265,42 +265,42 @@ cussegl	cussegl	+Noun+Masc+Sg
 naziunal	naziunal	+Adj+Masc+Sg
 cun	cun	+Prep
 105	105	+Dig+Card
-cunter	cunter	+Noun+Masc+Sg
+cunter	cunter	+Prep
 39	39	+Dig+Card
 vuschs	vusch	+Noun+Fem+Pl
 .	.	+Sent
 
-L’	*il	+Art+Def+Masc+Sg+Apo
+L’	*il	+Art+Def+Fem+Sg+Apo
 iniziativa	iniziativa	+Noun+Fem+Sg
 vegn	vegnir	+Verb+PresInd+3P+Sg
 sustegnida	sustegnair	+Verb+PastPart+Fem+Sg
-dals	da	+Prep^=+Art+Def+Masc+Pl
-verds	verds	+Noun+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
+verds	verd	+Noun+Masc+Pl
 e	e	+Conj
-sco	sco	+Conj
-ch’	che	+Subj+Apo
+sco	sco	+Conj	#PROBLEM: ?
+ch’	che	+Subj+Apo	#PROBLEM: ?
 i	i	+Pron+Pers+Nom+3P+MF+Sg
-para	parar	+Verb+PresInd+3P+Sg
+para	parair	+Verb+PresInd+3P+Sg
 oz	oz	+Adv
-dals	da	+Prep^=+Art+Def+Masc+Pl
-socialdemocrats	socialdemocrat	+Noun+Masc+Pl+UNKNOWN
+dals	da	+Prep^|+Art+Def+Masc+Pl
+socialdemocrats	socialdemocrat	+Noun+Masc+Pl
 .	.	+Sent
 
-Dals	*da	+Prep^=+Art+Def+Masc+Pl
-parlamentaris	parlamentari	+Noun+Masc+Pl+UNKNOWN
-grischuns	grischun	+Adj+Masc+Pl+UNKNOWN
+Dals	*da	+Prep^|+Art+Def+Masc+Pl
+parlamentaris	parlamentari	+Noun+Masc+Pl
+grischuns	grischun	+Adj+Masc+Pl
 èn	esser	+Verb+PresInd+3P+Pl
 ,	,	+CM
-–	–	+Punc
+–	–	+Punc+Beg
 tenor	tenor	+Prep
 la	il	+Art+Def+Fem+Sg
 glista	glista	+Noun+Fem+Sg
-messa	mess	+Adj+Fem+Sg
+messa	metter	+Verb+PastPart+Fem+Sg
 a	a	+Prep
 disposiziun	disposiziun	+Noun+Fem+Sg
-als	a	+Prep^=+Art+Def+Masc+Pl
+als	a	+Prep^|+Art+Def+Masc+Pl
 schurnalists	schurnalist	+Noun+Masc+Pl
-–	–	+Punc
+–	–	+Punc+End
 Brändli	Brändli	+Prop
 ,	,	+CM
 Maissen	Maissen	+Prop
@@ -310,13 +310,13 @@ Bezzola	Bezzola	+Prop
 Gadient	Gadient	+Prop
 e	e	+Conj
 Hassler	Hassler	+Prop
-cunter	cunter	+Adv
+cunter	cunter	+Prep
 l’	il	+Art+Def+Fem+Sg+Apo
 idea	idea	+Noun+Fem+Sg
 da	da	+Prep
 reducir	reducir	+Verb+Inf
-uschè	uschè	+Adv
-massivamain	massivamain	+Adj+Masc+Sg+UNKNOWN
+uschè	uschè	+Adv	#PROBLEM: uschia?
+massivamain	massivamain	+Adv
 il	il	+Art+Def+Masc+Sg
 traffic	traffic	+Noun+Masc+Sg
 privat	privat	+Adj+Masc+Sg
@@ -327,15 +327,17 @@ naziunal	naziunal	+Adj+Masc+Sg
 Georges	Georges	+Prop
 Theiler	Theiler	+Prop
 (	(	+Punc+Beg
-pld/LU	pld/LU	+Noun+Masc+Sg
+pld	pld	+Abbr
+/	/	+Punc
+LU	LU	+Abbr
 )	)	+Punc+End
 ,	,	+CM
 il	il	+Art+Def+Masc+Sg
 president	president	+Noun+Masc+Sg
-dal	da	+Prep^=+Art+Def+Masc+Sg
-comité	comité	+Noun+Masc+Sg+UNKNOWN
+dal	da	+Prep^|+Art+Def+Masc+Sg
+comité	comité	+Noun+Masc+Sg
 «	«	+Punc+Beg
-Na	*na	+Adv
+Na	*na	+Prt+Neg
 a	a	+Prep
 l’	il	+Art+Def+Fem+Sg+Apo
 iniziativa	iniziativa	+Noun+Fem+Sg
@@ -354,17 +356,17 @@ fatg	far	+Verb+PastPart+Masc+Sg
 menziun	menziun	+Noun+Fem+Sg
 a	a	+Prep
 la	il	+Art+Def+Fem+Sg
-missiva	missiva	+Noun+Fem+Sg+UNKNOWN
-dal	da	+Prep^=+Art+Def+Masc+Sg
+missiva	missiva	+Noun+Fem+Sg
+dal	da	+Prep^|+Art+Def+Masc+Sg
 cussegl	cussegl	+Noun+Masc+Sg
 federal	federal	+Adj+Masc+Sg
-che	che	+Subj
+che	che	+Pron+Rel	#PROBLEM: ?
 ha	avair	+Verb+PresInd+3P+Sg
 constatà	constatar	+Verb+PastPart+Masc+Sg
 che	che	+Subj
 l’	il	+Art+Def+Fem+Sg+Apo
-iniziativa	iniziativa	+Noun+Fem+Sg
-periclitassia	periclitassia	+Noun+Fem+Sg+UNKNOWN
+iniziativa	iniziativ	+Noun+Fem+Sg
+periclitassia	periclitassia	+Verb+Cond+3P+Sg+Typo	#PROBLEM: Kondizional und Konjunktiv?
 la	il	+Art+Def+Fem+Sg
 pasch	pasch	+Noun+Fem+Sg
 sociala	social	+Adj+Fem+Sg
@@ -375,12 +377,12 @@ talmain	talmain	+Adv
 il	il	+Art+Def+Masc+Sg
 traffic	traffic	+Noun+Masc+Sg
 privat	privat	+Adj+Masc+Sg
-avess	avair	+Verb+Cond+1P+Sg
+avess	avair	+Verb+Cond+3P+Sg
 plinavant	plinavant	+Adv
 grevas	grev	+Adj+Fem+Pl
 consequenzas	consequenza	+Noun+Fem+Pl
 per	per	+Prep
-nossa	noss	+Pron+Poss^DB+Noun+Fem+Sg
+nossa	noss	+Pron+Poss+Fem+Sg
 economia	economia	+Noun+Fem+Sg
 ,	,	+CM
 ha	avair	+Verb+PresInd+3P+Sg
@@ -390,10 +392,10 @@ accentuà	accentuar	+Verb+PastPart+Masc+Sg
 .	.	+Sent
 
 Plirs	*plirs	+Pron+Indef+Masc+Pl
-tschients	tschient	+Noun+Masc+Pl
+tschients	tschient	+Noun+Masc+Pl	#PROBLEM: ?
 plazs	plaz	+Noun+Masc+Pl
 da	da	+Prep
-lavur	lavurar	+Verb+PresInd+1P+Sg
+lavur	lavur	+Noun+Fem+Sg
 fissan	esser	+Verb+Cond+3P+Pl
 en	en	+Prep
 privel	privel	+Noun+Masc+Sg
@@ -403,57 +405,57 @@ Per	*per	+Prep
 realisar	realisar	+Verb+Inf
 las	il	+Art+Def+Fem+Pl
 finamiras	finamira	+Noun+Fem+Pl
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 iniziants	iniziant	+Noun+Masc+Pl
 fissan	esser	+Verb+Cond+3P+Pl
 da	da	+Prep
 prender	prender	+Verb+Inf
-mesiras	mesiras	+Noun+Fem+Pl
-dirigistas	dirigist	+Adj+Fem+Pl+UNKNOWN
+mesiras	mesira	+Noun+Fem+Pl
+dirigistas	dirigist	+Adj+Fem+Pl+Typo	#PROBLEM: dirigisticas?
 fatalas	fatal	+Adj+Fem+Pl
 .	.	+Sent
 
-Cler	*cler	+Adj+Masc+Sg
+Cler	*cler	+Adj+Masc+Sg	#PROBLEM: ?
 èsi	esser	+Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+3P+MF+Sg
-che	che	+Subj
+che	che	+Subj	#PROBLEM: ?
 l’	il	+Art+Def+Fem+Sg+Apo
 elecziun	elecziun	+Noun+Fem+Sg
 libra	liber	+Adj+Fem+Sg
-dals	da	+Prep^=+Art+Def+Masc+Pl
+dals	da	+Prep^|+Art+Def+Masc+Pl
 meds	med	+Noun+Masc+Pl
 da	da	+Prep
 traffic	traffic	+Noun+Masc+Sg
-na	na	+Adv
+na	na	+Prt+Neg
 fiss	esser	+Verb+Cond+3P+Sg
-betg	betg	+Adv
+betg	betg	+Prt+Neg
 pli	pli	+Adv
 pussaivla	pussaivel	+Adj+Fem+Sg
 .	.	+Sent
 
-Deplorablamain	*deplorabel	+Adj^DB+Adv
-n’	n'	+Adv
+Deplorablamain	*deplorablamain	+Adv
+n’	n'	+Prt+Neg+Apo
 hajan	avair	+Verb+Con+3P+Pl
 ils	il	+Art+Def+Masc+Pl
 iniziants	iniziant	+Noun+Masc+Pl
-er	esser	+Verb+ImpInd+3P+Sg
-betg	betg	+Adv
-ditg	ditg	+Adv
+er	er	+Adv
+betg	betg	+Prt+Neg
+ditg	dir	+Verb+PastPart+Masc+Sg
 en	en	+Prep
 lur	lur	+Pron+Poss+Masc+Pl
 proposta	proposta	+Noun+Fem+Sg
 en	en	+Prep
-tge	tge	+Pron+Interrog
+tge	tge	+Pron+Interrog	#PROBLEM: ?
 maniera	maniera	+Noun+Fem+Sg
 ch’	che	+Subj+Apo
 il	il	+Art+Def+Masc+Sg
 traffic	traffic	+Noun+Masc+Sg
-duess	duess	+Adj+Masc+Pl+UNKNOWN
+duess	duair	+Verb+Cond+3P+Sg
 vegnir	vegnir	+Verb+Inf
 reducì	reducir	+Verb+PastPart+Masc+Sg
 talmain	talmain	+Adv
 .	.	+Sent
 
-Els	*els	+Pron+Pers+Acc+Ton+3P+Masc+Pl
+Els	*els	+Pron+Pers+Nom+3P+Masc+Pl
 surlaschan	surlaschar	+Verb+PresInd+3P+Pl
 quellas	quel	+Pron+Dem+Fem+Pl
 chastognas	chastogna	+Noun+Fem+Pl
@@ -464,15 +466,15 @@ lescha	lescha	+Noun+Fem+Sg
 ,	,	+CM
 vul	vulair	+Verb+PresInd+3P+Sg
 dir	dir	+Verb+Inf
-al	a	+Prep^=+Art+Def+Masc+Sg
+al	a	+Prep^|+Art+Def+Masc+Sg
 cussegl	cussegl	+Noun+Masc+Sg
 federal	federal	+Adj+Masc+Sg
 ed	e	+Conj+Apo
-al	a	+Prep^=+Art+Def+Masc+Sg
+al	a	+Prep^|+Art+Def+Masc+Sg
 parlament	parlament	+Noun+Masc+Sg
 .	.	+Sent
 
-Ir	*ir	+Noun+Masc+Sg
+Ir	*ir	+Verb+Inf
 cun	cun	+Prep
 auto	auto	+Noun+Masc+Sg
 be	be	+Adv
@@ -480,15 +482,13 @@ da	da	+Prep
 20	20	+Dig+Card
 fin	fin	+Prep
 65	65	+Dig+Card
-onns	onn	+Noun+Masc+Pl
-?	?	+Sent
-
+onns?	onns?	+Noun+Masc+Pl	#PROBLEM: Tokenizer
 Damai	*damai	+Adv
-che	che	+Subj
-mesiras	mesiras	+Noun+Fem+Pl
+che	che	+Conj	#PROBLEM: Kompositum?
+mesiras	mesira	+Noun+Fem+Pl
 u	u	+Conj
-propostas	propost	+Adj+Fem+Pl
-concretas	concreta	+Noun+Fem+Pl+UNKNOWN
+propostas	proposta	+Noun+Fem+Pl
+concretas	concret	+Adj+Fem+Pl
 mancan	mancar	+Verb+PresInd+3P+Pl
 en	en	+Prep
 il	il	+Art+Def+Masc+Sg
@@ -502,9 +502,9 @@ fatgas	far	+Verb+PastPart+Fem+Pl
 diversas	divers	+Adj+Fem+Pl
 ponderaziuns	ponderaziun	+Noun+Fem+Pl
 ,	,	+CM
-co	co	+Adv
-ch’	che	+Subj+Apo
-in	in	+Art+Indef+Masc+Sg
+co	co	+Adv	#PROBLEM: Interrog.?
+ch’	che	+Conj+Apo	#PROBLEM: ?
+in	ins	+Pron+Indef+Typo
 pudess	pudair	+Verb+Cond+3P+Sg
 reducir	reducir	+Verb+Inf
 il	il	+Art+Def+Masc+Sg
@@ -514,13 +514,13 @@ la	il	+Art+Def+Fem+Sg
 mesadad	mesadad	+Noun+Fem+Sg
 ,	,	+CM
 en	en	+Prep
-cas	cas	+Noun+Masc+Pl
-che	che	+Subj
+cas	cas	+Noun+Masc+Sg
+che	che	+Conj	#PROBLEM: ?
 l’	il	+Art+Def+Fem+Sg+Apo
 iniziativa	iniziativa	+Noun+Fem+Sg
-vegniss	vegnir	+Verb+Cond+1P+Sg
+vegniss	vegnir	+Verb+Cond+3P+Sg
 acceptada	acceptar	+Verb+PastPart+Fem+Sg
-dal	da	+Prep^=+Art+Def+Masc+Sg
+dal	da	+Prep^|+Art+Def+Masc+Sg
 pievel	pievel	+Noun+Masc+Sg
 .	.	+Sent
 
@@ -529,21 +529,23 @@ naziunal	naziunal	+Adj+Masc+Sg
 Christian	Christian	+Prop
 Speck	Speck	+Prop
 (	(	+Punc+Beg
-pps/AG	pps/AG	+Noun+Masc+Sg
+pps	pps	+Abbr
+/	/	+Punc
+AG	AG	+Abbr
 )	)	+Punc+End
 è	esser	+Verb+PresInd+3P+Sg
 vegnì	vegnir	+Verb+PastPart+Masc+Sg
 pli	pli	+Adv
-concret	concret	+Adj+Masc+Sg+UNKNOWN
+concret	concret	+Adj+Masc+Sg
 .	.	+Sent
 
 Tenor	*tenor	+Prep
 scenaris	scenari	+Noun+Masc+Pl
 elavurads	elavurà	+Adj+Masc+Pl
-dal	da	+Prep^=+Art+Def+Masc+Sg
+dal	da	+Prep^|+Art+Def+Masc+Sg
 cussegl	cussegl	+Noun+Masc+Sg
 federal	federal	+Adj+Masc+Sg
-stuess	stuair	+Verb+Cond+1P+Sg
+stuess	stuair	+Verb+Cond+3P+Sg
 il	il	+Art+Def+Masc+Sg
 pretsch	pretsch	+Noun+Masc+Sg
 per	per	+Prep
@@ -557,20 +559,20 @@ fin	fin	+Prep
 3	3	+Dig+Card
 francs	franc	+Noun+Masc+Pl
 il	il	+Art+Def+Masc+Sg
-liter	liter	+Noun+Masc+Sg+UNKNOWN
+liter	liter	+Noun+Masc+Sg
 .	.	+Sent
 
 Ina	*in	+Art+Indef+Fem+Sg
 autra	auter	+Adj+Fem+Sg
 varianta	varianta	+Noun+Fem+Sg
-fiss	esser	+Verb+Cond+1P+Sg
+fiss	esser	+Verb+Cond+3P+Sg
 ina	in	+Art+Indef+Fem+Sg
 taxa	taxa	+Noun+Fem+Sg
 da	da	+Prep
 13	13	+Dig+Card
-raps	raps	+Noun+Masc+Pl
+raps	rap	+Noun+Masc+Pl
 per	per	+Prep
-kilometer	kilometer	+Noun+Masc+Sg+UNKNOWN
+kilometer	kilometer	+Noun+Masc+Sg
 ,	,	+CM
 u	u	+Conj
 in	in	+Art+Indef+Masc+Sg
@@ -583,15 +585,15 @@ durant	durant	+Prep
 6	6	+Dig+Card
 fin	fin	+Prep
 12	12	+Dig+Card
-dumengias	dumenger	+Verb+PresInd+2P+Sg+UNKNOWN
+dumengias	dumengia	+Noun+Fem+Pl
 l’	il	+Art+Def+Masc+Sg+Apo
 onn	onn	+Noun+Masc+Sg
 .	.	+Sent
 
 En	*en	+Prep
 discussiun	discussiun	+Noun+Fem+Sg
-saja	esser	+Verb+Con+1P+Sg
-er	esser	+Verb+ImpInd+3P+Sg
+saja	esser	+Verb+Con+3P+Sg
+er	er	+Adv
 in	in	+Art+Indef+Masc+Sg
 scumond	scumond	+Noun+Masc+Sg
 da	da	+Prep
@@ -600,13 +602,13 @@ cun	cun	+Prep
 auto	auto	+Noun+Masc+Sg
 privat	privat	+Adj+Masc+Sg
 per	per	+Prep
-persunas	persunas	+Noun+Fem+Pl
+persunas	persuna	+Noun+Fem+Pl
 fin	fin	+Prep
 20	20	+Dig+Card
 onns	onn	+Noun+Masc+Pl
 e	e	+Conj
 talas	tal	+Pron+Dem+Fem+Pl
-che	che	+Subj
+che	che	+Pron+Rel	#PROBLEM: ?
 han	avair	+Verb+PresInd+3P+Pl
 passà	passar	+Verb+PastPart+Masc+Sg
 ils	il	+Art+Def+Masc+Pl
@@ -625,7 +627,7 @@ pli	pli	+Adv
 grondas	grond	+Adj+Fem+Pl
 stuessan	stuair	+Verb+Cond+3P+Pl
 vegnir	vegnir	+Verb+Inf
-fixadas	fixà	+Adj+Fem+Pl
+fixadas	fixar	+Verb+PastPart+Fem+Pl
 zonas	zona	+Noun+Fem+Pl
 da	da	+Prep
 scumond	scumond	+Noun+Masc+Sg
@@ -640,15 +642,15 @@ quintar	quintar	+Verb+Inf
 cun	cun	+Prep
 ina	in	+Art+Indef+Fem+Sg
 reducziun	reducziun	+Noun+Fem+Sg
-massiva	massiv	+Adj+Fem+Sg+UNKNOWN
-dals	da	+Prep^=+Art+Def+Masc+Pl
-parcadis	parcadis	+Noun+Masc+Pl
+massiva	massiv	+Adj+Fem+Sg
+dals	da	+Prep^|+Art+Def+Masc+Pl
+parcadis	parcadi	+Noun+Masc+Pl
 publics	public	+Adj+Masc+Pl
 .	.	+Sent
 
-L’	*il	+Art+Def+Masc+Sg+Apo
+L’	*il	+Art+Def+Fem+Sg+Apo
 iniziativa	iniziativa	+Noun+Fem+Sg
-avess	avair	+Verb+Cond+1P+Sg
+avess	avair	+Verb+Cond+3P+Sg
 grevas	grev	+Adj+Fem+Pl
 consequenzas	consequenza	+Noun+Fem+Pl
 per	per	+Prep
@@ -669,21 +671,21 @@ votants	votant	+Noun+Masc+Pl
 .	.	+Sent
 
 Tenor	*tenor	+Prep
-lur	lur	+Pron+Poss+Masc+Pl
-avis	avis	+Noun+Masc+Pl
+lur	lur	+Pron+Poss+Masc+Pl	#PROBLEM: ?
+avis	avis	+Noun+Masc+Sg
 fiss	esser	+Verb+Cond+3P+Sg
 en	en	+Prep
 emprima	emprim	+Adj+Fem+Sg
 lingia	lingia	+Noun+Fem+Sg
 la	il	+Art+Def+Fem+Sg
-glieud	glieud	+Noun+Fem+Sg
+glieud	glieud	+Noun+Fem+Sg	#PROBLEM: Singularetantum
 cun	cun	+Prep
 in	in	+Art+Indef+Masc+Sg
 gudogn	gudogn	+Noun+Masc+Sg
-modest	modest	+Noun+Masc+Sg+UNKNOWN
+modest	modest	+Adj+Masc+Sg
 ils	il	+Art+Def+Masc+Pl
 pli	pli	+Adv
-pertutgads	pertutgar	+Verb+PastPart+Masc+Pl
+pertutgads	pertutgà	+Adj+Masc+Pl
 da	da	+Prep
 las	il	+Art+Def+Fem+Pl
 consequenzas	consequenza	+Noun+Fem+Pl
@@ -695,74 +697,74 @@ iniziativa	iniziativa	+Noun+Fem+Sg
 Ina	*in	+Art+Indef+Fem+Sg
 situaziun	situaziun	+Noun+Fem+Sg
 nunpussaivla	nunpussaivel	+Adj+Fem+Sg
-visavis	visavi	+Noun+Masc+Pl+UNKNOWN
+visavis	visavi	+Adv+Typo	#PROBLEM: visavi wäre korrekt
 l’	il	+Art+Def+Fem+Sg+Apo
-Europa	Europa	+Prop
+Europa	Europa	+Prop	#PROBLEM: Kein Satz. Zwischentitel?
 Vitiers	*vitiers	+Adv
 vegn	vegnir	+Verb+PresInd+3P+Sg
 la	il	+Art+Def+Fem+Sg
 situaziun	situaziun	+Noun+Fem+Sg
-delicata	delicat	+Adj+Fem+Sg+UNKNOWN
-che	che	+Subj
+delicata	delicat	+Adj+Fem+Sg
+che	che	+Subj	#PROBOLEM: +Pron+Rel?
 l’	il	+Art+Def+Fem+Sg+Apo
 iniziativa	iniziativa	+Noun+Fem+Sg
 creass	crear	+Verb+Cond+3P+Sg
 en	en	+Prep
 las	il	+Art+Def+Fem+Pl
-relaziuns	relaziuns	+Noun+Fem+Pl
+relaziuns	relaziun	+Noun+Fem+Pl
 cun	cun	+Prep
 ils	il	+Art+Def+Masc+Pl
-pajais	pajar	+Verb+PresInd+2P+Pl
-vischinants	vischinant	+Adj+Masc+Pl+UNKNOWN
+pajais	pajais	+Noun+Masc+Pl
+vischinants	vischinant	+Adj+Masc+Pl
 e	e	+Conj
 l’	il	+Art+Def+Fem+Sg+Apo
 Uniun	*uniun	+Noun+Fem+Sg
-Europeica	*europeic	+Adj+Fem+Sg
+Europeica	*europeic	+Adj+Fem+Sg	#PROBLEM: +Prop?
 (	(	+Punc+Beg
-UE	UE	+Prop
+UE	UE	+Abbr
 )	)	+Punc+End
 .	.	+Sent
 
-Passa	*passa	+Noun+Fem+Sg
+Passa	*passa	+Adv
 30	30	+Dig+Card
 contracts	contract	+Noun+Masc+Pl
 cun	cun	+Prep
 l’	il	+Art+Def+Masc+Sg+Apo
-exteriur	exteriur	+Adj+Masc+Sg
+exteriur	exteriur	+Noun+Masc+Sg
 stuessan	stuair	+Verb+Cond+3P+Pl
 vegnir	vegnir	+Verb+Inf
 visads	visar	+Verb+PastPart+Masc+Pl
 .	.	+Sent
 
-Er	*esser	+Verb+ImpInd+3P+Sg
+Er	*er	+Adv
 las	il	+Art+Def+Fem+Pl
 cunvegnas	cunvegna	+Noun+Fem+Pl
 bilateralas	bilateral	+Adj+Fem+Pl
 cun	cun	+Prep
 l’	il	+Art+Def+Fem+Sg+Apo
-UE	UE	+Prop
+UE	UE	+Abbr
 fissan	esser	+Verb+Cond+3P+Pl
-messas	messa	+Noun+Fem+Pl
+messas	metter	+Verb+PastPart+Fem+Pl
 en	en	+Prep
 dumonda	dumonda	+Noun+Fem+Sg
 .	.	+Sent
 
-L’	*il	+Art+Def+Masc+Sg+Apo
+L’	*il	+Art+Def+Fem+Sg+Apo
 acceptaziun	acceptaziun	+Noun+Fem+Sg
 da	da	+Prep
 l’	il	+Art+Def+Fem+Sg+Apo
 iniziativa	iniziativa	+Noun+Fem+Sg
 fiss	esser	+Verb+Cond+3P+Sg
 in	in	+Art+Indef+Masc+Sg
-cler	cler	+Noun+Masc+Sg
+cler	cler	+Adj+Masc+Sg
 signal	signal	+Noun+Masc+Sg
-vers	vers	+Noun+Masc+Pl
+vers	vers	+Prep
 ina	in	+Art+Indef+Fem+Sg
 isolaziun	isolaziun	+Noun+Fem+Sg
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 Svizra	Svizra	+Prop
-envers	envers	+Adj+Masc+Pl
+envers	envers	+Prep
 l’	il	+Art+Def+Fem+Sg+Apo
 Europa	Europa	+Prop
 .	.	+Sent
@@ -773,7 +775,7 @@ quests	quest	+Pron+Dem+Masc+Pl
 motivs	motiv	+Noun+Masc+Pl
 recumonda	recumandar	+Verb+PresInd+3P+Sg
 il	il	+Art+Def+Masc+Sg
-comité	comité	+Noun+Masc+Sg+UNKNOWN
+comité	comité	+Noun+Masc+Sg
 da	da	+Prep
 refusar	refusar	+Verb+Inf
 quella	quel	+Pron+Dem+Fem+Sg
@@ -785,6 +787,4 @@ impedir	impedir	+Verb+Inf
 il	il	+Art+Def+Masc+Sg
 traffic	traffic	+Noun+Masc+Sg
 individual	individual	+Adj+Masc+Sg
-.	.	+Sent
-
-	
+.	.	+Sent	#Done MC 09-04-2018 14:15
