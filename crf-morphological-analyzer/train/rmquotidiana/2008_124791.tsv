@@ -37,7 +37,7 @@ davantgiu	davantgiu	+Adv
 ,	,	+CM
 ils	il	+Art+Def+Masc+Pl
 mauns	maun	+Noun+Masc+Pl
-cunter	cunter	+Noun+Masc+Sg
+cunter	cunter	+Prep
 il	il	+Art+Def+Masc+Sg
 magun	magun	+Noun+Masc+Sg
 .	.	+Sent
@@ -47,22 +47,22 @@ planschevan	planscher	+Verb+ImpInd+3P+Pl
 .	.	+Sent
 
 Ed	*e	+Conj+Apo
-entamez	entamez	+Adv
+entamez	entamez	+Adv	#PROBLEM: +Prep
 quels	quel	+Pron+Dem+Masc+Pl
 dus	dus	+Num+Card+Masc
-Ernst	Ernst	+Prop+UNKNOWN
-Georg	Georg	+Prop+UNKNOWN
+Ernst	Ernst	+Prop
+Georg	Georg	+Prop
 ,	,	+CM
-plat	plat	+Noun+Masc+Sg
+plat	plat	+Adj+Masc+Sg
 en	en	+Prep
 venter	venter	+Noun+Masc+Sg
 ,	,	+CM
 las	il	+Art+Def+Fem+Pl
 chommas	chomma	+Noun+Fem+Pl
-levamain	levamain	+Adj+Masc+Sg+UNKNOWN
+levamain	levamain	+Adv
 sbrajattadas	sbrajattar	+Verb+PastPart+Fem+Pl
 ,	,	+CM
-sco	sco	+Conj
+sco	sco	+Adv
 sch’	sche	+Subj+Apo
 el	el	+Pron+Pers+Nom+3P+Masc+Sg
 avess	avair	+Verb+Cond+3P+Sg
@@ -76,24 +76,24 @@ schanza	schanza	+Noun+Fem+Sg
 –	–	+Punc
 senza	senza	+Prep
 far	far	+Verb+Inf
-mucs	mucs	+Noun+Masc+Pl
+mucs	mucs	+Noun+Masc+Sg
 .	.	+Sent
 
-Florida	Florida	+Noun+Fem+Sg+UNKNOWN
-e	e	+Conj
+Florida	Florida	+Prop
+e	e	+Conj	#PROBLEM: Hier stimmt etwas nicht, kein Satz.
 navigheschan	navigar	+Verb+PresInd+3P+Pl
 en	en	+Prep
 direcziun	direcziun	+Noun+Fem+Sg
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 peninsla	peninsla	+Noun+Fem+Sg
-Cocoplum	Cocoplum	+Prop+UNKNOWN
+Cocoplum	Cocoplum	+Prop
 .	.	+Sent
 
 Per	*per	+Prep
 ina	in	+Art+Indef+Fem+Sg
 sonda	sonda	+Noun+Fem+Sg
-hai	avair	+Verb+PresInd+1P+Sg
+hai	avair	+Verb+PresInd+3P+Sg^|+Pron+Pers+Nom+1P+MF+Sg
 ordvart	ordvart	+Adv
 pauc	pauc	+Adj+Masc+Sg
 traffic	traffic	+Noun+Masc+Sg
@@ -102,33 +102,33 @@ traffic	traffic	+Noun+Masc+Sg
 Nus	*nus	+Pron+Pers+Nom+1P+MF+Pl
 sortin	sortir	+Verb+PresInd+1P+Pl
 in	in	+Art+Indef+Masc+Sg
-pau	pau	+Noun+Masc+Sg
+pau	pau	+Noun+Masc+Sg	#PROBLEM: nur als in pau
 pli	pli	+Adv
-baud	baud	+Adj+Masc+Sg
+baud	baud	+Adv
 dal	da	+Prep^|+Art+Def+Masc+Sg
-High	High	+Prop+UNKNOWN
-Way	Way	+Prop+UNKNOWN
+High	High	+For
+Way	Way	+For
 1	1	+Dig+Card
 ed	e	+Conj+Apo
 entrain	entrar	+Verb+PresInd+1P+Pl
 en	en	+Prep
 il	il	+Art+Def+Masc+Sg
-Granada	Granada	+Prop+UNKNOWN
-Boulevard	*boulevard	+Noun+Masc+Sg
+Granada	Granada	+Prop
+Boulevard	*boulevard	+Noun+Masc+Sg	#PROBLEM +For +Prop?
 .	.	+Sent
 
 Jau	*jau	+Pron+Pers+Nom+1P+MF+Sg
 dumond	dumandar	+Verb+PresInd+1P+Sg
 :	:	+Sent
 «	«	+Punc+Beg
-Lain	*lain	+Noun+Masc+Sg
+Lain	*lain	+Verb+PresInd+1P+Pl
 anc	anc	+Adv
-baiver	baiver	+Noun+Masc+Sg
+baiver	baiver	+Verb+Inf
 in	in	+Art+Indef+Masc+Sg
-café?	café?	+Noun+Masc+Sg+UNKNOWN
+café?	café?	+Noun+Masc+Sg
 »	»	+Punc+End
 Ma	*ma	+Conj
-George	George	+Prop+UNKNOWN
+George	George	+Prop
 na	na	+Prt+Neg
 demussa	demussar	+Verb+PresInd+3P+Sg
 insumma	insumma	+Adv
@@ -142,7 +142,7 @@ passatemps	passatemp	+Noun+Masc+Pl
 Da	*da	+Prep
 las	il	+Art+Def+Fem+Pl
 minutas	minuta	+Noun+Fem+Pl
-che	che	+Subj
+che	che	+Pron+Rel
 nus	nus	+Pron+Pers+Nom+1P+MF+Pl
 avain	avair	+Verb+PresInd+1P+Pl
 gudagnà	gudagnar	+Verb+PastPart+Masc+Sg
@@ -155,34 +155,34 @@ tard	tard	+Adv
 ,	,	+CM
 ins	ins	+Pron+Indef
 na	na	+Prt+Neg
-sa	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg
+sa	savair	+Verb+PresInd+3P+Sg
 mai	mai	+Adv
 ,	,	+CM
 fin	fin	+Prep
 al	a	+Prep^|+Art+Def+Masc+Sg
-Lago	Lago	+Prop+UNKNOWN
-Maggiore	Maggiore	+Prop+UNKNOWN
+Lago	Lago	+Prop
+Maggiore	Maggiore	+Prop
 po	pudair	+Verb+PresInd+3P+Sg
 anc	anc	+Adv
 capitar	capitar	+Verb+Inf
-bler	bler	+Adj+Masc+Sg
+bler	bler	+Pron+Indef	#PROBLEM: +Adv?
 »	»	+Punc+End
 ,	,	+CM
-di	di	+Noun+Masc+Sg
+di	di	+Verb+PresInd+3P+Sg
 el	el	+Pron+Pers+Nom+3P+Masc+Sg
 cun	cun	+Prep
 vusch	vusch	+Noun+Fem+Sg
-levamain	levamain	+Adj+Masc+Sg+UNKNOWN
-alterada	alterar	+Verb+PastPart+Fem+Sg
+levamain	levamain	+Adv
+alterada	alterar	+Adj+Fem+Sg
 ,	,	+CM
 agiuntond	agiuntar	+Verb+Gerund
 :	:	+Sent
 «	«	+Punc+Beg
-Ins	Ins	+Prop
+Ins	*ins	+Pron+Indef
 na	na	+Prt+Neg
-duess	duess	+Adj+Masc+Pl+UNKNOWN
+duess	duess	+Verb+Cond+3P+Sg
 mai	mai	+Adv
-baiver	baiver	+Noun+Masc+Sg
+baiver	baiver	+Verb+Inf
 café	café	+Noun+Masc+Sg
 avant	avant	+Prep
 ch’	che	+Subj+Apo
@@ -193,73 +193,73 @@ betg	betg	+Prt+Neg
 procurà	procurar	+Verb+PastPart+Masc+Sg
 per	per	+Prep
 il	il	+Art+Def+Masc+Sg
-zutger…»	zutger…»	+Noun+Masc+Sg+UNKNOWN
+zutger…»	zutger…»	+Noun+Masc+Sg	#PROBLEM: Tokenizer
 Jau	*jau	+Pron+Pers+Nom+1P+MF+Sg
-tasch	tasch	+Adj+Masc+Sg+UNKNOWN
+tasch	tasch	+Adj+Masc+Sg	#PROBLEM: Gemäss PG "taschel"
 .	.	+Sent
 
 E	*e	+Conj
-guid	guid	+Noun+Masc+Sg
+guid	guid	+Verb+PresInd+1P+Sg
 .	.	+Sent
 
-L’	*il	+Art+Def+Masc+Sg+Apo
+L’	*il	+Art+Def+Fem+Sg+Apo
 ura	ura	+Noun+Fem+Sg
 da	da	+Prep
 l’	il	+Art+Def+Masc+Sg+Apo
 auto	auto	+Noun+Masc+Sg
 mussa	mussar	+Verb+PresInd+3P+Sg
 las	il	+Art+Def+Fem+Pl
-10.50.	10.50.	+Sent+UNKNOWN
-Howard	Howard	+Prop+UNKNOWN
+10.50.	10.50.	+Dig	#PROBLEM: Tokenizer, +Dig +Sent (Uhrzeit)
+Howard	Howard	+Prop
 e	e	+Conj
 quels	quel	+Pron+Dem+Masc+Pl
 dal	da	+Prep^|+Art+Def+Masc+Sg
-Blow	Blow	+Prop+UNKNOWN
-Up	Up	+Prop+UNKNOWN
+Blow	Blow	+Prop
+Up	Up	+Prop
 èn	esser	+Verb+PresInd+3P+Pl
 gia	gia	+Adv
-daditg	daditg	+Adj+Masc+Sg+UNKNOWN
+daditg	daditg	+Adv
 sin	sin	+Prep
 lur	lur	+Pron+Poss+Masc+Pl
 posts	post	+Noun+Masc+Pl
 ,	,	+CM
 occupond	occupar	+Verb+Gerund
 –	–	+Punc
-sco	sco	+Conj
+sco	sco	+Adv
 pestgaders	pestgader	+Noun+Masc+Pl
 ,	,	+CM
-surfers	surfer	+Noun+Masc+Pl+UNKNOWN
+surfers	surfer	+Noun+Masc+Pl
 u	u	+Conj
-vendamelonas	vendamelona	+Noun+Fem+Pl+UNKNOWN
+vendamelonas	vendamelona	+Noun+Masc+Pl
 –	–	+Punc
 ils	il	+Art+Def+Masc+Pl
 puncts	punct	+Noun+Masc+Pl
 strategics	strategic	+Adj+Masc+Pl
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
-Biscayne	Biscayne	+Prop+UNKNOWN
-Bay	Bay	+Prop+UNKNOWN
+Biscayne	Biscayne	+Prop
+Bay	Bay	+Prop
 tranter	tranter	+Prep
 il	il	+Art+Def+Masc+Sg
-Silver	Silver	+Prop+UNKNOWN
-Bluff	Bluff	+Prop+UNKNOWN
+Silver	Silver	+Prop
+Bluff	Bluff	+Prop
 ed	e	+Conj+Apo
 il	il	+Art+Def+Masc+Sg
-Snapper	Snapper	+Prop+UNKNOWN
-Creek	Creek	+Prop+UNKNOWN
-Canal	Canal	+Prop+UNKNOWN
+Snapper	Snapper	+Prop
+Creek	Creek	+Prop
+Canal	Canal	+Prop
 .	.	+Sent
 
 Sche	*sche	+Subj
 tut	tut	+Pron+Indef+Masc+Sg
 è	esser	+Verb+PresInd+3P+Sg
 ì	ir	+Verb+PastPart+Masc+Sg
-–	–	+Punc
+–	–	+Punc+Beg
 da	da	+Prep
-domaduas	domadua	+Noun+Fem+Pl+UNKNOWN
+domaduas	omadus	+Pron+Indef+Fem+Pl+Typo	#PROBLEM: omaduas
 varts	vart	+Noun+Fem+Pl
-–	–	+Punc
-tenor	tenor	+Noun+Masc+Sg
+–	–	+Punc+End
+tenor	tenor	+Prep
 plan	plan	+Noun+Masc+Sg
 ,	,	+CM
 han	avair	+Verb+PresInd+3P+Pl
@@ -277,13 +277,13 @@ en	en	+Prep
 la	il	+Art+Def+Fem+Sg
 remisa	remisa	+Noun+Fem+Sg
 52	52	+Dig+Card
-A	*a	+Prep
+A	*a	+Prop	#PROBLEM: hmm... Tokenizing?
 dal	da	+Prep^|+Art+Def+Masc+Sg
-Sunrise	Sunrise	+Prop+UNKNOWN
-Drive	Drive	+Prop+UNKNOWN
+Sunrise	Sunrise	+Prop
+Drive	Drive	+Prop
 .	.	+Sent
 
-Sco	*sco	+Conj
+Sco	*sco	+Adv
 adina	adina	+Adv
 .	.	+Sent
 
@@ -291,14 +291,14 @@ Jau	*jau	+Pron+Pers+Nom+1P+MF+Sg
 dumond	dumandar	+Verb+PresInd+1P+Sg
 :	:	+Sent
 «	«	+Punc+Beg
-Do	Do	+Adv+UNKNOWN
-you	you	+Noun+Masc+Sg+UNKNOWN
-want	want	+Adj+Masc+Sg+UNKNOWN
-a	a	+Prep
-chewing-gum?	chewing-gum?	+Noun+Masc+Sg+UNKNOWN
+Do	Do	+For
+you	you	+For
+want	want	+For
+a	a	+For
+chewing-gum?	chewing-gum?	+For
 »	»	+Punc+End
-Ma	*ma	+Conj
-George	George	+Prop+UNKNOWN
+Ma	*jau	+Pron+Pers+AccDat+Aton+1P+MF+Sg
+George	George	+Prop
 refusa	refusar	+Verb+PresInd+3P+Sg
 ,	,	+CM
 metta	metter	+Verb+PresInd+3P+Sg
@@ -308,37 +308,37 @@ egliers	egliers	+Noun+Masc+Pl
 da	da	+Prep
 sulegl	sulegl	+Noun+Masc+Sg
 e	e	+Conj
-trai	trai	+Num+Card+MF
+trai	trair	+Verb+PresInd+3P+Sg+Typo	#PROBLEM: tira
 en	en	+Prep
 ils	il	+Art+Def+Masc+Pl
-guants	guant	+Noun+Masc+Pl+UNKNOWN
+guants	guant	+Noun+Masc+Pl
 .	.	+Sent
 
 A	*a	+Prep
 las	il	+Art+Def+Fem+Pl
-10.55	10.55	+Dig+Dec
+10.55	10.55	+Dig+Dec	#PROBLEM: Uhrzeit
 essan	esser	+Verb+PresInd+1P+Pl
 nus	nus	+Pron+Pers+Nom+1P+MF+Pl
 en	en	+Prep
 la	il	+Art+Def+Fem+Sg
-Sunrise	Sunrise	+Prop+UNKNOWN
-Avenue	Avenue	+Prop+UNKNOWN
+Sunrise	Sunrise	+Prop
+Avenue	Avenue	+Prop	#PROBLEM: +For?
 .	.	+Sent
 
 Jau	*jau	+Pron+Pers+Nom+1P+MF+Sg
-rallent	rallent	+Noun+Masc+Sg+UNKNOWN
+rallent	ralentar	+Verb+PresInd+1P+Sg+Typo	#PROBLEM: rallentesch
 .	.	+Sent
 
-George	George	+Prop+UNKNOWN
-di	di	+Noun+Masc+Sg
+George	George	+Prop
+di	di	+Verb+PresInd+3P+Sg
 da	da	+Prep
-bass	bass	+Noun+Masc+Pl
+bass	bass	+Adv
 :	:	+Sent
 «	«	+Punc+Beg
 La	*il	+Art+Def+Fem+Sg
 quarta	quarta	+Noun+Fem+Sg
 a	a	+Prep
-dretga	dretgar	+Verb+PresInd+3P+Sg
+dretga	dretga	+Adv
 »	»	+Punc+End
 ,	,	+CM
 ed	e	+Conj+Apo
@@ -347,16 +347,16 @@ respund	respunder	+Verb+PresInd+1P+Sg
 :	:	+Sent
 «	«	+Punc+Beg
 Jau	*jau	+Pron+Pers+Nom+1P+MF+Sg
-sai	sai	+Pron+Refl+Acc+Ton+3P+MF+Sg
+sai	savair	+Verb+PresInd+1P+Sg
 ,	,	+CM
-mes	mes	+Pron+Poss+Masc+Pl
-char	char	+Adj+Masc+Sg
+mes	mes	+Pron+Poss+Masc+Sg
+char	char	+Noun+Masc+Sg
 .	.	+Sent
 
 »	»	+Punc+End
 A	*a	+Prep
 las	il	+Art+Def+Fem+Pl
-10.58	10.58	+Dig+Dec
+10.58	10.58	+Dig+Dec	#PROBLEM: Uhrzeit
 entrain	entrar	+Verb+PresInd+1P+Pl
 nus	nus	+Pron+Pers+Nom+1P+MF+Pl
 en	en	+Prep
@@ -372,12 +372,12 @@ auto	auto	+Noun+Masc+Sg
 
 Igl	*i	+Pron+Pers+Nom+3P+MF+Sg+Apo
 è	esser	+Verb+PresInd+3P+Sg
-sco	sco	+Conj
-adina:	adina:	+Adv+UNKNOWN
+sco	sco	+Adv	#PROBLEM: Schlägt Analyse nicht vor
+adina:	adina:	+Adv	#PROBLEM: Tokenisierer
 la	il	+Art+Def+Fem+Sg
 halla	halla	+Noun+Fem+Sg
 è	esser	+Verb+PresInd+3P+Sg
-vida	vid	+Adj+Fem+Sg+UNKNOWN
+vida	vid	+Adj+Fem+Sg
 ,	,	+CM
 la	il	+Art+Def+Fem+Sg
 glisch	glisch	+Noun+Fem+Sg
@@ -385,7 +385,7 @@ debla	debel	+Adj+Fem+Sg
 e	e	+Conj
 l’	il	+Art+Def+Fem+Sg+Apo
 aria	aria	+Noun+Fem+Sg
-stitga	stitg	+Adj+Fem+Sg+UNKNOWN
+stitga	stitg	+Adj+Fem+Sg
 .	.	+Sent
 
 Ils	*il	+Art+Def+Masc+Pl
@@ -397,7 +397,7 @@ tut	tut	+Pron+Indef+Masc+Sg
 anc	anc	+Adv
 bler	bler	+Adv
 pli	pli	+Adv
-fustg	fustg	+Noun+Masc+Sg
+fustg	fustg	+Adj+Masc+Sg
 .	.	+Sent
 
 En	*en	+Prep
@@ -415,11 +415,11 @@ la	il	+Art+Def+Fem+Sg
 remisa	remisa	+Noun+Fem+Sg
 .	.	+Sent
 
-George	George	+Prop+UNKNOWN
+George	George	+Prop
 ed	e	+Conj+Apo
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
 avanzain	avanzar	+Verb+PresInd+1P+Pl
-plaunsieu	plaunsieu	+Noun+Masc+Sg+UNKNOWN
+plaunsieu	plaunsieu	+Adv
 ,	,	+CM
 senza	senza	+Prep
 perder	perder	+Verb+Inf
@@ -435,10 +435,10 @@ nus	nus	+Pron+Pers+Nom+1P+MF+Pl
 las	il	+Art+Def+Fem+Pl
 chommas	chomma	+Noun+Fem+Pl
 da	da	+Prep
-Schlatter	Schlatter	+Prop+UNKNOWN
+Schlatter	Schlatter	+Prop
 e	e	+Conj
 da	da	+Prep
-Grond	*grond	+Adj+Masc+Sg
+Grond	*grond	+Adj+Masc+Sg	#PROBLEM: Hier +Prop
 .	.	+Sent
 
 Cun	*cun	+Prep
@@ -452,7 +452,7 @@ la	il	+Art+Def+Fem+Sg
 stgala	stgala	+Noun+Fem+Sg
 .	.	+Sent
 
-Er	*esser	+Verb+ImpInd+3P+Sg
+Er	*era	+Adv
 els	els	+Pron+Pers+Nom+3P+Masc+Pl
 portan	purtar	+Verb+PresInd+3P+Pl
 egliers	egliers	+Noun+Masc+Pl
@@ -471,8 +471,8 @@ ils	il	+Art+Def+Masc+Pl
 satgs	satg	+Noun+Masc+Pl
 e	e	+Conj
 turnan	turnar	+Verb+PresInd+3P+Pl
-immediat	immediat	+Adj+Masc+Sg
-ensi	ensi	+Noun+Masc+Sg+UNKNOWN
+immediat	immediat	+Adv
+ensi	ensi	+Adv
 per	per	+Prep
 purtar	purtar	+Verb+Inf
 il	il	+Art+Def+Masc+Sg
@@ -498,7 +498,7 @@ las	il	+Art+Def+Fem+Pl
 staturas	statura	+Noun+Fem+Pl
 .	.	+Sent
 
-George	George	+Prop+UNKNOWN
+George	George	+Prop
 ed	e	+Conj+Apo
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
 essan	esser	+Verb+PresInd+1P+Pl
@@ -511,36 +511,36 @@ via	via	+Noun+Fem+Sg
 Cun	*cun	+Prep
 il	il	+Art+Def+Masc+Sg
 maun	maun	+Noun+Masc+Sg
-dretg	dretg	+Noun+Masc+Sg
-desarretesch	desarretesch	+Noun+Masc+Sg+UNKNOWN
+dretg	dretg	+Adj+Masc+Sg
+desarretesch	discharretar	+Verb+PresInd+1P+Sg+Typo	#PROBLEM: discharretesch gemäss PG
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
-mia	mes	+Pron+Poss^DB+Noun+Fem+Sg
-SIG	SIG	+Prop+UNKNOWN
-226.	226	+Dig+Ord
+mia	mes	+Pron+Poss+Fem+Sg
+SIG	SIG	+Prop
+226.	226	+Dig+Ord	#PROBLEM: Tokenizer
 Igl	*i	+Pron+Pers+Nom+3P+MF+Sg+Apo
 è	esser	+Verb+PresInd+3P+Sg
-exact	exact	+Adj+Masc+Sg+UNKNOWN
+exact	exact	+Adv
 las	il	+Art+Def+Fem+Pl
-indesch	indesch	+Noun+Masc+Sg
+indesch	indesch	+Noun+Masc+Sg	
 .	.	+Sent
 
-Curt	*curt	+Adj+Masc+Sg
+Curt	*curt	+Adv
 suenter	suenter	+Prep
 parta	parter	+Verb+PresInd+3P+Sg
 l’	il	+Art+Def+Masc+Sg+Apo
-emprim	emprim	+Adj+Masc+Sg
+emprim	emprim	+Adj+Masc+Sg	#PROBLEM: +Num+Ord+Masc+Sg?
 culp	culp	+Noun+Masc+Sg
 .	.	+Sent
 
 Jau	*jau	+Pron+Pers+Nom+1P+MF+Sg
-ma	ma	+Conj
-regord	regord	+Noun+Masc+Sg
+ma	sai	+Pron+Refl+AccDat+Aton+1P+MF+Sg
+regord	regurdar	+Verb+PresInd+1P+Sg	#PROBLEM: sa regurdar
 dal	da	+Prep^|+Art+Def+Masc+Sg
-White	White	+Prop+UNKNOWN
-Horse	Horse	+Prop+UNKNOWN
+White	White	+Prop
+Horse	Horse	+Prop	#PROBLEM: +For?
 .	.	+Sent
 
-Strusch	Strusch	+Adv+UNKNOWN
+Strusch	Strusch	+Adv
 arrivada	arrivar	+Verb+PastPart+Fem+Sg
 lez	lez	+Pron+Dem+Masc+Sg
 di	di	+Noun+Masc+Sg
@@ -550,15 +550,15 @@ tualetta	tualetta	+Noun+Fem+Sg
 da	da	+Prep
 dunnas	dunna	+Noun+Fem+Pl
 ,	,	+CM
-avev’jau	avev’jau	+Noun+Masc+Sg+UNKNOWN
-immediat	immediat	+Adj+Masc+Sg
+avev’jau	avev’jau	+Noun+Masc+Sg+UNKNOWN	#PROBLEM: Tokenizer; aveva & jau (+Apo)
+immediat	immediat	+Adv
 prendì	prender	+Verb+PastPart+Masc+Sg
 giu	giu	+Adv
 la	il	+Art+Def+Fem+Sg
 perucca	perucca	+Noun+Fem+Sg
 e	e	+Conj
 m’	jau	+Pron+Pers+AccDat+Aton+1P+MF+Sg+Apo
-era	era	+Noun+Fem+Sg
+era	esser	+Verb+ImpInd+1P+Sg
 guardada	guardar	+Verb+PastPart+Fem+Sg
 en	en	+Prep
 il	il	+Art+Def+Masc+Sg
@@ -570,7 +570,7 @@ in	in	+Art+Indef+Masc+Sg
 sulet	sulet	+Adj+Masc+Sg
 patratg	patratg	+Noun+Masc+Sg
 m’	jau	+Pron+Pers+AccDat+Aton+1P+MF+Sg+Apo
-era	era	+Adv
+era	esser	+Verb+ImpInd+3P+Sg
 ì	ir	+Verb+PastPart+Masc+Sg
 tras	tras	+Prep
 il	il	+Art+Def+Masc+Sg
@@ -578,9 +578,9 @@ chau	chau	+Noun+Masc+Sg
 :	:	+Sent
 Jau	*jau	+Pron+Pers+Nom+1P+MF+Sg
 ves	vesair	+Verb+PresInd+1P+Sg
-or	or	+Prep
-sco	sco	+Conj
-mia	mes	+Pron+Poss^DB+Noun+Fem+Sg
+or	or	+Adv	#PROBLEM: vesair ora = aussehen
+sco	sco	+Adv
+mia	mes	+Pron+Poss^DB+Noun+Fem+Sg	#PROBLEM ^DB? +Pron+Poss+Fem+Sg
 mamma	mamma	+Noun+Fem+Sg
 .	.	+Sent
 
@@ -595,7 +595,7 @@ mes	mes	+Pron+Poss^DB+Noun+Masc+Pl
 egls	egl	+Noun+Masc+Pl
 stads	esser	+Verb+PastPart+Masc+Pl
 uschè	uschè	+Adv
-marcants;	marcants;	+Noun+Masc+Sg+UNKNOWN
+marcants;	marcant;	+Noun+Masc+Sg+UNKNOWN	#PROBLEM: Tokenizer +Adj+Masc+Pl
 sut	sut	+Prep
 la	il	+Art+Def+Fem+Sg
 pel	pel	+Noun+Fem+Sg
@@ -611,14 +611,14 @@ da	da	+Prep
 sang	sang	+Noun+Masc+Sg
 ,	,	+CM
 satigls	satigl	+Adj+Masc+Pl
-sco	sco	+Conj
-fils;	fils;	+Noun+Masc+Sg+UNKNOWN
+sco	sco	+Adv
+fils;	fils;	+Noun+Masc+Sg+UNKNOWN	#PROBLEM: Tokenizer, +Noun+Masc+Pl
 da	da	+Prep
 las	il	+Art+Def+Fem+Pl
 alas	ala	+Noun+Fem+Pl
 dal	da	+Prep^|+Art+Def+Masc+Sg
 nas	nas	+Noun+Masc+Sg
-s’	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg+Apo
+s’	sai	+Pron+Refl+AccDat+Aton+3P+MF+Pl+Apo
 avevan	avair	+Verb+ImpInd+3P+Pl
 magliads	magliar	+Verb+PastPart+Masc+Pl
 dus	dus	+Num+Card+Masc
@@ -635,21 +635,21 @@ da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 bucca	bucca	+Noun+Fem+Sg
 guardavan	guardar	+Verb+ImpInd+3P+Pl
-engiu	engiu	+Noun+Masc+Sg+UNKNOWN
+engiu	engiu	+Adv
 .	.	+Sent
 
 Per	*per	+Prep
 la	il	+Art+Def+Fem+Sg
-segunda	dus	+Num+Ord+Fem+Sg
+segunda	dus	+Num+Ord+Fem+Sg	#PROBLEM: +Adj?
 giada	giada	+Noun+Fem+Sg
 dapi	dapi	+Prep
-mia	mi	+Adj+Fem+Sg+UNKNOWN
+mia	mes	+Pron+Poss+Fem+Sg
 partenza	partenza	+Noun+Fem+Sg
 da	da	+Prep
-Permez	Permez	+Prop+UNKNOWN
+Permez	Permez	+Prop
 sun	esser	+Verb+PresInd+1P+Sg
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
-stada	stà	+Adj+Fem+Sg
+stada	esser	+Verb+PastPart+Fem+Sg
 confruntada	confruntar	+Verb+PastPart+Fem+Sg
 cun	cun	+Prep
 la	il	+Art+Def+Fem+Sg
@@ -657,13 +657,13 @@ dumonda	dumonda	+Noun+Fem+Sg
 ,	,	+CM
 schebain	schebain	+Subj
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
-aveva	avair	+Verb+ImpInd+3P+Sg
+aveva	avair	+Verb+ImpInd+1P+Sg
 prendì	prender	+Verb+PastPart+Masc+Sg
 a	a	+Prep
 sias	ses	+Pron+Poss^DB+Noun+Fem+Pl
 uras	ura	+Noun+Fem+Pl
 la	il	+Art+Def+Fem+Sg
-dretga	dretgar	+Verb+PresInd+3P+Sg
+dretga	dretg	+Adj+Fem+Sg
 decisiun	decisiun	+Noun+Fem+Sg
 .	.	+Sent
 
@@ -681,73 +681,73 @@ na	na	+Prt+Neg
 vegniva	vegnir	+Verb+ImpInd+3P+Sg
 nagina	nagin	+Pron+Indef+Fem+Sg
 resposta	resposta	+Noun+Fem+Sg
-auter	auter	+Adj+Masc+Sg
-ch’	che	+Subj+Apo
+auter	auter	+Adv
+ch’	che	+Subj+Apo	#PROBLEM: auter che: subj?
 ina	in	+Art+Indef+Fem+Sg
 tema	tema	+Noun+Fem+Sg
 malamain	malamain	+Adv
 determinabla	determinabel	+Adj+Fem+Sg
 .	.	+Sent
 
-Pli	*pli	+Noun+Masc+Sg
-ch’jau	ch’jau	+Noun+Masc+Sg+UNKNOWN
-fixava	fixar	+Verb+ImpInd+3P+Sg
-mes	mes	+Pron+Poss^DB+Noun+Masc+Pl
+Pli	*pli	+Adv
+ch’jau	ch’jau	+Noun+Masc+Sg+UNKNOWN	#PROBLEM: Tokenizer
+fixava	fixar	+Verb+ImpInd+1P+Sg
+mes	mes	+Pron+Poss^DB+Noun+Masc+Sg
 agen	agen	+Adj+Masc+Sg
-vis-à-vis	vis-à-vis	+Noun+Masc+Sg+UNKNOWN
+vis-à-vis	vis-à-vis	+Noun+Masc+Sg+Typo	#PROBLEM: Gemäss PG 'visavi'
 ,	,	+CM
 scutinond	scutinar	+Verb+Gerund
 :	:	+Sent
 «	«	+Punc+Beg
-Maria!	Maria!	+Prop+UNKNOWN
+Maria!	Maria!	+Prop+UNKNOWN	#PROBLEM: Tokenizer
 »	»	+Punc+End
 e	e	+Conj
 pli	pli	+Adv
-ch’jau	ch’jau	+Noun+Masc+Sg+UNKNOWN
-ma	ma	+Conj
-sentiva	sentir	+Verb+ImpInd+3P+Sg
+ch’jau	ch’jau	+Noun+Masc+Sg+UNKNOWN	#PROBLEM: Tokenizer
+ma	sai	+Pron+Refl+AccDat+Aton+1P+MF+Sg
+sentiva	sentir	+Verb+ImpInd+1P+Sg
 penetrada	penetrar	+Verb+PastPart+Fem+Sg
 d’	da	+Prep+Apo
 in	in	+Art+Indef+Masc+Sg
 sguard	sguard	+Noun+Masc+Sg
-nunfamiliar	nunfamiliar	+Verb+Inf+UNKNOWN
+nunfamiliar	nunfamiliar	+Adj+Masc+Sg+Typo	#PROBLEM: nunfamigliar? auf jeden Fall ..famiGliar
 ed	e	+Conj+Apo
-ester	ester	+Noun+Masc+Sg
-.	.	+Sent
+ester	ester	+Adj+Masc+Sg
+.	.	+Sent	##############################################################################################################################################
 
-Mes	*mes	+Pron+Poss+Masc+Pl
+Mes	*mes	+Pron+Poss+Masc+Sg
 num	num	+Noun+Masc+Sg
 tunava	tunar	+Verb+ImpInd+3P+Sg
 en	en	+Prep
 mias	mes	+Pron+Poss^DB+Noun+Fem+Pl
 ureglias	ureglia	+Noun+Fem+Pl
-sco	sco	+Conj
+sco	sco	+Conj	#PROBLEM: +Adv?
 in	in	+Art+Indef+Masc+Sg
 fauss	fauss	+Adj+Masc+Sg
 resun	resun	+Noun+Masc+Sg
 .	.	+Sent
 
 Jau	*jau	+Pron+Pers+Nom+1P+MF+Sg
-laschava	laschar	+Verb+ImpInd+3P+Sg
-encrescher	encrescher	+Adj+Masc+Sg+UNKNOWN
+laschava	laschar	+Verb+ImpInd+1P+Sg
+encrescher	encrescher	+Verb+Inf
 .	.	+Sent
 
 Jau	*jau	+Pron+Pers+Nom+1P+MF+Sg
-ma	ma	+Conj
-sun	sun	+Noun+Masc+Sg
+ma	sai	+Pron+Refl+AccDat+Aton+1P+MF+Sg
+sun	esser	+Verb+PresInd+1P+Sg
 vieuta	volver	+Verb+PastPart+Fem+Sg
 cun	cun	+Prep
 in	in	+Art+Indef+Masc+Sg
 moviment	moviment	+Noun+Masc+Sg
-andetg	andetg	+Adv
+andetg	andetg	+Adj+Masc+Sg
 ed	e	+Conj+Apo
 hai	avair	+Verb+PresInd+1P+Sg
-entschet	entschet	+Adj+Masc+Sg
+entschet	entschaiver	+Verb+PastPart+Masc+Sg
 a	a	+Prep
 scurlattar	scurlattar	+Verb+Inf
 il	il	+Art+Def+Masc+Sg
 chau	chau	+Noun+Masc+Sg
-sco	sco	+Conj
+sco	sco	+Conj	#PROBLEM: ?
 per	per	+Prep
 fugentar	fugentar	+Verb+Inf
 in	in	+Art+Indef+Masc+Sg
@@ -757,8 +757,8 @@ siemi	siemi	+Noun+Masc+Sg
 Alura	*alura	+Adv
 hai	avair	+Verb+PresInd+1P+Sg
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
-spert	spert	+Adj+Masc+Sg
-tratg	tratg	+Noun+Masc+Sg
+spert	spert	+Adv
+tratg	trair	+Verb+PastPart+Masc+Sg
 suenter	suenter	+Prep
 ils	il	+Art+Def+Masc+Pl
 lefs	lef	+Noun+Masc+Pl
@@ -800,14 +800,14 @@ a	a	+Prep
 Londra	Londra	+Prop
 ,	,	+CM
 ils	il	+Art+Def+Masc+Pl
-emprims	in	+Num+Ord+Masc+Pl
+emprims	in	+Num+Ord+Masc+Pl	#PROBLEM: +Adj?
 contacts	contact	+Noun+Masc+Pl
 cun	cun	+Prep
 la	il	+Art+Def+Fem+Sg
 pel	pel	+Noun+Fem+Sg
 ,	,	+CM
 la	il	+Art+Def+Fem+Sg
-giuvna	giuvna	+Noun+Fem+Sg
+giuvna	giuven	+Adj+Fem+Sg
 confidenza	confidenza	+Noun+Fem+Sg
 ,	,	+CM
 la	il	+Art+Def+Fem+Sg
@@ -827,7 +827,7 @@ il	il	+Art+Def+Masc+Sg
 suaditsch	suaditsch	+Noun+Masc+Sg
 ,	,	+CM
 il	il	+Art+Def+Masc+Sg
-timing	timing	+Noun+Masc+Sg+UNKNOWN
+timing	timing	+Noun+Masc+Sg	#PROBLEM: +For
 ,	,	+CM
 la	il	+Art+Def+Fem+Sg
 satisfacziun	satisfacziun	+Noun+Fem+Sg
@@ -837,7 +837,7 @@ Jau	*jau	+Pron+Pers+Nom+1P+MF+Sg
 hai	avair	+Verb+PresInd+1P+Sg
 spetgà	spetgar	+Verb+PastPart+Masc+Sg
 ,	,	+CM
-plain	plain	+Adj+Masc+Sg
+plain	plain	+Adj+Masc+Sg	#PROBLEM: +Adv?, gemäss vocabularisursilvan +Adj
 mirveglias	mirveglia	+Noun+Fem+Pl
 ,	,	+CM
 pertge	pertge	+Adv
@@ -848,24 +848,24 @@ cabina	cabina	+Noun+Fem+Sg
 da	da	+Prep
 tualetta	tualetta	+Noun+Fem+Sg
 n’	n'	+Prt+Neg+Apo
-avev’jau	avev’jau	+Noun+Masc+Sg+UNKNOWN
+avev’jau	avev’jau	+Noun+Masc+Sg+UNKNOWN	#PROBLEM: Tokenizer
 anc	anc	+Adv
 mai	mai	+Adv
 fatg	far	+Verb+PastPart+Masc+Sg
-l’	il	+Art+Def+Masc+Sg+Apo
+l’	il	+Art+Def+Fem+Sg+Apo
 amur	amur	+Noun+Fem+Sg
 ,	,	+CM
 ed	e	+Conj+Apo
-enpli	enpli	+Adj+Masc+Sg+UNKNOWN
+enpli	enpli	+Adj+Masc+Sg+UNKNOWN	#PROBLEM: +Typo "en pli"
 leventava	leventar	+Verb+ImpInd+3P+Sg
 l’	il	+Art+Def+Fem+Sg+Apo
 aspectativa	aspectativa	+Noun+Fem+Sg
 d’	da	+Prep+Apo
 in	in	+Art+Indef+Masc+Sg
 act	act	+Noun+Masc+Sg
-pseudoincestus	pseudoincestu	+Noun+Masc+Pl+UNKNOWN
+pseudoincestus	pseudoincestu	+Adj+Masc+Sg
 en	en	+Prep
-mai	mai	+Adv
+mai	jau	+Pron+Pers+Acc+Ton+1P+MF+Sg
 in	in	+Art+Indef+Masc+Sg
 regl	regl	+Noun+Masc+Sg
 dal	da	+Prep^|+Art+Def+Masc+Sg
@@ -885,10 +885,10 @@ las	il	+Art+Def+Fem+Pl
 reglas	regla	+Noun+Fem+Pl
 da	da	+Prep
 gieu	gieu	+Noun+Masc+Sg
-ch’	che	+Subj+Apo
+ch’	che	+Subj+Apo	#PROBLEM: +Pron+Rel?
 ina	in	+Art+Indef+Fem+Sg
 societad	societad	+Noun+Fem+Sg
-nunpermissiva	nunpermissiv	+Adj+Fem+Sg+UNKNOWN
+nunpermissiva	nunpermissiv	+Adj+Fem+Sg
 etablescha	etablir	+Verb+PresInd+3P+Sg
 per	per	+Prep
 pudair	pudair	+Verb+Inf
@@ -899,7 +899,7 @@ da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 normalitad	normalitad	+Noun+Fem+Sg
 ,	,	+CM
-er	esser	+Verb+ImpInd+3P+Sg
+er	er	+Adv
 sche	sche	+Subj
 l’	il	+Art+Def+Fem+Sg+Apo
 entira	entir	+Adj+Fem+Sg
@@ -914,7 +914,7 @@ Durmir	*durmir	+Verb+Inf
 cun	cun	+Prep
 bab	bab	+Noun+Masc+Sg
 è	esser	+Verb+PresInd+3P+Sg
-super	super	+Adj+Fem+Pl
+super	super	+Adj+Masc+Sg	#PROBLEM: Adv gemäss NVS
 –	–	+Punc
 uschè	uschè	+Adv
 ditg	ditg	+Adv
@@ -922,12 +922,12 @@ ch’	che	+Subj+Apo
 el	el	+Pron+Pers+Nom+3P+Masc+Sg
 ha	avair	+Verb+PresInd+3P+Sg
 num	num	+Noun+Masc+Sg
-Howard	Howard	+Prop+UNKNOWN
+Howard	Howard	+Prop
 .	.	+Sent
 
 E	*e	+Conj
 tuttina	tuttina	+Adv
-er’jau	er’jau	+Adv+UNKNOWN
+er’jau	er’jau	+Adv+UNKNOWN	#PROBLEM: Tokenizer
 malsegira	malsegir	+Adj+Fem+Sg
 .	.	+Sent
 
@@ -940,26 +940,26 @@ plum	plum	+Noun+Masc+Sg
 ,	,	+CM
 sia	ses	+Pron+Poss+Fem+Sg
 egliada	egliada	+Noun+Fem+Sg
-era	era	+Noun+Fem+Sg
+era	esser	+Verb+ImpInd+3P+Sg
 stada	esser	+Verb+PastPart+Fem+Sg
-aggressiva	aggressiv	+Adj+Fem+Sg+UNKNOWN
+aggressiva	aggressiv	+Adj+Fem+Sg
 ,	,	+CM
 e	e	+Conj
-cur	curar	+Verb+PresInd+1P+Sg
-ch’	che	+Subj+Apo
+cur	cura	+Adv
+ch’	che	+Subj+Apo	#PROBLEM: ?
 el	el	+Pron+Pers+Nom+3P+Masc+Sg
 m’	jau	+Pron+Pers+AccDat+Aton+1P+MF+Sg+Apo
 aveva	avair	+Verb+ImpInd+3P+Sg
 clamà	clamar	+Verb+PastPart+Masc+Sg
-suenter	suenter	+Prep
+suenter	suenter	+Adv
 :	:	+Sent
 «	«	+Punc+Beg
-I’ll	I’ll	+Prop+UNKNOWN
-follow	follow	+Noun+Masc+Sg+UNKNOWN
-you!	you!	+Noun+Masc+Sg+UNKNOWN
+I’ll	I’ll	+For
+follow	follow	+For
+you!	you!	+For	#PROBLEM: Tokenizer
 »	»	+Punc+End
-m’	jau	+Pron+Pers+AccDat+Aton+1P+MF+Sg+Apo
-era	era	+Adv
+m’	sai	+Pron+Refl+AccDat+Aton+1P+MF+Sg+Apo
+era	esser	+Verb+ImpInd+1P+Sg
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
 sentida	sentir	+Verb+PastPart+Fem+Sg
 persequitada	persequitar	+Verb+PastPart+Fem+Sg
@@ -968,44 +968,44 @@ persequitada	persequitar	+Verb+PastPart+Fem+Sg
 Durant	*durant	+Prep
 in	in	+Art+Indef+Masc+Sg
 amen	amen	+Noun+Masc+Sg
-ma	ma	+Conj
+ma	sai	+Pron+Refl+AccDat+Aton+1P+MF+Sg
 sun	esser	+Verb+PresInd+1P+Sg
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
 imaginada	imaginar	+Verb+PastPart+Fem+Sg
 co	co	+Adv
-che	che	+Subj
-Howard	Howard	+Prop+UNKNOWN
+che	che	+Subj	#PROBLEM: ?
+Howard	Howard	+Prop
 entra	entrar	+Verb+PresInd+3P+Sg
 en	en	+Prep
 tualetta	tualetta	+Noun+Fem+Sg
 ,	,	+CM
-serra	serra	+Noun+Fem+Sg
+serra	serrar	+Verb+PresInd+3P+Sg
 la	il	+Art+Def+Fem+Sg
 porta	porta	+Noun+Fem+Sg
 ,	,	+CM
 s’	sai	+Pron+Refl+AccDat+Aton+3P+MF+Sg+Apo
 avischina	avischinar	+Verb+PresInd+3P+Sg
 ,	,	+CM
-ma	ma	+Conj
+ma	jau	+Pron+Pers+AccDat+Aton+1P+MF+Sg
 piglia	pigliar	+Verb+PresInd+3P+Sg
 per	per	+Prep
 la	il	+Art+Def+Fem+Sg
 rassa	rassa	+Noun+Fem+Sg
 ,	,	+CM
-ma	ma	+Conj
-dauza	dauza	+Noun+Fem+Sg+UNKNOWN
+ma	jau	+Pron+Pers+AccDat+Aton+1P+MF+Sg
+dauza	dauzar	+Verb+PresInd+3P+Sg
 sin	sin	+Prep
 il	il	+Art+Def+Masc+Sg
 lavaduir	lavaduir	+Noun+Masc+Sg
 ,	,	+CM
-ma	ma	+Conj
-strai	strair	+Verb+Impv+2P+Pl
-dapart	dapart	+Adj+Masc+Sg+UNKNOWN
+ma	ma	+Pron+Pers+AccDat+Aton+1P+MF+Sg
+strai	strair	+Verb+PresInd+3P+Sg+Typo	#PROBLEM: stira
+dapart	dapart	+Adv
 las	il	+Art+Def+Fem+Pl
-chommas…	chommas…	+Noun+Masc+Sg+UNKNOWN
+chommas…	chommas…	+Noun+Fem+Sg+UNKNOWN	#PROBLEM: Tokenizer
 Alura	*alura	+Adv
-ma	ma	+Conj
-sun	sun	+Noun+Masc+Sg
+ma	sai	+Pron+Refl+AccDat+Aton+1P+MF+Sg
+sun	esser	+Verb+PresInd+1P+Sg
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
 puspè	puspè	+Adv
 vieuta	volver	+Verb+PastPart+Fem+Sg
@@ -1024,18 +1024,18 @@ intact	intact	+Adj+Masc+Sg
 .	.	+Sent
 
 Jau	*jau	+Pron+Pers+Nom+1P+MF+Sg
-era	era	+Adv
+era	esser	+Verb+ImpInd+1P+Sg
 pronta	pront	+Adj+Fem+Sg
 ed	e	+Conj+Apo
 hai	avair	+Verb+PresInd+1P+Sg
-ditg	ditg	+Adv
+ditg	dir	+Verb+PastPart+Masc+Sg
 a	a	+Prep
 Maria	Maria	+Prop
 :	:	+Sent
 «	«	+Punc+Beg
 Nus	*nus	+Pron+Pers+Nom+1P+MF+Pl
 essan	esser	+Verb+PresInd+1P+Pl
-prontas!	prontas!	+Noun+Masc+Sg+UNKNOWN
+prontas!	prontas!	+Noun+Masc+Sg+UNKNOWN	#PROBLEM: Tokenizer +Adj+Fem+Sg
 »	»	+Punc+End
 En	*en	+Prep
 quel	quel	+Pron+Dem+Masc+Sg
@@ -1046,14 +1046,14 @@ la	il	+Art+Def+Fem+Sg
 porta	porta	+Noun+Fem+Sg
 .	.	+Sent
 
-Davant	*davant	+Noun+Masc+Sg
-mai	mai	+Adv
+Davant	*davant	+Prep	#PROBLEM: ?
+mai	jau	+Pron+Pers+Acc+Ton+1P+MF+Sg
 stat	star	+Verb+PresInd+3P+Sg
 in	in	+Art+Indef+Masc+Sg
 giuven	giuven	+Noun+Masc+Sg
 cun	cun	+Prep
 chavels	chavel	+Noun+Masc+Pl
-blonds	blond	+Noun+Masc+Pl+UNKNOWN
+blonds	blond	+Adj+Masc+Pl
 ,	,	+CM
 egliers	egliers	+Noun+Masc+Pl
 da	da	+Prep
@@ -1073,44 +1073,44 @@ per	per	+Prep
 dir	dir	+Verb+Inf
 :	:	+Sent
 «	«	+Punc+Beg
-This	This	+Prop+UNKNOWN
-is	isar	+Verb+PresInd+1P+Sg
-not	notar	+Verb+PresInd+1P+Sg
-the	the	+Adj+Masc+Sg+UNKNOWN
-men’s	men’s	+Noun+Masc+Pl+UNKNOWN
-toi…»	toi…»	+Noun+Masc+Sg+UNKNOWN
+This	This	+For
+is	is	+For
+not	not	+For
+the	the	+For
+men’s	men’s	+For
+toi…»	toi…»	+For	#PROBLEM: Tokenizer
 ,	,	+CM
-ma	jau	+Pron+Pers+AccDat+Aton+1P+MF+Sg
+ma	ma	+Conj
 el	el	+Pron+Pers+Nom+3P+Masc+Sg
 m’	jau	+Pron+Pers+AccDat+Aton+1P+MF+Sg+Apo
 interrumpa	interrumper	+Verb+PresInd+3P+Sg
-subit	subit	+Noun+Masc+Sg+UNKNOWN
+subit	subit	+Adv
 cun	cun	+Prep
 ils	il	+Art+Def+Masc+Pl
 pleds	pled	+Noun+Masc+Pl
 :	:	+Sent
 «	«	+Punc+Beg
 Mettai	*metter	+Verb+Impv+2P+Pl
-immediat	immediat	+Adj+Masc+Sg
+immediat	immediat	+Adv
 si	si	+Prep
 la	il	+Art+Def+Fem+Sg
 perucca	perucca	+Noun+Fem+Sg
 ,	,	+CM
 dunna	dunna	+Noun+Fem+Sg
-Thornton	Thornton	+Prop+UNKNOWN
+Thornton	Thornton	+Prop
 ,	,	+CM
 Voss	*voss	+Pron+Poss+Masc+Sg
 bab	bab	+Noun+Masc+Sg
 è	esser	+Verb+PresInd+3P+Sg
-mort!	mort!	+Noun+Masc+Sg+UNKNOWN
+mort!	murir	+Verb+PastPart+Masc+Sg	#PROBLEM: Tokenizer
 »	»	+Punc+End
 e	e	+Conj
 svanescha	svanir	+Verb+PresInd+3P+Sg
 .	.	+Sent
 
 L’	*il	+Art+Def+Masc+Sg+Apo
-emprim	emprim	+Adj+Masc+Sg
-sun	sun	+Noun+Masc+Sg
+emprim	emprim	+Adj+Masc+Sg	#PROBLEM: in+Num+Ord+Masc+Sg
+sun	esser	+Verb+PresInd+1P+Sg
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
 stada	esser	+Verb+PastPart+Fem+Sg
 paralisada	paralisà	+Adj+Fem+Sg
@@ -1129,36 +1129,36 @@ culp	culp	+Noun+Masc+Sg
 Ma	*ma	+Conj
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
 n’	n'	+Prt+Neg+Apo
-era	era	+Adv
+era	esser	+Verb+ImpInd+1P+Sg
 betg	betg	+Prt+Neg
 abla	abel	+Adj+Fem+Sg
 da	da	+Prep
 decifrar	decifrar	+Verb+Inf
-lur	lur	+Pron+Poss+Masc+Pl
+lur	lur	+Pron+Poss+Masc+Sg
 messadi	messadi	+Noun+Masc+Sg
 .	.	+Sent
 
 En	*en	+Prep
 ina	in	+Art+Indef+Fem+Sg
-trapla?	trapla?	+Prep+UNKNOWN
+trapla?	trapla?	+Noun+Fem+Sg	#PROBLEM: Tokenizer
 In	*in	+Art+Indef+Masc+Sg
-test?	test?	+Noun+Masc+Sg+UNKNOWN
+test?	test?	+Noun+Masc+Sg	#PROBLEM: Tokenizer
 U	*u	+Conj
-propi	propi	+Noun+Masc+Sg+UNKNOWN
+propi	propi	+Adv
 la	il	+Art+Def+Fem+Sg
-vardad?	vardad?	+Noun+Fem+Sg+UNKNOWN
+vardad?	vardad?	+Noun+Fem+Sg	#PROBLEM: Tokenizer
 Differents	*different	+Adj+Masc+Pl
 patratgs	patratg	+Noun+Masc+Pl
 gievan	ir	+Verb+ImpInd+3P+Pl
 sco	sco	+Conj
 paliets	paliet	+Noun+Masc+Pl
 tras	tras	+Prep
-mes	mes	+Pron+Poss^DB+Noun+Masc+Pl
+mes	mes	+Pron+Poss+Masc+Sg
 chau	chau	+Noun+Masc+Sg
 ,	,	+CM
 ma	ma	+Conj
 senza	senza	+Prep
-ch’jau	ch’jau	+Noun+Masc+Sg+UNKNOWN
+ch’jau	ch’jau	+Noun+Masc+Sg+UNKNOWN	#PROBLEM: Tokenizer
 avess	avair	+Verb+Cond+3P+Sg
 pudì	pudair	+Verb+PastPart+Masc+Sg
 ordinar	ordinar	+Verb+Inf
@@ -1179,18 +1179,18 @@ cumond	cumond	+Noun+Masc+Sg
 dal	da	+Prep^|+Art+Def+Masc+Sg
 camarier	camarier	+Noun+Masc+Sg
 e	e	+Conj
-mess	mess	+Noun+Masc+Pl
-si	si	+Prep
+mess	metter	+Verb+PastPart+Masc+Sg
+si	si	+Adv
 la	il	+Art+Def+Fem+Sg
 perucca	perucca	+Noun+Fem+Sg
 .	.	+Sent
 
 Lura	*lura	+Adv
-ma	ma	+Conj
+ma	sai	+Pron+Refl+AccDat+Aton+1P+MF+Sg
 sun	esser	+Verb+PresInd+1P+Sg
 jau	jau	+Pron+Pers+Nom+1P+MF+Sg
 festinada	festinar	+Verb+PastPart+Fem+Sg
-or	or	+Prep
+or	or	+Prep	#PROBLEM: Adv?
 da	da	+Prep
 la	il	+Art+Def+Fem+Sg
 porta	porta	+Noun+Fem+Sg
@@ -1198,8 +1198,8 @@ da	da	+Prep
 tualetta	tualetta	+Noun+Fem+Sg
 .	.	+Sent
 
-Daco	*daco	+Subj
+Daco	*daco	+Adv
 conuscheva	conuscher	+Verb+ImpInd+3P+Sg
 quel	quel	+Pron+Dem+Masc+Sg
-mes	mes	+Pron+Poss^DB+Noun+Masc+Pl
-num?	num?	+Adj+Masc+Sg+UNKNOWN
+mes	mes	+Pron+Poss+Masc+Sg
+num?	num?	num+Noun+Masc+Sg	#PROBLEM: Tokenizer	#Done, MC, 22-04-2018 17:11
