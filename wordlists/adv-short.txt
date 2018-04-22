@@ -82,6 +82,7 @@ ordlonder
 ordvart
 oz
 pari
+passa
 percunter
 perencunter
 però
