@@ -3,8 +3,8 @@ include Makefile
 MAXITER?=50
 THREADS?=4
 LEARNDIR:=learn-pos.d
-size:= 1 2 3 4 5 6 7
-size:= 7
+size:= 1 2 3 4 5 6 7 8 9 
+size:= 9
 TEMPLATEPOS:=templates/rumantsch-template-pos.txt
 $(shell mkdir -p $(LEARNDIR)/)
 lc_folds?= 1 2 3 4 5 6 7 8 9 10
@@ -16,7 +16,7 @@ rm_train-pos-file := train/trainall-pos.txt
 # 800	+Dig+Card
 
 train/trainall-pos.txt: train/trainall.txt
-	perl -lne 'if (s/^(\S+)\s+(\+[^+^]+).*/\1\t\2/) { print;} else { print STDERR $$_;}' < $< > $@
+	perl -lne 'print  if /^\s*$$/;if (s/^(\S+)\s+(\+[^+^]+).*/\1\t\2/) { print;} else { print STDERR $$_;}' < $< > $@
 
 train-pos-files:= $(foreach _n,$(size),$(LEARNDIR)/rm_train_$(_n).txt)
 train-fold-files:= $(foreach f,$(lc_folds),$(foreach _n,$(size),$(LEARNDIR)/rm_train_$(f)_$(_n).txtv))

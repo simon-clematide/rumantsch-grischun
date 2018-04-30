@@ -123,8 +123,8 @@ Silvia	Silvia	+Prop
 Steiner	Steiner	+Prop
 (	(	+Punc+Beg
 Uniun	*uniun	+Noun+Fem+Sg	#Problem auch +Prop
-dals	da	+Prep^|+Art+Def+Masc+Pl #Problem auch +Prop
-Grischs	*grisch	+Noun+Masc+Pl   #PROBLEM auch +Prop
+dals	da	+Prep^|+Art+Def+Masc+Pl	#Problem auch +Prop
+Grischs	*grisch	+Noun+Masc+Pl	#PROBLEM auch +Prop
 )	)	+Punc+End
 stattan	star	+Verb+PresInd+3P+Pl
 en	en	+Prep
@@ -277,7 +277,7 @@ Quotidiana	Quotidiana	+Prop
 e	e	+Conj
 dad	da	+Prep+Apo
 infurmar	infurmar	+Verb+Inf
-sur	sur	+Adv    #PROBLEM +Prep?
+sur	sur	+Prep
 internet	internet	+Noun+Masc+Sg
 .	.	+Sent
 

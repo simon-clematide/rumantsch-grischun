@@ -3,8 +3,9 @@
 MAXITER?=50
 THREADS?=4
 
-size:= 1 2 3 4 5 6 7
-
+size:= 1 2 3 4 5 6 7 8 9
+size:= 9
+TEMPLATE?=templates/rumantsch-template.txt
 $(shell mkdir -p learn.d/)
 lc_folds?= 1 2 3 4 5 6 7 8 9 10
 
