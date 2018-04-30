@@ -47,7 +47,7 @@ train-tsv-files+=$(EVALTRAIN:-no-lemma.txt=.tsv)
 train-tsv-files+=$(EVALTEST:-no-lemma.txt=.tsv)
 
 %-no-lemma.txt: %.tsv
-	cut -f 1,3 $< > $@
+	perl -lne 'chomp; s/\s+/\t/; s{^(\S+)\t(\S+)\t(\S+).*}{$$1\t$$3}; print;' <  $< > $@
 # remove the lemmas for training
 #train/dardin-no-lemma.txt: train/dardin.tsv
 #	cut -f 1,3 $< > $@
