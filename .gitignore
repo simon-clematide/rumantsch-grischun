@@ -3,3 +3,7 @@
 crf-morphological-analyzer/*.mod
 crf-morphological-analyzer/train/trainall.txt
 crf-morphological-analyzer/train/*random*
+crf-morphological-analyzer/hf_data/
+spaces/
+hf_export/
+.venv/

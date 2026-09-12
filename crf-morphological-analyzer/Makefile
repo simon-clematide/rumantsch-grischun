@@ -124,6 +124,45 @@ $(MODEL): $(TRAIN)
 final: $(MODEL)
 
 
+#####################################################################
+# Hugging Face Dataset Integration:
+#
+# Reproducible training and evaluation using data directly downloaded
+# from the official Hugging Face Hub dataset:
+# https://huggingface.co/datasets/simon-clmtd/romansh-grischun-morphological-corpus
+#####################################################################
+
+PYTHON?=$(firstword $(wildcard ../.venv/bin/python) python3)
+HF_REPO?=simon-clmtd/romansh-grischun-morphological-corpus
+HF_CONFIG?=all
+HF_DIR?=hf_data
+HF_MODEL?=$(HF_DIR)/model.mod
+FST?=../GrischunGuessing.fst
+
+# 1. Download and format HF train/validation/test splits
+hf-data: $(HF_DIR)/train.txt $(HF_DIR)/validation.txt $(HF_DIR)/test.txt
+
+$(HF_DIR)/train.txt $(HF_DIR)/validation.txt $(HF_DIR)/test.txt:
+	mkdir -p $(HF_DIR)
+	$(PYTHON) ../scripts/prepare_hf_data.py --repo-id $(HF_REPO) --config $(HF_CONFIG) --output-dir $(HF_DIR)
+
+# 2. Train Wapiti CRF model on HF train split using validation split for early stopping
+hf-train: $(HF_MODEL)
+
+$(HF_MODEL): $(HF_DIR)/train.txt $(HF_DIR)/validation.txt
+	nice wapiti train -p $(TEMPLATE) -t $(THREADS) -d $(HF_DIR)/validation.txt $(HF_DIR)/train.txt $(HF_MODEL) 2> $(HF_MODEL).err
+
+# 3. Evaluate model on HF test split and report accuracies & top errors
+hf-eval: $(HF_MODEL) $(HF_DIR)/test.txt
+	$(PYTHON) ../scripts/evaluate_tagger.py --model $(HF_MODEL) --test-file $(HF_DIR)/test.txt --fst $(FST) --template $(TEMPLATE) --metadata $(HF_DIR)/dataset_metadata.json
+
+# 4. Full pipeline: download data, train model, and run evaluation
+hf-all: hf-data hf-train hf-eval
+
+# Clean generated HF artifacts
+hf-clean:
+	rm -rf $(HF_DIR)
+
 
 # General rule for non-existing directories
 %.d:
