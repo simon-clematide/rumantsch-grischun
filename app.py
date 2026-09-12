@@ -158,9 +158,9 @@ class MorphologyService:
     @staticmethod
     def tokenize(text: str):
         """
-        Tokenize Romansh text into sentences and tokens respecting apostrophes and punctuation.
+        Tokenize Romansh text into sentences and tokens respecting apostrophes, compounds, and punctuation.
         
-        Apostrophe rules in Romansh morphology:
+        Tokenization rules in Romansh morphology:
         1. Proclitic / elided forms: when an apostrophe (' or ’ / ‘ / ʼ) attaches to a
            preceding function word (e.g. d', l', s', n', m', t', ch', qu'), the apostrophe
            belongs to that first token:
@@ -168,17 +168,29 @@ class MorphologyService:
              l'onn        -> ["l'", "onn"]
              ch'el        -> ["ch'", "el"]
         2. Both ASCII single quote (') and typographical curly apostrophes (’ / ‘ / ʼ) are recognized.
-        3. Sentences are delimited by terminal punctuation (. ! ? ;).
+        3. Hyphenated compounds (e.g. Widmer-Schlumpf, vis-à-vis, chor-baselgia) are kept intact.
+        4. Ordinals with digit prefixes (e.g. 19avel, 20avel) are kept intact.
+        5. Known abbreviations (e.g. ca., a.C., s.C., dr., prof., etc., usw., resp., LR., S., C.)
+           are preserved with their trailing periods and do not trigger false sentence boundaries.
+        6. Units and temperatures (km2, m3, °C) and timestamps (10:50, 3:13) are kept intact.
+        7. Sentences are delimited by terminal punctuation (. ! ? ;) outside of protected abbreviations.
         """
         # Separate proclitic elisions: word-initial letters ending in apostrophe followed by word characters
         # e.g., d'officitad -> d' officitad, l’onn -> l’ onn
         text = re.sub(r"\b([A-Za-zÀ-ÿ]+['’‘ʼ])(?=[A-Za-zÀ-ÿ])", r"\1 ", text)
 
         token_pattern = r"""
-            (?:[A-Za-zÀ-ÿ]+['’‘ʼ]?)|
-            (?:[0-9]+)|
-            (?:[«»""„“‘’‹›])|
-            (?:[.!?;:,()\[\]{}—–\-])
+            (?:\b(?:ca|dr|prof|etc|usw|resp|euv|lic|LR|S|C)\.)| # Selected common abbreviations with trailing dot
+            (?:\b(?:[a-zA-Z]\.){2,})|                           # Multi-period abbrevs like a.C., s.C., s.m.
+            (?:\b\d{1,2}:\d{2}\b)|                              # Timestamps like 10:50, 3:13
+            (?:\b[A-Za-zÀ-ÿ]+(?:-[A-Za-zÀ-ÿ]+)+\b)|              # Hyphenated compounds: Widmer-Schlumpf, vis-à-vis, chor-baselgia
+            (?:\b\d+(?:avel|avla|avels|avlas)\b)|               # Ordinals: 19avel, 20avel
+            (?:(?:km|m|cm|mm)[23]\b)|                           # Units with square/cube: km2, m3
+            (?:°C\b)|                                           # Degrees Celsius
+            (?:\b[A-Za-zÀ-ÿ]+['’‘ʼ]?)|                          # Normal words with optional trailing apostrophe
+            (?:\b\d+\b)|                                        # Numbers
+            (?:[«»""„“‘’‹›])|                                 # Quotes
+            (?:[.!?;:,()\[\]{}—–\-/=%*†…])                     # Punctuation & math/editorial symbols
         """
         lines = text.split("\n")
         sentences = []
