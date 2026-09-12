@@ -1,0 +1,4 @@
+libfoma0
+libfoma-dev
+foma
+build-essential

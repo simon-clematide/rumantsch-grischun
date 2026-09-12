@@ -23,6 +23,23 @@ world: build cgi
 clean:
 	rm -f fstbinaries/*.fst Grischun.fst GrischunGuessing.fst
 
+# Hugging Face Dataset Training & Evaluation
+hf-data:
+	$(MAKE) -C crf-morphological-analyzer hf-data
+
+hf-train:
+	$(MAKE) -C crf-morphological-analyzer hf-train
+
+hf-eval: GrischunGuessing.fst
+	$(MAKE) -C crf-morphological-analyzer hf-eval
+
+hf-all: GrischunGuessing.fst
+	$(MAKE) -C crf-morphological-analyzer hf-all
+
+hf-clean:
+	$(MAKE) -C crf-morphological-analyzer hf-clean
+
+
 
 Grischun.fst GrischunGuessing.fst : collection-RG.xfst \
  fstbinaries/Adverb.fst \
