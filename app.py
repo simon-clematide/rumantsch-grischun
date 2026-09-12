@@ -157,11 +157,28 @@ class MorphologyService:
 
     @staticmethod
     def tokenize(text: str):
-        """Tokenize text into sentences and tokens respecting apostrophes and punctuation"""
+        """
+        Tokenize Romansh text into sentences and tokens respecting apostrophes and punctuation.
+        
+        Apostrophe rules in Romansh morphology:
+        1. Proclitic / elided forms: when an apostrophe (' or ’ / ‘ / ʼ) attaches to a
+           preceding function word (e.g. d', l', s', n', m', t', ch', qu'), the apostrophe
+           belongs to that first token:
+             d'officitad  -> ["d'", "officitad"]
+             l'onn        -> ["l'", "onn"]
+             ch'el        -> ["ch'", "el"]
+        2. Both ASCII single quote (') and typographical curly apostrophes (’ / ‘ / ʼ) are recognized.
+        3. Sentences are delimited by terminal punctuation (. ! ? ;).
+        """
+        # Separate proclitic elisions: word-initial letters ending in apostrophe followed by word characters
+        # e.g., d'officitad -> d' officitad, l’onn -> l’ onn
+        text = re.sub(r"\b([A-Za-zÀ-ÿ]+['’‘ʼ])(?=[A-Za-zÀ-ÿ])", r"\1 ", text)
+
         token_pattern = r"""
-            (?:[A-Za-zÀ-ÿ]+(?:'[A-Za-zÀ-ÿ]*)?)|
+            (?:[A-Za-zÀ-ÿ]+['’‘ʼ]?)|
             (?:[0-9]+)|
-            (?:[.!?;:,„"'"'()]+)
+            (?:[«»""„“‘’‹›])|
+            (?:[.!?;:,()\[\]{}—–\-])
         """
         lines = text.split("\n")
         sentences = []
@@ -172,7 +189,6 @@ class MorphologyService:
             toks = re.findall(token_pattern, line, re.VERBOSE)
             toks = [t.strip() for t in toks if t.strip()]
             if toks:
-                # Simple sentence boundary splitting on terminal punctuation
                 curr_sent = []
                 for t in toks:
                     curr_sent.append(t)
@@ -182,6 +198,7 @@ class MorphologyService:
                 if curr_sent:
                     sentences.append(curr_sent)
         return sentences
+
 
     def disambiguate_sentence(self, tokens):
         """Disambiguate sentence tokens by intersecting CRF n-best predictions with FST candidates"""
